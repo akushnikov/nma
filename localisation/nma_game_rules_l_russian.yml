@@ -302,87 +302,60 @@
  RULE_OPTION_RAJ_FRAGMENTED:0 "Британская Индия раздроблена"
  RULE_OPTION_RAJ_FRAGMENTED_DESC:0 "Все высвобождаемые составляющие нации Британской Индии освобождаются как свободные и независимые нации после начала игры."
 
- 
- 
-################################################################# HORSTORICAL
- HORST_GROUPKEY:0 "Horstorical NMA"
-################################################################# SUB
- HORST_SUB_OPTIONS:0 "Настройки подлодок"
- HORST_RULE_OPTION_ENABLE_ALL_SUB:0 "Без ограничений"
- HORST_RULE_OPTION_ENABLE_ALL_SUB_DESC:0 "Clicking this option will enable all submarine technology"
- HORST_RULE_OPTION_ENABLE_SUB3_ONLY:0 "Ban 1944 Submarines Only"
- HORST_RULE_OPTION_ENABLE_SUB3_ONLY_DESC:0 "Clicking this option will disable Submarine 1944 Submarines Only"
 
+
+################################################################# HORSTORICAL
+ NMA_GROUPKEY:0 "Horstorical NMA"
 ################################################################# SNORKEL
- HORST_SNORKEL_OPTIONS:0 "Настройки шноркеля"
- HORST_RULE_OPTION_ENABLE_SNORKEL2:0 "Без ограничений"
- HORST_RULE_OPTION_ENABLE_SNORKEL2_DESC:0 "Clicking this option will enable snorkel lvl. 2 technology"
- HORST_RULE_OPTION_DISABLE_SNORKEL2:0 "Ban Snorkel 2"
- HORST_RULE_OPTION_DISABLE_SNORKEL2_DESC:0 "Clicking this option will disable Snorkel lvl. 2 technology"
-################################################################# TANKS 
- HORST_TANK_RESEARCH_OPTIONS:0 "Исследование танков 1943г"
- HORST_RULE_OPTION_ENABLE_FREE_RESEARCH:0 "Без ограничеий на опережение"
- HORST_RULE_OPTION_ENABLE_FREE_RESEARCH_DESC:0 "Бурги-like. Рашим танки всем сервером как поехавшие."
- HORST_RULE_OPTION_DISABLE_LIMIT_1940:0 "Запрещено до 1940 г"
- HORST_RULE_OPTION_DISABLE_LIMIT_1940_DESC:0 "текст2"
- HORST_RULE_OPTION_DISABLE_LIMIT_1941:0 "Запрещено до 1941 г"
- HORST_RULE_OPTION_DISABLE_LIMIT_1941_DESC:0 "текст3"
- HORST_RULE_OPTION_DISABLE_LIMIT_1942:0 "Запрещено до 1942 г"
- HORST_RULE_OPTION_DISABLE_LIMIT_1942_DESC:0 "текст4"
- ################################################################ NUKES
- HORST_NUKE_OPTIONS:0 "Настройки ЯО"
- HORST_RULE_OPTION_ENABLE_NUKES:0 "Без ограничений"
- HORST_RULE_OPTION_ENABLE_NUKES_DESC:0 "Clicking this option will enable nukes for research"
- HORST_RULE_OPTION_DISABLE_NUKES:0 "Ban Nukes"
- HORST_RULE_OPTION_DISABLE_NUKES_DESC:0 "Clicking this option will disable nukes for research"
+ NMA_SNORKEL_OPTIONS:0 "Настройки шноркеля"
+ NMA_RULE_OPTION_ENABLE_SNORKEL2:0 "Без ограничений"
+ NMA_RULE_OPTION_ENABLE_SNORKEL2_DESC:0 "Clicking this option will enable snorkel lvl. 2 technology"
+ NMA_RULE_OPTION_DISABLE_SNORKEL2:0 "Ban Snorkel 2"
+ NMA_RULE_OPTION_DISABLE_SNORKEL2_DESC:0 "Clicking this option will disable Snorkel lvl. 2 technology"
+################################################################# TANKS
+ NMA_TANK_RESEARCH_OPTIONS:0 "Исследование танков 1943г"
+ NMA_RULE_OPTION_ENABLE_FREE_RESEARCH:0 "Без ограничеий на опережение"
+ NMA_RULE_OPTION_ENABLE_FREE_RESEARCH_DESC:0 "Бурги-like. Рашим танки всем сервером как поехавшие."
+ NMA_RULE_OPTION_DISABLE_LIMIT_1940:0 "Запрещено до 1940 г"
+ NMA_RULE_OPTION_DISABLE_LIMIT_1940_DESC:0 "текст2"
+ NMA_RULE_OPTION_DISABLE_LIMIT_1941:0 "Запрещено до 1941 г"
+ NMA_RULE_OPTION_DISABLE_LIMIT_1941_DESC:0 "текст3"
+ NMA_RULE_OPTION_DISABLE_LIMIT_1942:0 "Запрещено до 1942 г"
+ NMA_RULE_OPTION_DISABLE_LIMIT_1942_DESC:0 "текст4"
+
 ################################################################# ADAPTABLE
- HORST_ALLOW_ADAPTABLE:0 "Настройки Adaptable"
- HORST_RULE_OPTION_ENABLE_ADAPTABLE:0 "Разрешить Adaptable"
- HORST_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Clicking this option will enable the adaptable trait for generals."
- HORST_RULE_OPTION_DISABLE_ADAPTABLE:0 "Ban Adaptable"
- HORST_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Clicking this option will disable the adaptable trait for generals."
+ NMA_ALLOW_ADAPTABLE:0 "Настройки Adaptable"
+ NMA_RULE_OPTION_ENABLE_ADAPTABLE:0 "Разрешить Adaptable"
+ NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Clicking this option will enable the adaptable trait for generals."
+ NMA_RULE_OPTION_DISABLE_ADAPTABLE:0 "Ban Adaptable"
+ NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Clicking this option will disable the adaptable trait for generals."
  ################################################################# STRATEGIC BOMBERS
- HORST_ALLOW_STRATEGIC_BOMBERS:0 "Доступность страт. бобров"
- HORST_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS:0 "Без ограничений"
- HORST_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will enable strategic bomber technology for research"
- HORST_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS:0 "Ban Strategic Bombers"
- HORST_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will disable strategic bomber technology for research
+ NMA_ALLOW_STRATEGIC_BOMBERS:0 "Доступность страт. бобров"
+ NMA_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS:0 "Без ограничений"
+ NMA_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will enable strategic bomber technology for research"
+ NMA_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS:0 "Ban Strategic Bombers"
+ NMA_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will disable strategic bomber technology for research
  ################################################################# AIR PRODUCTION
- HORST_ALLOW_AIR_PRODUCTION:0 "Фокус "Производство самолетов""
- HORST_RULE_OPTION_ENABLE_AIR_PRODUCTION:0 "Разрешен"
- HORST_RULE_OPTION_ENABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will enable the Air Production continuous focus"
- HORST_RULE_OPTION_DISABLE_AIR_PRODUCTION:0 "Ban Air Production"
- HORST_RULE_OPTION_DISABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will disable the Air Production continuous focus"
+ NMA_ALLOW_AIR_PRODUCTION:0 "Фокус "Производство самолетов""
+ NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION:0 "Разрешен"
+ NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will enable the Air Production continuous focus"
+ NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION:0 "Ban Air Production"
+ NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will disable the Air Production continuous focus"
  ################################################################# JAEGARNOTPROGRAMM
- HORST_ALLOW_JAEGERNOTPROGRAMM:0 "Доступность Ягерпрограммы"
- HORST_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM:0 "Разрешить"
- HORST_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will enable the Jaegarnotprogramm decision"
- HORST_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM:0 "Ban Jaegarnotprogramm"
- HORST_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will disable the Jaegarnotprogramm decision"
+ NMA_ALLOW_JAEGERNOTPROGRAMM:0 "Доступность Ягерпрограммы"
+ NMA_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM:0 "Разрешить"
+ NMA_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will enable the Jaegarnotprogramm decision"
+ NMA_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM:0 "Ban Jaegarnotprogramm"
+ NMA_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will disable the Jaegarnotprogramm decision"
  ################################################################# 1944 PLANES
- HORST_ALLOW_PLANE3:0 "Исследование самолетов 1944г"
- HORST_RULE_OPTION_ENABLE_PLANE3:0 "Без ограничений"
- HORST_RULE_OPTION_ENABLE_PLANE3_DESC:0 "Clicking this option will enable 1944 Plane research"
- HORST_RULE_OPTION_DISABLE_PLANE3:0 "Ban 1944 Planes"
- HORST_RULE_OPTION_DISABLE_PLANE3_DESC:0 "Clicking this option will disable 1944 Plane research"
+ NMA_ALLOW_PLANE3:0 "Исследование самолетов 1944г"
+ NMA_RULE_OPTION_ENABLE_PLANE3:0 "Без ограничений"
+ NMA_RULE_OPTION_ENABLE_PLANE3_DESC:0 "Clicking this option will enable 1944 Plane research"
+ NMA_RULE_OPTION_DISABLE_PLANE3:0 "Ban 1944 Planes"
+ NMA_RULE_OPTION_DISABLE_PLANE3_DESC:0 "Clicking this option will disable 1944 Plane research"
   ################################################################# 1944 SHIPS
- HORST_ALLOW_SHIP_4:0 "Исследование кораблей 1944г"
- HORST_RULE_OPTION_ENABLE_SHIP4:0 "Без ограничений"
- HORST_RULE_OPTION_ENABLE_SHIP4_DESC:0 "текст1"
- HORST_RULE_OPTION_DISABLE_SHIP4:0 "Забанить корабли 1944г"
- HORST_RULE_OPTION_DISABLE_SHIP4_DESC:0 "текст2"
- 
- ################################################################# BARBAROSSA REBALANCE
- HORST_BARB_REBALANCE:0 "Barbarossa and D-Day Rebalance Settings"
- HORST_RULE_OPTION_ENABLE_BARB_REBALANCE:0 "Enable Barbarossa and D-Day Rebalance"
- HORST_RULE_OPTION_ENABLE_BARB_REBALANCE_DESC:0 "Clicking this option will enable Barbarossa and D-Day rebalance"
- HORST_RULE_OPTION_DISABLE_BARB_REBALANCE:0 "Disable Barbarossa and D-Day Rebalance"
- HORST_RULE_OPTION_DISABLE_BARB_REBALANCE_DESC:0 "Clicking this option will disable Barbarossa and D-Day rebalance"
- ################################################################# PUPPET ETHIOPIA
- HORST_PUPPET_ETH:0 "Puppeting Ethiopia"
- HORST_RULE_OPTION_ENABLE_PUPPET_ETH:0 "Allow Puppeting Ethiopia"
- HORST_RULE_OPTION_ENABLE_PUPPET_ETH_DESC:0 "Clicking this option will enable puppeting Ethiopia"
- HORST_RULE_OPTION_DISABLE_PUPPET_ETH:0 "Ban Puppeting Ethiopia"
- HORST_RULE_OPTION_DISABLE_PUPPET_ETH_DESC:0 "Clicking this option will disable puppeting Ethiopia"
- 
- 
+ NMA_ALLOW_SHIP_4:0 "Исследование кораблей 1944г"
+ NMA_RULE_OPTION_ENABLE_SHIP4:0 "Без ограничений"
+ NMA_RULE_OPTION_ENABLE_SHIP4_DESC:0 "текст1"
+ NMA_RULE_OPTION_DISABLE_SHIP4:0 "Забанить корабли 1944г"
+ NMA_RULE_OPTION_DISABLE_SHIP4_DESC:0 "текст2"
