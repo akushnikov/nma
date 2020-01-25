@@ -308,10 +308,12 @@
  NMA_GROUPKEY:0 "Horstorical NMA"
 ################################################################# SNORKEL
  NMA_SNORKEL_OPTIONS:0 "Настройки шноркеля"
- NMA_RULE_OPTION_ENABLE_SNORKEL2:0 "Без ограничений"
- NMA_RULE_OPTION_ENABLE_SNORKEL2_DESC:0 "Clicking this option will enable snorkel lvl. 2 technology"
- NMA_RULE_OPTION_DISABLE_SNORKEL2:0 "Ban Snorkel 2"
- NMA_RULE_OPTION_DISABLE_SNORKEL2_DESC:0 "Clicking this option will disable Snorkel lvl. 2 technology"
+ NMA_RULE_OPTION_ENABLE_SNORKEL:0 "Без ограничений"
+ NMA_RULE_OPTION_ENABLE_SNORKEL_DESC:0 "Данная настройка позволяет изучать шнорель без ограничеий"
+ NMA_RULE_OPTION_LIMIT_SNORKEL:0 "Запрещено до 1942 года"
+ NMA_RULE_OPTION_LIMIT_SNORKEL_DESC:0 "Данная настройка ограничт изучение шнореля 2 уровня до 1942 года"
+ NMA_RULE_OPTION_DISABLE_SNORKEL:0 "Запретить шноркель 2 уровня"
+ NMA_RULE_OPTION_DISABLE_SNORKEL_DESC:0 "Данная настройка запретит изучать шнорель 2 уровня"
 ################################################################# TANKS
  NMA_TANK_RESEARCH_OPTIONS:0 "Исследование танков 1943г"
  NMA_RULE_OPTION_ENABLE_FREE_RESEARCH:0 "Без ограничеий на опережение"

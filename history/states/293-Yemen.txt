@@ -3,8 +3,8 @@ state={
 	id=293
 	name="STATE_293"
 	manpower = 1
-	
-	state_category = state_category = wasteland
+
+	state_category = wasteland
 	
 	resources={
 		oil=0 # was: 1
@@ -20,12 +20,12 @@ state={
 			}
 		}
 		victory_points = {
-			10840 3 
+			10840 3
 		}
 		##add_core_of = YEM
 	}
 
 	provinces={
-		1920 1973 4924 10752 10840 
+		1920 1973 4924 10752 10840
 	}
 }

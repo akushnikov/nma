@@ -1310,7 +1310,7 @@ ENG_organize_the_blackshirts = {
 		}
 
 		fire_only_once = yes
-	
+
 		cost = 25
 
 		days_remove = 365
@@ -1324,7 +1324,7 @@ ENG_organize_the_blackshirts = {
 			production_speed_arms_factory_factor = 0.1
 			war_support_weekly = 0.005
 		}
-		
+
 		ai_will_do = {
 			factor = 200
 		}
@@ -1333,7 +1333,7 @@ ENG_organize_the_blackshirts = {
 }
 
 ENG_appeal_to_imperial_loyalists = {
-	
+
 	ENG_support_imperialist_coup_in_canada = {
 
 		icon = eng_support_imperialist_coup
@@ -1438,7 +1438,7 @@ ENG_appeal_to_imperial_loyalists = {
 	ENG_support_imperialist_coup_in_canada_mission_1 = { # warning for Canada
 
 		icon = eng_support_imperialist_coup
-		
+
 		available = {
 			ENG = { has_country_flag = ENG_CAN_suppressed_coup }
 		}
@@ -1461,7 +1461,7 @@ ENG_appeal_to_imperial_loyalists = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -1568,7 +1568,7 @@ ENG_appeal_to_imperial_loyalists = {
 	ENG_support_imperialist_coup_in_canada_mission_2 = { # warning for Britain
 
 		icon = eng_support_imperialist_coup
-		
+
 		available = {
 			custom_trigger_tooltip = { tooltip = ENG_support_imperialist_coup_in_canada_mission_2_tt }
 			hidden_trigger = { NOT = { has_country_flag = ENG_CAN_suppressed_coup } }
@@ -1592,7 +1592,7 @@ ENG_appeal_to_imperial_loyalists = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -1809,7 +1809,7 @@ ENG_appeal_to_imperial_loyalists = {
 	ENG_support_imperialist_coup_in_south_africa_mission_1 = { # warning for south_africa
 
 		icon = eng_support_imperialist_coup
-		
+
 		available = {
 			ENG = { has_country_flag = ENG_SAF_suppressed_coup }
 		}
@@ -1832,7 +1832,7 @@ ENG_appeal_to_imperial_loyalists = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -1939,7 +1939,7 @@ ENG_appeal_to_imperial_loyalists = {
 	ENG_support_imperialist_coup_in_south_africa_mission_2 = { # warning for Britain
 
 		icon = eng_support_imperialist_coup
-		
+
 		available = {
 			custom_trigger_tooltip = { tooltip = ENG_support_imperialist_coup_in_south_africa_mission_2_tt }
 			hidden_trigger = { NOT = { has_country_flag = ENG_SAF_suppressed_coup } }
@@ -1963,7 +1963,7 @@ ENG_appeal_to_imperial_loyalists = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -2194,7 +2194,7 @@ ENG_appeal_to_imperial_loyalists = {
 	ENG_support_imperialist_coup_in_australia_mission_1 = { # warning for australia
 
 		icon = eng_support_imperialist_coup
-		
+
 		available = {
 			ENG = { has_country_flag = ENG_AST_suppressed_coup }
 		}
@@ -2217,7 +2217,7 @@ ENG_appeal_to_imperial_loyalists = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -2241,7 +2241,7 @@ ENG_appeal_to_imperial_loyalists = {
 						expire = "1965.1.1"
 						ideology = centrism
 						traits = {
-							
+
 						}
 					}
 				}
@@ -2334,7 +2334,7 @@ ENG_appeal_to_imperial_loyalists = {
 	ENG_support_imperialist_coup_in_australia_mission_2 = { # warning for Britain
 
 		icon = eng_support_imperialist_coup
-		
+
 		available = {
 			custom_trigger_tooltip = { tooltip = ENG_support_imperialist_coup_in_australia_mission_2_tt }
 			hidden_trigger = { NOT = { has_country_flag = ENG_AST_suppressed_coup } }
@@ -2358,7 +2358,7 @@ ENG_appeal_to_imperial_loyalists = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -2603,7 +2603,7 @@ ENG_appeal_to_imperial_loyalists = {
 	ENG_support_imperialist_coup_in_new_zealand_mission_1 = { # warning for new_zealand
 
 		icon = eng_support_imperialist_coup
-		
+
 		available = {
 			ENG = { has_country_flag = ENG_NZL_suppressed_coup }
 		}
@@ -2626,7 +2626,7 @@ ENG_appeal_to_imperial_loyalists = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -2733,7 +2733,7 @@ ENG_appeal_to_imperial_loyalists = {
 	ENG_support_imperialist_coup_in_new_zealand_mission_2 = { # warning for Britain
 
 		icon = eng_support_imperialist_coup
-		
+
 		available = {
 			custom_trigger_tooltip = { tooltip = ENG_support_imperialist_coup_in_new_zealand_mission_2_tt }
 			hidden_trigger = { NOT = { has_country_flag = ENG_NZL_suppressed_coup } }
@@ -2757,7 +2757,7 @@ ENG_appeal_to_imperial_loyalists = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -2966,7 +2966,7 @@ ENG_appeal_to_imperial_loyalists = {
 						load_focus_tree = { tree = canadian_focus keep_completed = yes }
 						CAN_enforce_loyalty = yes
 					}
-				}	
+				}
 				hidden_effect = { country_event = { id = mtg_britain.112 days = 1 } }
 			}
 		}
@@ -3322,11 +3322,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_1
-			add_ideas = ENG_random_communist_minister_1 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_1 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -3334,7 +3334,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -3342,7 +3342,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -3350,7 +3350,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -3358,7 +3358,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -3366,7 +3366,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -3374,7 +3374,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -3422,11 +3422,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_2
-			add_ideas = ENG_random_communist_minister_2 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_2 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -3434,7 +3434,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -3442,7 +3442,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -3450,7 +3450,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -3458,7 +3458,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -3466,7 +3466,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -3474,7 +3474,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -3522,11 +3522,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_3
-			add_ideas = ENG_random_communist_minister_3 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_3 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -3534,7 +3534,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -3542,7 +3542,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -3550,7 +3550,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -3558,7 +3558,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -3566,7 +3566,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -3574,7 +3574,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -3623,11 +3623,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_4
-			add_ideas = ENG_random_communist_minister_4 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_4 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -3635,7 +3635,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -3643,7 +3643,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -3651,7 +3651,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -3659,7 +3659,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -3667,7 +3667,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -3675,7 +3675,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -3724,11 +3724,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_5
-			add_ideas = ENG_random_communist_minister_5 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_5 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -3736,7 +3736,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -3744,7 +3744,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -3752,7 +3752,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -3760,7 +3760,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -3768,7 +3768,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -3776,7 +3776,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -3825,11 +3825,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_6
-			add_ideas = ENG_random_communist_minister_6 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_6 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -3837,7 +3837,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -3845,7 +3845,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -3853,7 +3853,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -3861,7 +3861,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -3869,7 +3869,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -3877,7 +3877,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -3926,11 +3926,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_7
-			add_ideas = ENG_random_communist_minister_7 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_7 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -3938,7 +3938,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -3946,7 +3946,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -3954,7 +3954,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -3962,7 +3962,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -3970,7 +3970,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -3978,7 +3978,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4027,11 +4027,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_8
-			add_ideas = ENG_random_communist_minister_8 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_8 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -4039,7 +4039,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4047,7 +4047,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4055,7 +4055,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4063,7 +4063,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4071,7 +4071,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4079,7 +4079,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4128,11 +4128,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_9
-			add_ideas = ENG_random_communist_minister_9 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_9 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -4140,7 +4140,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4148,7 +4148,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4156,7 +4156,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4164,7 +4164,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4172,7 +4172,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4180,7 +4180,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4229,11 +4229,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_10
-			add_ideas = ENG_random_communist_minister_10 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_10 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -4241,7 +4241,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4249,7 +4249,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4257,7 +4257,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4265,7 +4265,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4273,7 +4273,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4281,7 +4281,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4330,11 +4330,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_11
-			add_ideas = ENG_random_communist_minister_11 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_11 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -4342,7 +4342,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4350,7 +4350,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4358,7 +4358,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4366,7 +4366,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4374,7 +4374,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4382,7 +4382,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4431,11 +4431,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_12
-			add_ideas = ENG_random_communist_minister_12 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_12 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -4443,7 +4443,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4451,7 +4451,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4459,7 +4459,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4467,7 +4467,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4475,7 +4475,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4483,7 +4483,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4532,11 +4532,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_13
-			add_ideas = ENG_random_communist_minister_13 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_13 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -4544,7 +4544,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4552,7 +4552,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4560,7 +4560,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4568,7 +4568,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4576,7 +4576,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4584,7 +4584,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4633,11 +4633,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_14
-			add_ideas = ENG_random_communist_minister_14 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_14 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -4645,7 +4645,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4653,7 +4653,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4661,7 +4661,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4669,7 +4669,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4677,7 +4677,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4685,7 +4685,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4734,11 +4734,11 @@ ENG_concessions_to_the_trade_unions = {
 			add_popularity = { ideology = communism popularity = 0.05 }
 			set_country_flag = { flag = ENG_trade_unions_demand_timer value = 1 days = 30 }
 			set_country_flag = ENG_trade_unions_demand_minister_appointment_15
-			add_ideas = ENG_random_communist_minister_15 #intentionally not given loc so it can be random 
+			add_ideas = ENG_random_communist_minister_15 #intentionally not given loc so it can be random
 			remove_mission = ENG_trade_unions_demand_minister_appointment_mission
 			hidden_effect = {
 				random_list = {
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -4746,7 +4746,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4754,7 +4754,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4762,7 +4762,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4770,7 +4770,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4778,7 +4778,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4786,7 +4786,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4809,7 +4809,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_minister_appointment_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_country_flag = ENG_trade_unions_demand_minister_appointment
 		}
@@ -4867,7 +4867,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -4932,7 +4932,7 @@ ENG_concessions_to_the_trade_unions = {
 						}
 						activate_mission = ENG_trade_unions_demand_minister_appointment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -4940,7 +4940,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -4948,7 +4948,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -4956,7 +4956,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -4964,7 +4964,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -4972,7 +4972,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -4992,7 +4992,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_legislation_amendment_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_country_flag = ENG_trade_unions_demand_legislation_amendment_done_flag
 		}
@@ -5018,7 +5018,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -5112,7 +5112,7 @@ ENG_concessions_to_the_trade_unions = {
 						}
 						activate_mission = ENG_trade_unions_demand_minister_appointment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -5120,7 +5120,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -5128,7 +5128,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -5136,7 +5136,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -5144,7 +5144,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -5152,7 +5152,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -5172,7 +5172,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_conscription_limitations_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_country_flag = ENG_trade_unions_demand_conscription_limitations_done_flag
 		}
@@ -5198,7 +5198,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -5284,7 +5284,7 @@ ENG_concessions_to_the_trade_unions = {
 						}
 						activate_mission = ENG_trade_unions_demand_minister_appointment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -5292,7 +5292,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -5300,7 +5300,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -5308,7 +5308,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -5316,7 +5316,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -5324,7 +5324,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -5344,7 +5344,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_workplace_safety_legislation_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation_done_flag
 		}
@@ -5370,7 +5370,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -5456,7 +5456,7 @@ ENG_concessions_to_the_trade_unions = {
 						}
 						activate_mission = ENG_trade_unions_demand_minister_appointment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -5464,7 +5464,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -5472,7 +5472,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -5480,7 +5480,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -5488,7 +5488,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -5496,7 +5496,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -5516,7 +5516,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_increase_in_paid_leave_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave_done_flag
 		}
@@ -5542,7 +5542,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -5628,7 +5628,7 @@ ENG_concessions_to_the_trade_unions = {
 						}
 						activate_mission = ENG_trade_unions_demand_minister_appointment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -5636,7 +5636,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -5644,7 +5644,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -5652,7 +5652,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -5660,7 +5660,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -5668,7 +5668,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_construction_safety_legislation
 						activate_mission = ENG_trade_unions_demand_construction_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -5688,7 +5688,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_minimum_pay_increase_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_country_flag = ENG_trade_unions_demand_minimum_pay_increase_done_flag
 		}
@@ -5714,7 +5714,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -5780,7 +5780,7 @@ ENG_concessions_to_the_trade_unions = {
 						}
 						activate_mission = ENG_trade_unions_demand_minister_appointment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -5788,7 +5788,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -5796,7 +5796,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -5804,7 +5804,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -5812,7 +5812,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -5820,7 +5820,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_mandatory_union_days
@@ -5840,7 +5840,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_construction_safety_legislation_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_country_flag = ENG_trade_unions_demand_construction_safety_legislation_done_flag
 		}
@@ -5866,7 +5866,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -5932,7 +5932,7 @@ ENG_concessions_to_the_trade_unions = {
 						}
 						activate_mission = ENG_trade_unions_demand_minister_appointment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_legislation_amendment
@@ -5940,7 +5940,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_legislation_amendment
 						activate_mission = ENG_trade_unions_demand_legislation_amendment_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_conscription_limitations
@@ -5948,7 +5948,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_conscription_limitations
 						activate_mission = ENG_trade_unions_demand_conscription_limitations_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
@@ -5956,7 +5956,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_workplace_safety_legislation
 						activate_mission = ENG_trade_unions_demand_workplace_safety_legislation_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
@@ -5964,7 +5964,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_increase_in_paid_leave
 						activate_mission = ENG_trade_unions_demand_increase_in_paid_leave_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_minimum_pay_increase
@@ -5972,7 +5972,7 @@ ENG_concessions_to_the_trade_unions = {
 						set_country_flag = ENG_trade_unions_demand_minimum_pay_increase
 						activate_mission = ENG_trade_unions_demand_minimum_pay_increase_mission
 					}
-					10 = { 
+					10 = {
 						modifier = {
 							factor = 0
 							has_country_flag = ENG_trade_unions_demand_construction_safety_legislation
@@ -5992,7 +5992,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_mandatory_union_days_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_country_flag = ENG_trade_unions_demand_mandatory_union_days_done_flag
 		}
@@ -6018,7 +6018,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -6114,7 +6114,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_trade_unions_demand_referendum_mission = {
 
 		icon = eng_trade_unions_demand
-		
+
 		available = {
 			has_government = communism
 		}
@@ -6156,7 +6156,7 @@ ENG_concessions_to_the_trade_unions = {
 		is_good = no
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -6370,7 +6370,7 @@ ENG_concessions_to_the_trade_unions = {
 	ENG_expected_decolonization = { # timer for the player to see how much longer they have to decolonize before they get a civil war
 
 		icon = eng_abdication_crisis
-		
+
 		available = {
 			has_completed_focus = ENG_decolonization
 		}
@@ -6407,7 +6407,7 @@ ENG_concessions_to_the_trade_unions = {
 }
 
 ENG_move_to_secure_the_dominions = {
-	
+
 	ENG_impose_martial_law_on_canada = {
 
 		icon = generic_civil_support
@@ -6587,7 +6587,7 @@ ENG_move_to_secure_the_dominions = {
 			NOT = { army_manpower_in_state = { state = 464 amount < 9600 } }
 			NOT = { army_manpower_in_state = { state = 468 amount < 28800 } }
 			NOT = { army_manpower_in_state = { state = 276 amount < 48000 } }
-			FROM = { 
+			FROM = {
 				has_country_flag = ENG_cannot_leave_faction
 				fascism > 0.2
 			}
@@ -6651,12 +6651,12 @@ ENG_move_to_secure_the_dominions = {
 			NOT = { army_manpower_in_state = { state = 464 amount < 9600 } }
 			NOT = { army_manpower_in_state = { state = 468 amount < 28800 } }
 			NOT = { army_manpower_in_state = { state = 276 amount < 48000 } }
-			FROM = { 
+			FROM = {
 				has_country_flag = ENG_cannot_leave_faction
 				communism > 0.2
 			}
 		}
-		
+
 		targets = { CAN D01 D02 D03 D04 D05 D06 D07 D08 D09 D10 D11 D12 D13 D14 D15 }
 
 		target_root_trigger = {
@@ -6921,7 +6921,7 @@ ENG_move_to_secure_the_dominions = {
 			NOT = { army_manpower_in_state = { state = 681 amount < 19200 } }
 			NOT = { army_manpower_in_state = { state = 719 amount < 48000 } }
 			NOT = { army_manpower_in_state = { state = 275 amount < 48000 } }
-			FROM = { 
+			FROM = {
 				has_country_flag = ENG_cannot_leave_faction
 				communism > 0.2
 			}
@@ -7236,7 +7236,7 @@ ENG_move_to_secure_the_dominions = {
 				NOT = { army_manpower_in_state = { state = 288 amount < 9600 } }
 			}
 			NOT = { army_manpower_in_state = { state = 439 amount < 96000 } }
-			FROM = { 
+			FROM = {
 				has_country_flag = ENG_cannot_leave_faction
 				fascism > 0.2
 			}
@@ -7920,11 +7920,11 @@ ENG_move_to_secure_the_dominions = {
 }
 
 ENG_imperial_conference_decision = {
-	
+
 	ENG_imperial_conference_decision = {
 
 		icon = generic_political_discourse
-		
+
 		available = {
 			hidden_trigger = { always = no }
 		}
@@ -7948,7 +7948,7 @@ ENG_imperial_conference_decision = {
 		is_good = yes
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -7983,7 +7983,7 @@ ENG_imperial_conference_decision = {
 			}
 		}
 	}
-	
+
 	ENG_discuss_imperial_defense = {
 
 		icon = eng_trade_unions_support
@@ -8181,36 +8181,37 @@ political_actions = {
 		available = {
 			original_tag = ENG
 		}
+
 		complete_effect = {
-			FRA = { 
-			remove_state_core = 29
-			remove_state_core = 785 
-			remove_state_core = 15
-			remove_state_core = 14 
-			remove_state_core = 30
-			remove_state_core = 23
-			remove_state_core = 19
-			remove_state_core = 16
-			remove_state_core = 24
-			remove_state_core = 33
-			remove_state_core = 25
-			remove_state_core = 31
-			remove_state_core = 22
-			remove_state_core = 21
-			remove_state_core = 735
-			remove_state_core = 32
-			remove_state_core = 26
-			remove_state_core = 27
-			remove_state_core = 17
-			remove_state_core = 28
-			remove_state_core = 18
-			remove_state_core = 20
-			if = {
-				limit = {
-				Fra = {controls_state = 1}
+			FRA = {
+				remove_state_core = 29
+				remove_state_core = 785
+				remove_state_core = 15
+				remove_state_core = 14
+				remove_state_core = 30
+				remove_state_core = 23
+				remove_state_core = 19
+				remove_state_core = 16
+				remove_state_core = 24
+				remove_state_core = 33
+				remove_state_core = 25
+				remove_state_core = 31
+				remove_state_core = 22
+				remove_state_core = 21
+				remove_state_core = 735
+				remove_state_core = 32
+				remove_state_core = 26
+				remove_state_core = 27
+				remove_state_core = 17
+				remove_state_core = 28
+				remove_state_core = 18
+				remove_state_core = 20
+				if = {
+					limit = {
+						FRA = { controls_state = 1 }
+					}
+					transfer_state = 1
 				}
-				transfer_state = 1
-			}
 			}
 		}
 	}
@@ -8222,7 +8223,7 @@ political_actions = {
 	#	allowed = {
 	#		has_dlc = "Man the Guns"
 	#		original_tag = ENG
-	#		
+	#
 	#	}
 	#	available = {
 	#		has_government = democratic
@@ -8237,11 +8238,11 @@ political_actions = {
 	#		CZE = {
 	#			exists = no
 	#		}
-	#	
+	#
 	#		CZE = {
 	#			is_government_in_exile = no
 	#		}
-	#	
+	#
 	#		9 = { CONTROLLER = { has_war_with = ROOT } }
 	#	}
 	#	complete_effect = {
@@ -8398,11 +8399,11 @@ political_actions = {
 	}
 
 	macdonald_proposal = {
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			tag = ENG
 			has_government = democratic
@@ -8414,14 +8415,14 @@ political_actions = {
 		}
 
 		cost = 50
-		
+
 		visible = {
 			tag = ENG
 			has_government = democratic
 			has_war_with = GER
 			IRE = { exists = yes }
 		}
-		
+
 		complete_effect = {
 			IRE = { country_event = { id = wtt_britain.24 } }
 			add_popularity = { ideology = democratic popularity = 0.03 }
@@ -8436,11 +8437,11 @@ political_actions = {
 	ENG_invoke_the_alliance_of_1373 = {
 
 		icon = generic_prepare_civil_war
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			has_war = yes
 			has_government = democratic
@@ -8455,12 +8456,12 @@ political_actions = {
 		}
 
 		cost = 100
-		
+
 		visible = {
 			has_war = yes
 			NOT = { has_war_with = POR }
 		}
-		
+
 		complete_effect = {
 			POR = { country_event = generic.5 }
 		}
@@ -8479,11 +8480,11 @@ political_actions = {
 	}
 
 	ENG_request_azores_lease = {
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			has_war = yes
 			has_government = democratic
@@ -8504,7 +8505,7 @@ political_actions = {
 		ai_will_do = {
 			factor = 10
 		}
-		
+
 		visible = {
 			has_war = yes
 			POR = {
@@ -8512,7 +8513,7 @@ political_actions = {
 				NOT = { has_war_with = ROOT }
 			}
 		}
-		
+
 		complete_effect = {
 			POR = { country_event = wtt_britain_lease_azores.1 }
 		}
@@ -8521,7 +8522,7 @@ political_actions = {
 	ENG_abdication_crisis = { # timer for the player to see when the event chain ends
 
 		icon = eng_abdication_crisis
-		
+
 		available = {
 			has_country_flag = ENG_abdication_crisis_changed_mind
 		}
@@ -8552,7 +8553,7 @@ political_actions = {
 		is_good = yes
 
 		complete_effect = {
-			
+
 		}
 
 		timeout_effect = {
@@ -8563,7 +8564,7 @@ political_actions = {
 	ENG_britain_demands_treaty_compliance = { # ENG demanding scuttling of ships to maintain Washington Naval Treaty
 
 		icon = generic_naval
-		
+
 		available = {
 			if = {
 				limit = {
@@ -8670,7 +8671,7 @@ political_actions = {
 	ENG_declare_american_monarchy = {
 
 		icon = eng_install_government
-		
+
 		available = {
 			NOT = {
 				any_of = {
@@ -8731,7 +8732,7 @@ political_actions = {
 	ENG_install_american_monarchy = {
 
 		icon = eng_install_government
-		
+
 		available = {
 			361 = { is_owned_and_controlled_by = USA }
 		}
@@ -8783,7 +8784,7 @@ political_actions = {
 	ENG_create_pan_north_american_state = {
 
 		icon = eng_install_government
-		
+
 		available = {
 			NOT = {
 				any_of = {
@@ -8865,11 +8866,11 @@ operations = {
 	operation_fork = {
 
 		icon = generic_operation
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			tag = ENG
 			has_government = democratic
@@ -8886,28 +8887,28 @@ operations = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		visible = {
 			tag = ENG
 			has_war_with = GER
 			ICE = { exists = yes }
 			NOT = { ICE = { is_in_faction_with = ROOT } }
 		}
-		
+
 		complete_effect = {
 			declare_war_on = { target = ICE type = puppet_wargoal_focus }
 			add_popularity = { ideology = democratic popularity = -0.05 }
 		}
 	}
-	
+
 	invade_ireland = {
 
 		icon = generic_operation
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			tag = ENG
 			has_government = democratic
@@ -8921,7 +8922,7 @@ operations = {
 		}
 
 		cost = 50
-		
+
 		fire_only_once = yes
 
 		ai_will_do = {
@@ -8941,13 +8942,13 @@ operations = {
 				IRE = { has_added_tension_amount > 0.05 }
 			}
 		}
-		
+
 		visible = {
 			tag = ENG
 			has_war_with = GER
 			IRE = { exists = yes }
 		}
-		
+
 		complete_effect = {
 			add_state_claim = 113
 			add_state_claim = 134
@@ -8960,11 +8961,11 @@ operations = {
 	mers_el_kebir_raid = {
 
 		icon = generic_naval
-	
+
 		allowed = {
 			tag = ENG
 		}
-		
+
 		available = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			has_government = democratic
@@ -8982,7 +8983,7 @@ operations = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		visible = {
 			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
 			tag = ENG
@@ -8999,7 +9000,7 @@ operations = {
 				}
 			}
 		}
-		
+
 		complete_effect = {
 			random_other_country = {
 				limit = {

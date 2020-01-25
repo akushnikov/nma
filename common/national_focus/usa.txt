@@ -1,14 +1,14 @@
 focus_tree = {
 	id = usa_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = USA
 		}
-		
+
 		modifier = {
 			add = 10
 			original_tag = USA
@@ -23,7 +23,7 @@ focus_tree = {
 #		mutually_exclusive = { focus =  }
 #		x = -3
 #		y = 0
-#		relative_position_id = 
+#		relative_position_id =
 #
 #		cost = 10
 #
@@ -34,7 +34,7 @@ focus_tree = {
 #		available = {
 #
 #		}
-#		
+#
 #		bypass = {
 #
 #		}
@@ -65,7 +65,6 @@ focus_tree = {
 			}
 		}
 
-		mutually_exclusive = { focus = USA_reestablish_the_gold_standard }
 		cost = 10
 
 		ai_will_do = {
@@ -75,7 +74,7 @@ focus_tree = {
 		available = {
 			has_government = democratic
 		}
-		
+
 		bypass = {
 
 		}
@@ -107,7 +106,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -154,7 +153,7 @@ focus_tree = {
 				has_country_leader = { ruling_only = yes name = "Harry S. Truman" }
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -183,7 +182,7 @@ focus_tree = {
 		available = {
 			communism > 0.2
 		}
-		
+
 		bypass = {
 
 		}
@@ -234,7 +233,7 @@ focus_tree = {
 		available = {
 			communism > 0.35
 		}
-		
+
 		bypass = {
 			has_government = communism
 		}
@@ -278,7 +277,7 @@ focus_tree = {
 			has_government = communism
 			country_exists = "PHI"
 		}
-		
+
 		bypass = {
 			"PHI" = {
 				not = { is_subject_of = ROOT }
@@ -322,7 +321,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -331,7 +330,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		
+
 
 		completion_reward = {
 			if = {
@@ -347,11 +346,11 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { 
+				limit = {
 					523 = {
 						not = {
 							is_owned_by = PNG #already decolonized
-						}	
+						}
 					}
 				}
 			}
@@ -368,14 +367,14 @@ focus_tree = {
 			}
 		}
 	}
-	
-#  # #  # ###  ##  #  #     ###  ### ###  ###  ###  ## ### #  # ###  ##  ### ###  ##  #  # 
-#  # ## #  #  #  # ## #     #  # #   #  # #  # #   #   #   ## #  #  #  #  #   #  #  # ## # 
-#  # # ##  #  #  # # ##     ###  ##  ###  ###  ##   #  ##  # ##  #  ####  #   #  #  # # ## 
-#  # #  #  #  #  # #  #     #  # #   #    #  # #     # #   #  #  #  #  #  #   #  #  # #  # 
- ##  #  # ###  ##  #  #     #  # ### #    #  # ### ##  ### #  #  #  #  #  #  ###  ##  #  # 
 
-	
+#  # #  # ###  ##  #  #     ###  ### ###  ###  ###  ## ### #  # ###  ##  ### ###  ##  #  #
+#  # ## #  #  #  # ## #     #  # #   #  # #  # #   #   #   ## #  #  #  #  #   #  #  # ## #
+#  # # ##  #  #  # # ##     ###  ##  ###  ###  ##   #  ##  # ##  #  ####  #   #  #  # # ##
+#  # #  #  #  #  # #  #     #  # #   #    #  # #     # #   #  #  #  #  #  #   #  #  # #  #
+ ##  #  # ###  ##  #  #     #  # ### #    #  # ### ##  ### #  #  #  #  #  #  ###  ##  #  #
+
+
 	focus = {
 		id = USA_union_representation_act
 		icon = GFX_focus_usa_union_representation_act
@@ -398,7 +397,7 @@ focus_tree = {
 			not = { has_completed_focus = USA_limited_intervention }
 			not = { has_completed_focus = USA_neutrality_act }
 		}
-		
+
 		bypass = {
 
 		}
@@ -458,7 +457,7 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -492,7 +491,7 @@ focus_tree = {
 			}
 			congress_high_support_trigger = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -542,7 +541,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -575,7 +574,7 @@ focus_tree = {
 				has_government = communism
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -623,7 +622,7 @@ focus_tree = {
 		available = {
 			congress_high_support_trigger = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -654,7 +653,7 @@ focus_tree = {
 		available = {
 			congress_high_support_trigger = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -702,7 +701,7 @@ focus_tree = {
 				has_global_flag = USA_civil_war_fired
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -715,14 +714,14 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = USA_readmit_state show_effect_tooltip = yes }
 		}
 	}
-	
-#   #  ##  ###  ###      ##  ###   ##  #  # ###  
-#   # #  # #  # #       #    #  # #  # #  # #  # 
-# # # #### ###  ##      # ## ###  #  # #  # ###  
-# # # #  # #  # #       #  # #  # #  # #  # #    
- # #  #  # #  # ###      ##  #  #  ##   ##  #    
 
-	
+#   #  ##  ###  ###      ##  ###   ##  #  # ###
+#   # #  # #  # #       #    #  # #  # #  # #  #
+# # # #### ###  ##      # ## ###  #  # #  # ###
+# # # #  # #  # #       #  # #  # #  # #  # #
+ # #  #  # #  # ###      ##  #  #  ##   ##  #
+
+
 	focus = {
 		id = USA_reach_out_to_the_ware_group
 		icon = GFX_goal_generic_propaganda
@@ -743,7 +742,7 @@ focus_tree = {
 				has_government = communism
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -779,7 +778,7 @@ focus_tree = {
 				has_war_with = SOV
 			}
 		}
-		
+
 		bypass = {
 			SOV = {
 				OR = {
@@ -797,7 +796,7 @@ focus_tree = {
 		completion_reward = {
 			SOV = { add_to_tech_sharing_group = USA_SOV_tech_group }
 			add_to_tech_sharing_group = USA_SOV_tech_group
-		}	
+		}
 	}
 
 	focus = {
@@ -858,7 +857,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -904,7 +903,7 @@ focus_tree = {
 		available = {
 			communism > 0.3
 		}
-		
+
 		bypass = {
 
 		}
@@ -1034,7 +1033,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -1151,11 +1150,11 @@ focus_tree = {
 			}
 		}
 	}
-#	#   # ## #  
-#   # #  # #  # 
-# # # ###  #### 
-# # # #    #  # 
- # #  #    #  # 
+#	#   # ## #
+#   # #  # #  #
+# # # ###  ####
+# # # #    #  #
+ # #  #    #  #
 
 	focus = {
 		id = USA_wpa
@@ -1192,7 +1191,7 @@ focus_tree = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
 		}
-		
+
 		bypass = {
 			not = {
 				OR = {
@@ -1233,7 +1232,7 @@ focus_tree = {
 			has_government = democratic
 			not = { has_country_flag = USA_great_depression_cooldown }
 		}
-		
+
 		bypass = {
 			not = {
 				OR = {
@@ -1273,7 +1272,7 @@ focus_tree = {
 			has_government = democratic
 			not = { has_country_flag = USA_great_depression_cooldown }
 		}
-		
+
 		bypass = {
 
 		}
@@ -1374,7 +1373,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1393,7 +1392,7 @@ focus_tree = {
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		available = {
-			
+
 		}
 		x = 2
 		y = 2
@@ -1414,16 +1413,16 @@ focus_tree = {
 			}
 		}
 	}
-#   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  # 
-#    #  ## ##  #   #  #   #  #      #  ## #  #  #   #  # #   # #   ## #  #   #  #  # ## # 
-#    #  # # #  #   #  ##  #  #      #  # ##  #  ##  ###   # #  ##  # ##  #   #  #  # # ## 
-#    #  #   #  #   #  #   #  #      #  #  #  #  #   #  #  # #  #   #  #  #   #  #  # #  # 
-### ### #   # ###  #  ### ###      ### #  #  #  ### #  #   #   ### #  #  #  ###  ##  #  # 
+#   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  #
+#    #  ## ##  #   #  #   #  #      #  ## #  #  #   #  # #   # #   ## #  #   #  #  # ## #
+#    #  # # #  #   #  ##  #  #      #  # ##  #  ##  ###   # #  ##  # ##  #   #  #  # # ##
+#    #  #   #  #   #  #   #  #      #  #  #  #  #   #  #  # #  #   #  #  #   #  #  # #  #
+### ### #   # ###  #  ### ###      ### #  #  #  ### #  #   #   ### #  #  #  ###  ##  #  #
 
 	focus = {
 		id = USA_limited_intervention
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
+		prerequisite = { focus = USA_continue_the_new_deal }
 		mutually_exclusive = { focus = USA_neutrality_act }
 		continue_if_invalid = yes
 		x = 0
@@ -1438,13 +1437,13 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available = {
-			congress_high_support_trigger = yes 
+			congress_high_support_trigger = yes
 			has_government = democratic
 			NOT = { has_idea_with_trait = fascist_demagogue }
 			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
 		bypass = {
-			
+
 		}
 
 		completion_reward = {
@@ -1499,7 +1498,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		available_if_capitulated = yes
@@ -1538,7 +1537,7 @@ focus_tree = {
 		available = {
 			has_government = democratic
 		}
-		
+
 		bypass = {
 			OR = {
 				has_war_with = GER
@@ -1579,7 +1578,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = USA_focus_on_europe }
 		available = {
-			
+
 		}
 		x = -1
 		y = 4
@@ -1615,7 +1614,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -1645,7 +1644,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -1706,7 +1705,7 @@ focus_tree = {
 		id = USA_manhattan_project
 		icon = GFX_focus_wonderweapons
 		prerequisite = { focus = USA_scientist_haven }
-		
+
 		x = 0
 		y = 1
 		relative_position_id = USA_scientist_haven
@@ -1737,7 +1736,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 4
 		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
+		prerequisite = { focus = USA_continue_the_new_deal }
 		mutually_exclusive = { focus = USA_limited_intervention }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
@@ -1752,7 +1751,7 @@ focus_tree = {
 			NOT = { has_idea_with_trait = fascist_demagogue }
 			NOT = { has_idea_with_trait = communist_revolutionary }
 		}
-		
+
 		bypass = {
 
 		}
@@ -1763,7 +1762,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 200
-			add_ideas = USA_neutrality_act 
+			add_ideas = USA_neutrality_act
 			add_war_support = -0.05
 			if = {
 				limit = {
@@ -1816,7 +1815,7 @@ focus_tree = {
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -1919,7 +1918,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-				}			
+				}
 			}
 		}
 		complete_tooltip = {
@@ -2050,8 +2049,8 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						has_idea = isolation 
-						has_idea = undisturbed_isolation 
+						has_idea = isolation
+						has_idea = undisturbed_isolation
 						has_country_flag = USA_the_giant_wakes_added_civ_eco
 					}
 				}
@@ -2081,13 +2080,13 @@ focus_tree = {
 			show_ideas_tooltip = USA_general_motors
 		}
 	}
-	
+
 
 	focus = {
 		id = USA_military_construction
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = USA_arsenal_of_democracy }
-		
+
 		available = {
 			OR = {
 				has_war = yes
@@ -2166,7 +2165,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					limit = { 
+					limit = {
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -2188,7 +2187,7 @@ focus_tree = {
 			}
 			371 = {
 				if = {
-					limit = { 
+					limit = {
 						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
@@ -2219,7 +2218,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					limit = { 
+					limit = {
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -2241,7 +2240,7 @@ focus_tree = {
 			}
 			375 = {
 				if = {
-					limit = { 
+					limit = {
 						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
@@ -2255,7 +2254,7 @@ focus_tree = {
 					}
 					set_state_flag = USA_military_construction_3Inf
 				}
-			}			
+			}
 			if = {
 				limit = {
 					378 = {
@@ -2272,7 +2271,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					limit = { 
+					limit = {
 						free_building_slots = {
 							building = infrastructure
 							size > 2
@@ -2294,7 +2293,7 @@ focus_tree = {
 			}
 			378 = {
 				if = {
-					limit = { 
+					limit = {
 						is_owned_and_controlled_by = USA
 						free_building_slots = {
 							building = infrastructure
@@ -2308,7 +2307,7 @@ focus_tree = {
 					}
 					set_state_flag = USA_military_construction_3Inf
 				}
-			}			
+			}
 		}
 	}
 
@@ -2324,7 +2323,7 @@ focus_tree = {
 		}
 
 		continue_if_invalid = yes
-		
+
 		x = 0
 		y = 2
 		relative_position_id = USA_military_construction
@@ -2422,15 +2421,15 @@ focus_tree = {
 			}
 			air_experience = 50
 			navy_experience = 50
-			army_experience = 10			
+			army_experience = 10
 		}
 	}
 
-#   #  ##  ###      ###  #    ##  #  #  ## 
-#   # #  # #  #     #  # #   #  # ## # #   
-# # # #### ###      ###  #   #### # ##  #  
-# # # #  # #  #     #    #   #  # #  #   # 
- # #  #  # #  #     #    ### #  # #  # ##  
+#   #  ##  ###      ###  #    ##  #  #  ##
+#   # #  # #  #     #  # #   #  # ## # #
+# # # #### ###      ###  #   #### # ##  #
+# # # #  # #  #     #    #   #  # #  #   #
+ # #  #  # #  #     #    ### #  # #  # ##
 
  	focus = {
 		id = USA_war_plans_division
@@ -2444,7 +2443,7 @@ focus_tree = {
 				not = { has_dlc = "Man the Guns" }
 			}
 		}
-		
+
 		cost = 10
 
 		ai_will_do = {
@@ -2454,7 +2453,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2486,7 +2485,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2499,7 +2498,7 @@ focus_tree = {
 			add_ideas = USA_intervention_in_europe
 		}
 	}
-	
+
 	focus = {
 		id = USA_war_plan_silver
 		icon = GFX_focus_attack_italy
@@ -2513,13 +2512,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-	
+
 		available = {
-			
+
 		}
-			
+
 		bypass = {
-	
+
 		}
 
 		cancel_if_invalid = yes
@@ -2576,10 +2575,10 @@ focus_tree = {
 		bypass = {
 			NOT = { 696 = { is_controlled_by = ENG } }
 			NOT = { 331 = { is_controlled_by = ENG } }
-			NOT = { 308 = { is_controlled_by = ENG } } 
-			NOT = { 693 = { is_controlled_by = ENG } } 
-			NOT = { 689 = { is_controlled_by = ENG } } 
-			NOT = { 691 = { is_controlled_by = ENG } } 
+			NOT = { 308 = { is_controlled_by = ENG } }
+			NOT = { 693 = { is_controlled_by = ENG } }
+			NOT = { 689 = { is_controlled_by = ENG } }
+			NOT = { 691 = { is_controlled_by = ENG } }
 			ENG = { exists = no }
 		}
 
@@ -2595,7 +2594,7 @@ focus_tree = {
 				custom_effect_tooltip = needs_approval
 				country_event = { id = usa.4 days = 1 }
 			}
-			
+
 			effect_tooltip = {
 				custom_effect_tooltip = USA_destroyers_for_bases_tt
 				transfer_state = 696
@@ -2604,11 +2603,11 @@ focus_tree = {
 				transfer_state = 693
 				transfer_state = 689
 				transfer_state = 691
-				
+
 			}
 		}
 	}
-	
+
 	focus = {
 		id = USA_intervention_in_asia
 		icon = GFX_goal_generic_major_war
@@ -2625,7 +2624,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2652,7 +2651,7 @@ focus_tree = {
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = USA_intervention_in_asia }
 		available = {
-			
+
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -2689,7 +2688,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2800,11 +2799,11 @@ focus_tree = {
 		}
 	}
 
-#   #  ##  ###      ###  ### ###   ##  ###  ### #   # ### #  # ### 
-#   # #  # #  #     #  # #   #  # #  # #  #  #  ## ## #   ## #  #  
-# # # #### ###      #  # ##  ###  #### ###   #  # # # ##  # ##  #  
-# # # #  # #  #     #  # #   #    #  # #  #  #  #   # #   #  #  #  
- # #  #  # #  #     ###  ### #    #  # #  #  #  #   # ### #  #  #  
+#   #  ##  ###      ###  ### ###   ##  ###  ### #   # ### #  # ###
+#   # #  # #  #     #  # #   #  # #  # #  #  #  ## ## #   ## #  #
+# # # #### ###      #  # ##  ###  #### ###   #  # # # ##  # ##  #
+# # # #  # #  #     #  # #   #    #  # #  #  #  #   # #   #  #  #
+ # #  #  # #  #     ###  ### #    #  # #  #  #  #   # ### #  #  #
 
 
 	focus = {
@@ -2828,7 +2827,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2866,7 +2865,7 @@ focus_tree = {
 				congress_low_support_trigger = yes
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -2896,7 +2895,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_war_support < 0.4 
+					has_war_support < 0.4
 				}
 				USA_congress_medium_opposition = yes
 			}
@@ -2951,7 +2950,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -2986,7 +2985,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3015,7 +3014,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3044,7 +3043,7 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 		}
-		
+
 		bypass = {
 
 		}
@@ -3057,7 +3056,7 @@ focus_tree = {
 			add_ideas = USA_womens_armed_service_integration_act
 		}
 	}
-	
+
 	focus = {
 		id = USA_support_rock_island
 		icon = GFX_goal_generic_army_artillery
@@ -3098,7 +3097,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3133,7 +3132,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3164,7 +3163,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3194,7 +3193,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3228,7 +3227,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3257,7 +3256,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3276,11 +3275,11 @@ focus_tree = {
 
 
 
- ##  ### ###       ## ###  ##  ### ###  ##  #  # 
-#  #  #  #  #     #   #   #  #  #   #  #  # ## # 
-####  #  ###       #  ##  #     #   #  #  # # ## 
-#  #  #  #  #       # #   #  #  #   #  #  # #  # 
-#  # ### #  #     ##  ###  ##   #  ###  ##  #  # 
+ ##  ### ###       ## ###  ##  ### ###  ##  #  #
+#  #  #  #  #     #   #   #  #  #   #  #  # ## #
+####  #  ###       #  ##  #     #   #  #  # # ##
+#  #  #  #  #       # #   #  #  #   #  #  # #  #
+#  # ### #  #     ##  ###  ##   #  ###  ##  #  #
 
 	focus = {
 		id = USA_air_war_plans_division
@@ -3451,7 +3450,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3487,7 +3486,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3521,7 +3520,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3535,11 +3534,11 @@ focus_tree = {
 		}
 	}
 
-#  #  ##  #   # #   #      ## ###  ##  ### ###  ##  #  # 
-## # #  # #   #  # #      #   #   #  #  #   #  #  # ## # 
-# ## ####  # #    #        #  ##  #     #   #  #  # # ## 
-#  # #  #  # #    #         # #   #  #  #   #  #  # #  # 
-#  # #  #   #     #       ##  ###  ##   #  ###  ##  #  # 
+#  #  ##  #   # #   #      ## ###  ##  ### ###  ##  #  #
+## # #  # #   #  # #      #   #   #  #  #   #  #  # ## #
+# ## ####  # #    #        #  ##  #     #   #  #  # # ##
+#  # #  #  # #    #         # #   #  #  #   #  #  # #  #
+#  # #  #   #     #       ##  ###  ##   #  ###  ##  #  #
 
 	focus = {
 		id = USA_two_ocean_navy_act
@@ -3568,7 +3567,7 @@ focus_tree = {
 			controls_state = 378
 			controls_state = 358
 		}
-		
+
 		bypass = {
 
 		}
@@ -3578,7 +3577,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			378 = { 
+			378 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
@@ -3586,7 +3585,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			358 = { 
+			358 = {
 				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = dockyard
@@ -3599,12 +3598,12 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					 has_war_support < 0.4 
+					 has_war_support < 0.4
 				}
 				USA_congress_medium_opposition = yes
 			}
-			if = { 
-				limit = { 
+			if = {
+				limit = {
 					378 = {
 						free_building_slots = {
 							building = dockyard
@@ -3613,7 +3612,7 @@ focus_tree = {
 						}
 					}
 				}
-				378 = { 
+				378 = {
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = dockyard
@@ -3622,8 +3621,8 @@ focus_tree = {
 					}
 				}
 			}
-			if = { 
-				limit = { 
+			if = {
+				limit = {
 					358 = {
 						free_building_slots = {
 							building = dockyard
@@ -3632,7 +3631,7 @@ focus_tree = {
 						}
 					}
 				}
-				358 = { 
+				358 = {
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = dockyard
@@ -3659,7 +3658,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3672,7 +3671,7 @@ focus_tree = {
 			add_ideas = USA_maritime_commission
 		}
 	}
-	
+
 	focus = {
 		id = USA_liberty_ships
 		icon = GFX_goal_generic_amphibious_assault
@@ -3710,7 +3709,7 @@ focus_tree = {
 			add_ideas = bureau_of_ships_focus
 		}
 	}
-	
+
 	focus = {
 		id = USA_battleship_primacy
 		icon = GFX_goal_generic_navy_battleship
@@ -3775,7 +3774,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3878,7 +3877,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3894,7 +3893,7 @@ focus_tree = {
 				bonus = 1.0
 				category = radar_tech
 			}
-			
+
 		}
 	}
 
@@ -3914,7 +3913,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = escort_effort_focus
-			
+
 		}
 	}
 
@@ -3958,7 +3957,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -3999,7 +3998,7 @@ focus_tree = {
 		available = {
 
 		}
-		
+
 		bypass = {
 
 		}
@@ -4075,22 +4074,22 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
-		
+
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_amphibious_operations
 				bonus = 1.0
 				uses = 2
-				category = tp_tech 
+				category = tp_tech
 			}
 		}
 	}
 
-	
 
-	
 
-	
 
-	
+
+
+
+
 }
