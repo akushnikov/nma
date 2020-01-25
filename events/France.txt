@@ -10,28 +10,28 @@ country_event = {
 	title = france.1.t
 	desc = france.1.d
 	picture = GFX_report_event_japan_army_mountainside
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Accept demands
 		name = france.1.a
 		ai_chance = {
-			factor = 25 
+			factor = 25
 			modifier = {
 				factor = 50
 				has_war = yes
 				any_enemy_country = {
-					strength_ratio = { 
-						tag = ROOT 
+					strength_ratio = {
+						tag = ROOT
 						ratio < 0.4
 					}
 				}
 			}
 			modifier = {
 				factor = 75
-				16 = { NOT = { is_controlled_by = FRA } } #Paris	
+				16 = { NOT = { is_controlled_by = FRA } } #Paris
 			}
-		} 
+		}
 		JAP = {
 			country_event = { days = 5 id = japan.6 }
 		}
@@ -44,9 +44,9 @@ country_event = {
 	title = france.2.t
 	desc = france.2.d
 	picture = GFX_report_event_bunker_01
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.2.a
 		18 = {
@@ -108,7 +108,7 @@ country_event = {
 	picture = GFX_report_event_bunker_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.3.a
 		735 = {
@@ -166,9 +166,9 @@ country_event = {
 	title = france.10.t
 	desc = france.10.d
 	picture = GFX_report_event_german_parade_paris
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = FRA
 		has_war_with = GER
@@ -183,7 +183,7 @@ country_event = {
 			}
 		}
 		has_civil_war = no
-		
+
 		#Don't fire if France has pushed pretty far into ITA or GER
 		NOT = {
 			any_state = {
@@ -201,7 +201,7 @@ country_event = {
 					}
 				}
 			}
-		}		
+		}
 
 		#Don't fire if any states in France are controlled by a different human player
 		NOT = {
@@ -222,7 +222,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 2
 	}
@@ -230,7 +230,7 @@ country_event = {
 	immediate = {
 		set_global_flag = achievement_france_surrender
 	}
-	
+
 	option = { # Become Vichy
 		name = france.10.a
 		trigger = { is_ai = no }
@@ -274,9 +274,9 @@ country_event = {
 	title = france.11.t
 	desc = france.11.d
 	picture = GFX_report_event_degaulle_churchill
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Refuse Union
 		name = france.11.a
 		ai_chance = {
@@ -303,9 +303,9 @@ country_event = {
 	title = france.12.t
 	desc = france.12.d
 	picture = GFX_report_event_chamberlain_announce
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.12.a
 		# Franco-British Union created
@@ -333,7 +333,7 @@ country_event = {
 		custom_effect_tooltip = FRA_franco_british_cores
 		hidden_effect = {
 			ENG = { set_cosmetic_tag = FRA_UK }
-			GER = { 
+			GER = {
 				country_event = { hours = 6 id = news.35 }
 			}
 		}
@@ -346,9 +346,9 @@ country_event = {
 	title = france.13.t
 	desc = france.13.d
 	picture = GFX_report_event_pierre_laval
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Become Vichy
 		name = france.13.a
 		trigger = { is_ai = no }
@@ -372,22 +372,22 @@ country_event = {
 	title = france.14.t
 	desc = france.14.d
 	picture = GFX_report_event_german_parade_paris
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Agree
 		name = france.14.a
-		
+
 	 GER = {
 			country_event = { hours = 6 id = france.37 }
 	 }
 
 }
-	 
+
 	option = { # Conquer everything!
 		name = france.14.b
-		ai_chance = { 
-			factor = 50 
+		ai_chance = {
+			factor = 50
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
@@ -405,9 +405,9 @@ country_event = {
 	title = france.15.t
 	desc = france.15.d
 	picture = GFX_report_event_french_resistance_01
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.15.a
 	}
@@ -428,13 +428,13 @@ country_event = {
 		has_capitulated = yes
 		#16 = { is_owned_by = FRA }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 4
 	}
 
 	option = {
-		
+
 		name = france.16.a
 		remove_ideas = FRA_victors_of_wwi
 		remove_ideas = FRA_disjointed_government
@@ -442,7 +442,7 @@ country_event = {
 		if = {
 			limit = { 461 = { is_owned_by = FRA }
 			}
-			set_capital = 461 
+			set_capital = 461
 	}
 		}
 }
@@ -453,9 +453,9 @@ country_event = {
 	title = france.17.t
 	desc = france.17.d
 	picture = GFX_report_event_worried_french
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.17.a
 		ai_chance = { factor = 90 }
@@ -483,9 +483,9 @@ country_event = {
 	title = france.18.t
 	desc = france.18.d
 	picture = GFX_report_event_soldiers_in_france
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.18.a
 		effect_tooltip = {
@@ -500,9 +500,9 @@ country_event = {
 	title = france.19.t
 	desc = france.19.d
 	picture = GFX_report_event_finnish_letter
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.19.a
 	}
@@ -514,9 +514,9 @@ country_event = {
 	title = france.20.t
 	desc = france.20.d
 	picture = GFX_report_event_degaulle_churchill
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		custom_effect_tooltip = france.20.a_tt
 		set_country_flag = france_de_gaulle
@@ -528,7 +528,7 @@ country_event = {
 				expire = "1965.1.1"
 				ideology = conservatism
 				traits = {
-					
+
 				}
 			}
 		}
@@ -542,7 +542,7 @@ country_event = {
 	title = france.21.t
 	desc = france.21.d
 	picture = GFX_report_event_worker_protests
-	
+
 	trigger = {
 		NOT = { has_government = communism }
 		tag = FRA
@@ -551,7 +551,7 @@ country_event = {
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {	days = 60	}
 
 	option = {
@@ -577,7 +577,7 @@ country_event = {
 		add_popularity = {
 			ideology = communism
 			popularity = 0.07
-		}		
+		}
 	}
 }
 # Revoke Worker rights
@@ -586,7 +586,7 @@ country_event = {
 	title = france.22.t
 	desc = france.22.d
 	picture = GFX_report_event_airplane_factory
-	
+
 	trigger = {
 		NOT = { has_government = communism }
 		has_idea = FRA_matignon_agreements
@@ -605,7 +605,7 @@ country_event = {
 	}
 	option = {
 		name = france.22.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 10
 			modifier = {
 				factor = 0
@@ -617,7 +617,7 @@ country_event = {
 			ideology = communism
 			popularity = 0.05
 		}
-	}	
+	}
 }
 # Strikes are over
 country_event = {
@@ -633,7 +633,7 @@ country_event = {
 	}
 
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {	days = 2	}
 
 	option = {
@@ -658,7 +658,7 @@ country_event = {
 #	}
 #
 #	fire_only_once = yes
-#	
+#
 #	mean_time_to_happen = {	days = 2	}
 #
 #	option = {
@@ -675,9 +675,9 @@ country_event = {
 #			target = SOV
 #			modifier = FRA_ban_communism
 #		}
-#		
+#
 #		every_other_country = {
-#			limit = { 
+#			limit = {
 #				has_government = communism
 #			}
 #			add_opinion_modifier = {
@@ -703,7 +703,7 @@ country_event = {
 	desc = france.25.d
 	picture = GFX_report_event_hitler_croatia_handshake
 
-	is_triggered_only	= yes	
+	is_triggered_only	= yes
 	option = { # Follow Britain's lead
 		name = france.25.a
 		ai_chance = {
@@ -717,7 +717,7 @@ country_event = {
 			limit = {
 				ITA = {
 					OR = {
-						NOT = { has_completed_focus = ITA_yugoslavia_friend }						
+						NOT = { has_completed_focus = ITA_yugoslavia_friend }
 						is_in_faction_with = GER
 						exists = no
 					}
@@ -726,10 +726,10 @@ country_event = {
 			YUG = {
 				add_opinion_modifier = { target = FRA modifier = western_betrayal }
 				country_event = { id = yugoslavia.5 hours = 6 }
-			}			
+			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				ITA = {
 					has_completed_focus = ITA_yugoslavia_friend
 					NOT = { is_in_faction_with = GER }
@@ -750,7 +750,7 @@ country_event = {
 		}
 		add_political_power = -200
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		YUG = { 
+		YUG = {
 			country_event = { id = yugoslavia.4 days = 1 }
 			add_opinion_modifier = { target = FRA modifier = offered_support }
 		}
@@ -766,14 +766,14 @@ country_event = {
 		}
 		if = {
 			limit = { is_in_faction_with = ENG }
-			ENG = { 
+			ENG = {
 				country_event = { id = britain.15 hours = 6 }
 				remove_from_faction = FRA
 			}
 		}
 		if = {
 			limit = { is_in_faction_with = GER }
-			GER = { 
+			GER = {
 				remove_from_faction = FRA
 			}
 		}
@@ -856,7 +856,7 @@ country_event = {
 			}
 		}
 		add_opinion_modifier = { target = GER modifier = condemn_aggression }
-		YUG = { 
+		YUG = {
 			country_event = { id = yugoslavia.3 days = 1 }
 			add_opinion_modifier = { target = FRA modifier = offered_support }
 		}
@@ -869,7 +869,7 @@ country_event = {
 					generator = { 102 }
 				}
 			}
-		}		
+		}
 	}
 
 	#Abandon
@@ -882,15 +882,15 @@ country_event = {
 			country_event = { id = yugoslavia.3 hours = 6 }
 			add_opinion_modifier = { target = FRA modifier = western_betrayal }
 		}
-	}	
+	}
 }
 
 # Vichy France: Germany is handing over some of our land
 country_event = {
 	id = france.27
 	title = france.27.t
-	desc = { 
-		text = france.27.d_1_state 
+	desc = {
+		text = france.27.d_1_state
 		trigger = {
 			OR = {
 				NOT = { has_global_flag = ITA_claims_on_france_735 }
@@ -900,14 +900,14 @@ country_event = {
 				has_global_flag = ITA_claims_on_france_735
 				NOT = { has_global_flag = ITA_claims_on_france_1 }
 			}
-		} 
+		}
 	}
-	desc = { 
+	desc = {
 		text = france.27.d_both
-		trigger = { 
-			has_global_flag = ITA_claims_on_france_735 
+		trigger = {
+			has_global_flag = ITA_claims_on_france_735
 			has_global_flag = ITA_claims_on_france_1
-		} 
+		}
 	}
 	picture = GFX_report_event_worried_french
 
@@ -915,7 +915,7 @@ country_event = {
 
 	option = {
 		name = france.27.a
-		
+
 		effect_tooltip = {
 			if = {
 				limit = { has_global_flag = ITA_claims_on_france_735 }
@@ -1011,15 +1011,15 @@ country_event = {
     title = france.31.t
     desc = france.31.d
     picture = GFX_report_event_german_parade_paris
- 
+
     fire_only_once = yes
- 
+
     trigger = {
         original_tag = FRA
         has_government = democratic
         has_global_flag = fall_of_france
         NOT = { has_country_flag = france_de_gaulle }
-    } 
+    }
 
     mean_time_to_happen = {
         days = 7
@@ -1045,7 +1045,7 @@ country_event = {
 country_event = {
     id = france.32
     hidden = yes
- 
+
     fire_only_once = yes
 
     is_triggered_only = yes
@@ -1078,11 +1078,11 @@ country_event = {
 	id = france.33
 	title = france.33.title
 	desc = france.33.desc
-	
+
 	picture = GFX_report_event_generic_peaceful_annexation
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = ENG
 		has_war = no
@@ -1092,21 +1092,21 @@ country_event = {
 			is_core_of = FRA
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
 
 	option = { # Release
 		name = france.33.a
-		
+
 		if = {
 			limit = {
 				has_cosmetic_tag = FRA_UK
 			}
 			drop_cosmetic_tag = yes
 		}
-		
+
 		if = {
 			limit = {
 				NOT = { country_exists = FRA }
@@ -1120,7 +1120,7 @@ country_event = {
 						ruling_party = democratic
 						elections_allowed = yes
 						parties = {
-							democratic = { 
+							democratic = {
 								popularity = 60
 							}
 							neutrality = {
@@ -1145,7 +1145,7 @@ country_event = {
 						ruling_party = fascism
 						elections_allowed = no
 						parties = {
-							democratic = { 
+							democratic = {
 								popularity = 20
 							}
 							neutrality = {
@@ -1170,7 +1170,7 @@ country_event = {
 						ruling_party = communism
 						elections_allowed = no
 						parties = {
-							democratic = { 
+							democratic = {
 								popularity = 20
 							}
 							neutrality = {
@@ -1195,7 +1195,7 @@ country_event = {
 						ruling_party = neutrality
 						elections_allowed = no
 						parties = {
-							democratic = { 
+							democratic = {
 								popularity = 15
 							}
 							neutrality = {
@@ -1212,10 +1212,10 @@ country_event = {
 				}
 			}
 			release = FRA
-			
+
 			set_autonomy = { target = FRA autonomy_state = autonomy_free }
 		}
-		
+
 		every_state = {
 			limit = {
 				is_core_of = ENG
@@ -1223,7 +1223,7 @@ country_event = {
 			}
 			remove_core_of = ENG
 		}
-		
+
 		hidden_effect = { # This looks odd in the tooltip
 			every_other_country = {
 				limit = {
@@ -1239,7 +1239,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		if = {
 			limit = {
 				is_faction_leader = yes
@@ -1250,7 +1250,7 @@ country_event = {
 			}
 			add_to_faction = FRA
 		}
-		
+
 		every_unit_leader = {
 			limit = {
 				has_unit_leader_flag = {
@@ -1259,27 +1259,27 @@ country_event = {
 			}
 			set_nationality = FRA
 		}
-		
+
 		hidden_effect =  {
 			news_event = { id = france.34 days = 1 }
 		}
-		
+
 		ai_chance = {
 			factor = 60
-			
+
 			modifier = {
 				factor = 2
 				has_government = democratic
 			}
 		}
 	}
-	
+
 	option = { # Don't release
 		name = france.33.b
-		
+
 		add_war_support = -0.1
 		add_stability = -0.2
-		
+
 		every_state = {
 			limit = {
 				is_core_of = ENG
@@ -1287,7 +1287,7 @@ country_event = {
 			}
 			remove_core_of = ENG
 		}
-		
+
 		every_unit_leader = {
 			limit = {
 				has_unit_leader_flag = {
@@ -1296,10 +1296,10 @@ country_event = {
 			}
 			set_nationality = FRA
 		}
-		
+
 		ai_chance = {
 			factor = 40
-			
+
 			modifier = {
 				factor = 0.5
 				has_stability < 0.5
@@ -1326,11 +1326,11 @@ news_event = {
 	id = france.34
 	title = france.34.title
 	desc = france.34.desc
-	
+
 	picture = GFX_news_event_degaulle_churchill
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = france.34.a
 		trigger = {
@@ -1342,7 +1342,7 @@ news_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = france.34.b
 		trigger = {
@@ -1360,54 +1360,7 @@ news_event = {
 #
 #
 #
-	
 
-
-country_event = {
-	id = france.36
-	title = election.3.t
-	desc = election.3.d
-	picture = GFX_report_event_tank_factory
-	
-	fire_only_once = yes
-
-	is_triggered_only = no
-
-	trigger = {
-		tag = FRA
-	 	date > 1936.8.1
-	}
-
-	mean_time_to_happen = {
-		days = 1	
-	}
-
-	option = {
-		name = election.3.a
-		
-		if = {
-			limit = { has_idea = civilian_economy }
-			add_ideas = low_economic_mobilisation
-			add_war_support = 0.05
-		}
-		if = {
-			limit = { has_idea = isolation }
-			add_ideas = civilian_economy
-		}
-		if = {
-			limit = { has_idea = undisturbed_isolation }
-			add_ideas = isolation
-		}
-		if = {
-			limit = { has_idea = volunteer_only }
-			add_ideas = limited_conscription
-		}
-		if = {
-			limit = { has_idea = disarmed_nation }
-			add_ideas = volunteer_only
-		}
-	}
-}
 
 # France wants Armistice (Germany)
 country_event = {
@@ -1415,11 +1368,11 @@ country_event = {
 	title = france.14.t
 	desc = france.14.d
 	picture = GFX_report_event_german_parade_paris
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = { # Agree
 		name = france.14.a
 		ai_chance = {
@@ -1538,7 +1491,7 @@ country_event = {
 			}
 			ITA = { transfer_state = 735 }
 		}
-		
+
 		#Spanish occupation zone
 		if = {
 			limit = {
@@ -1564,20 +1517,20 @@ country_event = {
 						limit = {
 							458 = {
 								owner = { original_tag = FRA }
-								controller = { 
+								controller = {
 									original_tag = FRA
 								}
 							}
 						}
 						set_state_controller = 458
-					}					
+					}
 
 					#syria
 					if = {
 						limit = {
 							677 = {
 								owner = { original_tag = FRA }
-								controller = { 
+								controller = {
 									original_tag = FRA
 								}
 							}
@@ -1588,7 +1541,7 @@ country_event = {
 						limit = {
 							680 = {
 								owner = { original_tag = FRA }
-								controller = { 
+								controller = {
 									original_tag = FRA
 								}
 							}
@@ -1599,12 +1552,12 @@ country_event = {
 						limit = {
 							554 = {
 								owner = { original_tag = FRA }
-								controller = { 
+								controller = {
 									original_tag = FRA
 								}
 							}
 						}
-						set_state_controller = 554 
+						set_state_controller = 554
 					}
 
 					if = {
@@ -1655,7 +1608,7 @@ country_event = {
 				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 776 777 778 779 780 781 782 786 }
 				states_filter = {
 					owner = { original_tag = FRA }
-					OR = {		
+					OR = {
 						# lets not involve syria or tunisia in civil war flip if occupied by other party
 						AND = {
 							OR = {
@@ -1674,9 +1627,9 @@ country_event = {
 								state = 680
 								state = 677
 								state = 458
-							}						
+							}
 						}
-					}					
+					}
 				}
 			}
 		}
@@ -1688,14 +1641,14 @@ country_event = {
 				ruling_party = fascism
 				elections_allowed = no
 				parties = {
-					democratic = { 
+					democratic = {
 						popularity = 22
 					}
 
 					fascism = {
 						popularity = 76
 					}
-					
+
 					communism = {
 						popularity = 2
 					}
@@ -1838,7 +1791,7 @@ country_event = {
 			}
 			ITA = { transfer_state = 735 }
 		}
-		
+
 		#Spanish occupation zone
 		if = {
 			limit = {
@@ -1865,20 +1818,20 @@ country_event = {
 						limit = {
 							458 = {
 								owner = { original_tag = FRA }
-								controller = { 
+								controller = {
 									original_tag = FRA
 								}
 							}
 						}
 						set_state_controller = 458
-					}					
+					}
 
 					#syria
 					if = {
 						limit = {
 							677 = {
 								owner = { original_tag = FRA }
-								controller = { 
+								controller = {
 									original_tag = FRA
 								}
 							}
@@ -1889,7 +1842,7 @@ country_event = {
 						limit = {
 							680 = {
 								owner = { original_tag = FRA }
-								controller = { 
+								controller = {
 									original_tag = FRA
 								}
 							}
@@ -1900,12 +1853,12 @@ country_event = {
 						limit = {
 							554 = {
 								owner = { original_tag = FRA }
-								controller = { 
+								controller = {
 									original_tag = FRA
 								}
 							}
 						}
-						set_state_controller = 554 
+						set_state_controller = 554
 					}
 
 					if = {
@@ -1956,7 +1909,7 @@ country_event = {
 				states = { 26 21 22 31 25 20 32 33 1 735 677 680 554 458 462 461 513 459 460 665 553 272 556 543 706 708 713 268 557 514 515 }
 				states_filter = {
 					owner = { original_tag = FRA }
-					OR = {		
+					OR = {
 						# lets not involve syria or tunisia in civil war flip if occupied by other party
 						AND = {
 							OR = {
@@ -1975,9 +1928,9 @@ country_event = {
 								state = 680
 								state = 677
 								state = 458
-							}						
+							}
 						}
-					}					
+					}
 				}
 			}
 		}
@@ -1989,7 +1942,7 @@ country_event = {
 				ruling_party = neutrality
 				elections_allowed = no
 				parties = {
-					democratic = { 
+					democratic = {
 						popularity = 22
 					}
 
@@ -1999,7 +1952,7 @@ country_event = {
 					fascism = {
 						popularity = 16
 					}
-					
+
 					communism = {
 						popularity = 2
 					}
@@ -2020,8 +1973,8 @@ country_event = {
 
 	option = { # Conquer everything!
 		name = france.14.b
-		ai_chance = { 
-			factor = 50 
+		ai_chance = {
+			factor = 50
 			modifier = {
 				is_historical_focus_on = yes
 				factor = 0
