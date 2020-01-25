@@ -1,19 +1,12 @@
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
-NDefines.NGame.LAG_DAYS_FOR_PAUSE = 50
+###### General stuff
+
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 50
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 14
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 10
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 24
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0
-NDefines_Graphics.NGraphics.COMMANDGROUP_PRESET_COLORS_HSV = {
-    0.0/360.0, 1.0, 1.0,     --red
-    30.0/360.0, 1.0, 1.0,    --orange
-    60.0/360.0, 1.0, 1.0,    --yellow
-    120.0/360.0, 1, 1.0,     --green
-    240.0/360.0, 1.0, 1.0,   --blue
-	  280.0/360.0, 1.0, 1.0,   --indigo
-    320.0/360.0, 1.0, 1.0,   --violet
-    360.0/360.0, 0.0, 1.0,   --white
-    360.0/360.0, 0.0, 0,     --black
-}
+
+### Graphics performance
 NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.RADAR_ICON_DISTANCE_CUTOFF = 600
@@ -60,6 +53,8 @@ NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
+
+# Other stuff
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 100.0
-NDefines.NAir.AIR_WING_MAX_SIZE = 1600
-NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0
+NDefines.NAir.AIR_WING_MAX_SIZE = 1000
+NDefines.NAir.AIR_DEPLOYMENT_DAYS = 2
