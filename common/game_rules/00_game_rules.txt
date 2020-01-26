@@ -502,3 +502,24 @@ nma_tank_research_options = {
 	}
 
 }
+
+#
+#	ENABLE/DISABLE MINES
+#
+
+nma_minelaying_options = {
+	name = "NMA_MINELAYING_OPTIONS"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_ENABLE_MINES"
+		text = "NMA_RULE_OPTION_ENABLE_MINES"
+		desc = "NMA_RULE_OPTION_ENABLE_MINES_DESC"
+	}
+
+	option = {
+		name = "NMA_DISABLE_MINES"
+		text = "NMA_RULE_OPTION_DISABLE_MINES"
+		desc = "NMA_RULE_OPTION_DISABLE_MINES_DESC"
+	}
+}

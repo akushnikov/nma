@@ -1,0 +1,12 @@
+
+# Custom trigger to check whether minelaying enabled or not
+
+are_mines_enabled {
+  has_dlc = "Man the Guns"
+  AND = {
+    has_game_rule = {
+      rule = NMA_MINELAYING_OPTIONS
+      option = NMA_ENABLE_MINES
+    }
+  }
+}

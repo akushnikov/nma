@@ -356,4 +356,9 @@
  NMA_RULE_OPTION_ENABLE_SHIP4_DESC:0 "Clicking this option will enable 1944 Ship research"
  NMA_RULE_OPTION_DISABLE_SHIP4:0 "Ban 1944 ships"
  NMA_RULE_OPTION_DISABLE_SHIP4_DESC:0 "Clicking this option will disable 1944 Ship research"
-  
+  ################################################################# MINES
+  NMA_MINELAYING_OPTIONS:0 "Minelaying Settings"
+  NMA_RULE_OPTION_ENABLE_MINES:0 "Enable minelaying"
+  NMA_RULE_OPTION_ENABLE_MINES_DESC:0 "Clicking this option will enable minelaying technology"
+  NMA_RULE_OPTION_DISABLE_MINES:0 "Disable minelaying"
+  NMA_RULE_OPTION_DISABLE_MINES_DESC:0 "Clicking this option will disable minelaying technology and also remove all ships having minelayers"
