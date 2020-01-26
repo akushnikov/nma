@@ -704,42 +704,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = Annex_AI_Siam
-		icon = GFX_goal_generic_major_alliance
-		prerequisite = { focus = JAP_strike_south_doctrine }
-		x = 1
-		y = 1
-		relative_position_id = JAP_strike_south_doctrine
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-			is_faction_leader = yes
-			country_exists = SIA
-			SIA = { is_ai = yes }
-			FRA = { has_capitulated = yes }
-            CHI = { exists = no }
-
-		}
-
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		completion_reward = {
-			JAP = { annex_country = {target = SIA }
-		}
-
-	}
-}
-
-	focus = {
 		id = JAP_exploit_the_southern_resource_area
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
