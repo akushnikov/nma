@@ -1,0 +1,3 @@
+nma_minelaying_category = {
+  
+}

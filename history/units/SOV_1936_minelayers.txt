@@ -1,0 +1,41 @@
+units = {
+  fleet = {
+    name = "Soviet minelayers fleet 1"
+    naval_base = 3151 # Leningrad
+    task_force = {
+      name = "Soviet Leningrad Minelayers"
+      location = 3151 # Leningrad
+			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Marti Class" } } }
+      ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+			ship = { name = "L-2" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+			ship = { name = "L-3" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+    }
+  }
+  fleet = {
+    name = "Soviet minelayers fleet 2"
+    naval_base = 3151 # Leningrad
+    task_force = {
+      name = "Soviet Sevastopopl Minelayers"
+      location = 3686 # Sevastopopl
+      ship = { name = "L-4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+			ship = { name = "L-5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+			ship = { name = "L-6" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+      ship = { name = "Bug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Bug Class" } } }
+      ship = { name = "Komintern" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Komintern Class" } } }
+			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }
+			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }
+			ship = { name = "Chervona Ukraina" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Chervona Ukraina Class" } } }
+    }
+  }
+  fleet = {
+    name = "Soviet minelayers fleet 3"
+    naval_base = 3151 # Leningrad
+    task_force = {
+      name = "Soviet Vladivostok Minelayers"
+      location = 957 # Vladivostok
+      ship = { name = "L-7" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+			ship = { name = "L-8" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+			ship = { name = "L-9" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
+    }
+  }
+}

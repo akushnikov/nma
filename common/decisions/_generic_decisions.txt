@@ -2907,35 +2907,3 @@ foreign_support = {
 		}
 	}
 }
-
-nma_minelaying = {
-
-	nothing_wrong_with_our_bloody_ships = {
-
-		icon = generic_naval
-
-		allowed = {
-			are_mines_enabled = yes
-		}
-
-		visible = {
-			are_mines_enabled = yes
-		}
-
-		cost = 0
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		complete_effect = {
-			set_technology = {
-				basic_naval_mines = 1
-				submarine_mine_laying = 1
-			}
-		}
-
-	}
-
-}
