@@ -1,7 +1,7 @@
 
 # Custom trigger to check whether minelaying enabled or not
 
-are_mines_enabled {
+are_mines_enabled = {
   has_dlc = "Man the Guns"
   AND = {
     has_game_rule = {
