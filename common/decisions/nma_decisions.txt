@@ -107,6 +107,16 @@ nma_minelaying_category = {
 
         hidden_effect = { load_oob = FIN_1936_minelayers }
       }
+      else_if = {
+        limit = { original_tag = FRA }
+
+        set_technology = {
+          basic_naval_mines = 1
+          submarine_mine_laying = 1
+        }
+
+        hidden_effect = { load_oob = FRA_1936_minelayers }
+      }
     }
 
   }
