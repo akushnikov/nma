@@ -231,15 +231,6 @@ country_event = {
 		set_global_flag = achievement_france_surrender
 	}
 
-	option = { # Become Vichy
-		name = france.10.a
-		trigger = { is_ai = no }
-		set_country_flag = become_vichy
-		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
-		custom_effect_tooltip = france.10.a_tt
-		# Switches to Vichy if GER accepts
-	}
 	option = { # Become Free French
 		name = france.10.b
 		ai_chance = {
