@@ -16,12 +16,14 @@ instant_effect = {
 
 units = {
   fleet = {
-    name = "British minelayers fleet 1"
-    naval_base = 11064 # Scapa Flow
+    name = "Finnish minelayers fleet 1"
+    location =  11105 # Helsinki
     task_force = {
-      name = "Soviet Leningrad Minelayers"
-      location = 3151 # Leningrad
-			ship = { name = "HMS Adventure" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Adventure Class" } } }
+      name = "Finnish Minelayers"
+      location =  11105 # Helsinki
+      ship = { name = "Vetehinen" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FIN version_name = "Vetehinen Class" } } }
+			ship = { name = "Vesihiisi" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FIN version_name = "Vetehinen Class" } } }
+			ship = { name = "Iku-Turso" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FIN version_name = "Vetehinen Class" } } }
     }
   }
 }

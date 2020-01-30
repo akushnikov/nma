@@ -15,6 +15,7 @@ instant_effect = {
     }
     obsolete = yes
   }
+
   create_equipment_variant = {
     name = "Zerstörer 1934 Class"
     type = ship_hull_light_2
@@ -32,6 +33,7 @@ instant_effect = {
     }
     obsolete = yes
   }
+
   create_equipment_variant = {
 		name = "Königsberg Class"
 		type = ship_hull_cruiser_1
@@ -50,6 +52,7 @@ instant_effect = {
 		}
 		obsolete = yes
 	}
+
   create_equipment_variant = {
 		name = "Bremse Class"
 		type = ship_hull_cruiser_1
