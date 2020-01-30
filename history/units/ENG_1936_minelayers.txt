@@ -1,0 +1,33 @@
+instant_effect = {
+  # cruiser minelayer
+  create_equipment_variant = {
+    name = "Adventure Class"
+    type = ship_hull_cruiser_1
+    name_group = ENG_MINELAYERS_HISTORICAL
+    parent_version = 0
+    modules = {
+      fixed_ship_battery_slot = ship_light_medium_battery_1
+      fixed_ship_anti_air_slot = ship_anti_air_1
+      fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+      fixed_ship_radar_slot = empty
+      fixed_ship_engine_slot = cruiser_ship_engine_1
+      fixed_ship_armor_slot = empty
+      mid_1_custom_slot = ship_mine_layer_1
+      mid_2_custom_slot = ship_mine_layer_1
+      rear_1_custom_slot = ship_mine_layer_1
+    }
+  }
+
+}
+
+units = {
+  fleet = {
+    name = "British minelayers fleet 1"
+    naval_base = 11064 # Scapa Flow
+    task_force = {
+      name = "Soviet Leningrad Minelayers"
+      location = 3151 # Leningrad
+			ship = { name = "HMS Adventure" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Adventure Class" } } }
+    }
+  }
+}
