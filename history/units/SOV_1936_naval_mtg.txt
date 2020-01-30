@@ -52,7 +52,7 @@ units= {
 			ship = { name = "Rykov" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
 			ship = { name = "Karl Libknekht" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SOV version_name = "Orfey Class" } } }
 		}
-		task_force = {	
+		task_force = {
 			name = "Baltiyskiy Podvodniy Flot"
 			location = 3151 # Leningrad
 			ship = { name = "B-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series I Debakrist" } } }
@@ -81,7 +81,7 @@ units= {
 			ship = { name = "Shch-202" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }
 			ship = { name = "Shch-203" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }
 			ship = { name = "Shch-204" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }
-			ship = { name = "Shch-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } }
+			ship = { name = "Shch-309" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }
 		}
 	}
 
@@ -138,7 +138,7 @@ units= {
 			ship = { name = "Shch-109" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }
 			ship = { name = "Shch-110" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }
 			ship = { name = "Shch-111" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }
-			ship = { name = "Shch-112" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } }
+			ship = { name = "Shch-112" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = SOV version_name = "Series V Shchuka" } } }
 		}
 	}
 }

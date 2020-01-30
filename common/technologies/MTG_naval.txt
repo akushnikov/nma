@@ -2968,6 +2968,10 @@ early_ship_hull_carrier = {
 			are_mines_enabled = yes
 		}
 
+		allow_branch = {
+			are_mines_enabled = yes
+		}
+
 		research_cost = 2
 
 		start_year = 1922
