@@ -340,15 +340,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { # Become Vichy
-		name = france.13.a
-		trigger = { is_ai = no }
-		set_country_flag = become_vichy
-		set_global_flag = fall_of_france
-		GER = { country_event = france.14 }
-		custom_effect_tooltip = france.10.a_tt
-		# Switches to Vichy if GER accepts
-	}
 	option = { # Become Free France
 		name = france.13.b
 		GER = { country_event = france.14 }
