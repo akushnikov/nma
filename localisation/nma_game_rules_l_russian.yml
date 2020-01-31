@@ -305,7 +305,7 @@
 
 
 ################################################################# HORSTORICAL
- NMA_GROUPKEY:0 "Horstorical NMA"
+ NMA_GROUPKEY:0 "NMA Multiplayer"
 ################################################################# SNORKEL
  NMA_SNORKEL_OPTIONS:0 "Настройки шноркеля"
  NMA_RULE_OPTION_ENABLE_SNORKEL:0 "Без ограничений"

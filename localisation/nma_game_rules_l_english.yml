@@ -305,7 +305,7 @@
 
 
 ################################################################# HORSTORICAL
- NMA_GROUPKEY:0 "Horstorical Multiplayer"
+ NMA_GROUPKEY:0 NMA Multiplayer
 ################################################################# SNORKEL
  NMA_SNORKEL_OPTIONS:0 "Snorkel Settings"
  NMA_RULE_OPTION_ENABLE_SNORKEL2:0 "Free Research"
