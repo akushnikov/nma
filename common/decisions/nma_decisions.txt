@@ -55,21 +55,9 @@ nma_minelaying_category = {
           text = {
             load_oob = [FROM_TAG]_1936_minelayers
           }
-
           FROM_TAG = "[FROM.GetTag]"
         }
       }
-      else_if = {
-        limit = { original_tag = ITA }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-
-        hidden_effect = { load_oob = ITA_1936_minelayers }
-      }
     }
-
   }
 }

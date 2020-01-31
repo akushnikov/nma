@@ -1,4 +1,10 @@
 instant_effect = {
+
+set_technology = {
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+}
+
 create_equipment_variant = {
 	name = "Minelaying Cruiser"
 	type = ship_hull_cruiser_1
