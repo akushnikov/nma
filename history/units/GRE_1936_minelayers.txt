@@ -1,4 +1,10 @@
 instant_effect = {
+
+  set_technology = {
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+  }
+
   # cruiser minelayer
   create_equipment_variant = {
 		name = "Hydra Class"
@@ -44,7 +50,7 @@ units = {
     naval_base = 4109 # Athens
     task_force = {
       name = "Greece Minelayers"
-      location = 4109 # Athens 
+      location = 4109 # Athens
       ship = { name = "RHS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name =  "Elli Class" } } }
       ship = { name = "RHS Kountouriotis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
 			ship = { name = "RHS Hydra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }

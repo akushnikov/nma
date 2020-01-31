@@ -1,6 +1,12 @@
 instant_effect = {
+
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+	}
+
 # Mine DD for AI. What am I doing with my life..
-create_equipment_variant = {
+	create_equipment_variant = {
 		name = "minelayer"
 		type = ship_hull_light_1
 		name_group = HOL_DD_HISTORICAL
