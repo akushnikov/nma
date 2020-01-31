@@ -1,0 +1,82 @@
+instant_effect = {
+
+  set_technology = {
+    basic_naval_mines = 1
+    submarine_mine_laying = 1
+  }
+
+  create_equipment_variant = {
+		name = "Alsedo Class"
+		type = ship_hull_light_1
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+
+  create_equipment_variant = {
+		name = "Júpiter Class"					# minelayers
+		type = ship_hull_light_2
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
+
+  # DD: Júpiter class (x2) (minelayers) ("ARE Júpiter" "ARE Vulcano")
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "SPR"
+			version_name = "Júpiter Class"
+		}
+		name = "ARE Júpiter"
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "SPR"
+			version_name = "Júpiter Class"
+		}
+		name = "ARE Vulcano"
+		requested_factories = 1
+		progress = 0.15
+		amount = 1
+	}
+
+}
+
+units = {
+  fleet = {
+    name = "Minelayers"
+    naval_base = 758  # Ferrol/Coruna
+    task_force = {
+      name = "Flotilla de Destructores de El Ferrol"
+      location = 758
+      # Flotilla de Destructores de El Ferrol
+			ship = { name = "ARE Alsedo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Velasco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+			ship = { name = "ARE Lazaga" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }
+    }
+  }
+}
