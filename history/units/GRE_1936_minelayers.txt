@@ -1,0 +1,55 @@
+instant_effect = {
+  # cruiser minelayer
+  create_equipment_variant = {
+		name = "Hydra Class"
+		type = ship_hull_light_1
+		name_group = GRE_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+
+  create_equipment_variant = {
+		name = "Elli Class"
+		type = ship_hull_cruiser_1
+		name_group = GRE_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = empty
+			fixed_ship_secondaries_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_mine_layer_1
+		}
+	}
+
+}
+
+units = {
+  fleet = {
+    name = "Greece minelayers fleet 1"
+    naval_base = 4109 # Athens
+    task_force = {
+      name = "Greece Minelayers"
+      location = 4109 # Athens 
+      ship = { name = "RHS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name =  "Elli Class" } } }
+      ship = { name = "RHS Kountouriotis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RHS Hydra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RHS Psara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+			ship = { name = "RHS Spetsai" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }
+    }
+  }
+}

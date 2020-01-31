@@ -26,7 +26,7 @@ units = {
     naval_base = 11064 # Scapa Flow
     task_force = {
       name = "British Minelayers"
-      naval_base = 11064 # Scapa Flow
+      location = 11064 # Scapa Flow
 			ship = { name = "HMS Adventure" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Adventure Class" } } }
     }
   }
