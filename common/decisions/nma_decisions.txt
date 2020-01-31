@@ -147,6 +147,16 @@ nma_minelaying_category = {
 
         hidden_effect = { load_oob = HOL_1936_minelayers }
       }
+      else_if = {
+        limit = { original_tag = ITA }
+
+        set_technology = {
+          basic_naval_mines = 1
+          submarine_mine_laying = 1
+        }
+
+        hidden_effect = { load_oob = ITA_1936_minelayers }
+      }
     }
 
   }
