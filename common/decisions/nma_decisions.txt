@@ -16,6 +16,7 @@ nma_minelaying_category = {
 
     visible = {
       are_mines_enabled = yes
+      FROM = { has_civil_war = no }
       NOT = {
         OR = {
           has_tech = basic_naval_mines
