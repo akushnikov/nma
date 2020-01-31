@@ -31,7 +31,6 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
 		early_ship_hull_light = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
@@ -60,7 +59,7 @@ if = {
 if = {
 	limit = {
 		has_dlc = "Waking the Tiger"
-	}		
+	}
 	add_ideas = {
 		CHI_nine_power_treaty
 		CHI_army_corruption_1
@@ -79,7 +78,7 @@ set_convoys = 40
 	add_political_power = 1198
 	set_stability = 0.5
 	set_war_support = 0.7
-	
+
 	if = {
 		limit = { has_dlc = "Waking the Tiger" }
 		complete_national_focus = CHI_unified_industrial_planning
@@ -144,14 +143,14 @@ set_convoys = 40
 			CHI_military_affairs_commission
 		}
 	}
-	
+
 	set_global_flag = fall_of_nanjing
 	create_faction = chinese_united_front
 	add_to_faction = PRC
 	remove_opinion_modifier = { target = PRC modifier = hostile_status }
 	#load_oob = "CHI_united_front"
 	set_global_flag = CHI_unite
-	
+
 	oob = "CHI_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -164,7 +163,7 @@ set_convoys = 40
 
 		#PLACEHOLDER techs for vehicles
 		motorised_infantry = 1
-		tech_support = 1		
+		tech_support = 1
 		tech_recon = 1
 		tech_engineers = 1
 
@@ -246,7 +245,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Weng Wenhao" 
+	name = "Weng Wenhao"
 	desc = "POLITICS_ZHANG_LAN_DESC"
 	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
 	expire = "1965.1.1"
@@ -377,7 +376,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Jianwei Class"			
+		name = "Jianwei Class"
 		type = ship_hull_light_1
 		name_group = CHI_DD_HISTORICAL
 		parent_version = 0
