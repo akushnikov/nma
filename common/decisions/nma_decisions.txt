@@ -50,92 +50,14 @@ nma_minelaying_category = {
     }
 
     complete_effect = {
-      if = {
-        limit = { original_tag = SOV }
+      hidden_effect = {
+        meta_effect = {
+          text = {
+            load_oob = [FROM_TAG]_1936_minelayers
+          }
 
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
+          FROM_TAG = "[FROM.GetTag]"
         }
-
-        hidden_effect = { load_oob = SOV_1936_minelayers }
-      }
-      else_if = {
-        limit = { original_tag = AST }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-      }
-      else_if = {
-        limit = { original_tag = BRA }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-
-        hidden_effect = { load_oob = BRA_1936_minelayers }
-      }
-      else_if = {
-        limit = { original_tag = DEN }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-
-      }
-      else_if = {
-        limit = { original_tag = ENG }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-
-        hidden_effect = { load_oob = ENG_1936_minelayers }
-      }
-      else_if = {
-        limit = { original_tag = FIN }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-
-        hidden_effect = { load_oob = FIN_1936_minelayers }
-      }
-      else_if = {
-        limit = { original_tag = FRA }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-
-        hidden_effect = { load_oob = FRA_1936_minelayers }
-      }
-      else_if = {
-        limit = { original_tag = GER }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-
-        hidden_effect = { load_oob = GER_1936_minelayers }
-      }
-      else_if = {
-        limit = { original_tag = GRE }
-
-        set_technology = {
-          basic_naval_mines = 1
-          submarine_mine_laying = 1
-        }
-
-        hidden_effect = { load_oob = GRE_1936_minelayers }
       }
     }
 
