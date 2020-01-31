@@ -1,0 +1,5 @@
+instant_effect = {
+  set_technology = {
+    basic_naval_mines = 1
+  }
+}
