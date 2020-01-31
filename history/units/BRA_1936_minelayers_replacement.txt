@@ -1,0 +1,26 @@
+instant_effect = {
+
+  create_equipment_variant = {
+    name = "Humaytá Class"
+    type = ship_hull_submarine_2
+    name_group = BRA_SS_HISTORICAL
+    parent_version = 0
+    modules = {
+      fixed_ship_torpedo_slot = ship_torpedo_sub_1
+      fixed_ship_engine_slot = sub_ship_engine_2
+      rear_1_custom_slot = ship_torpedo_sub_1
+    }
+  }
+}
+
+units = {
+  fleet = {
+    name = "Brazil minelayers fleet"
+    naval_base = 10980 # Rio de Janiero
+    task_force = {
+			name = "Flotilha de Submarinos"
+			location = 10980 # Rio de Janiero
+			ship = { name = "NRB Humaytá" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BRA version_name = "Humaytá Class"} } }
+		}
+  }
+}

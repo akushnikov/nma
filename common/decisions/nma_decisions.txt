@@ -2,6 +2,8 @@
 # just_mines = { CAN CHI MEX SIA }
 
 nma_minelaying_category = {
+  # OBSOLETE
+  # Left as a reminder and as an example
   nothing_wrong_with_our_bloody_ships = {
 
     icon = generic_naval

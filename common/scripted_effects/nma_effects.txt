@@ -1,0 +1,24 @@
+init_minelaying_countries_array = {
+  add_to_array = { minelaying_countries = AST }
+  add_to_array = { minelaying_countries = BRA }
+  add_to_array = { minelaying_countries = DEN }
+  add_to_array = { minelaying_countries = ENG }
+  add_to_array = { minelaying_countries = FIN }
+  add_to_array = { minelaying_countries = FRA }
+  add_to_array = { minelaying_countries = GER }
+  add_to_array = { minelaying_countries = GRE }
+  add_to_array = { minelaying_countries = HOL }
+  add_to_array = { minelaying_countries = ITA }
+  add_to_array = { minelaying_countries = JAP }
+  add_to_array = { minelaying_countries = NOR }
+  add_to_array = { minelaying_countries = POL }
+  add_to_array = { minelaying_countries = ROM }
+  add_to_array = { minelaying_countries = SOV }
+  add_to_array = { minelaying_countries = SPR }
+  add_to_array = { minelaying_countries = USA }
+  add_to_array = { minelaying_countries = YUG }
+  add_to_array = { minelaying_countries = CAN }
+  add_to_array = { minelaying_countries = CHI }
+  add_to_array = { minelaying_countries = MEX }
+  add_to_array = { minelaying_countries = SIA }
+}

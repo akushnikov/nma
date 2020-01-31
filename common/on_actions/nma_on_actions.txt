@@ -1,0 +1,36 @@
+on_actions = {
+  on_startup = {
+    effect = {
+      GER = {
+        init_minelaying_countries_array = yes
+
+        if = {
+          limit = { are_mines_enabled = yes }
+
+          for_each_scope_loop = {
+            array = minelaying_countries
+
+            meta_effect = {
+              text = {
+                load_oob = [CURRENT_TAG]_1936_minelayers
+              }
+              CURRENT_TAG = "[THIS.GetTag]"
+            }
+          }
+        }
+        else = {
+          for_each_scope_loop = {
+            array = minelaying_countries
+
+            meta_effect = {
+              text = {
+                load_oob = [CURRENT_TAG]_1936_minelayers_replacement
+              }
+              CURRENT_TAG = "[THIS.GetTag]"
+            }
+          }
+        }
+      }
+    }
+  }
+}
