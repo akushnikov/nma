@@ -1775,17 +1775,12 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_completed_focus = ENG_concessions_to_the_trade_unions
-			}
 		}
 
 		available_if_capitulated = yes
 
 		completion_reward = {
 			add_stability = 0.1
-			custom_effect_tooltip = ENG_concessions_to_the_trade_unions_tt_2
 		}
 	}
 	focus = {
