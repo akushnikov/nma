@@ -1,6 +1,6 @@
 # with_subs = { AST BRA DEN ENG FIN FRA GER GRE HOL ITA JAP NOR POL ROM SOV SPR USA YUG }
 # just_mines = { CAN CHI MEX SIA }
-
+# Не лезь блять, оно тебя сожрет!
 # nma_minelaying_category = {
   # OBSOLETE
   # Left as a reminder and as an example
