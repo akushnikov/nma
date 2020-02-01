@@ -7,58 +7,17 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				trotskyite_plot
+				home_of_revolution
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
-			}
-		}
-		"USA"={
-			history = "USA_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				home_of_the_free
-				great_depression
-				undisturbed_isolation
-			}
-			focuses = {
-				USA_war_plan_black
-				USA_limited_intervention
-				USA_the_giant_wakes
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { has_dlc = "Man the Guns" }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
-				tizard_mission_focus
-				ENG_imperial_conference
-				general_rearmament_focus
-			}
-		}
-		"ENG"={
-			history = "ENG_GATHERING_STORM_DESC"
-			ideology = democratic
-			available = { NOT = { has_dlc = "Man the Guns" } }
-			ideas = {
-				stiff_upper_lip
-				ENG_the_war_to_end_all_wars
-				george_v
-			}
-			focuses = {
+				SOV_great_purge
+				SOV_collectivist_propaganda
+				SOV_positive_heroism
 			}
 		}
 		"GER"={
@@ -89,6 +48,34 @@ bookmarks = {
 				GER_danzig_or_war
 			}
 		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_the_giant_wakes
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_initiate_government_reform
+				FRA_support_status_quo
+			}
+		}
+
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -115,17 +102,31 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}
 		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "Man the Guns" }
 			ideas = {
-				trotskyite_plot
-				home_of_revolution
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
 			}
 			focuses = {
-				SOV_great_purge
-				SOV_collectivist_propaganda
-				SOV_positive_heroism
+				tizard_mission_focus
+				ENG_imperial_conference
+				general_rearmament_focus
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "Man the Guns" } }
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
 			}
 		}
 
@@ -234,36 +235,7 @@ bookmarks = {
 			}
 		}
 
-		"CHI"={
-			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_1
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_united_front
-				CHI_army_reform
-				CHI_invite_the_flying_tigers
-			}
-		}
-		"PRC"={
-			minor = yes
-			history = "PRC_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				PRC_the_long_march_1
-				PRC_low_popular_support_3
-				PRC_power_struggles
-			}
-			focuses = {
-				PRC_infiltration
-				PRC_maoism
-				PRC_anti_japanese_expedition
-			}
-		}
+
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
@@ -294,7 +266,7 @@ bookmarks = {
 				MEX_focus_smash_the_bureaucrats
 			}
 		}
-
+		
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
