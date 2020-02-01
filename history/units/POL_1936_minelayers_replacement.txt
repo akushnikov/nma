@@ -35,10 +35,10 @@ units = {
 
 	######## NAVAL OOB ########
 	fleet = {
-		name = "Polska Flota Niszczycieli"
+		name = "Polska Compensation"
 		naval_base = 362
 		task_force = {
-			name = "Polska Flota Niszczycieli"
+			name = "Compensation"
 			location = 362 # Danzig
 			ship = { name = "ORP Burza" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Wicher Class" } } }
 			ship = { name = "ORP Wicher" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = POL version_name = "Wicher Class" } } }

@@ -39,10 +39,10 @@ instant_effect = {
 
 units = {
 	fleet = {
-		name = "Italian minelaying fleet 1"
+		name = "Italian Compensation"
 		naval_base = 819 # Naples
 		task_force = {
-			name = "Italian minelayers"
+			name = "Compensation"
 			location = 819 # Naples
 			ship = { name = "RI Taranto" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Minelaying Cruiser" } } }
 			ship = { name = "RI Bari" definition = light_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ITA version_name = "Minelaying Cruiser" } } }

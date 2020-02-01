@@ -23,10 +23,10 @@ instant_effect = {
 
 units = {
   fleet = {
-    name = "Minelayers"
+    name = "Compensation"
     naval_base = 1562 # San Diego
     task_force = {
-      name = "Minlayer Division"
+      name = "USA Compensation"
       location = 1562 # San Diego
       # Minlayer Division #
       ship = { name = "USS Oglala" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = USA version_name = "Oglala Class" } } }

@@ -41,10 +41,10 @@ instant_effect = {
 
 units = {
   fleet = {
-    name = "Greece minelayers fleet 1"
+    name = "Greece Compensation"
     naval_base = 4109 # Athens
     task_force = {
-      name = "Greece Minelayers"
+      name = "Compensation"
       location = 4109 # Athens
       ship = { name = "RHS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GRE version_name =  "Elli Class" } } }
       ship = { name = "RHS Kountouriotis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GRE version_name =  "Hydra Class" } } }

@@ -21,14 +21,11 @@ instant_effect = {
 }
 
 units = {
-
-	##### NAVAL UNITS #####
-	###### Kraljevska Jugoslovenska Ratna Mornarica (KJRM) ######
 	fleet = {
-		name = "Yugoslavian minelayer fleet 1"
+		name = "Yugoslavian Compensation"
 		naval_base = 3924 # Split
 		task_force = {
-			name = "Yugoslavian minelayers"
+			name = "Compensation"
 			location = 3924 # Split
 			ship = { name = "KB Dubrovnik" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = YUG version_name = "Dubrovnik Class" } } }
 		}

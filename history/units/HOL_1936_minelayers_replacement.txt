@@ -2,6 +2,7 @@ instant_effect = {
 
 	# Mine DD for AI. What am I doing with my life..
 	# Playable Netherlands incoming?
+	# God, no!
 	create_equipment_variant = {
 		name = "minelayer"
 		type = ship_hull_light_1

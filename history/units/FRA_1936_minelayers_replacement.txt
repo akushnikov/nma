@@ -35,10 +35,10 @@ instant_effect = {
 
 units = {
   fleet = {
-    name = "French minelayers fleet 1"
+    name = "Compensation"
     naval_base = 575 # Dunkerque
     task_force = {
-      name = "French Minelayers"
+      name = "French Compensation"
       location = 575 # Dunkerque
       ship = { name = "Émile Bertin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Émile Bertin Class" } } }
       # 20e Division des Sous-Marins

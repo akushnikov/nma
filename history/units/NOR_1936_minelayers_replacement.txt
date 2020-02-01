@@ -47,10 +47,10 @@ instant_effect = {
 
 units = {
 	fleet = {
-		name = "Norwegian minelaying fleet"
+		name = "Norwegian Compensation"
 		naval_base = 9296 # Kristiansand
 		task_force = {
-			name = "Minelaying"
+			name = "Compensation"
 			location =  9296 # Kristiansand
 			ship = { name = "HNoMS Olaf Tryggvason" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = NOR version_name = "Olaf Tryggvason Class" } } }
 			ship = { name = "HNoMS Frøya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = NOR version_name = "Frøya Class" } } }

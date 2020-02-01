@@ -96,10 +96,10 @@ instant_effect = {
 
 units = {
   fleet = {
-    name = "German minelayers fleet 1"
+    name = "Compensation"
     naval_base = 6332  # Konigsberg
     task_force = {
-      name = "German Minelayers"
+      name = "German Compensation"
       location = 6332  # Konigsberg
       # 1. Torpedobootflottille
       ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }

@@ -63,10 +63,10 @@ instant_effect = {
 
 units = {
   fleet = {
-    name = "Minelayers"
+    name = "Compensation"
     naval_base = 758  # Ferrol/Coruna
     task_force = {
-      name = "Flotilla de Destructores de El Ferrol"
+      name = "Spanish Compensation"
       location = 758
       # Flotilla de Destructores de El Ferrol
 			ship = { name = "ARE Alsedo" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = SPR version_name = "Alsedo Class" } } }

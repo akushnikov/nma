@@ -92,10 +92,10 @@ instant_effect = {
 
 units = {
   fleet = {
-    name = "Soviet minelayers fleet 1"
+    name = "Soviet Compensation"
     naval_base = 3151 # Leningrad
     task_force = {
-      name = "Soviet Leningrad Minelayers"
+      name = "Compensation"
       location = 3151 # Leningrad
 			ship = { name = "Marti" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = SOV version_name = "Marti Class" } } }
       ship = { name = "L-1" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
@@ -104,10 +104,10 @@ units = {
     }
   }
   fleet = {
-    name = "Soviet minelayers fleet 2"
+    name = "Soviet Compensation 2"
     naval_base = 3151 # Leningrad
     task_force = {
-      name = "Soviet Sevastopopl Minelayers"
+      name = "Compensation 2"
       location = 3686 # Sevastopopl
       ship = { name = "L-4" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
 			ship = { name = "L-5" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
@@ -120,10 +120,10 @@ units = {
     }
   }
   fleet = {
-    name = "Soviet minelayers fleet 3"
+    name = "Soviet Compensation 3"
     naval_base = 3151 # Leningrad
     task_force = {
-      name = "Soviet Vladivostok Minelayers"
+      name = "Compensation 3"
       location = 957 # Vladivostok
       ship = { name = "L-7" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
 			ship = { name = "L-8" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = SOV version_name = "Series II Leninets" } } }
