@@ -1,0 +1,97 @@
+SAF_secure_interests_in_africa = {
+
+  SAF_secure_rhodesia = {
+    cost = 0
+
+    allowed = {
+      original_tag = SAF
+    }
+
+    available = {
+      original_tag = SAF
+      has_completed_focus = SAF_secure_interests_in_africa
+      has_country_flag = SAF_permitted
+
+      545 = { is_fully_controlled_by = ENG }
+	    542 = { is_fully_controlled_by = ENG }
+    }
+
+    visible = {
+      545 = { is_fully_controlled_by = ENG }
+    }
+
+    complete_effect = {
+      SAF = {
+        transfer_state = 542
+        transfer_state = 545
+      }
+    }
+  }
+
+  SAF_secure_zambia = {
+    cost = 0
+
+    allowed = {
+      original_tag = SAF
+    }
+
+    available = {
+      original_tag = SAF
+      has_completed_focus = SAF_secure_interests_in_africa
+      has_country_flag = SAF_permitted
+
+      770 = { is_fully_controlled_by = ENG }
+      771 = { is_fully_controlled_by = ENG }
+
+      545 = { is_fully_controlled_by = SAF }
+      542 = { is_fully_controlled_by = SAF }
+    }
+
+    visible = {
+		  771 = { is_fully_controlled_by = ENG }
+		}
+
+    complete_effect = {
+		  SAF = {
+        transfer_state = 770
+				transfer_state = 771
+      }
+		}
+  }
+
+  SAF_secure_east_africa = {
+    cost = 0
+
+    allowed = {
+      original_tag = SAF
+    }
+
+  	available = {
+  		original_tag = SAF
+  		has_completed_focus = SAF_secure_interests_in_africa
+      has_country_flag = SAF_permitted
+
+      546 = { is_fully_controlled_by = ENG }
+  		547 = { is_fully_controlled_by = ENG }
+  		548 = { is_fully_controlled_by = ENG }
+
+  		770 = { is_fully_controlled_by = SAF }
+  		771 = { is_fully_controlled_by = SAF }
+
+		}
+
+		visible = {
+		  547 = { is_fully_controlled_by = ENG }
+		}
+
+
+		complete_effect = {
+		  SAF = {
+        transfer_state = 546
+	      transfer_state = 547
+	      transfer_state = 548
+      }
+		}
+  }
+
+}
