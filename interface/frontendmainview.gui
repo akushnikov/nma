@@ -255,7 +255,7 @@ guiTypes = {
 			position = { x = 59 y = 309 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
-			pdx_tooltip = "MENU_HOMEPAGE"
+			pdx_tooltip = "NMA_DISCORD"
 			web_link = "https://discord.gg/zASHskm"
 		}
 		ButtonType = {
