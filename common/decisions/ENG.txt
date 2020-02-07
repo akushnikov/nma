@@ -1067,6 +1067,14 @@ foreign_politics = {
 			original_tag = ENG
 		}
 
+		visible = {
+			NOT = {
+				SAF = {
+					has_completed_focus = SAF_secure_interests_in_africa
+				}
+			}
+		}
+
 		complete_effect = {
 			SAF = { set_country_flag = SAF_permitted }
 		}
@@ -1086,6 +1094,79 @@ foreign_politics = {
 		complete_effect = {
 			FRA = { set_country_flag = FRA_permitted }
 		}
+	}
+
+	ENG_free_annex_FROM = {
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cost = 0
+
+		available = {
+			country_exists = FROM
+			FROM = {
+				is_ai = yes
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = ENG
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					is_subject_of = ENG
+					original_tag = IRE
+				}
+				NOT = {
+					original_tag = MAL
+				}
+			}
+		}
+
+		complete_effect = {
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
+			}
+		}
+
+	}
+
+	ENG_annex_FROM = {
+	
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cost = 300
+
+		available = {
+			country_exists = FROM
+			FROM = {
+				is_ai = yes
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = ENG
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = MAL
+			}
+		}
+
+		complete_effect = {
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
+			}
+		}
+
 	}
 
 }

@@ -1321,33 +1321,69 @@ political_actions = {
 		}
 	}
 
-	JAP_annex_siam = {
+	JAP_annex_FROM = {
 
-    icon = generic_operation
+		icon = generic_operation
 
-    allowed = {
-      original_tag = JAP
-    }
+		fire_only_once = yes
 
-    fire_only_once = yes
+		cost = 0
 
-    cost = 50
+		available = {
+			country_exists = FROM
+			FROM = {
+				is_ai = yes
+			}
+		}
 
-    visible = {
-      tag = JAP
+		target_root_trigger = {
+			original_tag = JAP
+		}
+
+		target_trigger = {
+			FROM = {
+				is_subject_of = JAP
+			}
+		}
+
+		complete_effect = {
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
+			}
+		}
+
+	}
+
+	JAP_annex_SIA = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cost = 0
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			NOT = {
+				country_exists = CHI
+				country_exists = SHX
+				country_exists = YUN
+				country_exists = SIK
+				country_exists = PRC
+				country_exists = GXC
+			}
+		}
+
+		visible = {
       SIA = { is_ai = yes }
       country_exists = SIA
   	}
 
-    complete_effect = {
-      JAP = {
-        annex_country = {
-            target = SIA
-            transfer_troops = no
-        }
-      }
-    }
-  }
+	}
 
 }
 
