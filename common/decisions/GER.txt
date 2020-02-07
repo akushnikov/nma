@@ -113,7 +113,7 @@ operations = {
 		}
 
 		timeout_effect = {
-			
+
 		}
 
 		ai_will_do = {
@@ -348,7 +348,7 @@ GER_reichskommissariats = {
 						puppet = PREV
 						set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
 					}
-					
+
 					set_cosmetic_tag = HOL_reichskommissariat
 					create_country_leader = {
 						name = "Arthur Seyss-Inquart"
@@ -544,7 +544,7 @@ GER_reichskommissariats = {
 						set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
 					}
 				}
-				
+
 				set_cosmetic_tag = BLR_reichskommissariat
 				create_country_leader = {
 					name = "Hinrich Lohse"
@@ -673,71 +673,35 @@ GER_reichskommissariats = {
 
 political_actions = {
 
-	# Reinstate Wilhelm IV into the line of succession
-	reinstate_wilhelm_iv_succession_rights = {
-
-		allowed = {
-			original_tag = GER
-		}
-
-		available = {
-			
-		}
-
-		cost = 100
+	GER_annex_FROM = {
+		icon = generic_operation
 
 		fire_only_once = yes
 
-		ai_will_do = {
-			factor = 0
-		}
+		cost = 0
 
-		visible = {
-			has_war = no
-			has_government = neutrality
-			has_country_flag = backed_down_netherlands_kaiser
-		}
+		available = {
+			country_exists = FROM
 
-		complete_effect = {
-			add_stability = -0.10
-			add_popularity = { ideology = neutrality popularity = -0.05 }
-			custom_effect_tooltip = reinstate_wilhelm_iv_succession_rights_tt
-			hidden_effect = {
-				set_country_flag = reinstated_wilhelm_iv_succession_rights
+			FROM = {
+				is_ai = yes
 			}
 		}
-	}
-	
-	# Agnatic-Cognatic Primogeniture
-	modernize_the_succession_laws = {
 
-		allowed = {
+		target_root_trigger = {
 			original_tag = GER
 		}
 
-		available = {
-			
-		}
-
-		cost = 150
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		visible = {
-			has_war = no
-			has_government = neutrality
-			has_country_flag = reinstated_wilhelm_iv_succession_rights
+		target_trigger = {
+			FROM = {
+				is_subject_of = GER
+			}
 		}
 
 		complete_effect = {
-			add_stability = 0.05
-			custom_effect_tooltip = modernize_the_succession_laws_tt
-			hidden_effect = {
-				set_country_flag = modernized_succession_laws
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
 			}
 		}
 	}
@@ -786,7 +750,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 		}
 
 		cost = 50
@@ -809,7 +773,7 @@ political_actions = {
 }
 
 foreign_politics = {
-	
+
 	# Titles Deprivation Act 1917
 	request_restoration_of_british_titles = {
 
@@ -921,7 +885,7 @@ GER_military_buildup = {
 			has_completed_focus = GER_plan_z
 		}
 
-		
+
 		visible = {
 			has_completed_focus = GER_plan_z
 		}
@@ -931,7 +895,7 @@ GER_military_buildup = {
 			navy_experience = 150
 		}
 
-		
+
 	}
 
 	GER_jaegernotprogramm = {
@@ -1071,7 +1035,7 @@ special_projects = {
 				}
 			}
 		}
-	}	
+	}
 	GER_dismantle_czechoslovakian_forts = {
 
 		icon = generic_construction
@@ -1257,7 +1221,7 @@ special_projects = {
 		complete_effect = {
 			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
 		}
-	}	
+	}
 }
 
 GER_aid_hun_rom_democratic_civil_war = {
@@ -1410,8 +1374,8 @@ GER_austro_hungarian_empire = {
 		}
 
 		visible = {
-			GER = { 
-				has_completed_focus = GER_rekindle_imperial_sentiment 
+			GER = {
+				has_completed_focus = GER_rekindle_imperial_sentiment
 				has_government = neutrality
 			}
 			any_country = {
