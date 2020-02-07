@@ -55,6 +55,7 @@ country_event = {
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
 
+			delete_unit_template_and_units = { division_template = "Brigada Legionario" }
 			load_oob = "SPA_Civil_War"
 			set_equipment_fraction = 0.5
 			set_stability = 0.9
@@ -369,6 +370,7 @@ country_event = {
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
 
+			delete_unit_template_and_units = { division_template = "Brigada Legionario" }
 			load_oob = "SPA_Civil_War"
 			set_equipment_fraction = 0.7
 			set_stability = 0.9
