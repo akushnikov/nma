@@ -673,39 +673,6 @@ GER_reichskommissariats = {
 
 political_actions = {
 
-	GER_annex_FROM = {
-		icon = generic_operation
-
-		fire_only_once = yes
-
-		cost = 0
-
-		available = {
-			country_exists = FROM
-
-			FROM = {
-				is_ai = yes
-			}
-		}
-
-		target_root_trigger = {
-			original_tag = GER
-		}
-
-		target_trigger = {
-			FROM = {
-				is_subject_of = GER
-			}
-		}
-
-		complete_effect = {
-			annex_country = {
-				target = FROM
-				transfer_troops = yes
-			}
-		}
-	}
-
 	recall_von_lettow_vorbeck = {
 
 		allowed = {

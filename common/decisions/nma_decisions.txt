@@ -1,66 +1,140 @@
-# with_subs = { AST BRA DEN ENG FIN FRA GER GRE HOL ITA JAP NOR POL ROM SOV SPR USA YUG }
-# just_mines = { CAN CHI MEX SIA }
-# Не лезь блять, оно тебя сожрет!
-# nma_minelaying_category = {
-  # OBSOLETE
-  # Left as a reminder and as an example
-  # nothing_wrong_with_our_bloody_ships = {
+nma_annex_subjects = {
 
-  #  icon = generic_naval
+  ROOT_annex_FROM = {
+    icon = generic_operation
 
-  #  cost = 0
-  #  fire_only_once = yes
-  #  days_remove = 0
+    fire_only_once = yes
 
-  #  ai_will_do = {
-#      factor = 1
-#    }
+    cost = 0
 
-#    visible = {
-#      are_mines_enabled = yes
-#      FROM = { has_civil_war = no }
-#      NOT = {
-#        OR = {
-#          has_tech = basic_naval_mines
-#          has_tech = submarine_mine_laying
-#        }
-#      }
-#      OR = {
-#        original_tag = AST
-#        original_tag = BRA
-#        original_tag = CAN
-#        original_tag = CHI
-#        original_tag = DEN
-#        original_tag = ENG
-#        original_tag = FIN
-#        original_tag = FRA
-#        original_tag = GER
-#        original_tag = GRE
-#        original_tag = HOL
-#        original_tag = ITA
-#        original_tag = JAP
-#        original_tag = MEX
-#        original_tag = NOR
-#        original_tag = NZL
-#        original_tag = POL
-#        original_tag = ROM
-#        original_tag = SIA
-#        original_tag = SOV
-#        original_tag = SPR
-#        original_tag = USA
-#        original_tag = YUG
-#      }
-#    }
+    available = {
+			country_exists = FROM
+			FROM = {
+				is_ai = yes
+			}
+		}
 
-#    complete_effect = {
-#      hidden_effect = {
-#        meta_effect = {
-#          text = {
-#            load_oob = [FROM_TAG]_1936_minelayers
-#          }
-#          FROM_TAG = "[FROM.GetTag]"
-#        }
-#      }
-#    }
-#  }
-# }
+    target_root_trigger = {
+			original_tag = ROOT
+		}
+
+    target_trigger = {
+      FROM = {
+        is_subject_of = ROOT
+        NOT = {
+					original_tag = MAL
+				}
+      }
+    }
+
+    complete_effect = {
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
+			}
+		}
+  }
+
+  ENG_annex_MAL = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cost = 300
+
+		available = {
+			country_exists = MAL
+			MAL = {
+				is_ai = yes
+			}
+		}
+
+		target_root_trigger = {
+			original_tag = ENG
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = MAL
+			}
+		}
+
+		complete_effect = {
+			annex_country = {
+				target = MAL
+				transfer_troops = yes
+			}
+		}
+
+	}
+
+  JAP_annex_SIA = {
+
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cost = 0
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			NOT = {
+				country_exists = CHI
+				country_exists = SHX
+				country_exists = YUN
+				country_exists = SIK
+				country_exists = PRC
+				country_exists = GXC
+			}
+		}
+
+		visible = {
+      SIA = { is_ai = yes }
+      country_exists = SIA
+  	}
+
+    complete_effect = {
+			annex_country = {
+				target = SIA
+				transfer_troops = yes
+			}
+		}
+
+	}
+
+  AST_annex_NZL = {
+    icon = generic_operation
+
+    fire_only_once = yes
+
+    cost = 0
+
+    available = {
+      country_exists = AST
+      NZL = {
+        is_ai = yes
+      }
+    }
+
+    target_root_trigger = {
+      original_tag = AST
+    }
+
+    target_trigger = {
+      FROM = {
+        original_tag = NZL
+      }
+    }
+
+    complete_effect = {
+      annex_country = {
+        target = NZL
+        transfer_troops = yes
+      }
+    }
+  }
+}
