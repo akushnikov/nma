@@ -851,9 +851,24 @@ JAP_southern_expansion = {
 			custom_trigger_tooltip = {
 				tooltip = demand_indochina_focus_tt
 				OR = {
-					286 = { is_fully_controlled_by = FRA }
-					670 = { is_fully_controlled_by = FRA }
-					671 = { is_fully_controlled_by = FRA }
+					286 = {
+						OR = {
+							is_fully_controlled_by = ENG			# Franco-British Union
+							is_fully_controlled_by = FRA
+						}
+					}
+					670 = {
+						OR = {
+							is_fully_controlled_by = ENG			# Franco-British Union
+							is_fully_controlled_by = FRA
+						}
+					}
+					671 = {
+						OR = {
+							is_fully_controlled_by = ENG			# Franco-British Union
+							is_fully_controlled_by = FRA
+						}
+					}
 				}
 			}
 		}
@@ -891,9 +906,20 @@ JAP_southern_expansion = {
 		}
 
 		complete_effect = {
-			FRA = { country_event = { id = france.1 } }
-		}
+			JAP = {
+				transfer_state = 741
+				transfer_state = 286
+				transfer_state = 670
+				transfer_state = 671
+				transfer_state = 728
 
+				add_named_threat = { threat = 3 name = france.1.t }
+			}
+
+			hidden_effect = {
+				news_event = { days = 5 id = news.5 }
+			}
+		}
 	}
 }
 
