@@ -523,3 +523,29 @@ nma_minelaying_options = {
 		desc = "NMA_RULE_OPTION_DISABLE_MINES_DESC"
 	}
 }
+
+#
+#	ENABLE/DISABLE ADAPTABLE
+#
+
+nma_allow_adaptable = {
+	name = "NMA_ALLOW_ADAPTABLE"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_trait_adaptable"
+
+	default = {
+		name = "NMA_ENABLE_ADAPTABLE"
+		text = "NMA_RULE_OPTION_ENABLE_ADAPTABLE"
+		desc = "NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC"
+	}
+	option = {
+		name = "NMA_DISABLE_ADAPTABLE"
+		text = "NMA_RULE_OPTION_DISABLE_ADAPTABLE"
+		desc = "NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC"
+	}
+	option = {
+		name = "NMA_ADAPTABLE_FM_ONLY"
+		text = "NMA_RULE_OPTION_FM_ONLY"
+		desc = "NMA_RULE_OPTION_FM_ONLY_DESC"
+	}
+}

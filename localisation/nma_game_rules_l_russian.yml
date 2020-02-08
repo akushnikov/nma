@@ -327,10 +327,12 @@
 
 ################################################################# ADAPTABLE
  NMA_ALLOW_ADAPTABLE:0 "Настройки Adaptable"
- NMA_RULE_OPTION_ENABLE_ADAPTABLE:0 "Разрешить Adaptable"
- NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Clicking this option will enable the adaptable trait for generals."
- NMA_RULE_OPTION_DISABLE_ADAPTABLE:0 "Ban Adaptable"
- NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Clicking this option will disable the adaptable trait for generals."
+ NMA_RULE_OPTION_ENABLE_ADAPTABLE:0 "Разрешить Adaptable всем"
+ NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Эта опция разрешит всем использование Adaptable."
+ NMA_RULE_OPTION_DISABLE_ADAPTABLE:0 "Запретить Adaptable"
+ NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Эта опция запретит всем использование Adaptable."
+ NMA_RULE_OPTION_FM_ONLY:0 "Разрешить только фельдмаршалам"
+ NMA_RULE_OPTION_FM_ONLY_DESC:0 "Эта опция разрешит использование Adaptable только фельдмаршалам."
  ################################################################# STRATEGIC BOMBERS
  NMA_ALLOW_STRATEGIC_BOMBERS:0 "Доступность страт. бобров"
  NMA_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS:0 "Без ограничений"
@@ -361,3 +363,9 @@
  NMA_RULE_OPTION_ENABLE_SHIP4_DESC:0 "текст1"
  NMA_RULE_OPTION_DISABLE_SHIP4:0 "Забанить корабли 1944г"
  NMA_RULE_OPTION_DISABLE_SHIP4_DESC:0 "текст2"
+ ############################################################# MINELAYING
+ NMA_MINELAYING_OPTIONS:0 "Настройки минирования"
+ NMA_RULE_OPTION_ENABLE_MINES:0 "Разрешить минирование"
+ NMA_RULE_OPTION_ENABLE_MINES_DESC:0 "Эта опция оставит минирование в игре."
+ NMA_RULE_OPTION_DISABLE_MINES:0 "Запретить минирование"
+ NMA_RULE_OPTION_DISABLE_MINES_DESC:0 "Эта опция уберет всем технологии минирования и заменит стартовые корабли-минеры на их аналоги без минного оборудования. "

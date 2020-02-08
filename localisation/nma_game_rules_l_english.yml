@@ -326,6 +326,8 @@
  NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Clicking this option will enable the adaptable trait for generals."
  NMA_RULE_OPTION_DISABLE_ADAPTABLE:0 "Ban Adaptable"
  NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Clicking this option will disable the adaptable trait for generals."
+ NMA_RULE_OPTION_FM_ONLY:0 "Allow only for field marshals"
+ NMA_RULE_OPTION_FM_ONLY_DESC:0 "Clicking this option will allow Adaptable only for field marshals."
  ################################################################# STRATEGIC BOMBERS
  NMA_ALLOW_STRATEGIC_BOMBERS:0 "Strategic Bomber Settings"
  NMA_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS:0 "Free Research"
@@ -361,4 +363,4 @@
   NMA_RULE_OPTION_ENABLE_MINES:0 "Enable minelaying"
   NMA_RULE_OPTION_ENABLE_MINES_DESC:0 "Clicking this option will enable minelaying technology"
   NMA_RULE_OPTION_DISABLE_MINES:0 "Disable minelaying"
-  NMA_RULE_OPTION_DISABLE_MINES_DESC:0 "Clicking this option will disable minelaying technology and also remove all ships having minelayers"
+  NMA_RULE_OPTION_DISABLE_MINES_DESC:0 "This option will disable minelaying technology and will change all minelaying ships with their mines-free equivalent."
