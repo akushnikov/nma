@@ -2794,7 +2794,8 @@ country_event = {
 			name = armor_bonus
 			bonus = 1.0
 			uses = 1
-			category = armor
+			technology = improved_medium_tank
+      technology = improved_heavy_tank
 		}
 	}
 
