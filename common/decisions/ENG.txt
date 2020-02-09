@@ -1080,6 +1080,31 @@ foreign_politics = {
 		}
 	}
 
+
+	ENG_permit_AST = {
+		icon = generic_operation
+
+		fire_only_once = yes
+
+		cost = 0
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		visible = {
+			country_exists = NZL
+			NZL = {
+			is_ai = yes
+			}
+		}
+
+		complete_effect = {
+			AST = { set_country_flag = AST_permitted }
+		}
+	}
+
+
 	ENG_permit_FRA = {
 		icon = generic_operation
 

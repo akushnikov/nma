@@ -115,6 +115,7 @@ nma_annex_subjects = {
 
     available = {
       country_exists = AST
+      has_country_flag = AST_permitted
       NZL = {
         is_ai = yes
       }
