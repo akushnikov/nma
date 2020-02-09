@@ -304,22 +304,14 @@
 
 
 
-################################################################# HORSTORICAL
+################################################################# NMA MULTIPLAYER
  NMA_GROUPKEY:0 "NMA Multiplayer"
-################################################################# SNORKEL
- NMA_SNORKEL_OPTIONS:0 "Snorkel Settings"
- NMA_RULE_OPTION_ENABLE_SNORKEL2:0 "Free Research"
- NMA_RULE_OPTION_ENABLE_SNORKEL2_DESC:0 "Clicking this option will enable snorkel lvl. 2 technology"
- NMA_RULE_OPTION_DISABLE_SNORKEL2:0 "Ban Snorkel 2"
- NMA_RULE_OPTION_DISABLE_SNORKEL2_DESC:0 "Clicking this option will disable Snorkel lvl. 2 technology"
-################################################################# TANKS
- NMA_TANK_OPTIONS:0 "Modern Tank Settings"
- NMA_RULE_OPTION_ENABLE_MODERN_TANK:0 "Free Research"
- NMA_RULE_OPTION_ENABLE_MODERN_TANK_DESC:0 "Clicking this option will enable modern tank technology for research"
- NMA_RULE_OPTION_DISABLE_MODERN_TANK:0 "Ban Modern Tanks"
- NMA_RULE_OPTION_DISABLE_MODERN_TANK_DESC:0 "Clicking this option will disable modern tank technology for research"
-
- NMA_TANK_RESEARCH_OPTIONS:0 "1943 Tank Research Settings"
+################################################################# MINES
+NMA_MINELAYING_OPTIONS:0 "Minelaying Settings"
+NMA_RULE_OPTION_ENABLE_MINES:0 "Enable minelaying"
+NMA_RULE_OPTION_ENABLE_MINES_DESC:0 "Clicking this option will enable minelaying technology"
+NMA_RULE_OPTION_DISABLE_MINES:0 "Disable minelaying"
+NMA_RULE_OPTION_DISABLE_MINES_DESC:0 "This option will disable minelaying technology and will change all minelaying ships with their mines-free equivalent."
 ################################################################# ADAPTABLE
  NMA_ALLOW_ADAPTABLE:0 "Adaptable Settings"
  NMA_RULE_OPTION_ENABLE_ADAPTABLE:0 "Allow Adaptable"
@@ -328,6 +320,18 @@
  NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Clicking this option will disable the adaptable trait for generals."
  NMA_RULE_OPTION_FM_ONLY:0 "Allow only for field marshals"
  NMA_RULE_OPTION_FM_ONLY_DESC:0 "Clicking this option will allow Adaptable only for field marshals."
+ ################################################################# MAKESHIFT BRIDGES
+  NMA_ALLOW_ADAPTABLE:0 "Makeshift Bridges Settings"
+  NMA_RULE_OPTION_ENABLE_BRIDGES:0 "Allow Makeshift Bridges"
+  NMA_RULE_OPTION_ENABLE_BRIDGES_DESC:0 "Clicking this option will enable the Makeshift Bridges ability for generals with "Improvisation expert" trait."
+  NMA_RULE_OPTION_DISABLE_BRIDGES:0 "Ban Makeshift Bridges"
+  NMA_RULE_OPTION_DISABLE_BRIDGES_DESC:0 "Clicking this option will disable the Makeshift Bridges ability for generals with "Improvisation expert" trait."
+  ################################################################# SIEGE ARTY
+  NMA_ALLOW_ADAPTABLE:0 "Siegy Artillery Settings"
+  NMA_RULE_OPTION_ENABLE_ARTY:0 "Allow Siege Artillery"
+  NMA_RULE_OPTION_ENABLE_ARTY_DESC:0 "Clicking this option will enable the Siege Artillery ability for generals with "Fortress Buster" trait."
+  NMA_RULE_OPTION_DISABLE_ARTY:0 "Ban Siege Artillery"
+  NMA_RULE_OPTION_DISABLE_ARTY_DESC:0 "Clicking this option will disable the Siege Artillery ability for generals with "Fortress Buster" trait."
  ################################################################# STRATEGIC BOMBERS
  NMA_ALLOW_STRATEGIC_BOMBERS:0 "Strategic Bomber Settings"
  NMA_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS:0 "Free Research"
@@ -358,9 +362,17 @@
  NMA_RULE_OPTION_ENABLE_SHIP4_DESC:0 "Clicking this option will enable 1944 Ship research"
  NMA_RULE_OPTION_DISABLE_SHIP4:0 "Ban 1944 ships"
  NMA_RULE_OPTION_DISABLE_SHIP4_DESC:0 "Clicking this option will disable 1944 Ship research"
-  ################################################################# MINES
-  NMA_MINELAYING_OPTIONS:0 "Minelaying Settings"
-  NMA_RULE_OPTION_ENABLE_MINES:0 "Enable minelaying"
-  NMA_RULE_OPTION_ENABLE_MINES_DESC:0 "Clicking this option will enable minelaying technology"
-  NMA_RULE_OPTION_DISABLE_MINES:0 "Disable minelaying"
-  NMA_RULE_OPTION_DISABLE_MINES_DESC:0 "This option will disable minelaying technology and will change all minelaying ships with their mines-free equivalent."
+  ################################################################# SNORKEL
+   NMA_SNORKEL_OPTIONS:0 "Snorkel Settings"
+   NMA_RULE_OPTION_ENABLE_SNORKEL2:0 "Free Research"
+   NMA_RULE_OPTION_ENABLE_SNORKEL2_DESC:0 "Clicking this option will enable snorkel lvl. 2 technology"
+   NMA_RULE_OPTION_DISABLE_SNORKEL2:0 "Ban Snorkel 2"
+   NMA_RULE_OPTION_DISABLE_SNORKEL2_DESC:0 "Clicking this option will disable Snorkel lvl. 2 technology"
+  ################################################################# TANKS
+   NMA_TANK_OPTIONS:0 "Modern Tank Settings"
+   NMA_RULE_OPTION_ENABLE_MODERN_TANK:0 "Free Research"
+   NMA_RULE_OPTION_ENABLE_MODERN_TANK_DESC:0 "Clicking this option will enable modern tank technology for research"
+   NMA_RULE_OPTION_DISABLE_MODERN_TANK:0 "Ban Modern Tanks"
+   NMA_RULE_OPTION_DISABLE_MODERN_TANK_DESC:0 "Clicking this option will disable modern tank technology for research"
+  ########################################################################## 1943 TANKS (WTF?)
+   NMA_TANK_RESEARCH_OPTIONS:0 "1943 Tank Research Settings"

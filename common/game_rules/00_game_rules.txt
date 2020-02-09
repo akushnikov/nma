@@ -549,3 +549,45 @@ nma_allow_adaptable = {
 		desc = "NMA_RULE_OPTION_FM_ONLY_DESC"
 	}
 }
+
+#
+#	ENABLE/DISABLE MAKESHIFT BRIDGES
+#
+
+nma_allow_bridges = {
+	name = "NMA_ALLOW_BRIDGES"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_ability_makeshift_bridges"
+
+	default = {
+		name = "NMA_ENABLE_BRIDGES"
+		text = "NMA_RULE_OPTION_ENABLE_BRIDGES"
+		desc = "NMA_RULE_OPTION_ENABLE_BRIDGES_DESC"
+	}
+	option = {
+		name = "NMA_DISABLE_BRIDGES"
+		text = "NMA_RULE_OPTION_DISABLE_BRIDGES"
+		desc = "NMA_RULE_OPTION_DISABLE_BRIDGES_DESC"
+	}
+}
+
+#
+#	ENABLE/DISABLE SIEGE ARTY
+#
+
+nma_allow_arty = {
+	name = "NMA_ALLOW_ARTY"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_ability_siege_artillery"
+
+	default = {
+		name = "NMA_ENABLE_ARTY"
+		text = "NMA_RULE_OPTION_ENABLE_ARTY"
+		desc = "NMA_RULE_OPTION_ENABLE_ARTY_DESC"
+	}
+	option = {
+		name = "NMA_DISABLE_ARTY"
+		text = "NMA_RULE_OPTION_DISABLE_ARTY"
+		desc = "NMA_RULE_OPTION_DISABLE_ARTY_DESC"
+	}
+}

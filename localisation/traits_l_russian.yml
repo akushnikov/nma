@@ -399,7 +399,7 @@
  incognito:0 "Инкогнито"
  nationalist_symbol:0 "Символ национализма"
  generallissimo:0 "Генералиссимус"
- ENABLES_ABILITY:0 "Открывает доступ к способности: $NAME|H$"
+ ENABLES_ABILITY:0 "Открывает доступ к способности (если разрешено правилами): $NAME|H$"
  ABILITY_DESC:0 "$NAME|H$: $DETAILS$"
  TRAIT_NOT_ASSIGNABLE:0 "Доступ к приобретенным чертам открывается с получением опыта или событиями.\n"
  TRAIT_ASSIGNABLE_TO_UNIT_MARSHALS:0 "Черты фельдмаршала можно назначить только для фельдмаршалов.\n"

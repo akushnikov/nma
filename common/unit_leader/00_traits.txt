@@ -1007,6 +1007,7 @@ leader_traits = {
 				attack = 0.15
 			}
 		}
+
 		enable_ability = siege_artillery
 
 		ai_will_do = {
@@ -1230,6 +1231,7 @@ leader_traits = {
 		}
 
 		enable_ability = makeshift_bridges
+		
 
 		trait_type = assignable_trait
 		parent = trickster
