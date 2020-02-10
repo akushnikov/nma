@@ -28,3 +28,10 @@ is_improved_snorkel_enabled = {
     }
   }
 }
+
+can_annex_minors = {
+  has_game_rule = {
+    rule = NMA_ANNEX_MINORS_OPTIONS
+    option = NMA_ENABLE_ANNEX_MINORS
+  }
+}

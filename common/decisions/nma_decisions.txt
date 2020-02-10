@@ -8,10 +8,11 @@ nma_annex_subjects = {
     cost = 0
 
     visible = {
-      has_game_rule = {
-      rule = NMA_ANNEX_MINORS_OPTIONS
-      option = NMA_ENABLE_ANNEX_MINORS
-      }
+      can_annex_minors = yes
+    }
+
+    ai_will_do = {
+     factor = 0
     }
 
     available = {
@@ -52,8 +53,8 @@ nma_annex_subjects = {
 
     visible = {
       has_game_rule = {
-      rule = NMA_ANNEX_MALAYA_OPTIONS
-      option = NMA_ENABLE_ANNEX_MALAYA
+        rule = NMA_ANNEX_MALAYA_OPTIONS
+        option = NMA_ENABLE_ANNEX_MALAYA
       }
     }
 
@@ -92,10 +93,7 @@ nma_annex_subjects = {
 		cost = 0
 
     visible = {
-      has_game_rule = {
-      rule = NMA_ANNEX_MINORS_OPTIONS
-      option = NMA_ENABLE_ANNEX_MINORS
-      }
+      can_annex_minors = yes
     }
 
 
@@ -137,10 +135,11 @@ nma_annex_subjects = {
     cost = 0
 
     visible = {
-      has_game_rule = {
-      rule = NMA_ANNEX_MINORS_OPTIONS
-      option = NMA_ENABLE_ANNEX_MINORS
-      }
+      can_annex_minors = yes
+    }
+
+    ai_will_do = {
+     factor = 0
     }
 
     available = {
