@@ -3,10 +3,28 @@
 
 are_mines_enabled = {
   has_dlc = "Man the Guns"
-  AND = {
+  has_game_rule = {
+    rule = NMA_MINELAYING_OPTIONS
+    option = NMA_ENABLE_MINES
+  }
+}
+
+# Custom trigger to check whether snorkel 2 enabled or not
+
+is_improved_snorkel_enabled = {
+  has_dlc = "Man the Guns"
+  OR = {
     has_game_rule = {
-      rule = NMA_MINELAYING_OPTIONS
-      option = NMA_ENABLE_MINES
+      rule = NMA_SNORKEL_OPTIONS
+      option = NMA_ENABLE_SNORKEL
+    }
+    AND = {
+      has_game_rule = {
+        rule = NMA_SNORKEL_OPTIONS
+        option = NMA_LIMIT_SNORKEL
+      }
+
+      date > 1942.1.1
     }
   }
 }
