@@ -346,3 +346,9 @@
  NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA_DESC:0 "Да! Я не хочу заморачиваться с ЛЛ."
  NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA:0 "Запретить"
  NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA_DESC:0 "Ниет, я хочу заливать ЛЛ."
+ ################################################################ ANNEX AI MINORS
+ NMA_ANNEX_MINORS_OPTIONS:0 "Аннекс ИИ Миноров"
+ NMA_RULE_OPTION_ENABLE_ANNEX_MINORS:0 "Разрешить"
+ NMA_RULE_OPTION_ENABLE_ANNEX_MINORS_DESC:0 "Включив эту опцию §GВБ§! сможет аннексировать §Yминоры содружества§!, §GЯпония§! - §YСиам§!, §YМаньчжоу-Го§! и §YМэнцзян§!, §GГермания§! - §YРумынию§!, §YБолгарию§! и §YВенгрию§!, а §GАвстралия§! - §YНовую Зеландию§! (с разрешения §GВБ§!)."
+ NMA_RULE_OPTION_DISABLE_ANNEX_MINORS:0 "Запретить"
+ NMA_RULE_OPTION_DISABLE_ANNEX_MINORS_DESC:0 "Играем с ИИ минорами если кто-то ливнул."
