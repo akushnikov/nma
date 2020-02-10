@@ -33,16 +33,17 @@ nma_minelaying_options = {
 	icon = "GFX_minelaying_rule_icon"
 
 	default = {
+		name = "NMA_DISABLE_MINES"
+		text = "NMA_RULE_OPTION_DISABLE_MINES"
+		desc = "NMA_RULE_OPTION_DISABLE_MINES_DESC"
+	}
+
+	option = {
 		name = "NMA_ENABLE_MINES"
 		text = "NMA_RULE_OPTION_ENABLE_MINES"
 		desc = "NMA_RULE_OPTION_ENABLE_MINES_DESC"
 	}
 
-	option = {
-		name = "NMA_DISABLE_MINES"
-		text = "NMA_RULE_OPTION_DISABLE_MINES"
-		desc = "NMA_RULE_OPTION_DISABLE_MINES_DESC"
-	}
 }
 
 #
@@ -114,40 +115,13 @@ nma_allow_arty = {
 }
 
 #
-#	ENABLE/LIMIT/DISABLE SNORKEL 2 RESEARCH
-#
-
-nma_snorkel_options = {
-	name = "NMA_SNORKEL_OPTIONS"
-	group = "NMA_GROUPKEY"
-
-	default = {
-		name = "NMA_ENABLE_SNORKEL"
-		text = "NMA_RULE_OPTION_ENABLE_SNORKEL"
-		desc = "NMA_RULE_OPTION_ENABLE_SNORKEL_DESC"
-	}
-
-	option = {
-		name = "NMA_LIMIT_SNORKEL"
-		text = "NMA_RULE_OPTION_LIMIT_SNORKEL"
-		desc = "NMA_RULE_OPTION_LIMIT_SNORKEL_DESC"
-	}
-
-	option = {
-		name = "NMA_DISABLE_SNORKEL"
-		text = "NMA_RULE_OPTION_DISABLE_SNORKEL"
-		desc = "NMA_RULE_OPTION_DISABLE_SNORKEL_DESC"
-	}
-}
-
-#
 # ENABLE/DISABLE ANNEX MALAYA FOR PP
 #
 
 nma_annex_malaya_options = {
 	name = "NMA_ANNEX_MALAYA_OPTIONS"
 	group = "NMA_GROUPKEY"
-	icon = "GFX_MAL_UK_democratic"
+	icon = "GFX_decision_eng_ally_imperialist_coup"
 
 	default = {
 		name = "NMA_DISABLE_ANNEX_MALAYA"
@@ -169,7 +143,7 @@ nma_annex_malaya_options = {
 nma_annex_minors_options = {
 	name = "NMA_ANNEX_MINORS_OPTIONS"
 	group = "NMA_GROUPKEY"
-	icon = ""
+	icon = "GFX_decision_hol_draw_up_staff_plans"
 
 	default = {
 		name = "NMA_DISABLE_ANNEX_MINORS"
@@ -207,9 +181,121 @@ nma_annex_minors_options = {
 #
 # }
 
+#
+#	ENABLE/LIMIT/DISABLE SNORKEL 2 RESEARCH
+#
 
+nma_snorkel_options = {
+	name = "NMA_SNORKEL_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_trait_admiral_silent_hunter"
 
+	default = {
+		name = "NMA_ENABLE_SNORKEL"
+		text = "NMA_RULE_OPTION_ENABLE_SNORKEL"
+		desc = "NMA_RULE_OPTION_ENABLE_SNORKEL_DESC"
+	}
 
+	option = {
+		name = "NMA_LIMIT_SNORKEL"
+		text = "NMA_RULE_OPTION_LIMIT_SNORKEL"
+		desc = "NMA_RULE_OPTION_LIMIT_SNORKEL_DESC"
+	}
+
+	option = {
+		name = "NMA_DISABLE_SNORKEL"
+		text = "NMA_RULE_OPTION_DISABLE_SNORKEL"
+		desc = "NMA_RULE_OPTION_DISABLE_SNORKEL_DESC"
+	}
+}
+
+#
+#	TANKZ 1941
+#
+
+nma_1941tanks_options = {
+	name = "NMA_1941TANKS_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_generic_tank"
+
+	default = {
+		name = "NMA_1941TANKS_FREE"
+		text = "NMA_RULE_OPTION_1941TANKS_FREE"
+		desc = "NMA_RULE_OPTION_1941TANKS_FREE_DESC"
+	}
+
+	option = {
+		name = "NMA_LIMIT_1941TANKS"
+		text = "NMA_RULE_OPTION_LIMIT_1941TANKS"
+		desc = "NMA_RULE_OPTION_LIMIT_1941TANKS_DESC"
+	}
+}
+
+#
+#	TANKZ 1943
+#
+
+nma_1943tanks_options = {
+	name = "NMA_1943TANKS_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_generic_tank"
+
+	default = {
+		name = "NMA_LIMIT_1943TANKS"
+		text = "NMA_RULE_OPTION_LIMIT_1943TANKS"
+		desc = "NMA_RULE_OPTION_LIMIT_1943TANKS_DESC"
+	}
+
+	option = {
+		name = "NMA_1943TANKS_FREE"
+		text = "NMA_RULE_OPTION_1943TANKS_FREE"
+		desc = "NMA_RULE_OPTION_1943TANKS_FREE_DESC"
+	}
+}
+
+#
+#	PLANES 1940
+#
+
+nma_1940planes_options = {
+	name = "NMA_1940PLANES_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_generic_air"
+
+	default = {
+		name = "NMA_1940PLANES_FREE"
+		text = "NMA_RULE_OPTION_1940PLANES_FREE"
+		desc = "NMA_RULE_OPTION_1940PLANES_FREE_DESC"
+	}
+
+	option = {
+		name = "NMA_LIMIT_1940PLANES"
+		text = "NMA_RULE_OPTION_LIMIT_1940PLANES"
+		desc = "NMA_RULE_OPTION_LIMIT_1940PLANES_DESC"
+	}
+}
+
+#
+#	PLANES 1944
+#
+
+nma_1944planes_options = {
+	name = "NMA_1944PLANES_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_generic_air"
+
+	default = {
+		name = "NMA_LIMIT_1944PLANES"
+		text = "NMA_RULE_OPTION_LIMIT_1944PLANES"
+		desc = "NMA_RULE_OPTION_LIMIT_1944PLANES_DESC"
+	}
+
+	option = {
+		name = "NMA_1944PLANES_FREE"
+		text = "NMA_RULE_OPTION_1944PLANES_FREE"
+		desc = "NMA_RULE_OPTION_1944PLANES_FREE_DESC"
+	}
+}
 
 # DEFAULT RULES
 
