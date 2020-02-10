@@ -37,6 +37,16 @@ init_united_front_countries_array = {
   add_to_array = { united_front_countries = SHX }
 }
 
+init_uk_dominions_array = {
+  clear_array = uk_dominions
+
+  add_to_array = { uk_dominions = CAN }
+  add_to_array = { uk_dominions = RAJ }
+  add_to_array = { uk_dominions = SAF }
+  add_to_array = { uk_dominions = AST }
+  add_to_array = { uk_dominions = NZL }
+}
+
 ensure_united_front_exists = {
   init_united_front_countries_array = yes
 
