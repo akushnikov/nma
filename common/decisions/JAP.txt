@@ -913,6 +913,8 @@ JAP_southern_expansion = {
 				transfer_state = 671
 				transfer_state = 728
 
+				728 = { add_core_of = CHI }
+
 				add_named_threat = { threat = 3 name = france.1.t }
 			}
 
