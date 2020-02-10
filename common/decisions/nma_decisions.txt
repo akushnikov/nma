@@ -7,6 +7,13 @@ nma_annex_subjects = {
 
     cost = 0
 
+    visible = {
+      has_game_rule = {
+      rule = NMA_ANNEX_MINORS_OPTIONS
+      option = NMA_ENABLE_ANNEX_MINORS
+      }
+    }
+
     available = {
 			country_exists = FROM
 			FROM = {
@@ -84,6 +91,14 @@ nma_annex_subjects = {
 
 		cost = 0
 
+    visible = {
+      has_game_rule = {
+      rule = NMA_ANNEX_MINORS_OPTIONS
+      option = NMA_ENABLE_ANNEX_MINORS
+      }
+    }
+
+
 		allowed = {
 			original_tag = JAP
 		}
@@ -120,6 +135,13 @@ nma_annex_subjects = {
     fire_only_once = yes
 
     cost = 0
+
+    visible = {
+      has_game_rule = {
+      rule = NMA_ANNEX_MINORS_OPTIONS
+      option = NMA_ENABLE_ANNEX_MINORS
+      }
+    }
 
     available = {
       country_exists = AST
