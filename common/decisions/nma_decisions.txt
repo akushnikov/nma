@@ -168,3 +168,59 @@ nma_annex_subjects = {
     }
   }
 }
+
+nma_anti_grind_decisions = {
+
+  ROOT_finish_war_puppeting_FROM = {
+    icon = generic_operation
+
+    target_root_trigger = {
+      original_tag = ROOT
+    }
+
+    target_trigger = {
+      FROM = {
+        # only ETH allowed to be a puppet
+        original_tag = ETH
+        surrender_progress > 0.1
+      }
+    }
+
+    complete_effect = {
+      ROOT = { white_peace = FROM }
+
+      set_autonomy = {
+        target = FROM
+        autonomy_state = autonomy_reichskommissariat
+      }
+    }
+  }
+
+  ROOT_finish_war_annexing_FROM = {
+    icon = generic_operation
+
+    fire_only_once = yes
+
+		cost = 0
+
+    target_root_trigger = {
+      original_tag = ROOT
+    }
+
+    target_trigger = {
+      FROM = {
+        has_defensive_war_with = ROOT
+        is_ai = yes
+        is_in_faction = no
+        surrender_progress > 0.1
+      }
+    }
+
+    complete_effect = {
+      annex_country = {
+        target = FROM
+        transfer_troops = no
+      }
+    }
+  }
+}

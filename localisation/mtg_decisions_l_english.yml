@@ -618,3 +618,5 @@
  ROOT_annex_FROM:0 "Annex AI [From.Owner.GetName]"
  ENG_permit_AST:0 "Allow Australia to annex AI New Zealand"
  ENG_permit_AST_desc:0 "New Zealand is too far away from our isles, better allow Australia to control and defend these territories."
+ ROOT_finish_war_puppeting_FROM:0 "Puppet [From.GetNameDef]"
+ ROOT_finish_war_annexing_FROM:0 "Annex [From.GetNameDef]"
