@@ -241,15 +241,15 @@ nma_1943tanks_options = {
 	icon = "GFX_decision_generic_tank"
 
 	default = {
-		name = "NMA_1943TANKS_FREE"
-		text = "NMA_RULE_OPTION_1943TANKS_FREE"
-		desc = "NMA_RULE_OPTION_1943TANKS_FREE_DESC"
-	}
-
-	option = {
 		name = "NMA_LIMIT_1943TANKS"
 		text = "NMA_RULE_OPTION_LIMIT_1943TANKS"
 		desc = "NMA_RULE_OPTION_LIMIT_1943TANKS_DESC"
+	}
+
+	option = {
+		name = "NMA_1943TANKS_FREE"
+		text = "NMA_RULE_OPTION_1943TANKS_FREE"
+		desc = "NMA_RULE_OPTION_1943TANKS_FREE_DESC"
 	}
 }
 
@@ -285,15 +285,15 @@ nma_1944planes_options = {
 	icon = "GFX_decision_generic_air"
 
 	default = {
-		name = "NMA_1944PLANES_FREE"
-		text = "NMA_RULE_OPTION_1944PLANES_FREE"
-		desc = "NMA_RULE_OPTION_1944PLANES_FREE_DESC"
-	}
-
-	option = {
 		name = "NMA_LIMIT_1944PLANES"
 		text = "NMA_RULE_OPTION_LIMIT_1944PLANES"
 		desc = "NMA_RULE_OPTION_LIMIT_1944PLANES_DESC"
+	}
+
+	option = {
+		name = "NMA_1944PLANES_FREE"
+		text = "NMA_RULE_OPTION_1944PLANES_FREE"
+		desc = "NMA_RULE_OPTION_1944PLANES_FREE_DESC"
 	}
 }
 
