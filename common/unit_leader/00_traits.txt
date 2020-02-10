@@ -637,7 +637,7 @@ leader_traits = {
 	}
 
 	trait_type = assignable_terrain_trait
-	gui_row = 3
+	gui_row = 4
 
 	parent = desert_fox
 	parent = swamp_fox
@@ -1231,7 +1231,7 @@ leader_traits = {
 		}
 
 		enable_ability = makeshift_bridges
-		
+
 
 		trait_type = assignable_trait
 		parent = trickster
