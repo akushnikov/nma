@@ -1,6 +1,29 @@
 # NMA RULES
 
 #
+# TEMPLATE
+#
+#
+#nma_template_options = {
+#	name = ""
+#	group = "NMA_GROUPKEY"
+#	icon = ""
+#
+#	default = {
+#		name = ""
+#		text = ""
+#		desc = ""
+#	}
+#
+#	option = {
+#		name = ""
+#		text = ""
+#		desc = ""
+#	}
+#}
+
+
+#
 #	ENABLE/DISABLE MINES
 #
 
