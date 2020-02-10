@@ -341,7 +341,7 @@ NMA_RULE_OPTION_LIMIT_SNORKEL_DESC:0 "Clicking this option will allow to researc
 NMA_RULE_OPTION_DISABLE_SNORKEL:0 "Ban Snorkel 2"
 NMA_RULE_OPTION_DISABLE_SNORKEL_DESC:0 "Clicking this option will disable Snorkel lvl. 2 technology"
 ################################################################ ANNEX MALAYA
-NMA_ANNEX_MALAYA_OPTIONS:0 "Annex Malaya settings"
+NMA_ANNEX_MALAYA_OPTIONS:0 "Annex Malaya Settings"
 NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA:0 "Allow"
 NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA_DESC:0 "Clicking this option will allow UK to annex Malaya for 300 pp"
 NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA:0 "Ban"
