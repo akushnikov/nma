@@ -370,7 +370,15 @@ country_event = {
 			news_event = { hours = 6 id = news.63 }
 			set_global_flag = spanish_civil_war
 
-			delete_unit_template_and_units = { division_template = "Brigada Legionario" }
+			if = {
+				# Crime
+				limit = { has_template = "Brigada Legionario" }
+				# And Punishment
+				delete_unit_template_and_units = { division_template = "Brigada Legionario" }
+				# TODO:
+				# mb add some punitive divisions to Communist Spain or national spirit with 10% attack/defence modifier?
+			}
+
 			load_oob = "SPA_Civil_War"
 			set_equipment_fraction = 0.7
 			set_stability = 0.9
