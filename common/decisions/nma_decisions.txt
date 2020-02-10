@@ -43,6 +43,13 @@ nma_annex_subjects = {
 
 		cost = 300
 
+    visible = {
+      has_game_rule = {
+      rule = NMA_ANNEX_MALAYA_OPTIONS
+      option = NMA_ENABLE_ANNEX_MALAYA
+      }
+    }
+
 		available = {
 			country_exists = MAL
 			MAL = {

@@ -332,53 +332,17 @@
  NMA_RULE_OPTION_ENABLE_ARTY_DESC:0 "Ванила. Все генералы с чертой "Мастер Штурма" будут иметь доступ к способности "Осадная Артиллерия"."
  NMA_RULE_OPTION_DISABLE_ARTY:0 "Запретить Осадную Артиллерию"
  NMA_RULE_OPTION_DISABLE_ARTY_DESC:0 "Эта опция отключит способность "Осадная Артиллерия" генералам с чертой "Мастер Штурма"."
-################################################################# SNORKEL
+ ################################################################ SNORKEL
  NMA_SNORKEL_OPTIONS:0 "Настройки шноркеля"
  NMA_RULE_OPTION_ENABLE_SNORKEL:0 "Без ограничений"
- NMA_RULE_OPTION_ENABLE_SNORKEL_DESC:0 "Данная настройка позволяет изучать шнорель без ограничеий"
+ NMA_RULE_OPTION_ENABLE_SNORKEL_DESC:0 "Данная настройка позволяет изучать 2ой шноркель без ограничений"
  NMA_RULE_OPTION_LIMIT_SNORKEL:0 "Запрещено до 1942 года"
- NMA_RULE_OPTION_LIMIT_SNORKEL_DESC:0 "Данная настройка ограничт изучение шнореля 2 уровня до 1942 года"
+ NMA_RULE_OPTION_LIMIT_SNORKEL_DESC:0 "Данная настройка ограничит изучение 2го шноркеля до 1942 года"
  NMA_RULE_OPTION_DISABLE_SNORKEL:0 "Запретить шноркель 2 уровня"
- NMA_RULE_OPTION_DISABLE_SNORKEL_DESC:0 "Данная настройка запретит изучать шнорель 2 уровня"
-################################################################# TANKS
- NMA_TANK_RESEARCH_OPTIONS:0 "Исследование танков 1943г"
- NMA_RULE_OPTION_ENABLE_FREE_RESEARCH:0 "Без ограничеий на опережение"
- NMA_RULE_OPTION_ENABLE_FREE_RESEARCH_DESC:0 "Бурги-like. Рашим танки всем сервером как поехавшие."
- NMA_RULE_OPTION_DISABLE_LIMIT_1940:0 "Запрещено до 1940 г"
- NMA_RULE_OPTION_DISABLE_LIMIT_1940_DESC:0 "текст2"
- NMA_RULE_OPTION_DISABLE_LIMIT_1941:0 "Запрещено до 1941 г"
- NMA_RULE_OPTION_DISABLE_LIMIT_1941_DESC:0 "текст3"
- NMA_RULE_OPTION_DISABLE_LIMIT_1942:0 "Запрещено до 1942 г"
- NMA_RULE_OPTION_DISABLE_LIMIT_1942_DESC:0 "текст4"
-
-
- ################################################################# STRATEGIC BOMBERS
- NMA_ALLOW_STRATEGIC_BOMBERS:0 "Доступность страт. бобров"
- NMA_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS:0 "Без ограничений"
- NMA_RULE_OPTION_ENABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will enable strategic bomber technology for research"
- NMA_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS:0 "Ban Strategic Bombers"
- NMA_RULE_OPTION_DISABLE_STRATEGIC_BOMBERS_DESC:0 "Clicking this option will disable strategic bomber technology for research
- ################################################################# AIR PRODUCTION
- NMA_ALLOW_AIR_PRODUCTION:0 "Фокус "Производство самолетов""
- NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION:0 "Разрешен"
- NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will enable the Air Production continuous focus"
- NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION:0 "Ban Air Production"
- NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION_DESC:0 "Clicking this option will disable the Air Production continuous focus"
- ################################################################# JAEGARNOTPROGRAMM
- NMA_ALLOW_JAEGERNOTPROGRAMM:0 "Доступность Ягерпрограммы"
- NMA_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM:0 "Разрешить"
- NMA_RULE_OPTION_ENABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will enable the Jaegarnotprogramm decision"
- NMA_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM:0 "Ban Jaegarnotprogramm"
- NMA_RULE_OPTION_DISABLE_JAEGERNOTPROGRAMM_DESC:0 "Clicking this option will disable the Jaegarnotprogramm decision"
- ################################################################# 1944 PLANES
- NMA_ALLOW_PLANE3:0 "Исследование самолетов 1944г"
- NMA_RULE_OPTION_ENABLE_PLANE3:0 "Без ограничений"
- NMA_RULE_OPTION_ENABLE_PLANE3_DESC:0 "Clicking this option will enable 1944 Plane research"
- NMA_RULE_OPTION_DISABLE_PLANE3:0 "Ban 1944 Planes"
- NMA_RULE_OPTION_DISABLE_PLANE3_DESC:0 "Clicking this option will disable 1944 Plane research"
-  ################################################################# 1944 SHIPS
- NMA_ALLOW_SHIP_4:0 "Исследование кораблей 1944г"
- NMA_RULE_OPTION_ENABLE_SHIP4:0 "Без ограничений"
- NMA_RULE_OPTION_ENABLE_SHIP4_DESC:0 "текст1"
- NMA_RULE_OPTION_DISABLE_SHIP4:0 "Забанить корабли 1944г"
- NMA_RULE_OPTION_DISABLE_SHIP4_DESC:0 "текст2"
+ NMA_RULE_OPTION_DISABLE_SNORKEL_DESC:0 "Данная настройка запретит изучать шноркель 2 уровня"
+ ################################################################ ANNEX MALAYA
+ NMA_ANNEX_MALAYA_OPTIONS:0 "Аннекс Малайи за 300 пп"
+ NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA:0 "Разрешить"
+ NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA_DESC:0 "Да! Я не хочу заморачиваться с ЛЛ."
+ NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA:0 "Запретить"
+ NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA_DESC:0 "Ниет, я хочу заливать ЛЛ."

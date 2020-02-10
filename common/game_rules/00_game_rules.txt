@@ -1,25 +1,171 @@
+# NMA RULES
+
 #
-# List of options showing in the Game Rules screen
+#	ENABLE/DISABLE MINES
 #
-# format is:
-# rule_token = {
-#	name = "TEXT_KEY_FOR_NAME"
-#	required_dlc = "Name of the Required DLC"
-#	desc = "TEXT_KEY_FOR_LONG_DESC"
-#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups
-#	icon = gfx_option_token							# Optional icon
-#	option = {										# Unless other specified, the first option is the default option
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
-#													# If not specified, this is set to yes for default options and no for all other options.
+
+nma_minelaying_options = {
+	name = "NMA_MINELAYING_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_minelaying_rule_icon"
+
+	default = {
+		name = "NMA_ENABLE_MINES"
+		text = "NMA_RULE_OPTION_ENABLE_MINES"
+		desc = "NMA_RULE_OPTION_ENABLE_MINES_DESC"
+	}
+
+	option = {
+		name = "NMA_DISABLE_MINES"
+		text = "NMA_RULE_OPTION_DISABLE_MINES"
+		desc = "NMA_RULE_OPTION_DISABLE_MINES_DESC"
+	}
+}
+
+#
+#	ENABLE/DISABLE ADAPTABLE
+#
+
+nma_allow_adaptable = {
+	name = "NMA_ALLOW_ADAPTABLE"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_trait_adaptable"
+
+	default = {
+		name = "NMA_ENABLE_ADAPTABLE"
+		text = "NMA_RULE_OPTION_ENABLE_ADAPTABLE"
+		desc = "NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC"
+	}
+	option = {
+		name = "NMA_DISABLE_ADAPTABLE"
+		text = "NMA_RULE_OPTION_DISABLE_ADAPTABLE"
+		desc = "NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC"
+	}
+	option = {
+		name = "NMA_ADAPTABLE_FM_ONLY"
+		text = "NMA_RULE_OPTION_FM_ONLY"
+		desc = "NMA_RULE_OPTION_FM_ONLY_DESC"
+	}
+}
+
+#
+#	ENABLE/DISABLE MAKESHIFT BRIDGES
+#
+
+nma_allow_bridges = {
+	name = "NMA_ALLOW_BRIDGES"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_ability_makeshift_bridges"
+
+	default = {
+		name = "NMA_ENABLE_BRIDGES"
+		text = "NMA_RULE_OPTION_ENABLE_BRIDGES"
+		desc = "NMA_RULE_OPTION_ENABLE_BRIDGES_DESC"
+	}
+	option = {
+		name = "NMA_DISABLE_BRIDGES"
+		text = "NMA_RULE_OPTION_DISABLE_BRIDGES"
+		desc = "NMA_RULE_OPTION_DISABLE_BRIDGES_DESC"
+	}
+}
+
+#
+#	ENABLE/DISABLE SIEGE ARTY
+#
+
+nma_allow_arty = {
+	name = "NMA_ALLOW_ARTY"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_ability_siege_artillery"
+
+	default = {
+		name = "NMA_ENABLE_ARTY"
+		text = "NMA_RULE_OPTION_ENABLE_ARTY"
+		desc = "NMA_RULE_OPTION_ENABLE_ARTY_DESC"
+	}
+	option = {
+		name = "NMA_DISABLE_ARTY"
+		text = "NMA_RULE_OPTION_DISABLE_ARTY"
+		desc = "NMA_RULE_OPTION_DISABLE_ARTY_DESC"
+	}
+}
+
+#
+#	ENABLE/LIMIT/DISABLE SNORKEL 2 RESEARCH
+#
+
+nma_snorkel_options = {
+	name = "NMA_SNORKEL_OPTIONS"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_ENABLE_SNORKEL"
+		text = "NMA_RULE_OPTION_ENABLE_SNORKEL"
+		desc = "NMA_RULE_OPTION_ENABLE_SNORKEL_DESC"
+	}
+
+	option = {
+		name = "NMA_LIMIT_SNORKEL"
+		text = "NMA_RULE_OPTION_LIMIT_SNORKEL"
+		desc = "NMA_RULE_OPTION_LIMIT_SNORKEL_DESC"
+	}
+
+	option = {
+		name = "NMA_DISABLE_SNORKEL"
+		text = "NMA_RULE_OPTION_DISABLE_SNORKEL"
+		desc = "NMA_RULE_OPTION_DISABLE_SNORKEL_DESC"
+	}
+}
+
+#
+# ENABLE/DISABLE ANNEX MALAYA FOR PP
+#
+
+nma_annex_malaya_options = {
+	name = "NMA_ANNEX_MALAYA_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_report_event_generic_peaceful_annexation"
+
+	default = {
+		name = "NMA_DISABLE_ANNEX_MALAYA"
+		text = "NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA"
+		desc = "NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA_DES"
+	}
+
+	option = {
+		name = "NMA_ENABLE_ANNEX_MALAYA"
+		text = "NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA"
+		desc = "NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA_DESC"
+	}
+}
+
+#
+# ENABLE/LIMIT TANK RESEARCH
+#
+
+# nma_tank_research_options = {
+#	name = "NMA_TANK_RESEARCH_OPTIONS"
+#	group = "NMA_GROUPKEY"
+
+#	default = {
+#		name = "NMA_ENABLE_TANK_RESEARCH"
+#		text = "NMA_RULE_OPTION_ENABLE_FREE_RESEARCH"
+#		desc = "NMA_RULE_OPTION_ENABLE_FREE_RESEARCH_DESC"
 #	}
-#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		...
+
+#	option = {
+#		name = "NMA_LIMIT_TANK_RESEARCH_1940"
+#		text = "NMA_RULE_OPTION_DISABLE_LIMIT_1940"
+#		desc = "NMA_RULE_OPTION_DISABLE_LIMIT_1940_DESC"
 #	}
+#
 # }
+
+
+
+
+
+# DEFAULT RULES
 
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
@@ -453,142 +599,3 @@ maximum_fort_level = {
 #		desc = "RULE_RESEARCH_AOT_BLOCKED_DESC"
 #	}
 #}
-
-#
-#	ENABLE/LIMIT/DISABLE SNORKEL 2 RESEARCH
-#
-
-nma_snorkel_options = {
-	name = "NMA_SNORKEL_OPTIONS"
-	group = "NMA_GROUPKEY"
-
-	default = {
-		name = "NMA_ENABLE_SNORKEL"
-		text = "NMA_RULE_OPTION_ENABLE_SNORKEL"
-		desc = "NMA_RULE_OPTION_ENABLE_SNORKEL_DESC"
-	}
-
-	option = {
-		name = "NMA_LIMIT_SNORKEL"
-		text = "NMA_RULE_OPTION_LIMIT_SNORKEL"
-		desc = "NMA_RULE_OPTION_LIMIT_SNORKEL_DESC"
-	}
-
-	option = {
-		name = "NMA_DISABLE_SNORKEL"
-		text = "NMA_RULE_OPTION_DISABLE_SNORKEL"
-		desc = "NMA_RULE_OPTION_DISABLE_SNORKEL_DESC"
-	}
-}
-
-#
-# ENABLE/LIMIT TANK RESEARCH
-#
-
-nma_tank_research_options = {
-	name = "NMA_TANK_RESEARCH_OPTIONS"
-	group = "NMA_GROUPKEY"
-
-	default = {
-		name = "NMA_ENABLE_TANK_RESEARCH"
-		text = "NMA_RULE_OPTION_ENABLE_FREE_RESEARCH"
-		desc = "NMA_RULE_OPTION_ENABLE_FREE_RESEARCH_DESC"
-	}
-
-	option = {
-		name = "NMA_LIMIT_TANK_RESEARCH_1940"
-		text = "NMA_RULE_OPTION_DISABLE_LIMIT_1940"
-		desc = "NMA_RULE_OPTION_DISABLE_LIMIT_1940_DESC"
-	}
-
-}
-
-#
-#	ENABLE/DISABLE MINES
-#
-
-nma_minelaying_options = {
-	name = "NMA_MINELAYING_OPTIONS"
-	group = "NMA_GROUPKEY"
-	icon = "GFX_minelaying_rule_icon"
-
-	default = {
-		name = "NMA_ENABLE_MINES"
-		text = "NMA_RULE_OPTION_ENABLE_MINES"
-		desc = "NMA_RULE_OPTION_ENABLE_MINES_DESC"
-	}
-
-	option = {
-		name = "NMA_DISABLE_MINES"
-		text = "NMA_RULE_OPTION_DISABLE_MINES"
-		desc = "NMA_RULE_OPTION_DISABLE_MINES_DESC"
-	}
-}
-
-#
-#	ENABLE/DISABLE ADAPTABLE
-#
-
-nma_allow_adaptable = {
-	name = "NMA_ALLOW_ADAPTABLE"
-	group = "NMA_GROUPKEY"
-	icon = "GFX_trait_adaptable"
-
-	default = {
-		name = "NMA_ENABLE_ADAPTABLE"
-		text = "NMA_RULE_OPTION_ENABLE_ADAPTABLE"
-		desc = "NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC"
-	}
-	option = {
-		name = "NMA_DISABLE_ADAPTABLE"
-		text = "NMA_RULE_OPTION_DISABLE_ADAPTABLE"
-		desc = "NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC"
-	}
-	option = {
-		name = "NMA_ADAPTABLE_FM_ONLY"
-		text = "NMA_RULE_OPTION_FM_ONLY"
-		desc = "NMA_RULE_OPTION_FM_ONLY_DESC"
-	}
-}
-
-#
-#	ENABLE/DISABLE MAKESHIFT BRIDGES
-#
-
-nma_allow_bridges = {
-	name = "NMA_ALLOW_BRIDGES"
-	group = "NMA_GROUPKEY"
-	icon = "GFX_ability_makeshift_bridges"
-
-	default = {
-		name = "NMA_ENABLE_BRIDGES"
-		text = "NMA_RULE_OPTION_ENABLE_BRIDGES"
-		desc = "NMA_RULE_OPTION_ENABLE_BRIDGES_DESC"
-	}
-	option = {
-		name = "NMA_DISABLE_BRIDGES"
-		text = "NMA_RULE_OPTION_DISABLE_BRIDGES"
-		desc = "NMA_RULE_OPTION_DISABLE_BRIDGES_DESC"
-	}
-}
-
-#
-#	ENABLE/DISABLE SIEGE ARTY
-#
-
-nma_allow_arty = {
-	name = "NMA_ALLOW_ARTY"
-	group = "NMA_GROUPKEY"
-	icon = "GFX_ability_siege_artillery"
-
-	default = {
-		name = "NMA_ENABLE_ARTY"
-		text = "NMA_RULE_OPTION_ENABLE_ARTY"
-		desc = "NMA_RULE_OPTION_ENABLE_ARTY_DESC"
-	}
-	option = {
-		name = "NMA_DISABLE_ARTY"
-		text = "NMA_RULE_OPTION_DISABLE_ARTY"
-		desc = "NMA_RULE_OPTION_DISABLE_ARTY_DESC"
-	}
-}
