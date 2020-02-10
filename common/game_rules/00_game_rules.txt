@@ -120,6 +120,7 @@ nma_allow_arty = {
 nma_snorkel_options = {
 	name = "NMA_SNORKEL_OPTIONS"
 	group = "NMA_GROUPKEY"
+	icon = "GFX_trait_admiral_silent_hunter"
 
 	default = {
 		name = "NMA_ENABLE_SNORKEL"
@@ -147,7 +148,7 @@ nma_snorkel_options = {
 nma_annex_malaya_options = {
 	name = "NMA_ANNEX_MALAYA_OPTIONS"
 	group = "NMA_GROUPKEY"
-	icon = "GFX_MAL_UK_democratic"
+	icon = "GFX_decision_eng_ally_imperialist_coup"
 
 	default = {
 		name = "NMA_DISABLE_ANNEX_MALAYA"
@@ -169,7 +170,7 @@ nma_annex_malaya_options = {
 nma_annex_minors_options = {
 	name = "NMA_ANNEX_MINORS_OPTIONS"
 	group = "NMA_GROUPKEY"
-	icon = ""
+	icon = "GFX_decision_hol_draw_up_staff_plans"
 
 	default = {
 		name = "NMA_DISABLE_ANNEX_MINORS"
