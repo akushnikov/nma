@@ -16,7 +16,7 @@ focus_tree = {
 		id = FRA_metropolitan_france
 		icon = GFX_goal_generic_construct_infrastructure
 		available = {
-			has_country_flag = FRA_permitted
+			
 		}
 		x = 0
 		y = 0
