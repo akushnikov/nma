@@ -88,7 +88,8 @@ nma_annex_subjects = {
 				country_exists = YUN
 				country_exists = SIK
 				country_exists = PRC
-				country_exists = GXC
+        country_exists = GXC
+				country_exists = XSM
 			}
 		}
 

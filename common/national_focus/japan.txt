@@ -116,6 +116,10 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
+
+			hidden_effect = {
+				ensure_united_front_exists = yes
+			}
 		}
 	}
 
