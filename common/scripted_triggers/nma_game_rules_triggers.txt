@@ -34,7 +34,7 @@ is_advanced_infantry_weapons_enabled = {
   OR = {
     has_game_rule = {
       rule = NMA_1942INF_OPTIONS
-      option = NMA_RULE_OPTION_1942INF_FREE
+      option = NMA_1942INF_FREE
     }
     AND = {
       has_game_rule = {
@@ -52,7 +52,7 @@ is_improved_infantry_weapons_enabled = {
   OR = {
     has_game_rule = {
       rule = NMA_1939INF_OPTIONS
-      option = NMA_RULE_OPTION_1939INF_FREE
+      option = NMA_1939INF_FREE
     }
     AND = {
       has_game_rule = {

@@ -213,6 +213,9 @@ nma_anti_grind_decisions = {
         is_ai = yes
         is_in_faction = no
         surrender_progress > 0.1
+        NOT = {
+          original_tag = POL
+        }
       }
     }
 
