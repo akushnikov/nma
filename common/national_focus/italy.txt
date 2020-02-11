@@ -1633,7 +1633,7 @@ focus_tree = {
 	focus = {
 		id = ITA_bulgaria_friend
 		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = ITA_slovenia_dalmatia_claims focus = ITA_yugoslavia_friend }
+		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
 		x = -1
 		y = 1
 		relative_position_id = ITA_slovenia_dalmatia_claims
@@ -1673,7 +1673,7 @@ focus_tree = {
 	focus = {
 		id = ITA_albania_war_goal
 		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = ITA_slovenia_dalmatia_claims focus = ITA_yugoslavia_friend }
+		prerequisite = { focus = ITA_slovenia_dalmatia_claims }
 		will_lead_to_war_with = ALB
 		x = 1
 		y = 1
