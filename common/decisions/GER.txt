@@ -421,6 +421,10 @@ GER_military_buildup = {
 		}
 
 		visible = {
+			has_game_rule = {
+				rule = NMA_ALLOW_JAGER
+				option = NMA_ENABLE_JAGER
+				}
 			has_war = yes
 			AND = {
 				has_deployed_air_force_size = {
