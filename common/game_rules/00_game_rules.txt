@@ -295,7 +295,146 @@ nma_1944planes_options = {
 		text = "NMA_RULE_OPTION_1944PLANES_FREE"
 		desc = "NMA_RULE_OPTION_1944PLANES_FREE_DESC"
 	}
+
+	option = {
+		name = "NMA_1944PLANES_DISABLE"
+		text = "NMA_RULE_OPTION_1944PLANES_DISABLE"
+		desc = "NMA_RULE_OPTION_1944PLANES_DISABLE_DESC"
+	}
 }
+
+#
+#	STRATEGIC BOMBERS
+#
+
+nma_strats_options = {
+	name = "NMA_STRATS_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_ger_military_buildup"
+
+	default = {
+		name = "NMA_ENABLE_STRATS"
+		text = "NMA_RULE_OPTION_ENABLE_STRATS"
+		desc = "NMA_RULE_OPTION_ENABLE_STRATS_DESC"
+	}
+
+	option = {
+		name = "NMA_DISABLE_STRATS"
+		text = "NMA_RULE_OPTION_DISABLE_STRATS"
+		desc = "NMA_RULE_OPTION_DISABLE_STRATS_DESC"
+	}
+}
+
+#
+#	NAVY 1944
+#
+
+nma_1944navy_options = {
+	name = "NMA_1944NAVY_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_generic_naval"
+
+	default = {
+		name = "NMA_LIMIT_1944NAVY"
+		text = "NMA_RULE_OPTION_LIMIT_1944NAVY"
+		desc = "NMA_RULE_OPTION_LIMIT_1944NAVY_DESC"
+	}
+
+	option = {
+		name = "NMA_1944NAVY_FREE"
+		text = "NMA_RULE_OPTION_1944NAVY_FREE"
+		desc = "NMA_RULE_OPTION_1944NAVY_FREE_DESC"
+	}
+}
+
+#
+#	INF. EQUIPMENT 1939
+#
+
+nma_1939inf_options = {
+	name = "NMA_1939INF_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_generic_prepare_civil_war"
+
+	default = {
+		name = "NMA_1939INF_FREE"
+		text = "NMA_RULE_OPTION_1939INF_FREE"
+		desc = "NMA_RULE_OPTION_1939INF_FREE_DESC"
+	}
+
+	option = {
+		name = "NMA_LIMIT_1939INF"
+		text = "NMA_RULE_OPTION_LIMIT_1939INF"
+		desc = "NMA_RULE_OPTION_LIMIT_1939INF_DESC"
+	}
+}
+
+#
+#	INF. EQUIPMENT 1942
+#
+
+nma_1942inf_options = {
+	name = "NMA_1942INF_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_generic_prepare_civil_war"
+
+	default = {
+		name = "NMA_1942INF_FREE"
+		text = "NMA_RULE_OPTION_1942INF_FREE"
+		desc = "NMA_RULE_OPTION_1942INF_FREE_DESC"
+	}
+
+	option = {
+		name = "NMA_LIMIT_1942INF"
+		text = "NMA_RULE_OPTION_LIMIT_1942INF"
+		desc = "NMA_RULE_OPTION_LIMIT_1942INF_DESC"
+	}
+}
+
+#
+# AIR PRODUCTION
+#
+
+nma_allow_air_production = {
+	name = "NMA_ALLOW_AIR_PRODUCTION"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_eng_puppet_usa"
+
+	default = {
+		name = "NMA_DISABLE_AIR_PRODUCTION"
+		text = "NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION"
+		desc = "NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION_DESC"
+	}
+
+	option = {
+		name = "NMA_ENABLE_AIR_PRODUCTION"
+		text = "NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION"
+		desc = "NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION_DESC"
+	}
+}
+
+#
+# JAEGERNOTPROGRAMM
+#
+
+nma_allow_jager = {
+	name = "NMA_ALLOW_JAGER"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_decision_ger_reichskommissariats"
+
+	default = {
+		name = "NMA_DISABLE_JAGER"
+		text = "NMA_RULE_OPTION_DISABLE_JAGER"
+		desc = "NMA_RULE_OPTION_DISABLE_JAGER_DESC"
+	}
+
+	option = {
+		name = "NMA_ENABLE_JAGER"
+		text = "NMA_RULE_OPTION_ENABLE_JAGER"
+		desc = "NMA_RULE_OPTION_ENABLE_JAGER_DESC"
+	}
+}
+
 
 # DEFAULT RULES
 
