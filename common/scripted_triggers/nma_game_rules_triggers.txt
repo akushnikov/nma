@@ -47,6 +47,24 @@ is_advanced_infantry_weapons_enabled = {
   }
 }
 
+is_improved_infantry_weapons_enabled = {
+  has_dlc = "Man the Guns"
+  OR = {
+    has_game_rule = {
+      rule = NMA_1939INF_OPTIONS
+      option = NMA_RULE_OPTION_1939INF_FREE
+    }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1939INF_OPTIONS
+        option = NMA_LIMIT_1939INF
+      }
+
+      date > 1937.1.1
+    }
+  }
+}
+
 can_annex_minors = {
   has_game_rule = {
     rule = NMA_ANNEX_MINORS_OPTIONS

@@ -148,6 +148,10 @@ technologies = {
 
 	improved_infantry_weapons = {
 
+	allow = {
+		is_improved_infantry_weapons_enabled = yes
+	}
+
 		enable_equipments = {
 			infantry_equipment_2
 		}
