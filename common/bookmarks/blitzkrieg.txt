@@ -46,7 +46,6 @@ bookmarks = {
 				ENG_colonial_elite
 			}
 			focuses = {
-				ENG_war_with_japan
 				bomber_command_focus
 				maud_focus
 			}
@@ -76,7 +75,6 @@ bookmarks = {
 			}
 			focuses = {
 				ITA_pact_of_steel
-				ITA_italy_first
 			}
 		}
 		JAP = {

@@ -58,7 +58,6 @@ bookmarks = {
 			}
 			focuses = {
 				USA_war_plan_black
-				USA_limited_intervention
 				USA_the_giant_wakes
 			}
 		}
@@ -85,7 +84,6 @@ bookmarks = {
 			}
 			focuses = {
 				ITA_pact_of_steel
-				ITA_italy_first
 			}
 		}
 		"JAP"={
@@ -266,7 +264,7 @@ bookmarks = {
 				MEX_focus_smash_the_bureaucrats
 			}
 		}
-		
+
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
