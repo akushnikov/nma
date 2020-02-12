@@ -1,7 +1,7 @@
 state= {
 	id=341
 	name="STATE_341"
-	manpower = 1404509
+	manpower = 1
 	resources={
 		chromium=45 # was: 84
 		steel = 10 # was: 20
