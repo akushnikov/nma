@@ -65,6 +65,43 @@ is_improved_infantry_weapons_enabled = {
   }
 }
 
+is_improved_heavy_tank_enabled = {
+
+  OR = {
+    has_game_rule = {
+      rule = NMA_1941TANKS_OPTIONS
+      option = NMA_1941TANKS_FREE
+    }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1941TANKS_OPTIONS
+        option = NMA_LIMIT_1941TANKS
+      }
+
+      date > 1939.1.1
+    }
+  }
+}
+
+is_advanced_heavy_tank_enabled = {
+
+  OR = {
+    has_game_rule = {
+      rule = NMA_1943TANKS_OPTIONS
+      option = NMA_1943TANKS_FREE
+    }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1943TANKS_OPTIONS
+        option = NMA_LIMIT_1943TANKS
+      }
+
+      date > 1939.9.1
+    }
+  }
+}
+
+
 can_annex_minors = {
   has_game_rule = {
     rule = NMA_ANNEX_MINORS_OPTIONS
