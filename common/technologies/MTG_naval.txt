@@ -151,6 +151,10 @@ technologies = {
 
 	advanced_ship_hull_light = {
 
+		allow = {
+			is_1944_navy_enabled = yes
+		}
+
 		enable_equipments = {
 			ship_hull_light_4
 		}
@@ -621,6 +625,10 @@ technologies = {
 
 	advanced_ship_hull_cruiser = {
 
+		allow = {
+			is_1944_navy_enabled = yes
+		}
+
 		enable_equipments = {
 			ship_hull_cruiser_4
 		}
@@ -1025,6 +1033,10 @@ technologies = {
 
 	advanced_ship_hull_heavy = {
 
+		allow = {
+			is_1944_navy_enabled = yes
+		}
+
 		enable_equipments = {
 			ship_hull_heavy_4
 		}
@@ -1291,6 +1303,10 @@ early_ship_hull_carrier = {
 	}
 
 	advanced_ship_hull_carrier = {
+
+		allow = {
+			is_1944_navy_enabled = yes
+		}
 
 		enable_equipments = {
 			ship_hull_carrier_3
@@ -1771,6 +1787,10 @@ early_ship_hull_carrier = {
 	}
 
 	advanced_ship_hull_submarine = {
+
+		allow = {
+			is_1944_navy_enabled = yes
+		}
 
 		enable_equipments = {
 			ship_hull_submarine_4

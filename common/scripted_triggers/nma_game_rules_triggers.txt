@@ -96,11 +96,28 @@ is_advanced_heavy_tank_enabled = {
         option = NMA_LIMIT_1943TANKS
       }
 
-      date > 1939.9.1
+      date > 1941.1.1
     }
   }
 }
 
+is_1944_navy_enabled = {
+
+  OR = {
+    has_game_rule = {
+      rule = NMA_1944NAVY_OPTIONS
+      option = NMA_1944NAVY_FREE
+  }
+  AND = {
+    has_game_rule = {
+      rule = NMA_1944NAVY_OPTIONS
+      option = NMA_LIMIT_1944NAVY
+    }
+
+      date > 1942.1.1
+    }
+  }
+}
 
 can_annex_minors = {
   has_game_rule = {

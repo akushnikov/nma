@@ -158,29 +158,6 @@ nma_annex_minors_options = {
 	}
 }
 
-
-#
-# ENABLE/LIMIT TANK RESEARCH
-#
-
-# nma_tank_research_options = {
-#	name = "NMA_TANK_RESEARCH_OPTIONS"
-#	group = "NMA_GROUPKEY"
-
-#	default = {
-#		name = "NMA_ENABLE_TANK_RESEARCH"
-#		text = "NMA_RULE_OPTION_ENABLE_FREE_RESEARCH"
-#		desc = "NMA_RULE_OPTION_ENABLE_FREE_RESEARCH_DESC"
-#	}
-
-#	option = {
-#		name = "NMA_LIMIT_TANK_RESEARCH_1940"
-#		text = "NMA_RULE_OPTION_DISABLE_LIMIT_1940"
-#		desc = "NMA_RULE_OPTION_DISABLE_LIMIT_1940_DESC"
-#	}
-#
-# }
-
 #
 #	ENABLE/LIMIT/DISABLE SNORKEL 2 RESEARCH
 #
