@@ -16,7 +16,7 @@ focus_tree = {
 		id = FRA_metropolitan_france
 		icon = GFX_goal_generic_construct_infrastructure
 		available = {
-			
+
 		}
 		x = 0
 		y = 0
@@ -1270,75 +1270,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = FRA_little_entente
-		icon = GFX_goal_generic_alliance
-		available = {
-			is_puppet = no
-			is_in_faction = no
-			NOT = {
-				CZE = {
-	 				AND = {
-						is_in_faction = yes
-						is_faction_leader = no
-	 				}
-	 			}
-	 		}
-		}
-	 	prerequisite = { focus = FRA_support_status_quo }
-	 	mutually_exclusive = { focus = FRA_go_with_britain }
-	 	bypass = {
-	 		is_in_faction_with = CZE
-	 		is_faction_leader = yes
-	 	}
-		x = -2
-		y = 1
-		relative_position_id = FRA_support_status_quo
-		cost = 10
-
-		ai_will_do = {
-			factor = 0.1
-
-			modifier = {
-				factor = 10
-				ai_irrationality > 20
-			}
-			modifier = {
-				factor = 2
-				ai_irrationality > 30
-			}
-		}
-		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.1
-			set_rule = { can_create_factions = yes }
-			create_faction = "french_entente_alliance"
-			if = {
-				limit = {
-					has_dlc = "Death or Dishonor"
-					CZE = {
-						has_completed_focus = CZE_an_entente_of_our_own
-						is_faction_leader = yes
-					}
-				 }
-				 CZE = { country_event = generic.2 }
-			}
-			if = {
-				limit = {
-					CZE = {
-						is_subject = no
-						NOT = { has_war_with = FRA }
-						is_in_faction = no
-						exists = yes
-					}
-				}
-				CZE = { country_event = france.17 }
-				hidden_effect = {
-					news_event = { hours = 6 id = news.177 }
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = FRA_go_with_britain
@@ -1359,7 +1290,6 @@ focus_tree = {
 			}
 		}
 	 	prerequisite = { focus = FRA_support_status_quo }
-	 	mutually_exclusive = { focus = FRA_little_entente }
 		x = 0
 		y = 1
 		relative_position_id = FRA_support_status_quo
@@ -1402,9 +1332,9 @@ focus_tree = {
 	 		focus = FRA_little_entente
 	 		focus = FRA_go_with_britain
 	 	}
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = FRA_little_entente
+		relative_position_id = FRA_go_with_britain
 		cost = 10
 
 		available_if_capitulated = yes
@@ -1433,8 +1363,8 @@ focus_tree = {
 		}
 	 	prerequisite = { focus = FRA_strengthen_government_support }
 		x = 0
-		y = 1
-		relative_position_id = FRA_strengthen_government_support
+		y = 2
+		relative_position_id = FRA_go_with_britain
 		cost = 10
 
 		available_if_capitulated = yes
