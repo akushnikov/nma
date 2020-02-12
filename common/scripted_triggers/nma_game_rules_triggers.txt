@@ -119,6 +119,66 @@ is_1944_navy_enabled = {
   }
 }
 
+is_1940_planes_enabled = {
+
+  OR = {
+    has_game_rule = {
+      rule = NMA_1940PLANES_OPTIONS
+      option = NMA_1940PLANES_FREE
+  }
+  AND = {
+    has_game_rule = {
+      rule = NMA_1940PLANES_OPTIONS
+      option = NMA_LIMIT_1940PLANES
+    }
+
+      date > 1938.1.1
+    }
+  }
+}
+
+are_1944planes_branch_cutoff = {
+    has_game_rule = {
+      rule = NMA_1944PLANES_OPTIONS
+      option = NMA_1944PLANES_DISABLE
+    }
+}
+
+is_1944_planes_enabled = {
+    NOT = {
+    are_1944planes_branch_cutoff = yes
+    }
+
+    OR = {
+        has_game_rule = {
+            rule = NMA_1944PLANES_OPTIONS
+            option = NMA_1944PLANES_FREE
+        }
+
+        AND = {
+            has_game_rule = {
+                rule = NMA_1944PLANES_OPTIONS
+                option = NMA_LIMIT_1944PLANES
+            }
+
+            date > 1939.9.1
+        }
+    }
+}
+
+
+are_strats_enabled = {
+
+    has_game_rule = {
+      rule = NMA_STRATS_OPTIONS
+      option = NMA_ENABLE_STRATS
+      }
+
+}
+
+
+
+
 can_annex_minors = {
   has_game_rule = {
     rule = NMA_ANNEX_MINORS_OPTIONS
