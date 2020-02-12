@@ -3141,7 +3141,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = GER_demand_memel
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3161,6 +3161,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
+
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
+
+				country_event = { id = nma_spain.1 }
+			}
+
 			if = {
 				limit = {
 					85 = {

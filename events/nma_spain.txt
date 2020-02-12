@@ -1,0 +1,92 @@
+add_namespace = nma_spain
+
+# Giving Nationalist Spain wargoal on Portugal right after Danzig or War
+country_event = {
+  id = nma_spain.1
+  title = nma_spain.1.t
+  desc = nma_spain.1.d
+
+  picture = GFX_report_event_molotov_ribentrop_handshake
+
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = nma_spain.1.a
+
+    if = {
+      limit = {
+        original_tag = SPR
+      }
+      create_wargoal = {
+        type = take_state
+        target = POR
+        generator = { 112 179 180 181 }
+      }
+    }
+  }
+}
+
+# Portugal folds
+country_event = {
+  id = nma_spain.2
+  title = nma_spain.2.t
+  desc = nma_spain.2.d
+
+  picture = GFX_report_event_generic_sign_treaty3
+
+  fire_only_once = yes
+
+  mean_time_to_happen = { days = 1 }
+
+  trigger = {
+    original_tag = POR
+    has_war_with = SPR
+    OR = {
+      surrender_progress > 0.6
+      112 = {
+        NOT = {
+          is_controlled_by = POR
+        }
+      }
+    }
+  }
+
+  option = {
+    name = nma_spain.2.a
+
+    log = "[THIS.GetNameDef] folds to SPR"
+    random_other_country = {
+      limit = {
+        original_tag = SPR
+        has_government = fascism
+      }
+
+      log = "[THIS.GetNameDef] getting an event that POR folds"
+      country_event = { id = nma_spain.3 }
+    }
+  }
+}
+
+# Spain takes continental states of Portugal
+country_event = {
+  id = nma_spain.3
+  title = nma_spain.3.t
+  desc = nma_spain.3.d
+
+  picture = GFX_report_event_spain_civil_war_volunteers_01
+
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = nma_spain.3.a
+
+    white_peace = POR
+
+    transfer_state = 112
+    transfer_state = 179
+    transfer_state = 180
+    transfer_state = 181
+  }
+}
