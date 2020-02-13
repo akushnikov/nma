@@ -416,7 +416,7 @@ nma_allow_jager = {
 # FORCE ATTACK / LAST STAND
 #
 
-nma_force_attach_last_stand_options = {
+nma_fa_ls_options = {
 	name = "NMA_FA_LS_OPTIONS"
 	group = "NMA_GROUPKEY"
 	icon = "GFX_ability_force_attack_vanilla"

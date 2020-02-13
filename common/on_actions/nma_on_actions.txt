@@ -45,9 +45,6 @@ on_actions = {
               }
             }
 
-            log = "[THIS.GetNameDef] getting strat bombers 1"
-
-
             set_technology = {
               strategic_bomber1 = 1
             }
@@ -56,21 +53,6 @@ on_actions = {
           SOV = { load_oob = "SOV_1936_strats" }
         }
 
-        if = {
-          limit = { is_fa_ls_banned = yes }
-          log = "FORCE ATTACK & LAST STAND IS BANNED"
-        }
-        else_if = {
-          limit = { is_fa_ls_vanilla = yes }
-          log = "FORCE ATTACK & LAST STAND IS VANILLA"
-        }
-        else_if = {
-          limit = { is_fa_ls_reworked = yes }
-          log = "FORCE ATTACK & LAST STAND IS REWORKED"
-        }
-        else = {
-          log = "SMTH WENT WRONG"
-        }
       }
     }
   }
