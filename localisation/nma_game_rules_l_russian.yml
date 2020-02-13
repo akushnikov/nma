@@ -333,7 +333,7 @@
  NMA_RULE_OPTION_DISABLE_ARTY:0 "Запретить Осадную Артиллерию"
  NMA_RULE_OPTION_DISABLE_ARTY_DESC:0 "Эта опция отключит способность "Осадная Артиллерия" генералам с чертой "Мастер Штурма"."
  ################################################################ SNORKEL
- NMA_SNORKEL_OPTIONS:0 "Настройки шноркеля"
+ NMA_SNORKEL_OPTIONS:0 "Настройки 2го шноркеля"
  NMA_RULE_OPTION_ENABLE_SNORKEL:0 "Без ограничений"
  NMA_RULE_OPTION_ENABLE_SNORKEL_DESC:0 "Данная настройка позволяет изучать 2ой шноркель без ограничений"
  NMA_RULE_OPTION_LIMIT_SNORKEL:0 "Запрещено до 1942 года"

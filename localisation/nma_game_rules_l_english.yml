@@ -333,7 +333,7 @@ NMA_RULE_OPTION_ENABLE_ARTY_DESC:0 "Clicking this option will enable the Siege A
 NMA_RULE_OPTION_DISABLE_ARTY:0 "Ban Siege Artillery"
 NMA_RULE_OPTION_DISABLE_ARTY_DESC:0 "Clicking this option will disable the Siege Artillery ability for generals with "Fortress Buster" trait."
 ################################################################# SNORKEL
-NMA_SNORKEL_OPTIONS:0 "Snorkel Settings"
+NMA_SNORKEL_OPTIONS:0 "Snorkel lvl.2 Settings"
 NMA_RULE_OPTION_ENABLE_SNORKEL:0 "Free Research"
 NMA_RULE_OPTION_ENABLE_SNORKEL_DESC:0 "Clicking this option will enable snorkel lvl. 2 technology"
 NMA_RULE_OPTION_LIMIT_SNORKEL:0 "Banned until 1942"
