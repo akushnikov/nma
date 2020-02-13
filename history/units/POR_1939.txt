@@ -1,0 +1,39 @@
+### Aeronáutica Militar ###
+air_wings = {
+	112 = {
+		tac_bomber_equipment_0 = { owner = "POR" amount = 20 }				# Esquadrão de Alverca-- Ju 86K, Ju 52/3m bombers
+		fighter_equipment_0 = { owner = "POR" amount = 30 }					# Esquadrão de Tancos  -- Gladiator II fighters
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.66
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.64
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}

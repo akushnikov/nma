@@ -2,7 +2,7 @@ ideas = {
   country = {
 
     # Impossible to justify on, impossible to train new divisions, no faction member
-    medium_neutrality = {
+    moderate_neutrality = {
       picture = neutrality_idea
 
       allowed = {
@@ -41,6 +41,25 @@ ideas = {
         conscription_factor	= -1.0
         enemy_justify_war_goal_time = 100.0
         ai_get_ally_desire_factor = -100
+      }
+    }
+
+    non_capitulatable = {
+      picture = chi_war_of_resistance
+
+      allowed = {
+        always = no
+      }
+
+      allowed_civil_war = {
+        always = yes
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        surrender_limit = 0.19
+        justify_war_goal_time = 1000.0
       }
     }
 

@@ -19,9 +19,13 @@ country_event = {
         original_tag = SPR
       }
       create_wargoal = {
-        type = take_state
+        type = annex_everything
         target = POR
-        generator = { 112 179 180 181 }
+      }
+
+      POR = {
+        add_ideas = non_capitulatable
+        load_oob = "POR_army"
       }
     }
   }
@@ -43,7 +47,7 @@ country_event = {
     original_tag = POR
     has_war_with = SPR
     OR = {
-      surrender_progress > 0.6
+      surrender_progress > 0.5
       112 = {
         NOT = {
           is_controlled_by = POR
@@ -56,37 +60,21 @@ country_event = {
     name = nma_spain.2.a
 
     log = "[THIS.GetNameDef] folds to SPR"
+
+    delete_unit_template_and_units = { division_template = "Portugal Livre" }
+
     random_other_country = {
       limit = {
         original_tag = SPR
         has_government = fascism
       }
 
-      log = "[THIS.GetNameDef] getting an event that POR folds"
-      country_event = { id = nma_spain.3 }
+      white_peace = POR
+
+      transfer_state = 112
+      transfer_state = 179
+      transfer_state = 180
+      transfer_state = 181
     }
-  }
-}
-
-# Spain takes continental states of Portugal
-country_event = {
-  id = nma_spain.3
-  title = nma_spain.3.t
-  desc = nma_spain.3.d
-
-  picture = GFX_report_event_spain_civil_war_volunteers_01
-
-  fire_only_once = yes
-  is_triggered_only = yes
-
-  option = {
-    name = nma_spain.3.a
-
-    white_peace = POR
-
-    transfer_state = 112
-    transfer_state = 179
-    transfer_state = 180
-    transfer_state = 181
   }
 }
