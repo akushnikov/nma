@@ -884,7 +884,7 @@ JAP_southern_expansion = {
 
 		}
 
-		cost = 75
+		cost = 25
 
 		ai_will_do = {
 			factor = 5
@@ -1434,7 +1434,7 @@ operations = {
 				factor = 0
 			}
 		}
-		cost = 50
+		cost = 10
 		days_remove = 30
 		war_with_on_remove = SOV
 		complete_effect = {

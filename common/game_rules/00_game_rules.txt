@@ -5,7 +5,7 @@
 #
 #
 #nma_template_options = {
-#	name = ""
+#	name = "NMA_TEMPLATE_OPTIONS"
 #	group = "NMA_GROUPKEY"
 #	icon = ""
 #
@@ -409,6 +409,34 @@ nma_allow_jager = {
 		name = "NMA_ENABLE_JAGER"
 		text = "NMA_RULE_OPTION_ENABLE_JAGER"
 		desc = "NMA_RULE_OPTION_ENABLE_JAGER_DESC"
+	}
+}
+
+#
+# FORCE ATTACK / LAST STAND
+#
+
+nma_fa_ls_options = {
+	name = "NMA_FA_LS_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_ability_force_attack_vanilla"
+
+	default = {
+		name = "NMA_FA_LS_REWORKED"
+		text = "NMA_RULE_OPTION_FA_LS_REWORKED"
+		desc = "NMA_RULE_OPTION_FA_LS_REWORKED_DESC"
+	}
+
+	option = {
+		name = "NMA_FA_LS_BANNED"
+		text = "NMA_RULE_OPTION_FA_LS_BANNED"
+		desc = "NMA_RULE_OPTION_FA_LS_BANNED_DESC"
+	}
+
+	option = {
+		name = "NMA_FA_LS_VANILLA"
+		text = "NMA_RULE_OPTION_FA_LS_VANILLA"
+		desc = "NMA_RULE_OPTION_FA_LS_VANILLA_DESC"
 	}
 }
 

@@ -830,15 +830,7 @@ foreign_politics = {
 		}
 
 		visible = {
-			has_game_rule = {
-				rule = NMA_ANNEX_MINORS_OPTIONS
-				option = NMA_ENABLE_ANNEX_MINORS
-			}
-			NOT = {
-				SAF = {
-					has_completed_focus = SAF_secure_interests_in_africa
-				}
-			}
+			SAF = { country_exists = yes }
 		}
 
 		complete_effect = {
