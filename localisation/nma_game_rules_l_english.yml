@@ -417,7 +417,7 @@ NMA_RULE_OPTION_ENABLE_JAGER_DESC:0 "Clicking this option will allow Germany to 
 ################################################################ FORCE ATTACK/LAST STAND
 NMA_FA_LS_OPTIONS:0 "Force Attack/Last Stand Options"
 NMA_RULE_OPTION_FA_LS_REWORKED:0 "Reworked"
-NMA_RULE_OPTION_FA_LS_REWORKED_DESC:0 "Clicking this options will reduce buffs & increase debuffs from these two abilites"
+NMA_RULE_OPTION_FA_LS_REWORKED_DESC:0 "Clicking this options will reduce Force Attack entrenchment bonus to -25% and increase Last Stand strength damage up to 120%"
 NMA_RULE_OPTION_FA_LS_BANNED:0 "Ban"
 NMA_RULE_OPTION_FA_LS_BANNED_DESC:0 "Clicking this options will ban these two abilites"
 NMA_RULE_OPTION_FA_LS_VANILLA:0 "Vanilla"
