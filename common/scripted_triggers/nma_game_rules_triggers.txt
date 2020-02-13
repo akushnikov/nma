@@ -146,31 +146,31 @@ are_1944planes_branch_cutoff = {
 
 is_1944_planes_enabled = {
     NOT = {
-    are_1944planes_branch_cutoff = yes
+      are_1944planes_branch_cutoff = yes
     }
 
     OR = {
+      has_game_rule = {
+        rule = NMA_1944PLANES_OPTIONS
+        option = NMA_1944PLANES_FREE
+      }
+
+      AND = {
         has_game_rule = {
-            rule = NMA_1944PLANES_OPTIONS
-            option = NMA_1944PLANES_FREE
+          rule = NMA_1944PLANES_OPTIONS
+          option = NMA_LIMIT_1944PLANES
         }
 
-        AND = {
-            has_game_rule = {
-                rule = NMA_1944PLANES_OPTIONS
-                option = NMA_LIMIT_1944PLANES
-            }
-
-            date > 1939.9.1
-        }
-    }
+        date > 1939.9.1
+      }
+  }
 }
 
 are_strats_enabled = {
-    has_game_rule = {
-      rule = NMA_STRATS_OPTIONS
-      option = NMA_ENABLE_STRATS
-    }
+  has_game_rule = {
+    rule = NMA_STRATS_OPTIONS
+    option = NMA_ENABLE_STRATS
+  }
 }
 
 can_annex_minors = {
