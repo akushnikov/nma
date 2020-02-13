@@ -831,11 +831,6 @@ foreign_politics = {
 
 		visible = {
 			SAF = { country_exists = yes }
-			NOT = {
-				SAF = {
-					has_completed_focus = SAF_secure_interests_in_africa
-				}
-			}
 		}
 
 		complete_effect = {
