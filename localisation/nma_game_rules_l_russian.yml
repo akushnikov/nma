@@ -414,3 +414,11 @@
  NMA_RULE_OPTION_DISABLE_JAGER_DESC:0 "Ну что тут сказать."
  NMA_RULE_OPTION_ENABLE_JAGER:0 "Разрешить"
  NMA_RULE_OPTION_ENABLE_JAGER_DESC:0 "Делает вполне предсказуемую вещь."
+################################################################ FORCE ATTACK/LAST STAND
+NMA_FA_LS_OPTIONS:0 "Вынужденная атака и Отчаянная оборона"
+NMA_RULE_OPTION_FA_LS_REWORKED:0 "Переработанные"
+NMA_RULE_OPTION_FA_LS_REWORKED_DESC:0 "Включив эту опцию, вынужденная атака и отчаянная оборона будут получать в два раза больше урона в прочность"
+NMA_RULE_OPTION_FA_LS_BANNED:0 "Запрещены"
+NMA_RULE_OPTION_FA_LS_BANNED_DESC:0 "Включив эту опцию, вынужденная атака и отчаянная оборона будут запрещены"
+NMA_RULE_OPTION_FA_LS_VANILLA:0 "Ванила"
+NMA_RULE_OPTION_FA_LS_VANILLA_DESC:0 "Включив эту опцию, вынужденная атака и отчаянная оборона не будут изменены"

@@ -179,3 +179,24 @@ can_annex_minors = {
     option = NMA_ENABLE_ANNEX_MINORS
   }
 }
+
+is_fa_ls_banned = {
+  has_game_rule = {
+    rule = NMA_FA_LS_OPTIONS
+    option = NMA_FA_LS_BANNED
+  }
+}
+
+is_fa_ls_reworked = {
+  has_game_rule = {
+    rule = NMA_FA_LS_OPTIONS
+    option = NMA_FA_LS_REWORKED
+  }
+}
+
+is_fa_ls_vanilla = {
+  has_game_rule = {
+    rule = NMA_FA_LS_OPTIONS
+    option = NMA_FA_LS_VANILLA
+  }
+}
