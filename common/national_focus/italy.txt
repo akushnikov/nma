@@ -1595,7 +1595,6 @@ focus_tree = {
 		id = ITA_demand_balearic_islands
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ITA_support_nationalist_spain }
-		mutually_exclusive = { focus = ITA_spanish_italian_faction }
 		available = {
 			any_other_country = {
 				original_tag = SPR

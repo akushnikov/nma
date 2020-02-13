@@ -14,7 +14,7 @@ focus_tree = {
 			original_tag = USA
 		}
 	}
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 50 y = 800 }
 	default = no
 #	focus = {
 #		id = USA_
@@ -55,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = USA_continue_the_new_deal
 		icon = GFX_focus_generic_self_management
-		x = 14
+		x = 5
 		y = 0
 		offset = {
 			x = -12
@@ -148,7 +148,7 @@ focus_tree = {
 		id = USA_reach_out_to_the_ware_group
 		icon = GFX_goal_generic_propaganda
 		x = 0
-		y = 3
+		y = 2
 		prerequisite = { focus = USA_suspend_the_presecution }
 		prerequisite = { focus = USA_agricultural_adjustment_act }
 		relative_position_id = USA_suspend_the_presecution
@@ -186,7 +186,7 @@ focus_tree = {
 		id = USA_us_ussr_economic_cooperation
 		icon = GFX_goal_generic_soviet_construction
 		x = 0
-		y = 5
+		y = 3
 		prerequisite = { focus = USA_reach_out_to_the_ware_group }
 		relative_position_id = USA_suspend_the_presecution
 		cost = 10
@@ -493,57 +493,6 @@ focus_tree = {
 
 
 	focus = {
-		id = USA_scientist_haven
-		icon = GFX_focus_research
-		prerequisite = {focus = USA_arsenal_of_democracy }
-		x = -2
-		y = 1
-		relative_position_id = USA_arsenal_of_democracy
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-		available = {
-			has_government = democratic
-		}
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
-	focus = {
-		id = USA_manhattan_project
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = USA_scientist_haven }
-
-		x = 0
-		y = 1
-		relative_position_id = USA_scientist_haven
-		cost = 10
-		#ai_will_do = {
-		#	factor = 1
-		#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = USA_manhattan_project
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
-			add_tech_bonus = {
-				name = USA_manhattan_project
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
-	focus = {
 		id = USA_neutrality_act
 		icon = GFX_goal_generic_neutrality_focus
 		x = 4
@@ -591,7 +540,7 @@ focus_tree = {
 		id = USA_lend_lease_act
 		icon = GFX_focus_generic_treaty
 		x = -2
-		y = 2
+		y = 1
 		prerequisite = { focus = USA_neutrality_act}
 		relative_position_id = USA_neutrality_act
 		cost = 10
@@ -699,7 +648,7 @@ focus_tree = {
 		icon = GFX_goal_support_democracy
 		prerequisite = { focus = USA_neutrality_act }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_neutrality_act
 		cost = 10
 		ai_will_do = {
@@ -822,6 +771,59 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = USA_scientist_haven
+		icon = GFX_focus_research
+		prerequisite = {focus = USA_arsenal_of_democracy }
+		x = -2
+		y = 1
+		relative_position_id = USA_arsenal_of_democracy
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+		available = {
+			has_government = democratic
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = USA_manhattan_project
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_scientist_haven }
+
+		x = 0
+		y = 1
+		relative_position_id = USA_scientist_haven
+		cost = 10
+		#ai_will_do = {
+		#	factor = 1
+		#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
 	focus = {
 		id = USA_the_giant_wakes
 		icon = GFX_goal_generic_construct_civ_factory
@@ -835,7 +837,7 @@ focus_tree = {
 		}
 		continue_if_invalid = yes
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
 		ai_will_do = {
@@ -875,7 +877,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = USA_the_giant_wakes }
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_the_giant_wakes
 		cost = 10
 		ai_will_do = {
@@ -908,7 +910,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
@@ -1136,7 +1138,7 @@ focus_tree = {
 		continue_if_invalid = yes
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = USA_military_construction
 		cost = 10
 		#ai_will_do = {
@@ -1245,7 +1247,7 @@ focus_tree = {
  	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 26
+		x = 17
 		y = 0
 		offset = {
 			x = -26
@@ -1350,8 +1352,8 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = USA_intervention_in_europe
 		cost = 10
 		#ai_will_do = {
@@ -1591,7 +1593,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 39
+		x = 29
 		y = 0
 		offset = {
 			x = -26
