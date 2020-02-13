@@ -166,18 +166,12 @@ is_1944_planes_enabled = {
     }
 }
 
-
 are_strats_enabled = {
-
     has_game_rule = {
       rule = NMA_STRATS_OPTIONS
       option = NMA_ENABLE_STRATS
-      }
-
+    }
 }
-
-
-
 
 can_annex_minors = {
   has_game_rule = {
