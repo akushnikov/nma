@@ -1,0 +1,40 @@
+nma_anti_grind_decisions = {
+
+  ITA_grinding_ETH_mission = {
+
+    days_mission_timeout = ETH.grinding_period?0
+    is_good = no
+
+    allowed = {
+      original_tag = ITA
+    }
+
+    available = {
+      OR = {
+          ETH = { has_capitulated = yes }
+          ETH = { is_puppet_of = ITA }
+      }
+		}
+
+    activation = {
+      check_variable = {
+        var = ETH.grinding_period?0
+        value = 0
+        compare = not_equals
+      }
+    }
+
+    complete_effect = {
+
+    }
+
+    timeout_effect = {
+      ETH = {
+        set_country_flag = grind_time_has_gone
+      }
+      country_event = nma_grinding.1
+    }
+
+  }
+
+}

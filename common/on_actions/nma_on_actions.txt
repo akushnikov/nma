@@ -4,6 +4,7 @@ on_actions = {
       GER = {
         # initialize array of minelaying countries
         init_minelaying_countries_array = yes
+        init_grinding_period = yes
 
         # loop by minelaying countries, giving them back their damn minelayers
         if = {
