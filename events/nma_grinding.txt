@@ -10,6 +10,7 @@ country_event = {
   fire_only_once = yes
   is_triggered_only = yes
 
+  # puppet ETH
   option = {
     name = nma_grinding.1.a
 
@@ -25,6 +26,7 @@ country_event = {
     }
   }
 
+  # annex ETH
   option = {
     name = nma_grinding.1.b
 

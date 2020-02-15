@@ -55,8 +55,9 @@ init_grind_countries = {
   add_to_array = { grind_countries = GRE }
   add_to_array = { grind_countries = POR }
   add_to_array = { grind_countries = FIN }
-  add_to_array = { grind_countries = ETH }
+  add_to_array = { grind_countries = AFG }
   add_to_array = { grind_countries = PER }
+  add_to_array = { grind_countries = BUL }
 }
 
 ensure_united_front_exists = {
@@ -132,9 +133,12 @@ init_grinding_period = {
           if = {
             limit = {
               # checking game rule for THIS country if it has unlimited grinding period
-              has_game_rule = {
-                rule = NMA_[CURRENT_TAG]_GRINDING
-                option = NMA_UNLIMITED_GRIND
+              OR = {
+                has_game_rule = {
+                  rule = NMA_[CURRENT_TAG]_GRINDING
+                  option = NMA_UNLIMITED_GRIND
+                }
+                NOT = { is_ai = yes }
               }
             }
 

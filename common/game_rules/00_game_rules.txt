@@ -497,9 +497,612 @@ nma_eth_grinding = {
 	}
 
 	option = {
+		name = "NMA_8_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_9_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_9_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_9_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_10_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_10_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_10_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_11_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_11_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_11_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_12_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_12_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_12_MONTH_GRIND_DESC"
+	}
+}
+
+#
+#	PORTUGAL GRINDING
+#
+
+nma_por_grinding = {
+	name = "NMA_POR_GRINDING"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_UNLIMITED_GRIND"
+		text = "NMA_RULE_OPTION_UNLIMITED_GRIND"
+		desc = "NMA_RULE_OPTION_UNLIMITED_GRIND_DESC"
+	}
+
+	option = {
 		name = "NMA_1_MONTH_GRIND"
 		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
 		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_2_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_2_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_2_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_3_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_3_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_3_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_4_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_4_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_4_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_5_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_5_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_5_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_6_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_6_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_6_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_7_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_7_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_7_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_8_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_9_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_9_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_9_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_10_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_10_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_10_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_11_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_11_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_11_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_12_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_12_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_12_MONTH_GRIND_DESC"
+	}
+}
+
+#
+#	YUGOSLAVIA GRINDING
+#
+
+nma_yug_grinding = {
+	name = "NMA_YUG_GRINDING"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_UNLIMITED_GRIND"
+		text = "NMA_RULE_OPTION_UNLIMITED_GRIND"
+		desc = "NMA_RULE_OPTION_UNLIMITED_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_1_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_2_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_2_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_2_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_3_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_3_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_3_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_4_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_4_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_4_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_5_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_5_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_5_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_6_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_6_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_6_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_7_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_7_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_7_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_8_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_9_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_9_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_9_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_10_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_10_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_10_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_11_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_11_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_11_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_12_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_12_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_12_MONTH_GRIND_DESC"
+	}
+}
+
+#
+#	GRECE GRINDING
+#
+
+nma_gre_grinding = {
+	name = "NMA_GRE_GRINDING"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_UNLIMITED_GRIND"
+		text = "NMA_RULE_OPTION_UNLIMITED_GRIND"
+		desc = "NMA_RULE_OPTION_UNLIMITED_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_1_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_2_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_2_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_2_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_3_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_3_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_3_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_4_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_4_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_4_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_5_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_5_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_5_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_6_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_6_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_6_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_7_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_7_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_7_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_8_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_9_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_9_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_9_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_10_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_10_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_10_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_11_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_11_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_11_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_12_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_12_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_12_MONTH_GRIND_DESC"
+	}
+}
+
+#
+#	FINLAND GRINDING
+#
+
+nma_fin_grinding = {
+	name = "NMA_FIN_GRINDING"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_UNLIMITED_GRIND"
+		text = "NMA_RULE_OPTION_UNLIMITED_GRIND"
+		desc = "NMA_RULE_OPTION_UNLIMITED_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_1_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_2_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_2_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_2_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_3_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_3_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_3_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_4_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_4_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_4_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_5_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_5_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_5_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_6_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_6_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_6_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_7_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_7_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_7_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_8_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_9_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_9_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_9_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_10_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_10_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_10_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_11_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_11_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_11_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_12_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_12_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_12_MONTH_GRIND_DESC"
+	}
+}
+
+#
+#	AFGANISTAN GRINDING
+#
+
+nma_afg_grinding = {
+	name = "NMA_AFG_GRINDING"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_UNLIMITED_GRIND"
+		text = "NMA_RULE_OPTION_UNLIMITED_GRIND"
+		desc = "NMA_RULE_OPTION_UNLIMITED_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_1_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_2_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_2_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_2_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_3_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_3_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_3_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_4_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_4_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_4_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_5_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_5_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_5_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_6_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_6_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_6_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_7_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_7_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_7_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_8_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_9_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_9_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_9_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_10_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_10_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_10_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_11_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_11_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_11_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_12_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_12_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_12_MONTH_GRIND_DESC"
+	}
+}
+
+#
+#	IRAN GRINDING
+#
+
+nma_per_grinding = {
+	name = "NMA_PER_GRINDING"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_UNLIMITED_GRIND"
+		text = "NMA_RULE_OPTION_UNLIMITED_GRIND"
+		desc = "NMA_RULE_OPTION_UNLIMITED_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_1_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_2_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_2_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_2_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_3_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_3_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_3_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_4_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_4_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_4_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_5_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_5_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_5_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_6_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_6_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_6_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_7_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_7_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_7_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_8_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_9_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_9_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_9_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_10_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_10_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_10_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_11_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_11_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_11_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_12_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_12_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_12_MONTH_GRIND_DESC"
+	}
+}
+
+#
+#	BULGARIA GRINDING
+#
+
+nma_bul_grinding = {
+	name = "NMA_BUL_GRINDING"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_UNLIMITED_GRIND"
+		text = "NMA_RULE_OPTION_UNLIMITED_GRIND"
+		desc = "NMA_RULE_OPTION_UNLIMITED_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_1_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_2_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_2_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_2_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_3_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_3_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_3_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_4_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_4_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_4_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_5_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_5_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_5_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_6_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_6_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_6_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_7_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_7_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_7_MONTH_GRIND_DESC"
 	}
 
 	option = {
