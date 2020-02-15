@@ -432,7 +432,7 @@ NMA_FIN_GRINDING:0 "Finland Grind Settings"
 NMA_AFG_GRINDING:0 "Afganistan Grind Settings"
 NMA_PER_GRINDING:0 "Iran Grind Settings"
 
-NMA_RULE_OPTION_UNLIMITED_GRIND:0 "No limit"
+NMA_RULE_OPTION_UNLIMITED_GRIND:0 "No limits"
 NMA_RULE_OPTION_UNLIMITED_GRIND_DESC:0 "Clicking this option will disable any grinding limits"
 
 NMA_RULE_OPTION_1_MONTH_GRIND:0 "1 month"
