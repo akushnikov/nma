@@ -1,0 +1,34 @@
+is_allowed_to_grind = {
+  is_ai = yes
+  NOT = { has_country_flag = grind_time_has_gone }
+  NOT = { is_in_faction = yes }
+  has_defensive_war_with = PREV
+  check_variable = {
+    var = THIS.grinding_period?0
+    value = 0
+    compare = not_equals
+  }
+}
+
+is_allowed_to_grind_with_casualties = {
+  is_allowed_to_grind = yes
+  OR = {
+    casualties_inflicted_by = {
+      opponent = PREV
+      thousands > 0
+    }
+    PREV = {
+      casualties_inflicted_by = {
+        opponent = PREV.PREV
+        thousands > 0
+      }
+    }
+  }
+}
+
+is_done = {
+  OR = {
+    NOT = { country_exists = THIS }
+    is_puppet_of = PREV
+  }
+}

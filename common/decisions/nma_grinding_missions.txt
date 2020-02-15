@@ -10,23 +10,16 @@ nma_anti_grind_decisions = {
     }
 
     available = {
-      OR = {
-          ETH = { has_capitulated = yes }
-          ETH = { is_puppet_of = ITA }
+      ETH = {
+        is_done = yes
       }
 		}
 
     activation = {
-      check_variable = {
-        var = ETH.grinding_period?0
-        value = 0
-        compare = not_equals
-      }
+      ETH = { is_allowed_to_grind = yes }
     }
 
-    complete_effect = {
-
-    }
+    complete_effect = { }
 
     timeout_effect = {
       ETH = {
@@ -35,6 +28,60 @@ nma_anti_grind_decisions = {
       country_event = nma_grinding.1
     }
 
+  }
+
+  ITA_grinding_YUG_mission = {
+    days_mission_timeout = YUG.grinding_period?0
+    is_good = no
+
+    allowed = {
+      original_tag = ITA
+    }
+
+    available = {
+      YUG = {
+        is_done = yes
+      }
+    }
+
+    activation = {
+      YUG = { is_allowed_to_grind = yes }
+    }
+
+    complete_effect = { }
+
+    timeout_effect = {
+      YUG = {
+        set_country_flag = grind_time_has_gone
+      }
+    }
+  }
+
+  ITA_grinding_GRE_mission = {
+    days_mission_timeout = GRE.grinding_period?0
+    is_good = no
+
+    allowed = {
+      original_tag = ITA
+    }
+
+    available = {
+      GRE = {
+        is_done = yes
+      }
+    }
+
+    activation = {
+      GRE = { is_allowed_to_grind_with_casualties = yes }
+    }
+
+    complete_effect = { }
+
+    timeout_effect = {
+      YUG = {
+        set_country_flag = grind_time_has_gone
+      }
+    }
   }
 
 }

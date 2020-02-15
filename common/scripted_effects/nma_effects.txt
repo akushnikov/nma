@@ -125,6 +125,7 @@ init_grinding_period = {
     for_loop_effect = {
       start = 1     # start
       end = 13      # less_than rule
+      break = for_break
 
       # dirty hack to interpolate variables into a code
       meta_effect = {
@@ -146,7 +147,7 @@ init_grinding_period = {
             set_variable = { grinding_period = 0 }
 
             # breaking the loop, no need to overload CPU
-            set_temp_variable = { break = 1 }
+            set_temp_variable = { for_break = 1 }
           }
           else = {
             # here we go again...
@@ -166,8 +167,8 @@ init_grinding_period = {
               # settings grinding period in days
               set_variable = { grinding_period = month }
 
+              set_temp_variable = { for_break = 1 }
               # ground control to major Tom...
-              set_temp_variable = { break = 1 }
             }
           }
         }
@@ -176,5 +177,11 @@ init_grinding_period = {
         INDEX = v                         # [1, 12]
       }
     }
+  }
+
+  for_each_scope_loop = {
+    array = grind_countries
+
+    log = "[THIS.GetNameDef] has grinding period [?grinding_period]"
   }
 }
