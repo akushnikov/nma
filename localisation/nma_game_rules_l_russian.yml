@@ -422,3 +422,51 @@ NMA_RULE_OPTION_FA_LS_BANNED:0 "Запрещены"
 NMA_RULE_OPTION_FA_LS_BANNED_DESC:0 "Включив эту опцию, вынужденная атака и отчаянная оборона будут запрещены"
 NMA_RULE_OPTION_FA_LS_VANILLA:0 "Ванила"
 NMA_RULE_OPTION_FA_LS_VANILLA_DESC:0 "Включив эту опцию, вынужденная атака и отчаянная оборона не будут изменены"
+################################################################ GRINDING
+NMA_ETH_GRINDING:0 "Фарм Эфиопии"
+NMA_POR_GRINDING:0 "Фарм Португалии"
+NMA_YUG_GRINDING:0 "Фарм Югославии"
+NMA_GRE_GRINDING:0 "Фарм Греции"
+NMA_BUL_GRINDING:0 "Фарм Болгарии"
+NMA_FIN_GRINDING:0 "Фарм Финляндии"
+NMA_AFG_GRINDING:0 "Фарм Афганистана"
+NMA_PER_GRINDING:0 "Фарм Ирана"
+
+NMA_RULE_OPTION_UNLIMITED_GRIND:0 "Без ограничений"
+NMA_RULE_OPTION_UNLIMITED_GRIND_DESC:0 "Включив эту опцию, вы позволите неограниченный фарм данной страны"
+
+NMA_RULE_OPTION_1_MONTH_GRIND:0 "1 месяц"
+NMA_RULE_OPTION_1_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 1 месяца"
+
+NMA_RULE_OPTION_2_MONTH_GRIND:0 "2 месяца"
+NMA_RULE_OPTION_2_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 2 месяцев"
+
+NMA_RULE_OPTION_3_MONTH_GRIND:0 "3 месяца"
+NMA_RULE_OPTION_3_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 3 месяцев"
+
+NMA_RULE_OPTION_4_MONTH_GRIND:0 "4 месяца"
+NMA_RULE_OPTION_4_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 4 месяцев"
+
+NMA_RULE_OPTION_5_MONTH_GRIND:0 "5 месяцев"
+NMA_RULE_OPTION_5_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 5 месяцев"
+
+NMA_RULE_OPTION_6_MONTH_GRIND:0 "6 месяцев"
+NMA_RULE_OPTION_6_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 6 месяцев"
+
+NMA_RULE_OPTION_7_MONTH_GRIND:0 "7 месяцев"
+NMA_RULE_OPTION_7_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 7 месяцев"
+
+NMA_RULE_OPTION_8_MONTH_GRIND:0 "8 месяцев"
+NMA_RULE_OPTION_8_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 8 месяцев"
+
+NMA_RULE_OPTION_9_MONTH_GRIND:0 "9 месяцев"
+NMA_RULE_OPTION_9_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 9 месяцев"
+
+NMA_RULE_OPTION_10_MONTH_GRIND:0 "10 месяцев"
+NMA_RULE_OPTION_10_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 10 месяцев"
+
+NMA_RULE_OPTION_11_MONTH_GRIND:0 "11 месяцев"
+NMA_RULE_OPTION_11_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 11 месяцев"
+
+NMA_RULE_OPTION_12_MONTH_GRIND:0 "12 месяцев"
+NMA_RULE_OPTION_12_MONTH_GRIND_DESC:0 "Включив эту опцию, вы позволите фармить данную страну на проятжении 12 месяцев"
