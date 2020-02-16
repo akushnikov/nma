@@ -8,7 +8,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Accept
 	option = {
 		name = mtg_netherlands.1.a
@@ -64,7 +64,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.2.a
@@ -80,7 +80,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.3.a
@@ -96,7 +96,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Great idea!
 	option = {
 		name = mtg_netherlands.4.a
@@ -121,7 +121,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.5.a
@@ -137,7 +137,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-	
+
 	# I guess we have no choice but to let them have it
 	option = {
 		name = mtg_netherlands.6.a
@@ -166,7 +166,7 @@ country_event = {
 	picture = GFX_report_event_physics_lab_02
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.7.a
@@ -219,7 +219,7 @@ country_event = {
 	picture = GFX_report_event_physics_lab_02
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.8.a
@@ -258,7 +258,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.9.a
@@ -273,7 +273,7 @@ country_event = {
 	picture = GFX_report_event_hol_cabinet_de_geer
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.10.a
@@ -300,7 +300,7 @@ country_event = {
 	picture = GFX_report_event_japan_europe_pact
 
 	is_triggered_only = yes
-	
+
 	# Let them 'protect' the East Indies
 	option = {
 		name = mtg_netherlands.11.a
@@ -369,7 +369,7 @@ country_event = {
 	picture = GFX_report_event_japan_europe_pact
 
 	is_triggered_only = yes
-	
+
 	# Huzzah!
 	option = {
 		name = mtg_netherlands.12.a
@@ -403,7 +403,7 @@ country_event = {
 	picture = GFX_report_event_japan_europe_pact
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.13.a
@@ -468,7 +468,7 @@ country_event = {
 	picture = GFX_report_event_hol_cabinet_gerbrandy
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.14.a
@@ -504,7 +504,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Great idea
 	option = {
 		name = mtg_netherlands.15.a
@@ -529,7 +529,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Hurrah
 	option = {
 		name = mtg_netherlands.16.a
@@ -565,7 +565,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Damnit
 	option = {
 		name = mtg_netherlands.17.a
@@ -580,7 +580,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# What?! Bastards!
 	option = {
 		name = mtg_netherlands.18.a
@@ -596,7 +596,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Good idea!
 	option = {
 		name = mtg_netherlands.19.a
@@ -637,7 +637,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Good idea!
 	option = {
 		name = mtg_netherlands.19.a
@@ -678,7 +678,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
-	
+
 	# Oh, well then...
 	option = {
 		name = mtg_netherlands.21.a
@@ -699,7 +699,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-	
+
 	# Goodbye, cruel world!
 	option = {
 		name = mtg_netherlands.22.a
@@ -715,7 +715,7 @@ country_event = {
 	picture = GFX_report_event_japan_europe_pact
 
 	is_triggered_only = yes
-	
+
 	# Ok!
 	option = {
 		name = mtg_netherlands.23.a
@@ -739,7 +739,7 @@ country_event = {
 	picture = GFX_report_event_japan_europe_pact
 
 	is_triggered_only = yes
-	
+
 	# Ok!
 	option = {
 		name = mtg_netherlands.23.a
@@ -788,7 +788,7 @@ country_event = {
 	picture = GFX_report_event_japanese_reply
 
 	is_triggered_only = yes
-	
+
 	# Ok!
 	option = {
 		name = mtg_netherlands.25.a
@@ -869,7 +869,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.26.a
@@ -898,7 +898,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok!
 	option = {
 		name = mtg_netherlands.27.a
@@ -918,7 +918,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Damnit
 	option = {
 		name = mtg_netherlands.28.a
@@ -933,7 +933,7 @@ country_event = {
 	picture = GFX_report_event_generic_rifles
 
 	is_triggered_only = yes
-	
+
 	# Ok - give them infantry equipment
 	option = {
 		name = mtg_netherlands.29.a
@@ -1213,7 +1213,7 @@ country_event = {
 	picture = GFX_report_event_generic_rifles
 
 	is_triggered_only = yes
-	
+
 	# Ok!
 	option = {
 		name = mtg_netherlands.30.a
@@ -1267,7 +1267,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Damnit
 	option = {
 		name = mtg_netherlands.31.a
@@ -1282,7 +1282,7 @@ country_event = {
 	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.32.a
@@ -1426,7 +1426,7 @@ country_event = {
 	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
-	
+
 	# Ok!
 	option = {
 		name = mtg_netherlands.33.a
@@ -1463,7 +1463,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Damnit
 	option = {
 		name = mtg_netherlands.34.a
@@ -1478,7 +1478,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.35.a
@@ -1649,7 +1649,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok!
 	option = {
 		name = mtg_netherlands.36.a
@@ -1689,7 +1689,7 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	# Damnit
 	option = {
 		name = mtg_netherlands.37.a
@@ -1706,7 +1706,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.41.a
@@ -1859,7 +1859,7 @@ country_event = {
 	picture = GFX_report_event_generic_conference
 
 	is_triggered_only = yes
-	
+
 	# Ok!
 	option = {
 		name = mtg_netherlands.42.a
@@ -1883,7 +1883,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
-	
+
 	# Damnit
 	option = {
 		name = mtg_netherlands.43.a
@@ -1902,7 +1902,7 @@ country_event = {
 		NOT = { has_government = communism }
 		is_ai = no
 	}
-	
+
 	hidden = yes
 
 	immediate = {
@@ -1998,7 +1998,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.45.a
@@ -2017,7 +2017,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.46.a
@@ -2036,7 +2036,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.47.a
@@ -2055,7 +2055,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.48.a
@@ -2083,7 +2083,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.49.a
@@ -2102,7 +2102,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.50.a
@@ -2130,7 +2130,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.51.a
@@ -2160,7 +2160,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.52.a
@@ -2179,7 +2179,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.53.a
@@ -2198,7 +2198,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.54.a
@@ -2228,7 +2228,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.55.a
@@ -2247,7 +2247,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.56.a
@@ -2310,7 +2310,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.58.a
@@ -2332,7 +2332,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.59.a
@@ -2347,7 +2347,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Let 'em come
 	option = {
 		name = mtg_netherlands.60.a
@@ -2380,7 +2380,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.61.a
@@ -2399,7 +2399,7 @@ country_event = {
 	picture = GFX_report_event_hol_prins_bernhard
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.62.a
@@ -2414,7 +2414,7 @@ country_event = {
 	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.63.a
@@ -2432,7 +2432,7 @@ country_event = {
 	picture = GFX_report_event_hol_polderen
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = HOL
 		NOT = { has_completed_focus = HOL_the_zuiderzee_works }
@@ -2445,7 +2445,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 2
 	}
-	
+
 	# We will invest
 	option = {
 		name = mtg_netherlands.64.a
@@ -2470,7 +2470,7 @@ country_event = {
 	picture = GFX_report_event_hol_polderen
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = HOL
 		NOT = { has_completed_focus = HOL_the_zuiderzee_works }
@@ -2483,7 +2483,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 2
 	}
-	
+
 	# We will invest
 	option = {
 		name = mtg_netherlands.64.a
@@ -2519,7 +2519,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.66.a
@@ -2556,7 +2556,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	is_triggered_only = yes
-	
+
 	# Ok
 	option = {
 		name = mtg_netherlands.66.a
@@ -2581,7 +2581,7 @@ country_event = {
 	hidden = yes
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = HOL
 		OR = {
@@ -2598,7 +2598,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 2
 	}
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -2637,7 +2637,7 @@ country_event = {
 	picture = GFX_report_event_hol_polderen
 
 	fire_only_once = no
-	
+
 	trigger = {
 		has_global_flag = HOL_inundation_lines_flooded
 		has_full_control_of_state = 7
@@ -2681,7 +2681,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	# They have to suck it up!
 	option = {
 		name = mtg_netherlands.69.a
@@ -2760,76 +2760,6 @@ country_event = {
 	}
 }
 
-
-# Event spawning pro-Kaiser deserter unit
-country_event = {
-	id = mtg_netherlands.70
-	title = mtg_netherlands.70.t
-	desc = mtg_netherlands.70.d
-	picture = GFX_report_event_german_troops
-
-	fire_only_once = no
-	
-	trigger = {
-		original_tag = HOL
-		has_idea = HOL_german_defectors_1
-	}
-
-	mean_time_to_happen = {
-		days = 90
-	}
-	
-	# Good
-	option = {
-		name = excellent
-		if = {
-			limit = {
-				any_state = {
-					is_fully_controlled_by = ROOT
-					is_on_continent = europe
-				}
-			}
-			random_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					is_on_continent = europe
-				}
-				create_unit = {
-					division = "division_template = \"Hare Majesteits Duitse Legioen\" start_experience_factor = 0.5 start_equipment_factor = 0.25"
-					owner = HOL
-				}
-			}
-		}
-		else = {
-			random_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-				}
-				create_unit = {
-					division = "division_template = \"Hare Majesteits Duitse Legioen\" start_experience_factor = 0.5 start_equipment_factor = 0.25"
-					owner = HOL
-				}
-			}
-		}
-	}
-}
-
-# Event informing Germany of pro-Kaiser deserters
-country_event = {
-	id = mtg_netherlands.71
-	title = mtg_netherlands.71.t
-	desc = mtg_netherlands.71.d
-	picture = GFX_report_event_german_troops
-
-	is_triggered_only = yes
-	
-	# Damn them!
-	option = {
-		name = mtg_netherlands.71.a
-		add_ideas = HOL_german_defectors_2
-	}
-}
-
 # Wilhelm II dies (Netherlands)
 country_event = {
 	id = mtg_netherlands.72
@@ -2838,7 +2768,7 @@ country_event = {
 	picture = GFX_report_event_generic_funeral
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = HOL
 		has_government = neutrality
@@ -2859,7 +2789,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1460	# Died in 1941
 	}
-	
+
 	# A tragedy
 	option = {
 		name = mtg_netherlands.72.a
@@ -2887,7 +2817,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	# Good
 	option = {
 		name = mtg_netherlands.73.a
@@ -2925,8 +2855,8 @@ country_event = {
 			set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
 			ROOT = {
 				puppet = PREV
-				add_to_war = { 
-				    targeted_alliance = PREV 
+				add_to_war = {
+				    targeted_alliance = PREV
 				    enemy = GER
 				    hostility_reason = asked_to_join
 				}
@@ -2973,7 +2903,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty3
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		original_tag = HOL
 		has_government = neutrality
@@ -2990,7 +2920,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 2
 	}
-	
+
 	# OK
 	option = {
 		name = mtg_netherlands.74.a
@@ -3014,66 +2944,12 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
-	
+
 	# How dare they?!
 	option = {
 		name = mtg_netherlands.75.a
 		effect_tooltip = {
 			add_opinion_modifier = { target = HOL modifier = HOL_wilhelminism }
-		}
-	}
-}
-
-# Event informing HOL that German deserters are no longer needed
-country_event = {
-	id = mtg_netherlands.76
-	title = mtg_netherlands.76.t
-	desc = mtg_netherlands.76.d
-	picture = GFX_report_event_german_troops
-
-	is_triggered_only = yes
-	
-	# Very well
-	option = {
-		name = mtg_netherlands.76.a
-		remove_ideas = HOL_german_defectors_1
-		delete_unit_template_and_units = { division_template = "Hare Majesteits Duitse Legioen" }
-		if = {
-			limit = {
-				has_dlc = "Waking the Tiger"
-			}
-			hidden_effect = {
-				random_country = {
-					limit = {
-						original_tag = GER
-						has_government = neutrality
-					}
-					load_focus_tree = { tree = german_focus keep_completed = no }
-					unlock_national_focus = GER_oppose_hitler
-					unlock_national_focus = GER_secure_the_new_state
-					unlock_national_focus = GER_revive_the_kaiserreich
-					unlock_national_focus = GER_return_of_the_kaiser
-					unlock_national_focus = GER_focus_on_the_true_enemy
-					unlock_national_focus = GER_four_year_plan
-					unlock_national_focus = GER_west_wall
-					unlock_national_focus = GER_atlantikwall 
-					unlock_national_focus = GER_ostwall
-					unlock_national_focus = GER_grosraumwirtschaft
-					unlock_national_focus = GER_align_romania
-					unlock_national_focus = GER_align_hungary
-					unlock_national_focus = GER_autarky
-					unlock_national_focus = GER_autobahn
-					unlock_national_focus = GER_german_war_economy
-					unlock_national_focus = GER_coal_liquidization
-					unlock_national_focus = GER_synthetic_rubber
-					unlock_national_focus = GER_hermann_goring_werke
-					unlock_national_focus = GER_kdf_wagen
-					complete_national_focus = GER_extra_tech_slot
-					unlock_national_focus = GER_air_innovation
-					unlock_national_focus = GER_army_innovation
-					unlock_national_focus = GER_soviet_treaty
-				}
-			}
 		}
 	}
 }
@@ -3086,7 +2962,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
-	
+
 	# Sounds good
 	option = {
 		name = mtg_netherlands.77.a
@@ -3115,7 +2991,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
-	
+
 	# Great
 	option = {
 		name = excellent
@@ -3166,7 +3042,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
-	
+
 	# Unfortunate
 	option = {
 		name = unfortunate
