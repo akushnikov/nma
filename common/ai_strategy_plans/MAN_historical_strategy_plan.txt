@@ -4,22 +4,8 @@ MAN_historical_plan = {
 
 	enable = {
 		original_tag = MAN
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = MAN_ai_behavior
-					option = DEFAULT
-				}
-			}
-			has_country_flag = MAN_AI_RANDOM_OBEDIENCE
-			has_game_rule = {
-				rule = MAN_ai_behavior
-				option = OBEDIENCE
-			}
-		}
 	}
-	
+
 	ai_national_focuses = {
 		MAN_pacify_the_countryside
 		CHI_invite_foreign_investors

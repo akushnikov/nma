@@ -4,23 +4,10 @@ POL_historical_plan = {
 
 	enable = {
 		original_tag = POL
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = POL_ai_behavior
-					option = DEFAULT
-				}
-			}
-			has_country_flag = POL_AI_RANDOM_HISTORICAL
-			has_game_rule = {
-				rule = POL_ai_behavior
-				option = HISTORICAL
-			}
-		}
 	}
+
 	abort = {
-		is_subject = yes
+		
 	}
 
 	ai_national_focuses = {
@@ -46,7 +33,7 @@ POL_historical_plan = {
 		POL_hel_fortified_area
 		POL_standardisation_of_equipment
 		POL_modernising_the_cavalry
-		POL_study_foreign_tanks		
+		POL_study_foreign_tanks
 		#1940
 		POL_air_base_expansion
 		POL_fighter_modernisation
@@ -56,7 +43,7 @@ POL_historical_plan = {
 		#1941
 		POL_medium_bomber_focus
 		POL_light_bomber_focus
-		POL_air_modernisations_programme		
+		POL_air_modernisations_programme
 		POL_develop_polish_ship_building
 		POL_study_foreign_built_ships
 		#1942
@@ -74,7 +61,7 @@ POL_historical_plan = {
 		#1944
 		POL_poland_first
 		POL_ideological_fanaticism
-		POL_the_between_the_seas_concept		
+		POL_the_between_the_seas_concept
 		POL_the_bombe
 		POL_the_cyclometer
 	}
@@ -91,7 +78,7 @@ POL_historical_plan = {
 		popular_figurehead = 5
 	}
 
-	
+
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
