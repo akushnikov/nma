@@ -14,13 +14,10 @@ is_allowed_to_grind = {
 # THIS is grinded country
 is_allowed_to_grind_with_casualties = {
   is_allowed_to_grind = yes
-  any_of_scopes = {
-    array = PREV.faction_members
 
-    # PREV is grinded country
-    # THIS is ally of grinding country including itself
-
-    has_offensive_war_with = PREV
+  any_enemy_country = {
+    # THIS - enemy country
+    # PREV - grinded country
     OR = {
       casualties_inflicted_by = {
         opponent = PREV
