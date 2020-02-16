@@ -265,25 +265,6 @@ ideas = {
 
 		}
 
-		HUN_gusztav_gratz = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = HUN
-				has_dlc = "Death or Dishonor"
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			traits = { staunch_monarchist }
-		}
-
 		HUN_kalman_daranyi = {
 
 			picture = generic_political_advisor_europe_2
