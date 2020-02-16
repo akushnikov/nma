@@ -1294,9 +1294,6 @@ focus_tree = {
 		}
 		bypass = {
 			is_in_faction_with = ENG
-			NOT = {
-				has_completed_focus = FRA_little_entente
-			}
 		}
 	 	prerequisite = { focus = FRA_support_status_quo }
 		x = 0

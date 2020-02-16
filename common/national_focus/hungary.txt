@@ -372,19 +372,7 @@ focus_tree = {
 			add_threat = 1
 			if = {
 				limit = {
-					FRA = {
-						has_completed_focus = FRA_little_entente
-						exists = yes
-						is_subject = no
-					}
-
-				}
-				FRA = { country_event = { id = DOD_hungary.40 } }
-			}
-			if = {
-				limit = {
 					OR = {
-						NOT = { FRA = { has_completed_focus = FRA_little_entente } }
 						FRA = { exists = no }
 						FRA = { is_subject = yes }
 					}
@@ -2063,7 +2051,6 @@ focus_tree = {
 						OR = {
 							exists = no
 							is_puppet = yes
-							NOT = { has_completed_focus = FRA_little_entente }
 						}
 					}
 				}
@@ -2074,18 +2061,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			if = {
-				limit = {
-					FRA = { has_completed_focus = FRA_little_entente }
-				}
-				FRA = { country_event = DOD_hungary.140 }
-			}
-			if = {
-				limit = {
-					NOT = { FRA = { has_completed_focus = FRA_little_entente } }
-				}
-				ROM = { country_event = DOD_hungary.140 }
-			}
+			ROM = { country_event = DOD_hungary.140 }
 		}
 	}
 
