@@ -2177,9 +2177,7 @@ focus_tree = {
 		id = GER_soviet_treaty
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GER_army_innovation }
-		available = {
-			NOT = { has_completed_focus = GER_anti_soviet_pact }
-		}
+
 		#cancel = {
 		#	OR = {
 		#		has_war_with = SOV
@@ -2367,7 +2365,6 @@ focus_tree = {
 		id = GER_mol_rib_pact
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_soviet_treaty }
-		mutually_exclusive = { focus = GER_anti_soviet_pact }
 		available = {
 			is_puppet = no
 			has_government = fascism
@@ -2402,90 +2399,6 @@ focus_tree = {
 				custom_effect_tooltip = GER_mol_rib_pact_tt
 				custom_effect_tooltip = needs_approval
 			}
-		}
-	}
-
-	focus = {
-		id = GER_soviet_ally
-		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = GER_mol_rib_pact }
-		mutually_exclusive = { focus = GER_ussr_war_goal }
-		available = {
-			is_puppet = no
-			has_government = fascism
-			has_war = no
-			SOV = {
-				has_war = no
-				NOT = { has_war_with = GER }
-				is_puppet = no
-			}
-		}
-		bypass = {
-			SOV = {
-				is_in_faction_with = GER
-			}
-		}
-		x = 1
-		y = 1
-		relative_position_id = GER_mol_rib_pact
-		cost = 10
-		ai_will_do = {
-			factor = 0.01
-			modifier = {
-				factor = 0
-				NOT = { is_in_faction_with = POL }
-				country_exists = POL
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					has_war_with = POL
-					has_war_with = FRA
-				}
-			}
-		}
-		completion_reward = {
-			if = {
-				limit = { is_faction_leader = yes }
-				custom_effect_tooltip = ger_sov_buddies_tooltip_2
-			}
-			custom_effect_tooltip = ger_sov_buddies_tooltip
-			add_ideas = soviet_german_friendship
-			SOV = {
-				add_opinion_modifier = { target = GER modifier = ger_sov_alliance_focus }
-				add_ideas = soviet_german_friendship
-				country_event = germany.89
-			}
-		}
-	}
-
-	focus = {
-		id = GER_turkey_puppet
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_soviet_ally }
-		available = {
-			is_puppet = no
-			has_government = fascism
-			OR = {
-				GRE = {
-					is_in_faction_with = GER
-					all_owned_state = {
-						controller = { is_in_faction_with = GER }
-					}
-				}
-			}
-			NOT = { has_war_with = SOV }
-			country_exists = TUR
-		}
-		x = 0
-		y = 2
-		relative_position_id = GER_soviet_ally
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			TUR = { country_event = { id = germany.79 days = 1 } }
 		}
 	}
 
@@ -2681,52 +2594,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_anti_soviet_pact
-		icon = GFX_goal_anti_comintern_pact
-		prerequisite = { focus = GER_anti_comitern_pact }
-		mutually_exclusive = { focus = GER_mol_rib_pact }
-		available = {
-			is_puppet = no
-			has_army_manpower = { size > 849999 } #ca 90 div
-		}
-		x = 0
-		y = 3
-		relative_position_id = GER_anti_comitern_pact
-		cost = 10
-		ai_will_do = {
-			factor = 2.5
-		}
-		completion_reward = {
-			hidden_effect = {
-				SOV = { remove_opinion_modifier = { target = ROOT modifier = pact_against_us } }
-			}
-			SOV = { add_opinion_modifier = { target = ROOT modifier = worse_pact_against_us } }
-			custom_effect_tooltip = GER_anti_soviet_pact_tt_3
-			custom_effect_tooltip = GER_anti_soviet_pact_tt
-			custom_effect_tooltip = GER_anti_soviet_pact_tt_2
-			every_other_country = {
-				limit = {
-					has_opinion_modifier = anti_comintern_pact_opinion
-					OR = {
-						NOT = { is_in_faction = yes }
-						is_in_faction_with = GER
-					}
-					NOT = { tag = GER }
-					NOT = { has_war_with = GER }
-				}
-				country_event = germany.83
-			}
-			hidden_effect = {
-				news_event = { hours = 12 id = news.215 }
-			}
-		}
-	}
-
-	focus = {
 		id = GER_ussr_war_goal
 		icon = GFX_goal_generic_war_with_comintern
 		prerequisite = { focus = GER_anti_comitern_pact }
-		mutually_exclusive = { focus = GER_soviet_ally }
 		will_lead_to_war_with = SOV
 
 		cancel = {
