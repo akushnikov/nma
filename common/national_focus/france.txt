@@ -1265,13 +1265,7 @@ focus_tree = {
 			}
 			modifier = {
 				factor = 0
-				has_idea = GER_communist_refugees
-			}
-			modifier = {
-				factor = 0
 				NOT = { GER = { has_completed_focus = GER_rhineland } }
-				NOT = { GER = { has_completed_focus = GER_reestablish_free_elections } }
-				NOT = { GER = { has_completed_focus = GER_focus_on_the_true_enemy } }
 			}
 		}
 		completion_reward = {
@@ -1317,10 +1311,6 @@ focus_tree = {
 			modifier = {
 				factor = 0.5
 				ai_irrationality > 30
-			}
-			modifier = {
-				factor = 0
-				has_idea = GER_communist_refugees
 			}
 		}
 		completion_reward = {

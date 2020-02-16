@@ -1741,14 +1741,6 @@ focus_tree = {
 				factor = 0.1
 				ai_irrationality > 30
 			}
-
-			modifier = {
-				factor = 0
-				OR = {
-					GER = { has_completed_focus = GER_reestablish_free_elections }
-					GER = { has_completed_focus = GER_expatriate_the_communists }
-				}
-			}
 		}
 		completion_reward = {
 			GER = {

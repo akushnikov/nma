@@ -4,64 +4,6 @@
 
 add_namespace = generic
 
-# President dies
-country_event = {
-	id = generic.1
-	title = generic.1.t
-	desc = { 
-		text = generic.1.d_neutral_good
-		trigger = {
-			has_government = FROM
-		}
-	}
-	desc = {
-		text = generic.1.d_bad
-		trigger = {
-			NOT = { has_government = FROM }
-		}
-	}
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-
-	option = {
-		name = generic.1.a
-		trigger = {
-			has_government = FROM
-		}
-		if = {
-			limit = {
-				FROM = {
-					tag = ENG
-					has_completed_focus = uk_china_focus
-				}
-				tag = event_target:WTT_current_china_leader
-			}
-			effect_tooltip = {
-				add_offsite_building = { type = arms_factory level = 2 }
-			}
-		}
-	}
-	option = {
-		name = generic.1.b
-		trigger = {
-			NOT = { has_government = FROM }
-		}
-		if = {
-			limit = {
-				FROM = {
-					tag = ENG
-					has_completed_focus = uk_china_focus
-				}
-				tag = event_target:WTT_current_china_leader
-			}
-			effect_tooltip = {
-				add_offsite_building = { type = arms_factory level = 2 }
-			}
-		}
-	}
-}
-
 # Generic request to join major Alliance
 country_event = {
 	id = generic.2
@@ -136,7 +78,7 @@ country_event = {
 	}
 
 	is_triggered_only = yes
-	
+
 	option = { #Agree / Both Democratic
 		name = generic.2.a
 		trigger = {
@@ -226,7 +168,7 @@ country_event = {
 		}
 		ai_chance = {
 			base = 100
-			
+
 			modifier = {
 				factor = 0.5
 				has_war = no
@@ -234,14 +176,14 @@ country_event = {
 					has_war = yes
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.5
 				NOT = {
 					has_government = neutrality
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.75
 				FROM = {
@@ -264,12 +206,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Reject
 		name = generic.2.f
 		ai_chance = {
 			factor = 50
-			
+
 			modifier = {
 				factor = 0.5
 				has_opinion = {
@@ -277,7 +219,7 @@ country_event = {
 					value > 65
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.5
 				has_opinion = {
@@ -285,7 +227,7 @@ country_event = {
 					value > 35
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.5
 				has_opinion = {
@@ -293,7 +235,7 @@ country_event = {
 					value > 5
 				}
 			}
-			
+
 			modifier = {
 				factor = 2.0
 				has_opinion = {
@@ -301,7 +243,7 @@ country_event = {
 					value < 35
 				}
 			}
-			
+
 			modifier = {
 				factor = 2.0
 				has_opinion = {
@@ -309,7 +251,7 @@ country_event = {
 					value < 65
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.1
 				has_war = yes
@@ -317,7 +259,7 @@ country_event = {
 					has_war = no
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.1
 				FROM = {
@@ -325,7 +267,7 @@ country_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			country_event = { id = generic.4 hours = 6 }
 		}
 	}
@@ -340,7 +282,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.3.a
 		trigger = {
@@ -408,11 +350,11 @@ country_event = {
 	id = generic.4
 	title = generic.4.t
 	desc = generic.4.d
-	
+
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.4.a
 		trigger = {
@@ -550,7 +492,7 @@ country_event = {
 	}
 
 	is_triggered_only = yes
-	
+
 	option = { #Agree / Both Democratic
 		name = generic.5.a
 		trigger = {
@@ -565,30 +507,14 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		FROM = { 
+		FROM = {
 			add_to_faction = ROOT
-			country_event = { id = generic.6 hours = 6 } 
+			country_event = { id = generic.6 hours = 6 }
 		}
 		add_ai_strategy = {
 			type = alliance
 			id = FROM
 			value = 200
-		}
-		hidden_effect = {
-			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
-			if = {
-				limit = {
-					FROM = {
-						original_tag = GER
-						has_government = democratic
-						has_completed_focus = GER_pool_technical_know_how
-					}
-					NOT = { has_idea = GER_pool_technical_know_how }
-				}
-				add_ideas = GER_pool_technical_know_how
-			}
 		}
 	}
 	option = { #Agree / Both Fascist
@@ -605,9 +531,9 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		FROM = { 
+		FROM = {
 			add_to_faction = ROOT
-			country_event = { id = generic.6 hours = 6 } 
+			country_event = { id = generic.6 hours = 6 }
 		}
 		add_ai_strategy = {
 			type = alliance
@@ -634,7 +560,7 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		FROM = { 
+		FROM = {
 			add_to_faction = ROOT
 			country_event = { id = generic.6 hours = 6 }
 		}
@@ -676,7 +602,7 @@ country_event = {
 		}
 		ai_chance = {
 			base = 100
-			
+
 			modifier = {
 				factor = 0.5
 				has_war = no
@@ -684,14 +610,14 @@ country_event = {
 					has_war = yes
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.5
 				NOT = {
 					has_government = neutrality
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.75
 				FROM = {
@@ -699,7 +625,7 @@ country_event = {
 				}
 			}
 		}
-		FROM = { 
+		FROM = {
 			add_to_faction = ROOT
 			country_event = { id = generic.6 hours = 6 }
 		}
@@ -715,22 +641,6 @@ country_event = {
 			id = FROM
 			value = 200
 		}
-		hidden_effect = {
-			set_country_flag = alliance_applicant@ROOT
-			FROM = { set_country_flag = alliance_inviter@ROOT }
-			news_event = { id = news.289 hours = 12 }
-			if = {
-				limit = {
-					FROM = {
-						original_tag = GER
-						has_government = democratic
-						has_completed_focus = GER_pool_technical_know_how
-					}
-					NOT = { has_idea = GER_pool_technical_know_how }
-				}
-				add_ideas = GER_pool_technical_know_how
-			}
-		}
 	}
 }
 
@@ -743,7 +653,7 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.3.a
 		trigger = {
@@ -811,11 +721,11 @@ country_event = {
 	id = generic.7
 	title = generic.7.t
 	desc = generic.7.d
-	
+
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.7.a
 		trigger = {
@@ -882,11 +792,11 @@ country_event = {
 	id = generic.8
 	title = generic.8.t
 	desc = generic.8.d
-	
+
 	picture = GFX_report_event_physics_lab_01 #todo picture of Little Boy
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.8.a
 		clr_country_flag = racing_for_the_bomb
@@ -906,7 +816,7 @@ country_event = {
 			}
 			country_event = { id = generic.10 }
 		}
-	}	
+	}
 }
 
 # Race for the Bomb failure event
@@ -914,18 +824,18 @@ country_event = {
 	id = generic.9
 	title = generic.9.t
 	desc = generic.9.d
-	
+
 	picture = GFX_report_event_physics_lab_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.9.a
 		clr_country_flag = racing_for_the_bomb
 		remove_ideas = race_for_the_bomb
 		add_timed_idea = { idea = race_for_the_bomb_outclassed days = 360 }
 		add_stability = -0.1
-	}	
+	}
 }
 
 # Race for the Bomb faction member success event
@@ -933,17 +843,17 @@ country_event = {
 	id = generic.10
 	title = generic.10.t
 	desc = generic.10.d
-	
+
 	picture = GFX_report_event_physics_lab_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.10.a
 		clr_country_flag = racing_for_the_bomb
 		remove_ideas = race_for_the_bomb
 		add_war_support = 0.05
-	}	
+	}
 }
 
 # Ideology civil war won
@@ -951,15 +861,15 @@ country_event = {
 	id = generic.11
 	title = generic.11.t
 	desc = generic.11.d
-	
+
 	picture = GFX_report_event_generic_ruins
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.11.a
 		clr_country_flag = ideology_civil_war
-	}	
+	}
 }
 
 # Enemy attempting to destroy Suez
@@ -967,15 +877,15 @@ country_event = {
 	id = generic.12
 	title = generic.12.t
 	desc = generic.12.d
-	
+
 	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.12.a
 		custom_effect_tooltip = canals_tt
-	}	
+	}
 }
 
 # Enemy attempting to destroy Panama
@@ -983,15 +893,15 @@ country_event = {
 	id = generic.13
 	title = generic.13.t
 	desc = generic.13.d
-	
+
 	picture = GFX_report_event_merchant_ship_01
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = generic.12.a
 		custom_effect_tooltip = canals_tt
-	}	
+	}
 }
 
 # Notification event that TAG withdrew attache
@@ -999,14 +909,14 @@ country_event = {
 	id = generic.15
 	title = generic.15.t
 	desc = generic.15.d
-	
+
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
 
 	option = {
 		name = excellent
-	}	
+	}
 }
 
 # Notification event that TAG refused to withdraw attache
@@ -1014,7 +924,7 @@ country_event = {
 	id = generic.16
 	title = generic.16.t
 	desc = generic.16.d
-	
+
 	picture = GFX_report_event_generic_read_write
 
 	is_triggered_only = yes
@@ -1024,7 +934,7 @@ country_event = {
 		effect_tooltip = {
 			add_opinion_modifier = { target = FROM modifier = rejected_demands }
 		}
-	}	
+	}
 }
 
 # Notification event that leader has gotten sick
@@ -1032,7 +942,7 @@ unit_leader_event = {
 	id = generic.17
 	title = generic.17.t
 	desc = generic.17.d
-	
+
 	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
@@ -1059,7 +969,7 @@ unit_leader_event = {
 				}
 			}
 		}
-	}	
+	}
 }
 
 # Notification event that leader has been wounded
@@ -1067,7 +977,7 @@ country_event = {
 	id = generic.18
 	title = generic.18.t
 	desc = generic.18.d
-	
+
 	picture = GFX_report_event_military_planning
 
 	is_triggered_only = yes
@@ -1082,7 +992,7 @@ country_event = {
 				}
 			}
 		}
-	}	
+	}
 }
 
 # Notification event that FROM has sent industrial support
@@ -1090,7 +1000,7 @@ country_event = {
 	id = generic.19
 	title = generic.19.t
 	desc = generic.19.d
-	
+
 	picture = GFX_report_event_generic_factory
 
 	is_triggered_only = yes
@@ -1100,5 +1010,5 @@ country_event = {
 		effect_tooltip = {
 			add_offsite_building = { type = arms_factory level = 2 }
 		}
-	}	
+	}
 }

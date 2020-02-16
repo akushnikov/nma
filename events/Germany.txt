@@ -2402,16 +2402,7 @@ country_event = {
 			OR = {
 				NOT = { FROM = { original_tag = POL } }
 				NOT = { original_tag = GER }
-				NOT = { has_completed_focus = GER_danzig_for_guarantees }
 			}
-		}
-	}
-	title = {
-		text = germany.85.t.b
-		trigger = {
-			FROM = { original_tag = POL }
-			original_tag = GER
-			has_completed_focus = GER_danzig_for_guarantees
 		}
 	}
 	desc = {
@@ -2420,16 +2411,7 @@ country_event = {
 			OR = {
 				NOT = { FROM = { original_tag = POL } }
 				NOT = { original_tag = GER }
-				NOT = { has_completed_focus = GER_danzig_for_guarantees }
 			}
-		}
-	}
-	desc = {
-		text = germany.85.desc.b
-		trigger = {
-			FROM = { original_tag = POL }
-			original_tag = GER
-			has_completed_focus = GER_danzig_for_guarantees
 		}
 	}
 	picture = GFX_report_event_soviet_tanks
@@ -2465,7 +2447,6 @@ country_event = {
 		trigger = {
 			NOT = { FROM = { original_tag = POL } }
 			NOT = { original_tag = GER }
-			NOT = { has_completed_focus = GER_danzig_for_guarantees }
 		}
 		ai_chance = {
 			factor = 0
@@ -4457,10 +4438,6 @@ country_event = {
 		name = germany.122.b
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 0
-				FRA = { has_completed_focus = FRA_little_entente }
-			}
 			modifier = {
 				factor = 0
 				any_other_country = {

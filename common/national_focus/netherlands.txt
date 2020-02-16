@@ -1,25 +1,25 @@
 focus_tree = {
 	id = netherlands_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 10
 			tag = HOL
 			has_dlc = "Man the Guns"
 		}
 	}
-	
+
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1500 }
 
- ##   ##  #    ##  #  # ###  ##  #       ### #  # ###  #  #  ## ### ###  #   #     ### ###  ### ### 
-#  # #  # #   #  # ## #  #  #  # #        #  ## # #  # #  # #    #  #  #  # #       #  #  # #   #   
-#    #  # #   #  # # ##  #  #### #        #  # ## #  # #  #  #   #  ###    #        #  ###  ##  ##  
-#  # #  # #   #  # #  #  #  #  # #        #  #  # #  # #  #   #  #  #  #   #        #  #  # #   #   
- ##   ##  ###  ##  #  # ### #  # ###     ### #  # ###   ##  ##   #  #  #   #        #  #  # ### ### 
+ ##   ##  #    ##  #  # ###  ##  #       ### #  # ###  #  #  ## ### ###  #   #     ### ###  ### ###
+#  # #  # #   #  # ## #  #  #  # #        #  ## # #  # #  # #    #  #  #  # #       #  #  # #   #
+#    #  # #   #  # # ##  #  #### #        #  # ## #  # #  #  #   #  ###    #        #  ###  ##  ##
+#  # #  # #   #  # #  #  #  #  # #        #  #  # #  # #  #   #  #  #  #   #        #  #  # #   #
+ ##   ##  ###  ##  #  # ### #  # ###     ### #  # ###   ##  ##   #  #  #   #        #  #  # ### ###
 
 
 	focus = {
@@ -41,7 +41,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		
+
 		icon = GFX_goal_generic_consumer_goods
 		x = 3
 		y = 0
@@ -55,11 +55,11 @@ focus_tree = {
 		}
 	}
 
-#   # ###  ## ###     ### #  # ###  ### ###  ## 
-#   # #   #    #       #  ## # #  #  #  #   #   
-# # # ##   #   #       #  # ## #  #  #  ##   #  
-# # # #     #  #       #  #  # #  #  #  #     # 
- # #  ### ##   #      ### #  # ###  ### ### ##  
+#   # ###  ## ###     ### #  # ###  ### ###  ##
+#   # #   #    #       #  ## # #  #  #  #   #
+# # # ##   #   #       #  # ## #  #  #  ##   #
+# # # #     #  #       #  #  # #  #  #  #     #
+ # #  ### ##   #      ### #  # ###  ### ### ##
 
 
 	focus = {
@@ -309,11 +309,11 @@ focus_tree = {
 		}
 	}
 
-###  ##   ## ###     ### #  # ###  ### ###  ## 
-#   #  # #    #       #  ## # #  #  #  #   #   
-##  ####  #   #       #  # ## #  #  #  ##   #  
-#   #  #   #  #       #  #  # #  #  #  #     # 
-### #  # ##   #      ### #  # ###  ### ### ##  
+###  ##   ## ###     ### #  # ###  ### ###  ##
+#   #  # #    #       #  ## # #  #  #  #   #
+##  ####  #   #       #  # ## #  #  #  ##   #
+#   #  #   #  #       #  #  # #  #  #  #     #
+### #  # ##   #      ### #  # ###  ### ### ##
 
 	focus = {
 		id = HOL_the_crown_jewel_colony
@@ -716,11 +716,11 @@ focus_tree = {
 		}
 	}
 
- ##   ##  #  # ### ### #  # #  # ###     ### #  # ###     #   #  ##  ###      ### #  #     ###   ##  ###  ##  #   # ###  ##  
-#  # #  # ## #  #   #  ## # #  # #        #  #  # #       #   # #  # #  #      #  ## #     #  # #  #  #  #  # #   #  #  #  # 
-#    #  # # ##  #   #  # ## #  # ##       #  #### ##      # # # #### ###       #  # ##     ###  ####  #  ####  # #   #  #### 
-#  # #  # #  #  #   #  #  # #  # #        #  #  # #       # # # #  # #  #      #  #  #     #  # #  #  #  #  #  # #   #  #  # 
- ##   ##  #  #  #  ### #  #  ##  ###      #  #  # ###      # #  #  # #  #     ### #  #     ###  #  #  #  #  #   #   ### #  # 
+ ##   ##  #  # ### ### #  # #  # ###     ### #  # ###     #   #  ##  ###      ### #  #     ###   ##  ###  ##  #   # ###  ##
+#  # #  # ## #  #   #  ## # #  # #        #  #  # #       #   # #  # #  #      #  ## #     #  # #  #  #  #  # #   #  #  #  #
+#    #  # # ##  #   #  # ## #  # ##       #  #### ##      # # # #### ###       #  # ##     ###  ####  #  ####  # #   #  ####
+#  # #  # #  #  #   #  #  # #  # #        #  #  # #       # # # #  # #  #      #  #  #     #  # #  #  #  #  #  # #   #  #  #
+ ##   ##  #  #  #  ### #  #  ##  ###      #  #  # ###      # #  #  # #  #     ### #  #     ###  #  #  #  #  #   #   ### #  #
 
  	focus = {
 		id = HOL_curtail_colonial_autonomy
@@ -1153,11 +1153,11 @@ focus_tree = {
 		}
 	}
 
- ##  ###   ##  #  # ###   ##  #  #     ### #  # ###      ##   ##  #   ###       ## ###  ##  #  # ###   ##  ###  ###  
-#  # #  # #  # ## # #  # #  # ## #      #  #  # #       #    #  # #   #  #     #    #  #  # ## # #  # #  # #  # #  # 
-#### ###  #### # ## #  # #  # # ##      #  #### ##      # ## #  # #   #  #      #   #  #### # ## #  # #### ###  #  # 
-#  # #  # #  # #  # #  # #  # #  #      #  #  # #       #  # #  # #   #  #       #  #  #  # #  # #  # #  # #  # #  # 
-#  # ###  #  # #  # ###   ##  #  #      #  #  # ###      ##   ##  ### ###      ##   #  #  # #  # ###  #  # #  # ###  
+ ##  ###   ##  #  # ###   ##  #  #     ### #  # ###      ##   ##  #   ###       ## ###  ##  #  # ###   ##  ###  ###
+#  # #  # #  # ## # #  # #  # ## #      #  #  # #       #    #  # #   #  #     #    #  #  # ## # #  # #  # #  # #  #
+#### ###  #### # ## #  # #  # # ##      #  #### ##      # ## #  # #   #  #      #   #  #### # ## #  # #### ###  #  #
+#  # #  # #  # #  # #  # #  # #  #      #  #  # #       #  # #  # #   #  #       #  #  #  # #  # #  # #  # #  # #  #
+#  # ###  #  # #  # ###   ##  #  #      #  #  # ###      ##   ##  ### ###      ##   #  #  # #  # ###  #  # #  # ###
 
 	focus = {
 		id = HOL_abandon_the_gold_standard
@@ -1174,11 +1174,11 @@ focus_tree = {
 		}
 	}
 
-#   #  ##  ### #  # #    ##  #  # ###      ### #  # ###  #  #  ## ### ###  #   #     ### ###  ### ### 
-## ## #  #  #  ## # #   #  # ## # #  #      #  ## # #  # #  # #    #  #  #  # #       #  #  # #   #   
-# # # ####  #  # ## #   #### # ## #  #      #  # ## #  # #  #  #   #  ###    #        #  ###  ##  ##  
-#   # #  #  #  #  # #   #  # #  # #  #      #  #  # #  # #  #   #  #  #  #   #        #  #  # #   #   
-#   # #  # ### #  # ### #  # #  # ###      ### #  # ###   ##  ##   #  #  #   #        #  #  # ### ### 
+#   #  ##  ### #  # #    ##  #  # ###      ### #  # ###  #  #  ## ### ###  #   #     ### ###  ### ###
+## ## #  #  #  ## # #   #  # ## # #  #      #  ## # #  # #  # #    #  #  #  # #       #  #  # #   #
+# # # ####  #  # ## #   #### # ## #  #      #  # ## #  # #  #  #   #  ###    #        #  ###  ##  ##
+#   # #  #  #  #  # #   #  # #  # #  #      #  #  # #  # #  #   #  #  #  #   #        #  #  # #   #
+#   # #  # ### #  # ### #  # #  # ###      ### #  # ###   ##  ##   #  #  #   #        #  #  # ### ###
 
 
 	focus = {
@@ -1390,11 +1390,11 @@ focus_tree = {
 		}
 	}
 
-### #  # ###     ### #  # ### ###  ### ###  ### ### ###     #   #  ##  ###  # #  ## 
- #  #  # #         # #  #  #  #  # #   #  #   # #   #       #   # #  # #  # # # #   
- #  #### ##       #  #  #  #  #  # ##  ###   #  ##  ##      # # # #  # ###  ##   #  
- #  #  # #       #   #  #  #  #  # #   #  # #   #   #       # # # #  # #  # # #   # 
- #  #  # ###     ###  ##  ### ###  ### #  # ### ### ###      # #   ##  #  # # # ##  
+### #  # ###     ### #  # ### ###  ### ###  ### ### ###     #   #  ##  ###  # #  ##
+ #  #  # #         # #  #  #  #  # #   #  #   # #   #       #   # #  # #  # # # #
+ #  #### ##       #  #  #  #  #  # ##  ###   #  ##  ##      # # # #  # ###  ##   #
+ #  #  # #       #   #  #  #  #  # #   #  # #   #   #       # # # #  # #  # # #   #
+ #  #  # ###     ###  ##  ### ###  ### #  # ### ### ###      # #   ##  #  # # # ##
 
  	focus = {
 		id = HOL_the_zuiderzee_works
@@ -1908,11 +1908,11 @@ focus_tree = {
 		}
 	}
 
-#   # ### #   ### ###  ##  ###  #   #     ### ###  ### ### 
-## ##  #  #    #   #  #  # #  #  # #       #  #  # #   #   
-# # #  #  #    #   #  #### ###    #        #  ###  ##  ##  
-#   #  #  #    #   #  #  # #  #   #        #  #  # #   #   
-#   # ### ### ###  #  #  # #  #   #        #  #  # ### ### 
+#   # ### #   ### ###  ##  ###  #   #     ### ###  ### ###
+## ##  #  #    #   #  #  # #  #  # #       #  #  # #   #
+# # #  #  #    #   #  #### ###    #        #  ###  ##  ##
+#   #  #  #    #   #  #  # #  #   #        #  #  # #   #
+#   # ### ### ###  #  #  # #  #   #        #  #  # ### ###
 
 	focus = {
 		id = HOL_overturn_military_budget_cuts
@@ -1931,11 +1931,11 @@ focus_tree = {
 		}
 	}
 
-###  ### ### ### #  #  ## ###  ## 
-#  # #   #   #   ## # #   #   #   
-#  # ##  ##  ##  # ##  #  ##   #  
-#  # #   #   #   #  #   # #     # 
-###  ### #   ### #  # ##  ### ##  
+###  ### ### ### #  #  ## ###  ##
+#  # #   #   #   ## # #   #   #
+#  # ##  ##  ##  # ##  #  ##   #
+#  # #   #   #   #  #   # #     #
+###  ### #   ### #  # ##  ### ##
 
 
 	focus = {
@@ -2009,7 +2009,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -2025,7 +2025,7 @@ focus_tree = {
 			}
 			ENG = {
 				add_opinion_modifier = { target = HOL modifier = HOL_protect_against_britain }
-			}	
+			}
 		}
 	}
 
@@ -2072,7 +2072,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -2140,7 +2140,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -2187,7 +2187,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = bunker
 					level = 1
@@ -2195,7 +2195,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			35 = {	
+			35 = {
 				add_building_construction = {
 					type = bunker
 					level = 1
@@ -2208,10 +2208,10 @@ focus_tree = {
 					province = 6500
 					instant_build = yes
 				}
-			}	
+			}
 			GER = {
 				add_opinion_modifier = { target = HOL modifier = HOL_germany_is_the_greater_threat }
-			}	
+			}
 		}
 	}
 
@@ -2257,7 +2257,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			35 = {	
+			35 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -2269,7 +2269,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
 		}
 	}
 
@@ -2289,7 +2289,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			36 = {	
+			36 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
@@ -2301,7 +2301,7 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
 		}
 	}
 
@@ -2327,11 +2327,11 @@ focus_tree = {
 		}
 	}
 
- ##  ###  #   # #   #     ### ###  ### ### 
-#  # #  # ## ##  # #       #  #  # #   #   
-#### ###  # # #   #        #  ###  ##  ##  
-#  # #  # #   #   #        #  #  # #   #   
-#  # #  # #   #   #        #  #  # ### ### 
+ ##  ###  #   # #   #     ### ###  ### ###
+#  # #  # ## ##  # #       #  #  # #   #
+#### ###  # # #   #        #  ###  ##  ##
+#  # #  # #   #   #        #  #  # #   #
+#  # #  # #   #   #        #  #  # ### ###
 
 
 	focus = {
@@ -2623,11 +2623,11 @@ focus_tree = {
 		}
 	}
 
- ##  ### ###      ### ###  ### ### 
-#  #  #  #  #      #  #  # #   #   
-####  #  ###       #  ###  ##  ##  
-#  #  #  #  #      #  #  # #   #   
-#  # ### #  #      #  #  # ### ### 
+ ##  ### ###      ### ###  ### ###
+#  #  #  #  #      #  #  # #   #
+####  #  ###       #  ###  ##  ##
+#  #  #  #  #      #  #  # #   #
+#  # ### #  #      #  #  # ### ###
 
 	focus = {
 		id = HOL_expand_the_mld
@@ -2642,13 +2642,13 @@ focus_tree = {
 		}
 		bypass = {
 			335 = {
-				OWNER = { 
+				OWNER = {
 					NOT = {
 						OR = {
-							TAG = ROOT 
-							is_subject_of = ROOT 
+							TAG = ROOT
+							is_subject_of = ROOT
 						}
-					} 
+					}
 				}
 			}
 		}
@@ -2803,7 +2803,7 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
-			7 = {			
+			7 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
@@ -2878,62 +2878,62 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			335 = {			
+			335 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			672 = {			
+			672 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			673 = {			
+			673 = {
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
 				}
 			}
-			334 = {			
+			334 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			667 = {			
+			667 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			668 = {			
+			668 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			738 = {			
+			738 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
 			}
-			669 = {			
+			669 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
-			}	
+			}
 		}
 	}
 
@@ -2960,12 +2960,12 @@ focus_tree = {
 		}
 	}
 
-#  #  ##  #   #  ##  #       ### ###  ### ### 
-## # #  # #   # #  # #        #  #  # #   #   
-# ## ####  # #  #### #        #  ###  ##  ##  
-#  # #  #  # #  #  # #        #  #  # #   #   
-#  # #  #   #   #  # ###      #  #  # ### ### 
-	
+#  #  ##  #   #  ##  #       ### ###  ### ###
+## # #  # #   # #  # #        #  #  # #   #
+# ## ####  # #  #### #        #  ###  ##  ##
+#  # #  #  # #  #  # #        #  #  # #   #
+#  # #  #   #   #  # ###      #  #  # ### ###
+
 	focus = {
 		id = HOL_prepare_naval_expansion
 		prerequisite = { focus = HOL_overturn_military_budget_cuts }
@@ -3126,7 +3126,7 @@ focus_tree = {
 			GER = {
 				AND = {
 						country_exists = GER
-						has_opinion = { target = HOL value > 74 } 
+						has_opinion = { target = HOL value > 74 }
 				}
 			}
 		}
@@ -3240,11 +3240,11 @@ focus_tree = {
 		}
 	}
 
-###   ##  #   ### ### ###  ##   ##  #       ### ###  ### ### 
-#  # #  # #    #   #   #  #  # #  # #        #  #  # #   #   
-###  #  # #    #   #   #  #    #### #        #  ###  ##  ##  
-#    #  # #    #   #   #  #  # #  # #        #  #  # #   #   
-#     ##  ### ###  #  ###  ##  #  # ###      #  #  # ### ### 
+###   ##  #   ### ### ###  ##   ##  #       ### ###  ### ###
+#  # #  # #    #   #   #  #  # #  # #        #  #  # #   #
+###  #  # #    #   #   #  #    #### #        #  ###  ##  ##
+#    #  # #    #   #   #  #  # #  # #        #  #  # #   #
+#     ##  ### ###  #  ###  ##  #  # ###      #  #  # ### ###
 
 	focus = {
 		id = HOL_form_new_government
@@ -3373,7 +3373,7 @@ focus_tree = {
 					}
 					add_opinion_modifier = { target = INS modifier = HOL_caved_to_the_germans_ger_trade }
 				}
-			}	
+			}
 			ENG = {
 				add_opinion_modifier = { target = HOL modifier = HOL_caved_to_the_germans_eng }
 			}
@@ -3517,7 +3517,7 @@ focus_tree = {
 					}
 					add_opinion_modifier = { target = INS modifier = HOL_caved_to_the_british_ger_trade }
 				}
-			}	
+			}
 			ENG = {
 				add_opinion_modifier = { target = HOL modifier = HOL_caved_to_the_british_eng }
 			}
@@ -3525,11 +3525,11 @@ focus_tree = {
 		}
 	}
 
-###  ##   ##  ##  ### #   # 
-#   #  # #   #  #  #  ## ## 
-##  ####  #  #     #  # # # 
-#   #  #   # #  #  #  #   # 
-#   #  # ##   ##  ### #   # 
+###  ##   ##  ##  ### #   #
+#   #  # #   #  #  #  ## ##
+##  ####  #  #     #  # # #
+#   #  #   # #  #  #  #   #
+#   #  # ##   ##  ### #   #
 
 	focus = {
 		id = HOL_volk_en_vaderland
@@ -3599,11 +3599,11 @@ focus_tree = {
 		}
 	}
 
- ###  ##  ### #  #      ##  ### ###  #   #  ##  #  # #   # 
-   # #  #  #  ## #     #    #   #  # ## ## #  # ## #  # #  
-   # #  #  #  # ##     # ## ##  ###  # # # #### # ##   #   
-#  # #  #  #  #  #     #  # #   #  # #   # #  # #  #   #   
- ##   ##  ### #  #      ##  ### #  # #   # #  # #  #   #   
+ ###  ##  ### #  #      ##  ### ###  #   #  ##  #  # #   #
+   # #  #  #  ## #     #    #   #  # ## ## #  # ## #  # #
+   # #  #  #  # ##     # ## ##  ###  # # # #### # ##   #
+#  # #  #  #  #  #     #  # #   #  # #   # #  # #  #   #
+ ##   ##  ### #  #      ##  ### #  # #   # #  # #  #   #
 
 
 	focus = {
@@ -3966,11 +3966,11 @@ focus_tree = {
 		}
 	}
 
-#  # ### ### #  # ### ###  #    ##  #  # ###   ##     ### ### ###   ## ### 
-## # #    #  #  # #   #  # #   #  # ## # #  # #       #    #  #  # #    #  
-# ## ##   #  #### ##  ###  #   #### # ## #  #  #      ##   #  ###   #   #  
-#  # #    #  #  # #   #  # #   #  # #  # #  #   #     #    #  #  #   #  #  
-#  # ###  #  #  # ### #  # ### #  # #  # ###  ##      #   ### #  # ##   #  
+#  # ### ### #  # ### ###  #    ##  #  # ###   ##     ### ### ###   ## ###
+## # #    #  #  # #   #  # #   #  # ## # #  # #       #    #  #  # #    #
+# ## ##   #  #### ##  ###  #   #### # ## #  #  #      ##   #  ###   #   #
+#  # #    #  #  # #   #  # #   #  # #  # #  #   #     #    #  #  #   #  #
+#  # ###  #  #  # ### #  # ### #  # #  # ###  ##      #   ### #  # ##   #
 
 	focus = {
 		id = HOL_the_netherlands_first
@@ -4243,11 +4243,11 @@ focus_tree = {
 		}
 	}
 
- ##   ##  #   # #   # #  # #  # ###  ## #   # 
-#  # #  # ## ## ## ## #  # ## #  #  #   ## ## 
-#    #  # # # # # # # #  # # ##  #   #  # # # 
-#  # #  # #   # #   # #  # #  #  #    # #   # 
- ##   ##  #   # #   #  ##  #  # ### ##  #   # 
+ ##   ##  #   # #   # #  # #  # ###  ## #   #
+#  # #  # ## ## ## ## #  # ## #  #  #   ## ##
+#    #  # # # # # # # #  # # ##  #   #  # # #
+#  # #  # #   # #   # #  # #  #  #    # #   #
+ ##   ##  #   # #   #  ##  #  # ### ##  #   #
 
  	focus = {
 		id = HOL_legacy_of_the_de_zeven_provincien_mutiny
@@ -4519,35 +4519,35 @@ focus_tree = {
 				}
 				7 = {
 					create_unit = {
-						division = "name = \"1. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"1. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"2. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"2. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"3. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"3. KNIL Divisie 'Java'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"4. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"4. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"5. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"5. KNIL Divisie 'Sumatra'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"6. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"6. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"7. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"7. KNIL Divisie 'Borneo'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 					create_unit = {
-						division = "name = \"8. KNIL Divisie 'Celebes'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5" 
+						division = "name = \"8. KNIL Divisie 'Celebes'\" division_template = \"KNIL Divisie\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 				}
@@ -4583,11 +4583,11 @@ focus_tree = {
 		}
 	}
 
- ##  ### ### ### ###  #   #     #    ##  #   #  ##  #   ### #   #     ###  ##      #   #  ##   ##  ##   ##  #   # 
-#  # #   #    #  #  # ## ##     #   #  #  # #  #  # #    #   # #       #  #  #     ## ## #  # #   #  # #  # #   # 
-#### ##  ##   #  ###  # # #     #   #  #   #   #### #    #    #        #  #  #     # # # #  #  #  #    #  # # # # 
-#  # #   #    #  #  # #   #     #   #  #   #   #  # #    #    #        #  #  #     #   # #  #   # #  # #  # # # # 
-#  # #   #   ### #  # #   #     ###  ##    #   #  # ###  #    #        #   ##      #   #  ##  ##   ##   ##   # #  
+ ##  ### ### ### ###  #   #     #    ##  #   #  ##  #   ### #   #     ###  ##      #   #  ##   ##  ##   ##  #   #
+#  # #   #    #  #  # ## ##     #   #  #  # #  #  # #    #   # #       #  #  #     ## ## #  # #   #  # #  # #   #
+#### ##  ##   #  ###  # # #     #   #  #   #   #### #    #    #        #  #  #     # # # #  #  #  #    #  # # # #
+#  # #   #    #  #  # #   #     #   #  #   #   #  # #    #    #        #  #  #     #   # #  #   # #  # #  # # # #
+#  # #   #   ### #  # #   #     ###  ##    #   #  # ###  #    #        #   ##      #   #  ##  ##   ##   ##   # #
 
 	focus = {
 		id = HOL_affirm_loyalty_to_moscow
@@ -4669,18 +4669,17 @@ focus_tree = {
 		}
 	}
 
- ###  ##  ### #  #     ### #  # ###     ### ###  ### #  #  ##  #  # 
-   # #  #  #  ## #      #  #  # #       #   #  # #   ## # #  # #  # 
-   # #  #  #  # ##      #  #### ##      ##  ###  ##  # ## #    #### 
-#  # #  #  #  #  #      #  #  # #       #   #  # #   #  # #  # #  # 
- ##   ##  ### #  #      #  #  # ###     #   #  # ### #  #  ##  #  # 
+ ###  ##  ### #  #     ### #  # ###     ### ###  ### #  #  ##  #  #
+   # #  #  #  ## #      #  #  # #       #   #  # #   ## # #  # #  #
+   # #  #  #  # ##      #  #### ##      ##  ###  ##  # ## #    ####
+#  # #  #  #  #  #      #  #  # #       #   #  # #   #  # #  # #  #
+ ##   ##  ### #  #      #  #  # ###     #   #  # ### #  #  ##  #  #
 
  	focus = {
 		id = HOL_join_the_french
 		available = {
 			NOT = { has_war_with = FRA }
 			FRA = {
-				has_completed_focus = FRA_humanite_unie
 				is_faction_leader = yes
 			}
 		}
@@ -4847,11 +4846,11 @@ focus_tree = {
 		}
 	}
 
-###   ##   ## ### ###  ##  #  #      ##  ###     ### ###  #  # ###      ##   ##  #   # #   # #  # #  # ###  ## #   # 
-#  # #  # #    #   #  #  # ## #     #  # #        #  #  # #  # #       #  # #  # ## ## ## ## #  # ## #  #  #   ## ## 
-###  ####  #   #   #  #  # # ##     #  # ##       #  ###  #  # ##      #    #  # # # # # # # #  # # ##  #   #  # # # 
-#  # #  #   #  #   #  #  # #  #     #  # #        #  #  # #  # #       #  # #  # #   # #   # #  # #  #  #    # #   # 
-###  #  # ##   #  ###  ##  #  #      ##  #        #  #  #  ##  ###      ##   ##  #   # #   #  ##  #  # ### ##  #   # 
+###   ##   ## ### ###  ##  #  #      ##  ###     ### ###  #  # ###      ##   ##  #   # #   # #  # #  # ###  ## #   #
+#  # #  # #    #   #  #  # ## #     #  # #        #  #  # #  # #       #  # #  # ## ## ## ## #  # ## #  #  #   ## ##
+###  ####  #   #   #  #  # # ##     #  # ##       #  ###  #  # ##      #    #  # # # # # # # #  # # ##  #   #  # # #
+#  # #  #   #  #   #  #  # #  #     #  # #        #  #  # #  # #       #  # #  # #   # #   # #  # #  #  #    # #   #
+###  #  # ##   #  ###  ##  #  #      ##  #        #  #  #  ##  ###      ##   ##  #   # #   #  ##  #  # ### ##  #   #
 
 	focus = {
 		id = HOL_bastion_of_true_communism
@@ -5115,11 +5114,11 @@ focus_tree = {
 		}
 	}
 
-#   #  ##  #  #  ##  ###   ##  #  # ###  ## #   #    #  # ### #  # ### ###   ##  #   ### ### #   # 
-## ## #  # ## # #  # #  # #  # #  #  #  #   ## ##    ## # #   #  #  #  #  # #  # #    #   #   # #  
-# # # #  # # ## #### ###  #    ####  #   #  # # # ## # ## ##  #  #  #  ###  #### #    #   #    #   
-#   # #  # #  # #  # #  # #  # #  #  #    # #   #    #  # #   #  #  #  #  # #  # #    #   #    #   
-#   #  ##  #  # #  # #  #  ##  #  # ### ##  #   #    #  # ###  ##   #  #  # #  # ### ###  #    #   
+#   #  ##  #  #  ##  ###   ##  #  # ###  ## #   #    #  # ### #  # ### ###   ##  #   ### ### #   #
+## ## #  # ## # #  # #  # #  # #  #  #  #   ## ##    ## # #   #  #  #  #  # #  # #    #   #   # #
+# # # #  # # ## #### ###  #    ####  #   #  # # # ## # ## ##  #  #  #  ###  #### #    #   #    #
+#   # #  # #  # #  # #  # #  # #  #  #    # #   #    #  # #   #  #  #  #  # #  # #    #   #    #
+#   #  ##  #  # #  # #  #  ##  #  # ### ##  #   #    #  # ###  ##   #  #  # #  # ### ###  #    #
 
 	focus = {
 		id = HOL_oranje_boven
@@ -5379,7 +5378,7 @@ focus_tree = {
 	focus = {
 		id = HOL_royal_arms_purchases
 		available = {
-			
+
 		}
 		prerequisite = { focus = HOL_de_vernieuwing }
 		icon = GFX_goal_generic_construct_mil_factory
@@ -5565,16 +5564,16 @@ focus_tree = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-			
+
 	    			   	infantry = { x = 1 y = 0 }
 						infantry = { x = 1 y = 1 }
 						infantry = { x = 1 y = 2 }
-			
+
 	    			   	infantry = { x = 2 y = 0 }
 						artillery_brigade = { x = 2 y = 1 }
 						artillery_brigade = { x = 2 y = 2 }
 					}
-		
+
 					support = {
 						engineer = { x = 0 y = 0 }
 						recon = { x = 0 y = 1 }
@@ -5605,11 +5604,11 @@ focus_tree = {
 		}
 	}
 
-###  ### #   #  ##   ##  ###   ##  ### ###  ##  
-#  # #   ## ## #  # #  # #  # #  #  #   #  #  # 
-#  # ##  # # # #  # #    ###  ####  #   #  #    
-#  # #   #   # #  # #  # #  # #  #  #   #  #  # 
-###  ### #   #  ##   ##  #  # #  #  #  ###  ##  
+###  ### #   #  ##   ##  ###   ##  ### ###  ##
+#  # #   ## ## #  # #  # #  # #  #  #   #  #  #
+#  # ##  # # # #  # #    ###  ####  #   #  #
+#  # #   #   # #  # #  # #  # #  #  #   #  #  #
+###  ### #   #  ##   ##  #  # #  #  #  ###  ##
 
 	focus = {
 		id = HOL_unity_through_democracy
@@ -5656,11 +5655,11 @@ focus_tree = {
 		}
 	}
 
- ##   ##      #   # ### ### #  #     ###  ###  ### ###  ##  ### #  # 
-#    #  #     #   #  #   #  #  #     #  # #  #  #   #  #  #  #  ## # 
-# ## #  #     # # #  #   #  ####     ###  ###   #   #  ####  #  # ## 
-#  # #  #     # # #  #   #  #  #     #  # #  #  #   #  #  #  #  #  # 
- ##   ##       # #  ###  #  #  #     ###  #  # ###  #  #  # ### #  # 
+ ##   ##      #   # ### ### #  #     ###  ###  ### ###  ##  ### #  #
+#    #  #     #   #  #   #  #  #     #  # #  #  #   #  #  #  #  ## #
+# ## #  #     # # #  #   #  ####     ###  ###   #   #  ####  #  # ##
+#  # #  #     # # #  #   #  #  #     #  # #  #  #   #  #  #  #  #  #
+ ##   ##       # #  ###  #  #  #     ###  #  # ###  #  #  # ### #  #
 
 
 	focus = {
@@ -5903,13 +5902,13 @@ focus_tree = {
 				}
 				695 = {
 					create_unit = {
-						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5" 
+						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 				}
 				309 = {
 					create_unit = {
-						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5" 
+						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
 						owner = HOL
 					}
 				}
@@ -6036,7 +6035,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			309 = {	
+			309 = {
 				add_building_construction = {
 					type = air_base
 					level = 8
@@ -6048,7 +6047,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			695 = {	
+			695 = {
 				add_building_construction = {
 					type = radar_station
 					level = 3
@@ -6058,11 +6057,11 @@ focus_tree = {
 		}
 	}
 
-#   ###  ##  ###      ### #  # ###     #   # ### #  #  ##  ###      ###  ### #   #  ##   ##  ###   ##   ##  ### ###  ## 
-#   #   #  # #  #      #  #  # #       ## ##  #  ## # #  # #  #     #  # #   ## ## #  # #  # #  # #  # #  #  #  #   #   
-#   ##  #### #  #      #  #### ##      # # #  #  # ## #  # ###      #  # ##  # # # #  # #    ###  #### #     #  ##   #  
-#   #   #  # #  #      #  #  # #       #   #  #  #  # #  # #  #     #  # #   #   # #  # #  # #  # #  # #  #  #  #     # 
-### ### #  # ###       #  #  # ###     #   # ### #  #  ##  #  #     ###  ### #   #  ##   ##  #  # #  #  ##  ### ### ##  
+#   ###  ##  ###      ### #  # ###     #   # ### #  #  ##  ###      ###  ### #   #  ##   ##  ###   ##   ##  ### ###  ##
+#   #   #  # #  #      #  #  # #       ## ##  #  ## # #  # #  #     #  # #   ## ## #  # #  # #  # #  # #  #  #  #   #
+#   ##  #### #  #      #  #### ##      # # #  #  # ## #  # ###      #  # ##  # # # #  # #    ###  #### #     #  ##   #
+#   #   #  # #  #      #  #  # #       #   #  #  #  # #  # #  #     #  # #   #   # #  # #  # #  # #  # #  #  #  #     #
+### ### #  # ###       #  #  # ###     #   # ### #  #  ##  #  #     ###  ### #   #  ##   ##  #  # #  #  ##  ### ### ##
 
 	focus = {
 		id = HOL_lead_the_minor_democracies

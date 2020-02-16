@@ -126,7 +126,6 @@ if = {
 	complete_national_focus = ITA_industrial_effort
 	complete_national_focus = ITA_industrial_effort_2
 	complete_national_focus = ITA_victoryinETH
-	complete_national_focus = ITA_yugoslavia_friend
 	unlock_national_focus = ITA_albania_war_goal
 	complete_national_focus = ITA_light_ship_effort
 	complete_national_focus = ITA_escort_effort

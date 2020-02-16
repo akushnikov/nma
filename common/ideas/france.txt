@@ -236,47 +236,6 @@ ideas = {
 					stability_weekly = 0.002
 				}
 		}
-		FRA_support_the_right_focus = {
-				picture = generic_fascism_drift_bonus
-				allowed = {
-					always = no # Added via focus
-				}
-				allowed_civil_war = {
-					NOT = {
-						OR = {
-							has_government = communism
-							AND = {
-								NOT = { has_government = fascism }
-								any_other_country = {
-									original_tag = FRA
-									has_government = fascism
-								}
-							}
-						}
-					}
-				}
-				modifier = {
-					fascism_drift = 0.2
-				}
-		}
-
-		FRA_scw_intervention_nationalists_focus = {
-			picture = FRA_scw_intervention_nationalists_focus
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			modifier = {
-				send_volunteer_divisions_required = -0.5
-				send_volunteers_tension = -0.5
-			}
-		}
 		FRA_army_of_aggression_focus = {
 			picture = FRA_army_of_aggression_focus
 			allowed = {
@@ -352,7 +311,7 @@ ideas = {
 
 	# POLITICAL
 	political_advisor = {
-			
+
 		leon_blum = {
 
 
@@ -372,33 +331,6 @@ ideas = {
 			do_effect = {
 				NOT = {
 					has_government = democratic
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		marcel_bucard = {
-
-
-			allowed = {
-				original_tag = "FRA"
-			}
-			available ={
-				has_completed_focus = FRA_right_wing_rhetoric
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			traits = { fascist_demagogue }
-
-			do_effect = {
-				NOT = {
-					has_government = fascism
 				}
 			}
 

@@ -693,7 +693,6 @@ country_event = {
 			limit = {
 				ITA = {
 					OR = {
-						NOT = { has_completed_focus = ITA_yugoslavia_friend }
 						is_in_faction_with = GER
 						exists = no
 					}
@@ -707,7 +706,6 @@ country_event = {
 		if = {
 			limit = {
 				ITA = {
-					has_completed_focus = ITA_yugoslavia_friend
 					NOT = { is_in_faction_with = GER }
 					NOT = { has_war_with = YUG }
 				}
@@ -788,7 +786,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		add_stability = 0.05
 	}
 }

@@ -1011,10 +1011,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				has_completed_focus = ROM_his_majestys_loyal_government
-			}
 		}
 
 		available = {
