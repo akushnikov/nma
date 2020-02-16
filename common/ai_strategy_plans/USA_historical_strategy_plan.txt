@@ -4,49 +4,9 @@ USA_historical_plan = {
 
 	enable = {
 		original_tag = USA
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				OR = {
-					not = { has_dlc = "Man the Guns" }
-					has_game_rule = {
-						rule = USA_ai_behavior
-						option = DEFAULT
-					}
-				}
-			}
-			has_country_flag = USA_AI_DEMOCRATIC_HISTORICAL
-			has_country_flag = democratic_usa_won_civil_war
-			has_game_rule = {
-				rule = USA_ai_behavior
-				option = DEMOCRATIC_HISTORICAL
-			}
-		}
 	}
 	abort = {
-		OR = {
-			AND = {
-				has_game_rule = {
-					rule = USA_ai_behavior
-					option = DEFAULT
-				}
-				OR = {	
-					ENG = {
-						not = { has_government = democratic }
-					}
-					has_war_with = CAN
-					has_war_with = MEX
-					JAP = {
-						not = {
-							OR = {
-								has_government = fascism
-								has_government = neutrality
-							}
-						}
-					}
-				}
-			}
-		}
+
 	}
 
 	ai_national_focuses = {
@@ -99,7 +59,7 @@ USA_historical_plan = {
 	}
 
 	focus_factors = {
-		USA_suspend_the_presecution = 0 # well done, not medium rare
+		
 	}
 
 	research = {
@@ -117,7 +77,7 @@ USA_historical_plan = {
 
 	ai_strategy = {
 		type = support
-		id = "ENG"			
+		id = "ENG"
 		value = 200
 	}
 

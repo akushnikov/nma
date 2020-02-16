@@ -10,17 +10,24 @@ is_allowed_to_grind = {
   }
 }
 
+# PREV is grinding country
+# THIS is grinded country
 is_allowed_to_grind_with_casualties = {
   is_allowed_to_grind = yes
-  OR = {
-    casualties_inflicted_by = {
-      opponent = PREV
-      thousands > 0
-    }
-    PREV = {
+
+  any_enemy_country = {
+    # THIS - enemy country
+    # PREV - grinded country
+    OR = {
       casualties_inflicted_by = {
-        opponent = PREV.PREV
+        opponent = PREV
         thousands > 0
+      }
+      PREV = {
+        casualties_inflicted_by = {
+          opponent = PREV.PREV
+          thousands > 0
+        }
       }
     }
   }

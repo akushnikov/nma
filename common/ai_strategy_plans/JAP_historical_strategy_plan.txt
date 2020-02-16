@@ -4,27 +4,11 @@ JAP_historical_plan = {
 
 	enable = {
 		original_tag = JAP
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				OR = {
-					not = { has_dlc = "Waking the Tiger" }
-					has_game_rule = {
-						rule = JAP_ai_behavior
-						option = DEFAULT
-					}
-				}
-			}
-			has_game_rule = {
-				rule = JAP_ai_behavior
-				option = FASCIST
-			}
-			has_country_flag = JAP_AI_RANDOM_FASCIST
-		}
-		MAN = {
-			is_ai = yes
-		}
 	}
+	abort = {
+
+	}
+
 	ai_national_focuses = {
 		JAP_purge_the_kodoha_faction #March 10 1936
 		JAP_army_expansion_law #May 20 1936

@@ -4,35 +4,9 @@ CHI_nationalist_historical_plan = {
 
 	enable = {
 		original_tag = CHI
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = CHI_ai_behavior
-					option = DEFAULT
-				}	
-			}
-			has_country_flag = CHI_AI_RANDOM_HISTORICAL
-			has_game_rule = {
-				rule = CHI_ai_behavior
-				option = HISTORICAL
-			}
-		}
 	}
 	abort = {
-		JAP = {
-			OR = {
-				is_in_faction_with = ENG 
-				is_in_faction_with = USA 
-			}
-		}
-		has_game_rule = {
-			rule = CHI_ai_behavior
-			option = ALTERNATE
-		}
-		MAN = {
-			is_subject = no
-		}
+
 	}
 
 	ai_national_focuses = {
