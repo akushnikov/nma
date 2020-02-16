@@ -6,29 +6,7 @@ German_historical = {
 		original_tag = GER
 	}
 	abort = {
-		OR = {
-			any_country = {
-				OR = {
-					has_completed_focus = HUN_invite_the_habsburg_prince
-					has_completed_focus = FRA_revise_versailles
-					has_completed_focus = USA_war_plan_red
-					has_completed_focus = USA_war_plan_white
-				}
-			}
-			SWE = {
-				has_government = communism #prio 1, crush Sweden
-			}
-			SOV = {
-				NOT = {
-					has_government = communism
-				}
-			}
-			ENG = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-		}
+
 	}
 
 	ai_national_focuses = {

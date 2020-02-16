@@ -152,24 +152,13 @@ country_event = {
 		ai_chance = {
 			factor = 40
 		}
-		if = {
-			limit = {
-				not = {
-					has_completed_focus = USA_limited_intervention
-				}
-			}
-			add_war_support = -0.05
-			add_stability = -0.1
-		}
-		if = {
-			limit = {
+		add_war_support = -0.05
+		add_stability = -0.1
 
-			}
-		}
 		create_wargoal = {
-				target = JAP
-				type = topple_government
-			}
+			target = JAP
+			type = topple_government
+		}
 		add_state_claim = 633
 		add_state_claim = 684
 		add_state_claim = 645
