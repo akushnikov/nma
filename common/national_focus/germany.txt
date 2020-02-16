@@ -2179,10 +2179,6 @@ focus_tree = {
 		prerequisite = { focus = GER_army_innovation }
 		available = {
 			NOT = { has_completed_focus = GER_anti_soviet_pact }
-			OR = {
-				NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
-				NOT = { has_completed_focus = GER_the_great_red_menace }
-			}
 		}
 		#cancel = {
 		#	OR = {
@@ -2194,8 +2190,6 @@ focus_tree = {
 			OR = {
 				has_war_with = SOV
 				NOT = { country_exists = SOV }
-				has_completed_focus = GER_bulwark_against_bolshevism
-				has_completed_focus = GER_the_great_red_menace
 			}
 		}
 
@@ -2382,8 +2376,6 @@ focus_tree = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
 			}
-			NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
-			NOT = { has_completed_focus = GER_the_great_red_menace }
 		}
 		cancel = {
 			OR = {
