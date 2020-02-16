@@ -378,7 +378,7 @@ ideas = {
 				air_ace_generation_chance_factor = 0.10
 			}
 		}
-		
+
 		CAN_degauss_ship_hulls = {
 			allowed = {
 				always = no
@@ -428,39 +428,6 @@ ideas = {
 
 	political_advisor = {
 
-		CAN_chuck_crate = {
-
-			allowed = {
-				original_tag = CAN
-
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = CAN_swastika_clubs
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			picture = generic_fascist_demagogue_commonwealth_2d
-
-			traits = { fascist_demagogue }
-
-			do_effect = {
-				NOT = {
-					has_government = fascism
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
 		CAN_robert_manion = {
 
 			allowed = {
@@ -496,40 +463,6 @@ ideas = {
 				factor = 0
 			}
 		}
-
-		CAN_william_kashtan = {
-
-			allowed = {
-				original_tag = CAN
-
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Together for Victory" }
-					has_completed_focus = CAN_burn_the_royal_portraits
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			picture = generic_communist_revolutionary_commonwealth_2d
-
-			traits = { communist_revolutionary }
-
-			do_effect = {
-				NOT = {
-					has_government = communism
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
 
 		CAN_ian_a_mackenzie = {
 
