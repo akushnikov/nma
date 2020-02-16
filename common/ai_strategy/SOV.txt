@@ -296,25 +296,6 @@ claims_on_finland = {
 	}
 }
 
-claims_on_turkey = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_claim_on_the_straits
-		country_exists = TUR
-	}
-	abort = {
-		NOT = {
-			country_exists = TUR
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "TUR"
-		value = 200
-	}
-}
-
 claims_on_romania = {
 	enable = {
 		tag = SOV
