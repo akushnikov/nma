@@ -7,13 +7,13 @@ state={
 		oil=8 # was: 14
 		aluminium=7 # was: 12
 	}
-	
+
 	state_category = city
 
 	history={
 		owner = SOV
 		victory_points = {
-			525 25
+			525 35
 		}
 		buildings = {
 			infrastructure = 7
@@ -32,6 +32,6 @@ state={
 	}
 
 	provinces={
-		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557
 	}
 }
