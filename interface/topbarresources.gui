@@ -4,23 +4,12 @@ guiTypes = {
     position = { x = 250 y = 12 }
 
     buttonType = {
-      name = "cb_toggle_resources_unchecked"
-      spriteType = "GFX_generic_checkbox"
-      frame = 1                           # unchecked
+      name = "cb_toggle_resources"
+      spriteType = "GFX_generic_checkbox2"
       orientation = "UPPER_LEFT"
 			buttonText = ""
 			buttonFont = "Main_14_black"
 			clicksound = click_checkbox
-    }
-
-    buttonType = {
-      name = "cb_toggle_resources_checked"
-      spriteType = "GFX_generic_checkbox"
-      frame = 2                           # checked
-      orientation = "UPPER_LEFT"
-      buttonText = ""
-      buttonFont = "Main_14_black"
-      clicksound = click_checkbox
     }
 
     instantTextBoxType = {

@@ -4,23 +4,23 @@ scripted_gui = {
     window_name = "top_bar_resource_toggle_container"
     parent_window_token = trade_tab
 
-    effects = {
-      cb_toggle_resources_unchecked_click = {
-        set_variable = { resources_visible = 1 }
-      }
-
-      cb_toggle_resources_checked_click = {
-        set_variable = { resources_visible = 0 }
+    properties = {
+      cb_toggle_resources = {
+        frame = resources_visible
       }
     }
 
-    triggers = {
-      cb_toggle_resources_unchecked_visible = {
-        check_variable = { resources_visible = 0 }
-      }
-
-      cb_toggle_resources_checked_visible = {
-        check_variable = { resources_visible = 1 }
+    effects = {
+      cb_toggle_resources_click = {
+        if = {
+          limit = {
+            check_variable = { resources_visible?1 = 1 }
+          }
+          set_variable = { resources_visible = 2 }
+        }
+        else = {
+          set_variable = { resources_visible = 1 }
+        }
       }
     }
 
@@ -31,7 +31,7 @@ scripted_gui = {
     window_name = "top_bar_resource_container"
 
     visible = {
-		  check_variable = { resources_visible = 1 }
+		  check_variable = { resources_visible = 2 }
 		}
   }
 }
