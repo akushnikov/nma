@@ -1,15 +1,15 @@
 
 state={
-	id=224
-	name="STATE_224"
-	manpower = 1707567
+	id=263
+	name="STATE_263"
+	manpower = 1092577
 
 	state_category = town
 
 	history={
 		owner = SOV
 		victory_points = {
-			3335 30
+			117 25 
 		}
 		buildings = {
 			infrastructure = 5
@@ -19,6 +19,6 @@ state={
 	}
 
 	provinces={
-		288 315 343 371 398 3226 3306 3335 3364 3390 6305 6330 6386 6411 11229 11298 11325
+		8 71 110 117 320 3089 6086 6154 6225 9212 9234 11072 11109 11191
 	}
 }
