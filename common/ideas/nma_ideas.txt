@@ -44,7 +44,7 @@ ideas = {
       }
     }
 
-    non_capitulatable = {
+    you_shall_not_fall = {
       picture = chi_war_of_resistance
 
       allowed = {

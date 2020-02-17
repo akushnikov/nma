@@ -185,3 +185,13 @@ init_grinding_period = {
     log = "[THIS.GetNameDef] has grinding period [?grinding_period]"
   }
 }
+
+cleanup_grinding_mess = {
+  set_country_flag = grind_time_has_gone
+  remove_ideas = you_shall_not_fall
+}
+
+cleanup_state_juggling_mess = {
+  remove_state_core = 649
+  ECU = { transfer_state = 649 }
+}

@@ -22,10 +22,12 @@ nma_anti_grind_decisions = {
     complete_effect = { }
 
     timeout_effect = {
+      white_peace = ETH
       ETH = {
-        set_country_flag = grind_time_has_gone
+        cleanup_grinding_mess = yes
+        cleanup_state_juggling_mess = yes
       }
-      country_event = nma_grinding.1
+      country_event = { id = nma_grinding.2 }
     }
 
   }
@@ -51,9 +53,21 @@ nma_anti_grind_decisions = {
     complete_effect = { }
 
     timeout_effect = {
-      YUG = {
-        set_country_flag = grind_time_has_gone
+      for_each_scope_loop = {
+        array = faction_members
+
+        if = {
+          limit = { has_war_with = YUG }
+
+          white_peace = YUG
+        }
       }
+
+      YUG = {
+        cleanup_grinding_mess = yes
+        cleanup_state_juggling_mess = yes
+      }
+      country_event = { id = nma_grinding.4 }
     }
   }
 
@@ -78,9 +92,20 @@ nma_anti_grind_decisions = {
     complete_effect = { }
 
     timeout_effect = {
-      YUG = {
-        set_country_flag = grind_time_has_gone
+      for_each_scope_loop = {
+        array = faction_members
+
+        if = {
+          limit = { has_war_with = GRE }
+
+          white_peace = GRE
+        }
       }
+
+      YUG = {
+        cleanup_grinding_mess = yes
+      }
+      country_event = { id = nma_grinding.6 }
     }
   }
 

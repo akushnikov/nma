@@ -37,5 +37,6 @@ is_done = {
   OR = {
     NOT = { country_exists = THIS }
     is_puppet_of = PREV
+    has_country_flag = grind_time_has_gone
   }
 }

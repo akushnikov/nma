@@ -57,4 +57,41 @@ on_actions = {
       }
     }
   }
+
+  on_declare_war = {
+    effect = {
+      if = {
+        limit = {
+          FROM = {
+            original_tag = YUG
+            is_ai = yes
+          }
+          ROOT = {
+            original_tag = ITA
+          }
+        }
+
+        FROM = {
+          transfer_state = 649
+          add_state_core = 649
+          add_ideas = you_shall_not_fall
+        }
+      }
+      else_if = {
+        limit = {
+          FROM = {
+            original_tag = GRE
+            is_ai = yes
+          }
+          ROOT = {
+            original_tag = ITA
+          }
+        }
+
+        FROM = {
+          add_ideas = you_shall_not_fall
+        }
+      }
+    }
+  }
 }

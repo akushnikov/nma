@@ -24,7 +24,7 @@ country_event = {
       }
 
       POR = {
-        add_ideas = non_capitulatable
+        add_ideas = you_shall_not_fall
         load_oob = "POR_army"
       }
     }
@@ -62,6 +62,8 @@ country_event = {
     log = "[THIS.GetNameDef] folds to SPR"
 
     delete_unit_template_and_units = { division_template = "Portugal Livre" }
+
+    remove_ideas = you_shall_not_fall
 
     random_other_country = {
       limit = {
