@@ -101,13 +101,6 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
-				if = {
-					limit = {
-						has_defensive_war = no
-					}
-					has_war_support > 0.3
-					congress_high_support_trigger = yes
-				}
 			}
 			on_add = {
 				if = {
@@ -166,13 +159,6 @@ ideas = {
 						has_completed_focus = HUN_secret_rearmament
 						NOT = { has_idea = HUN_treaty_of_triannon }
 					}
-				}
-				if = {
-					limit = {
-						has_defensive_war = no
-					}
-					has_war_support > 0.5
-					congress_high_support_trigger = yes
 				}
 			}
 
@@ -287,13 +273,6 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
-				}
-				if = {
-					limit = {
-					has_defensive_war = no
-					}
-					has_war_support > 0.9
-					congress_high_support_trigger = yes
 				}
 			}
 			on_add = {
