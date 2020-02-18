@@ -1582,7 +1582,7 @@ focus_tree = {
 				name = ROM_air_defense
 				bonus = 1.0
 				uses = 2
-				category = cat_operational_integrity
+				category = air_doctrine
 			}
 		}
 	}
@@ -1619,7 +1619,7 @@ focus_tree = {
 				name = ROM_ground_support
 				bonus = 1.0
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 		}
 	}
@@ -1805,7 +1805,7 @@ focus_tree = {
 				name = ROM_air_superiority
 				bonus = 1.0
 				uses = 2
-				category = strategic_destruction_tree
+				category = air_doctrine
 			}
 		}
 	}
