@@ -2910,7 +2910,6 @@ country_event = {
 				factor = 0
 			}
 		}
-		set_global_flag = GER_HUN_CZE_split
 		HUN = {
 			country_event = DOD_hungary.104
 			add_opinion_modifier = { target = GER modifier = HUN_split_CZE }

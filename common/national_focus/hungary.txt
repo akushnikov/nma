@@ -370,15 +370,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_threat = 1
-			if = {
-				limit = {
-					OR = {
-						FRA = { exists = no }
-						FRA = { is_subject = yes }
-					}
-				} #Romania gets the event if France not engaged in Balkans
-				ROM = { country_event = { id = DOD_hungary.40 } }
-			}
+			ROM = { country_event = { id = DOD_hungary.40 } }
 
 			#make Horthy or King dude leader. depending on focus picked earlier
 
