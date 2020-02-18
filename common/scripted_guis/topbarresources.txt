@@ -1,0 +1,37 @@
+scripted_gui = {
+  top_bar_resource_toggle_container = {
+    context_type = player_context
+    window_name = "top_bar_resource_toggle_container"
+    parent_window_token = trade_tab
+
+    effects = {
+      cb_toggle_resources_unchecked_click = {
+        set_variable = { resources_visible = 1 }
+      }
+
+      cb_toggle_resources_checked_click = {
+        set_variable = { resources_visible = 0 }
+      }
+    }
+
+    triggers = {
+      cb_toggle_resources_unchecked_visible = {
+        check_variable = { resources_visible = 0 }
+      }
+
+      cb_toggle_resources_checked_visible = {
+        check_variable = { resources_visible = 1 }
+      }
+    }
+
+  }
+
+  top_bar_resource_container = {
+    context_type = player_context
+    window_name = "top_bar_resource_container"
+
+    visible = {
+		  check_variable = { resources_visible = 1 }
+		}
+  }
+}
