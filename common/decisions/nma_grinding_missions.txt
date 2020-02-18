@@ -2,6 +2,8 @@ nma_anti_grind_decisions = {
 
   ITA_grinding_ETH_mission = {
 
+    icon = generic_scorched_earth
+
     days_mission_timeout = ETH.grinding_period?0
     is_good = no
 
@@ -23,16 +25,22 @@ nma_anti_grind_decisions = {
 
     timeout_effect = {
       white_peace = ETH
-      ETH = {
-        cleanup_grinding_mess = yes
-        cleanup_state_juggling_mess = yes
+      hidden_effect = {
+        ETH = {
+          cleanup_grinding_mess = yes
+          cleanup_state_juggling_mess = yes
+        }
       }
+
       country_event = { id = nma_grinding.2 }
     }
 
   }
 
   ITA_grinding_YUG_mission = {
+
+    icon = generic_scorched_earth
+
     days_mission_timeout = YUG.grinding_period?0
     is_good = no
 
@@ -72,6 +80,9 @@ nma_anti_grind_decisions = {
   }
 
   ITA_grinding_GRE_mission = {
+
+    icon = generic_scorched_earth
+
     days_mission_timeout = GRE.grinding_period?0
     is_good = no
 
