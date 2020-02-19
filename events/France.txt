@@ -1013,36 +1013,6 @@ country_event = {
       }
 }
 
-# Hidden event to add AI values for nationalist spain if France is going fascist
-country_event = {
-    id = france.32
-    hidden = yes
-
-    fire_only_once = yes
-
-    is_triggered_only = yes
-
-    immediate = {
-    	random_other_country = {
-			limit = {
-				original_tag = SPR
-				has_government = fascism
-			}
-			FRA = {
-				add_ai_strategy = {
-					type = befriend
-					id = "PREV"
-					value = 200
-				}
-			}
-		}
-    }
-
-    option = {
-        name = france.32.a
-     }
-}
-
 # Britain is at peace after annexing France in the Franco-British Union
 # AI will tend to release France if historic mode is on or they are democratic
 

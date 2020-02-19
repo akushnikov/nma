@@ -1388,6 +1388,8 @@ focus_tree = {
 					ruling_party = democratic
 					elections_allowed = yes
 				}
+			}
+			else_if = {
 				limit = {
 					communism > 0.35
 				}
@@ -1395,6 +1397,8 @@ focus_tree = {
 					ruling_party = communism
 					elections_allowed = no
 				}
+			}
+			else_if = {
 				limit = {
 					fascism > 0.35
 				}
