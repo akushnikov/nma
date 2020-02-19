@@ -1890,6 +1890,10 @@ technologies = {
 
 	super_heavy_tank = { #Maus
 
+		allow = {
+			is_advanced_heavy_tank_enabled = yes
+		}
+
 		enable_equipments = {
 			super_heavy_tank_equipment_1
 		}
