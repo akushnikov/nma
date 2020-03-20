@@ -65,7 +65,7 @@ is_improved_infantry_weapons_enabled = {
   }
 }
 
-is_improved_heavy_tank_enabled = {
+is_improved_tank_enabled = {
 
   OR = {
     has_game_rule = {
@@ -83,7 +83,7 @@ is_improved_heavy_tank_enabled = {
   }
 }
 
-is_advanced_heavy_tank_enabled = {
+is_advanced_tank_enabled = {
 
   OR = {
     has_game_rule = {
