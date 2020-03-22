@@ -509,6 +509,7 @@ ideas = {
 	high_command = {
 
 		MAN_yonimitsu_kasahara = {
+			ledger = army
 
 			picture = generic_army_asia_3
 			
@@ -524,6 +525,7 @@ ideas = {
 		}
 
 		MAN_kyoiji_tomonaga = {
+			ledger = army
 
 			picture = generic_air_asia_2
 			
@@ -539,6 +541,7 @@ ideas = {
 		}
 
 		MAN_hesehn_tiemei = {
+			ledger = army
 
 			picture = generic_army_asia_1
 			
@@ -558,6 +561,7 @@ ideas = {
 
 	theorist = {
 		MAN_hung_zhehuang = {
+			ledger = army
 
 			picture = generic_army_asia_1
 			
@@ -573,6 +577,7 @@ ideas = {
 		}
 
 		MAN_xian_yuan = {
+			ledger = navy
 
 			picture = generic_navy_asia_1
 			
@@ -588,6 +593,7 @@ ideas = {
 		}
 		
 		MAN_deng_linge = { 
+			ledger = air
 
 			picture = generic_air_asia_2
 			

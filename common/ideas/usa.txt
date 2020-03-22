@@ -790,6 +790,44 @@ ideas = {
 			}
 		}
 
+		office_of_strategic_services_lar = {
+			name = office_of_strategic_services
+			picture = office_of_strategic_services
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1			
+
+			modifier = {
+				operation_infiltrate_outcome = 0.25
+				boost_resistance_factor = 0.25
+			}
+		}
+
+		USA_black_chamber = {
+
+			picture = office_of_strategic_services
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1			
+
+			modifier = {
+				propaganda_mission_factor = 0.25
+				boost_ideology_mission_factor = 0.25
+			}
+		}
+
 		war_bonds_focus = {
 			allowed = {
 				always = no
@@ -1388,6 +1426,22 @@ ideas = {
 			
 			traits = { armaments_organizer }
 		}
+		
+		usa_william_donovan = {
+		
+			available = {
+				has_intelligence_agency = yes
+				threat > 0.5
+			}
+			
+			allowed = {
+				original_tag = USA
+				has_dlc = "La Resistance"
+			}
+			
+			traits = { head_of_intelligence }
+
+		}
 	}
 	
 
@@ -1605,6 +1659,7 @@ ideas = {
 	
 	high_command = {
 		courtney_hodges = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1621,6 +1676,7 @@ ideas = {
 		}
 		
 		joseph_stilwell = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1640,6 +1696,7 @@ ideas = {
 		}
 		
 		mark_clark = {
+			ledger = army
 			
 			
 			allowed = {
@@ -1656,6 +1713,7 @@ ideas = {
 		}	
 		
 		jimmy_doolittle = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1672,6 +1730,7 @@ ideas = {
 		}
 		
 		john_cannon = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1688,6 +1747,7 @@ ideas = {
 		}
 		
 		claire_lee_chennault = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1704,6 +1764,7 @@ ideas = {
 		}
 		
 		raymond_spruance = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -1720,6 +1781,7 @@ ideas = {
 		}
 		
 		frank_jack_fletcher = {
+			ledger = air
 			
 			
 			allowed = {
@@ -1736,6 +1798,7 @@ ideas = {
 		}
 		
 		thomas_kinkaid = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2235,6 +2298,7 @@ ideas = {
 	
 	theorist = {
 		omar_bradley = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2251,6 +2315,7 @@ ideas = {
 		}
 		
 		george_patton = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2267,6 +2332,7 @@ ideas = {
 		}
 		
 		dewitt_clinton_ramsey = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -2283,6 +2349,7 @@ ideas = {
 		}
 		
 		marc_mitscher = {
+			ledger = navy
 			
 			
 			allowed = {
@@ -2299,6 +2366,7 @@ ideas = {
 		}
 		
 		curtis_lemay = {
+			ledger = air
 			
 			
 			allowed = {
@@ -2315,6 +2383,7 @@ ideas = {
 		}
 		
 		harold_mcclelland = {
+			ledger = air
 			
 			
 			allowed = {
@@ -2331,6 +2400,7 @@ ideas = {
 		}
 		
 		robert_oppenheimer = {
+			ledger = army
 			
 			
 			allowed = {
@@ -2347,6 +2417,7 @@ ideas = {
 		}
 		
 		robert_goddard = {
+			ledger = air
 			
 			
 			allowed = {
