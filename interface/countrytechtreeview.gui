@@ -3668,7 +3668,6 @@ guiTypes = {
 				quadTextureSprite = "GFX_industry_folder_tab"
 				frame = 1
 				clicksound = click_default
-				
 			}
 
 			iconType = {
