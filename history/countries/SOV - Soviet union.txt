@@ -850,6 +850,14 @@ if = {
 		available_to_spy_master = yes
 		nationalities = { SOV GER }
 	}
+	create_operative_leader = {
+		name = "Max Otto von Stierlitz"
+		picture = "Stierlitz.dds"
+		traits = { operative_max }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV GER }
+	}
 }
 
 

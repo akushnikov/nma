@@ -92,8 +92,8 @@ leader_traits = {
 		defense_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-	
-	politically_connected = { 
+
+	politically_connected = {
 		type = { land navy }
 		trait_type = personality_trait
 
@@ -106,7 +106,7 @@ leader_traits = {
 		logistics_skill_factor = 1
 	}
 
-	war_hero = { 
+	war_hero = {
 		type = { land navy }
 		trait_type = personality_trait
 
@@ -142,18 +142,18 @@ leader_traits = {
 			planning_speed = -0.20
 			wounded_chance_factor = -0.5
 		}
-		
-		
+
+
 		new_commander_weight = {
 			factor = 1
-			
+
 			modifier = {
 				has_trait = trait_reckless
-				factor = 0 
+				factor = 0
 			}
 		}
-		
-		
+
+
 		defense_skill_factor = 1
 		logistics_skill_factor = 1
 	}
@@ -166,16 +166,16 @@ leader_traits = {
 			planning_speed = 0.20
 			wounded_chance_factor = 0.5  # +50% chance to get wounded
 		}
-		
+
 		new_commander_weight = {
 			factor = 1
-			
+
 			modifier = {
 				has_trait = trait_cautious
-				factor = 0 
+				factor = 0
 			}
 		}
-		
+
 		attack_skill_factor = 1
 		defense_skill_factor = -1
 		planning_skill_factor = 1
@@ -2306,6 +2306,16 @@ leader_traits = {
 # operative traits
 ##################################
 
+
+	operative_max = {
+		type = operative
+		trait_type = personality_trait
+
+		modifier = {
+		}
+	}
+
+
 	operative_commando = {
 		type = operative
 		trait_type = basic_trait
@@ -2354,7 +2364,7 @@ leader_traits = {
 		#new_commander_weight = {
 		#}
 
-		modifier = { 
+		modifier = {
 			operation_infiltrate_outcome = 0.25
 			operation_infiltrate_risk = -0.25
 			own_operative_detection_chance_factor = -0.2
@@ -2381,7 +2391,7 @@ leader_traits = {
 			}
 		}
 
-		modifier = { 
+		modifier = {
 			operation_infiltrate_outcome = 0.25
 			operation_infiltrate_risk = -0.25
 		}
@@ -2496,7 +2506,7 @@ leader_traits = {
 				operative_leader_mission = boost_ideology
 			}
 		}
-		
+
 		cost = 400
 		modifier = {
 			operation_coup_government_risk = -0.25

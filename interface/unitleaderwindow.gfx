@@ -366,7 +366,7 @@ spriteTypes = {
 		name = "GFX_trait_reassigned"
 		texturefile = "gfx/interface/traits/personal/trait_reassigned.dds"
 	}
-	
+
 	#######
 
 	spriteType = {
@@ -649,14 +649,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_trait_admiral_screening_master"
 		texturefile = "gfx/interface/traits/trait_admiral_screening_master.dds"
-	}	
+	}
 
 
 	# operatives
 	spriteType = {
 		name = "GFX_trait_operative_commando"
 		texturefile = "gfx/interface/traits/trait_operative_commando.dds"
-	}	
+	}
+
+	spriteType = {
+		name = "GFX_trait_operative_max"
+		texturefile = "gfx/interface/traits/dossier.dds"
+	}
 
 	spriteType = {
 			name = "GFX_trait_operative_seducer"
@@ -697,7 +702,7 @@ spriteTypes = {
 			name = "GFX_trait_operative_well_groomed"
 			texturefile = "gfx/interface/traits/trait_operative_well_groomed.dds"
 	}
-	
+
 	spriteType = {
 			name = "GFX_trait_operative_natural_orator"
 			texturefile = "gfx/interface/traits/trait_operative_natural_orator.dds"
