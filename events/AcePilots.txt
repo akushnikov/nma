@@ -1,7 +1,6 @@
 ﻿###########################
 # Ace pilots Events
 ###########################
-# test commit
 
 add_namespace = ace_promoted
 add_namespace = ace_died
