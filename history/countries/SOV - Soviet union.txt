@@ -69,6 +69,15 @@ if = {
 	}
 }
 
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
+
 1939.1.1 = {
 
 	add_political_power = 1198
@@ -810,6 +819,37 @@ create_navy_leader = {
 	defense_skill = 2
 	maneuvering_skill = 2
 	coordination_skill = 2
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Alexander Radó"
+		GFX = GFX_portrait_alexander_rado
+		traits = { operative_natural_orator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV HUN }
+	}
+
+	create_operative_leader = {
+		name = "Kim Philby"
+		GFX = GFX_portrait_kim_philby
+		traits = { operative_double_agent operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV ENG }
+	}
+	create_operative_leader = {
+		name = "Richard Sorge"
+		GFX = GFX_portrait_richard_sorge
+		traits = { operative_well_groomed }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { SOV GER }
+	}
 }
 
 
