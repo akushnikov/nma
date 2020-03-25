@@ -13,6 +13,7 @@ autonomy_state = {
 		can_decline_call_to_war = yes
 		units_deployed_to_overlord = no
 		can_be_spymaster = yes
+		contributes_operatives = yes
 	}
 
 	modifier = {
