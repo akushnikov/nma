@@ -168,40 +168,29 @@ set_stability = 0.5
 }
 
 create_country_leader = {
-	name = "Manuel Azana"
-	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "Portrait_Spain_Manuel_Azana.dds"
+	name = "Niceto Alcalá-Zamora"
+	desc = "POLITICS_NICETO_ALCALA_ZAMORA_DESC"
+	picture = "GFX_portrait_SPR_niceto_alcala_zamora"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-		#
+
 	}
 }
 
 create_country_leader = {
 	name = "José Díaz"
 	desc = "POLITICS_JOSE_DIAZ_DESC"
-	picture = "Portrait_Spain_Jose_Diaz.dds"
+	picture = "portrait_spr_jose_diaz.dds"
 	expire = "1965.1.1"
 	ideology = stalinism
 	traits = {
-		#
+
 	}
 }
-
-create_country_leader = {
-	name = "Francisco Franco"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "Portrait_Spain_Francisco_Franco.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
 create_country_leader = {
 	name = "Alejandro Lerroux"
+	id = 1100
 	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
 	expire = "1965.1.1"
@@ -210,18 +199,64 @@ create_country_leader = {
 		#
 	}
 }
+create_country_leader = {
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = "GFX_portrait_spain_francisco_franco"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
 
-create_field_marshal = {
-	name = "José Asensio Torrado"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { defensive_doctrine }
-	skill = 2
-    attack_skill = 1
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 1
+	}
 }
 
+create_field_marshal = {
+	name = "Francisco Franco"
+	id = 1108
+	gfx = "GFX_portrait_spain_francisco_franco"
+	traits = { organisational_leader logistics_wizard expert_delegator }
+	skill = 3
+  attack_skill = 3
+  defense_skill = 2
+  planning_skill = 3
+  logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mohamed Meziane"
+	id = 1109
+	gfx = "GFX_portrait_SPA_mohamed_meziane"
+	traits = { harsh_leader career_officer }
+	skill = 4
+  attack_skill = 5
+  defense_skill = 2
+  planning_skill = 3
+  logistics_skill = 3
+}
+
+create_corps_commander = { # Could fit for all 3 factions
+	name = "Gonzalo Queipo de Llano"
+	id = 1110
+	gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+	traits = { infantry_officer }
+	skill = 3
+  attack_skill = 3
+  defense_skill = 3
+  planning_skill = 2
+  logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "Luis Carrero Blanco"
+	id = 1118
+	gfx = "GFX_portrait_SPA_luis_carrero_blanco"
+	traits = { seawolf }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
 
 ### VARIANTS ###
 # 1936 Start #
