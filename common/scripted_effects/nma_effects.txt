@@ -99,3 +99,43 @@ ensure_united_front_exists = {
 
   set_global_flag = CHI_unite
 }
+
+add_faction_members_collaboration = {
+  for_each_scope_loop = {
+    array = faction_members
+
+    if = {
+      limit = {
+        has_collaboration = {
+          target = FROM
+          value < 1.0
+        }
+      }
+
+      add_collaboration = {
+        target = FROM
+        value = 0.2
+      }
+    }
+  }
+}
+
+add_faction_members_collaboration_excellent = {
+  for_each_scope_loop = {
+    array = faction_members
+
+    if = {
+      limit = {
+        has_collaboration = {
+          target = FROM
+          value < 1.0
+        }
+      }
+
+      add_collaboration = {
+        target = FROM
+        value = 0.4
+      }
+    }
+  }
+}
