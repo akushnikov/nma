@@ -1,15 +1,16 @@
 autonomy_state = {
 	id = autonomy_satellite
-	
+
 	min_freedom_level = 0.80
-	
+
 	manpower_influence = 0.4
-	
+
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
+		can_be_spymaster = yes
 	}
-	
+
 	modifier = {
 		autonomy_manpower_share = 0.4
 		extra_trade_to_overlord_factor = 0.4
@@ -17,11 +18,11 @@ autonomy_state = {
 		license_subject_master_purchase_cost = -1
 		autonomy_gain_global_factor = -0.3
 	}
-	
+
 	ai_subject_wants_higher = {
 		factor = 1.0
 	}
-	
+
 	ai_overlord_wants_lower = {
 		factor = 1.0
 	}
@@ -39,7 +40,7 @@ autonomy_state = {
 			NOT = { OVERLORD = { original_tag = MAN } }
 		}
 	}
-	
+
 	can_take_level = {
 		#trigger here
 	}
