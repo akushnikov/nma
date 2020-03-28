@@ -1498,6 +1498,42 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = FRA_protect_the_rights_of_man
+		icon = GFX_goal_generic_demand_territory
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = FRA_laissez_faire
+		}
+		relative_position_id = FRA_laissez_faire
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_STABILITY }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
 
 	focus = {
 		id = FRA_review_foreign_policy
@@ -1805,41 +1841,7 @@ focus_tree = {
 			custom_effect_tooltip = FRA_laissez_faire_tt
 		}
 	}
-	focus = {
-		id = FRA_protect_the_rights_of_man
-		icon = GFX_goal_generic_demand_territory
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_laissez_faire
-		}
-		relative_position_id = FRA_laissez_faire
-		cost = 10
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_STABILITY }
-		completion_reward = {
-			add_stability = 0.05
-		}
-	}
 	focus = {
 		id = FRA_freedom_front
 		icon = GFX_goal_generic_national_unity
