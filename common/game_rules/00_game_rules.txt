@@ -462,6 +462,28 @@ nma_vic_options = {
 	}
 }
 
+#
+# FRA_ENG UNION
+#
+
+nma_union_options = {
+	name = "NMA_UNION_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_union_rule_icon"
+
+	default = {
+		name = "NMA_UNION_ENABLED"
+		text = "NMA_RULE_OPTION_UNION_ENABLED"
+		desc = "NMA_RULE_OPTION_UNION_ENABLED_DESC"
+	}
+
+	option = {
+		name = "NMA_UNION_DISABLED"
+		text = "NMA_RULE_OPTION_UNION_DISABLED"
+		desc = "NMA_RULE_OPTION_UNION_DISABLED_DESC"
+	}
+}
+
 
 # DEFAULT RULES
 

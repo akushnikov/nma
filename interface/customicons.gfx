@@ -10,4 +10,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/vichy_rule_icon.dds"
 	}
 
+	spriteType = {
+		name = "GFX_union_rule_icon"
+		texturefile = "gfx/interface/union_rule_icon.dds"
+	}
+
 }
