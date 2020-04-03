@@ -2309,10 +2309,7 @@ leader_traits = {
 
 	operative_max = {
 		type = operative
-		trait_type = personality_trait
-
-		modifier = {
-		}
+		trait_type = status_trait
 	}
 
 
