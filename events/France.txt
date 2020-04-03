@@ -197,6 +197,7 @@ country_event = {
 	}
 	option = { # Ask for British Union
 		name = france.10.c
+		trigger = { has_game_rule = { rule = nma_union_options option = NMA_UNION_ENABLED }  }
 		ai_chance = {
 			factor = 15
 			modifier = {
