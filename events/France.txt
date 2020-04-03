@@ -288,6 +288,7 @@ country_event = {
 		ENG = {
 			annex_country = { target = FRA transfer_troops = yes }
 		}
+
 		custom_effect_tooltip = FRA_franco_british_cores
 		hidden_effect = {
 			ENG = { set_cosmetic_tag = FRA_UK }
@@ -354,6 +355,7 @@ country_event = {
 			factor = 50
 		}
 		trigger = {
+			has_game_rule = { rule = nma_vic_options option = NMA_VIC_ALLOWED }
 			has_government = fascism
 			not = { has_dlc = "La Resistance" }
 		}
@@ -950,6 +952,7 @@ country_event = {
 		trigger = {
 			has_government = fascism
 			has_dlc = "La Resistance"
+			has_game_rule = { rule = nma_vic_options option = NMA_VIC_ALLOWED }
 		}
 		FRA = {
 			set_cosmetic_tag = FRA_FREE
