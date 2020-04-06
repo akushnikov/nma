@@ -139,3 +139,7 @@ add_faction_members_collaboration_excellent = {
     }
   }
 }
+
+validate_spa_templates = {
+
+}

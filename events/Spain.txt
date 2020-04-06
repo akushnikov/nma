@@ -13,16 +13,30 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger = {
-		NOT = { has_global_flag = scw_over }
-		tag = SPR
-		has_defensive_war = no
-		NOT = { has_government = fascism }
-		date > 1936.2.16 # Trigger at some point after 1936 elections
-	}
+	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 151	# Historical outbreak time after elections
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_leader = {
+					    name = "Niceto Alcalá-Zamora"
+					    ruling_only = yes
+					}
+				}
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Manuel Azaña"
+					desc = "POLITICS_MANUEL_AZANA_DESC"
+					picture = "Portrait_Spain_Manuel_Azana.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+
+					}
+				}
+			}
+		}
 	}
 
 	option = { # Support Nationalists
@@ -274,6 +288,9 @@ country_event = {
 		has_government = fascism
 		has_global_flag = nationalist_victory
 		owns_state = 41
+		NOT = {
+			41 = { is_capital = yes }
+		}
 	}
 
 	fire_only_once = yes
@@ -306,7 +323,22 @@ country_event = {
 
 	trigger = {
 		tag = SPR
-		date < 1937.1.1
+		date < 1937.2.16
+	}
+
+	# Popular Front
+	option = {
+		ai_chance = { factor = 1 }
+		name = spain.9.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+
+		set_country_flag = SPR_nationalists_civil_war
+		set_country_flag = SPR_spanish_elections_flag
+
+		activate_mission = SPA_military_plot_nationalists
 	}
 
 	# Falange
@@ -317,7 +349,11 @@ country_event = {
 			ruling_party = fascism
 			elections_allowed = no
 		}
+
 		set_country_flag = SPR_communist_civil_war
+		set_country_flag = SPR_spanish_elections_flag
+
+		activate_mission = SPR_military_plot_republicans
 	}
 }
 
@@ -329,17 +365,7 @@ country_event = {
 	picture = GFX_report_event_spain_civil_war_soldiers
 
 	fire_only_once = yes
-
-	trigger = {
-		NOT = { has_global_flag = scw_over }
-		has_country_flag = SPR_communist_civil_war
-		has_defensive_war = no
-		date > 1936.2.16 # Trigger at some point after 1936 elections
-	}
-
-	mean_time_to_happen = {
-		days = 151	# Historical outbreak time after elections
-	}
+	is_triggered_only = yes
 
 	option = { # Support Nationalists
 		name = spain.1.a
@@ -387,7 +413,13 @@ country_event = {
 				ideology = fascism
 				popularity = 1
 			}
-
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				set_cosmetic_tag = SPR_civil_war
+			}
 		}
 		custom_effect_tooltip = nationalists_chosen
 	}
