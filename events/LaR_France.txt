@@ -67,6 +67,7 @@ country_event = {
 	id = lar_france_political_violence.4
 	title = lar_france_political_violence.4.t
 	desc = lar_france_political_violence.4.desc
+	# are you copypasting faggot?
 	picture = GFX_report_event_generic_rally2
 	mean_time_to_happen = { days = 50 }
 
