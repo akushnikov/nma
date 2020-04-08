@@ -1597,18 +1597,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			NOT = {
-				OR = {
-					has_completed_focus = FRA_invite_communist_ministers
-					has_completed_focus = FRA_utilize_the_leagues
-				}
-			}
-		}
-
-		bypass = {
-
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1840,96 +1828,6 @@ focus_tree = {
 			unlock_decision_category_tooltip = FRA_weapons_purchases_category
 		}
 	}
-
-
-	focus = {
-		id = FRA_freedom_front
-		icon = GFX_goal_generic_national_unity
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_protect_the_rights_of_man
-		}
-		relative_position_id = FRA_protect_the_rights_of_man
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			if = {
-				limit = {
-					not = { has_completed_focus = FRA_utilize_the_leagues }
-				}
-				set_temp_variable = { FRA_fascism = party_popularity@fascism }
-				add_popularity = { ideology = democratic popularity = FRA_fascism }
-				multiply_temp_variable = { FRA_fascism = -1 }
-				add_popularity = { ideology = fascism popularity = FRA_fascism }
-			}
-			else = {
-				set_temp_variable = { FRA_democracy = party_popularity@democratic }
-				multiply_temp_variable = { FRA_democracy = 0.3 }
-				add_popularity = { ideology = fascism popularity = FRA_democracy }
-				multiply_temp_variable = { FRA_democracy = -1 }
-				add_popularity = { ideology = democratic popularity = FRA_democracy }
-			}
-			FRA_communism_riot_effect = yes
-		}
-	}
-	focus = {
-		id = FRA_stimulate_the_dynamic_market
-		icon = GFX_goal_generic_construct_civilian
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_freedom_front
-		}
-		relative_position_id = FRA_freedom_front
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_ideas = { FRA_market_dynamism }
-		}
-	}
-
-
 
 	##### END ###########
 
