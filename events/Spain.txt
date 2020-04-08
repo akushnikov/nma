@@ -21,7 +21,6 @@ country_event = {
 				limit = {
 					is_core_of = SPR
 				}
-				add_core_of = SPA
 				add_core_of = SPD
 			}
 		}
@@ -36,6 +35,27 @@ country_event = {
 			set_capital = 176
 			# Deleting cheat units
 			delete_unit_template_and_units = { division_template = "Brigada Legionario" }
+
+			SPA = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
+				clr_country_flag = SPR_nationalist_spain_flag
+				drop_cosmetic_tag = yes
+
+				set_country_flag = SPR_republican_spain_flag
+				set_cosmetic_tag = SPR_republican_spain
+
+				set_politics = {
+					ruling_party = communism
+				}
+
+				set_popularities = {
+					democratic = 50
+					neutrality = 11
+					communism = 39
+				}
+				retire_ideology_leader = democratic
+				retire_ideology_leader = neutrality
+				retire_ideology_leader = communism
+			}
 
 			# Creating communist Spain
 			SPD = {
@@ -54,24 +74,14 @@ country_event = {
 				retire_ideology_leader = neutrality
 
 				create_country_leader = {
-					name = "José Díaz"
-					desc = "POLITICS_JOSE_DIAZ_DESC"
-					picture = "portrait_spr_jose_diaz.dds"
+					name = "Manuel Azaña"
+					desc = "POLITICS_MANUEL_AZANA_DESC"
+					picture = "Portrait_Spain_Manuel_Azana.dds"
 					expire = "1965.1.1"
-					ideology = communism
+					ideology = conservatism
 					traits = {
-
+						figurehead_president
 					}
-				}
-
-				set_politics = {
-					ruling_party = communism
-				}
-
-				set_popularities = {
-					communism = 80
-					democratic = 15
-					neutrality = 5
 				}
 
 				load_oob = "SPR_Civil_War"
@@ -79,6 +89,8 @@ country_event = {
 
 			set_country_flag = SPR_nationalist_spain_flag
 			set_cosmetic_tag = SPR_nationalist_spain
+
+			kill_country_leader = yes
 
 			set_politics = {
 				ruling_party = fascism
