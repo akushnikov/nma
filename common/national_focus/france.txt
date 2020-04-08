@@ -1499,6 +1499,49 @@ focus_tree = {
 	}
 
 	focus = {
+		id = FRA_laissez_faire
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = FRA_form_the_popular_front
+		}
+		relative_position_id = FRA_form_the_popular_front
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_laissez_faire
+				category = industry
+				uses = 3
+				bonus = 1.5
+			}
+			hidden_effect = { country_event = { id = lar_fra_inefficient_economy.1 days = 730 } }
+			custom_effect_tooltip = FRA_laissez_faire_tt
+		}
+	}
+
+	focus = {
 		id = FRA_protect_the_rights_of_man
 		icon = GFX_goal_generic_demand_territory
 		x = 0
@@ -1798,49 +1841,6 @@ focus_tree = {
 		}
 	}
 
-
-	focus = {
-		id = FRA_laissez_faire
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_form_the_popular_front
-		}
-		relative_position_id = FRA_form_the_popular_front
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			add_tech_bonus = {
-				name = FRA_laissez_faire
-				category = industry
-				uses = 3
-				bonus = 1.5
-			}
-			hidden_effect = { country_event = { id = lar_fra_inefficient_economy.1 days = 730 } }
-			custom_effect_tooltip = FRA_laissez_faire_tt
-		}
-	}
 
 	focus = {
 		id = FRA_freedom_front

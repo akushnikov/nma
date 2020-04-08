@@ -70,8 +70,7 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
+			
 			}
 		}
 
