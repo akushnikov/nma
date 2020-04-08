@@ -1,16 +1,16 @@
 ﻿focus_tree = {
 	id = free_french_focus
-	
+
 	country = {
 		factor = 0
-		
+
 		modifier = {
 			add = 1
 			tag = FRA
-			
+
 		}
 	}
-	
+
 	default = no
 	focus = {
 		id = FRA_appeal_to_the_french_nation
@@ -23,7 +23,7 @@
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -31,7 +31,7 @@
 		available = {
 			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
 		}
-		
+
 		bypass = {
 
 		}
@@ -62,19 +62,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_appeal_to_the_french_nation
 		}
 		relative_position_id = FRA_appeal_to_the_french_nation
-		
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -93,233 +93,7 @@
 			}
 		}
 	}
-	focus = {
-		id = FRA_intervention_in_north_africa
-		icon = GFX_goal_generic_position_armies
-		x = -5
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				FRA_controls_north_africa = yes
-			}
-		}
-		
-		bypass = {
 
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_north_africa }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_north_africa }
-		}
-	}
-	focus = {
-		id = FRA_intervention_in_west_africa
-		icon = GFX_goal_generic_position_armies
-		x = -3
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				FRA_controls_west_africa = yes
-			}
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_west_africa }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_west_africa }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_west_africa }
-		}
-	}
-	focus = {
-		id = FRA_intervention_in_syria
-		icon = GFX_goal_generic_position_armies
-		x = -1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				FRA_controls_syria = yes
-			}
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_syria }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_syria }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_syria }
-		}
-	}
-	focus = {
-		id = FRA_intervention_in_indochina
-		icon = GFX_goal_generic_position_armies
-		x = 1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				FRA_controls_indochina = yes
-			}
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_indochina }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_indochina }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_indochina }
-		}
-	}
-	focus = {
-		id = FRA_intervention_in_central_africa
-		icon = GFX_goal_generic_position_armies
-		x = 3
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				FRA_controls_central_africa = yes
-			}
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_central_africa }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_central_africa }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_central_africa }
-		}
-	}
-	focus = {
-		id = FRA_intervention_in_madagascar
-		icon = GFX_goal_generic_position_armies
-		x = 5
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			NOT = {
-				543 = {
-					OR = {
-						is_controlled_by = ROOT
-						CONTROLLER = {
-							is_subject_of = ROOT
-						}
-					}
-				}
-			}
-		}
-		
-		bypass = {
-
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_madagascar }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_madagascar }
-		}
-	}
 	focus = {
 		id = FRA_form_the_national_committee
 		icon = GFX_goal_generic_intelligence_exchange
@@ -329,16 +103,11 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
-			focus = FRA_intervention_in_madagascar
-			focus = FRA_intervention_in_syria
-			focus = FRA_intervention_in_indochina
-			focus = FRA_intervention_in_north_africa
-			focus = FRA_intervention_in_west_africa
-			focus = FRA_intervention_in_central_africa
+		prerequisite = {
+			focus = FRA_appeal_to_overseas_territories
 		}
 		relative_position_id = FRA_appeal_to_overseas_territories
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -354,7 +123,7 @@
 				num_of_factories > 24
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -376,11 +145,11 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_form_the_national_committee
 		}
 		relative_position_id = FRA_form_the_national_committee
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -390,7 +159,7 @@
 				is_controlled_by = ROOT
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -411,19 +180,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_appeal_to_the_french_nation
 		}
 		relative_position_id = FRA_appeal_to_the_french_nation
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -467,19 +236,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_continue_the_fight
 		}
 		relative_position_id = FRA_continue_the_fight
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -512,11 +281,11 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_continue_the_fight
 		}
 		relative_position_id = FRA_continue_the_fight
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -529,7 +298,7 @@
 				}
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -550,11 +319,11 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_continue_the_fight
 		}
 		relative_position_id = FRA_continue_the_fight
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -567,7 +336,7 @@
 				has_war_with = SOV
 			}
 		}
-		
+
 		bypass = {
 
 		}
@@ -595,10 +364,10 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
-			
+		prerequisite = {
+
 		}
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -614,7 +383,7 @@
 				num_of_factories > 14
 			}
 		}
-		
+
 		bypass = {
 			not = { has_idea = FRA_defeatism }
 		}
@@ -634,19 +403,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_refus_absurde
 		}
 		relative_position_id = FRA_refus_absurde
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -678,19 +447,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_refus_absurde
 		}
 		relative_position_id = FRA_refus_absurde
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -711,19 +480,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_reach_out_to_trade_unions
 		}
 		relative_position_id = FRA_reach_out_to_trade_unions
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -753,19 +522,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_refus_absurde
 		}
 		relative_position_id = FRA_refus_absurde
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -786,19 +555,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_connections_to_industrialists
 		}
 		relative_position_id = FRA_connections_to_industrialists
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -822,7 +591,7 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_the_civil_and_military_organization
 		}
 		prerequisite = {
@@ -832,15 +601,15 @@
 			focus = FRA_form_the_national_committee
 		}
 		relative_position_id = FRA_the_civil_and_military_organization
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -864,19 +633,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_national_council_of_the_resistance
 		}
 		relative_position_id = FRA_national_council_of_the_resistance
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -896,19 +665,19 @@
 			x = 0
 			y = 0
 		}
-		prerequisite = { 
+		prerequisite = {
 			focus = FRA_national_council_of_the_resistance
 		}
 		relative_position_id = FRA_national_council_of_the_resistance
-		
+
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			
+
 		}
-		
+
 		bypass = {
 
 		}
@@ -918,41 +687,41 @@
 		completion_reward = {
 			custom_effect_tooltip = FRA_french_forces_of_the_interior_tt
 			division_template = {
-				name = "FFI Demi-Brigade" 	
+				name = "FFI Demi-Brigade"
 				division_names_group = FRA_INF_01
 				is_locked = yes
 				regiments = {
-					infantry = { x = 0 y = 0 }		
-					infantry = { x = 0 y = 1 }		
-					infantry = { x = 0 y = 2 }		
-					infantry = { x = 0 y = 3 }		
-					infantry = { x = 0 y = 4 }		
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
 				}
 				support = {
-					
+
 				}
 			}
 			every_owned_state = {
-				limit = { 
-					is_core_of = ROOT 
+				limit = {
+					is_core_of = ROOT
 					not = { has_state_flag = FRA_core_state_liberated }
 					is_fully_controlled_by = ROOT
 				}
 				create_unit = {
-					division = "name = \"1re Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+					division = "name = \"1re Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"
 					owner = ROOT
 				}
 				create_unit = {
-					division = "name = \"2me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+					division = "name = \"2me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"
 					owner = ROOT
 				}
 				create_unit = {
-					division = "name = \"3me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"  
+					division = "name = \"3me Demi-Brigade des FFI\" division_template = \"FFI Demi-Brigade\" start_experience_factor = 0"
 					owner = ROOT
 				}
 				set_state_flag = FRA_core_state_liberated
 			}
 		}
 	}
-		
+
 }
