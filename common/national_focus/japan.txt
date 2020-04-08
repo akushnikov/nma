@@ -117,6 +117,7 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
 			add_ideas = kenpeitai
+			set_faction_spymaster = yes
 
 			hidden_effect = {
 				ensure_united_front_exists = yes

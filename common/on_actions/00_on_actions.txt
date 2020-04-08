@@ -912,6 +912,12 @@ on_actions = {
 						15 = { GER = { set_country_flag = GER_AI_RANDOM_DEMOCRATIC } }
 					}
 				}
+				if = {
+					limit = {
+						is_in_faction = yes;
+					}
+					set_faction_spymaster = yes
+				}
 			}
 			ITA = {
 				if = {
@@ -985,6 +991,12 @@ on_actions = {
 						50 = { SOV = { set_country_flag = ITA_SOV_RANDOM_COMMUNIST_HISTORICAL } }
 						50 = { SOV = { set_country_flag = ITA_SOV_RANDOM_COMMUNIST_ALTERNATE } }
 					}
+				}
+				if = {
+					limit = {
+						is_in_faction = yes;
+					}
+					set_faction_spymaster = yes
 				}
 			}
 			FRA = {
@@ -1206,6 +1218,12 @@ on_actions = {
 						20 = { set_country_flag = ENG_AI_RANDOM_NEUTRALITY }
 						20 = { set_country_flag = ENG_AI_RANDOM_FASCIST }
 					}
+				}
+				if = {
+					limit = {
+						is_in_faction = yes;
+					}
+					set_faction_spymaster = yes
 				}
 			}
 			USA = {
