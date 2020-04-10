@@ -329,8 +329,10 @@ POR_arms_purchases = {
 			set_country_flag = POR_ships_purchase_in_progress_flag
 		}
 	}
+}
 
-  POR_prospect_for_resources = {
+POR_prospect_for_resources = {
+
 	POR_develop_lisbon_tungsten_deposits = { #112
 
 		icon = tungsten
