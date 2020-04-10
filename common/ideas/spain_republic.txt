@@ -81,8 +81,7 @@ ideas = {
 			name = SPR_nicolas_molero
 
 			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
+				tag = SPD
 			}
 
 			picture = generic_army_europe_3
@@ -126,11 +125,8 @@ ideas = {
 			picture = generic_army_europe_4
 
 			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
+				tag = SPD
 			}
-
-
 
 			traits = { army_chief_defensive_2 }
 
@@ -147,11 +143,8 @@ ideas = {
 			picture = generic_army_europe_5
 
 			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
+				tag = SPD
 			}
-
-
 
 			traits = { army_chief_maneuver_2 }
 
@@ -231,11 +224,8 @@ ideas = {
 			picture = generic_air_europe_3
 
 			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
+				tag = SPD
 			}
-
-
 
 			traits = { air_chief_ground_support_3 }
 
@@ -302,11 +292,8 @@ ideas = {
 			picture = generic_army_europe_2
 
 			allowed = {
-				original_tag = SPR
-				NOT = { has_government = fascism }
+				tag = SPD
 			}
-
-
 
 			traits = { army_infantry_2 }
 

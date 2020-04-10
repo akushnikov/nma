@@ -36,27 +36,6 @@ country_event = {
 			# Deleting cheat units
 			delete_unit_template_and_units = { division_template = "Brigada Legionario" }
 
-			SPA = { # Switch the tag alias for SPA - it now becomes SPD - the republicans
-				clr_country_flag = SPR_nationalist_spain_flag
-				drop_cosmetic_tag = yes
-
-				set_country_flag = SPR_republican_spain_flag
-				set_cosmetic_tag = SPR_republican_spain
-
-				set_politics = {
-					ruling_party = communism
-				}
-
-				set_popularities = {
-					democratic = 50
-					neutrality = 11
-					communism = 39
-				}
-				retire_ideology_leader = democratic
-				retire_ideology_leader = neutrality
-				retire_ideology_leader = communism
-			}
-
 			# Creating communist Spain
 			SPD = {
 				transfer_state = 41
@@ -73,24 +52,27 @@ country_event = {
 				retire_ideology_leader = fascism
 				retire_ideology_leader = neutrality
 
+				set_popularities = {
+					democratic = 50
+					neutrality = 11
+					communism = 39
+				}
+
+				kill_ideology_leader = communism
+
 				create_country_leader = {
-					name = "Manuel Azaña"
-					desc = "POLITICS_MANUEL_AZANA_DESC"
-					picture = "Portrait_Spain_Manuel_Azana.dds"
+					name = "José Díaz"
+					desc = "POLITICS_JOSE_DIAZ_DESC"
+					picture = "portrait_spr_jose_diaz.dds"
 					expire = "1965.1.1"
-					ideology = conservatism
+					ideology = stalinism
 					traits = {
-						figurehead_president
+
 					}
 				}
 
 				load_oob = "SPR_Civil_War"
 			}
-
-			set_country_flag = SPR_nationalist_spain_flag
-			set_cosmetic_tag = SPR_nationalist_spain
-
-			kill_country_leader = yes
 
 			set_politics = {
 				ruling_party = fascism
@@ -139,7 +121,7 @@ country_event = {
 				remove_unit_leader_trait = trait_SPA_nationalist_sympathies
 			}
 
-			SPA = {
+			SPR = {
 				load_oob = "SPA_Civil_War"
 				declare_war_on = {
 				    target = SPD
@@ -388,101 +370,17 @@ country_event = {
 		date < 1937.2.16
 	}
 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = SPR_spanish_elections_flag
+		}
+	}
+
 	# Popular Front
 	option = {
-		ai_chance = { factor = 1 }
 		name = spain.9.a
-		add_popularity = {
-			ideology = communism
-			popularity = 0.1
-		}
 
-		set_country_flag = SPR_nationalists_civil_war
-		set_country_flag = SPR_spanish_elections_flag
-
-		activate_mission = SPA_military_plot_nationalists
+		activate_mission = SPA_military_plot
 	}
 
-	# Falange
-	option = {
-		ai_chance = { factor = 0 }
-		name = spain.9.b
-		set_politics = {
-			ruling_party = fascism
-			elections_allowed = no
-		}
-
-		set_country_flag = SPR_communist_civil_war
-		set_country_flag = SPR_spanish_elections_flag
-
-		activate_mission = SPR_military_plot_republicans
-	}
-}
-
-# Spanish Civil War if Franco is elected
-country_event = {
-	id = spain.10
-	title = spain.1.t
-	desc = spain.10.d
-	picture = GFX_report_event_spain_civil_war_soldiers
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = { # Support Nationalists
-		name = spain.1.a
-		trigger = { is_ai = no }
-		hidden_effect = {
-			set_capital = 176
-			start_civil_war = {
-				ruling_party = fascism
-				ideology = communism
-				size = 0.5
-				capital = 41
-				states = { 41 165 167 168 173 175 790 792 793 794 }
-			}
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_government = communism
-				}
-				load_oob = "SPR_Civil_War"
-				set_equipment_fraction = 0.7
-				set_stability = 0.8
-				set_war_support = 0.8
-				add_popularity = {
-					ideology = democratic
-					popularity = 0.35
-				}
-			}
-			news_event = { hours = 6 id = news.63 }
-			set_global_flag = spanish_civil_war
-
-			if = {
-				# Crime
-				limit = { has_template = "Brigada Legionario" }
-				# And Punishment
-				delete_unit_template_and_units = { division_template = "Brigada Legionario" }
-				# TODO:
-				# mb add some punitive divisions to Communist Spain or national spirit with 10% attack/defence modifier?
-			}
-
-			load_oob = "SPA_Civil_War"
-			set_equipment_fraction = 0.7
-			set_stability = 0.9
-			set_war_support = 0.8
-			add_popularity = {
-				ideology = fascism
-				popularity = 1
-			}
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_government = communism
-				}
-				set_cosmetic_tag = SPR_civil_war
-			}
-		}
-		custom_effect_tooltip = nationalists_chosen
-	}
 }
