@@ -139,3 +139,21 @@ add_faction_members_collaboration_excellent = {
     }
   }
 }
+
+nma_annex_country = {
+  FROM = {
+    every_controlled_state = {
+      set_state_flag = marked_for_compliance
+    }
+  }
+  PREV = {
+    annex_country = { target = FROM transfer_troops = yes }
+    every_controlled_state = {
+      limit = {
+        has_state_flag =  marked_for_compliance
+      }
+      set_compliance = 70
+      clr_state_flag = marked_for_compliance
+    }
+  }
+}
