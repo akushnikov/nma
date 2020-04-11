@@ -113,6 +113,47 @@ guiTypes = {
 					position = { x = 145 y = 0 }
 				}
 
+				instantTextboxType = {
+									name = "spymaster_title"
+									position = { x = 9999 y = 9999 }
+									font = "hoi_16mbs"
+									format = right
+									text = ""
+								}
+
+				buttonType = {
+									name = "spymaster_button"
+									position = { x = 9999 y = 9999 }
+									quadTextureSprite ="GFX_spymaster_button"
+									buttonFont = "hoi_16mbs"
+									Orientation = "LOWER_LEFT"
+									clicksound = click_default
+								}
+
+				instantTextboxType = {
+									name = "spymaster_button_name"
+									position = { x = 9999 y = 9999 }
+									font = "hoi_18mbs"
+									text = "BECOME_SPY_MASTER_BUTTON"
+									maxWidth = 160
+									maxHeight = 29
+									format = left
+									alwaystransparent = yes
+									truncate = yes
+									fixedsize = yes
+								}
+
+				instantTextboxType = {
+									name = "spymaster_button_cost"
+									position = { x = 9999 y = 9999 }
+									font = "hoi_16mbs"
+									text = "122"
+									maxWidth = 100
+									maxHeight = 20
+									format = right
+									alwaystransparent = yes
+								}
+								
 				iconType = {
 					name = "spymaster_flag"
 					quadTextureSprite ="GFX_flag_small"
