@@ -915,6 +915,22 @@ JAP_southern_expansion = {
 
 				728 = { add_core_of = CHI }
 
+				741 = {
+					set_compliance = 70
+				}
+				286 = {
+					set_compliance = 70
+				}
+				670 = {
+					set_compliance = 70
+				}
+				671 = {
+					set_compliance = 70
+				}
+				728 = {
+					set_compliance = 70
+				}
+
 				add_named_threat = { threat = 3 name = france.1.t }
 			}
 
