@@ -14,9 +14,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = USA
-		has_war = yes
-		NOT = { has_global_flag = earhart_disappeared }
+		AND = {
+			tag = USA
+			has_war = yes
+			NOT = { has_global_flag = earhart_disappeared }
+		}		
 	}
 	
 	mean_time_to_happen = {

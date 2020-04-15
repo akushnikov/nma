@@ -46,6 +46,10 @@ nma_annex_subjects = {
 
 		fire_only_once = yes
 
+    allowed = {
+			original_tag = ENG
+		}
+
 		cost = 300
 
     visible = {

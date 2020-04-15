@@ -1,13 +1,11 @@
 VIC_concessions_to_the_germans = {
 	VIC_produce_aircraft_parts = {
-		available = {}
-
+		available = {
+		}
 		visible = {
 			has_any_occupation_cost_trigger = yes
 		}
-
 		cost = 25
-
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
@@ -26,17 +24,22 @@ VIC_concessions_to_the_germans = {
 		}
 		complete_effect = {
 			add_ideas = VIC_produce_aircraft_parts
-			GER = { add_ideas = VIC_aircraft_parts }
+			GER = {
+				add_ideas = VIC_aircraft_parts
+			}
 			reduce_occupation_cost_effect = yes
 		}
 	}
 	VIC_send_guest_workers = {
 		available = {
-
 		}
-		visible = { has_any_occupation_cost_trigger = yes }
+		visible = {
+			has_any_occupation_cost_trigger = yes
+		}
 		cancel_trigger = {
-			not = { has_country_flag = VIC_send_guest_workers }
+			not = {
+				has_country_flag = VIC_send_guest_workers
+			}
 		}
 		cost = 25
 		ai_will_do = {
@@ -60,7 +63,9 @@ VIC_concessions_to_the_germans = {
 			conscription_factor = -0.25
 		}
 		complete_effect = {
-			GER = { add_ideas = VIC_guest_workers }
+			GER = {
+				add_ideas = VIC_guest_workers
+			}
 			reduce_occupation_cost_effect = yes
 			reduce_occupation_cost_effect = yes
 			set_country_flag = VIC_send_guest_workers
@@ -71,7 +76,7 @@ VIC_concessions_to_the_germans = {
 			has_country_flag = VIC_send_guest_workers
 		}
 		visible = {
-		 	has_country_flag = VIC_send_guest_workers
+			has_country_flag = VIC_send_guest_workers
 		}
 		cost = 0
 		ai_will_do = {
@@ -83,7 +88,9 @@ VIC_concessions_to_the_germans = {
 		}
 		fire_only_once = yes
 		complete_effect = {
-			GER = { remove_ideas = VIC_guest_workers }
+			GER = {
+				remove_ideas = VIC_guest_workers
+			}
 			if = {
 				limit = {
 					NOT = {
@@ -91,7 +98,7 @@ VIC_concessions_to_the_germans = {
 					}
 				}
 				increase_occupation_cost_effect = yes
-								increase_occupation_cost_effect = yes
+				increase_occupation_cost_effect = yes
 			}
 			if = {
 				limit = {
@@ -104,9 +111,12 @@ VIC_concessions_to_the_germans = {
 		}
 	}
 }
+
 category_test_decisions = {
 	test_free_france = {
-		allowed = { original_tag = FRA }
+		allowed = {
+			original_tag = FRA
+		}
 		cost = 0
 		ai_will_do = {
 			factor = 0
@@ -116,7 +126,9 @@ category_test_decisions = {
 		}
 	}
 	test_vichy_france = {
-		allowed = { original_tag = FRA }
+		allowed = {
+			original_tag = FRA
+		}
 		cost = 0
 		ai_will_do = {
 			factor = 0
@@ -137,7 +149,9 @@ category_test_decisions = {
 							is_core_of = SYR
 						}
 					}
-					event_target:france_vichy = { transfer_state = PREV }
+					event_target:france_vichy = {
+						transfer_state = PREV
+					}
 				}
 				every_state = {
 					limit = {
@@ -155,7 +169,9 @@ category_test_decisions = {
 						}
 					}
 					add_core_of = PREV
-					event_target:france_vichy = { transfer_state = PREV }
+					event_target:france_vichy = {
+						transfer_state = PREV
+					}
 				}
 				every_state = {
 					limit = {
@@ -186,7 +202,6 @@ category_test_decisions = {
 					expire = "1965.1.1"
 					ideology = fascism_ideology
 					traits = {
-
 					}
 				}
 				add_ideas = FRA_occupation_costs_4
@@ -198,7 +213,7 @@ category_test_decisions = {
 						stockpile_ratio = 0.7
 						army_ratio = 0.5
 						navy_ratio = 0.85
-						air_ratio = 1.0
+						air_ratio = 1
 					}
 				}
 				change_tag_from = FRA
@@ -209,9 +224,8 @@ category_test_decisions = {
 
 FRA_weapons_purchases_category = {
 	FRA_order_weapons_in_USA = {
-	icon = generic_prepare_civil_war
+		icon = generic_prepare_civil_war
 		available = {
-
 		}
 		visible = {
 			USA_can_sell_weapons_trigger = yes
@@ -228,12 +242,15 @@ FRA_weapons_purchases_category = {
 			}
 			modifier = {
 				has_manpower < 10000
-				factor = 0 #need to up conscription laws
+				factor = 0				#need to up conscription laws
 			}
 		}
 		complete_effect = {
 			USA = {
-				add_offsite_building = { type = industrial_complex level = 2 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
 			}
 		}
 		remove_effect = {
@@ -242,14 +259,16 @@ FRA_weapons_purchases_category = {
 				amount = 2500
 			}
 			USA = {
-				add_offsite_building = { type = industrial_complex level = -2 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = -2
+				}
 			}
 		}
 	}
 	FRA_order_artillery_in_USA = {
 		icon = ger_military_buildup
 		available = {
-
 		}
 		visible = {
 			USA_can_sell_weapons_trigger = yes
@@ -266,12 +285,15 @@ FRA_weapons_purchases_category = {
 			}
 			modifier = {
 				has_manpower < 10000
-				factor = 0 #need to up conscription laws
+				factor = 0				#need to up conscription laws
 			}
 		}
 		complete_effect = {
 			USA = {
-				add_offsite_building = { type = industrial_complex level = 3 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = 3
+				}
 			}
 		}
 		remove_effect = {
@@ -280,14 +302,16 @@ FRA_weapons_purchases_category = {
 				amount = 75
 			}
 			USA = {
-				add_offsite_building = { type = industrial_complex level = -3 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = -3
+				}
 			}
 		}
 	}
 	FRA_order_tanks_in_USA = {
 		icon = generic_air
 		available = {
-
 		}
 		visible = {
 			USA_can_sell_weapons_trigger = yes
@@ -304,14 +328,17 @@ FRA_weapons_purchases_category = {
 			}
 			modifier = {
 				has_manpower < 10000
-				factor = 0 #need to up conscription laws
+				factor = 0				#need to up conscription laws
 			}
 		}
 		modifier = {
 		}
 		complete_effect = {
 			USA = {
-				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = 5
+				}
 			}
 		}
 		remove_effect = {
@@ -322,7 +349,7 @@ FRA_weapons_purchases_category = {
 						NOT = {
 							OR = {
 								has_tech = basic_medium_tank
-								has_tech = improved_medium_tank #needed because basic can be bypassed
+								has_tech = improved_medium_tank								#needed because basic can be bypassed
 							}
 						}
 					}
@@ -337,7 +364,7 @@ FRA_weapons_purchases_category = {
 					USA = {
 						OR = {
 							has_tech = basic_medium_tank
-							has_tech = improved_medium_tank #needed because basic can be bypassed
+							has_tech = improved_medium_tank							#needed because basic can be bypassed
 						}
 					}
 				}
@@ -347,14 +374,16 @@ FRA_weapons_purchases_category = {
 				}
 			}
 			USA = {
-				add_offsite_building = { type = industrial_complex level = -5 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = -5
+				}
 			}
 		}
 	}
 	FRA_order_fighters_in_USA = {
 		icon = generic_air
 		available = {
-
 		}
 		visible = {
 			USA_can_sell_weapons_trigger = yes
@@ -371,14 +400,17 @@ FRA_weapons_purchases_category = {
 			}
 			modifier = {
 				has_manpower < 10000
-				factor = 0 #need to up conscription laws
+				factor = 0				#need to up conscription laws
 			}
 		}
 		modifier = {
 		}
 		complete_effect = {
 			USA = {
-				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = 5
+				}
 			}
 		}
 		remove_effect = {
@@ -387,14 +419,16 @@ FRA_weapons_purchases_category = {
 				amount = 50
 			}
 			USA = {
-				add_offsite_building = { type = industrial_complex level = -5 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = -5
+				}
 			}
 		}
 	}
 	FRA_order_bombers_in_USA = {
 		icon = generic_air
 		available = {
-
 		}
 		visible = {
 			USA_can_sell_weapons_trigger = yes
@@ -411,15 +445,17 @@ FRA_weapons_purchases_category = {
 			}
 			modifier = {
 				has_manpower < 10000
-				factor = 0 #need to up conscription laws
+				factor = 0				#need to up conscription laws
 			}
 		}
 		modifier = {
-
 		}
 		complete_effect = {
 			USA = {
-				add_offsite_building = { type = industrial_complex level = 5 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = 5
+				}
 			}
 		}
 		remove_effect = {
@@ -428,7 +464,10 @@ FRA_weapons_purchases_category = {
 				amount = 25
 			}
 			USA = {
-				add_offsite_building = { type = industrial_complex level = -5 }
+				add_offsite_building = {
+					type = industrial_complex
+					level = -5
+				}
 			}
 		}
 	}
