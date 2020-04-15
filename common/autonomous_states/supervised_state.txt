@@ -5,7 +5,7 @@ autonomy_state = {
 
 	peace_conference_initial_freedom = 0.001
 
-	manpower_influence = 0.2
+	manpower_influence = 0.0
 
 	rule = {
 		can_not_declare_war = yes

@@ -3,7 +3,7 @@ autonomy_state = {
 
 	min_freedom_level = 0.80
 
-	manpower_influence = 0.4
+	manpower_influence = 0.0
 
 	rule = {
 		can_not_declare_war = yes
