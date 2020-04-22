@@ -260,7 +260,6 @@ focus_tree = {
 				OR = {
 					threat > 0.05
 					has_war = yes
-					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
 				}
 			}
@@ -561,7 +560,6 @@ focus_tree = {
 				OR = {
 					threat > 0.05
 					has_war = yes
-					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
 				}
 			}
@@ -647,7 +645,6 @@ focus_tree = {
 				OR = {
 					threat > 0.1
 					has_war = yes
-					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
 				}
 			}
@@ -718,7 +715,6 @@ focus_tree = {
 						has_completed_focus = GER_rhineland
 					}
 					threat > 0.2
-					has_idea = ENG_no_further_appeasement_idea
 					NOT = { has_government = democratic }
 				}
 			}
@@ -2179,20 +2175,6 @@ focus_tree = {
 
 		bypass = {
 			CHI = { exists = no }
-		}
-
-		icon = GFX_goal_generic_construct_infrastructure
-		x = -2
-		y = 1
-		relative_position_id = uk_asia_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
 			640 = {
 				free_building_slots = {
 					building = infrastructure
@@ -2221,6 +2203,17 @@ focus_tree = {
 				}
 			}
 		}
+
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 1
+		relative_position_id = uk_asia_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
 
 		completion_reward = {
 			640 = {
@@ -3819,13 +3812,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ENG_abdication_crisis_normal_marriage
-					has_country_flag = ENG_abdication_crisis_morganatic_marriage
-				}
-			}
 		}
 		completion_reward = {
 			add_timed_idea = { idea = ENG_steady_as_she_goes_idea days = 365 }
