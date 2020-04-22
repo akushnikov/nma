@@ -1111,7 +1111,7 @@ focus_tree = {
 
 		}
 
-		bypass = 1
+		bypass = {
 
 		}
 
