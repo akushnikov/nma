@@ -18,7 +18,7 @@ nma_anti_grind_decisions = {
 		}
 
     activation = {
-      ETH = { is_allowed_to_grind = yes }
+      # ETH = { is_allowed_to_grind = yes }
     }
 
     complete_effect = { }
@@ -27,8 +27,8 @@ nma_anti_grind_decisions = {
       white_peace = ETH
       hidden_effect = {
         ETH = {
-          cleanup_grinding_mess = yes
-          cleanup_state_juggling_mess = yes
+          # cleanup_grinding_mess = yes
+          # cleanup_state_juggling_mess = yes
         }
       }
 
@@ -55,7 +55,7 @@ nma_anti_grind_decisions = {
     }
 
     activation = {
-      YUG = { is_allowed_to_grind = yes }
+      # YUG = { is_allowed_to_grind = yes }
     }
 
     complete_effect = { }
@@ -72,8 +72,8 @@ nma_anti_grind_decisions = {
       }
 
       YUG = {
-        cleanup_grinding_mess = yes
-        cleanup_state_juggling_mess = yes
+        # cleanup_grinding_mess = yes
+        # cleanup_state_juggling_mess = yes
       }
       country_event = { id = nma_grinding.4 }
     }
@@ -97,7 +97,7 @@ nma_anti_grind_decisions = {
     }
 
     activation = {
-      GRE = { is_allowed_to_grind_with_casualties = yes }
+      # GRE = { is_allowed_to_grind_with_casualties = yes }
     }
 
     complete_effect = { }
@@ -114,7 +114,7 @@ nma_anti_grind_decisions = {
       }
 
       YUG = {
-        cleanup_grinding_mess = yes
+        # cleanup_grinding_mess = yes
       }
       country_event = { id = nma_grinding.6 }
     }

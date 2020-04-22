@@ -1,3 +1,10 @@
+FRA_vichy_france = {
+	
+	allowed = {
+		original_tag = FRA
+	}
+}
+
 VIC_concessions_to_the_germans = {
 	allowed = {
 		tag = EFR

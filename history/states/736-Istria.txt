@@ -1,46 +1,28 @@
-state={
-	id=736
-	name="STATE_736"
-<<<<<<< HEAD
-	
-=======
-
->>>>>>> release
+state = {
+	id = 736
+	name = "STATE_736"
 	state_category = city
-
-	history={
+	history = {
 		victory_points = {
-<<<<<<< HEAD
-			6626 1 
-=======
-			6626 1
->>>>>>> release
+			6626
+			1
 		}
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = YUG
-<<<<<<< HEAD
-
-=======
->>>>>>> release
 		buildings = {
 			infrastructure = 2
 			6626 = {
 				naval_base = 5
-
 			}
-
 		}
-
 	}
-
-	provinces={
-<<<<<<< HEAD
-		599 6626 11595 11735 
-=======
-		599 6626 11595 11735
->>>>>>> release
+	provinces = {
+		599
+		6626
+		11595
+		11735
 	}
-	manpower=1063159
-	buildings_max_level_factor=1.000
+	manpower = 1063159
+	buildings_max_level_factor = 1
 }

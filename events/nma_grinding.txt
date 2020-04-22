@@ -25,8 +25,8 @@ country_event = {
 
       white_peace = ETH
       ETH = {
-        cleanup_grinding_mess = yes
-        cleanup_state_juggling_mess = yes
+        # cleanup_grinding_mess = yes
+        # cleanup_state_juggling_mess = yes
       }
       country_event = { id = nma_grinding.2 }
     }
@@ -119,8 +119,8 @@ country_event = {
       }
 
       YUG = {
-        cleanup_grinding_mess = yes
-        cleanup_state_juggling_mess = yes
+        # cleanup_grinding_mess = yes
+        # cleanup_state_juggling_mess = yes
       }
       country_event = { id = nma_grinding.4 }
     }
@@ -308,7 +308,7 @@ country_event = {
       }
 
       GRE = {
-        cleanup_grinding_mess = yes
+        # cleanup_grinding_mess = yes
       }
       country_event = { id = nma_grinding.6 }
     }
