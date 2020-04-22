@@ -1507,7 +1507,6 @@ ideas = {
 				NOT = { has_country_flag = flight_of_hess }
 				OR = {
 					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
 			
@@ -1524,7 +1523,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
 
@@ -1545,7 +1543,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
 
@@ -1566,7 +1563,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
 			
@@ -2130,7 +2126,6 @@ ideas = {
 			available = {
 				OR = {
 					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
 				}
 			}
 						
