@@ -94,7 +94,7 @@ ideas = {
 		}
 
 		SPR_andres_saborit_colomer_vanilla = {
-			ledger = military
+			ledger = army
 
 			name = SPR_andres_saborit_colomer
 

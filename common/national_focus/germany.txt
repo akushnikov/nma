@@ -2179,10 +2179,6 @@ focus_tree = {
 		prerequisite = { focus = GER_army_innovation }
 		available = {
 			NOT = { has_completed_focus = GER_anti_soviet_pact }
-			OR = {
-				NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
-				NOT = { has_completed_focus = GER_the_great_red_menace }
-			}
 		}
 		#cancel = {
 		#	OR = {
@@ -2194,8 +2190,6 @@ focus_tree = {
 			OR = {
 				has_war_with = SOV
 				NOT = { country_exists = SOV }
-				has_completed_focus = GER_bulwark_against_bolshevism
-				has_completed_focus = GER_the_great_red_menace
 			}
 		}
 
@@ -2382,8 +2376,6 @@ focus_tree = {
 				NOT = { has_war_with = GER }
 				country_exists = SOV
 			}
-			NOT = { has_completed_focus = GER_bulwark_against_bolshevism }
-			NOT = { has_completed_focus = GER_the_great_red_menace }
 		}
 		cancel = {
 			OR = {
@@ -2505,12 +2497,6 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_puppet = no
-			NOT = {
-				has_game_rule = {
-					rule = GER_can_remilitarize_rhineland
-					option = no
-				}
-			}
 		}
 		bypass = {
 			42 = { is_demilitarized_zone = no }
@@ -3653,11 +3639,6 @@ focus_tree = {
 					CZE = { NOT = { has_war_with = ENG } }
 					CZE = { controls_state = 69 }
 					OR = {
-						HUN = {
-							NOT = {
-								has_completed_focus = HUN_protect_czechoslovakia #DOD only
-							}
-						}
 						CZE = {
 							has_country_flag = HUN_AH_CZE_refused
 						}
@@ -3680,11 +3661,6 @@ focus_tree = {
 					CZE = { is_in_faction_with = HOL }
 					CZE = { controls_state = 69 }
 					OR = {
-						HUN = {
-							NOT = {
-								has_completed_focus = HUN_protect_czechoslovakia #DOD only
-							}
-						}
 						CZE = {
 							has_country_flag = HUN_AH_CZE_refused
 						}
@@ -3701,10 +3677,6 @@ focus_tree = {
 			if = {
 				limit = {
 					NOT = { CZE = { controls_state = 69 } }
-					NOT = {
-						69 = { is_controlled_by = HUN }
-						HUN = { has_completed_focus = HUN_protect_czechoslovakia }
-					}
 					69 = {
 						controller = {
 							NOT = { is_in_faction_with = GER }
@@ -3915,7 +3887,6 @@ focus_tree = {
 		prerequisite = { focus = GER_second_vienna_award }
 		available = {
 			NOT = { has_war_with = ITA }
-			NOT = { has_country_flag = ENG_ditched_the_italians_flag }
 		}
 
 		bypass = {

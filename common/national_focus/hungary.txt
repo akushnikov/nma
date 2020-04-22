@@ -452,16 +452,13 @@ focus_tree = {
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 		available = {
 			NOT = { GER = { has_government = communism } }
+			NOT = { has_war_with = GER }
 		}
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 80
-		}
-
-		available = {
-			NOT = { has_war_with = GER }
 		}
 
 		bypass = {

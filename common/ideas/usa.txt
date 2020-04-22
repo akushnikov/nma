@@ -696,10 +696,10 @@ ideas = {
 			picture = generic_navy_bonus
 
 			equipment_bonus = {
-
 				submarine = {
-					surface_detection = 0.1 instant = yes
-					sub_visibility = -0.1 instant = yes
+					surface_detection = 0.1 
+					sub_visibility = -0.1 
+					instant = yes
 				}
 			}
 		}
