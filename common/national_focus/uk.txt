@@ -4051,3 +4051,4 @@ focus_tree = {
 			add_ideas = ENG_prepare_for_the_inevitable_idea
 		}
 	}
+}

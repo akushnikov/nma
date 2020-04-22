@@ -212,7 +212,6 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = yes
-				has_global_flag = ENG_decolonized
 			}
 		}
 
@@ -262,7 +261,6 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = yes
-				has_global_flag = ENG_decolonized
 			}
 		}
 
@@ -342,10 +340,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 		}
 
@@ -390,10 +385,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 			OR = {
 				has_war_with = GER
@@ -563,10 +555,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 		}
 
@@ -2700,10 +2689,7 @@ focus_tree = {
 					compare_autonomy_state > autonomy_puppet
 					is_subject_of = ENG
 				}
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 		}
 

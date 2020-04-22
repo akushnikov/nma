@@ -5126,3 +5126,4 @@ focus_tree = {
 			GRE = { country_event = { id = greece.3 hours = 6 } }
 		}
 	}
+}

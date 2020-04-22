@@ -196,3 +196,476 @@ country_event = {
 		
 	}
 }
+
+
+ ##  ###  ###  ###  ##  #       ###  ##       ##  #   # ### ###   ## ###  ##   ##     ### ### ###  ###  ### ###  ##  ###  #   # 
+#  # #  # #  # #   #  # #        #  #  #     #  # #   # #   #  # #   #   #  # #        #  #   #  # #  #  #   #  #  # #  #  # #  
+#### ###  ###  ##  #### #        #  #  #     #  #  # #  ##  ###   #  ##  ####  #       #  ##  ###  ###   #   #  #  # ###    #   
+#  # #    #    #   #  # #        #  #  #     #  #  # #  #   #  #   # #   #  #   #      #  #   #  # #  #  #   #  #  # #  #   #   
+#  # #    #    ### #  # ###      #   ##       ##    #   ### #  # ##  ### #  # ##       #  ### #  # #  # ###  #   ##  #  #   #   
+
+add_namespace = lar_appeal_to_overseas_territories
+
+country_event = {
+	id = lar_appeal_to_overseas_territories.1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		random_list = {
+			85 = { country_event = lar_appeal_to_overseas_territories.2 } #indochina remains with Vichy
+			15 = { country_event = lar_appeal_to_overseas_territories.3 } #indochina switches sides
+		}
+		random_list = {
+			80 = { country_event = { id = lar_appeal_to_overseas_territories.4 days = 3 } } #syria remains with Vichy
+			20 = { country_event = { id = lar_appeal_to_overseas_territories.5 days = 3 } } #syria switches sides
+		}
+		random_list = {
+			80 = { country_event = { id = lar_appeal_to_overseas_territories.6 days = 8 } } #central africa remains with Vichy
+			20 = { country_event = { id = lar_appeal_to_overseas_territories.7 days = 8 } } #central africa switches sides
+		}
+		random_list = {
+			90 = { country_event = { id = lar_appeal_to_overseas_territories.8 days = 12 } } #western africa remains with Vichy
+			10 = { country_event = { id = lar_appeal_to_overseas_territories.9 days = 12 } } #western africa switches sides
+		}
+		random_list = {
+			70 = { country_event = { id = lar_appeal_to_overseas_territories.10 days = 16 } } #madagascar remains with Vichy
+			30 = { country_event = { id = lar_appeal_to_overseas_territories.11 days = 16 } } #madagascar switches sides
+		}
+		random_list = {
+			95 = { country_event = { id = lar_appeal_to_overseas_territories.12 days = 20 } } #north africa remains with Vichy
+			5 = { country_event = { id = lar_appeal_to_overseas_territories.13 days = 20 } } #north africa switches sides
+		}
+	}
+	
+	option = {
+		
+	}
+}
+
+# indochina remains with Vichy France
+country_event = {
+	id = lar_appeal_to_overseas_territories.2
+	title = lar_appeal_to_overseas_territories.2.t
+	desc = lar_appeal_to_overseas_territories.2.desc
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.2.a #agree
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+#indochina switches sides
+country_event = {
+	id = lar_appeal_to_overseas_territories.3
+	title = lar_appeal_to_overseas_territories.3.t
+	desc = lar_appeal_to_overseas_territories.3.desc
+	picture = GFX_report_event_felix_eboue
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.3.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		VIC = { country_event = LaR_france_vichy_notification_events.2 }
+		FRA_transfer_indochina_effect = yes
+	}
+}
+
+# syria remains with Vichy France
+country_event = {
+	id = lar_appeal_to_overseas_territories.4
+	title = lar_appeal_to_overseas_territories.4.t
+	desc = lar_appeal_to_overseas_territories.4.desc
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.2.a #agree
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+#syria switches sides
+country_event = {
+	id = lar_appeal_to_overseas_territories.5
+	title = lar_appeal_to_overseas_territories.5.t
+	desc = lar_appeal_to_overseas_territories.5.desc
+	picture = GFX_report_event_felix_eboue
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.3.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		VIC = { country_event = LaR_france_vichy_notification_events.1 }
+		FRA_transfer_syria_effect = yes
+	}
+}
+
+# central africa remains with Vichy France
+country_event = {
+	id = lar_appeal_to_overseas_territories.6
+	title = lar_appeal_to_overseas_territories.6.t
+	desc = lar_appeal_to_overseas_territories.6.desc
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.6.a #agree
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+#central africa switches sides
+country_event = {
+	id = lar_appeal_to_overseas_territories.7
+	title = lar_appeal_to_overseas_territories.7.t
+	desc = lar_appeal_to_overseas_territories.7.desc
+	picture = GFX_report_event_felix_eboue
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.3.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		VIC = { country_event = LaR_france_vichy_notification_events.3 }
+		FRA_transfer_central_africa_effect = yes
+	}
+}
+# western africa remains with Vichy France
+country_event = {
+	id = lar_appeal_to_overseas_territories.8
+	title = lar_appeal_to_overseas_territories.8.t
+	desc = lar_appeal_to_overseas_territories.8.desc
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.6.a #agree
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+#western africa switches sides
+country_event = {
+	id = lar_appeal_to_overseas_territories.9
+	title = lar_appeal_to_overseas_territories.9.t
+	desc = lar_appeal_to_overseas_territories.9.desc
+	picture = GFX_report_event_felix_eboue
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.3.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		VIC = { country_event = LaR_france_vichy_notification_events.4 }
+		FRA_transfer_western_africa_effect = yes
+	}
+}
+
+# madagascar remains with Vichy France
+country_event = {
+	id = lar_appeal_to_overseas_territories.10
+	title = lar_appeal_to_overseas_territories.10.t
+	desc = lar_appeal_to_overseas_territories.10.desc
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.2.a #agree
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+#madagascar switches sides
+country_event = {
+	id = lar_appeal_to_overseas_territories.11
+	title = lar_appeal_to_overseas_territories.11.t
+	desc = lar_appeal_to_overseas_territories.11.desc
+	picture = GFX_report_event_felix_eboue
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.3.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		VIC = { country_event = LaR_france_vichy_notification_events.6 }
+		if = {
+			limit = {
+				MAD = {
+					exists = yes
+					is_subject = yes
+					OVERLORD = { original_tag = FRA }
+				}
+			}
+			puppet = MAD
+		}
+		else_if = {
+			limit = {
+				543 = { CONTROLLER = { original_tag = FRA } }
+			}
+			transfer_state = 543
+		}
+	}
+}
+# north africa remains with Vichy France
+country_event = {
+	id = lar_appeal_to_overseas_territories.12
+	title = lar_appeal_to_overseas_territories.12.t
+	desc = lar_appeal_to_overseas_territories.12.desc
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.2.a #agree
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+#north africa switches sides
+country_event = {
+	id = lar_appeal_to_overseas_territories.13
+	title = lar_appeal_to_overseas_territories.13.t
+	desc = lar_appeal_to_overseas_territories.13.desc
+	picture = GFX_report_event_felix_eboue
+	is_triggered_only = yes
+	option = {
+		name = lar_appeal_to_overseas_territories.3.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		VIC = { country_event = LaR_france_vichy_notification_events.5 }
+		FRA_transfer_north_africa_effect = yes
+	}
+}
+
+### #  # ###      ### #  # ###      ##   ##   ##  #  # ###   ##  ### ###  ##  #  # 
+#   ## # #  #      #  #  # #       #  # #  # #  # #  # #  # #  #  #   #  #  # ## # 
+##  # ## #  #      #  #### ##      #  # #    #    #  # ###  ####  #   #  #  # # ## 
+#   #  # #  #      #  #  # #       #  # #  # #  # #  # #    #  #  #   #  #  # #  # 
+### #  # ###       #  #  # ###      ##   ##   ##   ##  #    #  #  #  ###  ##  #  # 
+
+add_namespace = lar_end_the_occupation
+
+#initial event for Germany - vichy wants to end the occupation and join the axis
+country_event = {
+	id = lar_end_the_occupation.1
+	title = lar_end_the_occupation.1.t
+	desc = lar_end_the_occupation.1.desc
+	picture = GFX_report_event_pierre_laval
+
+	is_triggered_only = yes
+
+	option = {
+		name = lar_end_the_occupation.1.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		FROM = { country_event = lar_end_the_occupation.2 }
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					is_core_of = FROM
+					is_controlled_by = ROOT
+				}
+				FROM = { transfer_state = PREV }
+			}
+		}
+	}
+	option = {
+		name = lar_end_the_occupation.1.b #refuse
+		ai_chance = {
+			factor = 20
+			modifier = {
+				is_in_faction_with = FROM
+				factor = 0
+			}
+			modifier = {
+				FROM = {
+					has_war = yes
+					any_enemy_country = {
+						has_war_with = ROOT
+					}
+				}
+				factor = 0
+			}
+		}
+		FROM = { country_event = lar_end_the_occupation.3 }
+	}
+}
+# Germany approves
+country_event = {
+	id = lar_end_the_occupation.2
+	title = lar_end_the_occupation.2.t
+	desc = lar_end_the_occupation.2.desc
+	picture = GFX_report_event_generic_military_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = lar_end_the_occupation.2.a 
+		ai_chance = {
+			factor = 50
+		}
+		hidden_effect = { news_event = { id = lar_news.4 days = 3 random_days = 5 } }
+		every_state = { #take over core french territory that is being held by Germany
+			limit = {
+				is_core_of = ROOT
+				NOT = { state = 28 } #Elsass-Lothringen ist deutsch!
+				NOT = { state = 735 } #Savoy is Italian
+				OR = {
+					is_controlled_by = FROM
+					CONTROLLER = {
+						is_in_faction_with = FROM 
+					}
+				}
+			}
+			ROOT = { transfer_state = PREV }
+		}
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = FROM }
+			}
+			FROM = { add_to_faction = ROOT }
+		}
+		load_focus_tree = french_focus
+		unlock_national_focus = FRA_revive_the_national_bloc
+		unlock_national_focus = FRA_utilize_the_leagues
+		unlock_national_focus = FRA_national_regeneration
+		unlock_national_focus = FRA_diplomatic_freedom
+		unlock_national_focus = FRA_towards_a_new_europe
+	}
+}
+
+# Germany refuses
+country_event = {
+	id = lar_end_the_occupation.3
+	title = lar_end_the_occupation.3.t
+	desc = lar_end_the_occupation.3.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = {
+		name = lar_end_the_occupation.3.a #let's talk to Free France
+		ai_chance = {
+			factor = 50
+		}
+		random_other_country = {
+			limit = { 
+				original_tag = FRA 
+				has_government = democratic
+			}
+			country_event = lar_end_the_occupation.4
+			effect_tooltip = { annex_country = { target = VIC transfer_troops = yes } }
+		}
+	}
+	option = {
+		name = lar_end_the_occupation.3.b #fine, we'll do it ourselves
+		ai_chance = {
+			factor = 50
+		}
+		load_focus_tree = french_focus
+		unlock_national_focus = FRA_revive_the_national_bloc
+		unlock_national_focus = FRA_utilize_the_leagues
+		unlock_national_focus = FRA_national_regeneration
+		unlock_national_focus = FRA_diplomatic_freedom
+		unlock_national_focus = FRA_latin_entente
+	}
+}
+
+# Vichy wants to join after germany refuses to hand back territory
+country_event = {
+	id = lar_end_the_occupation.4
+	title = lar_end_the_occupation.4.t
+	desc = lar_end_the_occupation.4.desc
+	picture = GFX_report_event_degaulle_inspect_troops
+
+	is_triggered_only = yes
+
+	option = {
+		name = lar_end_the_occupation.4.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		FROM = { country_event = lar_end_the_occupation.5 }
+		effect_tooltip = {
+			annex_country = { target = VIC transfer_troops = yes }
+		}
+	}
+	option = {
+		name = lar_end_the_occupation.4.b #refuse
+		ai_chance = {
+			factor = 20
+			modifier = {
+				FROM = { is_ai = no }
+				factor = 0
+			}
+		}
+		FROM = { country_event = lar_end_the_occupation.6 }
+	}
+}
+
+# Vichy joins Free France after germany refuses to hand back territory
+country_event = {
+	id = lar_end_the_occupation.5
+	title = lar_end_the_occupation.5.t
+	desc = lar_end_the_occupation.5.desc
+	picture = GFX_report_event_degaulle_inspect_troops
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				if = {
+					limit = {
+						is_ai = yes
+						VIC = { is_ai = no }
+					}
+					change_tag_from = VIC
+				}
+			}
+		}
+	}
+
+	option = {
+		name = lar_end_the_occupation.5.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		FRA = {
+			annex_country = { target = VIC transfer_troops = yes }
+			load_focus_tree = french_focus
+			unlock_national_focus = FRA_revive_the_national_bloc
+			unlock_national_focus = FRA_laissez_faire
+			unlock_national_focus = FRA_protect_the_rights_of_man
+			unlock_national_focus = FRA_review_foreign_policy		
+		}
+	}
+}
+
+# Free France refuses, Vichy goes at it alone after all
+country_event = {
+	id = lar_end_the_occupation.6
+	title = lar_end_the_occupation.6.t
+	desc = lar_end_the_occupation.6.desc
+	picture = GFX_report_event_degaulle_churchill
+
+	is_triggered_only = yes
+
+	option = {
+		name = lar_end_the_occupation.6.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		load_focus_tree = french_focus
+		unlock_national_focus = FRA_revive_the_national_bloc
+		unlock_national_focus = FRA_utilize_the_leagues
+		unlock_national_focus = FRA_national_regeneration
+		unlock_national_focus = FRA_diplomatic_freedom
+		unlock_national_focus = FRA_latin_entente
+	}
+}
