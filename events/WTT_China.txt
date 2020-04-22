@@ -511,11 +511,7 @@ country_event = {
 	option = { #refuse
 		name = wtt_china_shared.11.b
 		ai_chance = {
-			base = 30
-			modifier = {
-				SOV_is_on_historical_plan_trigger = yes
-				factor = 0
-			}
+			base = 0
 		}
 		reverse_add_opinion_modifier = { target = FROM modifier = CHI_refused_support }
 		add_war_support = -0.1
@@ -552,11 +548,7 @@ country_event = {
 	option = { #accept - MacArthur
 		name = wtt_china_shared.12.c
 		ai_chance = {
-			base = 30
-			modifier = {
-				USA_is_on_historical_plan_trigger = yes
-				factor = 0
-			}
+			base = 0
 		}
 		set_country_flag = joseph_stilwell_sent_to_china
 		random_army_leader = {
@@ -572,11 +564,7 @@ country_event = {
 	option = { #accept - Eisenhower
 		name = wtt_china_shared.12.d
 		ai_chance = {
-			base = 30
-			modifier = {
-				USA_is_on_historical_plan_trigger = yes
-				factor = 0
-			}
+			base = 0
 		}
 		set_country_flag = joseph_stilwell_sent_to_china
 		random_army_leader = {
@@ -592,11 +580,7 @@ country_event = {
 	option = { #refuse
 		name = wtt_china_shared.12.b
 		ai_chance = {
-			base = 10
-			modifier = {
-				USA_is_on_historical_plan_trigger = yes
-				factor = 0
-			}
+			base = 0
 		}
 		reverse_add_opinion_modifier = { target = FROM modifier = CHI_refused_support }
 		add_war_support = -0.1

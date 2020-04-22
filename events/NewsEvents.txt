@@ -2268,6 +2268,15 @@ news_event = {
 	immediate = {
 		set_global_flag = nationalist_victory
 		set_global_flag = scw_over
+		hidden_effect = {
+			random_country = {
+				limit = {
+					original_tag = SPR
+				}
+
+				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
+			}
+		}
 	}
 
 	option = {
@@ -2334,7 +2343,7 @@ news_event = {
 news_event = {
 	id = news.66
 	title = news.66.t
-	text = news.66.d
+	desc = news.66.d
 	
 	picture = GFX_news_event_olympics_1940
 
