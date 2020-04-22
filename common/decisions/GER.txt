@@ -1,50 +1,56 @@
 #Category only allowed for GER
 GER_mefo_bills_category = {
-
 	GER_mefo_bills_mission = {
-
-		allowed = { always = no }
-
+		allowed = {
+			always = no
+		}
 		icon = ger_mefo_bills
-
 		available = {
-			NOT = { has_government = democratic }
+			NOT = {
+				has_government = democratic
+			}
 			GER_can_delay_mefo_payment = yes
 			has_political_power > 0
 		}
-
 		#cost = GER_mefo_bill_counter?10
-
 		selectable_mission = yes
 		days_mission_timeout = 180
 		is_good = no
 		fire_only_once = yes
-
 		cancel_trigger = {
 			hidden_trigger = {
 				OR = {
-					NOT = { GER_has_mefo_bills = yes }
+					NOT = {
+						GER_has_mefo_bills = yes
+					}
 					has_idea = GER_mefo_bills_ended
 				}
 			}
 		}
-
 		days_remove = GER_extend_mefo_bills_days?0
 		remove_effect = {
 			GER_mefo_bills_level_up = yes
 			if = {
 				limit = {
-					check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+					check_variable = {
+						var = GER_mefo_bill_counter
+						value = 15
+						compare = less_than
+					}
 				}
-				set_variable = { var = GER_mefo_bill_counter value = 10 }
+				set_variable = {
+					var = GER_mefo_bill_counter
+					value = 10
+				}
 			}
-			add_to_variable = { var = GER_mefo_bill_counter value = 10 }
-
+			add_to_variable = {
+				var = GER_mefo_bill_counter
+				value = 10
+			}
 			hidden_effect = {
 				activate_mission = GER_mefo_bills_mission
 			}
 		}
-
 		complete_effect = {
 			custom_effect_tooltip = GER_mefo_bills_mission_tt
 			custom_effect_tooltip = GER_mefo_bills_effect_in_days
@@ -52,25 +58,37 @@ GER_mefo_bills_category = {
 				GER_mefo_bills_level_up = yes
 			}
 			hidden_effect = {
-				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+				set_variable = {
+					GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission
+				}
 			}
 		}
-
 		timeout_effect = {
-custom_effect_tooltip = GER_mefo_bills_mission_tt
+			custom_effect_tooltip = GER_mefo_bills_mission_tt
 			custom_effect_tooltip = GER_mefo_bills_effect_in_days
 			hidden_effect = {
-				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+				set_variable = {
+					GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission
+				}
 			}
 			GER_mefo_bills_level_up = yes
 			if = {
 				limit = {
-					check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+					check_variable = {
+						var = GER_mefo_bill_counter
+						value = 15
+						compare = less_than
+					}
 				}
-				set_variable = { var = GER_mefo_bill_counter value = 10 }
+				set_variable = {
+					var = GER_mefo_bill_counter
+					value = 10
+				}
 			}
-			add_to_variable = { var = GER_mefo_bill_counter value = 10 }
-
+			add_to_variable = {
+				var = GER_mefo_bill_counter
+				value = 10
+			}
 			hidden_effect = {
 				activate_mission = GER_mefo_bills_mission
 			}
@@ -80,42 +98,39 @@ custom_effect_tooltip = GER_mefo_bills_mission_tt
 		}
 	}
 }
+
 operations = {
-
 	GER_barbarossa_mission = {
-
 		icon = generic_operation
-
 		allowed = {
 			always = no
 			#added through on_action
 		}
-
 		available = {
-			219 = { is_controlled_by_ROOT_or_ally = yes }
-			195 = { is_controlled_by_ROOT_or_ally = yes }
-			202 = { is_controlled_by_ROOT_or_ally = yes }
-			217 = { is_controlled_by_ROOT_or_ally = yes }
+			219 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			195 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			202 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			217 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
 		}
-
 		days_mission_timeout = 180
 		fire_only_once = yes
-
 		activation = {
-
 		}
-
 		is_good = no
-
 		complete_effect = {
 			add_war_support = 0.1
 			custom_effect_tooltip = barbarossa_mission_tt
 		}
-
 		timeout_effect = {
-
 		}
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -123,11 +138,8 @@ operations = {
 }
 
 GER_case_anton_category = {
-
 	GER_case_anton = {
-
 		icon = generic_operation
-
 		available = {
 			original_tag = GER
 			has_war = yes
@@ -136,37 +148,85 @@ GER_case_anton_category = {
 				original_tag = FRA
 				has_government = fascism
 				is_subject_of = GER
-				NOT = { has_country_flag = case_anton }
+				NOT = {
+					has_country_flag = case_anton
+				}
 				custom_trigger_tooltip = {
 					tooltip = GER_case_anton_tt2
-					NOT = { controls_state = 462 }
-					NOT = { controls_state = 461 }
-					NOT = { controls_state = 513 }
-					NOT = { controls_state = 462 }
-					NOT = { controls_state = 459 }
-					NOT = { controls_state = 460 }
-					NOT = { controls_state = 458 }
-					NOT = { controls_state = 665 }
+					NOT = {
+						controls_state = 462
+					}
+					NOT = {
+						controls_state = 461
+					}
+					NOT = {
+						controls_state = 513
+					}
+					NOT = {
+						controls_state = 462
+					}
+					NOT = {
+						controls_state = 459
+					}
+					NOT = {
+						controls_state = 460
+					}
+					NOT = {
+						controls_state = 458
+					}
+					NOT = {
+						controls_state = 665
+					}
 				}
 			}
-			divisions_in_state = { state = 31 size < 1 }
-			divisions_in_state = { state = 25 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 21 size < 1 }
-			divisions_in_state = { state = 32 size < 1 }
-			divisions_in_state = { state = 22 size < 1 }
-			divisions_in_state = { state = 26 size < 1 }
-			divisions_in_state = { state = 33 size < 1 }
-			divisions_in_state = { state = 20 size < 1 }
+			divisions_in_state = {
+				state = 31
+				size < 1
+			}
+			divisions_in_state = {
+				state = 25
+				size < 1
+			}
+			divisions_in_state = {
+				state = 22
+				size < 1
+			}
+			divisions_in_state = {
+				state = 21
+				size < 1
+			}
+			divisions_in_state = {
+				state = 32
+				size < 1
+			}
+			divisions_in_state = {
+				state = 22
+				size < 1
+			}
+			divisions_in_state = {
+				state = 26
+				size < 1
+			}
+			divisions_in_state = {
+				state = 33
+				size < 1
+			}
+			divisions_in_state = {
+				state = 20
+				size < 1
+			}
 			OR = {
-				ITA = { owns_state = 735 }
-				divisions_in_state = { state = 735 size < 1 }
+				ITA = {
+					owns_state = 735
+				}
+				divisions_in_state = {
+					state = 735
+					size < 1
+				}
 			}
 		}
-
 		cost = 50
 		fire_only_once = yes
-
 		visible = {
 			original_tag = GER
 			has_government = fascism
@@ -180,7 +240,9 @@ GER_case_anton_category = {
 			factor = 1
 			modifier = {
 				factor = 0
-				ITA = { has_capitulated = no }
+				ITA = {
+					has_capitulated = no
+				}
 			}
 		}
 		complete_effect = {
@@ -200,10 +262,166 @@ GER_case_anton_category = {
 	}
 }
 
+GER_reichskommissariats = {
+	GER_reichskommissariat_norwegen = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 110
+			controls_state = 142
+			controls_state = 143
+			controls_state = 144
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = NOR
+				}
+				set_compliance = 80
+			}
+		}
+	}
+
+	GER_reichskommissariat_niederlande = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 7
+			controls_state = 35
+			controls_state = 36
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = HOL
+				}
+				set_compliance = 80
+			}
+		}
+	}
+
+	GER_reichskommissariat_belgien_nordfrankreich = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 6
+			controls_state = 29
+			controls_state = 34
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				ENG = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					is_core_of = BEL
+				}
+				set_compliance = 80
+			}
+		}
+	}
+
+	GER_reichskommissariat_ostland = {
+
+		icon = ger_reichskommissariats
+
+		available = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+			controls_state = 11
+			controls_state = 784
+			controls_state = 189
+			controls_state = 12
+			controls_state = 190
+			controls_state = 13
+			controls_state = 191
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				SOV = { has_capitulated = yes }
+			}
+		}
+
+		visible = {
+			has_completed_focus = GER_form_the_reichskommissariats
+			has_government = fascism
+		}
+
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = LIT
+						is_core_of = LAT
+						is_core_of = EST
+					}
+				}
+				set_compliance = 80
+			}
+		}
+	}
+}
+
 political_actions = {
-
 	recall_von_lettow_vorbeck = {
-
 		allowed = {
 			original_tag = GER
 		}
@@ -212,9 +430,18 @@ political_actions = {
 		}
 		visible = {
 			OR = {
-				has_country_leader = { ruling_only = yes name = "Wilhelm II" }
-				has_country_leader = { ruling_only = yes name = "Wilhelm III" }
-				has_country_leader = { ruling_only = yes name = "Victoria" }
+				has_country_leader = {
+					ruling_only = yes
+					name = "Wilhelm II"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Wilhelm III"
+				}
+				has_country_leader = {
+					ruling_only = yes
+					name = "Victoria"
+				}
 			}
 		}
 		cost = 25
@@ -226,7 +453,12 @@ political_actions = {
 			create_corps_commander = {
 				name = "Paul von Lettow-Vorbeck"
 				gfx = GFX_portrait_ger_von_lettow_vorbeck
-				traits = { trickster war_hero media_personality jungle_rat}
+				traits = {
+					trickster
+					war_hero
+					media_personality
+					jungle_rat
+				}
 				skill = 4
 				id = 4
 				attack_skill = 3
@@ -236,117 +468,111 @@ political_actions = {
 			}
 		}
 	}
-
 	# Safety regulations
 	GER_sharpen_air_safety_regulations = {
-
 		allowed = {
 			original_tag = GER
 			has_dlc = "Waking the Tiger"
 		}
-
 		available = {
-
 		}
-
 		cost = 50
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			has_government = neutrality
 		}
-
 		complete_effect = {
-			add_timed_idea = { idea = GER_air_safety_regulations days = 1095 }
+			add_timed_idea = {
+				idea = GER_air_safety_regulations
+				days = 1095
+			}
 			set_global_flag = GER_air_safety_regulations_flag
 		}
 	}
 }
 
 foreign_politics = {
-
 	# Titles Deprivation Act 1917
 	request_restoration_of_british_titles = {
-
 		allowed = {
 			original_tag = GER
 		}
-
 		available = {
-			ENG = { has_opinion = { target = GER value > 99 } }
+			ENG = {
+				has_opinion = {
+					target = GER
+					value > 99
+				}
+			}
 			custom_trigger_tooltip = {
 				tooltip = hindenburg_destroyed_tt
-				NOT = { has_global_flag = hindenburg_destroyed }
+				NOT = {
+					has_global_flag = hindenburg_destroyed
+				}
 			}
 		}
-
 		cost = 150
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
-
 		visible = {
 			has_war = no
 			has_government = neutrality
 			has_completed_focus = GER_ally_the_shade
 			has_country_flag = modernized_succession_laws
 		}
-
 		complete_effect = {
-			ENG = { country_event = { id = wtt_germany.999 days = 1 } }
+			ENG = {
+				country_event = {
+					id = wtt_germany.999
+					days = 1
+				}
+			}
 			custom_effect_tooltip = request_restoration_of_british_titles_tt
-			hidden_effect = { set_global_flag = hindenburg_event_in_progress }
+			hidden_effect = {
+				set_global_flag = hindenburg_event_in_progress
+			}
 		}
 	}
-
 	GER_request_polish_war_participation = {
-
 		icon = generic_prepare_civil_war
-
 		allowed = {
 			original_tag = GER
 		}
-
 		available = {
 			has_war_with = SOV
-			NOT = { is_in_faction_with = POL }
+			NOT = {
+				is_in_faction_with = POL
+			}
 		}
-
 		cost = 50
-
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 200
 		}
-
 		visible = {
 			has_country_flag = poland_traded_danzig
 			has_completed_focus = GER_tackle_the_communist_threat
 		}
-
 		complete_effect = {
-			POL = { country_event = { id = wtt_germany.65 hours = 6 } }
+			POL = {
+				country_event = {
+					id = wtt_germany.65
+					hours = 6
+				}
+			}
 		}
-
 	}
 }
 
 #Category only allowed for GER
 GER_military_buildup = {
-
 	GER_plan_z = {
-
 		icon = generic_naval
-
 		available = {
 			has_navy_size = {
 				unit = battleship
@@ -373,31 +599,22 @@ GER_military_buildup = {
 				size > 99
 			}
 		}
-
 		fire_only_once = yes
 		days_mission_timeout = 1800
 		is_good = no
 		activation = {
 			has_completed_focus = GER_plan_z
 		}
-
-
 		visible = {
 			has_completed_focus = GER_plan_z
 		}
-
 		complete_effect = {
 			add_war_support = 0.05
 			navy_experience = 150
 		}
-
-
 	}
-
 	GER_jaegernotprogramm = {
-
 		icon = generic_air
-
 		available = {
 			has_war = yes
 			AND = {
@@ -413,18 +630,16 @@ GER_military_buildup = {
 				has_idea = GER_jaegernotprogramm
 			}
 		}
-
 		cost = 50
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
 		}
-
 		visible = {
 			has_game_rule = {
 				rule = NMA_ALLOW_JAGER
 				option = NMA_ENABLE_JAGER
-				}
+			}
 			has_war = yes
 			AND = {
 				has_deployed_air_force_size = {
@@ -439,19 +654,21 @@ GER_military_buildup = {
 				has_idea = GER_jaegernotprogramm
 			}
 		}
-
 		complete_effect = {
 			add_stability = -0.05
 			add_war_support = -0.05
-			add_timed_idea = { idea = GER_jaegernotprogramm days = 90 }
+			add_timed_idea = {
+				idea = GER_jaegernotprogramm
+				days = 90
+			}
 		}
 	}
 }
 
 special_projects = {
 	GER_begin_heavy_water_production = {
-		allowed = { 
-			original_tag = GER 
+		allowed = {
+			original_tag = GER
 			has_dlc = "La Resistance"
 		}
 		available = {
@@ -464,12 +681,18 @@ special_projects = {
 				}
 			}
 		}
-		visible = { has_tech = atomic_research }
+		visible = {
+			has_tech = atomic_research
+		}
 		cost = 0
 		ai_will_do = {
-			factor = 5 
+			factor = 5
 		}
-		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } } #can be removed via intelligence ops
+		cancel_trigger = {
+			NOT = {
+				has_global_flag = GER_heavy_water_production_underway
+			}
+		}		#can be removed via intelligence ops
 		days_remove = 365
 		remove_effect = {
 			add_tech_bonus = {
@@ -479,27 +702,27 @@ special_projects = {
 				bonus = 2
 			}
 		}
-		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+		complete_effect = {
+			set_global_flag = GER_heavy_water_production_underway
+		}
 	}
 	GER_dismantle_maginot = {
-
 		icon = generic_construction
-
 		available = {
 			#has_war = yes
 			controls_state = 28
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+					FRA = {
+						has_completed_focus = FRA_extend_the_maginot_line
+					}
 				}
 				controls_state = 18
 				controls_state = 29
 			}
 		}
-
 		cost = 50
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
@@ -508,7 +731,9 @@ special_projects = {
 			controls_state = 28
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+					FRA = {
+						has_completed_focus = FRA_extend_the_maginot_line
+					}
 				}
 				controls_state = 18
 				controls_state = 29
@@ -532,7 +757,9 @@ special_projects = {
 			}
 			if = {
 				limit = {
-					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+					FRA = {
+						has_completed_focus = FRA_extend_the_maginot_line
+					}
 				}
 				18 = {
 					set_building_level = {
@@ -560,38 +787,44 @@ special_projects = {
 		}
 		complete_effect = {
 			if = {
-				limit = { FRA = { has_completed_focus = FRA_extend_the_maginot_line } }
-				add_timed_idea = { idea = GER_dismantle_maginot days = 270 }
+				limit = {
+					FRA = {
+						has_completed_focus = FRA_extend_the_maginot_line
+					}
+				}
+				add_timed_idea = {
+					idea = GER_dismantle_maginot
+					days = 270
+				}
 				else = {
-					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+					add_timed_idea = {
+						idea = GER_dismantle_maginot
+						days = 180
+					}
 				}
 			}
 		}
 	}
 	GER_dismantle_czechoslovakian_forts = {
-
 		icon = generic_construction
-
 		available = {
 			#has_war = yes
-			controls_state = 69 # Sudetenland
-			controls_state = 74 # Eastern Sudetenland
-			controls_state = 9 # Bohemia
-			controls_state = 75 # Moravia
+			controls_state = 69			# Sudetenland
+			controls_state = 74			# Eastern Sudetenland
+			controls_state = 9			# Bohemia
+			controls_state = 75			# Moravia
 		}
-
 		cost = 50
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 0
 		}
 		visible = {
 			#has_war = yes
-			controls_state = 69 # Sudetenland
-			controls_state = 74 # Eastern Sudetenland
-			controls_state = 9 # Bohemia
-			controls_state = 75 # Moravia
+			controls_state = 69			# Sudetenland
+			controls_state = 74			# Eastern Sudetenland
+			controls_state = 9			# Bohemia
+			controls_state = 75			# Moravia
 		}
 		days_remove = 180
 		modifier = {
@@ -751,21 +984,25 @@ special_projects = {
 			}
 		}
 		complete_effect = {
-			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
+			add_timed_idea = {
+				idea = GER_dismantle_czechoslovakian_forts
+				days = 180
+			}
 		}
 	}
 }
 
 GER_aid_hun_rom_democratic_civil_war = {
-
 	GER_aid_hun_democratic_civil_war = {
-
 		icon = generic_prepare_civil_war
-
 		available = {
 			HUN = {
-				NOT = { has_government = democratic }
-				NOT = { has_war_with = GER }
+				NOT = {
+					has_government = democratic
+				}
+				NOT = {
+					has_war_with = GER
+				}
 				has_civil_war = yes
 				exists = yes
 				any_enemy_country = {
@@ -774,23 +1011,23 @@ GER_aid_hun_rom_democratic_civil_war = {
 				}
 			}
 		}
-
 		cost = 0
-
 		ai_will_do = {
 			factor = 200
 		}
-
 		#Available if democratic civil war
 		visible = {
 			has_completed_focus = GER_align_hungary
-			GER = { has_government = democratic }
+			GER = {
+				has_government = democratic
+			}
 		}
-
 		complete_effect = {
 			if = {
 				limit = {
-					HUN = { is_in_faction_with = GER }
+					HUN = {
+						is_in_faction_with = GER
+					}
 				}
 				remove_from_faction = HUN
 				random_country = {
@@ -799,7 +1036,9 @@ GER_aid_hun_rom_democratic_civil_war = {
 						has_government = democratic
 						has_war_with = HUN
 					}
-					GER = { add_to_faction = PREV }
+					GER = {
+						add_to_faction = PREV
+					}
 				}
 			}
 			random_country = {
@@ -808,19 +1047,26 @@ GER_aid_hun_rom_democratic_civil_war = {
 					has_government = democratic
 					has_war_with = HUN
 				}
-				GER = { add_to_war = { targeted_alliance = PREV enemy = HUN hostility_reason = asked_to_join } }
+				GER = {
+					add_to_war = {
+						targeted_alliance = PREV
+						enemy = HUN
+						hostility_reason = asked_to_join
+					}
+				}
 			}
 		}
 	}
-
 	GER_aid_rom_democratic_civil_war = {
-
 		icon = generic_prepare_civil_war
-
 		available = {
 			ROM = {
-				NOT = { has_government = democratic }
-				NOT = { has_war_with = GER }
+				NOT = {
+					has_government = democratic
+				}
+				NOT = {
+					has_war_with = GER
+				}
 				has_civil_war = yes
 				exists = yes
 				any_enemy_country = {
@@ -829,23 +1075,23 @@ GER_aid_hun_rom_democratic_civil_war = {
 				}
 			}
 		}
-
 		cost = 0
-
 		ai_will_do = {
 			factor = 200
 		}
-
 		#Available if democratic civil war
 		visible = {
 			has_completed_focus = GER_align_romania
-			GER = { has_government = democratic }
+			GER = {
+				has_government = democratic
+			}
 		}
-
 		complete_effect = {
 			if = {
 				limit = {
-					ROM = { is_in_faction_with = GER }
+					ROM = {
+						is_in_faction_with = GER
+					}
 				}
 				remove_from_faction = ROM
 				random_country = {
@@ -854,7 +1100,9 @@ GER_aid_hun_rom_democratic_civil_war = {
 						has_government = democratic
 						has_war_with = ROM
 					}
-					GER = { add_to_faction = PREV }
+					GER = {
+						add_to_faction = PREV
+					}
 				}
 			}
 			random_country = {
@@ -863,17 +1111,20 @@ GER_aid_hun_rom_democratic_civil_war = {
 					has_government = democratic
 					has_war_with = ROM
 				}
-				GER = { add_to_war = { targeted_alliance = PREV enemy = ROM hostility_reason = asked_to_join } }
+				GER = {
+					add_to_war = {
+						targeted_alliance = PREV
+						enemy = ROM
+						hostility_reason = asked_to_join
+					}
+				}
 			}
 		}
 	}
-
 }
 
 GER_austro_hungarian_empire = {
-
 	GER_reform_austro_hungarian_empire = {
-
 		allowed = {
 			OR = {
 				original_tag = AUS
@@ -881,7 +1132,6 @@ GER_austro_hungarian_empire = {
 				original_tag = CZE
 			}
 		}
-
 		available = {
 			AUS = {
 				OR = {
@@ -902,7 +1152,6 @@ GER_austro_hungarian_empire = {
 				}
 			}
 		}
-
 		visible = {
 			GER = {
 				has_completed_focus = GER_rekindle_imperial_sentiment
@@ -917,12 +1166,12 @@ GER_austro_hungarian_empire = {
 			CZE = {
 				exists = yes
 			}
-			NOT = { has_global_flag = GER_reformed_austro_hungarian_empire }
+			NOT = {
+				has_global_flag = GER_reformed_austro_hungarian_empire
+			}
 		}
-
 		cost = 0
 		fire_only_once = yes
-
 		ai_will_do = {
 			factor = 200
 			modifier = {
@@ -934,30 +1183,61 @@ GER_austro_hungarian_empire = {
 				tag = CZE
 			}
 		}
-
 		complete_effect = {
 			custom_effect_tooltip = GER_reform_austro_hungarian_empire_tt
-			hidden_effect = { set_global_flag = GER_reformed_austro_hungarian_empire }
+			hidden_effect = {
+				set_global_flag = GER_reformed_austro_hungarian_empire
+			}
 			if = {
 				limit = {
 					tag = AUS
 				}
-				HUN = { country_event = { id = wtt_germany.68 hours = 1 } }
-				CZE = { country_event = { id = wtt_germany.68 hours = 3 } }
+				HUN = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 1
+					}
+				}
+				CZE = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 3
+					}
+				}
 			}
 			if = {
 				limit = {
 					tag = HUN
 				}
-				AUS = { country_event = { id = wtt_germany.68 hours = 1 } }
-				CZE = { country_event = { id = wtt_germany.68 hours = 3 } }
+				AUS = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 1
+					}
+				}
+				CZE = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 3
+					}
+				}
 			}
 			if = {
 				limit = {
 					tag = CZE
 				}
-				HUN = { country_event = { id = wtt_germany.68 hours = 1 } }
-				AUS = { country_event = { id = wtt_germany.68 hours = 3 } }
+				HUN = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 1
+					}
+				}
+				AUS = {
+					country_event = {
+						id = wtt_germany.68
+						hours = 3
+					}
+				}
 			}
 		}
 	}
