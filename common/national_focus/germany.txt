@@ -1709,30 +1709,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_form_the_reichskommissariats
-		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
-		available = {
-			has_government = fascism
-		}
-		x = 1
-		y = 1
-		relative_position_id = GER_integrate_war_economies
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-		
-		completion_reward = {
-			custom_effect_tooltip = GER_reichskommissariats_tt
-			unlock_decision_tooltip = GER_reichskommissariat_norwegen
-			unlock_decision_tooltip = GER_reichskommissariat_niederlande
-			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
-			unlock_decision_tooltip = GER_reichskommissariat_ostland
-		}
-	}
-
-	focus = {
 		id = GER_integrate_war_economies
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = GER_align_hungary }
@@ -1933,6 +1909,30 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = GER_form_the_reichskommissariats
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
+		available = {
+			has_government = fascism
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_integrate_war_economies
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = GER_reichskommissariats_tt
+			unlock_decision_tooltip = GER_reichskommissariat_norwegen
+			unlock_decision_tooltip = GER_reichskommissariat_niederlande
+			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
+			unlock_decision_tooltip = GER_reichskommissariat_ostland
 		}
 	}
 
@@ -4320,7 +4320,6 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ti_bonus
-				name = GER_trade_interdiction
 				bonus = 1.0
 				uses = 2
 				category = trade_interdiction_tree

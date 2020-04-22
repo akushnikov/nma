@@ -269,7 +269,9 @@ GER_reichskommissariats = {
 
 		available = {
 			has_completed_focus = GER_form_the_reichskommissariats
-			has_government = fascism
+			has_government = fascism			
+			controls_state = 37
+			controls_state = 99
 			controls_state = 110
 			controls_state = 142
 			controls_state = 143
@@ -293,7 +295,10 @@ GER_reichskommissariats = {
 		complete_effect = {
 			every_controlled_state = {
 				limit = {
-					is_core_of = NOR
+					OR = {
+						is_core_of = NOR
+						is_core_of = DEN
+					}
 				}
 				set_compliance = 80
 			}
