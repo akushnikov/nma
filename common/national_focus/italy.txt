@@ -1718,7 +1718,6 @@ focus_tree = {
 					}
 				}
 			}
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 		x = -1
 		y = 1
@@ -1742,13 +1741,6 @@ focus_tree = {
 				ai_irrationality > 30
 			}
 
-			modifier = {
-				factor = 0
-				OR = {
-					GER = { has_completed_focus = GER_reestablish_free_elections }
-					GER = { has_completed_focus = GER_expatriate_the_communists }
-				}
-			}
 		}
 		completion_reward = {
 			GER = {
@@ -1767,7 +1759,6 @@ focus_tree = {
 
 		available = {
 			NOT = { has_war_with = GER }
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
 		}
 
 		x = -3
@@ -1832,9 +1823,7 @@ focus_tree = {
 		id = ITA_german_rd_treaty
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = ITA_pact_of_steel }
-		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
-		}
+
 		cancel = { has_war_with = GER }
 		x = -1
 		y = 1
@@ -1875,9 +1864,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		text = secret_weapons
 		prerequisite = { focus = ITA_german_millitary_cooperation }
-		available = {
-			NOT = { has_country_flag = ENG_ditched_by_the_germans_flag }
-		}
+		
 		x = 1
 		y = 1
 		relative_position_id = ITA_german_millitary_cooperation
