@@ -10,10 +10,8 @@ country_event = {
 		name = nma_japan.1.a
 		if = {
 			limit = {
-				AND = {
-					original_tag = JAP
-					date > 1941.1.1
-				}
+				original_tag = JAP
+				date > 1941.1.1
 			}
 			declare_war_on = {
 				target = FRA

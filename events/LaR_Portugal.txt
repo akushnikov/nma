@@ -111,7 +111,6 @@ country_event = {
 				target = ENG
 				modifier = POR_ships_trade
 			}
-			activate_decision = POR_british_submarines_construction_progress
 			set_country_flag = POR_purchase_british_submarines_flag
 		}
 		else_if = {
@@ -124,7 +123,6 @@ country_event = {
 				target = ITA
 				modifier = POR_ships_trade
 			}
-			activate_decision = POR_italian_submarines_construction_progress
 			set_country_flag = POR_purchase_italian_submarines_flag
 		}
 	}
@@ -154,7 +152,6 @@ country_event = {
 				target = ENG
 				modifier = POR_ships_trade
 			}
-			activate_decision = POR_british_destroyers_construction_progress
 			set_country_flag = POR_purchase_british_destroyers_flag
 		}
 		else_if = {
@@ -167,7 +164,6 @@ country_event = {
 				target = ITA
 				modifier = POR_ships_trade
 			}
-			activate_decision = POR_italian_destroyers_construction_progress
 			set_country_flag = POR_purchase_italian_destroyers_flag
 		}
 	}
@@ -197,7 +193,6 @@ country_event = {
 				target = ENG
 				modifier = POR_ships_trade
 			}
-			activate_decision = POR_british_light_cruiser_construction_progress
 			set_country_flag = POR_purchase_british_light_cruiser_flag
 		}
 		else_if = {
@@ -210,7 +205,6 @@ country_event = {
 				target = ITA
 				modifier = POR_ships_trade
 			}
-			activate_decision = POR_italian_light_cruiser_construction_progress
 			set_country_flag = POR_purchase_italian_light_cruiser_flag
 		}
 	}

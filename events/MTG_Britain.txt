@@ -96,7 +96,6 @@ country_event = {
 		NOT = { has_country_flag = RAJ_civil_war }
 		NOT = {
 			OR = {
-				ENG = { has_completed_focus = ENG_the_three_nation_solution }
 				AND = {
 					has_dlc = "Together for Victory"
 					has_completed_focus = RAJ_two_nation_theory
@@ -681,10 +680,6 @@ country_event = {
 	picture = GFX_report_event_generic_sign_treaty2
 
 	trigger = {
-		has_war_with = PAK
-	}
-
-	trigger = {
 		tag = RAJ
 		has_war_with = PAK
 		has_country_flag = RAJ_pakistani_civil_war_flag
@@ -788,7 +783,6 @@ country_event = {
 		tag = PAK
 		NOT = { country_exists = BAN }
 		NOT = { has_country_flag = PAK_civil_war }
-		NOT = { ENG = { has_completed_focus = ENG_the_three_nation_solution } }
 		is_subject = no
 		has_war = no
 		has_dlc = "Man the Guns"
@@ -1156,8 +1150,6 @@ country_event = {
 		tag = ENG
 		has_country_flag = ENG_king_died
 		has_dlc = "Man the Guns"
-		has_country_flag = ENG_abdication_crisis_morganatic_marriage
-		has_country_flag = edward_viii_married_wallis_simpson
 		126 = {
 			is_controlled_by = ENG
 			days_since_last_strategic_bombing < 8
