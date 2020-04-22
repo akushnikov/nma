@@ -1,6 +1,6 @@
 VIC_concessions_to_the_germans = {
 	allowed = {
-		original_tag = EFR
+		tag = EFR
 	}
 	visible = {
 		OR = {
