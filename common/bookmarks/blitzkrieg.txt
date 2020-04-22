@@ -15,8 +15,9 @@ bookmarks = {
 				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				FRA_initiate_government_reform
-				FRA_support_status_quo
+				FRA_devalue_the_franc
+				FRA_go_with_britain
+				FRA_army_reform
 			}
 		}
 		USA = {

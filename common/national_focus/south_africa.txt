@@ -301,10 +301,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 			ENG = { has_war = no }
 		}
@@ -622,7 +619,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = { has_country_flag = britain_enforced_our_loyalty }
+			
 		}
 
 		bypass = {

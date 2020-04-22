@@ -1913,6 +1913,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GER_form_the_reichskommissariats
+		icon = GFX_focus_ger_reichskommisariats
+		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
+		available = {
+			has_government = fascism
+		}
+		x = 1
+		y = 1
+		relative_position_id = GER_integrate_war_economies
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = GER_reichskommissariats_tt
+			unlock_decision_tooltip = GER_reichskommissariat_norwegen
+			unlock_decision_tooltip = GER_reichskommissariat_niederlande
+			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
+			unlock_decision_tooltip = GER_reichskommissariat_ostland
+		}
+	}
+
+	focus = {
 		id = GER_air_innovation
 		text = air_innovation
 		icon = GFX_goal_generic_build_airforce
@@ -1961,7 +1985,7 @@ focus_tree = {
 				name = air_sup_bonus
 				bonus = 1.0
 				uses = 2
-				category = air_doctrine
+				category = battlefield_support_tree
 			}
 
 			if = {
@@ -2050,7 +2074,7 @@ focus_tree = {
 				name = op_dest_bonus
 				bonus = 1.0
 				uses = 2
-				category = air_doctrine
+				category = battlefield_support_tree
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
@@ -2133,7 +2157,7 @@ focus_tree = {
 				name = strat_dest_bonus
 				bonus = 1.0
 				uses = 2
-				category = air_doctrine
+				category = battlefield_support_tree
 			}
 			add_tech_bonus = {
 				name = bomber_bonus
@@ -2177,7 +2201,9 @@ focus_tree = {
 		id = GER_soviet_treaty
 		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = GER_army_innovation }
-
+		available = {
+			
+		}
 		#cancel = {
 		#	OR = {
 		#		has_war_with = SOV
@@ -2361,47 +2387,6 @@ focus_tree = {
 		}
 	}
 
-	focus = { #should already be signed in 39
-		id = GER_mol_rib_pact
-		icon = GFX_goal_molotov_ribbentrop_pact
-		prerequisite = { focus = GER_soviet_treaty }
-		available = {
-			is_puppet = no
-			has_government = fascism
-			has_army_manpower = { size > 849999 } #ca 90 div
-			SOV = {
-				NOT = { has_war_with = GER }
-				country_exists = SOV
-			}
-		}
-		cancel = {
-			OR = {
-				has_war_with = SOV
-				NOT = { country_exists = SOV }
-			}
-		}
-		cancel_if_invalid = no
-		x = 1
-		y = 3
-		relative_position_id = GER_soviet_treaty
-		cost = 10
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = GER_anti_comitern_pact }
-			}
-		}
-		completion_reward = {
-			# REVISIT Rework event series to fit new design or retain old design
-			SOV = {
-				country_event = { id = germany.11 days = 1 }
-				custom_effect_tooltip = GER_mol_rib_pact_tt
-				custom_effect_tooltip = needs_approval
-			}
-		}
-	}
-
 	focus = {
 		id = GER_rhineland
 		icon = GFX_goal_generic_military_sphere
@@ -2410,12 +2395,6 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_puppet = no
-			NOT = {
-				has_game_rule = {
-					rule = GER_can_remilitarize_rhineland
-					option = no
-				}
-			}
 		}
 		bypass = {
 			42 = { is_demilitarized_zone = no }
@@ -2602,7 +2581,7 @@ focus_tree = {
 		cancel = {
 			NOT = { country_exists = SOV }
 		}
-		x = 1
+		x = 0
 		y = 4
 		relative_position_id = GER_anti_comitern_pact
 		cost = 10
@@ -2906,7 +2885,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = GER_anschluss }
 		available = { is_puppet = no }
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
@@ -2942,10 +2921,51 @@ focus_tree = {
 		}
 	}
 
+	focus = { #should already be signed in 39
+		id = GER_mol_rib_pact
+		icon = GFX_goal_molotov_ribbentrop_pact
+		prerequisite = { focus = GER_demand_memel }
+		available = {
+			is_puppet = no
+			has_government = fascism
+			has_army_manpower = { size > 849999 } #ca 90 div
+			SOV = {
+				NOT = { has_war_with = GER }
+				country_exists = SOV
+			}
+		}
+		cancel = {
+			OR = {
+				has_war_with = SOV
+				NOT = { country_exists = SOV }
+			}
+		}
+		cancel_if_invalid = no
+		x = 0
+		y = 2
+		relative_position_id = GER_demand_memel
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_completed_focus = GER_anti_comitern_pact }
+			}
+		}
+		completion_reward = {
+			# REVISIT Rework event series to fit new design or retain old design
+			SOV = {
+				country_event = { id = germany.11 days = 1 }
+				custom_effect_tooltip = GER_mol_rib_pact_tt
+				custom_effect_tooltip = needs_approval
+			}
+		}
+	}
+
 	focus = {
 		id = GER_danzig_or_war
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = GER_demand_memel }
+		prerequisite = { focus = GER_mol_rib_pact }
 
 		will_lead_to_war_with = POL
 		available = {
@@ -3003,7 +3023,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = GER_demand_memel
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3023,16 +3043,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
-
-			random_other_country = {
-				limit = {
-					original_tag = SPR
-					has_government = fascism
-				}
-
-				country_event = { id = nma_spain.1 }
-			}
-
 			if = {
 				limit = {
 					85 = {
@@ -3308,114 +3318,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_czech_friend
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = GER_anschluss }
-		mutually_exclusive = { focus = GER_demand_sudetenland }
-		available = {
-			has_army_manpower = { size > 749999 }
-			NOT = { has_war_with = CZE }
-			CZE = {
-				custom_trigger_tooltip = {
-					tooltip = GER_alone_or_peace_faction_tt
-					is_alone_or_in_faction_at_peace_with_GER = yes
-				}
-				exists = yes
-			}
-		}
-		bypass = {
-			CZE = { is_in_faction_with = GER }
-		}
-		cancel = {
-			OR = {
-				NOT = { country_exists = CZE }
-				has_war_with = CZE
-			}
-		}
-		cancel_if_invalid = no
-		x = -3
-		y = 1
-		relative_position_id = GER_anschluss
-		cost = 10
-		ai_will_do = {
-			factor = 2.5
-			modifier = {
-				factor = 0
-				CZE = {
-					has_opinion = {
-						target = GER
-						value < 0
-					}
-				}
-			}
-			modifier = {
-				factor = 5
-				CZE = {
-					has_opinion = {
-						target = GER
-						value > 20
-					}
-				}
-			}
-			modifier = {
-				factor = 4
-				CZE = {
-					has_completed_focus = CZE_german_leanings
-				}
-			}
-			modifier = {
-				factor = 4
-				CZE = {
-					has_completed_focus = CZE_deliver_sudetenland
-				}
-			}
-			modifier = {
-				factor = 2
-				CZE = {
-					has_completed_focus = CZE_go_right
-				}
-			}
-		}
-		completion_reward = {
-			CZE = {
-				add_opinion_modifier = { target = GER modifier = ger_cze_diplomatic_focus }
-				if = {
-					limit = {
-						GER = {
-							has_government = fascism
-						}
-					}
-					add_timed_idea = { idea = fascist_influence days = 1095 }
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = communism
-						}
-					}
-					add_timed_idea = { idea = communist_influence days = 1095 }
-				}
-				if = {
-					limit = {
-						GER = {
-							has_government = democratic
-						}
-					}
-					add_timed_idea = { idea = democratic_influence days = 1095 }
-				}
-				country_event = { id = generic.1 }
-			}
-			hidden_effect = {
-				news_event = { hours = 6 id = news.200 }
-			}
-		}
-	}
-
-	focus = {
 		id = GER_demand_sudetenland
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = GER_anschluss }
-		mutually_exclusive = { focus = GER_czech_friend }
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = FRA
 		available = {
@@ -3443,7 +3348,7 @@ focus_tree = {
 			is_puppet = yes
 		}
 		cancel_if_invalid = yes
-		x = -1
+		x = -3
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
@@ -3524,6 +3429,11 @@ focus_tree = {
 					CZE = { NOT = { is_in_faction_with = GER } }
 					CZE = { NOT = { has_war_with = ENG } }
 					CZE = { controls_state = 69 }
+					OR = {
+						CZE = {
+							has_country_flag = HUN_AH_CZE_refused
+						}
+					}
 				}
 				ENG = {
 					country_event = germany.40
@@ -3541,6 +3451,11 @@ focus_tree = {
 					CZE = { is_subject = no }
 					CZE = { is_in_faction_with = HOL }
 					CZE = { controls_state = 69 }
+					OR = {
+						CZE = {
+							has_country_flag = HUN_AH_CZE_refused
+						}
+					}
 				}
 				HOL = {
 					country_event = germany.40
@@ -3549,6 +3464,28 @@ focus_tree = {
 			}
 			69 = {
 				add_claim_by = GER
+			}
+			if = {
+				limit = {
+					NOT = { CZE = { controls_state = 69 } }
+					69 = {
+						controller = {
+							NOT = { is_in_faction_with = GER }
+						}
+					}
+				}
+				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
+				69 = {
+					controller = {
+						GER = {
+							create_wargoal = {
+								type = take_state_focus
+								target = PREV
+								generator = { 69 }
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -3666,10 +3603,10 @@ focus_tree = {
 	focus = {
 		id = GER_second_vienna_award
 		icon = GFX_goal_generic_cavalry
-		prerequisite = { focus = GER_czech_friend focus = GER_end_of_czechoslovakia }
+		prerequisite = { focus = GER_end_of_czechoslovakia }
 		x = 0
 		y = 3
-		relative_position_id = GER_czech_friend
+		relative_position_id = GER_demand_sudetenland
 		cost = 10
 		ai_will_do = {
 			factor = 10
@@ -3741,7 +3678,6 @@ focus_tree = {
 		prerequisite = { focus = GER_second_vienna_award }
 		available = {
 			NOT = { has_war_with = ITA }
-			NOT = { has_country_flag = ENG_ditched_the_italians_flag }
 		}
 
 		bypass = {
@@ -3980,8 +3916,8 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_goal_generic_build_navy
-		x = 35
-		y = 1
+		x = 37
+		y = 0
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -4069,7 +4005,7 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = GER_naval_rearmament }
 		x = 0
-		y = 3
+		y = 2
 		relative_position_id = GER_naval_rearmament
 		cost = 5
 		ai_will_do = {
@@ -4384,7 +4320,6 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ti_bonus
-				name = GER_trade_interdiction
 				bonus = 1.0
 				uses = 2
 				category = trade_interdiction_tree
@@ -4952,3 +4887,4 @@ focus_tree = {
 			GRE = { country_event = { id = greece.3 hours = 6 } }
 		}
 	}
+}

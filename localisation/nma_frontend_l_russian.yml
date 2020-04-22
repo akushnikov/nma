@@ -1,2 +1,4 @@
 ﻿l_russian:
   TOP_BAR_RESOURCES:0 "Отобразить ресурсы"
+  SAF_permitted:0 "Получено разрешение от ВБ"
+  AST_permitted:0 "Получено разрешение от ВБ"

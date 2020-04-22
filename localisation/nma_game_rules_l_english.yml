@@ -422,51 +422,15 @@ NMA_RULE_OPTION_FA_LS_BANNED:0 "Ban"
 NMA_RULE_OPTION_FA_LS_BANNED_DESC:0 "Clicking this options will ban these two abilites"
 NMA_RULE_OPTION_FA_LS_VANILLA:0 "Vanilla"
 NMA_RULE_OPTION_FA_LS_VANILLA_DESC:0 "Clicking this options will not change these two abilites"
-################################################################ GRINDING
-NMA_ETH_GRINDING:0 "Ethiopia Grind Settings"
-NMA_POR_GRINDING:0 "Portugal Grind Settings"
-NMA_YUG_GRINDING:0 "Yugoslavia Grind Settings"
-NMA_GRE_GRINDING:0 "Greece Grind Settings"
-NMA_BUL_GRINDING:0 "Bulgaria Grind Settings"
-NMA_FIN_GRINDING:0 "Finland Grind Settings"
-NMA_AFG_GRINDING:0 "Afganistan Grind Settings"
-NMA_PER_GRINDING:0 "Iran Grind Settings"
-
-NMA_RULE_OPTION_UNLIMITED_GRIND:0 "No limits"
-NMA_RULE_OPTION_UNLIMITED_GRIND_DESC:0 "Clicking this option will disable any grinding limits"
-
-NMA_RULE_OPTION_1_MONTH_GRIND:0 "1 month"
-NMA_RULE_OPTION_1_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 1 month"
-
-NMA_RULE_OPTION_2_MONTH_GRIND:0 "2 months"
-NMA_RULE_OPTION_2_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 2 month"
-
-NMA_RULE_OPTION_3_MONTH_GRIND:0 "3 months"
-NMA_RULE_OPTION_3_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 3 month"
-
-NMA_RULE_OPTION_4_MONTH_GRIND:0 "4 months"
-NMA_RULE_OPTION_4_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 4 month"
-
-NMA_RULE_OPTION_5_MONTH_GRIND:0 "5 months"
-NMA_RULE_OPTION_5_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 5 month"
-
-NMA_RULE_OPTION_6_MONTH_GRIND:0 "6 months"
-NMA_RULE_OPTION_6_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 6 month"
-
-NMA_RULE_OPTION_7_MONTH_GRIND:0 "7 months"
-NMA_RULE_OPTION_7_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 7 month"
-
-NMA_RULE_OPTION_8_MONTH_GRIND:0 "8 months"
-NMA_RULE_OPTION_8_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 8 month"
-
-NMA_RULE_OPTION_9_MONTH_GRIND:0 "9 months"
-NMA_RULE_OPTION_9_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 9 month"
-
-NMA_RULE_OPTION_10_MONTH_GRIND:0 "10 months"
-NMA_RULE_OPTION_10_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 10 month"
-
-NMA_RULE_OPTION_11_MONTH_GRIND:0 "11 months"
-NMA_RULE_OPTION_11_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 11 month"
-
-NMA_RULE_OPTION_12_MONTH_GRIND:0 "12 months"
-NMA_RULE_OPTION_12_MONTH_GRIND_DESC:0 "Clicking this option will allow grind this country for 12 month"
+################################################################ VICHY FRANCE
+NMA_VIC_OPTIONS:0 "Vichy France Settings"
+NMA_RULE_OPTION_VIC_DISABLED:0 "Ban Vichy France"
+NMA_RULE_OPTION_VIC_DISABLED_DESC:0 "Clicking this option will do what it says - removes Vichy France from the game."
+NMA_RULE_OPTION_VIC_ALLOWED:0 "Allow Vichy France"
+NMA_RULE_OPTION_VIC_ALLOWED_DESC:0 "Clicking this option will allow Vichy France to be formed. For some reason if you want so."
+################################################################ FRA_ENG UNION
+NMA_UNION_OPTIONS:0 "Franco-British Union Settings"
+NMA_RULE_OPTION_UNION_DISABLED:0 "Ban Union"
+NMA_RULE_OPTION_UNION_DISABLED_DESC:0 "Clicking this option will not allow France player to form Franco-British Union after France's capitulation."
+NMA_RULE_OPTION_UNION_ENABLED:0 "Allow Union"
+NMA_RULE_OPTION_UNION_ENABLED_DESC:0 "Clicking this option will allow France player to from Franco-British Union after France's capitulation."

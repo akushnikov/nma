@@ -337,7 +337,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Veinticinco de Mayo Class"
+		name = "Dalmacija Class"
 		type = heavy_cruiser_1
 		upgrades = {
 			ship_reliability_upgrade = 1

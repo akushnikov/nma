@@ -1,17 +1,28 @@
 state={
 	id=736
 	name="STATE_736"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> release
 	state_category = city
 
 	history={
 		victory_points = {
+<<<<<<< HEAD
 			6626 1 
+=======
+			6626 1
+>>>>>>> release
 		}
 		owner = ITA
 		add_core_of = ITA
 		add_core_of = YUG
+<<<<<<< HEAD
 
+=======
+>>>>>>> release
 		buildings = {
 			infrastructure = 2
 			6626 = {
@@ -24,7 +35,11 @@ state={
 	}
 
 	provinces={
+<<<<<<< HEAD
 		599 6626 11595 11735 
+=======
+		599 6626 11595 11735
+>>>>>>> release
 	}
 	manpower=1063159
 	buildings_max_level_factor=1.000

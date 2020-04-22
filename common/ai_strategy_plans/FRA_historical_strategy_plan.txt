@@ -9,8 +9,6 @@ FRA_historical_plan = {
 	ai_national_focuses = {
 		FRA_metropolitan_france #March 10 1936
 		FRA_industrial_expansion #May 20 1936
-		FRA_initiate_government_reform #July 30 1936
-		FRA_navy_focus #October 10 1936
 		FRA_capital_ship_focus #October 10 1936
 		FRA_defensive_focus #December 20 1936
 		FRA_fortification_focus #February 30 1937
@@ -19,11 +17,9 @@ FRA_historical_plan = {
 		FRA_heavy_armor_focus #September 30 1937
 		FRA_military_factories #December 10 1937
 		FRA_improved_screen_ships #February 20 1938
-		FRA_support_status_quo #April 30 1938
 		FRA_go_with_britain #July 10 1938
 		FRA_algerie_france #September 20 1938
 		FRA_colonial_industry #November 30 1938
-		FRA_colonial_military_factories #February 10 1939
 		FRA_extra_research_slot #April 20 1939
 		FRA_alpine_forts #June 30 1939
 		FRA_naval_doctrine #September 10 1939
@@ -36,7 +32,6 @@ FRA_historical_plan = {
 		FRA_cas_focus #January 20 1941
 		FRA_heavy_fighter_focus #March 30 1941
 		FRA_air_doctrine #June 10 1941
-		FRA_jet_effort #August 20 1941
 		 #October 30 1941
  		 #January 10
  		 #March 20 1942

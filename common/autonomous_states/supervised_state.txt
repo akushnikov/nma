@@ -5,11 +5,12 @@ autonomy_state = {
 
 	peace_conference_initial_freedom = 0.001
 
-	manpower_influence = 1.0
+	manpower_influence = 0.0
 
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
+		can_be_spymaster = yes
 	}
 
 	modifier = {

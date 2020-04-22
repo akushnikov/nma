@@ -253,9 +253,26 @@ focus_tree = {
 		id = air_defense_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			threat > 0.05
-			has_war = yes
-			NOT = { has_government = democratic }
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					threat > 0.05
+					has_war = yes
+					NOT = { has_government = democratic }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					threat > 0.05
+					has_war = yes
+					NOT = { has_government = democratic }
+				}
+			}
 		}
 
 		continue_if_invalid = yes
@@ -536,9 +553,26 @@ focus_tree = {
 		id = shadow_scheme_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			threat > 0.05
-			has_war = yes
-			NOT = { has_government = democratic }
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					threat > 0.05
+					has_war = yes
+					NOT = { has_government = democratic }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					threat > 0.05
+					has_war = yes
+					NOT = { has_government = democratic }
+				}
+			}
 		}
 
 		continue_if_invalid = yes
@@ -604,9 +638,26 @@ focus_tree = {
 		id = general_rearmament_focus
 		prerequisite = { focus = limited_rearmament_focus }
 		available = {
-			threat > 0.1
-			has_war = yes
-			NOT = { has_government = democratic }
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					threat > 0.1
+					has_war = yes
+					NOT = { has_government = democratic }
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_dlc = "Man the Guns" }
+				}
+				OR = {
+					threat > 0.1
+					has_war = yes
+					NOT = { has_government = democratic }
+				}
+			}
 		}
 
 		continue_if_invalid = yes
@@ -2124,20 +2175,6 @@ focus_tree = {
 
 		bypass = {
 			CHI = { exists = no }
-		}
-
-		icon = GFX_goal_generic_construct_infrastructure
-		x = -2
-		y = 1
-		relative_position_id = uk_asia_focus
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
 			640 = {
 				free_building_slots = {
 					building = infrastructure
@@ -2166,6 +2203,17 @@ focus_tree = {
 				}
 			}
 		}
+
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 1
+		relative_position_id = uk_asia_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
 
 		completion_reward = {
 			640 = {
@@ -3764,13 +3812,6 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					has_country_flag = ENG_abdication_crisis_normal_marriage
-					has_country_flag = ENG_abdication_crisis_morganatic_marriage
-				}
-			}
 		}
 		completion_reward = {
 			add_timed_idea = { idea = ENG_steady_as_she_goes_idea days = 365 }
@@ -3996,3 +4037,4 @@ focus_tree = {
 			add_ideas = ENG_prepare_for_the_inevitable_idea
 		}
 	}
+}

@@ -36,10 +36,7 @@ nma_annex_subjects = {
     }
 
     complete_effect = {
-			annex_country = {
-				target = FROM
-				transfer_troops = yes
-			}
+      nma_annex_country = yes
 		}
   }
 
@@ -48,6 +45,10 @@ nma_annex_subjects = {
 		icon = generic_operation
 
 		fire_only_once = yes
+
+    allowed = {
+			original_tag = ENG
+		}
 
 		cost = 300
 
@@ -76,10 +77,7 @@ nma_annex_subjects = {
 		}
 
 		complete_effect = {
-			annex_country = {
-				target = MAL
-				transfer_troops = yes
-			}
+      nma_annex_country = yes
 		}
 
 	}
@@ -95,7 +93,6 @@ nma_annex_subjects = {
     visible = {
       can_annex_minors = yes
     }
-
 
 		allowed = {
 			original_tag = JAP
@@ -118,11 +115,18 @@ nma_annex_subjects = {
       country_exists = SIA
   	}
 
-    complete_effect = {
-			annex_country = {
-				target = SIA
-				transfer_troops = yes
+    target_root_trigger = {
+			original_tag = JAP
+		}
+
+		target_trigger = {
+			FROM = {
+				original_tag = SIA
 			}
+		}
+
+    complete_effect = {
+			nma_annex_country = yes
 		}
 
 	}
@@ -140,6 +144,10 @@ nma_annex_subjects = {
 
     ai_will_do = {
      factor = 0
+    }
+
+    allowed = {
+      original_tag = AST
     }
 
     available = {
@@ -161,10 +169,7 @@ nma_annex_subjects = {
     }
 
     complete_effect = {
-      annex_country = {
-        target = NZL
-        transfer_troops = yes
-      }
+      nma_annex_country = yes
     }
   }
 }

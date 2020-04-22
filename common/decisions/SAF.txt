@@ -24,6 +24,9 @@ SAF_secure_interests_in_africa = {
       SAF = {
         transfer_state = 542
         transfer_state = 545
+
+        542 = { set_compliance = 70 }
+        545 = { set_compliance = 70 }
       }
     }
   }
@@ -55,6 +58,9 @@ SAF_secure_interests_in_africa = {
 		  SAF = {
         transfer_state = 770
 				transfer_state = 771
+
+        770 = { set_compliance = 70 }
+        771 = { set_compliance = 70 }
       }
 		}
   }
@@ -90,6 +96,10 @@ SAF_secure_interests_in_africa = {
         transfer_state = 546
 	      transfer_state = 547
 	      transfer_state = 548
+
+        546 = { set_compliance = 70 }
+        547 = { set_compliance = 70 }
+        548 = { set_compliance = 70 }
       }
 		}
   }

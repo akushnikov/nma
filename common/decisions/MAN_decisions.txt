@@ -3,21 +3,21 @@
 
 MAN_banditry_category = {
 
-#  #  ##  ###  ### #  # ### ###  #  #
-## # #  # #  #  #  #  # #   #  # ## #
-# ## #  # ###   #  #### ##  ###  # ##
-#  # #  # #  #  #  #  # #   #  # #  #
-#  #  ##  #  #  #  #  # ### #  # #  #
+#  #  ##  ###  ### #  # ### ###  #  # 
+## # #  # #  #  #  #  # #   #  # ## # 
+# ## #  # ###   #  #### ##  ###  # ## 
+#  # #  # #  #  #  #  # #   #  # #  # 
+#  #  ##  #  #  #  #  # ### #  # #  # 
 
 	MAN_pacify_bandits_in_the_northern_countryside = {
 
 		icon = generic_oppression
-
+		
 		available = {
 			has_completed_focus = MAN_pacify_the_countryside
 			has_country_flag = MAN_northern_bandits
 			divisions_in_state = {
-				state = 714
+				state = 714	
 				size > 5
 			}
 		}
@@ -33,7 +33,7 @@ MAN_banditry_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 714
+					state = 714	
 					size > 5
 				}
 			}
@@ -79,7 +79,7 @@ MAN_banditry_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 714
+					state = 714	
 					size < 6
 				}
 			}
@@ -88,7 +88,7 @@ MAN_banditry_category = {
 		complete_effect = {
 			custom_effect_tooltip = MAN_hunt_down_northern_bandits_tt
 			add_manpower = -1000
-
+			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = @MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
@@ -124,7 +124,7 @@ MAN_banditry_category = {
 
 		cancel_trigger = {
 			divisions_in_state = {
-				state = 714
+				state = 714	
 				size < 6
 			}
 		}
@@ -134,7 +134,7 @@ MAN_banditry_category = {
 		}
 
 		visible = {
-
+			
 		}
 
 		is_good = yes
@@ -153,16 +153,16 @@ MAN_banditry_category = {
 		}
 	}
 
-###  ##   ## ### ### ###  #  #
-#   #  # #    #  #   #  # ## #
-##  ####  #   #  ##  ###  # ##
-#   #  #   #  #  #   #  # #  #
-### #  # ##   #  ### #  # #  #
+###  ##   ## ### ### ###  #  # 
+#   #  # #    #  #   #  # ## # 
+##  ####  #   #  ##  ###  # ## 
+#   #  #   #  #  #   #  # #  # 
+### #  # ##   #  ### #  # #  # 
 
 	MAN_pacify_bandits_in_the_eastern_countryside = {
 
 		icon = generic_oppression
-
+		
 		available = {
 			has_completed_focus = MAN_pacify_the_countryside
 			has_country_flag = MAN_eastern_bandits
@@ -183,7 +183,7 @@ MAN_banditry_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 717
+					state = 717	
 					size > 5
 				}
 			}
@@ -231,7 +231,7 @@ MAN_banditry_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 717
+					state = 717	
 					size < 6
 				}
 			}
@@ -240,7 +240,7 @@ MAN_banditry_category = {
 		complete_effect = {
 			custom_effect_tooltip = MAN_hunt_down_eastern_bandits_tt
 			add_manpower = -1000
-
+			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = @MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
@@ -264,7 +264,7 @@ MAN_banditry_category = {
 
 		icon = generic_civil_support
 
-		available = {
+		available = {			
 			always = no
 		}
 
@@ -276,7 +276,7 @@ MAN_banditry_category = {
 
 		cancel_trigger = {
 			divisions_in_state = {
-				state = 717
+				state = 717	
 				size < 6
 			}
 		}
@@ -286,7 +286,7 @@ MAN_banditry_category = {
 		}
 
 		visible = {
-
+			
 		}
 
 		is_good = yes
@@ -305,21 +305,21 @@ MAN_banditry_category = {
 		}
 	}
 
-#   # ###  ## ### ### ###  #  #
-#   # #   #    #  #   #  # ## #
-# # # ##   #   #  ##  ###  # ##
-# # # #     #  #  #   #  # #  #
- # #  ### ##   #  ### #  # #  #
-
+#   # ###  ## ### ### ###  #  # 
+#   # #   #    #  #   #  # ## # 
+# # # ##   #   #  ##  ###  # ## 
+# # # #     #  #  #   #  # #  # 
+ # #  ### ##   #  ### #  # #  # 
+	
 	MAN_pacify_bandits_in_the_western_countryside = {
 
 		icon = generic_oppression
-
+		
 		available = {
 			has_completed_focus = MAN_pacify_the_countryside
 			has_country_flag = MAN_western_bandits
 			divisions_in_state = {
-				state = 610
+				state = 610	
 				size > 5
 			}
 		}
@@ -335,7 +335,7 @@ MAN_banditry_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 610
+					state = 610	
 					size > 5
 				}
 			}
@@ -383,7 +383,7 @@ MAN_banditry_category = {
 			modifier = {
 				add = 200
 				divisions_in_state = {
-					state = 610
+					state = 610	
 					size < 6
 				}
 			}
@@ -392,7 +392,7 @@ MAN_banditry_category = {
 		complete_effect = {
 			custom_effect_tooltip = MAN_hunt_down_western_bandits_tt
 			add_manpower = -1000
-
+			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = @MAN_HUNT_BANDITS_EQUIPMENT_COST_EFFECT
@@ -416,7 +416,7 @@ MAN_banditry_category = {
 
 		icon = generic_civil_support
 
-		available = {
+		available = {			
 			always = no
 		}
 
@@ -428,7 +428,7 @@ MAN_banditry_category = {
 
 		cancel_trigger = {
 			divisions_in_state = {
-				state = 610
+				state = 610	
 				size < 6
 			}
 		}
@@ -438,7 +438,7 @@ MAN_banditry_category = {
 		}
 
 		visible = {
-
+			
 		}
 
 		is_good = yes
@@ -472,8 +472,8 @@ MAN_banditry_category = {
 		}
 
 		visible = {
-
-		}
+			
+		}		
 
 		fixed_random_seed = no
 
@@ -493,7 +493,7 @@ MAN_banditry_category = {
 					country_event = wtt_manchukou_bandit_sabotage.23
 				}
 				25 = {
-
+					
 				}
 			}
 		}
@@ -503,7 +503,7 @@ MAN_banditry_category = {
 prospect_for_resources = {
 
 	MAN_develop_kirin_aluminium_deposits = { #328
-
+		
 		icon = aluminium
 
 		allowed = {
@@ -539,19 +539,19 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = {
-			328 = { set_state_flag = kirin_aluminium_developed }
+		remove_effect = { 
+			328 = { set_state_flag = kirin_aluminium_developed } 
 			328 = {
 				add_resource = {
 					type = aluminium
 					amount = 12
 				}
 			}
-		}
+		}	
 	}
 
 	MAN_develop_liaotung_iron_ore_deposits = { #716
-
+		
 		icon = steel
 
 		allowed = {

@@ -1,0 +1,59 @@
+POR_historical_plan = {
+	name = "Historical Neutrality"
+	desc = "Under the regime of Salazar, Portugal will strengthen the Estado Novo and will attempt to remain neutral during the World War."
+
+	enable = {
+		original_tag = POR
+	}
+
+	ai_national_focuses = {
+		POR_estado_novo
+		POR_continue_the_public_works
+		POR_instituto_superior_tecnico
+		POR_second_navy_reequipment
+		POR_strict_neutrality_in_the_spanish_civil_war
+		POR_british_investment_in_mines
+		POR_roads_bridges_and_dams
+		POR_extraction_industries
+		POR_british_industrial_investments
+		POR_a_powerful_merchant_marine
+		POR_army_reorganization
+		POR_corpo_do_estado_maior
+		POR_ogme
+		POR_food_industries
+		POR_merchant_marine_protection
+		POR_ogma
+		POR_textile_industry
+		POR_portuguese_artillery
+		POR_military_research_facilities
+		POR_standardization
+		POR_submarine_effort
+		POR_arsenal_do_alfeite
+		POR_national_cruiser_production
+		POR_atlantic_defense_strategy
+		POR_staff_wargames
+		POR_hydroelectricity
+	}
+
+	focus_factors = {
+
+	}				
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

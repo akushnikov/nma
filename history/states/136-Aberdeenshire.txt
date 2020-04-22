@@ -11,6 +11,7 @@ state={
 	}
 
 	history={
+		
 		owner = ENG
 		buildings = {
 			infrastructure = 6

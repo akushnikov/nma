@@ -1008,36 +1008,32 @@ news_event = {
 		name = news.31.a
 		trigger = {
 			NOT = {
-				TAG = GER
-				TAG = FRA
-				TAG = ENG
+				tag = GER
+				tag = FRA
+				tag = ENG
 			}
 		}
 	}
 	option = {
 		name = news.31.b
 		trigger = {
-			AND = {
-				TAG = GER
-				has_country_flag = german_rebels
-			}
+			tag = GER
+			has_country_flag = german_rebels
 		}
 	}
 	option = {
 		name = news.31.c
 		trigger = {
-			AND = {
-				TAG = GER
-				NOT = { has_country_flag = german_rebels }
-			}
+			tag = GER
+			NOT = { has_country_flag = german_rebels }
 		}
 	}
 	option = {
 		name = news.31.e
 		trigger = {
 			OR = {
-				TAG = FRA
-				TAG = ENG
+				tag = FRA
+				tag = ENG
 			}
 		}
 	}
@@ -2338,18 +2334,8 @@ news_event = {
 news_event = {
 	id = news.66
 	title = news.66.t
-	desc = {
-		text = news.66.d
-		trigger = {
-			NOT = { has_global_flag = GER_civil_war_end }
-		}
-	}
-	desc = {
-		text = news.66.d.b
-		trigger = {
-			has_global_flag = GER_civil_war_end
-		}
-	}
+	text = news.66.d
+	
 	picture = GFX_news_event_olympics_1940
 
 	major = yes
@@ -2357,7 +2343,6 @@ news_event = {
 	trigger = {
 		date > 1936.8.15
 		NOT = { has_global_flag = olympics_1936 }
-		NOT = { has_global_flag = civil_war_olympics }
 		country_exists = GER
 		country_exists = USA
 		GER = { has_war = no }
@@ -7921,7 +7906,7 @@ news_event = {
 	is_triggered_only = yes
 
 	fire_for_sender = no
-
+# я тупой мудак и копипащу всё подряд
 	option = {
 		name = news.208.a
 		trigger = {

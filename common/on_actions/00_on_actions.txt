@@ -781,31 +781,6 @@ on_actions = {
 					elections_allowed = yes
 				}
 			}
-			#End of German Civil War
-			if = {
-				limit = {
-					FROM = {
-						original_tag = GER
-						has_government = fascism
-					}
-					original_tag = GER
-					has_government = neutrality
-					NOT = { is_subject_of = HOL }
-				}
-				set_global_flag = { flag = civil_war_olympics value = 1 days = 30 }
-				country_event = { id = wtt_germany.18 days = 1 }
-			}
-			#End of US civil war
-			if = {
-				limit = {
-					original_tag = USA
-					OR = {
-						has_government = neutrality
-						has_government = fascism
-					}
-				}
-				news_event = { id = mtg_news.7 days = 4 random = 5 }
-			}
 			#End of ideology Civil War
 			if = {
 				limit = {
@@ -893,6 +868,12 @@ on_actions = {
 						15 = { GER = { set_country_flag = GER_AI_RANDOM_DEMOCRATIC } }
 					}
 				}
+				if = {
+					limit = {
+						is_in_faction = yes;
+					}
+					set_faction_spymaster = yes
+				}
 			}
 			ITA = {
 				if = {
@@ -966,6 +947,12 @@ on_actions = {
 						50 = { SOV = { set_country_flag = ITA_SOV_RANDOM_COMMUNIST_HISTORICAL } }
 						50 = { SOV = { set_country_flag = ITA_SOV_RANDOM_COMMUNIST_ALTERNATE } }
 					}
+				}
+				if = {
+					limit = {
+						is_in_faction = yes;
+					}
+					set_faction_spymaster = yes
 				}
 			}
 			FRA = {
@@ -1187,6 +1174,12 @@ on_actions = {
 						20 = { set_country_flag = ENG_AI_RANDOM_NEUTRALITY }
 						20 = { set_country_flag = ENG_AI_RANDOM_FASCIST }
 					}
+				}
+				if = {
+					limit = {
+						is_in_faction = yes;
+					}
+					set_faction_spymaster = yes
 				}
 			}
 			USA = {

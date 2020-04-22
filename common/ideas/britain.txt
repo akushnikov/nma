@@ -126,7 +126,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				conscription_factor = -0.25
+				conscription_factor = -0.30
 				#conscription = -0.006
 			}
 		}
@@ -1570,7 +1570,7 @@ ideas = {
 			modifier = {
 				experience_gain_air = 0.05
 				experience_gain_air_factor = 0.1
-				air_mission_xp_gain_factor = 0.1
+				air_mission_xp_gain_factor = 0.05
 				air_training_xp_gain_factor = 0.2
 			}
 		}
@@ -2076,6 +2076,7 @@ ideas = {
 	high_command = {
 
 		archibald_wavell = {
+			ledger = army
 			
 			allowed = {
 				original_tag = ENG
@@ -2091,6 +2092,7 @@ ideas = {
 		}
 		
 		claude_auchinleck = {
+			ledger = army
 			
 			allowed = {
 				original_tag = ENG
@@ -2106,6 +2108,7 @@ ideas = {
 		}
 		
 		kenneth_anderson = {
+			ledger = army
 			
 			allowed = {
 				original_tag = ENG
@@ -2121,6 +2124,7 @@ ideas = {
 		}
 	
 		sholto_douglas = {
+			ledger = air
 			
 			allowed = {
 				original_tag = ENG
@@ -2136,6 +2140,7 @@ ideas = {
 		}
 		
 		trafford_leigh_mallory = {
+			ledger = air
 			
 			allowed = {
 				original_tag = ENG
@@ -2151,6 +2156,7 @@ ideas = {
 		}
 		
 		frederick_bowhill = {
+			ledger = navy
 			
 			allowed = {
 				original_tag = ENG
@@ -2166,6 +2172,7 @@ ideas = {
 		}	
 		
 		louis_mountbatten = {
+			ledger = army
 			
 			allowed = {
 				original_tag = ENG
@@ -2181,6 +2188,7 @@ ideas = {
 		}
 		
 		henry_harwood = {
+			ledger = navy
 			
 			allowed = {
 				original_tag = ENG
@@ -2196,6 +2204,7 @@ ideas = {
 		}
 		
 		max_horton = {
+			ledger = navy
 			
 			allowed = {
 				original_tag = ENG
@@ -2211,6 +2220,7 @@ ideas = {
 		}		
 
 		ENG_david_stirling = {
+			ledger = army
 
 			available = {
 				has_completed_focus = ENG_special_air_service
@@ -2520,6 +2530,7 @@ ideas = {
 	theorist = {	
 	
 		bernard_montgomery = {
+			ledger = army
 			
 			allowed = {
 				original_tag = ENG
@@ -2537,6 +2548,7 @@ ideas = {
 		}
 		
 		harold_alexander = {
+			ledger = army
 			
 			allowed = {
 				original_tag = ENG
@@ -2562,6 +2574,7 @@ ideas = {
 
 				
 		james_somerville = {
+			ledger = navy
 			
 			allowed = {
 				original_tag = ENG
@@ -2579,6 +2592,7 @@ ideas = {
 		}
 		
 		tom_phillips = {
+			ledger = navy
 			
 			allowed = {
 				original_tag = ENG
@@ -2594,6 +2608,7 @@ ideas = {
 		}
 		
 		hugh_dowding = {
+			ledger = air
 			
 			allowed = {
 				original_tag = ENG
@@ -2609,6 +2624,7 @@ ideas = {
 		}
 		
 		arthur_harris = {
+			ledger = air
 			
 			allowed = {
 				original_tag = ENG
@@ -2624,6 +2640,7 @@ ideas = {
 		}
 		
 		james_chadwick = {
+			ledger = army
 			
 			allowed = {
 				original_tag = ENG
@@ -2639,6 +2656,7 @@ ideas = {
 		}
 		
 		frank_whittle = {
+			ledger = air
 			
 			allowed = {
 				original_tag = ENG
@@ -2654,6 +2672,7 @@ ideas = {
 		# Crap communist ministers, intentionally without loc so they are 'randomized'
 
 		ENG_random_communist_minister_14 = {
+			ledger = air
 
 			picture = generic_army_europe_5
 
@@ -2672,6 +2691,7 @@ ideas = {
 			traits = { little_rocket_man }
 		}
 		ENG_random_communist_minister_15 = {
+			ledger = army
 
 			picture = generic_army_europe_6
 

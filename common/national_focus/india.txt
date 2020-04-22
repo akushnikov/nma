@@ -212,7 +212,6 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = yes
-				has_global_flag = ENG_decolonized
 			}
 		}
 
@@ -262,7 +261,6 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = yes
-				has_global_flag = ENG_decolonized
 			}
 		}
 
@@ -342,10 +340,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 		}
 
@@ -390,10 +385,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 			OR = {
 				has_war_with = GER
@@ -563,10 +555,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject_of = ENG
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 		}
 
@@ -2700,10 +2689,7 @@ focus_tree = {
 					compare_autonomy_state > autonomy_puppet
 					is_subject_of = ENG
 				}
-				AND = {
-					has_global_flag = ENG_decolonized
-					is_in_faction_with = ENG
-				}
+				is_in_faction_with = ENG
 			}
 		}
 
@@ -2750,7 +2736,6 @@ focus_tree = {
 				localization = RAJ_strengthen_ties_with_british_investors
 			}
 			random_owned_controlled_state = {
-				prioritize = {  }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -2767,7 +2752,6 @@ focus_tree = {
 				set_state_flag = RAJ_strengthen_ties_with_british_investors_AF1
 			}
 			random_owned_controlled_state = {
-				prioritize = {  }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -2849,7 +2833,6 @@ focus_tree = {
 				localization = RAJ_british_rail_investors
 			}
 			random_owned_controlled_state = {
-				prioritize = {  }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -2866,7 +2849,6 @@ focus_tree = {
 				set_state_flag = RAJ_british_rail_investors_IC1
 			}
 			random_owned_controlled_state = {
-				prioritize = {  }
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
@@ -2948,7 +2930,6 @@ focus_tree = {
 				localization = RAJ_british_arms_investors
 			}
 			random_owned_controlled_state = {
-				prioritize = {  }
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -2965,7 +2946,6 @@ focus_tree = {
 				set_state_flag = RAJ_british_arms_investors_AF1
 			}
 			random_owned_controlled_state = {
-				prioritize = {  }
 				limit = {
 					free_building_slots = {
 						building = arms_factory

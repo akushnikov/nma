@@ -47,19 +47,6 @@ init_uk_dominions_array = {
   add_to_array = { uk_dominions = NZL }
 }
 
-init_grind_countries = {
-  clear_array = grind_countries
-
-  add_to_array = { grind_countries = ETH }
-  add_to_array = { grind_countries = YUG }
-  add_to_array = { grind_countries = GRE }
-  add_to_array = { grind_countries = POR }
-  add_to_array = { grind_countries = FIN }
-  add_to_array = { grind_countries = AFG }
-  add_to_array = { grind_countries = PER }
-  add_to_array = { grind_countries = BUL }
-}
-
 ensure_united_front_exists = {
   init_united_front_countries_array = yes
 
@@ -113,85 +100,60 @@ ensure_united_front_exists = {
   set_global_flag = CHI_unite
 }
 
-init_grinding_period = {
-  # initializing array of allowed to grind countries
-  init_grind_countries = yes
-
-  # loop over these countries
+add_faction_members_collaboration = {
   for_each_scope_loop = {
-    array = grind_countries
+    array = faction_members
 
-    # there are rules for grinding in months from 1 to 12
-    for_loop_effect = {
-      start = 1     # start
-      end = 13      # less_than rule
-      break = for_break
-
-      # dirty hack to interpolate variables into a code
-      meta_effect = {
-
-        text = {
-          if = {
-            limit = {
-              # checking game rule for THIS country if it has unlimited grinding period
-              OR = {
-                has_game_rule = {
-                  rule = NMA_[CURRENT_TAG]_GRINDING
-                  option = NMA_UNLIMITED_GRIND
-                }
-                NOT = { is_ai = yes }
-              }
-            }
-
-            # setting unlimited grinding period (0)
-            set_variable = { grinding_period = 0 }
-
-            # breaking the loop, no need to overload CPU
-            set_temp_variable = { for_break = 1 }
-          }
-          else = {
-            # here we go again...
-            # checking rule against current tag and current index
-            if = {
-              limit = {
-                has_game_rule = {
-                  rule = NMA_[CURRENT_TAG]_GRINDING
-                  option = NMA_[INDEX]_MONTH_GRIND
-                }
-              }
-
-              # you know, that one month has 30 days in average
-              set_temp_variable = { month = 30 }
-              multiply_temp_variable = { month = [INDEX] }
-
-              # settings grinding period in days
-              set_variable = { grinding_period = month }
-
-              set_temp_variable = { for_break = 1 }
-              # ground control to major Tom...
-            }
-          }
+    if = {
+      limit = {
+        has_collaboration = {
+          target = FROM
+          value < 1.0
         }
+      }
 
-        CURRENT_TAG = "[THIS.GetTag]"     # ETH, YUG, GRE etc.
-        INDEX = v                         # [1, 12]
+      add_collaboration = {
+        target = FROM
+        value = 0.2
       }
     }
   }
+}
 
+add_faction_members_collaboration_excellent = {
   for_each_scope_loop = {
-    array = grind_countries
+    array = faction_members
 
-    log = "[THIS.GetNameDef] has grinding period [?grinding_period]"
+    if = {
+      limit = {
+        has_collaboration = {
+          target = FROM
+          value < 1.0
+        }
+      }
+
+      add_collaboration = {
+        target = FROM
+        value = 0.4
+      }
+    }
   }
 }
 
-cleanup_grinding_mess = {
-  set_country_flag = grind_time_has_gone
-  remove_ideas = you_shall_not_fall
-}
-
-cleanup_state_juggling_mess = {
-  remove_state_core = 649
-  ECU = { transfer_state = 649 }
+nma_annex_country = {
+  FROM = {
+    every_controlled_state = {
+      set_state_flag = marked_for_compliance
+    }
+  }
+  PREV = {
+    annex_country = { target = FROM transfer_troops = yes }
+    every_controlled_state = {
+      limit = {
+        has_state_flag =  marked_for_compliance
+      }
+      set_compliance = 70
+      clr_state_flag = marked_for_compliance
+    }
+  }
 }

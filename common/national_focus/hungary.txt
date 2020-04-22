@@ -370,7 +370,25 @@ focus_tree = {
 
 		completion_reward = {
 			add_threat = 1
-			ROM = { country_event = { id = DOD_hungary.40 } }
+			if = {
+				limit = {
+					FRA = {
+						exists = yes
+						is_subject = no
+					}
+
+				}
+				FRA = { country_event = { id = DOD_hungary.40 } }
+			}
+			if = {
+				limit = {
+					OR = {
+						FRA = { exists = no }
+						FRA = { is_subject = yes }
+					}
+				} #Romania gets the event if France not engaged in Balkans
+				ROM = { country_event = { id = DOD_hungary.40 } }
+			}
 
 			#make Horthy or King dude leader. depending on focus picked earlier
 
@@ -434,16 +452,13 @@ focus_tree = {
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 		available = {
 			NOT = { GER = { has_government = communism } }
+			NOT = { has_war_with = GER }
 		}
 
 		cost = 10
 
 		ai_will_do = {
 			factor = 80
-		}
-
-		available = {
-			NOT = { has_war_with = GER }
 		}
 
 		bypass = {
@@ -2054,6 +2069,7 @@ focus_tree = {
 
 		completion_reward = {
 			ROM = { country_event = DOD_hungary.140 }
+			custom_effect_tooltip = HUN_bled_agreement_custom_effect_tooltip
 		}
 	}
 
@@ -2602,7 +2618,7 @@ focus_tree = {
 				name = HUN_mobile_focus
 				bonus = 1.0
 				uses = 1
-				category = land_doctrine
+				category = cat_mobile_warfare
 			}
 		}
 	}
@@ -2854,7 +2870,7 @@ focus_tree = {
 				name = HUN_mobile_corps_doctrine
 				bonus = 1.0
 				uses = 1
-				category = land_doctrine
+				category = cat_mobile_warfare
 			}
 		}
 	}
@@ -2895,7 +2911,7 @@ focus_tree = {
 				name = HUN_home_defense
 				bonus = 1.0
 				uses = 1
-				category = land_doctrine
+				category = cat_grand_battle_plan
 			}
 		}
 	}

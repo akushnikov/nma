@@ -152,11 +152,7 @@ if = {
 		dispersed_industry2 = 1
 		dispersed_industry3 = 1
 	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-		}
-	}
+
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		set_technology = {

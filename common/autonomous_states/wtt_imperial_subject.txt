@@ -12,6 +12,8 @@ autonomy_state = {
 		can_not_declare_war = no
 		can_decline_call_to_war = yes
 		units_deployed_to_overlord = no
+		can_be_spymaster = yes
+		contributes_operatives = yes
 	}
 
 	modifier = {
@@ -33,6 +35,20 @@ autonomy_state = {
 
 	ai_overlord_wants_garrison = {
 		always = no
+	}
+
+	allowed = {
+		has_dlc = "Waking the Tiger"
+		
+		NOT = {
+			original_tag = MAN
+		}
+
+		OR = {
+			has_government = fascism
+			has_government = neutrality
+		}
+		OVERLORD = { original_tag = JAP }
 	}
 
 	can_take_level = {

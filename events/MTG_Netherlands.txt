@@ -31,10 +31,8 @@ country_event = {
 	# We can ill afford another crisis - give the British direct control
 	option = {
 		trigger = {
-			AND = {
-				is_in_faction_with = ENG
-				NOT = { is_in_faction_with = USA }
-			}
+			is_in_faction_with = ENG
+			NOT = { is_in_faction_with = USA }
 		}
 		name = mtg_netherlands.1.c
 		effect_tooltip = {
@@ -1382,12 +1380,6 @@ country_event = {
 				factor = 0
 				original_tag = GER
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
-					focus_progress = {
-						focus = ENG_benelux_intervention
-						progress > 0
-					}
-				}
 			}
 			modifier = {
 				factor = 0
@@ -1605,12 +1597,6 @@ country_event = {
 				factor = 0
 				original_tag = GER
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
-					focus_progress = {
-						focus = ENG_benelux_intervention
-						progress > 0
-					}
-				}
 			}
 			modifier = {
 				factor = 0
@@ -1815,12 +1801,6 @@ country_event = {
 				factor = 0
 				original_tag = GER
 				HOL = { has_completed_focus = HOL_cave_to_the_germans }
-				ENG = {
-					focus_progress = {
-						focus = ENG_benelux_intervention
-						progress > 0
-					}
-				}
 			}
 			modifier = {
 				factor = 0
@@ -2635,8 +2615,6 @@ country_event = {
 	title = mtg_netherlands.69.t
 	desc = mtg_netherlands.69.d
 	picture = GFX_report_event_hol_polderen
-
-	fire_only_once = no
 
 	trigger = {
 		has_global_flag = HOL_inundation_lines_flooded
