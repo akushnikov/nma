@@ -5,11 +5,10 @@ bookmarks = {
 		date = 1939.8.14.12
 		picture = "GFX_select_date_1939"
 		default_country = "GER"
-
 		FRA = {
 			history = FRA_BLITZKRIEG_DESC
 			ideology = democratic
-			ideas={
+			ideas = {
 				FRA_victors_of_wwi
 				FRA_disjointed_government
 				FRA_protected_by_the_maginot_line
@@ -50,7 +49,6 @@ bookmarks = {
 				bomber_command_focus
 				maud_focus
 			}
-
 		}
 		GER = {
 			history = GER_BLITZKRIEG_DESC
@@ -70,7 +68,7 @@ bookmarks = {
 		ITA = {
 			history = ITA_BLITZKRIEG_DESC
 			ideology = fascism
-			ideas={
+			ideas = {
 				vittoria_mutilata
 				victor_emmanuel
 			}
@@ -81,7 +79,7 @@ bookmarks = {
 		JAP = {
 			history = JAP_BLITZKRIEG_DESC
 			ideology = fascism
-			ideas={
+			ideas = {
 				state_shintoism
 				JAP_guide_the_zaibatsus
 				JAP_militarism
@@ -105,13 +103,11 @@ bookmarks = {
 				SOV_move_industry_to_urals
 			}
 		}
-
-		"---"={
+		"---" = {
 			history = "OTHER_BLITZKRIEG_DESC"
 		}
-
 		# minors from DLC ####
-		"CAN"={
+		"CAN" = {
 			minor = yes
 			history = "CAN_BLITZKRIEG_DESC"
 			ideology = democratic
@@ -120,10 +116,9 @@ bookmarks = {
 				CAN_conscription_crisis
 			}
 			focuses = {
-
 			}
 		}
-		"AST"={
+		"AST" = {
 			minor = yes
 			history = "AST_BLITZKRIEG_DESC"
 			ideology = democratic
@@ -136,12 +131,11 @@ bookmarks = {
 				AST_rats_of_tobruk
 			}
 		}
-		"NZL"={
+		"NZL" = {
 			minor = yes
 			history = "NZL_BLITZKRIEG_DESC"
 			ideology = democratic
 			ideas = {
-
 			}
 			focuses = {
 				NZL_bob_semple_tank
@@ -149,7 +143,7 @@ bookmarks = {
 				NZL_the_first_labor_government
 			}
 		}
-		"SAF"={
+		"SAF" = {
 			minor = yes
 			history = "SAF_BLITZKRIEG_DESC"
 			ideology = democratic
@@ -163,7 +157,7 @@ bookmarks = {
 				SAF_desert_equipment
 			}
 		}
-		"RAJ"={
+		"RAJ" = {
 			minor = yes
 			history = "RAJ_BLITZKRIEG_DESC"
 			ideology = neutrality
@@ -177,7 +171,7 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
-		"HUN"={
+		"HUN" = {
 			minor = yes
 			history = "HUN_BLITZKRIEG_DESC"
 			ideology = neutrality
@@ -192,8 +186,7 @@ bookmarks = {
 				HUN_renounce_the_treaty_of_trianon
 			}
 		}
-
-		"ROM"={
+		"ROM" = {
 			minor = yes
 			history = "ROM_BLITZKRIEG_DESC"
 			ideology = neutrality
@@ -206,8 +199,7 @@ bookmarks = {
 				ROM_preserve_greater_romania
 			}
 		}
-
-		"CHI"={
+		"CHI" = {
 			minor = yes
 			history = "CHI_BLITZKRIEG_DESC"
 			ideology = neutrality
@@ -222,8 +214,7 @@ bookmarks = {
 				CHI_war_of_resistance
 			}
 		}
-
-		"PRC"={
+		"PRC" = {
 			minor = yes
 			history = "PRC_BLITZKRIEG_DESC"
 			ideology = communism
@@ -238,7 +229,7 @@ bookmarks = {
 				PRC_anti_japanese_expedition
 			}
 		}
-		"MAN"={
+		"MAN" = {
 			minor = yes
 			history = "MAN_BLITZKRIEG_DESC"
 			ideology = fascism
@@ -252,8 +243,7 @@ bookmarks = {
 				MAN_the_two_emperors
 			}
 		}
-
-		"MEX"={
+		"MEX" = {
 			minor = yes
 			history = "MEXICO_BLITZKRIEG_DESC"
 			ideology = neutrality
@@ -268,4 +258,5 @@ bookmarks = {
 				MEX_focus_the_gold_shirts
 			}
 		}
+	}
 }

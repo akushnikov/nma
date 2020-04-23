@@ -99,7 +99,6 @@ set_convoys = 10
 		complete_national_focus = ROM_expand_the_galati_shipyards
 		complete_national_focus = ROM_trade_treaty_with_germany
 		complete_national_focus = ROM_iar_80
-		complete_national_focus = ROM_appoint_allied_friendly_government
 		complete_national_focus = ROM_cas
 		complete_national_focus = ROM_royal_guards_divisions
 		complete_national_focus = ROM_the_zb_53
@@ -200,11 +199,6 @@ set_convoys = 10
 		limit = { not = { has_dlc = "Man the Guns" } }
 		set_technology = {
 			basic_submarine = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
 		}
 	}
 }
@@ -361,19 +355,5 @@ if = {
 			ship_ASW_upgrade = 1
 			ship_anti_air_upgrade = 1
 		}
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-}
-
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
 	}
 }

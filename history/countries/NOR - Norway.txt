@@ -1,16 +1,16 @@
 ﻿capital = 110
-
 oob = "NOR_1936"
 if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "NOR_1936_naval_mtg"
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "NOR_1936_naval_mtg"
 	else = {
 		set_naval_oob = "NOR_1936_naval_legacy"
 	}
 }
 
 set_research_slots = 3
-
 add_ideas = {
 	limited_conscription
 }
@@ -28,16 +28,24 @@ set_technology = {
 	early_bomber = 1
 	tech_recon = 1
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_destroyer = 1
 		early_submarine = 1
 		early_heavy_cruiser = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
@@ -51,9 +59,7 @@ if = {
 }
 
 1939.1.1 = {
-
 	add_political_power = 1198
-
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -64,21 +70,20 @@ if = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-
 	oob = "NOR_1939"
 	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "NOR_1939_naval_mtg"
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_naval_oob = "NOR_1939_naval_mtg"
 		else = {
 			set_naval_oob = "NOR_1939_naval_legacy"
 		}
 	}
-
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons2 = 1
 		support_weapons = 1
-
 		#doctrines
 		air_superiority = 1
 		grand_battle_plan = 1
@@ -86,14 +91,12 @@ if = {
 		fleet_in_being = 1
 		battlefleet_concentration = 1
 		submarine_operations = 1
-
 		#electronics
 		electronic_mechanical_engineering = 1
 		radio = 1
 		radio_detection = 1
 		mechanical_computing = 1
 		computing_machine = 1
-
 		#industry
 		basic_machine_tools = 1
 		improved_machine_tools = 1
@@ -107,28 +110,26 @@ if = {
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
+		limit = {
+			has_dlc = "Man the Guns"
 		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
 		set_technology = {
 			basic_depth_charges = 1
 		}
 	}
 }
 
-set_convoys = 200		# biggest merchant marine in the world
+set_convoys = 200# biggest merchant marine in the world
 set_stability = 0.7
-
 set_politics = {
 	ruling_party = democratic
 	last_election = "1933.10.16"
 	election_frequency = 36
 	elections_allowed = yes
 }
+
 set_popularities = {
 	democratic = 96
 	fascism = 2
@@ -197,7 +198,10 @@ create_country_leader = {
 create_corps_commander = {
 	name = "Carl Gustav Fleischer"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = {  trickster winter_specialist }
+	traits = {
+		trickster
+		winter_specialist
+	}
 	skill = 4
 	attack_skill = 3
 	defense_skill = 4
@@ -208,7 +212,11 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "Elias Corneliussen"
 	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { navy_career_officer inshore_fighter spotter }
+	traits = {
+		navy_career_officer
+		inshore_fighter
+		spotter
+	}
 	skill = 3
 	attack_skill = 2
 	defense_skill = 4
@@ -219,13 +227,19 @@ create_navy_leader = {
 ### VARIANTS ###
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 }
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
 
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	# Submarines #
 	# Destroyers #
 	create_equipment_variant = {
 		name = "Draug Class"
@@ -243,8 +257,6 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-
-
 	# Heavy Cruisers #
 	create_equipment_variant = {
 		name = "Norge Class"
@@ -269,11 +281,17 @@ if = {
 # 1939 Start #
 1939.1.1 = {
 	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
+		limit = {
+			not = {
+				has_dlc = "Man the Guns"
+			}
+		}
 		# Ship variants #
 	}
 	if = {
-		limit = { has_dlc = "Man the Guns" }
+		limit = {
+			has_dlc = "Man the Guns"
+		}
 		# Destroyers #
 		create_equipment_variant = {
 			name = "Sleipner & Odin Class"
@@ -290,4 +308,5 @@ if = {
 				rear_1_custom_slot = ship_depth_charge_1
 			}
 		}
+	}
 }
