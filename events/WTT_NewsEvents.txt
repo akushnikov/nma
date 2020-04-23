@@ -1,5 +1,69 @@
 ﻿add_namespace = wtt_news
 
+# News event for annexation of Vichy France - fleet intact
+news_event = {
+	id = wtt_news.23
+	title = wtt_news.23.t
+	desc = wtt_news.23.desc
+	picture = GFX_news_event_strasbourg
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.23.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.23.b
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = wtt_news.23.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = ENG
+			}
+		}
+	}
+}
+
+# News event for annexation of Vichy France - fleet scuttled
+news_event = {
+	id = wtt_news.24
+	title = wtt_news.24.t
+	desc = wtt_news.24.desc
+	picture = GFX_news_french_fleet_scuttled
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_news.24.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.24.b
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = wtt_news.24.c
+		trigger = {
+			NOT = {
+				original_tag = GER
+				original_tag = ENG
+			}
+		}
+	}
+}
+
 # News event for Japan taking European colonies
 news_event = {
 	id = wtt_news.25

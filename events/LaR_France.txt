@@ -1,3 +1,10 @@
+###   ##  #   ### ### ###  ##   ##  #       #   # ###  ##  #   ### #  #  ##  ### 
+#  # #  # #    #   #   #  #  # #  # #       #   #  #  #  # #   #   ## # #  # #   
+###  #  # #    #   #   #  #    #### #        # #   #  #  # #   ##  # ## #    ##  
+#    #  # #    #   #   #  #  # #  # #        # #   #  #  # #   #   #  # #  # #   
+#     ##  ### ###  #  ###  ##  #  # ###       #   ###  ##  ### ### #  #  ##  ### 
+
+
 add_namespace = lar_france_political_violence
 
 # right wing riots
@@ -67,7 +74,7 @@ country_event = {
 	id = lar_france_political_violence.4
 	title = lar_france_political_violence.4.t
 	desc = lar_france_political_violence.4.desc
-	# are you copypasting faggot?
+	
 	picture = GFX_report_event_generic_rally2
 	mean_time_to_happen = { days = 50 }
 
@@ -96,7 +103,720 @@ country_event = {
 	}
 }
 
-##  ###  #   #  ##     ###  #  # ###   ##  #  #  ##   ## ###  ## 
+### #  # ### ### ###  #   # ### #  # ### ###  ##  #  #     ###   ##  ###  ###  ### ###      #   #  ##  ###   ## 
+ #  ## #  #  #   #  # #   # #   ## #  #   #  #  # ## #     #  # #  # #  # #  # #   #  #     #   # #  # #  # #   
+ #  # ##  #  ##  ###   # #  ##  # ##  #   #  #  # # ##     ###  #  # ###  #  # ##  ###      # # # #### ###   #  
+ #  #  #  #  #   #  #  # #  #   #  #  #   #  #  # #  #     #  # #  # #  # #  # #   #  #     # # # #  # #  #   # 
+### #  #  #  ### #  #   #   ### #  #  #  ###  ##  #  #     ###   ##  #  # ###  ### #  #      # #  #  # #  # ##  
+
+add_namespace = FRA_syria_intervention
+
+#attackers win syrian intervention
+country_event = {
+	id = FRA_syria_intervention.1
+	title = FRA_syria_intervention.1.t
+	desc = FRA_syria_intervention.1.desc
+	picture = GFX_report_event_france_victory_syria
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Syria Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Syria Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Syria Defense Force" }
+				delete_unit_template_and_units = { division_template = "Syria Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_syria_intervention.11 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_syria_intervention.1.a
+		event_target:free_france = {
+			transfer_state = 554
+			transfer_state = 680
+			transfer_state = 677
+			transfer_state = 553
+		}
+	}
+}
+
+#attackers win syrian intervention
+country_event = {
+	id = FRA_syria_intervention.11
+	title = FRA_syria_intervention.1.t
+	desc = FRA_syria_intervention.1.desc
+	picture = GFX_report_event_france_victory_syria
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_syria_intervention.1.a
+		effect_tooltip = {
+			event_target:free_france = {
+				transfer_state = 554
+				transfer_state = 680
+				transfer_state = 677
+				transfer_state = 553
+			}
+		}
+	}
+}
+
+#defenders win syrian intervention
+country_event = {
+	id = FRA_syria_intervention.2
+	title = FRA_syria_intervention.2.t
+	desc = FRA_syria_intervention.2.desc
+	picture = GFX_report_event_romanian_soldiers
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Syria Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Syria Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Syria Defense Force" }
+				delete_unit_template_and_units = { division_template = "Syria Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_syria_intervention.21 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	is_triggered_only = yes
+	option = {
+		name = FRA_syria_intervention.2.a
+		army_experience = 5
+	}
+}
+
+#defenders win syrian intervention
+country_event = {
+	id = FRA_syria_intervention.21
+	title = FRA_syria_intervention.2.t
+	desc = FRA_syria_intervention.2.desc
+	picture = GFX_report_event_romanian_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_syria_intervention.2.a
+		army_experience = 5
+	}
+}
+
+#syrian intervention stalls out
+country_event = {
+	id = FRA_syria_intervention.3
+	title = FRA_syria_intervention.3.t
+	desc = FRA_syria_intervention.3.desc
+	picture = GFX_report_event_soldiers_in_france
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Syria Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Syria Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Syria Defense Force" }
+				delete_unit_template_and_units = { division_template = "Syria Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_syria_intervention.31 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_syria_intervention.3.a
+	}
+}
+
+#syrian intervention stalls out
+country_event = {
+	id = FRA_syria_intervention.31
+	title = FRA_syria_intervention.3.t
+	desc = FRA_syria_intervention.3.desc
+	picture = GFX_report_event_soldiers_in_france
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_syria_intervention.3.a
+	}
+}
+
+add_namespace = FRA_indochina_intervention
+
+#attackers win indochina intervention
+country_event = {
+	id = FRA_indochina_intervention.1
+	title = FRA_indochina_intervention.1.t
+	desc = FRA_indochina_intervention.1.desc
+	picture = GFX_report_event_france_victory_syria
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Indochina Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Indochina Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Indochina Defense Force" }
+				delete_unit_template_and_units = { division_template = "Indochina Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_indochina_intervention.11 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_indochina_intervention.1.a
+		event_target:free_france = {
+			transfer_state = 670
+			transfer_state = 671
+			transfer_state = 741
+		}
+	}
+}
+
+#attackers win indochina intervention
+country_event = {
+	id = FRA_indochina_intervention.11
+	title = FRA_indochina_intervention.1.t
+	desc = FRA_indochina_intervention.1.desc
+	picture = GFX_report_event_france_victory_syria
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_indochina_intervention.1.a
+		effect_tooltip = {
+			event_target:free_france = {
+				transfer_state = 670
+				transfer_state = 671
+				transfer_state = 74
+			}
+		}
+	}
+}
+
+#defenders win indochina intervention
+country_event = {
+	id = FRA_indochina_intervention.2
+	title = FRA_indochina_intervention.2.t
+	desc = FRA_indochina_intervention.2.desc
+	picture = GFX_report_event_romanian_soldiers
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Indochina Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Indochina Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Indochina Defense Force" }
+				delete_unit_template_and_units = { division_template = "Indochina Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_indochina_intervention.21 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_indochina_intervention.2.a
+		army_experience = 5
+	}
+}
+
+#defenders win indochina intervention
+country_event = {
+	id = FRA_indochina_intervention.21
+	title = FRA_indochina_intervention.2.t
+	desc = FRA_indochina_intervention.2.desc
+	picture = GFX_report_event_romanian_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_indochina_intervention.2.a
+		army_experience = 5
+	}
+}
+
+#indochina intervention stalls out
+country_event = {
+	id = FRA_indochina_intervention.3
+	title = FRA_indochina_intervention.3.t
+	desc = FRA_indochina_intervention.3.desc
+	picture = GFX_report_event_soldiers_in_france
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Indochina Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Indochina Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Indochina Defense Force" }
+				delete_unit_template_and_units = { division_template = "Indochina Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_indochina_intervention.31 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_indochina_intervention.3.a
+	}
+}
+
+#indochina intervention stalls out
+country_event = {
+	id = FRA_indochina_intervention.31
+	title = FRA_indochina_intervention.3.t
+	desc = FRA_indochina_intervention.3.desc
+	picture = GFX_report_event_soldiers_in_france
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_indochina_intervention.3.a
+	}
+}
+
+add_namespace = FRA_central_africa_intervention
+
+#attackers win central african intervention
+country_event = {
+	id = FRA_central_africa_intervention.1
+	title = FRA_central_africa_intervention.1.t
+	desc = FRA_central_africa_intervention.1.desc
+	picture = GFX_report_event_france_victory_syria
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Central Africa Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Central Africa Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Central Africa Defense Force" }
+				delete_unit_template_and_units = { division_template = "Central Africa Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_central_africa_intervention.11 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_central_africa_intervention.1.a
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = CHA
+					is_core_of = CMR
+					is_core_of = CAR
+					is_core_of = RCG
+					is_core_of = GAB
+				}
+			}
+			event_target:free_france = {
+				transfer_state = PREV
+			}
+		}
+	}
+}
+
+country_event = {
+	id = FRA_central_africa_intervention.11
+	title = FRA_central_africa_intervention.1.t
+	desc = FRA_central_africa_intervention.1.desc
+	picture = GFX_report_event_france_victory_syria
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_central_africa_intervention.1.a
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = CHA
+						is_core_of = CMR
+						is_core_of = CAR
+						is_core_of = RCG
+						is_core_of = GAB
+					}
+				}
+				event_target:free_france = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+}
+
+#defenders win central african intervention
+country_event = {
+	id = FRA_central_africa_intervention.2
+	title = FRA_central_africa_intervention.2.t
+	desc = FRA_central_africa_intervention.2.desc
+	picture = GFX_report_event_romanian_soldiers
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Central Africa Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Central Africa Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Central Africa Defense Force" }
+				delete_unit_template_and_units = { division_template = "Central Africa Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_central_africa_intervention.21 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_central_africa_intervention.2.a
+		army_experience = 5
+	}
+}
+
+#defenders win central african intervention
+country_event = {
+	id = FRA_central_africa_intervention.21
+	title = FRA_central_africa_intervention.2.t
+	desc = FRA_central_africa_intervention.2.desc
+	picture = GFX_report_event_romanian_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_central_africa_intervention.2.a
+		army_experience = 5
+	}
+}
+
+#central african intervention stalls out
+country_event = {
+	id = FRA_central_africa_intervention.3
+	title = FRA_central_africa_intervention.3.t
+	desc = FRA_central_africa_intervention.3.desc
+	picture = GFX_report_event_soldiers_in_france
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "Central Africa Intervention Force" }
+				delete_unit_template_and_units = { division_template = "Central Africa Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "Central Africa Defense Force" }
+				delete_unit_template_and_units = { division_template = "Central Africa Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_central_africa_intervention.31 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_central_africa_intervention.3.a
+	}
+}
+
+#central african intervention stalls out
+country_event = {
+	id = FRA_central_africa_intervention.31
+	title = FRA_central_africa_intervention.3.t
+	desc = FRA_central_africa_intervention.3.desc
+	picture = GFX_report_event_soldiers_in_france
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_central_africa_intervention.3.a
+	}
+}
+
+add_namespace = FRA_west_africa_intervention
+
+#attackers win west african intervention
+country_event = {
+	id = FRA_west_africa_intervention.1
+	title = FRA_west_africa_intervention.1.t
+	desc = FRA_west_africa_intervention.1.desc
+	picture = GFX_report_event_france_victory_syria
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "West Africa Intervention Force" }
+				delete_unit_template_and_units = { division_template = "West Africa Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "West Africa Defense Force" }
+				delete_unit_template_and_units = { division_template = "West Africa Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_west_africa_intervention.11 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_west_africa_intervention.1.a
+		every_state = {
+			limit = {
+				OR = {
+					state = 557
+					state = 272
+					state = 556
+					state = 780
+					state = 779
+					state = 778
+					state = 781
+					state = 776
+				}
+			}
+			event_target:free_france = {
+				transfer_state = PREV
+			}
+		}
+	}
+}
+
+#attackers win west african intervention
+country_event = {
+	id = FRA_west_africa_intervention.11
+	title = FRA_west_africa_intervention.1.t
+	desc = FRA_west_africa_intervention.1.desc
+	picture = GFX_report_event_france_victory_syria
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_west_africa_intervention.1.a
+		effect_tooltip = {
+			every_state = {
+				limit = {
+					OR = {
+						state = 557
+						state = 272
+						state = 556
+						state = 780
+						state = 779
+						state = 778
+						state = 781
+						state = 776
+					}
+				}
+				event_target:free_france = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+}
+
+#defenders win west african intervention
+country_event = {
+	id = FRA_west_africa_intervention.2
+	title = FRA_west_africa_intervention.2.t
+	desc = FRA_west_africa_intervention.2.desc
+	picture = GFX_report_event_romanian_soldiers
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "West Africa Intervention Force" }
+				delete_unit_template_and_units = { division_template = "West Africa Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "West Africa Defense Force" }
+				delete_unit_template_and_units = { division_template = "West Africa Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_west_africa_intervention.21 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_west_africa_intervention.2.a
+		army_experience = 5
+	}
+}
+
+#defenders win west african intervention
+country_event = {
+	id = FRA_west_africa_intervention.21
+	title = FRA_west_africa_intervention.2.t
+	desc = FRA_west_africa_intervention.2.desc
+	picture = GFX_report_event_romanian_soldiers
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_west_africa_intervention.2.a
+		army_experience = 5
+	}
+}
+
+#west african intervention stalls out
+country_event = {
+	id = FRA_west_africa_intervention.3
+	title = FRA_west_africa_intervention.3.t
+	desc = FRA_west_africa_intervention.3.desc
+	picture = GFX_report_event_soldiers_in_france
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_template = "West Africa Intervention Force" }
+				delete_unit_template_and_units = { division_template = "West Africa Intervention Force" }
+			}
+			if = {
+				limit = { has_template = "West Africa Defense Force" }
+				delete_unit_template_and_units = { division_template = "West Africa Defense Force" }
+			}
+			if = {
+				limit = {
+					NOT = { tag = FRA }
+				}
+				FRA = { country_event = FRA_west_africa_intervention.31 } #due to border wars being weird, we might end up in a situation where another country is fighting the border war on French behalf. This ensures that the French are kept in the loop
+			}
+		}
+	}
+	option = {
+		name = FRA_west_africa_intervention.3.a
+	}
+}
+
+#west african intervention stalls out
+country_event = {
+	id = FRA_west_africa_intervention.31
+	title = FRA_west_africa_intervention.3.t
+	desc = FRA_west_africa_intervention.3.desc
+	picture = GFX_report_event_soldiers_in_france
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = FRA_west_africa_intervention.3.a
+	}
+}
+
+#   #  ##  ###  # # ### ###       ## #  #  ##  ###  ###  ##   ##  ### 
+#   # #  # #  # # # #   #  #     #   #  # #  # #  #  #  #  # #    #   
+# # # #  # ###  ##  ##  ###       #  #### #  # ###   #  #### # ## ##  
+# # # #  # #  # # # #   #  #       # #  # #  # #  #  #  #  # #  # #   
+ # #   ##  #  # # # ### #  #     ##  #  #  ##  #  #  #  #  #  ##  ### 
+
+
+#events to notify player that they are having worker issues
+add_namespace = lar_worker_shortage
+
+#country switched to extensive conscription while on full employment
+country_event = {
+	id = lar_worker_shortage.1
+	title = lar_worker_shortage.1.t
+	desc = lar_worker_shortage.1.desc
+	picture = GFX_report_event_generic_factory
+
+	trigger = {
+		tag = FRA
+		has_idea = FRA_full_employment
+		not = { has_idea = FRA_worker_shortage }
+		OR = {
+			has_idea = extensive_conscription
+			has_idea = service_by_requirement
+			has_idea = all_adults_serve
+			has_idea = scraping_the_barrel
+		}
+	}
+	mean_time_to_happen = { days = 20 }
+	
+	immediate = {
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = FRA_full_employment
+				add_idea = FRA_worker_shortage
+			}
+		}
+	}
+
+	option = {
+		name = lar_worker_shortage.1.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		effect_tooltip = { #actual effect in immediate so player can not avoid by waiting it out, tooltip here to tell player what is happening
+			swap_ideas = {
+				remove_idea = FRA_full_employment
+				add_idea = FRA_worker_shortage
+			}
+		}
+	}
+}
+
+#country demobilizes while having worker shortage
+country_event = {
+	id = lar_worker_shortage.2
+	title = lar_worker_shortage.2.t
+	desc = lar_worker_shortage.2.desc
+	picture = GFX_report_event_france_tank_production
+
+	trigger = {
+		tag = FRA
+		has_idea = FRA_worker_shortage
+		not = { has_idea = FRA_full_employment }
+		OR = {
+			has_idea = limited_conscription
+			has_idea = disarmed_nation
+			has_idea = volunteer_only
+		}
+	}
+	mean_time_to_happen = { days = 20 }
+	option = {
+		name = lar_worker_shortage.2.a #agree
+		ai_chance = {
+			factor = 80
+		}
+		swap_ideas = {
+			remove_idea = FRA_worker_shortage
+			add_idea = FRA_full_employment
+		}
+	}
+}
+
+ ##  ###  #   #  ##     ###  #  # ###   ##  #  #  ##   ## ###  ## 
 #  # #  # ## ## #       #  # #  # #  # #  # #  # #  # #   #   #   
 #### ###  # # #  #      ###  #  # ###  #    #### ####  #  ##   #  
 #  # #  # #   #   #     #    #  # #  # #  # #  # #  #   # #     # 

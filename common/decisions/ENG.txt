@@ -335,9 +335,6 @@ political_actions = {
 		complete_effect = {
 		}
 		timeout_effect = {
-			country_event = {
-				id = mtg_britain.5
-			}
 		}
 	}
 }
@@ -524,9 +521,7 @@ foreign_politics = {
 			original_tag = ENG
 		}
 		visible = {
-			SAF = {
-				country_exists = yes
-			}
+			country_exists = SAF
 		}
 		complete_effect = {
 			SAF = {

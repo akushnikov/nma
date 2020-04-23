@@ -3,13 +3,11 @@ ideas = {
 	country = {
 		mexico_german_submarine_happy_time = { # Added by event to Germany for 90 days, draws Mexico into WW2
 			
-			picture = generic_coastal_navy
+			picture = generic_sea_focused_navy
 			
 			allowed = {
 				always = no # Triggered via event
 			}
-
-			picture = generic_sea_focused_navy
 			
 			modifier = {
 				convoy_raiding_efficiency_factor = 0.25
@@ -1085,13 +1083,12 @@ ideas = {
 		MEX_enrique_estrada = {
 			ledger = army
 
-			picture = generic_army_europe_2
+			picture = generic_political_advisor_south_america_1
 			
 			allowed = {
 				original_tag = MEX
 			}
-			
-			picture = generic_political_advisor_south_america_1
+				
 			
 			research_bonus = {
 				land_doctrine = 0.10
