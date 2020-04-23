@@ -2178,6 +2178,9 @@ leader_traits = {
 			tac_bomber_equipment = {
 				reliability = 0.2
 			}
+			scout_plane_equipment = {
+				reliability = 0.2
+			}
 		}
 
 		ai_will_do = {

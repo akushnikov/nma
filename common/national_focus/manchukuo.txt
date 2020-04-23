@@ -183,6 +183,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = GER_industrial_effort_2_2IC }
@@ -251,6 +252,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			every_state = {
 				limit = {
@@ -292,6 +294,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -340,6 +343,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -375,6 +379,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = MAN_trade_delegation
@@ -411,6 +416,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			random_state = {
 				limit = {
@@ -476,6 +482,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 120
 		}
@@ -507,6 +514,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
+		search_filters = { FOCUS_FILTER_STABILITY }
 		complete_tooltip = {
 
 		}
@@ -546,6 +554,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			country_event = wtt_manchukou.11
 		}
@@ -577,6 +586,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		complete_tooltip = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MAN_songgotu_zhanshan
@@ -660,6 +670,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
 				limit = { 716 = { is_fully_controlled_by = ROOT } }
@@ -734,6 +745,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
 				limit = { has_tech = excavation1 }
@@ -781,6 +793,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			716 = {
 				add_extra_state_shared_building_slots = 2
@@ -824,6 +837,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -880,6 +894,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			country_event = wtt_manchukou.11
 		}
@@ -915,6 +930,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = MAN_national_defense_state
 		}
@@ -950,6 +966,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			716 = {
 				add_extra_state_shared_building_slots = 1
@@ -1030,6 +1047,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			remove_ideas = MAN_kwantung_veto
 			add_tech_bonus = {
@@ -1071,6 +1089,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			MAN_low_legitimacy_level_down = yes
 		}
@@ -1108,6 +1127,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		complete_tooltip = {
 
 		}
@@ -1147,6 +1167,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_ANNEXATION FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			every_state = {
 				limit = { is_core_of = CHI }
@@ -1197,6 +1218,7 @@ focus_tree = {
 
 		}
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_autonomy_ratio = {
 				value = 0.15

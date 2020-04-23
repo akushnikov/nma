@@ -647,6 +647,9 @@ focus_tree = {
 		relative_position_id = POL_romanian_bridgehead_strategy
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			762 = {
 				add_building_construction = {
@@ -672,6 +675,10 @@ focus_tree = {
 		id = POL_hel_fortified_area
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = POL_romanian_bridgehead_strategy }
+		bypass = {
+			85 = { NOT = { is_owned_by = ROOT } }
+			85 = { NOT = { is_controlled_by = ROOT } }
+		}
 
 		x = -1
 		y = 1
@@ -735,6 +742,9 @@ focus_tree = {
 		relative_position_id = POL_prepare_for_the_next_war
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -758,7 +768,9 @@ focus_tree = {
 		relative_position_id = POL_standardisation_of_equipment
 		cost = 10
 
-	
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -782,6 +794,9 @@ focus_tree = {
 		relative_position_id = POL_modernising_the_cavalry
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 
 		available_if_capitulated = yes
 
@@ -806,6 +821,9 @@ focus_tree = {
 		relative_position_id = POL_study_foreign_tanks
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 
 		available_if_capitulated = yes
 
@@ -830,6 +848,9 @@ focus_tree = {
 		relative_position_id = POL_hel_fortified_area
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -853,6 +874,9 @@ focus_tree = {
 		relative_position_id = POL_hel_fortified_area
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 
 		available_if_capitulated = yes
 
@@ -877,6 +901,9 @@ focus_tree = {
 		relative_position_id = POL_artillery_modernisation
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 
 		available_if_capitulated = yes
 
@@ -904,6 +931,9 @@ focus_tree = {
 		x = 16
 		y = 0
 		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
 		available_if_capitulated = yes
 
@@ -949,6 +979,9 @@ focus_tree = {
 		relative_position_id = POL_air_base_expansion
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -974,6 +1007,9 @@ focus_tree = {
 		relative_position_id = POL_air_base_expansion
 		cost = 10
 		
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -997,6 +1033,9 @@ focus_tree = {
 		relative_position_id = POL_air_innovations
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1020,6 +1059,9 @@ focus_tree = {
 		relative_position_id = POL_air_innovations
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1044,6 +1086,9 @@ focus_tree = {
 		relative_position_id = POL_heavy_fighter_concept
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1068,6 +1113,9 @@ focus_tree = {
 		relative_position_id = POL_heavy_fighter_concept
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 
 		available_if_capitulated = yes
 
@@ -1092,6 +1140,9 @@ focus_tree = {
 		relative_position_id = POL_light_bomber_focus
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 
 		available_if_capitulated = yes
 
@@ -1117,6 +1168,9 @@ focus_tree = {
 		relative_position_id = POL_air_modernisations_programme
 		cost = 10
 
+		ai_will_do = {
+			factor = 1
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1145,6 +1199,9 @@ focus_tree = {
 		y = 0
 		cost = 10
 
+		ai_will_do = {
+			factor = 2
+		}
 		available_if_capitulated = yes
 		
 		complete_tooltip = {
@@ -1189,6 +1246,9 @@ focus_tree = {
 		relative_position_id = POL_develop_polish_ship_building
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1212,6 +1272,9 @@ focus_tree = {
 		relative_position_id = POL_study_foreign_built_ships
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1235,6 +1298,9 @@ focus_tree = {
 		relative_position_id = POL_develop_polish_ship_building
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1257,6 +1323,9 @@ focus_tree = {
 		relative_position_id = POL_import_submarine_technology
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1280,6 +1349,9 @@ focus_tree = {
 		relative_position_id = POL_import_submarine_technology
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1303,6 +1375,9 @@ focus_tree = {
 		relative_position_id = POL_the_twin_threats
 		cost = 10
 		
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1332,6 +1407,9 @@ focus_tree = {
 		relative_position_id = POL_the_twin_threats
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1361,6 +1439,9 @@ focus_tree = {
 		relative_position_id = POL_strike_force
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1387,6 +1468,9 @@ focus_tree = {
 		y = 0
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1405,6 +1489,9 @@ focus_tree = {
 		relative_position_id = POL_strengthen_the_polish_state
 		cost = 10
 
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1423,6 +1510,9 @@ focus_tree = {
 		relative_position_id = POL_strengthen_the_polish_state
 		cost = 10
 		
+		ai_will_do = {
+			factor = 10
+		}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -1722,7 +1812,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-
+			add_opinion_modifier = { target = SOV modifier = POL_seek_accommodation_with_USSR }
+			SOV = { add_opinion_modifier = { target = ROOT modifier = POL_seek_accommodation_with_USSR } }
+			#Relation Boost with the USSR
 		}
 	}
 
@@ -1773,6 +1865,7 @@ focus_tree = {
 		icon = GFX_goal_generic_major_alliance
 		prerequisite = { focus = POL_liberalism }
 		available = {
+			country_exists = ENG
 		}
 
 		x = 3
@@ -1783,6 +1876,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_opinion_modifier = { target = ENG modifier = POL_draw_closer_to_britain }
+			ENG = { add_opinion_modifier = { target = ROOT modifier = POL_draw_closer_to_britain } }
+			#Relation boost with the UK
 		}
 	}
 

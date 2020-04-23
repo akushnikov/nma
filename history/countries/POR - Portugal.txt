@@ -112,12 +112,13 @@ set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.3.5"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	fascism = 5
-	communism = 5
-	neutrality = 90
+	fascism = 10
+	communism = 10
+	neutrality = 60
+	democratic = 20
 }
 
 1939.1.1 = {
@@ -125,7 +126,7 @@ set_popularities = {
 		ruling_party = neutrality
 		last_election = "1938.10.30"
 		election_frequency = 48
-		elections_allowed = yes
+		elections_allowed = no
 	}
 	set_popularities = {
 		neutrality = 100

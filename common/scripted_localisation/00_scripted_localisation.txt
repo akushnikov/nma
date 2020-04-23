@@ -811,3 +811,19 @@ defined_text = { # Country
 		localization_key = USA_Naval_treaty_nation
 	}
 }
+defined_text = {
+	name = GetPortugueseShipsBuilder
+	text = { #ENG builder
+		trigger = {
+			OR = {
+				has_country_flag = POR_purchase_british_submarines_flag
+				has_country_flag = POR_purchase_british_destroyers_flag
+				has_country_flag = POR_purchase_british_light_cruiser_flag
+			}
+		}
+		localization_key = POR_ENG_Ship_Builder
+	}
+	text = { #ITA builder
+		localization_key = POR_ITA_Ship_builder
+	}
+}

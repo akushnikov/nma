@@ -156,19 +156,19 @@ on_actions = {
 	on_operative_detected_during_operation = {
 		effect = {
 			random_list = {
-				40 = {
+				45 = {
 					force_operative_leader_into_hiding = 45
 					operative_leader_event = {
 						id = lar_operative_event.2
 						set_from_from = FROM
 					}
 				}
-				35 = {
+				25 = {
 					capture_operative = {
 						captured_by = FROM
 					}
 				}
-				20 = {
+				25 = {
 					harm_operative_leader = 90
 					operative_leader_event = {
 						id = lar_operative_event.4
@@ -266,18 +266,6 @@ on_actions = {
 		}
 	}
 
-	on_startup = {
-		effect = {
-
-		}
-	}
-
-	# ROOT is capitulated country, FROM is winner
-	on_capitulation = {
-		effect = {
-		}
-	}
-
 	# called a country fully decrypts cipher of a target country
 	# scope is the target country that its cipher is decrypted
 	# from scope is the decrypter country
@@ -290,69 +278,6 @@ on_actions = {
 	# from scope is the country that activates its bonuses
 	on_activated_active_decryption_bonuses = {
 
-	}
-
-
-	# called when a country send volunteers to another
-	# ROOT is sender, FROM is receiver
-	on_send_volunteers = {
-		effect = {
-			if = {
-				limit = {
-					SPR_scw_in_progress = yes
-					FROM = { tag = SPA }
-				}
-				set_country_flag = SPR_sent_volunteers_to_SPA_flag
-			}
-			if = {
-				limit = {
-					SPR_scw_in_progress = yes
-					FROM = { tag = SPD }
-				}
-				set_country_flag = SPR_sent_volunteers_to_SPD_flag
-			}
-		}
-	}
-
-	#FROM is war target
-	on_declare_war = {
-		effect = {
-
-			#Clean up Franco in case of double Franco
-			hidden_effect = {
-				while_loop_effect = {
-					limit = {
-						has_country_leader = {
-							name = "Francisco Franco"
-							ruling_only = yes
-						}
-						FROM = {
-							has_country_leader = {
-								name = "Francisco Franco"
-								ruling_only = yes
-							}
-						}
-					}
-					retire_country_leader = yes
-				}
-				#Clean up Mola in case of double Mola
-				while_loop_effect = {
-					limit = {
-						has_country_leader = {
-							name = "Emilio Mola"
-							ruling_only = yes
-						}
-						FROM = {
-							has_country_leader = {
-								name = "Emilio Mola"
-								ruling_only = yes
-							}
-						}
-					}
-					retire_country_leader = yes
-				}
-			}
-		}
 	}
 
 	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID

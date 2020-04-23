@@ -1,3 +1,10 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
 focus_tree = {
 	id = german_focus
 
@@ -21,7 +28,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
-
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_four_year_plan
@@ -29,7 +36,6 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
-			#add_ideas = schacht
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
 		}
@@ -48,7 +54,6 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			#add_ideas = todt
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = todt
 			50 = {
@@ -1148,7 +1153,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 9
 		}
-
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_autarky
@@ -1190,7 +1195,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1269,7 +1274,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1337,7 +1342,7 @@ focus_tree = {
 		available = {
 			has_full_control_of_state = 65
 		}
-
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_coal_liquidization
@@ -1372,13 +1377,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 4
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			#modify_building_resources = {
-        	#   building = synthetic_refinery
-        	#   resource = oil
-        	#   amount = -2
-        	#}
 
         	modify_building_resources = {
         	   building = synthetic_refinery
@@ -1402,7 +1402,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -1428,7 +1428,7 @@ focus_tree = {
 				has_full_control_of_state = 54
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = GER_autobahn_tt
 			hidden_effect = {
@@ -1505,7 +1505,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			if = {
 				limit = {
@@ -1576,7 +1576,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = GER_grosraumwirtschaft
 		}
@@ -1977,6 +1977,7 @@ focus_tree = {
 			show_ideas_tooltip = ritter_von_greim
 		}
 
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 
 			air_experience = 25
@@ -2068,7 +2069,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = op_dest_bonus
@@ -2099,7 +2100,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_long_range_escorts
@@ -2125,7 +2126,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
@@ -2150,7 +2151,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			# Balance research bonus for 2 techs in battlefield_support_tree
 			add_tech_bonus = {
@@ -2179,7 +2180,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			# Balance research bonus for 2 techs under land_doctrine
 
@@ -2224,6 +2225,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			SOV = {
 				country_event = { id = germany.75 days = 1 }
@@ -2270,7 +2272,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			air_experience = 50
 
@@ -2307,7 +2309,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			# Balance research bonus to 2 techs in land_doctrine
 			army_experience = 20
@@ -2344,7 +2346,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas = GER_rocketry_idea
 			add_tech_bonus = {
@@ -2375,7 +2377,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
@@ -2403,6 +2405,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		search_filters = { FOCUS_FILTER_POLITICAL }	
 		completion_reward = {
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
@@ -2624,6 +2627,7 @@ focus_tree = {
 			create_wargoal = {
 				type = annex_everything
 				target = SOV
+				expire = 0
 			}
 		}
 	}
@@ -2710,7 +2714,7 @@ focus_tree = {
 		prerequisite = { focus = GER_rhineland }
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 549999 }
+			has_army_manpower = { size > 499999 }
 			NOT = { has_idea = rhineland_challenge_met }
 		}
 		cancel = {
@@ -2752,7 +2756,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			army_experience = 10
 			if = {
@@ -2884,6 +2888,7 @@ focus_tree = {
 				date < 1939.1.1
 			}
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			188 = { add_claim_by = GER }
 			85 = { add_claim_by = GER }
@@ -3143,6 +3148,7 @@ focus_tree = {
 				create_wargoal = {
 					type = take_state_focus
 					target = DEN
+					expire = 0
 					generator = { 37 }
 				}
 			}
@@ -3156,6 +3162,7 @@ focus_tree = {
 				create_wargoal = {
 					type = take_state_focus
 					target = NOR
+					expire = 0
 					generator = { 110 }
 				}
 			}
@@ -3254,6 +3261,7 @@ focus_tree = {
 				create_wargoal = {
 					type = take_state_focus
 					target = BEL
+					expire = 0
 					generator = { 6 }
 				}
 			}
@@ -3267,6 +3275,7 @@ focus_tree = {
 				create_wargoal = {
 					type = take_state_focus
 					target = HOL
+					expire = 0
 					generator = { 7 }
 				}
 			}
@@ -3291,6 +3300,7 @@ focus_tree = {
 				create_wargoal = {
 					type = take_state_focus
 					target = LUX
+					expire = 0
 					generator = { 8 }
 				}
 			}
@@ -3308,7 +3318,7 @@ focus_tree = {
 		will_lead_to_war_with = FRA
 		available = {
 			is_puppet = no
-			has_army_manpower = { size > 749999 } #80 div
+			has_army_manpower = { size > 724999 } #80 div		
 			NOT = {
 				AND = {
 					CZE = { is_in_faction_with = GER }
@@ -3338,6 +3348,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			if = {
 				limit = {
@@ -3408,6 +3419,7 @@ focus_tree = {
 							create_wargoal = {
 								type = take_state_focus
 								target = PREV
+								expire = 0
 								generator = { 69 }
 							}
 						}
@@ -3490,7 +3502,7 @@ focus_tree = {
 			factor = 10
 		}
 
-
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			if = {
 				limit = {
@@ -3739,6 +3751,7 @@ focus_tree = {
  			create_wargoal = {
  				type = take_state_focus
  				target = FRA
+ 				expire = 0
  				generator = { 28 }
  			}
 		}
@@ -3774,6 +3787,7 @@ focus_tree = {
 			create_wargoal = {
 				type = annex_everything
 				target = SWI
+				expire = 0
 			}
 		}
 	}
@@ -3887,7 +3901,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -3966,7 +3980,7 @@ focus_tree = {
 				category = ca_tech
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
@@ -4027,7 +4041,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -4114,7 +4128,7 @@ focus_tree = {
 				category = cv_tech
 			}
 		}
-
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			navy_experience = 50
 			random_owned_controlled_state = {
@@ -4196,6 +4210,7 @@ focus_tree = {
 			}
 		}
 
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
@@ -4243,7 +4258,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
 				name = ti_bonus
@@ -4267,7 +4282,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = GER_modular_construction
 		}
@@ -4359,6 +4374,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			add_named_threat = { threat = 2 name = GER_demand_slovenia_threat }
 			YUG = { add_opinion_modifier = { target = GER modifier = GER_demand_slovenia_YUG } }
@@ -4385,6 +4401,7 @@ focus_tree = {
 				create_wargoal = {
 					type = annex_everything
 					target = YUG
+					expire = 0
 				}
 			}
 		}
@@ -4611,6 +4628,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }	
 		completion_reward = {
 			country_event = { id = germany.98 }
 			custom_effect_tooltip = yugoslavia_mefo_bills_tt
@@ -4788,6 +4806,7 @@ focus_tree = {
 			create_wargoal = {
 				target = GRE
 				type = annex_everything
+				expire = 0
 			}
 		}
 	}

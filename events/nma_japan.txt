@@ -1,4 +1,5 @@
 add_namespace = nma_japan
+
 country_event = {
 	id = nma_japan.1
 	title = nma_japan.1.t

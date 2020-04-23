@@ -472,7 +472,7 @@ political_actions = {
 					jungle_rat
 				}
 				skill = 4
-				id = 4
+				id = 499
 				attack_skill = 3
 				defense_skill = 3
 				planning_skill = 2

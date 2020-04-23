@@ -1,3 +1,11 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+### search_filters = {FOCUS_FILTER_USA_CONGRESS}
 focus_tree = {
 	id = usa_focus
 
@@ -82,7 +90,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -114,7 +122,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_stability = -0.05
 			custom_effect_tooltip = available_political_advisor
@@ -228,7 +236,7 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
 		}
@@ -264,7 +272,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
@@ -305,7 +313,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
@@ -347,9 +355,12 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 			}
 		}
+		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
+			custom_effect_tooltip = federal_housing_tt
+			hidden_effect = {
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -415,6 +426,7 @@ focus_tree = {
 				set_state_flag = USA_federal_housing_act
 			}
 		}
+	}
 	}
 	focus = {
 		id = USA_office_of_scientific_research_and_development
@@ -440,7 +452,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -460,6 +472,7 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_rubber_reserve_company
@@ -506,7 +519,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			add_political_power = 200
 			add_ideas = USA_neutrality_act
@@ -519,7 +532,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = USA_lend_lease_act_neutrality_tt
 			hidden_effect = {
-				news_event = { id = mtg_news.3 days = 3 random = 5 }
+				news_event = { id = mtg_news.3 days = 3 random_days = 5 }
 			}
 		}
 	}
@@ -570,7 +583,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			every_other_country = {
 				limit = {
@@ -673,6 +686,7 @@ focus_tree = {
 				}
 			}
 		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			navy_experience = 50
 			army_experience = 50
@@ -1380,6 +1394,7 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
 			ENG = {
 				custom_effect_tooltip = needs_approval
@@ -1635,7 +1650,7 @@ focus_tree = {
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			if = {
 				limit = {
@@ -1720,7 +1735,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			army_experience = 20
 			add_tech_bonus = {
@@ -1832,7 +1847,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_support_rock_island
@@ -1867,7 +1882,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
@@ -1963,7 +1978,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
@@ -2055,7 +2070,7 @@ focus_tree = {
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -2123,6 +2138,7 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
 			air_experience = 25
@@ -2149,6 +2165,7 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2184,6 +2201,7 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
 			air_experience = 25
@@ -2220,6 +2238,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2256,6 +2275,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2290,6 +2310,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
 			add_ideas = USA_us_air_force
@@ -2356,7 +2377,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = {FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			if = {
 				limit = {
@@ -2486,6 +2507,7 @@ focus_tree = {
 		#}
 
 		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
 			add_tech_bonus = {
@@ -2511,10 +2533,12 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_advanced_mahanian_doctrine
 				bonus = 1.0
+				uses = 1
 				category = cat_base_strike
 			}
 		}
@@ -2589,6 +2613,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_carrier_primacy
@@ -2613,6 +2638,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_bureau_of_aeronautics
@@ -2648,6 +2674,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_naval_radar
@@ -2693,6 +2720,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -2728,6 +2756,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_fleet_submarines
@@ -2788,6 +2817,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_fund_the_navy
@@ -2812,6 +2842,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_expand_the_USMC
@@ -2837,6 +2868,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_amphibious_operations

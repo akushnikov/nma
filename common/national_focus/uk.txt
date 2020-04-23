@@ -1,3 +1,10 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
 focus_tree = {
 	id = british_focus
 
@@ -46,7 +53,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = codebreaking_bonus
@@ -92,6 +99,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
 			USA = {
 				country_event = britain.1
@@ -112,7 +120,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = maud_focus
@@ -150,7 +158,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = ENG_limited_rearmament_focus_2IC }
@@ -162,7 +170,7 @@ focus_tree = {
 				}
 			}
 		}
-
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -215,7 +223,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -236,7 +244,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		available_if_capitulated = yes
 
 		completion_reward = {
@@ -537,7 +545,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -586,6 +594,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
 			custom_effect_tooltip = shadow_scheme_focus_tt
 			add_ideas = wartime_industry_focus
@@ -606,7 +615,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -628,7 +637,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_research_slot = 1
 		}
@@ -670,6 +679,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
 			add_ideas = british_austerity_idea
 		}
@@ -774,6 +784,7 @@ focus_tree = {
 			}
 
 		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -842,7 +853,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = british_arms_discount
 		}
@@ -861,7 +872,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = UK_secret_focus
@@ -1131,7 +1142,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1156,7 +1167,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1181,7 +1192,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
@@ -1206,7 +1217,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = british_fighter_discount
 		}
@@ -1224,7 +1235,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_jet_focus
@@ -1351,7 +1362,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_anti_non_contact_committee
@@ -1389,7 +1400,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = no
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_secure_the_imperial_shipping_routes
@@ -1414,7 +1425,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
@@ -1442,7 +1453,7 @@ focus_tree = {
 		allow_branch = {
 			has_dlc = "Man the Guns"
 		}
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_asw_warfare
@@ -1493,7 +1504,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = ENG_anti_submarine_training_school
@@ -1518,7 +1529,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_waves_focus
@@ -1542,7 +1553,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1568,7 +1579,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -1592,7 +1603,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
 				name = uk_amphibious_focus
@@ -1774,7 +1785,7 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_stability = 0.1
 		}

@@ -4119,7 +4119,7 @@ news_event = {
 		}
 	}
 	option = {
-		name = news.134.b
+		name = news.145.a
 		trigger = {
 			OR = {
 				TAG = ENG
@@ -4766,7 +4766,10 @@ news_event = {
 		}
 		118 = { is_owned_by = ENG }
 		NOT = {
-			SPR = { has_civil_war = yes }
+			AND = {
+				has_global_flag = spanish_civil_war
+				NOT = { has_global_flag = scw_over }
+			}
 		}
 		NOT = { has_global_flag = fall_of_gibraltar_spa }
 	}

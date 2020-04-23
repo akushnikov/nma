@@ -279,7 +279,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 283
 		}
 		visible = {
@@ -375,7 +375,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -446,7 +446,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -502,7 +502,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 591
 		}
 		visible = {
@@ -599,7 +599,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -670,7 +670,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -726,7 +726,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 592
 		}
 
@@ -824,7 +824,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -895,7 +895,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -951,7 +951,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 593
 		}
 
@@ -1049,7 +1049,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1120,7 +1120,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1176,7 +1176,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 594
 		}
 
@@ -1274,7 +1274,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1345,7 +1345,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1401,7 +1401,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 595
 		}
 
@@ -1499,7 +1499,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1570,7 +1570,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1626,7 +1626,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 596
 		}
 
@@ -1724,7 +1724,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1795,7 +1795,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -1851,7 +1851,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 597
 		}
 
@@ -1949,7 +1949,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2020,7 +2020,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2076,7 +2076,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 598
 		}
 		visible = {
@@ -2173,7 +2173,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2244,7 +2244,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2300,7 +2300,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 599
 		}
 
@@ -2398,7 +2398,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2469,7 +2469,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2525,7 +2525,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 600
 		}
 
@@ -2623,7 +2623,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2694,7 +2694,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2749,8 +2749,8 @@ CHI_industrial_evacuations = {
 					industrial_complex > 0
 				}
 			}
-		}
-		highlight_states = {
+		}	
+		highlight_state_targets = {
 			state = 602
 		}
 		visible = {
@@ -2847,7 +2847,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2918,7 +2918,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -2981,7 +2981,7 @@ CHI_industrial_evacuations = {
 				is_controlled_by = ROOT
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 606
 		}
 
@@ -3072,7 +3072,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3143,7 +3143,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3199,7 +3199,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 607
 		}
 		visible = {
@@ -3296,7 +3296,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3367,7 +3367,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3423,7 +3423,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 608
 		}
 
@@ -3521,7 +3521,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3592,7 +3592,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3648,7 +3648,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 613
 		}
 		visible = {
@@ -3745,7 +3745,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3816,7 +3816,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -3872,7 +3872,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 614
 		}
 		visible = {
@@ -3969,7 +3969,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4040,7 +4040,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4096,7 +4096,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 616
 		}
 		visible = {
@@ -4193,7 +4193,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4264,7 +4264,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4320,7 +4320,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 620
 		}
 		visible = {
@@ -4417,7 +4417,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4488,7 +4488,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4544,7 +4544,7 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 743
 		}
 		visible = {
@@ -4641,7 +4641,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_AF }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -4712,7 +4712,7 @@ CHI_industrial_evacuations = {
 							limit = {
 								NOT = { has_country_flag = CHI_industrial_evacuations_moved_IC }
 								NOT = {
-									any_state = {
+									any_controlled_state = {
 										is_fully_controlled_by = ROOT
 										any_neighbor_state = {
 											is_controlled_by = ROOT
@@ -5122,20 +5122,17 @@ CHI_communist_infiltration = {
 			modifier = {
 				add = 85
 				NOT = {
-					any_state = {
 						OR = {
-							state = 283
-							state = 597
-							state = 598
-							state = 607
-							state = 608
-							state = 614
-							state = 615
-							state = 621
-							state = 744
-							state = 746
-						}
-						has_state_flag = discovered_infiltration
+						283 = { has_state_flag = discovered_infiltration }
+						597 = { has_state_flag = discovered_infiltration }
+						598 = { has_state_flag = discovered_infiltration }
+						607 = { has_state_flag = discovered_infiltration }
+						608 = { has_state_flag = discovered_infiltration }
+						614 = { has_state_flag = discovered_infiltration }
+						615 = { has_state_flag = discovered_infiltration }
+						621 = { has_state_flag = discovered_infiltration }
+						744 = { has_state_flag = discovered_infiltration }
+						746 = { has_state_flag = discovered_infiltration }
 					}
 				}
 			}
@@ -5161,7 +5158,7 @@ CHI_communist_infiltration = {
 			has_equipment = { infantry_equipment > 999 }
 		}
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 283
 		}
 
@@ -5223,7 +5220,7 @@ CHI_communist_infiltration = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 597
 		}
 
@@ -5285,7 +5282,7 @@ CHI_communist_infiltration = {
 			has_equipment = { infantry_equipment > 999 }
 		}
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 598
 		}
 
@@ -5356,7 +5353,7 @@ CHI_communist_infiltration = {
 				}
 			}
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 607
 		}
 
@@ -5407,7 +5404,7 @@ CHI_communist_infiltration = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 608
 		}
 
@@ -5468,7 +5465,7 @@ CHI_communist_infiltration = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 614
 		}
 
@@ -5529,7 +5526,7 @@ CHI_communist_infiltration = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 615
 		}
 
@@ -5590,7 +5587,7 @@ CHI_communist_infiltration = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 621
 		}
 
@@ -5651,7 +5648,7 @@ CHI_communist_infiltration = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 744
 		}
 
@@ -5712,7 +5709,7 @@ CHI_communist_infiltration = {
 		available = {
 			has_equipment = { infantry_equipment > 999 }
 		}
-		highlight_states = {
+		highlight_state_targets = {
 			state = 746
 		}
 
@@ -5879,34 +5876,6 @@ foreign_support = {
 				has_completed_focus = uk_burma_focus
 			}
 
-			288 = {
-				CONTROLLER = {
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
-			640 = {
-				CONTROLLER = {
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
-			325 = {
-				CONTROLLER = {
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
-			747 = {
-				CONTROLLER = {
-					NOT = {
-						has_war_with = ROOT
-					}
-				}
-			}
 
 			any_state = {
 				OR = {
@@ -5916,22 +5885,22 @@ foreign_support = {
 					state = 747
 				}
 				CONTROLLER = {
+					NOT = { has_War_with = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = burma_road_expansion_tt
 					OR = {
 						has_completed_focus = uk_burma_focus
 						has_completed_focus = CHI_burma_road
 						AND = {
+								OR = {
 							is_in_faction_with = ROOT
-							has_completed_focus = uk_burma_focus
-							has_completed_focus = CHI_burma_road
-						}
-						if = {
-							limit = {
-								is_subject = yes
+									is_subject_of = ROOT
 							}
-							OVERLORD = {
+								ROOT = {
 								OR = {
 									has_completed_focus = uk_burma_focus
 									has_completed_focus = CHI_burma_road
+									}
 								}
 							}
 						}
@@ -5947,16 +5916,12 @@ foreign_support = {
 				has_focus_tree = british_focus
 			}
 			OR = {
-				AND = {
-					OR = {
-						controls_state = 325
 						325 = {
 							CONTROLLER = {
 								OR = {
+							tag = ROOT
 									is_subject_of = ROOT
 									is_in_faction_with = ROOT
-								}
-							}
 						}
 					}
 				}
@@ -6376,6 +6341,7 @@ political_actions = {
 		}
 		visible = {
 			has_war = no
+			is_subject = no
 			OR = {
 				has_full_control_of_state = 608
 				has_full_control_of_state = 613

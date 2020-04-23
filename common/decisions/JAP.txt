@@ -11,9 +11,8 @@ JAP_intervene_in_china = {
 
 		visible = {
 			JAP_has_idea_JAP_intervene_in_china = yes
-			any_country = {
+			any_enemy_country = {
 				is_literally_china = yes
-				has_war_with = ROOT
 			}
 		}
 
@@ -61,9 +60,11 @@ JAP_intervene_in_china = {
 
 		visible = {
 			has_completed_focus = JAP_secure_china
-			any_country = {
+			any_enemy_country = {
 				is_literally_china = yes
-				has_war_with = ROOT
+			}
+			event_target:WTT_current_china_leader = {
+				NOT = { is_puppet_of = JAP }
 			}
 		}
 
@@ -112,9 +113,8 @@ JAP_intervene_in_china = {
 
 		visible = {
 			JAP_has_idea_JAP_intervene_in_china = yes
-			any_country = {
+			any_enemy_country = {
 				is_literally_china = yes
-				has_war_with = ROOT
 			}
 		}
 
@@ -596,20 +596,23 @@ foreign_politics = {
 					controls_state = 527
 				}
 				NOT = {
-					any_state = {
-						is_core_of = CHI
+					any_of = {
+						array = CHI.core_states
+						var:v = {
 						NOT = {
 							state = 524
 						}
+							controller = {
 						OR = {
-							is_controlled_by = JAP
+									tag = JAP
 							AND = {
-								is_controlled_by = MEN
-								MEN = { is_subject_of = JAP }
+										is_subject_of = JAP
+										OR = {
+											tag = MEN
+											tag = MAN
 							}
-							AND = {
-								is_controlled_by = MAN
-								MAN = { is_subject_of = JAP }
+									}
+								}
 							}
 						}
 					}
@@ -626,19 +629,19 @@ foreign_politics = {
 			}
 		}
 
+		target_array = enemies
 		target_trigger = {
 			#Target is FROM
 			FROM = {
 				tag = event_target:WTT_current_china_leader
-				has_war_with = JAP
+				has_war_with = ROOT
 			}
 		}
 
 		visible = {
-			tag = JAP
-			any_country = {
+			FROM = { exists = yes }
+			any_enemy_country = {
 				is_literally_china = yes
-				has_war_with = JAP
 			}
 		}
 
@@ -674,16 +677,20 @@ foreign_politics = {
 					controls_state = 527
 				}
 				NOT = {
-					any_state = {
-						is_core_of = CHI
+					any_of = {
+						array = CHI.core_states
+						var:v = {
 						NOT = {
 							state = 524
 						}
+							controller = {
 						OR = {
-							is_controlled_by = JAP
+									tag = JAP
 							AND = {
-								is_controlled_by = MEN
-								MEN = { is_subject_of = JAP }
+										is_subject_of = JAP
+										tag = MEN
+									}
+								}
 							}
 						}
 					}
@@ -691,17 +698,18 @@ foreign_politics = {
 			}
 		}
 
+		targets = { MAN }
 		target_trigger = {
 			#Target is FROM
 			FROM = {
 				tag = MAN
-				has_war_with = JAP
+				has_war_with = ROOT
 			}
 		}
 
 		visible = {
-			tag = JAP
-			has_war_with = MAN
+			FROM = { exists = yes }
+			has_war_with = FROM
 		}
 
 		cost = 0
@@ -1052,12 +1060,11 @@ operations = {
 			}
 		}
 
-		highlight_states = {
-			OR = {
+		highlight_state_targets = {
 				state = 408
 				state = 527
-			}
 		}
+		
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 1
@@ -1104,6 +1111,8 @@ operations = {
 		war_with_target_on_timeout = yes
 		ai_will_do = {
 			base = 0
+			modifier = {
+			}
 		}
 
 		days_mission_timeout = 30
@@ -1197,11 +1206,9 @@ operations = {
 			hidden_trigger = { always = no }
 		}
 
-		highlight_states = {
-			OR = {
+		highlight_state_targets = {
 				state = 527
 				state = 408
-			}
 		}
 
 		ai_will_do = {
@@ -1258,11 +1265,9 @@ operations = {
 			}
 		}
 
-		highlight_states = {
-			OR = {
+		highlight_state_targets = {
 				state = 527
 				state = 408
-			}
 		}
 
 		ai_will_do = {
@@ -1315,11 +1320,9 @@ operations = {
 			408 = { has_border_war = no }
 		}
 
-		highlight_states = {
-			OR = {
+		highlight_state_targets = {
 				state = 408
 				state = 527
-			}
 		}
 
 		ai_will_do = {
@@ -1358,11 +1361,9 @@ operations = {
 			has_border_war_with = FROM
 		}
 
-		highlight_states = {
-			OR = {
+		highlight_state_targets = {
 				state = 527
 				state = 408
-			}
 		}
 
 		cost = 200
@@ -1421,11 +1422,9 @@ operations = {
 			has_border_war_with = FROM
 		}
 
-		highlight_states = {
-			OR = {
+		highlight_state_targets = {
 				state = 408
 				state = 527
-			}
 		}
 
 		cost = 150
@@ -1497,11 +1496,9 @@ operations = {
 			has_border_war_with = FROM
 		}
 
-		highlight_states = {
-			OR = {
+		highlight_state_targets = {
 				state = 527
 				state = 408
-			}
 		}
 
 		ai_will_do = {
@@ -1588,7 +1585,7 @@ prospect_for_resources = {
 	JAP_develop_luzon_chromium_deposits = { #623
 		icon = chromium
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 623
 		}
 
@@ -1637,7 +1634,7 @@ prospect_for_resources = {
 	JAP_develop_mindanao_steel_deposits = { #627
 		icon = steel
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 627
 		}
 
@@ -1686,7 +1683,7 @@ prospect_for_resources = {
 	JAP_develop_samar_steel_deposits = { #625
 		icon = steel
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 625
 		}
 
@@ -1739,7 +1736,7 @@ prospect_for_resources = {
 			original_tag = JAP
 		}
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 725
 		}
 
@@ -1883,7 +1880,7 @@ prospect_for_resources = {
 
 		icon = aluminium
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 597
 		}
 
@@ -1933,7 +1930,7 @@ prospect_for_resources = {
 
 		icon = steel
 
-		highlight_states = {
+		highlight_state_targets = {
 			state = 621
 		}
 

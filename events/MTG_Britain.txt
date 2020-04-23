@@ -27,7 +27,7 @@ country_event = {
 		}
 		add_stability = 0.05
 		set_country_flag = ENG_edward_abdicating
-		country_event = { id = mtg_britain.14 days = 5 random = 5 }
+		country_event = { id = mtg_britain.14 days = 5 random_days = 5 }
 	}
 
 }
@@ -45,6 +45,7 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = ENG_king_edward
 			add_ideas = ENG_george_vi
+			set_country_flag = ENG_edward_viii_abdicated
 		}
 	}
 

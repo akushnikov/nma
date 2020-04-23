@@ -101,7 +101,7 @@ political_actions = {
 		available = {
 			has_war = no
 			has_war_support > 0.2
-			has_stability < 1
+			has_stability < 1.0
 		}
 		visible = {
 			always = yes
@@ -564,11 +564,8 @@ operations = {
 		}
 		visible = {
 			has_war = yes
-			NOT = {
-				has_global_flag = PANAMA_CANAL_BLOCKED
-			}
-			any_state = {
-				is_controlled_by = ROOT
+			NOT = { has_global_flag = PANAMA_CANAL_BLOCKED }
+			any_controlled_state = {
 				OR = {
 					region = 34
 					region = 124

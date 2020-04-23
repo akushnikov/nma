@@ -17,7 +17,7 @@ state={
 
 		}
 		victory_points = {
-			1591 1 
+			1591 3 
 		}
 		add_core_of = SOV
 		1939.1.1 = {
