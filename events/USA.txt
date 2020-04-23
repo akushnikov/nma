@@ -40,51 +40,6 @@ country_event = {
 	}
 }
 
-# Pearl Harbor Gambit
-country_event = {
-	id = usa.3
-	title = usa.3.t
-	desc = usa.3.d
-	picture = GFX_report_event_usa_pearl_harbor_airphoto
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = JAP
-		USA = {
-			focus_progress = {
-				focus = USA_pearl_harbor_gambit
-				progress > 0.1
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 21
-		modifier = {
-			factor = 0.5
-			USA = {
-				focus_progress = {
-					focus = USA_pearl_harbor_gambit
-					progress > 0.6
-				}
-			}
-		}
-	}
-
-	option = {
-		name = usa.3.a
-		USA = {
-			add_war_support = 0.5
-		}
-		create_wargoal = {
-			type = take_state
-			target = USA
-			generator = { 629 } # Hawaii
-		}
-	}
-}
-
 # Destroyers for Bases
 country_event = {
 	id = usa.4

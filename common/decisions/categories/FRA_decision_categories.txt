@@ -7,7 +7,7 @@ FRA_vichy_france = {
 
 VIC_concessions_to_the_germans = {
 	allowed = {
-		tag = EFR
+		original_tag = FRA
 	}
 	visible = {
 		OR = {

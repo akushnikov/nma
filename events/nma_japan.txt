@@ -63,9 +63,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					MAL = {
-						country_exists = yes
-					}
+					country_exists = MAL
 				}
 				declare_war_on = {
 					target = MAL

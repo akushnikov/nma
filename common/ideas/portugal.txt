@@ -626,14 +626,6 @@ ideas = {
 				tag = SPA
 				attack_bonus_against = 0.1
 			}
-			targeted_modifier = {
-				tag = SPB
-				attack_bonus_against = 0.1
-			}
-			targeted_modifier = {
-				tag = SPC
-				attack_bonus_against = 0.1
-			}
 		}
 
 		POR_standardization = {
@@ -1058,8 +1050,6 @@ ideas = {
 				}
 				
 				traits = { navy_fleet_logistics_2 }
-
-				ledger = navy
 				
 				ai_will_do = {
 					factor = 1
@@ -1077,8 +1067,6 @@ ideas = {
 				}
 				
 				traits = { army_logistics_2 }
-
-				ledger = army
 				
 				ai_will_do = {
 					factor = 1
@@ -1096,8 +1084,6 @@ ideas = {
 				}
 				
 				traits = { army_infantry_2 }
-
-				ledger = army
 				
 				ai_will_do = {
 					factor = 1
@@ -1114,8 +1100,6 @@ ideas = {
 				}
 				
 				traits = { army_artillery_2 }
-
-				ledger = army
 				
 				ai_will_do = {
 					factor = 1

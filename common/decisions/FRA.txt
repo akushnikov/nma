@@ -97,6 +97,7 @@ FRA_vichy_france = {
 			custom_effect_tooltip = GAME_OVER_TT
 		}
 	}
+
 	FRA_demand_unification_with_vichy = {
 		available = {
 			VIC = {
@@ -128,6 +129,7 @@ FRA_vichy_france = {
 			}
 		}
 	}
+	
 	FRA_failsafe_join_axis = {
 		available = {
 			tag = VIC

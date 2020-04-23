@@ -1,14 +1,13 @@
-state=
-{
-	id=649
-	name="STATE_649"
+state = {
+	id = 649
+	name = "STATE_649"
 	state_category = tiny_island
-	manpower=1
-	history=
-	{
+	manpower = 1
+	history = {
 		owner = ETH
 		victory_points = {
-			5023 1
+			5023
+			1
 		}
 		buildings = {
 			infrastructure = 2
@@ -18,5 +17,7 @@ state=
 		}
 		add_core_of = ETH
 	}
-	provinces= { 5023 }
+	provinces = {
+		5023
+	}
 }

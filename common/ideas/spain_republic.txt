@@ -678,8 +678,6 @@ ideas = {
 				}
 			}
 
-			research_bonus = {
-			}
 
 			traits = { construction_company }
 

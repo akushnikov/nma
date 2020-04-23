@@ -45,9 +45,9 @@ democratic_on_the_rise = {
 		icon = generic_political_discourse
 
 		allowed = {
-		original_tag = MEX
-		original_tag = MEX
-		original_tag = RAJ
+			original_tag = MEX
+			original_tag = MEX
+			original_tag = RAJ
 		}
 
 		available = {
@@ -98,10 +98,10 @@ political_actions = {
             }
         }
 
-	visible = {
+		visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
-	}
+		}
 
         cost = 100
         fire_only_once = yes
@@ -148,9 +148,9 @@ political_actions = {
                 original_tag = FRA
                 original_tag = CAN
             }
-	}
+		}
 
-	visible = {
+		visible = {
             NOT = { has_government = fascism }
             NOT = { has_government = communism }
         }

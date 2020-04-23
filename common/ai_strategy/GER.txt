@@ -816,6 +816,7 @@ GER_naval_role_ratios_historical = {
 		id = naval_submarine
 		value = 200
 	}
+	
 	ai_strategy = {
 		type = role_ratio
 		id = submarine
