@@ -8,7 +8,7 @@ set_technology = {
 	tech_mountaineers = 1
 }
 
-add_ideas = you_shall_not_fall
+# add_ideas = you_shall_not_fall
 
 set_convoys = 5
 
