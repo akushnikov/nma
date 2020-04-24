@@ -3067,6 +3067,18 @@ focus_tree = {
 						custom_effect_tooltip = GER_danzig_or_war_POL_faction_GER_noleader
 					}
 				}
+				hidden_effect = {
+					ENG = {
+						if = {
+							limit = {
+								NOT = { has_guaranteed = POL }
+							}
+							
+							give_guarantee = POL
+							add_political_power = -25
+						}
+					}
+				}
 			}
 			if = {
 				limit = {
