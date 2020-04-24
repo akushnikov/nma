@@ -1,6 +1,14 @@
 on_actions = {
   on_startup = {
     effect = {
+
+      every_country = {
+        limit = {
+          is_faction_leader = yes
+        }
+        set_faction_spymaster = yes
+      }
+
       GER = {
         # initialize array of minelaying countries
         init_minelaying_countries_array = yes
