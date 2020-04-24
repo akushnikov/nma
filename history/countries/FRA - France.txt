@@ -241,7 +241,6 @@ add_ideas = {
 }
 
 give_guarantee = CZE
-give_guarantee = YUG
 give_guarantee = ROM
 
 #Order matters here Daladier will start as leaders because added last
