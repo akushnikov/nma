@@ -520,21 +520,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			unlock_decision_tooltip = {
-				decision = SAF_secure_rhodesia
-				show_effect_tooltip = no
-				show_modifiers = no
-			}
-			unlock_decision_tooltip = {
-				decision = SAF_secure_east_africa
-				show_effect_tooltip = no
-				show_modifiers = no
-			}
-			unlock_decision_tooltip = {
-				decision = SAF_secure_zambia
-				show_effect_tooltip = no
-				show_modifiers = no
-			}
+			unlock_decision_tooltip = SAF_secure_rhodesia
+			unlock_decision_tooltip = SAF_secure_east_africa
+			unlock_decision_tooltip = SAF_secure_zambia
 		#ENG = { custom_effect_tooltip = needs_approval
 		#		country_event = tfv_south_africa.1
 		#		}

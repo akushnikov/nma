@@ -11,8 +11,7 @@ set_technology = {
 }
 
 add_ideas = {
-	extreme_neutrality
-	free_trade
+	moderate_neutrality
 }
 
 set_country_flag = monroe_doctrine
