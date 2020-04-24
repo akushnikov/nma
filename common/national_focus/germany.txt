@@ -3367,18 +3367,13 @@ focus_tree = {
 					CZE = { NOT = { is_in_faction_with = GER } }
 					CZE = { NOT = { has_war_with = ENG } }
 					CZE = { controls_state = 69 }
-					OR = {
-						CZE = {
-							has_country_flag = HUN_AH_CZE_refused
-						}
-					}
 				}
 				ENG = {
 					country_event = germany.40
 				}
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 			}
-			if = {
+			if = { # idk why is this even possible but it is
 				limit = {
 					HOL = { exists = yes }
 					HOL = { is_subject = no }
@@ -3389,11 +3384,6 @@ focus_tree = {
 					CZE = { is_subject = no }
 					CZE = { is_in_faction_with = HOL }
 					CZE = { controls_state = 69 }
-					OR = {
-						CZE = {
-							has_country_flag = HUN_AH_CZE_refused
-						}
-					}
 				}
 				HOL = {
 					country_event = germany.40
@@ -3402,29 +3392,6 @@ focus_tree = {
 			}
 			69 = {
 				add_claim_by = GER
-			}
-			if = {
-				limit = {
-					NOT = { CZE = { controls_state = 69 } }
-					69 = {
-						controller = {
-							NOT = { is_in_faction_with = GER }
-						}
-					}
-				}
-				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
-				69 = {
-					controller = {
-						GER = {
-							create_wargoal = {
-								type = take_state_focus
-								target = PREV
-								expire = 0
-								generator = { 69 }
-							}
-						}
-					}
-				}
 			}
 		}
 	}
