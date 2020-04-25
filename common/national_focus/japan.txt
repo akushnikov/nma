@@ -116,7 +116,6 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
-			add_ideas = kenpeitai
 			set_faction_spymaster = yes
 
 			hidden_effect = {
@@ -980,6 +979,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
+			add_ideas = kenpeitai
 			if = {
 				limit = {
 					has_war_support < 0.5
