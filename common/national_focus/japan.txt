@@ -552,6 +552,31 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = tooltip_jap_war
 			country_event = { id = nma_japan.1 }
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { country_exists = MAL }
+					}
+
+					for_each_scope_loop = {
+						array = faction_members
+
+						if = {
+							limit = {
+								has_collaboration = {
+									target = MAL
+									value < 0.7
+								}
+							}
+
+							set_collaboration = {
+								target = MAL
+								value = 0.7
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
