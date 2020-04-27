@@ -19,7 +19,17 @@ nma_annex_subjects = {
 			country_exists = FROM
 			FROM = {
 				is_ai = yes
-			}
+      }
+      
+      any_state = {
+        is_core_of = FROM
+
+        CONTROLLER = {
+          NOT = {
+            has_war_with = ROOT
+          }
+        }
+      }
 		}
 
     target_root_trigger = {
@@ -63,12 +73,26 @@ nma_annex_subjects = {
 			country_exists = MAL
 			MAL = {
 				is_ai = yes
-			}
+      }
+      
+      any_state = {
+        is_core_of = FROM
+
+        CONTROLLER = {
+          NOT = {
+            has_war_with = ROOT
+          }
+        }
+      }
 		}
 
 		target_root_trigger = {
 			original_tag = ENG
-		}
+    }
+    
+    targets = {
+      MAL
+    }
 
 		target_trigger = {
 			FROM = {
@@ -92,6 +116,8 @@ nma_annex_subjects = {
 
     visible = {
       can_annex_minors = yes
+      SIA = { is_ai = yes }
+      country_exists = SIA
     }
 
 		allowed = {
@@ -107,17 +133,26 @@ nma_annex_subjects = {
 				country_exists = PRC
         country_exists = GXC
 				country_exists = XSM
-			}
-		}
+      }
+      
+      any_state = {
+        is_core_of = FROM
 
-		visible = {
-      SIA = { is_ai = yes }
-      country_exists = SIA
-  	}
+        CONTROLLER = {
+          NOT = {
+            has_war_with = ROOT
+          }
+        }
+      }
+		}
 
     target_root_trigger = {
 			original_tag = JAP
-		}
+    }
+    
+    targets = {
+      SIA
+    }
 
 		target_trigger = {
 			FROM = {
@@ -156,10 +191,24 @@ nma_annex_subjects = {
       NZL = {
         is_ai = yes
       }
+
+      any_state = {
+        is_core_of = FROM
+
+        CONTROLLER = {
+          NOT = {
+            has_war_with = ROOT
+          }
+        }
+      }
     }
 
     target_root_trigger = {
       original_tag = AST
+    }
+
+    targets = {
+      NZL
     }
 
     target_trigger = {
