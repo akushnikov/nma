@@ -120,4 +120,53 @@ on_actions = {
       }
     }
   }
+
+  on_state_control_changed = {
+    effect = {
+      set_temp_variable = {
+        current_state = FROM.FROM
+      }
+
+      if = {
+        limit = {
+          
+          ROOT = {
+            OR = {
+              original_tag = JAP
+              is_in_faction_with = JAP
+            }
+            all_enemy_country = {
+              divisions_in_state = {
+                size < 1
+                state = current_state
+              }
+            }
+          }
+
+          var:current_state = {
+            OR = {
+              region = 83       # Solomon Sea
+              region = 91       # Arafura Sea
+              region = 93       # Java Sea
+              region = 97       # Eastern Micronesia
+              region = 105      # Hawaii Ridge
+              region = 158      # Sunda Islands
+              region = 159      # Borneo
+              region = 160      # Philippines
+              region = 167      # New Guinea
+              region = 172      # Pacific Line Ridge
+              region = 178      # West Polynesia
+              region = 179      # French Polynesia
+              region = 187      # Sumatra              
+            }
+          }
+
+        }
+        log = "[?current_state.GetName] goes to [ROOT.GetName]"
+        ROOT = {
+          set_state_controller = current_state
+        }
+      }
+    }
+  }
 }
