@@ -200,7 +200,6 @@ on_actions = {
         }
         
         ROOT = {
-          white_peace = FROM
           set_country_flag = grind_time_has_gone
         }
 
@@ -209,6 +208,10 @@ on_actions = {
             ROOT = {
               original_tag = ETH
             }            
+          }
+
+          ROOT = {
+            white_peace = FROM
           }
 
           FROM = {

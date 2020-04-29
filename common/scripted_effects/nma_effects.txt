@@ -26,15 +26,15 @@ init_minelaying_countries_array = {
 }
 
 init_united_front_countries_array = {
-  clear_array = united_front_countries
+  clear_array = GLOBAL.united_front_countries
 
-  add_to_array = { united_front_countries = CHI }
-  add_to_array = { united_front_countries = PRC }
-  add_to_array = { united_front_countries = YUN }
-  add_to_array = { united_front_countries = SIK }
-  add_to_array = { united_front_countries = XSM }
-  add_to_array = { united_front_countries = GXC }
-  add_to_array = { united_front_countries = SHX }
+  add_to_array = { GLOBAL.united_front_countries = CHI }
+  add_to_array = { GLOBAL.united_front_countries = PRC }
+  add_to_array = { GLOBAL.united_front_countries = YUN }
+  add_to_array = { GLOBAL.united_front_countries = SIK }
+  add_to_array = { GLOBAL.united_front_countries = XSM }
+  add_to_array = { GLOBAL.united_front_countries = GXC }
+  add_to_array = { GLOBAL.united_front_countries = SHX }
 }
 
 init_uk_dominions_array = {
@@ -76,7 +76,7 @@ ensure_united_front_exists = {
   }
 
   for_each_scope_loop = {
-    array = united_front_countries
+    array = GLOBAL.united_front_countries
 
     if = {
       limit = {
