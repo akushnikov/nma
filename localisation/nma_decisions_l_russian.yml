@@ -19,3 +19,7 @@
  ENG_permit_AST_desc:0 "Новая Зеландия слишком далеко от нашей метрополии и мы не можем позволить себе отвлекаться на Тихий океан, лучше отдать эти территории Австралии."
  ROOT_finish_war_puppeting_FROM:0 "Сделать из государства [From.GetNameDef] марионетку"
  ROOT_finish_war_annexing_FROM:0 "Теперь [From.GetNameDef] принедлежит нам!"
+ nma_anti_grind_decisions:0 "Ограничение фарма"
+ ITA_grinding_ETH_mission:0 "Фарм Эфиопии"
+ ITA_grinding_YUG_mission:0 "Фарм Югославии"
+ ITA_grinding_GRE_mission:0 "Фарм Греции"

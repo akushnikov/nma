@@ -1,7 +1,6 @@
 on_actions = {
   on_startup = {
     effect = {
-
       every_country = {
         limit = {
           is_faction_leader = yes
@@ -12,6 +11,8 @@ on_actions = {
       GER = {
         # initialize array of minelaying countries
         init_minelaying_countries_array = yes
+        # initialize countries to grind array
+        init_grinding_period = yes
 
         # loop by minelaying countries, giving them back their damn minelayers
         if = {
@@ -62,6 +63,20 @@ on_actions = {
         }
 
       }
+
+      # if = {
+      #   limit = {
+      #     is_debug = yes
+      #   }
+
+      #   every_country = {
+      #     print_variables = {
+      #       file = "variable_dump"
+      #       append = yes
+      #       print_global = yes
+      #     }
+      #   }
+      # }
     }
   }
 
@@ -165,6 +180,40 @@ on_actions = {
         log = "[?current_state.GetName] goes to [ROOT.GetName]"
         ROOT = {
           set_state_controller = current_state
+        }
+      }
+    }
+  }
+
+  # ROOT is capitulated country, FROM is winner
+  on_capitulation = {
+    effect = {
+      if = {
+        limit = {
+          is_in_array = {
+            array = GLOBAL.grind_countries
+            value = ROOT
+          }
+          check_variable = {
+            ROOT.grinding_period > 0
+          }
+        }
+        
+        ROOT = {
+          white_peace = FROM
+          set_country_flag = grind_time_has_gone
+        }
+
+        if = {
+          limit = {
+            ROOT = {
+              original_tag = ETH
+            }            
+          }
+
+          FROM = {
+            country_event = nma_grinding.1
+          }
         }
       }
     }

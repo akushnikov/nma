@@ -1,103 +1,104 @@
 nma_anti_grind_decisions = {
-	# ITA_grinding_ETH_mission = {
-	# 	icon = generic_scorched_earth
-	# 	days_mission_timeout = ETH.grinding_period?0
-	# 	is_good = no
-	# 	allowed = {
-	# 		original_tag = ITA
-	# 	}
-	# 	available = {
-	# 		ETH = {
-	# 			is_done = yes
-	# 		}
-	# 	}
-	# 	activation = {
-	# 		# ETH = { is_allowed_to_grind = yes }
-	# 	}
-	# 	complete_effect = {
-	# 	}
-	# 	timeout_effect = {
-	# 		white_peace = ETH
-	# 		hidden_effect = {
-	# 			ETH = {
-	# 				# cleanup_grinding_mess = yes
-	# 				# cleanup_state_juggling_mess = yes
-	# 			}
-	# 		}
-	# 		country_event = {
-	# 			id = nma_grinding.2
-	# 		}
-	# 	}
-	# }
-	# ITA_grinding_YUG_mission = {
-	# 	icon = generic_scorched_earth
-	# 	days_mission_timeout = YUG.grinding_period?0
-	# 	is_good = no
-	# 	allowed = {
-	# 		original_tag = ITA
-	# 	}
-	# 	available = {
-	# 		YUG = {
-	# 			is_done = yes
-	# 		}
-	# 	}
-	# 	activation = {
-	# 		# YUG = { is_allowed_to_grind = yes }
-	# 	}
-	# 	complete_effect = {
-	# 	}
-	# 	timeout_effect = {
-	# 		for_each_scope_loop = {
-	# 			array = faction_members
-	# 			if = {
-	# 				limit = {
-	# 					has_war_with = YUG
-	# 				}
-	# 				white_peace = YUG
-	# 			}
-	# 		}
-	# 		YUG = {
-	# 			# cleanup_grinding_mess = yes
-	# 			# cleanup_state_juggling_mess = yes
-	# 		}
-	# 		country_event = {
-	# 			id = nma_grinding.4
-	# 		}
-	# 	}
-	# }
-	# ITA_grinding_GRE_mission = {
-	# 	icon = generic_scorched_earth
-	# 	days_mission_timeout = GRE.grinding_period?0
-	# 	is_good = no
-	# 	allowed = {
-	# 		original_tag = ITA
-	# 	}
-	# 	available = {
-	# 		GRE = {
-	# 			is_done = yes
-	# 		}
-	# 	}
-	# 	activation = {
-	# 		# GRE = { is_allowed_to_grind_with_casualties = yes }
-	# 	}
-	# 	complete_effect = {
-	# 	}
-	# 	timeout_effect = {
-	# 		for_each_scope_loop = {
-	# 			array = faction_members
-	# 			if = {
-	# 				limit = {
-	# 					has_war_with = GRE
-	# 				}
-	# 				white_peace = GRE
-	# 			}
-	# 		}
-	# 		YUG = {
-	# 			# cleanup_grinding_mess = yes
-	# 		}
-	# 		country_event = {
-	# 			id = nma_grinding.6
-	# 		}
-	# 	}
-	# }
+
+	ITA_grinding_ETH_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = ETH.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			ETH = {
+				is_done = yes
+			}
+		}
+		activation = {
+			ETH = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			white_peace = ETH
+			
+			ETH = {
+				set_country_flag = grind_time_has_gone
+			}
+			country_event = {
+				id = nma_grinding.1
+			}
+		}
+	}
+
+	ITA_grinding_YUG_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = YUG.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			YUG = {
+				is_done = yes
+			}
+		}
+		activation = {
+			YUG = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			for_each_scope_loop = {
+				array = faction_members
+				if = {
+					limit = {
+						has_war_with = YUG
+					}
+					white_peace = YUG
+				}
+			}
+			YUG = {
+				# cleanup_grinding_mess = yes
+				# cleanup_state_juggling_mess = yes
+			}
+			# country_event = {
+			# 	id = nma_grinding.4
+			# }
+		}
+	}
+
+	ITA_grinding_GRE_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = GRE.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			GRE = {
+				is_done = yes
+			}
+		}
+		activation = {
+			GRE = { is_allowed_to_grind_with_casualties = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			for_each_scope_loop = {
+				array = faction_members
+				if = {
+					limit = {
+						has_war_with = GRE
+					}
+					white_peace = GRE
+				}
+			}
+			YUG = {
+				# cleanup_grinding_mess = yes
+			}
+			# country_event = {
+			# 	id = nma_grinding.6
+			# }
+		}
+	}
 }
