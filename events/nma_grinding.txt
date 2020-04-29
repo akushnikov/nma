@@ -1,16 +1,15 @@
 add_namespace = nma_grinding
-
 # ETH capitulation event
 country_event = {
 	id = nma_grinding.1
-	title = nma_grinding.2.t
-	desc = nma_grinding.2.d
+	title = nma_grinding.1.t
+	desc = nma_grinding.1.d
 	picture = GFX_report_event_generic_sign_treaty3
 	fire_only_once = yes
 	is_triggered_only = yes
 	# puppet ETH
 	option = {
-		name = nma_grinding.2.a
+		name = nma_grinding.1.a
 		if = {
 			limit = {
 				original_tag = ITA
@@ -26,7 +25,7 @@ country_event = {
 	}
 	# annex ETH
 	option = {
-		name = nma_grinding.2.b
+		name = nma_grinding.1.b
 		if = {
 			limit = {
 				original_tag = ITA
@@ -43,287 +42,35 @@ country_event = {
 	}
 }
 
-# Hidden event to capitulate YUG
-# country_event = {
-#   id = nma_grinding.3
-#   hidden = yes
-#   fire_only_once = yes
-#   trigger = {
-#     original_tag = ITA
-#     has_war_with = YUG
-#     YUG = {
-#       surrender_progress > 0.75
-#     }
-#   }
-#   mean_time_to_happen = { days = 1 }
-#   immediate = {
-#     if = {
-#       limit = { original_tag = ITA }
-#       for_each_scope_loop = {
-#         array = faction_members
-#         if = {
-#           limit = { has_war_with = YUG }
-#           white_peace = YUG
-#         }
-#       }
-#       YUG = {
-#         # cleanup_grinding_mess = yes
-#         # cleanup_state_juggling_mess = yes
-#       }
-#       country_event = { id = nma_grinding.4 }
-#     }
-#   }
-# }
-# YUG capitulation event
-# country_event = {
-#   id = nma_grinding.4
-#   title = nma_grinding.4.t
-#   desc = nma_grinding.4.desc
-#   picture = GFX_report_event_generic_sign_treaty3
-#   fire_only_once = yes
-#   is_triggered_only = yes
-#   # annex YUG
-#   option = {
-#     name = nma_grinding.4.a
-#     if = {
-#       limit = {
-#         original_tag = ITA
-#         YUG = { has_country_flag = grind_time_has_gone }
-#       }
-#       annex_country = {
-#         target = YUG
-#         transfer_troops = no
-#       }
-#       add_threat = 6.2
-#     }
-#   }
-#   # partition with HUN
-#   option = {
-#     name = nma_grinding.4.b
-#     if = {
-#       limit = {
-#         original_tag = ITA
-#         YUG = { has_country_flag = grind_time_has_gone }
-#       }
-#       HUN = {
-#         transfer_state = 764
-#         transfer_state = 45
-#       }
-#       annex_country = {
-#         target = YUG
-#         transfer_troops = no
-#       }
-#       add_threat = 6.2
-#     }
-#   }
-#   # transfer resource provinces to HUN
-#   option = {
-#     name = nma_grinding.4.c
-#     trigger = {
-#       HUN = {
-#         is_in_faction_with = ITA
-#         is_ai = no
-#       }
-#     }
-#     if = {
-#       limit = {
-#         original_tag = ITA
-#         YUG = { has_country_flag = grind_time_has_gone }
-#       }
-#       HUN = {
-#         transfer_state = 105
-#         transfer_state = 106
-#       }
-#       annex_country = {
-#         target = YUG
-#         transfer_troops = no
-#       }
-#       add_threat = 6.2
-#     }
-#   }
-#   #  transfer resource provinces to ROM
-#   option = {
-#     name = nma_grinding.4.d
-#     trigger = {
-#       ROM = {
-#         is_in_faction_with = ITA
-#         is_ai = no
-#       }
-#     }
-#     if = {
-#       limit = {
-#         original_tag = ITA
-#         YUG = { has_country_flag = grind_time_has_gone }
-#       }
-#       ROM = {
-#         transfer_state = 105
-#         transfer_state = 106
-#       }
-#       annex_country = {
-#         target = YUG
-#         transfer_troops = no
-#       }
-#       add_threat = 6.2
-#     }
-#   }
-#   #  transfer resource provinces to BUL
-#   option = {
-#     name = nma_grinding.4.e
-#     trigger = {
-#       BUL = {
-#         is_in_faction_with = ITA
-#         is_ai = no
-#       }
-#     }
-#     if = {
-#       limit = {
-#         original_tag = ITA
-#         YUG = { has_country_flag = grind_time_has_gone }
-#       }
-#       BUL = {
-#         transfer_state = 105
-#         transfer_state = 106
-#       }
-#       annex_country = {
-#         target = YUG
-#         transfer_troops = no
-#       }
-#       add_threat = 6.2
-#     }
-#   }
-# }
-# Hidden event to capitulate GRE
-# country_event = {
-#   id = nma_grinding.5
-#   hidden = yes
-#   fire_only_once = yes
-#   trigger = {
-#     original_tag = ITA
-#     has_war_with = GRE
-#     GRE = {
-#       surrender_progress > 0.75
-#     }
-#   }
-#   mean_time_to_happen = { days = 1 }
-#   immediate = {
-#     if = {
-#       limit = { original_tag = ITA }
-#       for_each_scope_loop = {
-#         array = faction_members
-#         if = {
-#           limit = { has_war_with = GRE }
-#           white_peace = GRE
-#         }
-#       }
-#       GRE = {
-#         # cleanup_grinding_mess = yes
-#       }
-#       country_event = { id = nma_grinding.6 }
-#     }
-#   }
-# }
-# GRE capitulation event
-# country_event = {
-#   id = nma_grinding.6
-#   title = nma_grinding.6.t
-#   desc = nma_grinding.6.desc
-#   picture = GFX_report_event_generic_sign_treaty3
-#   fire_only_once = yes
-#   is_triggered_only = yes
-#   # annex GRE
-#   option = {
-#     name = nma_grinding.6.a
-#     if = {
-#       limit = {
-#         original_tag = GRE
-#         GRE = { has_country_flag = grind_time_has_gone }
-#       }
-#       annex_country = {
-#         target = GRE
-#         transfer_troops = no
-#       }
-#       add_threat = 4.6
-#     }
-#   }
-#   # transfer resource provinces to HUN
-#   option = {
-#     name = nma_grinding.6.b
-#     trigger = {
-#       HUN = {
-#         is_in_faction_with = ITA
-#         is_ai = no
-#       }
-#     }
-#     if = {
-#       limit = {
-#         original_tag = ITA
-#         GRE = { has_country_flag = grind_time_has_gone }
-#       }
-#       HUN = {
-#         transfer_state = 47
-#         transfer_state = 184
-#         transfer_state = 185
-#         transfer_state = 187
-#       }
-#       annex_country = {
-#         target = GRE
-#         transfer_troops = no
-#       }
-#       add_threat = 4.6
-#     }
-#   }
-#   # transfer resource provinces to ROM
-#   option = {
-#     name = nma_grinding.6.b
-#     trigger = {
-#       ROM = {
-#         is_in_faction_with = ITA
-#         is_ai = no
-#       }
-#     }
-#     if = {
-#       limit = {
-#         original_tag = ITA
-#         GRE = { has_country_flag = grind_time_has_gone }
-#       }
-#       ROM = {
-#         transfer_state = 47
-#         transfer_state = 184
-#         transfer_state = 185
-#         transfer_state = 187
-#       }
-#       annex_country = {
-#         target = GRE
-#         transfer_troops = no
-#       }
-#       add_threat = 4.6
-#     }
-#   }
-#   # transfer resource provinces to BUL
-#   option = {
-#     name = nma_grinding.6.c
-#     trigger = {
-#       BUL = {
-#         is_in_faction_with = ITA
-#         is_ai = no
-#       }
-#     }
-#     if = {
-#       limit = {
-#         original_tag = ITA
-#         GRE = { has_country_flag = grind_time_has_gone }
-#       }
-#       BUL = {
-#         transfer_state = 47
-#         transfer_state = 184
-#         transfer_state = 185
-#         transfer_state = 187
-#       }
-#       annex_country = {
-#         target = GRE
-#         transfer_troops = no
-#       }
-#       add_threat = 4.6
-#     }
-#   }
-# }
+country_event = {
+	id = nma_grinding.2
+	title = nma_grinding.2.t
+	desc = nma_grinding.2.d
+	picture = GFX_report_event_molotov_ribentrop_handshake
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = nma_grinding.2.a
+		trigger = {
+			NOT = {
+				is_ai = yes
+			}
+		}
+		if = {
+			limit = {
+				original_tag = SPR
+				has_government = fascism
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = POR
+			}
+		}
+	}
+	option = {
+		name = nma_grinding.2.b
+		trigger = {
+			is_ai = yes
+		}
+	}
+}

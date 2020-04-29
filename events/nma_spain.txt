@@ -1,82 +1,79 @@
 add_namespace = nma_spain
 
 # Giving Nationalist Spain wargoal on Portugal right after Danzig or War
-# country_event = {
-#   id = nma_spain.1
-#   title = nma_spain.1.t
-#   desc = nma_spain.1.d
+country_event = {
+  id = nma_spain.1
+  title = nma_spain.1.t
+  desc = nma_spain.1.d
 
-#   picture = GFX_report_event_molotov_ribentrop_handshake
+  picture = GFX_report_event_molotov_ribentrop_handshake
 
-#   fire_only_once = yes
-#   is_triggered_only = yes
+  fire_only_once = yes
+  is_triggered_only = yes
 
-#   option = {
-#     name = nma_spain.1.a
+  option = {
+	name = nma_spain.1.a
+	trigger = {
+		NOT = { is_ai = yes }
+	}
 
-#     if = {
-#       limit = {
-#         original_tag = SPR
-#       }
-#       create_wargoal = {
-#         type = annex_everything
-#         target = POR
-#       }
+    if = {
+      limit = {
+		original_tag = SPR
+		has_government = fascism
+      }
+      create_wargoal = {
+        type = annex_everything
+        target = POR
+      }
 
-#       POR = {
-#         add_ideas = you_shall_not_fall
-#         load_oob = "POR_army"
-#       }
-#     }
-#   }
-# }
+    #   POR = {
+    #     add_ideas = you_shall_not_fall
+    #     load_oob = "POR_army"
+    #   }
+    }
+  }
+
+  option = {
+	  name = nma_spain.1.b
+	  trigger = {
+		  is_ai = yes
+	  }
+  }
+}
 
 # Portugal folds
-# country_event = {
-#   id = nma_spain.2
-#   title = nma_spain.2.t
-#   desc = nma_spain.2.d
+country_event = {
+  id = nma_spain.2
+  title = nma_spain.2.t
+  desc = nma_spain.2.d
 
-#   picture = GFX_report_event_generic_sign_treaty3
+  picture = GFX_report_event_generic_sign_treaty3
 
-#   fire_only_once = yes
+  fire_only_once = yes
+  is_triggered_only = yes
 
-#   mean_time_to_happen = { days = 1 }
+  option = {
+    name = nma_spain.2.a
 
-#   trigger = {
-#     original_tag = POR
-#     has_war_with = SPR
-#     OR = {
-#       surrender_progress > 0.5
-#       112 = {
-#         NOT = {
-#           is_controlled_by = POR
-#         }
-#       }
-#     }
-#   }
+    log = "[THIS.GetNameDef] folds to SPR"
 
-#   option = {
-#     name = nma_spain.2.a
+    delete_unit_template_and_units = { division_template = "Portugal Livre" }
 
-#     log = "[THIS.GetNameDef] folds to SPR"
+    remove_ideas = you_shall_not_fall
 
-#     delete_unit_template_and_units = { division_template = "Portugal Livre" }
+    random_other_country = {
+      limit = {
+        original_tag = SPR
+        has_government = fascism
+      }
 
-#     remove_ideas = you_shall_not_fall
+      white_peace = POR
 
-#     random_other_country = {
-#       limit = {
-#         original_tag = SPR
-#         has_government = fascism
-#       }
-
-#       white_peace = POR
-
-#       transfer_state = 112
-#       transfer_state = 179
-#       transfer_state = 180
-#       transfer_state = 181
-#     }
-#   }
-# }
+      transfer_state = 112
+      transfer_state = 179
+      transfer_state = 180
+      transfer_state = 181
+    }
+  }
+}

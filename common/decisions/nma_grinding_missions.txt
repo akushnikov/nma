@@ -86,4 +86,33 @@ nma_anti_grind_decisions = {
 			}
 		}
 	}
+
+	SPR_grinding_POR_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = POR.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = SPR
+		}
+		available = {
+			POR = {
+				is_done = yes
+			}
+		}
+		activation = {
+			POR = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			POR = {
+				add_ideas = capitulation_inevitable
+				every_controlled_state = {
+					FROM = {
+						set_state_controller = PREV
+					}					
+				}
+			}
+		}
+	}
 }

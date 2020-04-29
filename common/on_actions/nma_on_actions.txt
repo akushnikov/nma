@@ -217,6 +217,28 @@ on_actions = {
           FROM = {
             country_event = nma_grinding.1
           }
+        } else_if = {
+          limit = {
+            ROOT = {
+              original_tag = POR
+            }
+            FROM = {  
+              original_tag = SPR
+              has_government = fascism
+            }
+          }
+
+          ROOT = {
+            white_peace = FROM
+          }
+
+          FROM = {
+            transfer_state = 112
+            transfer_state = 179
+            transfer_state = 180
+            transfer_state = 181
+            transfer_state = 795
+          }
         }
       }
     }

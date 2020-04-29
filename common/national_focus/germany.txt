@@ -3107,6 +3107,16 @@ focus_tree = {
 				}
 				custom_effect_tooltip = GER_danzig_or_war_POL_civil_war
 			}
+			hidden_effect = {
+				random_country = {
+					limit = {
+						original_tag = SPR
+						has_government = fascism
+					}
+	
+					country_event = { id = nma_spain.1 }
+				}	
+			}
 		}
 	}
 
