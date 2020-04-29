@@ -115,4 +115,76 @@ nma_anti_grind_decisions = {
 			}
 		}
 	}
+
+	SOV_grinding_FIN_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = FIN.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			FIN = {
+				is_done = yes
+			}
+		}
+		activation = {
+			FIN = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			annex_country = {
+				target = FIN
+			}
+		}
+	}
+
+	SOV_grinding_AFG_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = AFG.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			AFG = {
+				is_done = yes
+			}
+		}
+		activation = {
+			AFG = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			annex_country = {
+				target = AFG
+			}
+		}
+	}
+
+	SOV_grinding_PER_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = PER.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			PER = {
+				is_done = yes
+			}
+		}
+		activation = {
+			PER = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			annex_country = {
+				target = PER
+			}
+		}
+	}
 }

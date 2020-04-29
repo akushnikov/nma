@@ -239,6 +239,22 @@ on_actions = {
             transfer_state = 181
             transfer_state = 795
           }
+        } else_if = {
+          limit = {
+            ROOT = {
+              OR = {
+                original_tag = FIN
+                original_tag = AFG
+                original_tag = PER
+              }
+            }
+          }
+
+          FROM = {
+            annex_country = {
+              target = ROOT
+            }
+          }
         }
       }
     }
