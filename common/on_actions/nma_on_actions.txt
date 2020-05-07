@@ -199,11 +199,12 @@ on_actions = {
           }
         }
         
+        # Setting country flag to prevent grinding mission against this country
         ROOT = {
           set_country_flag = grind_time_has_gone
         }
 
-        if = {
+        if = {                                      # Handling Ethiopia capitulation
           limit = {
             ROOT = {
               original_tag = ETH
@@ -217,7 +218,7 @@ on_actions = {
           FROM = {
             country_event = nma_grinding.1
           }
-        } else_if = {
+        } else_if = {                               # Handling Portugal capitulation
           limit = {
             ROOT = {
               original_tag = POR
@@ -239,7 +240,7 @@ on_actions = {
             transfer_state = 181
             transfer_state = 795
           }
-        } else_if = {
+        } else_if = {                               # Handling Finland, Afganistan and Iran capitulation
           limit = {
             ROOT = {
               OR = {
@@ -256,6 +257,42 @@ on_actions = {
             }
           }
         }
+      }
+    }
+  }
+
+  #FROM is war target ROOT is war mongerer
+  on_declare_war = {
+    effect = {
+      
+      if = {
+        limit = {
+          FROM = {
+            is_ai = yes
+            NOT = { has_country_flag = grind_time_has_gone }
+            NOT = { is_in_faction = yes }
+            check_variable = {
+              var = THIS.grinding_period
+              value = 0
+              compare = not_equals
+            }
+          }
+        }
+
+        meta_effect = {
+          text = {
+            set_country_flag = grinding_[TARGET]
+          } 
+          TARGET = "[FROM.GetTag]"
+        }
+
+        FROM = {
+          add_ai_strategy  = {
+            type = garrison_reinforcement_priority
+            value = -99
+          }
+        }
+
       }
     }
   }

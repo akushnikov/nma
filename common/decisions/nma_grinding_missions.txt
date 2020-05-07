@@ -49,10 +49,12 @@ nma_anti_grind_decisions = {
 		timeout_effect = {
 			YUG = {
 				add_ideas = capitulation_inevitable
-				every_controlled_state = {
-					FROM = {
-						set_state_controller = PREV
-					}					
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}					
+					}
 				}
 			}
 		}
@@ -78,10 +80,12 @@ nma_anti_grind_decisions = {
 		timeout_effect = {
 			GRE = {
 				add_ideas = capitulation_inevitable
-				every_controlled_state = {
-					FROM = {
-						set_state_controller = PREV
-					}					
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}					
+					}
 				}
 			}
 		}
@@ -107,10 +111,12 @@ nma_anti_grind_decisions = {
 		timeout_effect = {
 			POR = {
 				add_ideas = capitulation_inevitable
-				every_controlled_state = {
-					FROM = {
-						set_state_controller = PREV
-					}					
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}					
+					}
 				}
 			}
 		}
@@ -187,4 +193,53 @@ nma_anti_grind_decisions = {
 			}
 		}
 	}
+
+	axis_grinding_BUL_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = BUL.grinding_period
+		is_good = no
+
+		allowed = {
+			OR = {
+				original_tag = GER
+				original_tag = ROM
+				original_tag = ITA
+				original_tag = HUN
+			}
+		}
+		
+		available = {
+			BUL = {
+				is_done = yes
+			}
+		}
+
+		activation = {
+			BUL = { 
+				is_allowed_to_grind = yes
+			}
+			has_country_flag = grinding_BUL
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			log = "PREV is [PREV.GetName]"
+			log = "THIS is [THIS.GetName]"
+			log = "FROM is [FROM.GetName]"
+			BUL = {
+				add_ideas = capitulation_inevitable
+				
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}
+					}
+				}				
+			}
+		}
+	}
+
 }
