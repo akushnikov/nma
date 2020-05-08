@@ -1,103 +1,245 @@
 nma_anti_grind_decisions = {
-	# ITA_grinding_ETH_mission = {
-	# 	icon = generic_scorched_earth
-	# 	days_mission_timeout = ETH.grinding_period?0
-	# 	is_good = no
-	# 	allowed = {
-	# 		original_tag = ITA
-	# 	}
-	# 	available = {
-	# 		ETH = {
-	# 			is_done = yes
-	# 		}
-	# 	}
-	# 	activation = {
-	# 		# ETH = { is_allowed_to_grind = yes }
-	# 	}
-	# 	complete_effect = {
-	# 	}
-	# 	timeout_effect = {
-	# 		white_peace = ETH
-	# 		hidden_effect = {
-	# 			ETH = {
-	# 				# cleanup_grinding_mess = yes
-	# 				# cleanup_state_juggling_mess = yes
-	# 			}
-	# 		}
-	# 		country_event = {
-	# 			id = nma_grinding.2
-	# 		}
-	# 	}
-	# }
-	# ITA_grinding_YUG_mission = {
-	# 	icon = generic_scorched_earth
-	# 	days_mission_timeout = YUG.grinding_period?0
-	# 	is_good = no
-	# 	allowed = {
-	# 		original_tag = ITA
-	# 	}
-	# 	available = {
-	# 		YUG = {
-	# 			is_done = yes
-	# 		}
-	# 	}
-	# 	activation = {
-	# 		# YUG = { is_allowed_to_grind = yes }
-	# 	}
-	# 	complete_effect = {
-	# 	}
-	# 	timeout_effect = {
-	# 		for_each_scope_loop = {
-	# 			array = faction_members
-	# 			if = {
-	# 				limit = {
-	# 					has_war_with = YUG
-	# 				}
-	# 				white_peace = YUG
-	# 			}
-	# 		}
-	# 		YUG = {
-	# 			# cleanup_grinding_mess = yes
-	# 			# cleanup_state_juggling_mess = yes
-	# 		}
-	# 		country_event = {
-	# 			id = nma_grinding.4
-	# 		}
-	# 	}
-	# }
-	# ITA_grinding_GRE_mission = {
-	# 	icon = generic_scorched_earth
-	# 	days_mission_timeout = GRE.grinding_period?0
-	# 	is_good = no
-	# 	allowed = {
-	# 		original_tag = ITA
-	# 	}
-	# 	available = {
-	# 		GRE = {
-	# 			is_done = yes
-	# 		}
-	# 	}
-	# 	activation = {
-	# 		# GRE = { is_allowed_to_grind_with_casualties = yes }
-	# 	}
-	# 	complete_effect = {
-	# 	}
-	# 	timeout_effect = {
-	# 		for_each_scope_loop = {
-	# 			array = faction_members
-	# 			if = {
-	# 				limit = {
-	# 					has_war_with = GRE
-	# 				}
-	# 				white_peace = GRE
-	# 			}
-	# 		}
-	# 		YUG = {
-	# 			# cleanup_grinding_mess = yes
-	# 		}
-	# 		country_event = {
-	# 			id = nma_grinding.6
-	# 		}
-	# 	}
-	# }
+
+	ITA_grinding_ETH_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = ETH.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			ETH = {
+				is_done = yes
+			}
+		}
+		activation = {
+			ETH = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			white_peace = ETH
+			
+			ETH = {
+				set_country_flag = grind_time_has_gone
+			}
+			country_event = {
+				id = nma_grinding.1
+			}
+		}
+	}
+
+	ITA_grinding_YUG_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = YUG.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			YUG = {
+				is_done = yes
+			}
+		}
+		activation = {
+			YUG = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			YUG = {
+				add_ideas = capitulation_inevitable
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}					
+					}
+				}
+			}
+		}
+	}
+
+	ITA_grinding_GRE_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = GRE.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = ITA
+		}
+		available = {
+			GRE = {
+				is_done = yes
+			}
+		}
+		activation = {
+			GRE = { is_allowed_to_grind_with_casualties = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			GRE = {
+				add_ideas = capitulation_inevitable
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}					
+					}
+				}
+			}
+		}
+	}
+
+	SPR_grinding_POR_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = POR.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = SPR
+		}
+		available = {
+			POR = {
+				is_done = yes
+			}
+		}
+		activation = {
+			POR = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			POR = {
+				add_ideas = capitulation_inevitable
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}					
+					}
+				}
+			}
+		}
+	}
+
+	SOV_grinding_FIN_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = FIN.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			FIN = {
+				is_done = yes
+			}
+		}
+		activation = {
+			FIN = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			annex_country = {
+				target = FIN
+			}
+		}
+	}
+
+	SOV_grinding_AFG_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = AFG.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			AFG = {
+				is_done = yes
+			}
+		}
+		activation = {
+			AFG = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			annex_country = {
+				target = AFG
+			}
+		}
+	}
+
+	SOV_grinding_PER_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = PER.grinding_period
+		is_good = no
+		allowed = {
+			original_tag = SOV
+		}
+		available = {
+			PER = {
+				is_done = yes
+			}
+		}
+		activation = {
+			PER = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			annex_country = {
+				target = PER
+			}
+		}
+	}
+
+	axis_grinding_BUL_mission = {
+		icon = generic_scorched_earth
+		days_mission_timeout = BUL.grinding_period
+		is_good = no
+
+		allowed = {
+			OR = {
+				original_tag = GER
+				original_tag = ROM
+				original_tag = ITA
+				original_tag = HUN
+			}
+		}
+		
+		available = {
+			BUL = {
+				is_done = yes
+			}
+		}
+
+		activation = {
+			BUL = { 
+				is_allowed_to_grind = yes
+			}
+			has_country_flag = grinding_BUL
+		}
+
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			log = "PREV is [PREV.GetName]"
+			log = "THIS is [THIS.GetName]"
+			log = "FROM is [FROM.GetName]"
+			BUL = {
+				add_ideas = capitulation_inevitable
+				
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}
+					}
+				}				
+			}
+		}
+	}
+
 }

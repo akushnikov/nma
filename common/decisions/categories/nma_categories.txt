@@ -4,8 +4,4 @@ nma_annex_subjects = {
 
 nma_anti_grind_decisions = {
   icon = generic_propaganda
-
-  visible = {
-		always = no
-	}
 }

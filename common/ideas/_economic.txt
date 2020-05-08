@@ -106,15 +106,6 @@ ideas = {
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
 			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
 
 			cost = 150
 			removal_cost = -1
@@ -178,15 +169,7 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
+
 			ai_will_do = {
    				factor = 2
 
@@ -238,15 +221,7 @@ ideas = {
 			}
 
 			cancel_if_invalid = no
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
+
 			ai_will_do = {
    				factor = 5
 
@@ -254,6 +229,12 @@ ideas = {
 					#High prio on production
 					factor = 20
 					manpower_per_military_factory >  1000
+				}
+				modifier = {
+					add = 1800
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
 				}
    			}
 		}
@@ -279,15 +260,7 @@ ideas = {
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
 			}
-			on_add = {
-				if = {
-					limit = {
-						tag = USA
-						has_defensive_war = no
-					}
-					USA_congress_large_opposition = yes
-				}
-			}
+
 			ai_will_do = {
    				factor = 1
 

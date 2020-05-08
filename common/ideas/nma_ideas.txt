@@ -63,5 +63,35 @@ ideas = {
       }
     }
 
+    capitulation_inevitable = {
+      picture = chi_war_of_resistance
+
+      allowed = {
+        OR = {
+          original_tag = YUG
+          original_tag = GRE
+          original_tag = POR
+          original_tag = FIN
+          original_tag = PER
+          original_tag = AFG
+          original_tag = BUL
+        }
+      }
+
+      allowed_civil_war = {
+        always = no
+      }
+
+      cancel = {
+        has_country_flag = grind_time_has_gone
+      }
+
+      removal_cost = -1
+
+      modifier = {
+        surrender_limit = -5.00
+      }
+    }
+
   }
 }
