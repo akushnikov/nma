@@ -1,13 +1,19 @@
-is_allowed_to_grind = {
+is_allowed_to_grind_during_ww2 = {
   is_ai = yes
-  NOT = { has_country_flag = grind_time_has_gone }
-  NOT = { is_in_faction = yes }
+  NOT = {
+    has_country_flag = grind_time_has_gone
+  }
   has_defensive_war_with = PREV
   check_variable = {
     var = THIS.grinding_period
     value = 0
     compare = not_equals
   }
+}
+
+is_allowed_to_grind = {
+  NOT = { is_in_faction = yes }
+  is_allowed_to_grind_during_ww2 = yes
 }
 
 # PREV is grinding country

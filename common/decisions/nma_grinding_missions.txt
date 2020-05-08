@@ -216,7 +216,7 @@ nma_anti_grind_decisions = {
 
 		activation = {
 			BUL = { 
-				is_allowed_to_grind = yes
+				is_allowed_to_grind_during_ww2 = yes
 			}
 			has_country_flag = grinding_BUL
 		}
@@ -260,13 +260,21 @@ nma_anti_grind_decisions = {
 			}
 		}
 		activation = {
-			SWI = { is_allowed_to_grind = yes }
+			SWI = { is_allowed_to_grind_during_ww2 = yes }
 		}
 		complete_effect = {
 		}
 		timeout_effect = {
-			annex_country = {
-				target = SWI
+			SWI = {
+				add_ideas = capitulation_inevitable
+				
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}
+					}
+				}
 			}
 		}
 	}
