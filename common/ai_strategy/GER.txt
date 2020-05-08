@@ -28,11 +28,12 @@ GER_unit_production = {
 		value = 4
 	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = suppression
-		value = 6
-	}
+	# Old garrison system against resistance
+	# ai_strategy = {
+	# 	type = role_ratio
+	# 	id = suppression
+	# 	value = 6
+	# }
 
 	ai_strategy = {
 		type = role_ratio
@@ -142,7 +143,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = 170
+		value = 180
 	}
 
 	ai_strategy = {
@@ -190,7 +191,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 70 #20 to 40
+		value = 85 #20 to 40
 	}
 
 	ai_strategy = {
@@ -287,6 +288,20 @@ GER_halt_light_armor_production_in_transitioning = {
 	}
 }
 
+GER_stockpile_less_early_game = {
+	allowed = { 
+		tag = GER 
+	}
+	enable = {
+		tag = GER
+		date < 1940.1.1
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -20 # reduce while we build up in case of CZE or Austria issues
+	}
+}
 
 GER_highered_armored_production = {
 	enable = {

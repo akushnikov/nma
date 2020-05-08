@@ -230,6 +230,12 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory >  1000
 				}
+				modifier = {
+					add = 1800
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
+				}
    			}
 		}
 
