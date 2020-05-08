@@ -144,20 +144,21 @@ on_actions = {
 
       if = {
         limit = {
-          
-          ROOT = {
-            OR = {
-              original_tag = JAP
-              is_in_faction_with = JAP
-            }
-            all_enemy_country = {
+          # ROOT is JEACPS member
+          OR = {
+            original_tag = JAP
+            is_in_faction_with = JAP
+          }
+          # all enemy nation troops abandoned cuurent state
+          NOT = {
+            any_enemy_country = {
               divisions_in_state = {
-                size < 1
+                size > 0
                 state = current_state
               }
             }
           }
-
+          # current state is in enlisted regions
           var:current_state = {
             OR = {
               region = 83       # Solomon Sea
