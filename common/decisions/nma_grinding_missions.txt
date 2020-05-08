@@ -242,4 +242,33 @@ nma_anti_grind_decisions = {
 		}
 	}
 
+	axis_grinding_SWI = {
+		icon = generic_scorched_earth
+		days_mission_timeout = SWI.grinding_period
+		is_good = no
+		allowed = {
+			OR = {
+				original_tag = GER
+				original_tag = ROM
+				original_tag = ITA
+				original_tag = HUN
+			}
+		}
+		available = {
+			SWI = {
+				is_done = yes
+			}
+		}
+		activation = {
+			SWI = { is_allowed_to_grind = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			annex_country = {
+				target = SWI
+			}
+		}
+	}
+
 }

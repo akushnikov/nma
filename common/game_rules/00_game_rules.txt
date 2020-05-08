@@ -1186,6 +1186,93 @@ nma_bul_grinding = {
 	}
 }
 
+#
+# Switzerland grinding
+#
+
+nma_swi_grinding = {
+	name = "NMA_SWI_GRINDING"
+	group = "NMA_GROUPKEY"
+
+	default = {
+		name = "NMA_UNLIMITED_GRIND"
+		text = "NMA_RULE_OPTION_UNLIMITED_GRIND"
+		desc = "NMA_RULE_OPTION_UNLIMITED_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_1_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_2_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_2_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_2_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_3_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_3_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_3_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_4_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_4_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_4_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_5_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_5_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_5_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_6_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_6_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_6_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_7_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_7_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_7_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_8_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_9_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_9_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_9_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_10_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_10_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_10_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_11_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_11_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_11_MONTH_GRIND_DESC"
+	}
+
+	option = {
+		name = "NMA_12_MONTH_GRIND"
+		text = "NMA_RULE_OPTION_12_MONTH_GRIND"
+		desc = "NMA_RULE_OPTION_12_MONTH_GRIND_DESC"
+	}
+}
+
 # DEFAULT RULES
 
 allow_wargoals = {
