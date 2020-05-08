@@ -23,10 +23,6 @@ set_technology = {
 	CAS1 = 1
 }
 
-add_ideas = {
-	moderate_neutrality
-}
-
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
