@@ -117,10 +117,6 @@ focus_tree = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
 			set_faction_spymaster = yes
-
-			hidden_effect = {
-				ensure_united_front_exists = yes
-			}
 		}
 	}
 
@@ -145,22 +141,16 @@ focus_tree = {
 					608 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
 						}
 					}
 					597 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
 						}
 					}
 					614 = {
 						NOT = {
 							is_controlled_by = CHI
-							is_controlled_by = PRC
-							is_controlled_by = SHX
 						}
 					}
 				}
@@ -195,30 +185,6 @@ focus_tree = {
 					}
 				}
 				CHI = {
-					country_event = china.1
-				}
-			}
-			if = {
-				limit = {
-					PRC = { #only fires the event for PRC if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-						controls_state = 608
-						controls_state = 597
-						controls_state = 614
-					}
-				}
-				PRC = {
-					country_event = china.1
-				}
-			}
-			if = {
-				limit = {
-					SHX = { #only fires the event for SHX if they control ALL of the states (to ensure that only one of them gets it, to avoid issues when one selects to turn over the states and the other doesn't)
-						controls_state = 608
-						controls_state = 597
-						controls_state = 614
-					}
-				}
-				SHX = {
 					country_event = china.1
 				}
 			}

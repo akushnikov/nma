@@ -25,18 +25,6 @@ init_minelaying_countries_array = {
   add_to_array = { minelaying_countries = SIA }
 }
 
-init_united_front_countries_array = {
-  clear_array = GLOBAL.united_front_countries
-
-  add_to_array = { GLOBAL.united_front_countries = CHI }
-  add_to_array = { GLOBAL.united_front_countries = PRC }
-  add_to_array = { GLOBAL.united_front_countries = YUN }
-  add_to_array = { GLOBAL.united_front_countries = SIK }
-  add_to_array = { GLOBAL.united_front_countries = XSM }
-  add_to_array = { GLOBAL.united_front_countries = GXC }
-  add_to_array = { GLOBAL.united_front_countries = SHX }
-}
-
 init_uk_dominions_array = {
   clear_array = uk_dominions
 
@@ -58,59 +46,6 @@ init_grind_countries = {
   add_to_array = { GLOBAL.grind_countries = AFG }
   add_to_array = { GLOBAL.grind_countries = PER }
   add_to_array = { GLOBAL.grind_countries = BUL }
-}
-
-ensure_united_front_exists = {
-  init_united_front_countries_array = yes
-
-  if = {
-    limit = {
-      NOT = { CHI = { is_faction_leader = yes } }
-    }
-
-    CHI = {
-      set_rule = { can_create_factions = yes }
-      create_faction = chinese_united_front
-    }
-
-  }
-
-  for_each_scope_loop = {
-    array = GLOBAL.united_front_countries
-
-    if = {
-      limit = {
-        NOT = {
-          OR = {
-            is_faction_leader = yes
-            is_in_faction_with = CHI
-          }
-        }
-      }
-
-      CHI = {
-        # THIS is CHI
-        # PREV is loop scope
-        add_to_faction = PREV
-      }
-
-      if = {
-  			limit = {
-  				is_literally_china = yes
-  				has_DLC = "Waking the Tiger"
-  			}
-  			CHI_set_ally_strat_on_current_leader = yes #sets ally strategy to current Chinese leader
-  		}
-
-      add_ai_strategy = {
-				type = alliance
-				id = "CHI"
-				value = 200
-			}
-    }
-  }
-
-  set_global_flag = CHI_unite
 }
 
 add_faction_members_collaboration = {
