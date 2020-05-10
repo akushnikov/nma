@@ -320,7 +320,6 @@ focus_tree = {
 				all_state = {
 					OR = {
 						NOT = { is_core_of = CHI }
-						NOT = { is_core_of = PRC }
 						OR = {
 							is_controlled_by = ROOT
 							CONTROLLER = { is_in_faction_with = ROOT }

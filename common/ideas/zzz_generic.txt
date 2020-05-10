@@ -1137,7 +1137,7 @@ ideas = {
 		generic_democratic_reformer = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR } }
 				NOT = {
 					has_available_idea_with_traits = { idea = democratic_reformer limit = 1 }
 				}
@@ -1183,7 +1183,7 @@ ideas = {
 		generic_fascist_demagogue = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POR } }
+				NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POR } }
 				NOT = {
 					has_available_idea_with_traits = { idea = fascist_demagogue limit = 1 }
 				}
@@ -1325,7 +1325,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1375,7 +1375,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1420,7 +1420,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1465,8 +1465,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
-						
+						OR = { tag = CHI tag = MAN tag = MEN }						
 					}
 				}
 				NOT = {
@@ -1507,7 +1506,7 @@ ideas = {
 						has_dlc = "Waking the Tiger"
 					}
 					NOT = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN tag = MEN }
 					}
 				}
 				NOT = {
@@ -1548,7 +1547,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1634,7 +1633,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1679,7 +1678,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}
@@ -1724,7 +1723,7 @@ ideas = {
 				}
 				NOT = {
 					AND = {
-						OR = { tag = CHI tag = PRC tag = MAN tag = SHX tag = XSM tag = GXC tag = YUN tag = SIK tag = MEN }
+						OR = { tag = CHI tag = MAN tag = MEN }
 						has_dlc = "Waking the Tiger"
 					}
 				}

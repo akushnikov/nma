@@ -72,13 +72,13 @@ chinese_warlord_state = {
 			OR = {
 				original_tag = JAP
 				original_tag = MAN
-				original_tag = MEN				
+				original_tag = MEN
 			}
 		}
 	}
 
 	recruitable_population_factor = -0.9
-	local_factories = -0.9
-	local_resources = -0.9
+	local_factories = -0.85
+	local_resources = -0.85
 	state_production_speed_buildings_factor = -0.9
 }

@@ -214,21 +214,6 @@ bookmarks = {
 				CHI_war_of_resistance
 			}
 		}
-		"PRC" = {
-			minor = yes
-			history = "PRC_BLITZKRIEG_DESC"
-			ideology = communism
-			ideas = {
-				PRC_the_long_march_1
-				PRC_low_popular_support_1
-				PRC_power_struggles
-			}
-			focuses = {
-				PRC_infiltration
-				PRC_maoism
-				PRC_anti_japanese_expedition
-			}
-		}
 		"MAN" = {
 			minor = yes
 			history = "MAN_BLITZKRIEG_DESC"

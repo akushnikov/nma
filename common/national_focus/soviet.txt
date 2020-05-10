@@ -1134,25 +1134,10 @@ focus_tree = {
 				limit = {
 					NOT = {
 						has_war_with = CHI
-						CHI = {
-							has_war_with = PRC
-						}
 					}
 				}
 				send_equipment = {
 					target = CHI
-					type = infantry_equipment
-					amount = 200
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_war_with = PRC
-					}
-				}
-				send_equipment = {
-					target = PRC
 					type = infantry_equipment
 					amount = 200
 				}
@@ -1170,28 +1155,12 @@ focus_tree = {
 				limit = {
 					NOT = {
 						has_war_with = CHI
-						CHI = {
-							has_war_with = PRC
-						}
 					}
 				}
 				CHI = {
 					add_opinion_modifier = { target = SOV modifier = operation_zet_chi }
 				}
 				JAP = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
-				PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_war_with = PRC
-					}
-				}
-				CHI = {
-					add_opinion_modifier = { target = SOV modifier = operation_zet_jap }
-				}
-				JAP = { add_opinion_modifier = { target = SOV modifier = operation_zet_jap } }
-				PRC = { add_opinion_modifier = { target = SOV modifier = operation_zet_chi } }
 			}
 		}
 	}

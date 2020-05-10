@@ -277,12 +277,6 @@ foreign_support = {
 		}
 		targets = {
 			CHI
-			PRC
-			GXC
-			YUN
-			SHX
-			XSM
-			SIK
 			D01
 			D02
 			D03
@@ -382,12 +376,6 @@ foreign_support = {
 		}
 		targets = {
 			CHI
-			PRC
-			GXC
-			YUN
-			SHX
-			XSM
-			SIK
 			D01
 			D02
 			D03
