@@ -198,6 +198,9 @@ on_actions = {
           check_variable = {
             ROOT.grinding_period > 0
           }
+          NOT = {
+            has_country_flag = grind_time_has_gone  # KEKW
+          }
         }
         
         # Setting country flag to prevent grinding mission against this country
