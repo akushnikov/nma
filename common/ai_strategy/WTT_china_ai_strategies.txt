@@ -57,28 +57,6 @@ WTT_all_warlords_support_china_in_war = {
 	}
 }
 
-# we skip some of the minor minors that dont see much frontline
-SOV_dont_waste_volunteers_to_chinese_minors = {
-	enable = {
-		tag = SOV
-		SIK = { is_in_faction_with = CHI }
-	}
-	abort = {
-		NOT = { SIK = { is_in_faction_with = CHI } }
-	}
-	
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "SIK"
-		value = -100
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "YUN"
-		value = -100
-	
-	}
-}
 SOV_only_bother_with_volunteers_if_chi_losing = {
 	enable = {
 		tag = SOV
@@ -91,22 +69,7 @@ SOV_only_bother_with_volunteers_if_chi_losing = {
 			CHI = { surrender_progress > 0.3 }
 		}
 	}
-	
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "YUN"
-		value = -100
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "XSM"
-		value = -100
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "SHX"
-		value = -100
-	}
+
 	ai_strategy = {
 		type = send_volunteers_desire
 		id = "CHI"

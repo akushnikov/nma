@@ -291,22 +291,6 @@ on_actions = {
 		}
 	}
 
-	#ROOT is subject FROM is overlord
-	on_subject_annexed = {
-		effect = {
-			if = {
-				limit = {
-					FROM = { tag = CHI }
-					OR = {
-						tag = YUN
-						tag = GXC
-					}
-				}
-				FROM = { set_country_flag = achievement_romance_of_the_three_kingdoms_@ROOT }
-			}
-		}
-	}
-
 	on_nuke_drop = {
 		effect = {
 			if = {

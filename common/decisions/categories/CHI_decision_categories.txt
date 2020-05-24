@@ -27,15 +27,3 @@ CHI_industrial_evacuations = {
 		has_completed_focus = CHI_industrial_evacuations
 	}
 }
-
-CHI_seek_japanese_support = {
-	icon = jap_pacific_guardian
-	allowed = {
-		OR = {
-			tag = GXC
-			tag = YUN
-			tag = SHX
-			tag = XSM
-		}
-	}
-}

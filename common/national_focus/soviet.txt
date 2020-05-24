@@ -2382,55 +2382,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_claim_on_sinkiang
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = SOV_reconcile_japan }
-		available = {
-			JAP = { has_war_with = CHI }
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_reconcile_japan
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		bypass = {
-			OR = {
-				NOT = { country_exists = SIK }
-				AND = {
-					OR = {
-						owns_state = 618
-						618 = { is_claimed_by = ROOT }
-					}
-					OR = {
-						owns_state = 617
-						617 = { is_claimed_by = ROOT }
-					}
-					OR = {
-						owns_state = 619
-						619 = { is_claimed_by = ROOT }
-					}
-					OR = {
-						owns_state = 287
-						287 = { is_claimed_by = ROOT }
-					}
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			add_state_claim = 618
-			add_state_claim = 617
-			add_state_claim = 287
-			add_state_claim = 619
-			add_named_threat = { threat = 2 name = SOV_claim_on_sinkiang_threat }
-		}
-	}
-
-	focus = {
 		id = SOV_great_purge
 		icon = GFX_goal_generic_war_with_comintern
 		available = {

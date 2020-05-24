@@ -315,25 +315,6 @@ claims_on_romania = {
 	}
 }
 
-claims_on_sinkiang = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_claim_on_sinkiang
-		country_exists = CHI
-	}
-	abort = {
-		NOT = {
-			country_exists = CHI
-		}
-	}
-
-	ai_strategy = {
-		type = antagonize
-		id = "CHI"
-		value = 200
-	}
-}
-
 germany_enemy = {
 	enable = {
 		tag = SOV
