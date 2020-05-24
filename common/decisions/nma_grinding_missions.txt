@@ -216,7 +216,7 @@ nma_anti_grind_decisions = {
 
 		activation = {
 			BUL = { 
-				is_allowed_to_grind = yes
+				is_allowed_to_grind_during_ww2 = yes
 			}
 			has_country_flag = grinding_BUL
 		}
@@ -238,6 +238,43 @@ nma_anti_grind_decisions = {
 						}
 					}
 				}				
+			}
+		}
+	}
+
+	axis_grinding_SWI = {
+		icon = generic_scorched_earth
+		days_mission_timeout = SWI.grinding_period
+		is_good = no
+		allowed = {
+			OR = {
+				original_tag = GER
+				original_tag = ROM
+				original_tag = ITA
+				original_tag = HUN
+			}
+		}
+		available = {
+			SWI = {
+				is_done = yes
+			}
+		}
+		activation = {
+			SWI = { is_allowed_to_grind_during_ww2 = yes }
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			SWI = {
+				add_ideas = capitulation_inevitable
+				
+				hidden_effect = {
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}
+					}
+				}
 			}
 		}
 	}

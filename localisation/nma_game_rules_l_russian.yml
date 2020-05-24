@@ -138,6 +138,7 @@ NMA_BUL_GRINDING:0 "Фарм Болгарии"
 NMA_FIN_GRINDING:0 "Фарм Финляндии"
 NMA_AFG_GRINDING:0 "Фарм Афганистана"
 NMA_PER_GRINDING:0 "Фарм Ирана"
+NMA_SWI_GRINDING:0 "Фарм Швейцарии"
 
 NMA_RULE_OPTION_UNLIMITED_GRIND:0 "Без ограничений"
 NMA_RULE_OPTION_UNLIMITED_GRIND_DESC:0 "Включив эту опцию, вы позволите неограниченный фарм данной страны"

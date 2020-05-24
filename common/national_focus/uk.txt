@@ -2323,10 +2323,6 @@ focus_tree = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_good }
 				country_event = britain.4
 			}
-			YUN = {
-				add_opinion_modifier = { target = ENG modifier = burma_road_good }
-				country_event = britain.5
-			}
 			JAP = {
 				add_opinion_modifier = { target = ENG modifier = burma_road_bad }
 			}

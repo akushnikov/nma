@@ -164,10 +164,6 @@ GER_german_monarchy = {
 	color_ui = rgb { 115 115 115 }
 }
 
-CHI_warlord_leader = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
-}
 MAN_restored = {
 	color = rgb { 237 152 18 }
 	color_ui = rgb { 224 139 5 }
@@ -190,11 +186,6 @@ ADU = {
 CAT_aragon = {
 	color = rgb { 166 68 72 }
 	color_ui = rgb { 166 68 72 }
-}
-
-CHI_warlord_PRC = {
-	color = rgb { 245 12 55 }
-	color_ui = rgb { 178 34 60 }
 }
 
 CHI_power_struggle_defeated = {

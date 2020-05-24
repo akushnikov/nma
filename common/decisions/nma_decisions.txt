@@ -127,12 +127,6 @@ nma_annex_subjects = {
 		available = {
 			NOT = {
 				country_exists = CHI
-				country_exists = SHX
-				country_exists = YUN
-				country_exists = SIK
-				country_exists = PRC
-        country_exists = GXC
-				country_exists = XSM
       }
       
       any_state = {

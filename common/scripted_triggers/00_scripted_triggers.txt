@@ -115,46 +115,9 @@ check_has_focus_tree_to_switch_to_democratic = {
 			has_dlc = "Waking the Tiger"
 		}
 	}
-	NOT = {
-		AND = {
-			tag = YUN
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
-	NOT = {
-		AND = {
-			tag = GXC
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
-	NOT = {
-		AND = {
-			tag = XSM
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
-	NOT = {
-		AND = {
-			tag = SHX
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
-	NOT = {
-		AND = {
-			tag = SIK
-			has_dlc = "Waking the Tiger"
-			NOT = { has_focus_tree = china_nationalist_focus }
-		}
-	}
 }
 
 check_has_focus_tree_to_switch_to_communism = {
-	NOT = { tag = PRC }
-	NOT = { tag = SIK }
 	NOT = { tag = MAN }
 	NOT = { tag = SOV }
 	NOT = {
@@ -166,30 +129,6 @@ check_has_focus_tree_to_switch_to_communism = {
 	NOT = {
 		AND = {
 			tag = JAP
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	NOT = {
-		AND = {
-			tag = YUN
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	NOT = {
-		AND = {
-			tag = GXC
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	NOT = {
-		AND = {
-			tag = XSM
-			has_dlc = "Waking the Tiger"
-		}
-	}
-	NOT = {
-		AND = {
-			tag = SHX
 			has_dlc = "Waking the Tiger"
 		}
 	}

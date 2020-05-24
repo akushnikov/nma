@@ -226,18 +226,7 @@ create_import = {
 		target = CHI
 		type = puppet_wargoal_focus
 	}
-	#declare_war_on = {
-	#	target = GXC
-	#	type = puppet_focus
-	#}
-	#declare_war_on = {
-	#	target = YUN
-	#	type = puppet_focus
-	#}
-	#declare_war_on = {
-	#	target = PRC
-	#	type = annex_everything
-	#}
+
 	oob = "JAP_1939"
 	set_technology = {
 

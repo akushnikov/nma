@@ -189,6 +189,17 @@ on_actions = {
   # ROOT is capitulated country, FROM is winner
   on_capitulation = {
     effect = {
+      ROOT = {
+        save_event_target_as = nma_capitulated_country
+      }
+
+      FROM = {
+        country_event = {
+          id = nma_generic.1
+          days = 2
+        }
+      }
+
       if = {
         limit = {
           is_in_array = {
@@ -197,6 +208,9 @@ on_actions = {
           }
           check_variable = {
             ROOT.grinding_period > 0
+          }
+          NOT = {
+            has_country_flag = grind_time_has_gone  # KEKW
           }
         }
         
