@@ -108,6 +108,7 @@ if = {
 		target = ETH
 		type = annex_everything
 	}
+	set_country_flag = grinding_ETH
 	give_guarantee = ALB
 }
 

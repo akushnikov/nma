@@ -1511,8 +1511,8 @@ focus_tree = {
 		}
 		
 		bypass = {
-			ETH = { exists = yes }
-			NOT = { has_war_with = ETH }
+			# ETH = { exists = yes }
+			# NOT = { has_war_with = ETH }
 		}
 
 		available_if_capitulated = yes
