@@ -178,3 +178,14 @@ init_grinding_period = {
     log = "[THIS.GetNameDef] has grinding period [?grinding_period]"
   }
 }
+
+nma_disband_army = {
+  every_owned_state = {
+    OWNER = {
+      delete_unit = {
+        disband = yes
+        state = PREV.id
+      }
+    }
+  }
+}

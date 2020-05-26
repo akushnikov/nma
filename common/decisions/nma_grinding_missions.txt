@@ -50,6 +50,7 @@ nma_anti_grind_decisions = {
 			YUG = {
 				add_ideas = capitulation_inevitable
 				hidden_effect = {
+					nma_disband_army = yes
 					every_controlled_state = {
 						FROM = {
 							set_state_controller = PREV
@@ -81,6 +82,7 @@ nma_anti_grind_decisions = {
 			GRE = {
 				add_ideas = capitulation_inevitable
 				hidden_effect = {
+					nma_disband_army = yes
 					every_controlled_state = {
 						FROM = {
 							set_state_controller = PREV
@@ -112,6 +114,7 @@ nma_anti_grind_decisions = {
 			POR = {
 				add_ideas = capitulation_inevitable
 				hidden_effect = {
+					nma_disband_army = yes
 					every_controlled_state = {
 						FROM = {
 							set_state_controller = PREV
@@ -225,13 +228,11 @@ nma_anti_grind_decisions = {
 		}
 
 		timeout_effect = {
-			log = "PREV is [PREV.GetName]"
-			log = "THIS is [THIS.GetName]"
-			log = "FROM is [FROM.GetName]"
 			BUL = {
 				add_ideas = capitulation_inevitable
 				
 				hidden_effect = {
+					nma_disband_army = yes
 					every_controlled_state = {
 						FROM = {
 							set_state_controller = PREV
@@ -269,6 +270,7 @@ nma_anti_grind_decisions = {
 				add_ideas = capitulation_inevitable
 				
 				hidden_effect = {
+					nma_disband_army = yes
 					every_controlled_state = {
 						FROM = {
 							set_state_controller = PREV
