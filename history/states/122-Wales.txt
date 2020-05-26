@@ -10,8 +10,7 @@ state= {
 		aluminium=3 # was: 4
 	}
 
-	history=
-	{
+	history = {
 		owner = ENG
 		victory_points = { 377 5 }
 		buildings = {
@@ -24,7 +23,7 @@ state= {
 		add_core_of = ENG
 	}
 
-	provinces=
-	{
-253 311 377 407 3274 6363 9364 11361 	}
+	provinces = {
+		253 311 377 407 3274 6363 9364 11361 	
+	}
 }
