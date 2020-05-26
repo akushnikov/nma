@@ -1114,16 +1114,6 @@ country_event = {
 		VIC = { country_event = LaR_france_vichy_notification_events.6 }
 		if = {
 			limit = {
-				MAD = {
-					exists = yes
-					is_subject = yes
-					OVERLORD = { original_tag = FRA }
-				}
-			}
-			puppet = MAD
-		}
-		else_if = {
-			limit = {
 				543 = { CONTROLLER = { original_tag = FRA } }
 			}
 			transfer_state = 543
