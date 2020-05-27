@@ -1,6 +1,7 @@
 ﻿l_english:
  ################################################################# NMA MULTIPLAYER
- NMA_GROUPKEY:0 "NMA Multiplayer"
+ NMA_GROUPKEY:0 "NMA Multiplayer:General options"
+ NMA_GRINDING:0 "NMA Multiplayer:Grinding options"
 ################################################################# MINES
 NMA_MINELAYING_OPTIONS:0 "Minelaying Settings"
 NMA_RULE_OPTION_ENABLE_MINES:0 "Enable minelaying"
@@ -129,6 +130,12 @@ NMA_RULE_OPTION_UNION_DISABLED:0 "Ban Union"
 NMA_RULE_OPTION_UNION_DISABLED_DESC:0 "Clicking this option will not allow France player to form Franco-British Union after France's capitulation."
 NMA_RULE_OPTION_UNION_ENABLED:0 "Allow Union"
 NMA_RULE_OPTION_UNION_ENABLED_DESC:0 "Clicking this option will allow France player to from Franco-British Union after France's capitulation."
+################################################################ USA_OPTIONS
+NMA_USA_OPTIONS:0 "USA Refineries lock"
+NMA_RULE_OPTION_USA_DEFAULTCOST:0 "Disabled"
+NMA_RULE_OPTION_USA_DEFAULTCOST_DESC:0 "Vanilla"
+NMA_RULE_OPTION_UNION_SLOWED:0 "Enabled"
+NMA_RULE_OPTION_UNION_SLOWED_DESC:0 "Clicking this option will increase the refineries' construction time by 200% up to 1st january of 1943"
 ################################################################ GRINDING
 NMA_ETH_GRINDING:0 "Ethiopia Grind Settings"
 NMA_POR_GRINDING:0 "Portugal Grind Settings"

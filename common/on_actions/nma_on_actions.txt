@@ -1,6 +1,19 @@
 on_actions = {
   on_startup = {
     effect = {
+
+      if = {
+        limit =  {
+          has_game_rule = {
+            rule = NMA_USA_OPTIONS
+            option = NMA_USA_SLOWED
+          }
+        } 
+        USA = {
+          add_ideas = usa_synth_ban
+        } 
+      }
+
       every_country = {
         limit = {
           is_faction_leader = yes

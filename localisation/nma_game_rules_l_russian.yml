@@ -1,6 +1,7 @@
 ﻿l_russian:
- ################################################################# NMA Multiplayer
- NMA_GROUPKEY:0 "NMA Multiplayer"
+ ################################################################# NMA GROUPS
+ NMA_GROUPKEY:0 "NMA Multiplayer:Основные настройки"
+ NMA_GRINDING:0 "NMA Multiplayer:Настройки фарма"
  ############################################################## MINES
  NMA_MINELAYING_OPTIONS:0 "Настройки минирования"
  NMA_RULE_OPTION_ENABLE_MINES:0 "Разрешить минирование"
@@ -129,6 +130,12 @@ NMA_RULE_OPTION_UNION_DISABLED:0 "Запретить создание"
 NMA_RULE_OPTION_UNION_DISABLED_DESC:0 "Включив эту опцию, игрок на Франции будет иметь возможность создать Франко-Британский Союз после своей капитуляции."
 NMA_RULE_OPTION_UNION_ENABLED:0 "Разрешить создание"
 NMA_RULE_OPTION_UNION_ENABLED_DESC:0 "Включив эту опцию, игрок на Франции не будет иметь возможности создать Франко-Британский Союз после своей капитуляции."
+################################################################ USA_OPTIONS
+NMA_USA_OPTIONS:0 "Настройки постройки НПЗ США"
+NMA_RULE_OPTION_USA_DEFAULTCOST:0 "Ванила"
+NMA_RULE_OPTION_USA_DEFAULTCOST_DESC:0 "Ванила"
+NMA_RULE_OPTION_UNION_SLOWED:0 "Штраф 200%"
+NMA_RULE_OPTION_UNION_SLOWED_DESC:0 "Включив эту опцию, игрок на США будет иметь 200% штраф к скорости постройки НПЗ до 1го января 1943"
 ################################################################ GRINDING
 NMA_ETH_GRINDING:0 "Фарм Эфиопии"
 NMA_POR_GRINDING:0 "Фарм Португалии"

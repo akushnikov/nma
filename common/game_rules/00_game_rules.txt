@@ -1,27 +1,13 @@
 # NMA RULES
 
-#
-# TEMPLATE
-#
-#
-#nma_template_options = {
-#	name = "NMA_TEMPLATE_OPTIONS"
-#	group = "NMA_GROUPKEY"
-#	icon = ""
-#
-#	default = {
-#		name = ""
-#		text = ""
-#		desc = ""
-#	}
-#
-#	option = {
-#		name = ""
-#		text = ""
-#		desc = ""
-#	}
-#}
-
+  #####  ####### #     # ####### ######     #    #       
+ #     # #       ##    # #       #     #   # #   #       
+ #       #       # #   # #       #     #  #   #  #       
+ #  #### #####   #  #  # #####   ######  #     # #       
+ #     # #       #   # # #       #   #   ####### #       
+ #     # #       #    ## #       #    #  #     # #       
+  #####  ####### #     # ####### #     # #     # ####### 
+                                                         
 
 #
 #	ENABLE/DISABLE MINES
@@ -485,12 +471,44 @@ nma_union_options = {
 }
 
 #
+# USA Refinery construction speed rule
+#
+
+nma_usa_options = {
+	name = "NMA_USA_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = ""
+
+	default = {
+		name = "NMA_USA_DEFAULTCOST"
+		text = "NMA_RULE_OPTION_USA_DEFAULTCOST"
+		desc = "NMA_RULE_OPTION_USA_DEFAULTCOST_DESC"
+	}
+
+	option = {
+		name = "NMA_USA_SLOWED"
+		text = "NMA_RULE_OPTION_UNION_SLOWED"
+		desc = "NMA_RULE_OPTION_UNION_SLOWED_DESC"
+	}
+}
+
+
+  #####  ######  ### #     # ######  ### #     #  #####  
+ #     # #     #  #  ##    # #     #  #  ##    # #     # 
+ #       #     #  #  # #   # #     #  #  # #   # #       
+ #  #### ######   #  #  #  # #     #  #  #  #  # #  #### 
+ #     # #   #    #  #   # # #     #  #  #   # # #     # 
+ #     # #    #   #  #    ## #     #  #  #    ## #     # 
+  #####  #     # ### #     # ######  ### #     #  #####  
+
+
+#
 #	ETHIOPIA GRINDING
 #
 
 nma_eth_grinding = {
 	name = "NMA_ETH_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -583,7 +601,7 @@ nma_eth_grinding = {
 
 nma_por_grinding = {
 	name = "NMA_POR_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -670,7 +688,7 @@ nma_por_grinding = {
 
 nma_yug_grinding = {
 	name = "NMA_YUG_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -757,7 +775,7 @@ nma_yug_grinding = {
 
 nma_gre_grinding = {
 	name = "NMA_GRE_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -844,7 +862,7 @@ nma_gre_grinding = {
 
 nma_fin_grinding = {
 	name = "NMA_FIN_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -931,7 +949,7 @@ nma_fin_grinding = {
 
 nma_afg_grinding = {
 	name = "NMA_AFG_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -1018,7 +1036,7 @@ nma_afg_grinding = {
 
 nma_per_grinding = {
 	name = "NMA_PER_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -1105,7 +1123,7 @@ nma_per_grinding = {
 
 nma_bul_grinding = {
 	name = "NMA_BUL_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -1192,7 +1210,7 @@ nma_bul_grinding = {
 
 nma_swi_grinding = {
 	name = "NMA_SWI_GRINDING"
-	group = "NMA_GROUPKEY"
+	group = "NMA_GRINDING"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
