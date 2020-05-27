@@ -4,9 +4,9 @@ autonomy_state = {
 	default = yes
 	is_puppet = yes
 
-	min_freedom_level = 0.40
+	min_freedom_level = 0.5
 
-	manpower_influence = 1.0
+	manpower_influence = 0.7
 
 	rule = {
 		can_not_declare_war = yes
@@ -15,7 +15,7 @@ autonomy_state = {
 	}
 
 	modifier = {
-		autonomy_manpower_share = 0.7
+		autonomy_manpower_share = 1.0
 		can_master_build_for_us = 1
 		conscription_factor = -0.25
 		extra_trade_to_overlord_factor = 0.6
