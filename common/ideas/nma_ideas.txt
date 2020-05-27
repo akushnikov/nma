@@ -93,5 +93,37 @@ ideas = {
       }
     }
 
+    usa_synth_ban = {
+      picture = generic_refining_concern_1
+
+      cancel = {
+        date > 1943.1.1
+      }
+      modifier = {
+          production_speed_synthetic_refinery_factor = -2
+      }
+    }
+
+    uk_fb_fix = {
+      picture = eng_the_sun_never_sets
+
+      allowed = {
+        original_tag = ENG
+      }
+
+      modifier = {
+        surrender_limit = 0.2
+      }
+
+      cancel = {
+        NOT = {
+          controls_state = 118
+            OR = {
+              controls_state = 446
+              controls_state = 453
+          }
+				}   
+      }
+    }
   }
 }
