@@ -231,24 +231,6 @@ country_event = {
 	}
 }
 
-# Estonia Refuses
-country_event = {
-	id = soviet.7
-	title = soviet.7.t
-	desc = soviet.7.d
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-
-	option = {
-		name = soviet.7.a
-		create_wargoal = {
-			type = annex_everything
-			target = EST
-		}
-	}
-}
-
 # Latvia Surrenders
 country_event = {
 	id = soviet.8
@@ -264,24 +246,6 @@ country_event = {
 	}
 }
 
-# Latvia Refuses
-country_event = {
-	id = soviet.9
-	title = soviet.9.t
-	desc = soviet.9.d
-	picture = report_event_generic_sign_treaty2
-
-	is_triggered_only = yes
-
-	option = {
-		name = soviet.9.a
-		create_wargoal = {
-			type = annex_everything
-			target = LAT
-		}
-	}
-}
-
 # Lithuania Surrenders
 country_event = {
 	id = soviet.10
@@ -294,46 +258,6 @@ country_event = {
 	option = {
 		name = soviet.10.a
 		annex_country = { target = LIT }
-	}
-}
-
-# Lithuania Refuses
-country_event = {
-	id = soviet.11
-	title = soviet.11.t
-	desc = soviet.11.d
-	picture = report_event_generic_sign_treaty2
-
-	is_triggered_only = yes
-
-	option = {
-		name = soviet.11.a
-		create_wargoal = {
-			type = annex_everything
-			target = LIT
-		}
-	}
-}
-
-# Finland Accepts Demands
-country_event = {
-	id = soviet.12
-	title = soviet.12.t
-	desc = soviet.12.d
-	picture = GFX_report_event_soviet_finnish_pact
-
-	is_triggered_only = yes
-
-	option = {
-		name = soviet.12.a
-		SOV = {
-			transfer_state = 146
-		}
-		hidden_effect = {
-			SOV = {
-				country_event = { days = 1 id = news.13 }
-			}
-		}
 	}
 }
 
@@ -372,31 +296,10 @@ country_event = {
 
 	option = { # Accept
 		name = soviet.14.a
-		ai_chance = { factor = 100 }
 		SOV = {
 			country_event = { id = soviet.16 }
 		}
 		custom_effect_tooltip = GAME_OVER_TT
-	}
-	option = { # Refuse
-		name = soviet.14.b
-		SOV = {
-			country_event = { id = soviet.15 }
-		}
-	}
-}
-
-# Tannu Tuva declines the offer
-country_event = {
-	id = soviet.15
-	title = soviet.15.t
-	desc = soviet.15.d
-	picture = GFX_report_event_stalin_02
-
-	is_triggered_only = yes
-
-	option = {
-		name = soviet.15.a
 	}
 }
 
@@ -1023,15 +926,9 @@ country_event = {
 		days = 1
 	}
 
-
 	option = {
 		name = soviet.32.a
-		EST = { country_event = { days = 14 id = baltic.1 } }
-	}
-	option = {
-		name = soviet.32.b
-		ai_chance = { factor = 0 }
-		#
+		EST = { country_event = { id = baltic.1 } }
 	}
 }
 
@@ -1063,12 +960,7 @@ country_event = {
 
 	option = {
 		name = soviet.33.a
-		LAT = { country_event = { days = 14 id = baltic.2 } }
-	}
-	option = {
-		name = soviet.33.b
-		ai_chance = { factor = 0 }
-		#
+		LAT = { country_event = { id = baltic.2 } }
 	}
 }
 
@@ -1099,12 +991,7 @@ country_event = {
 
 	option = {
 		name = soviet.34.a
-		LIT = { country_event = { days = 14 id = baltic.3 } }
-	}
-	option = {
-		name = soviet.34.b
-		ai_chance = { factor = 0 }
-		#
+		LIT = { country_event = { id = baltic.3 } }
 	}
 }
 
