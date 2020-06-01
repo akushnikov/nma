@@ -189,3 +189,77 @@ nma_disband_army = {
     }
   }
 }
+
+nma_share_compliance = {
+  # sharing new member accumulated compliance among already existing faction members
+
+  every_country = {
+    limit = {
+      var:GLOBAL.nma_faction_new_member = {
+        has_collaboration = {
+          target = PREV
+          value > 0
+        }
+      }
+    }
+
+    set_temp_variable = { nma_collaboration_target = THIS }
+    # THIS - country with an established collaboration government
+    # PREV - new faction member
+
+    var:GLOBAL.nma_faction_new_member = {
+      # THIS - new faction member
+      # PREV - country with an established collaboration government
+      set_temp_variable = { nma_collaboration = has_collaboration@PREV }
+      divide_temp_variable = { nma_collaboration = 2 }
+    }
+
+    every_country = {
+      limit = {
+        OR = {
+          is_in_faction_with = GLOBAL.nma_faction_spymaster
+          tag = GLOBAL.nma_faction_spymaster
+        }
+      }
+
+      add_collaboration = {
+        target = nma_collaboration_target
+        value = nma_collaboration
+      }
+    }
+  }
+  
+  # sharing spymaster's accumulated compliance with a new faction member
+
+  every_country = {
+    limit = {
+      var:GLOBAL.nma_faction_spymaster = {
+        has_collaboration = {
+          target = PREV
+          value > 0
+        }
+      }
+    }
+
+    var:GLOBAL.nma_faction_spymaster = {
+      set_temp_variable = { spymaster_collaboration = has_collaboration@PREV }
+    }
+
+    var:GLOBAL.nma_faction_new_member = {
+      set_temp_variable = { newcomer_collaboration = has_collaboration@PREV }
+    }
+
+    if = {
+      limit = {
+        check_variable = { spymaster_collaboration > newcomer_collaboration }
+      }
+
+      var:GLOBAL.nma_faction_new_member = {
+        set_collaboration = {
+          target = PREV
+          value = spymaster_collaboration
+        }
+      }
+    }
+  }
+}
