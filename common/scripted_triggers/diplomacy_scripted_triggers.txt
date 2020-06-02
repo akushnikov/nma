@@ -134,12 +134,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = PAL } }
 			NOT = { FROM = { tag = ISR } }
 			NOT = { FROM = { tag = JOR } }
-			NOT = {
-				AND = {
-					FROM = { tag = EGY }
-					is_ironman = no
-				}
-			}
 			NOT = { FROM = { tag = KUW } }
 			NOT = { FROM = { tag = QAT } }
 			NOT = { FROM = { tag = UAE } }
@@ -153,19 +147,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = MLD } }
 			NOT = { FROM = { tag = FIJ } }
 			NOT = { FROM = { tag = BRM } }
-			NOT = { FROM = { tag = SUD } }
-			NOT = { FROM = { tag = SOM } }
-			NOT = { FROM = { tag = UGA } }
-			NOT = { FROM = { tag = KEN } }
-			NOT = { FROM = { tag = TZN } }
-			NOT = { FROM = { tag = ZAM } }
-			NOT = { FROM = { tag = MLW } }
-			NOT = { FROM = { tag = ZIM } }
-			NOT = { FROM = { tag = BOT } }
-			NOT = { FROM = { tag = NGA } }
-			NOT = { FROM = { tag = GHA } }
-			NOT = { FROM = { tag = SIE } }
-			NOT = { FROM = { tag = GAM } }
 		}
 	}
 	if = {
@@ -234,7 +215,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = PAL } }
 			NOT = { FROM = { tag = ISR } }
 			NOT = { FROM = { tag = JOR } }
-			NOT = { FROM = { tag = EGY } }
 			NOT = { FROM = { tag = KUW } }
 			NOT = { FROM = { tag = QAT } }
 			NOT = { FROM = { tag = UAE } }
@@ -248,19 +228,6 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			NOT = { FROM = { tag = MLD } }
 			NOT = { FROM = { tag = FIJ } }
 			NOT = { FROM = { tag = BRM } }
-			NOT = { FROM = { tag = SUD } }
-			NOT = { FROM = { tag = SOM } }
-			NOT = { FROM = { tag = UGA } }
-			NOT = { FROM = { tag = KEN } }
-			NOT = { FROM = { tag = TZN } }
-			NOT = { FROM = { tag = ZAM } }
-			NOT = { FROM = { tag = MLW } }
-			NOT = { FROM = { tag = ZIM } }
-			NOT = { FROM = { tag = BOT } }
-			NOT = { FROM = { tag = NGA } }
-			NOT = { FROM = { tag = GHA } }
-			NOT = { FROM = { tag = SIE } }
-			NOT = { FROM = { tag = GAM } }
 		}
 	}
 	if = {
