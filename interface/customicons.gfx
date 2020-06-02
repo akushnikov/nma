@@ -15,4 +15,54 @@ spriteTypes = {
 		texturefile = "gfx/interface/union_rule_icon.dds"
 	}
 
+	spriteType = {
+		name = "GFX_usa_synth_ban_rule_icon"
+		texturefile = "gfx/interface/usa_synth_ban_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_AFG_grinding_rule_icon"
+		texturefile = "gfx/interface/afg_grinding_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_BUL_grinding_rule_icon"
+		texturefile = "gfx/interface/bul_grinding_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ETH_grinding_rule_icon"
+		texturefile = "gfx/interface/eth_grinding_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_FIN_grinding_rule_icon"
+		texturefile = "gfx/interface/fin_grinding_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_GRE_grinding_rule_icon"
+		texturefile = "gfx/interface/gre_grinding_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_IRAN_grinding_rule_icon"
+		texturefile = "gfx/interface/iran_grinding_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_POR_grinding_rule_icon"
+		texturefile = "gfx/interface/por_grinding_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SWI_grinding_rule_icon"
+		texturefile = "gfx/interface/swi_grinding_rule_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_YUG_grinding_rule_icon"
+		texturefile = "gfx/interface/yug_grinding_rule_icon.dds"
+	}
+
 }
