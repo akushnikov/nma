@@ -477,7 +477,7 @@ nma_union_options = {
 nma_usa_options = {
 	name = "NMA_USA_OPTIONS"
 	group = "NMA_GROUPKEY"
-	icon = ""
+	icon = "GFX_usa_synth_ban_rule_icon"
 
 	default = {
 		name = "NMA_USA_DEFAULTCOST"
@@ -487,8 +487,26 @@ nma_usa_options = {
 
 	option = {
 		name = "NMA_USA_SLOWED"
-		text = "NMA_RULE_OPTION_UNION_SLOWED"
-		desc = "NMA_RULE_OPTION_UNION_SLOWED_DESC"
+		text = "NMA_RULE_OPTION_USA_SLOWED"
+		desc = "NMA_RULE_OPTION_USA_SLOWED_DESC"
+	}
+}
+
+nma_usa_lock_options = {
+	name = "NMA_USA_LOCK_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_usa_lock_rule_icon"
+
+	default = {
+		name = "NMA_USA_UNLOCKED"
+		text = "NMA_RULE_OPTION_USA_UNLOCKED"
+		desc = "NMA_RULE_OPTION_USA_UNLOCKED_DESC"
+	}
+
+	option = {
+		name = "NMA_USA_LOCKED"
+		text = "NMA_RULE_OPTION_USA_LOCKED"
+		desc = "NMA_RULE_OPTION_USA_LOCKED_DESC"
 	}
 }
 
@@ -509,6 +527,7 @@ nma_usa_options = {
 nma_eth_grinding = {
 	name = "NMA_ETH_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_ETH_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -602,6 +621,7 @@ nma_eth_grinding = {
 nma_por_grinding = {
 	name = "NMA_POR_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_POR_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -689,6 +709,7 @@ nma_por_grinding = {
 nma_yug_grinding = {
 	name = "NMA_YUG_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_YUG_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -776,6 +797,7 @@ nma_yug_grinding = {
 nma_gre_grinding = {
 	name = "NMA_GRE_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_GRE_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -863,6 +885,7 @@ nma_gre_grinding = {
 nma_fin_grinding = {
 	name = "NMA_FIN_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_FIN_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -950,6 +973,7 @@ nma_fin_grinding = {
 nma_afg_grinding = {
 	name = "NMA_AFG_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_AFG_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -1037,6 +1061,7 @@ nma_afg_grinding = {
 nma_per_grinding = {
 	name = "NMA_PER_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_IRAN_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -1124,6 +1149,7 @@ nma_per_grinding = {
 nma_bul_grinding = {
 	name = "NMA_BUL_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_BUL_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -1211,6 +1237,7 @@ nma_bul_grinding = {
 nma_swi_grinding = {
 	name = "NMA_SWI_GRINDING"
 	group = "NMA_GRINDING"
+	icon = "GFX_SWI_grinding_rule_icon"
 
 	default = {
 		name = "NMA_UNLIMITED_GRIND"
@@ -1291,7 +1318,13 @@ nma_swi_grinding = {
 	}
 }
 
-# DEFAULT RULES
+ ######  ####### #######    #    #     # #       ####### 
+ #     # #       #         # #   #     # #          #    
+ #     # #       #        #   #  #     # #          #    
+ #     # #####   #####   #     # #     # #          #    
+ #     # #       #       ####### #     # #          #    
+ #     # #       #       #     # #     # #          #    
+ ######  ####### #       #     #  #####  #######    #   
 
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"

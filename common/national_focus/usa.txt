@@ -257,6 +257,9 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
+			not = {
+				has_idea = usa_lock
+			}
 		}
 
 		bypass = {
@@ -279,6 +282,9 @@ focus_tree = {
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
+			hidden_effect = {
+				activate_mission = USA_legislation_discussion
+			}
 		}
 	}
 	focus = {
@@ -319,6 +325,9 @@ focus_tree = {
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_opposition = yes
+			hidden_effect = {
+				activate_mission = USA_legislation_discussion
+			}
 		}
 	}
 	focus = {

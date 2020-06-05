@@ -14,6 +14,18 @@ on_actions = {
         } 
       }
 
+      if = {
+        limit =  {
+          has_game_rule = {
+            rule = NMA_USA_LOCK_OPTIONS
+            option = NMA_USA_LOCKED
+          }
+        } 
+        USA = {
+          add_ideas = usa_lock
+        } 
+      }
+
       every_country = {
         limit = {
           is_faction_leader = yes
@@ -93,6 +105,48 @@ on_actions = {
     }
   }
 
+  # FROM is a new faction member
+  # THIS is a faction leader
+  on_offer_join_faction = {
+    effect = {
+
+      # Share compliance among faction members
+      if = {
+        # Should work only once per new faction member to prevent compliance mechanic abuse
+        limit = {
+          FROM = {
+            NOT = {
+              has_country_flag = nma_faction_member
+            }
+          }
+        }
+
+        set_variable = { GLOBAL.nma_faction_new_member = FROM }
+
+        random_country = {
+          limit = {
+            is_spymaster = yes
+            OR = {
+              is_in_faction_with = PREV
+              tag = PREV
+            }
+          }
+         
+          set_variable = { GLOBAL.nma_faction_spymaster = THIS }
+        }
+
+        nma_share_compliance = yes
+
+        clear_variable = GLOBAL.nma_faction_new_member
+        clear_variable = GLOBAL.nma_faction_spymaster
+
+        FROM = { set_country_flag = nma_faction_member }
+      }      
+    }
+  }
+
+  # FROM is a faction leader
+  # THIS is a new faction member
   on_join_faction = {
     effect = {
       if = {
@@ -102,47 +156,23 @@ on_actions = {
           }
         }
 
-        set_temp_variable = { faction_leader = FROM }
-        set_temp_variable = { newcomer = THIS }
-
         random_country = {
           limit = {
             is_spymaster = yes
-            is_in_faction_with = faction_leader
+            OR = {
+              is_in_faction_with = FROM
+              tag = FROM
+            }            
           }
 
-          set_temp_variable = { spymaster = THIS }
-
-          every_country = {
-            limit = {
-              var:spymaster = {
-                check_variable = { has_collaboration@PREV > 0 }
-              }
-            }
-
-            var:spymaster = {
-              set_temp_variable = { spymaster_collaboration = has_collaboration@PREV }
-            }
-            var:newcomer = {
-              set_temp_variable = { newcomer_collaboration = has_collaboration@PREV }
-            }
-
-            if = {
-              limit = {
-                check_variable = { spymaster_collaboration > newcomer_collaboration }
-              }
-
-              var:newcomer = {
-                set_collaboration = {
-                  target = PREV
-                  value = spymaster_collaboration
-                }
-              }
-            }
-
-          }
-
+          set_variable = { GLOBAL.nma_faction_spymaster = THIS }
+          set_variable = { GLOBAL.nma_faction_new_member = PREV }
         }
+
+        nma_share_compliance = yes
+
+        clear_variable = GLOBAL.nma_faction_new_member
+        clear_variable = GLOBAL.nma_faction_spymaster
 
         set_country_flag = nma_faction_member
       }
