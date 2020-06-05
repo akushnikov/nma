@@ -5,6 +5,12 @@ bookmarks = {
 		date = 1939.8.14.12
 		picture = "GFX_select_date_1939"
 		default_country = "GER"
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
 		FRA = {
 			history = FRA_BLITZKRIEG_DESC
 			ideology = democratic
