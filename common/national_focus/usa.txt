@@ -257,7 +257,9 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
-			date > 1937.07.01
+			not = {
+				has_idea = usa_lock
+			}
 		}
 
 		bypass = {

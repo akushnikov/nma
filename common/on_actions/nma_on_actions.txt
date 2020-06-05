@@ -14,6 +14,18 @@ on_actions = {
         } 
       }
 
+      if = {
+        limit =  {
+          has_game_rule = {
+            rule = NMA_USA_LOCK_OPTIONS
+            option = NMA_USA_LOCKED
+          }
+        } 
+        USA = {
+          add_ideas = usa_lock
+        } 
+      }
+
       every_country = {
         limit = {
           is_faction_leader = yes

@@ -487,8 +487,26 @@ nma_usa_options = {
 
 	option = {
 		name = "NMA_USA_SLOWED"
-		text = "NMA_RULE_OPTION_UNION_SLOWED"
-		desc = "NMA_RULE_OPTION_UNION_SLOWED_DESC"
+		text = "NMA_RULE_OPTION_USA_SLOWED"
+		desc = "NMA_RULE_OPTION_USA_SLOWED_DESC"
+	}
+}
+
+nma_usa_lock_options = {
+	name = "NMA_USA_LOCK_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_usa_lock_rule_icon"
+
+	default = {
+		name = "NMA_USA_UNLOCKED"
+		text = "NMA_RULE_OPTION_USA_UNLOCKED"
+		desc = "NMA_RULE_OPTION_USA_UNLOCKED_DESC"
+	}
+
+	option = {
+		name = "NMA_USA_LOCKED"
+		text = "NMA_RULE_OPTION_USA_LOCKED"
+		desc = "NMA_RULE_OPTION_USA_LOCKED_DESC"
 	}
 }
 

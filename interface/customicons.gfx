@@ -65,4 +65,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/yug_grinding_rule_icon.dds"
 	}
 
+	spriteType = {
+		name = "GFX_usa_lock_rule_icon"
+		texturefile = "gfx/interface/usa_lock_rule_icon.dds"
+	}
+
 }
