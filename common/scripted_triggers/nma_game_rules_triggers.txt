@@ -200,3 +200,34 @@ is_fa_ls_vanilla = {
     option = NMA_FA_LS_VANILLA
   }
 }
+
+is_total_mob_allowed = {
+  
+  if = {                                    # default
+    limit = {
+      has_game_rule = {
+        rule = NMA_TOTAL_MOB_OPTIONS
+        option = NMA_TOTAL_MOB_DEFAULT
+      }
+    }
+
+    always = yes
+  } else_if = {                             # prohibited but still allowed for Japan
+    limit = { 
+      has_game_rule = {
+        rule = NMA_TOTAL_MOB_OPTIONS
+        option = NMA_TOTAL_MOB_PROHIBITED
+      }
+    }
+
+    original_tag = JAP
+  } else = {                                # prohibited for everyone untill Barbarossa but still allowed for Japan
+
+    OR = {
+      original_tag = JAP
+      GER = {
+        has_offensive_war_with = SOV
+      }
+    }    
+  }
+}

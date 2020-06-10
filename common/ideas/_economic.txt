@@ -252,6 +252,8 @@ ideas = {
 					}
 				}
 
+				is_total_mob_allowed = yes
+
 				if = {
 					limit = {
 						original_tag = HUN
