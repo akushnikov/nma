@@ -17,7 +17,6 @@ German_historical = {
 		GER_four_year_plan
 		GER_west_wall
 		GER_autarky
-		GER_anti_comitern_pact
 		#1937
 		GER_hermann_goring_werke
 		GER_army_innovation

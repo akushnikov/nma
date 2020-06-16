@@ -145,24 +145,24 @@ are_1944planes_branch_cutoff = {
 }
 
 is_1944_planes_enabled = {
-    NOT = {
-      are_1944planes_branch_cutoff = yes
+  NOT = {
+    are_1944planes_branch_cutoff = yes
+  }
+
+  OR = {
+    has_game_rule = {
+      rule = NMA_1944PLANES_OPTIONS
+      option = NMA_1944PLANES_FREE
     }
 
-    OR = {
+    AND = {
       has_game_rule = {
         rule = NMA_1944PLANES_OPTIONS
-        option = NMA_1944PLANES_FREE
+        option = NMA_LIMIT_1944PLANES
       }
 
-      AND = {
-        has_game_rule = {
-          rule = NMA_1944PLANES_OPTIONS
-          option = NMA_LIMIT_1944PLANES
-        }
-
-        date > 1939.9.1
-      }
+      date > 1942.1.1
+    }
   }
 }
 
@@ -198,5 +198,36 @@ is_fa_ls_vanilla = {
   has_game_rule = {
     rule = NMA_FA_LS_OPTIONS
     option = NMA_FA_LS_VANILLA
+  }
+}
+
+is_total_mob_allowed = {
+  
+  if = {                                    # default
+    limit = {
+      has_game_rule = {
+        rule = NMA_TOTAL_MOB_OPTIONS
+        option = NMA_TOTAL_MOB_DEFAULT
+      }
+    }
+
+    always = yes
+  } else_if = {                             # prohibited but still allowed for Japan
+    limit = { 
+      has_game_rule = {
+        rule = NMA_TOTAL_MOB_OPTIONS
+        option = NMA_TOTAL_MOB_PROHIBITED
+      }
+    }
+
+    original_tag = JAP
+  } else = {                                # prohibited for everyone untill Barbarossa but still allowed for Japan
+
+    OR = {
+      original_tag = JAP
+      GER = {
+        has_offensive_war_with = SOV
+      }
+    }    
   }
 }
