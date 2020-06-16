@@ -143,7 +143,7 @@ NMA_RULE_OPTION_USA_UNLOCKED_DESC:0 "Ванила"
 NMA_RULE_OPTION_USA_LOCKED:0 "Залочена"
 NMA_RULE_OPTION_USA_LOCKED_DESC:0 "Включив эту опцию, игрок на США не сможет начать бороться с Великой Депрессией до июля 1937"
 ################################################################ TOTAL MOB
-NMA_TOTAL_MOB_OPTIONS:0 "Настройка Тотально Мобилизации"
+NMA_TOTAL_MOB_OPTIONS:0 "Настройка Тотальной Мобилизации"
 NMA_RULE_OPTION_TOTAL_MOB_DEFAULT:0 "Ванила"
 NMA_RULE_OPTION_TOTAL_MOB_DEFAULT_DESC:0 "Ванила"
 NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED:0 "Запретить"
