@@ -342,6 +342,26 @@ on_actions = {
 
         set_country_flag = grinding_@FROM
       }
+
+      if = {
+        limit = {
+          GER = {
+            has_completed_focus = GER_danzig_or_war
+          }
+          FROM = {
+            OR = {
+              original_tag = HOL
+              original_tag = BEL
+              original_tag = LUX
+            }
+            is_ai = yes
+          }
+        }
+        
+        ENG = {
+          add_to_faction = FROM
+        }
+      }
     }
   }
 }
