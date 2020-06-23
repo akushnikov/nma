@@ -26,6 +26,18 @@ on_actions = {
         } 
       }
 
+      if = {
+        limit =  {
+          has_game_rule = {
+            rule = NMA_GER_SPYSLOTS_OPTIONS
+            option = NMA_GER_SPYSLOTS_ENABLED
+          }
+        } 
+        GER = {
+          add_ideas = ger_spyslots
+        } 
+      }
+
       every_country = {
         limit = {
           is_faction_leader = yes
