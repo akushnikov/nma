@@ -71,6 +71,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_totalmob_rule_icon"
+		texturefile = "gfx/interface/totalmob_rule_icon.dds"
+	}
+
+	spriteType = {
 		name = "GFX_ger_spyslots_rule_icon"
 		texturefile = "gfx/interface/ger_spyslots_rule_icon.dds"
 	}
