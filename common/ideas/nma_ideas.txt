@@ -127,11 +127,15 @@ ideas = {
     }
 
     usa_lock = {
-    
       cancel = {
         date > 1937.07.01
-      }
-      
+      }  
+    }
+
+    ger_spyslots = {
+      modifier = {
+				operative_slot = 2
+			}        
     }
 
   }

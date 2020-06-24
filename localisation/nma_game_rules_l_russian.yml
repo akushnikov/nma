@@ -150,6 +150,12 @@ NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED:0 "Запретить"
 NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED_DESC:0 "Включив эту опцию, ни одна страна, кроме Японии, не сможет пикнуть тоталку"
 NMA_RULE_OPTION_TOTAL_MOB_BARB:0 "Запретить до Барбароссы"
 NMA_RULE_OPTION_TOTAL_MOB_BARB_DESC:0 "Включив эту опцию, ни одна страна, кроме Японии, не сможет пикнуть тоталку до Барбароссы"
+################################################################ GER SPYSLOTS
+NMA_GER_SPYSLOTS_OPTIONS:0 "Доп. шпионы Германии"
+NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED:0 "Выключить"
+NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED_DESC:0 "Ванила"
+NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED:0 "Включить"
+NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED_DESC:0 "Включив эту опцию, Германия перманентно получит 2 дополнитьных шпиона со старта игры"
 ################################################################ GRINDING
 NMA_ETH_GRINDING:0 "Фарм Эфиопии"
 NMA_POR_GRINDING:0 "Фарм Португалии"

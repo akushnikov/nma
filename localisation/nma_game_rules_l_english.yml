@@ -150,6 +150,12 @@ NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED:0 "Ban Total Mobilization"
 NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED_DESC:0 "Clicking this option will prevent every nation except Japan from picking Total Mobilization"
 NMA_RULE_OPTION_TOTAL_MOB_BARB:0 "Ban untill Barbarossa"
 NMA_RULE_OPTION_TOTAL_MOB_BARB_DESC:0 "Clicking this option will prevent every nation except Japan from picking Total Mobilization untill Barbarossa starts"
+################################################################ GER SPYSLOTS
+NMA_GER_SPYSLOTS_OPTIONS:0 "Extra spy slots for Germany"
+NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED:0 "Disabled"
+NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED_DESC:0 "Vanilla like"
+NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED:0 "Enabled"
+NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED_DESC:0 "Clicking this option will add 2 additional operative slots for Germany since the game start."
 ################################################################ GRINDING
 NMA_ETH_GRINDING:0 "Ethiopia Grind Settings"
 NMA_POR_GRINDING:0 "Portugal Grind Settings"
