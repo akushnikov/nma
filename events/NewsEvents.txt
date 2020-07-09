@@ -12579,18 +12579,12 @@ news_event = {
 			TAG = YUG
 		}
 	}
-	option = {
-		name = news.326.b
-		trigger = {
-			TAG = CRO
-		}
-	}
+
 	option = {
 		name = news.326.c
 		trigger = {
 			NOT = {
 				TAG = YUG
-				TAG = CRO
 			}
 		}
 	}
