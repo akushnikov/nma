@@ -46,6 +46,8 @@ init_grind_countries = {
   add_to_array = { GLOBAL.grind_countries = AFG }
   add_to_array = { GLOBAL.grind_countries = PER }
   add_to_array = { GLOBAL.grind_countries = BUL }
+  add_to_array = { GLOBAL.grind_countries = SWI }
+  add_to_array = { GLOBAL.grind_countries = CHI }
 }
 
 add_faction_members_collaboration = {

@@ -343,7 +343,6 @@ on_actions = {
           FROM = {
             is_ai = yes
             NOT = { has_country_flag = grind_time_has_gone }
-            NOT = { is_in_faction = yes }
             check_variable = {
               var = THIS.grinding_period
               value = 0
