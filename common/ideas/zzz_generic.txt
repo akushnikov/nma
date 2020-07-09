@@ -1763,7 +1763,7 @@ ideas = {
 		generic_captain_of_industry = {
 
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { captain_of_industry }
@@ -1772,7 +1772,7 @@ ideas = {
 		generic_fortification_engineer = {
 
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { fortification_engineer }
@@ -1781,7 +1781,7 @@ ideas = {
 		generic_war_industrialist = {
 
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { war_industrialist }
@@ -1793,7 +1793,7 @@ ideas = {
 		generic_army_chief_off = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { army_chief_offensive_1 }
@@ -1802,7 +1802,7 @@ ideas = {
 		generic_army_chief_def = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { army_chief_defensive_1 }
@@ -1814,7 +1814,7 @@ ideas = {
 		generic_navy_chief_decisive_bat = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { navy_chief_decisive_battle_2 }
@@ -1823,7 +1823,7 @@ ideas = {
 		generic_navy_anti_submarine = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { navy_anti_submarine_2 }
@@ -1835,7 +1835,7 @@ ideas = {
 		generic_air_close_air_sup = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { air_close_air_support_2 }
@@ -1844,7 +1844,7 @@ ideas = {
 		generic_air_chief_all_weather = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { air_chief_all_weather_2 }			
@@ -1857,7 +1857,7 @@ ideas = {
 			ledger = army
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { army_artillery_1 }			
@@ -1867,7 +1867,7 @@ ideas = {
 			ledger = army
 
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { army_logistics_2 }			
@@ -1877,7 +1877,7 @@ ideas = {
 			ledger = navy
 
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { navy_fleet_logistics_1 }			
@@ -1887,7 +1887,7 @@ ideas = {
 			ledger = air
 
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { air_air_combat_training_2 }			
@@ -1900,7 +1900,7 @@ ideas = {
 			ledger = army
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			research_bonus = {
@@ -1914,7 +1914,7 @@ ideas = {
 			ledger = navy
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			research_bonus = {
@@ -1928,7 +1928,7 @@ ideas = {
 			ledger = air
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = CRO original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			research_bonus = {
