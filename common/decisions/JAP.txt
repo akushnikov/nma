@@ -1,40 +1,39 @@
 #Category allowed for JAP
 JAP_intervene_in_china = {
 
-	JAP_china_step_up_war_effort = {
-
+	JAP_china_step_up_war_effort_mission = {
 		icon = jap_conquer_china
 
+		is_good = yes
+
+		days_mission_timeout = 30
+
+		allowed = {
+			original_tag = JAP
+		}
+
 		available = {
-			JAP_has_idea_JAP_intervene_in_china = yes
+			NOT = {
+				country_exists = CHI
+			}
 		}
 
 		visible = {
 			JAP_has_idea_JAP_intervene_in_china = yes
-			any_enemy_country = {
-				is_literally_china = yes
+			has_war_with = CHI
+		}
+
+		activation = {
+			JAP_has_idea_JAP_intervene_in_china = yes
+		}
+
+		cancel_trigger = {
+			hidden_trigger = {
+					NOT = { JAP_has_idea_JAP_intervene_in_china = yes }
 			}
 		}
 
-		fire_only_once = no
-
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				has_war_with = USA
-				factor = 10 #screw it, kill everything
-			}
-		}
-		modifier = {
-
-		}
-
-		days_remove = 0
-		days_re_enable = 30
-
-		cost = 25
-
-		complete_effect = {
+		timeout_effect = {
 			if = {
 				limit = {
 					USA = {
@@ -44,6 +43,7 @@ JAP_intervene_in_china = {
 				USA = { add_war_support = 0.025 }
 			}
 			JAP_intervene_in_china_level_down = yes
+			activate_mission = JAP_china_step_up_war_effort_mission
 		}
 	}
 
