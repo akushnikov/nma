@@ -1900,7 +1900,7 @@ ideas = {
 			ledger = army
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = AST original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = JOR original_tag = INS original_tag = MAL original_tag = VIN original_tag = CAM original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			research_bonus = {
