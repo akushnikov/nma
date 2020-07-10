@@ -80,6 +80,12 @@ NMA_RULE_OPTION_ENABLE_STRATS:0 "Allow"
 NMA_RULE_OPTION_ENABLE_STRATS_DESC:0 "Vanilla"
 NMA_RULE_OPTION_DISABLE_STRATS:0 "Ban"
 NMA_RULE_OPTION_DISABLE_STRATS_DESC:0 "Clicking this option will remove strategic bombers from the game"
+################################################################ NAVY 1940
+NMA_1940NAVY_OPTIONS:0 "1940 Navy Settings"
+NMA_RULE_OPTION_1940NAVY_FREE:0 "Free research"
+NMA_RULE_OPTION_1940NAVY_FREE_DESC:0 "Vanilla"
+NMA_RULE_OPTION_LIMIT_1940NAVY:0 "2 years ahead of time restriction"
+NMA_RULE_OPTION_LIMIT_1940NAVY_DESC:0 "Clicking this option will allow to research 1940 navy since §Y1 january 1938§!."
 ################################################################ NAVY 1944
 NMA_1944NAVY_OPTIONS:0 "1944 Navy Settings"
 NMA_RULE_OPTION_1944NAVY_FREE:0 "Free research"

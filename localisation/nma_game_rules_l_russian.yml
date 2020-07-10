@@ -80,6 +80,12 @@
  NMA_RULE_OPTION_ENABLE_STRATS_DESC:0 "Ванила."
  NMA_RULE_OPTION_DISABLE_STRATS:0 "Запрещены"
  NMA_RULE_OPTION_DISABLE_STRATS_DESC:0 "Включив эту опцию, стратегические бомбардировщики будут полностью запрещены."
+################################################################ NAVY 1940
+ NMA_1940NAVY_OPTIONS:0 "Настройки кораблей 1940г"
+ NMA_RULE_OPTION_1940NAVY_FREE:0 "Исследование без ограничений."
+ NMA_RULE_OPTION_1940NAVY_FREE_DESC:0 "Ванила."
+ NMA_RULE_OPTION_LIMIT_1940NAVY:0 "Ограничение 2 года."
+ NMA_RULE_OPTION_LIMIT_1940NAVY_DESC:0 "Включив эту опцию, корабли 1940г можно будет начать изучать не раньше §Y1 января 1938г§!."
  ################################################################ NAVY 1944
  NMA_1944NAVY_OPTIONS:0 "Настройки кораблей 1944г"
  NMA_RULE_OPTION_1944NAVY_FREE:0 "Исследование без ограничений."
