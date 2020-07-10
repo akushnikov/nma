@@ -238,7 +238,17 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_political_power = 150
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = NMA_USA_LOCK_OPTIONS
+            			option = NMA_USA_LOCKED
+					}
+				}
+				add_political_power = 250
+			} else = {
+				add_political_power = 150
+			}
 		}
 	}
 	focus = {
@@ -530,7 +540,17 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
-			add_political_power = 200
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = NMA_USA_LOCK_OPTIONS
+            			option = NMA_USA_LOCKED
+					}
+				}
+				add_political_power = 300
+			} else = {
+				add_political_power = 200
+			}
 			add_ideas = USA_neutrality_act
 			add_war_support = -0.05
 			if = {
