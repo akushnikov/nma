@@ -140,8 +140,10 @@ NMA_RULE_OPTION_UNION_ENABLED_DESC:0 "Clicking this option will allow France pla
 NMA_USA_OPTIONS:0 "USA Refineries lock"
 NMA_RULE_OPTION_USA_DEFAULTCOST:0 "Disabled"
 NMA_RULE_OPTION_USA_DEFAULTCOST_DESC:0 "Vanilla"
-NMA_RULE_OPTION_USA_SLOWED:0 "Enabled"
-NMA_RULE_OPTION_USA_SLOWED_DESC:0 "Clicking this option will increase the refineries' construction time by 200% up to 1st january of 1943"
+NMA_RULE_OPTION_USA_SLOWED:0 "Ban until 01.01.1943"
+NMA_RULE_OPTION_USA_SLOWED_DESC:0 "Clicking this option will increase the refineries' construction time by 200% up to §Y1st january of 1943§!"
+NMA_RULE_OPTION_USA_JAPWAR:0 "Ban until the war with Japan"
+NMA_RULE_OPTION_USA_JAPWAR_DESC:0 "Clicking this option will increase the refineries' construction time by 200% up to the war with Japan"
 ################################################################ USA_LOCK
 NMA_USA_LOCK_OPTIONS:0 "USA Lock"
 NMA_RULE_OPTION_USA_UNLOCKED:0 "Disabled"

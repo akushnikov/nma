@@ -512,6 +512,12 @@ nma_usa_options = {
 		text = "NMA_RULE_OPTION_USA_SLOWED"
 		desc = "NMA_RULE_OPTION_USA_SLOWED_DESC"
 	}
+
+	option = {
+		name = "NMA_USA_JAPWAR"
+		text = "NMA_RULE_OPTION_USA_JAPWAR"
+		desc = "NMA_RULE_OPTION_USA_JAPWAR_DESC"
+	}
 }
 
 nma_usa_lock_options = {

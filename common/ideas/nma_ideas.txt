@@ -104,6 +104,17 @@ ideas = {
       }
     }
 
+    usa_synth_banJapWar = {
+      picture = generic_refining_concern_1
+
+      cancel = {
+        has_war_with = JAP
+      }
+      modifier = {
+          production_speed_synthetic_refinery_factor = -2
+      }
+    }
+
     uk_fb_fix = {
       picture = eng_the_sun_never_sets
 
