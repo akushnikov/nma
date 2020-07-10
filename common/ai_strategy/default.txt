@@ -985,7 +985,7 @@ ai_dont_spy_at_all = {
 
 	ai_strategy = {
 		type = intelligence_agency_usable_factories
-		value = 500
+		value = -9999
 	}
 
 	ai_strategy = {

@@ -296,11 +296,6 @@ RAJ = {
 	color_ui = rgb { 226  135  40 }
 }
 
-CRO = {
-	color = rgb { 230  70  180 }
-	color_ui = rgb { 230 255 122 }
-}
-
 PAL = {
 	color = rgb { 170  125  80 }
 	color_ui = rgb { 170  125  80 }

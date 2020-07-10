@@ -281,4 +281,44 @@ nma_anti_grind_decisions = {
 		}
 	}
 
+	JAP_grinding_CHI = {
+		icon = generic_scorched_earth
+		days_mission_timeout = CHI.grinding_period
+		is_good = no
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		available = {
+			CHI = {
+				is_done = yes
+			}
+		}
+
+		activation = {
+			CHI = {
+				is_allowed_to_grind_during_ww2 = yes
+			}
+		}
+
+		complete_effect = {			
+		}
+
+		timeout_effect = {
+			CHI = {
+				add_ideas = capitulation_inevitable
+
+				hidden_effect = {
+					nma_disband_army = yes
+					every_controlled_state = {
+						FROM = {
+							set_state_controller = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+
 }

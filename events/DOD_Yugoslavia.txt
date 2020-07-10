@@ -123,15 +123,6 @@ country_event = {
 			type = annex_everything
 			target = YUG
 		}
-		if = {
-			limit = {
-				CRO = { 
-					exists = yes 
-					is_subject_of = YUG
-				}
-			}
-			puppet = CRO
-		}
 	}
 }
 
@@ -164,79 +155,6 @@ country_event = {
 	}
 }
 
-#Yugoslavian independence war(s)
-country_event = {
-	id = DOD_yugoslavia.10
-	title = DOD_yugoslavia.10.t
-	desc = DOD_yugoslavia.10.desc
-	picture = GFX_report_event_yugoslavia_partisans
-	
-	trigger = {
-		tag = YUG
-		has_idea = YUG_idea_croatian_opposition
-		has_war_with = GER
-		GER = {
-			has_government = fascism
-		}
-		OR = {
-			AND = {
-				CRO = { exists = yes }
-				CRO = { is_subject_of = YUG }
-			}
-			109 = { is_owned_and_controlled_by = YUG }
-		}
-	}
-	mean_time_to_happen = {
-		days = 4
-	}
-	
-	fire_only_once = yes #would be funny though
-
-	option = { 
-		name = DOD_yugoslavia.10.a
-		ai_chance = {
-			factor = 70
-		}	
-		if = {
-			limit = {
-				CRO = {
-					exists = yes
-					is_subject_of = YUG
-				}
-			}
-			set_autonomy = { target = CRO autonomy_state = autonomy_free }
-			CRO = {
-				declare_war_on = {
-					target = YUG
-					type = annex_everything
-
-				}
-			}
-		}
-		if = {
-			limit = {
-				CRO = {
-					exists = no
-				}
-				109 = { is_fully_controlled_by = YUG }
-			}
-			CRO = { transfer_state = 109 }
-			if = {
-				limit = {
-					103 = { is_fully_controlled_by = YUG }
-				}
-				CRO = { transfer_state = 103 }
-			}
-			CRO = {
-				declare_war_on = {
-					target = YUG
-					type = annex_everything
-				}
-				load_oob = "CRO_YUG_independence"
-			}
-		}
-	}
-}
 
 #Yugoslavia wants to buy planes - event for GER,FRA,ENG,ITA
 country_event = {
@@ -3004,25 +2922,5 @@ country_event = {
 	option = {# neat
 		name = DOD_hungary.165.a
 		
-	}
-}
-
-#Annexation event to prevent gameover
-country_event = {
-	id = DOD_yugoslavia.166
-	
-	is_triggered_only = yes
-	
-	hidden = yes
-
-	option = {
-		name = DOD_hungary.166.a
-		annex_country = {
-			target = YUG
-		}
-		transfer_units_fraction = {
-			target = CRO
-			size = 0.2
-		}
 	}
 }

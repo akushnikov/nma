@@ -17,6 +17,18 @@ on_actions = {
       if = {
         limit =  {
           has_game_rule = {
+            rule = NMA_USA_OPTIONS
+            option = NMA_USA_JAPWAR
+          }
+        } 
+        USA = {
+          add_ideas = usa_synth_banJapWar
+        } 
+      }
+
+      if = {
+        limit =  {
+          has_game_rule = {
             rule = NMA_USA_LOCK_OPTIONS
             option = NMA_USA_LOCKED
           }
@@ -343,7 +355,6 @@ on_actions = {
           FROM = {
             is_ai = yes
             NOT = { has_country_flag = grind_time_has_gone }
-            NOT = { is_in_faction = yes }
             check_variable = {
               var = THIS.grinding_period
               value = 0

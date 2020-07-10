@@ -405,7 +405,6 @@ CHI_european_allies = { #used to make minor European nations like Axis more
 			original_tag = LAT
 			original_tag = LIT
 			original_tag = EST
-			original_tag = CRO
 			original_tag = SLO
 		}
 	}

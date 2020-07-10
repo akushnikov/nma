@@ -80,6 +80,12 @@
  NMA_RULE_OPTION_ENABLE_STRATS_DESC:0 "Ванила."
  NMA_RULE_OPTION_DISABLE_STRATS:0 "Запрещены"
  NMA_RULE_OPTION_DISABLE_STRATS_DESC:0 "Включив эту опцию, стратегические бомбардировщики будут полностью запрещены."
+################################################################ NAVY 1940
+ NMA_1940NAVY_OPTIONS:0 "Настройки кораблей 1940г"
+ NMA_RULE_OPTION_1940NAVY_FREE:0 "Исследование без ограничений."
+ NMA_RULE_OPTION_1940NAVY_FREE_DESC:0 "Ванила."
+ NMA_RULE_OPTION_LIMIT_1940NAVY:0 "Ограничение 2 года."
+ NMA_RULE_OPTION_LIMIT_1940NAVY_DESC:0 "Включив эту опцию, корабли 1940г можно будет начать изучать не раньше §Y1 января 1938г§!."
  ################################################################ NAVY 1944
  NMA_1944NAVY_OPTIONS:0 "Настройки кораблей 1944г"
  NMA_RULE_OPTION_1944NAVY_FREE:0 "Исследование без ограничений."
@@ -134,8 +140,10 @@ NMA_RULE_OPTION_UNION_ENABLED_DESC:0 "Включив эту опцию, игро
 NMA_USA_OPTIONS:0 "Настройки постройки НПЗ США"
 NMA_RULE_OPTION_USA_DEFAULTCOST:0 "Ванила"
 NMA_RULE_OPTION_USA_DEFAULTCOST_DESC:0 "Ванила"
-NMA_RULE_OPTION_USA_SLOWED:0 "Штраф 200%"
-NMA_RULE_OPTION_USA_SLOWED_DESC:0 "Включив эту опцию, игрок на США будет иметь 200% штраф к скорости постройки НПЗ до 1го января 1943"
+NMA_RULE_OPTION_USA_SLOWED:0 "Запретить до 01.01.1943"
+NMA_RULE_OPTION_USA_SLOWED_DESC:0 "Включив эту опцию, США не сможет строить НПЗ до §Y1го января 1943§!"
+NMA_RULE_OPTION_USA_JAPWAR:0 "Запретить до войны с Японией"
+NMA_RULE_OPTION_USA_JAPWAR_DESC:0 "Включив эту опцию, США не сможет строить НПЗ до войны с Японией"
 ################################################################ USA_LOCK
 NMA_USA_LOCK_OPTIONS:0 "Лок США"
 NMA_RULE_OPTION_USA_UNLOCKED:0 "Ванила"

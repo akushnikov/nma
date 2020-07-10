@@ -101,6 +101,24 @@ is_advanced_tank_enabled = {
   }
 }
 
+is_1940_navy_enabled = {
+
+  OR = {
+    has_game_rule = {
+      rule = NMA_1940NAVY_OPTIONS
+      option = NMA_1940NAVY_FREE
+  }
+  AND = {
+    has_game_rule = {
+      rule = NMA_1940NAVY_OPTIONS
+      option = NMA_LIMIT_1940NAVY
+    }
+
+      date > 1938.1.1
+    }
+  }
+}
+
 is_1944_navy_enabled = {
 
   OR = {

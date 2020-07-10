@@ -79,4 +79,10 @@ spriteTypes = {
 		name = "GFX_ger_spyslots_rule_icon"
 		texturefile = "gfx/interface/ger_spyslots_rule_icon.dds"
 	}
+
+	spriteType = {
+		name = "GFX_CHI_grinding_rule_icon"
+		texturefile = "gfx/interface/chi_grinding_rule_icon.dds"
+	}
+
 }
