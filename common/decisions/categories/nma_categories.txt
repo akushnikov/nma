@@ -1,7 +1,0 @@
-nma_annex_subjects = {
-  icon = generic_political_actions
-}
-
-nma_anti_grind_decisions = {
-  icon = generic_propaganda
-}
