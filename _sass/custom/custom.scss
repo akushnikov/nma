@@ -1,0 +1,17 @@
+.social-button {
+    width: 200px;
+    display: inline-block;
+    cursor: pointer;
+
+    &.discord {
+        background: url(/assets/discord.svg);
+    }
+    &.steam {
+        fill: white;
+        background: url(/assets/steam.svg);
+    }
+    &.github {
+        background: url(/assets//github.png);
+    }
+
+}
