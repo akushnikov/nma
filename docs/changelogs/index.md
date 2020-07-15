@@ -8,4 +8,4 @@ permalink: /changelogs
 
 # Changelogs
 
-Here you can view all changes made in mod in historical order.
+Here you can check full changelogs for each release.
