@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Game Rules
-parent: Features
-nav_order: 1
+parent: Core features
+nav_order: 2
 ---
 # Custom gamerules
 

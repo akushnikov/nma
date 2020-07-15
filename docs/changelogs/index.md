@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Changelogs
-nav_order: 100
+title: Full changelogs
+nav_order: 3
 has_children: true
 permalink: /changelogs
 ---

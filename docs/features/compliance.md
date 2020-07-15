@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Compliance
-parent: Features
-nav_order: 2
+title: Compliance & Espionage
+parent: Core features
+nav_order: 1
 ---
 # Compliance rework
 
