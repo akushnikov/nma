@@ -90,18 +90,18 @@ no_garrison = {
 			add = 200
 		}
 		# if losing, get manpower & equipment back
-		modifier = {
-			FROM = {
-				surrender_progress > 0.15
-			}
-			add = 100
-		}
-		modifier = {
-			FROM = {
-				surrender_progress > 0.4
-			}
-			add = 500
-		}
+		#modifier = {
+		#	FROM = {
+		#		surrender_progress > 0.15
+		#	}
+		#	add = 100
+		#}
+		#modifier = {
+		#	FROM = {
+		#		surrender_progress > 0.4
+		#	}
+		#	add = 500
+		#}
 	}
 }
 
