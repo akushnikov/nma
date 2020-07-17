@@ -4,7 +4,7 @@ title: Home
 permalink: /
 nav_order: 1
 ---
-![alt text](/assets/logo.svg "logo")
+![alt text](./assets/logo.svg "logo")
 
 The main goal of this mod is to provide the most stable, lag-free & exploit-free multiplayer experience under historical ruleset.
 
