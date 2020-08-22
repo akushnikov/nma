@@ -319,8 +319,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "operative_order_bar"
-		position = { x=-250 y=100 }
-		show_position={ x=-250 y=-210 }
+		position = { x=-135 y=100 }
+		show_position={ x=-135 y=-210 }
 		orientation = center_down
 		size = { width=500 height=100 }
 		show_animation_type = decelerated
@@ -477,7 +477,7 @@ guiTypes = {
 			name = "btn_mission_6"
 			spriteType = "GFX_operative_mission_button_background"
 			clicksound = click_default
-			position = { x=258 y=@btn_mission_y }
+			position = { x=258 y=@out_of_bounds }
 			frame = 1
 			shortcut = "m"
 		}
@@ -485,14 +485,14 @@ guiTypes = {
 			name = "icn_mission_6"
 			spriteType = "GFX_operative_mission_icons"
 			frame = 6
-			position = { x=265 y=@icn_mission_y }
+			position = { x=265 y=@out_of_bounds }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "icn_mission_active_6"
 			spriteType = "GFX_operative_mission_active"
 			frame = 1
-			position = { x=258 y=@btn_mission_y }
+			position = { x=258 y=@out_of_bounds }
 			alwaystransparent = yes
 		}
 
@@ -500,7 +500,7 @@ guiTypes = {
 			name = "btn_mission_7"
 			spriteType = "GFX_operative_mission_button_background"
 			clicksound = click_default
-			position = { x=304 y=@btn_mission_y }
+			position = { x=304 y=@out_of_bounds }
 			frame = 1
 			shortcut = "d"
 		}
@@ -508,14 +508,14 @@ guiTypes = {
 			name = "icn_mission_7"
 			spriteType = "GFX_operative_mission_icons"
 			frame = 7
-			position = { x=311 y=@icn_mission_y }
+			position = { x=311 y=@out_of_bounds }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "icn_mission_active_7"
 			spriteType = "GFX_operative_mission_active"
 			frame = 1
-			position = { x=304 y=@btn_mission_y }
+			position = { x=304 y=@out_of_bounds }
 			alwaystransparent = yes
 		}
 
