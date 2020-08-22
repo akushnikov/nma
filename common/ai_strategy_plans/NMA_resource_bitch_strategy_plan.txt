@@ -1,0 +1,133 @@
+NMA_resource_bitch_strategy_plan = {
+	name = "NMA resource bitch"
+	desc = "NMA strategy plan for resource bitch countries"
+
+	enable = {
+		OR = {
+			original_tag = POR
+			original_tag = SWE
+			original_tag = TUR
+		}
+	}
+
+	research = {
+		construction_tech = 1000.0
+		excavation_tech = 1200.0
+	}
+
+	traits = {
+		captain_of_industry = 100.0
+	}
+
+	ideas = {
+		generic_industrial_concern = 80.0
+	}
+
+	ai_national_focuses = {
+		political_effort
+		industrial_effort
+		construction_effort
+		construction_effort_2
+		infrastructure_effort
+		infrastructure_effort_2
+		construction_effort_2
+		extra_tech_slot
+	}
+
+
+	# Turkey
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 341
+		value = 9999
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 339
+		value = 6
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 340
+		value = 6
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 342
+		value = 7
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 343
+		value = 7
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 347
+		value = 6
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 49
+		value = 6
+	}
+
+	# Portugal
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 181
+		value = 6
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 112
+		value = 4
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 795
+		value = 4
+	}
+
+	# Sweden
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 666
+		value = 6
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 38
+		value = 6
+	}
+
+	ai_strategy = {
+		type = build_building
+		id = infrastructure
+		target = 141
+		value = 3
+	}
+}
