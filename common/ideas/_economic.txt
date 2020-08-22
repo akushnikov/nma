@@ -364,6 +364,16 @@ ideas = {
 				}
 
 				modifier = {
+					factor = 9999
+
+					OR = {
+						original_tag = SWE
+						original_tag = POR
+						original_tag = TUR
+					}
+				}
+
+				modifier = {
 					factor = 300
 
 					tag = BRA

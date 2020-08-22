@@ -2235,25 +2235,29 @@ focus_tree = {
 			effect_tooltip = {
 				# Trade influence with the USSR? Or simply let the opinion mod do the work
 				add_tech_bonus = {
-					name = med_armor_bonus
-					bonus = 1.0
+					name = GER_soviet_treaty
 					ahead_reduction = 2
 					technology = basic_medium_tank
 				}
-				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
-					name = armor_bonus
+					name = GER_soviet_treaty
 					bonus = 1.0
 					uses = 1
-					technology = improved_medium_tank
-					technology = improved_heavy_tank
+					category = cat_light_armor
+					category = cat_medium_armor
+					category = cat_heavy_armor
+					technology = amphibious_tank
+					technology = amphibious_tank_2
 				}
 				add_tech_bonus = {
-					name = armor_bonus
+					name = GER_soviet_treaty
 					bonus = 1.0
 					uses = 1
-					technology = advanced_medium_tank
-					technology = advanced_heavy_tank
+					category = cat_light_armor
+					category = cat_medium_armor
+					category = cat_heavy_armor
+					technology = amphibious_tank
+					technology = amphibious_tank_2
 				}
 			}
 		}
