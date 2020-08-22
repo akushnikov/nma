@@ -324,7 +324,7 @@ chinese_war = {
 	ai_strategy = {
 		type = antagonize
 		id = "CHI"
-		value = 300
+		value = 1000
 	}
 }
 
