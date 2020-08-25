@@ -648,12 +648,6 @@ nma_eth_grinding = {
 	}
 
 	option = {
-		name = "NMA_1_MONTH_GRIND"
-		text = "NMA_RULE_OPTION_1_MONTH_GRIND"
-		desc = "NMA_RULE_OPTION_1_MONTH_GRIND_DESC"
-	}
-
-	option = {
 		name = "NMA_8_MONTH_GRIND"
 		text = "NMA_RULE_OPTION_8_MONTH_GRIND"
 		desc = "NMA_RULE_OPTION_8_MONTH_GRIND_DESC"
