@@ -308,6 +308,11 @@ nma_1940navy_options = {
 		text = "NMA_RULE_OPTION_1940NAVY_FREE"
 		desc = "NMA_RULE_OPTION_1940NAVY_FREE_DESC"
 	}
+	option = {
+		name = "NMA_YEAR_1940NAVY"
+		text = "NMA_RULE_OPTION_YEAR_1940NAVY"
+		desc = "NMA_RULE_OPTION_YEAR_1940NAVY_DESC"
+	}
 }
 
 #
@@ -329,6 +334,12 @@ nma_1944navy_options = {
 		name = "NMA_1944NAVY_FREE"
 		text = "NMA_RULE_OPTION_1944NAVY_FREE"
 		desc = "NMA_RULE_OPTION_1944NAVY_FREE_DESC"
+	}
+
+	option = {
+		name = "NMA_YEAR_1944NAVY"
+		text = "NMA_RULE_OPTION_YEAR_1944NAVY"
+		desc = "NMA_RULE_OPTION_YEAR_1944NAVY_DESC"
 	}
 }
 
@@ -352,6 +363,11 @@ nma_1939inf_options = {
 		text = "NMA_RULE_OPTION_LIMIT_1939INF"
 		desc = "NMA_RULE_OPTION_LIMIT_1939INF_DESC"
 	}
+	option = {
+		name = "NMA_YEAR_1939INF"
+		text = "NMA_RULE_OPTION_YEAR_1939INF"
+		desc = "NMA_RULE_OPTION_YEAR_1939INF_DESC"
+	}
 }
 
 #
@@ -373,6 +389,12 @@ nma_1942inf_options = {
 		name = "NMA_LIMIT_1942INF"
 		text = "NMA_RULE_OPTION_LIMIT_1942INF"
 		desc = "NMA_RULE_OPTION_LIMIT_1942INF_DESC"
+	}
+
+	option = {
+		name = "NMA_YEAR_1942INF"
+		text = "NMA_RULE_OPTION_YEAR_1942INF"
+		desc = "NMA_RULE_OPTION_YEAR_1942INF_DESC"
 	}
 }
 
