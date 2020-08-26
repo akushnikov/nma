@@ -200,6 +200,14 @@ is_1940_planes_enabled = {
 
       date > 1938.1.1
     }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1940PLANES_OPTIONS
+        option = NMA_YEAR_1940PLANES
+      }
+  
+        date > 1939.1.1
+      }
   }
 }
 
@@ -228,6 +236,14 @@ is_1944_planes_enabled = {
       }
 
       date > 1942.1.1
+    }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1944PLANES_OPTIONS
+        option = NMA_YEAR_1944PLANES
+      }
+
+      date > 1943.1.1
     }
   }
 }

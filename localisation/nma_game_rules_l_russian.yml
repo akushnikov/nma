@@ -70,12 +70,16 @@
  NMA_RULE_OPTION_1940PLANES_FREE_DESC:0 "Ванила."
  NMA_RULE_OPTION_LIMIT_1940PLANES:0 "Ограничение 2 года."
  NMA_RULE_OPTION_LIMIT_1940PLANES_DESC:0 "Включив эту опцию, самолеты 1940г можно будет начать изучать не раньше §Y1 января 1938г§!."
+ NMA_RULE_OPTION_YEAR_1940PLANES:0 "Ограничение 1 год."
+ NMA_RULE_OPTION_YEAR_1940PLANES_DESC:0 "Включив эту опцию, самолеты 1940г можно будет начать изучать не раньше §Y1 января 1939г§!."
  ################################################################ PLANES 1944
  NMA_1944PLANES_OPTIONS:0 "Настройки самолетов 1944г"
  NMA_RULE_OPTION_1944PLANES_FREE:0 "Исследование без ограничений."
  NMA_RULE_OPTION_1944PLANES_FREE_DESC:0 "Ванила."
  NMA_RULE_OPTION_LIMIT_1944PLANES:0 "Ограничение 2 года."
  NMA_RULE_OPTION_LIMIT_1944PLANES_DESC:0 "Включив эту опцию, самолеты 1944г можно будет начать изучать не раньше §Y1 января 1942г§!."
+ NMA_RULE_OPTION_YEAR_1944PLANES:0 "Ограничение 1 год."
+ NMA_RULE_OPTION_YEAR_1944PLANES_DESC:0 "Включив эту опцию, самолеты 1944г можно будет начать изучать не раньше §Y1 января 1943г§!."
  NMA_RULE_OPTION_1944PLANES_DISABLE:0 "Полностью запретить"
  NMA_RULE_OPTION_1944PLANES_DISABLE_DESC:0 "Включив эту опцию, самолеты 1944г будут полностью запрещены."
  ################################################################ STRATEGIC BOMBERS
