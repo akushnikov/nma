@@ -192,6 +192,12 @@ nma_1941tanks_options = {
 		text = "NMA_RULE_OPTION_LIMIT_1941TANKS"
 		desc = "NMA_RULE_OPTION_LIMIT_1941TANKS_DESC"
 	}
+
+	option = {
+		name = "NMA_YEAR_1941TANKS"
+		text = "NMA_RULE_OPTION_YEAR_1941TANKS"
+		desc = "NMA_RULE_OPTION_YEAR_1941TANKS_DESC"
+	}
 }
 
 #
@@ -213,6 +219,12 @@ nma_1943tanks_options = {
 		name = "NMA_1943TANKS_FREE"
 		text = "NMA_RULE_OPTION_1943TANKS_FREE"
 		desc = "NMA_RULE_OPTION_1943TANKS_FREE_DESC"
+	}
+
+	option = {
+		name = "NMA_YEAR_1943TANKS"
+		text = "NMA_RULE_OPTION_YEAR_1943TANKS"
+		desc = "NMA_RULE_OPTION_YEAR_1943TANKS_DESC"
 	}
 }
 

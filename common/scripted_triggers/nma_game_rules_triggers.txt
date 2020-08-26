@@ -96,6 +96,14 @@ is_improved_tank_enabled = {
 
       date > 1939.1.1
     }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1941TANKS_OPTIONS
+        option = NMA_YEAR_1941TANKS
+      }
+
+      date > 1940.1.1
+    }
   }
 }
 
@@ -114,6 +122,14 @@ is_advanced_tank_enabled = {
 
       date > 1941.1.1
     }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1943TANKS_OPTIONS
+        option = NMA_YEAR_1943TANKS
+      }
+
+      date > 1942.1.1
+    }
   }
 }
 
@@ -130,7 +146,7 @@ is_1940_navy_enabled = {
       option = NMA_LIMIT_1940NAVY
     }
 
-      date > 1936.2.15
+      date > 1938.1.1
     }
     AND = {
       has_game_rule = {
@@ -138,7 +154,7 @@ is_1940_navy_enabled = {
         option = NMA_YEAR_1940NAVY
       }
   
-        date > 1936.2.1
+        date > 1939.1.1
       }
   }
 }
@@ -156,7 +172,7 @@ is_1944_navy_enabled = {
       option = NMA_LIMIT_1944NAVY
     }
 
-      date > 1936.2.15
+      date > 1942.1.1
     }
     AND = {
       has_game_rule = {
@@ -164,7 +180,7 @@ is_1944_navy_enabled = {
         option = NMA_YEAR_1944NAVY
       }
   
-        date > 1936.2.1
+        date > 1943.1.1
       }
   }
 }
