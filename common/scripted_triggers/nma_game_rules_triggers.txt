@@ -44,6 +44,14 @@ is_advanced_infantry_weapons_enabled = {
 
       date > 1940.1.1
     }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1942INF_OPTIONS
+        option = NMA_YEAR_1942INF
+      }
+
+      date > 1941.1.1
+    }
   }
 }
 
@@ -61,6 +69,14 @@ is_improved_infantry_weapons_enabled = {
       }
 
       date > 1937.1.1
+    }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1939INF_OPTIONS
+        option = NMA_YEAR_1939INF
+      }
+
+      date > 1938.1.1
     }
   }
 }
@@ -80,6 +96,14 @@ is_improved_tank_enabled = {
 
       date > 1939.1.1
     }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1941TANKS_OPTIONS
+        option = NMA_YEAR_1941TANKS
+      }
+
+      date > 1940.1.1
+    }
   }
 }
 
@@ -97,6 +121,14 @@ is_advanced_tank_enabled = {
       }
 
       date > 1941.1.1
+    }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1943TANKS_OPTIONS
+        option = NMA_YEAR_1943TANKS
+      }
+
+      date > 1942.1.1
     }
   }
 }
@@ -116,6 +148,14 @@ is_1940_navy_enabled = {
 
       date > 1938.1.1
     }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1940NAVY_OPTIONS
+        option = NMA_YEAR_1940NAVY
+      }
+  
+        date > 1939.1.1
+      }
   }
 }
 
@@ -134,6 +174,14 @@ is_1944_navy_enabled = {
 
       date > 1942.1.1
     }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1944NAVY_OPTIONS
+        option = NMA_YEAR_1944NAVY
+      }
+  
+        date > 1943.1.1
+      }
   }
 }
 
@@ -152,6 +200,14 @@ is_1940_planes_enabled = {
 
       date > 1938.1.1
     }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1940PLANES_OPTIONS
+        option = NMA_YEAR_1940PLANES
+      }
+  
+        date > 1939.1.1
+      }
   }
 }
 
@@ -180,6 +236,14 @@ is_1944_planes_enabled = {
       }
 
       date > 1942.1.1
+    }
+    AND = {
+      has_game_rule = {
+        rule = NMA_1944PLANES_OPTIONS
+        option = NMA_YEAR_1944PLANES
+      }
+
+      date > 1943.1.1
     }
   }
 }
