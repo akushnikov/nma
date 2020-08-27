@@ -1,0 +1,19 @@
+﻿l_german:
+ nma_japan.1.t:0 "Schlagt gen Süden!"
+ nma_japan.1.d:0 "Da die Aufmerksamkeit der Welt auf dem Krieg in Europa liegt, wurde Asien schwach und verwundbar gelassen. Jetzt ist die perfekte Zeit gekommen einen Angriff auf die Südliche Ressourcen Region zu unternehmen."
+ nma_japan.1.a:0 "Auf in den Krieg!"
+
+ nma_spain.1.t:0 "Carte Blanche"
+ nma_spain.1.d:0 "Nach der rechtmäßigen Forderung der Deutschen für Danzig schaut unser Volk auf die Vereinigung der Iberischen Halbinsel. Nun ist es höchste Zeit in dafür in Aktion zu treten."
+ nma_spain.1.a:0 "Auf in den Krieg!"
+ nma_spain.1.b:0 "M-kay"
+ 
+ nma_grinding.1.t:0 "Äthiopien hat kapituliert!"
+ nma_grinding.1.d:0 "Mit dem Fall von Addis Ababa stehen wir kurz vor der totalen Kontrolle über Äthiopien. Nun, da unser längst überfälliger Arm unseres Kolonialimperiums uns gehört, bleibt abzuwarten, wie wir das Territorium verwalten werden."
+ nma_grinding.1.a:0 "Aus Äthiopuen einen Marionettenstaat machen."
+ nma_grinding.1.b:0 "Äthiopien annektieren"
+
+ nma_grinding.2.t:0 "Carte Blanche"
+ nma_grinding.2.d:0 "Nach der rechtmäßigen Forderung der Deutschen für Danzig schaut unser Volk auf die Vereinigung der Iberischen Halbinsel. Nun ist es höchste Zeit in dafür in Aktion zu treten."
+ nma_grinding.2.a:0 "Auf in den Krieg!"
+ nma_grinding.2.b:0 "M-kay"
