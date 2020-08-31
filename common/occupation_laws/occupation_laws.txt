@@ -405,7 +405,7 @@ forced_labor_occupation_fascist = {
 	
 	state_modifier = {
 		resistance_target 					= -0.40
-		# compliance_gain 					= -0.08
+		compliance_gain 					= -0.02
 		resistance_damage_to_garrison 		= 0.3
 		required_garrison_factor 			= 0.50		
 		local_resources 					= 0.40
@@ -540,6 +540,7 @@ harsh_quotas_occupation_fascist = {
 	
 	state_modifier = {
 		resistance_target 				= -0.40
+		compliance_gain 				= -0.02
 		required_garrison_factor 		= 0.60
 		resistance_damage_to_garrison 	= 0.50		
 	
@@ -581,7 +582,7 @@ brutally_oppressive_occupation = {
 	
 	state_modifier = {		
 		resistance_target 				= -0.75
-		# compliance_gain 				= -0.11
+		compliance_gain 				= -0.04
 		required_garrison_factor 		= 1.0
 		resistance_damage_to_garrison 	= 1.0
 		local_resources 				= 0.10
