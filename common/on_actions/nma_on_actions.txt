@@ -285,6 +285,24 @@ on_actions = {
 
       if = {
         limit = {
+          is_ai = yes
+          is_in_faction_with = ENG
+        }
+        transfer_units_fraction = {
+          target = ENG
+          size = 0     
+          stockpile_ratio = 0
+          army_ratio = 0
+          navy_ratio = 0
+          air_ratio = 1
+          keep_unit_leaders_trigger = {
+            always = yes
+          }
+        }
+      }
+
+      if = {
+        limit = {
           is_in_array = {
             array = GLOBAL.grind_countries
             value = ROOT
