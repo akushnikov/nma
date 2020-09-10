@@ -5,6 +5,7 @@ permalink: /
 nav_order: 1
 ---
 ![alt text](./assets/logo.svg "logo")
+{: .d-flex .flex-justify-around }
 
 The main goal of this mod is to provide the most stable, lag-free & exploit-free multiplayer experience under historical ruleset.
 
