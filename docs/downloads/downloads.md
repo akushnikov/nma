@@ -8,9 +8,9 @@ permalink: /download
 
 # Useful links
 
-Down there you can find:
-- Mod download link from steam workshop (will be openen directly in a steam client)
-- Link to our discrod server, where you can talk to us and make your suggestions to the mod in the `#mod-suggestions` channel and report bugs in the `#mod-bugs` channel respectively
+Here you can find:
+- Mod download link from steam workshop (will be opened directly in a steam client)
+- Link to our discord server, where you can find us, make your suggestions to the mod in the `#mod-suggestions` channel and report bugs in the `#mod-bugs` channel respectively
 - Link to the mod's github page to track down our progress
 
 

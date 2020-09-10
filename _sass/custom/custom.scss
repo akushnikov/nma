@@ -34,24 +34,24 @@
         bottom: 0;
     }
 
-    &.discord {
-        .img {
-            background-image: url(/assets/discord.svg);
+    @if variable-exists(base_url) {
+        &.discord {
+            .img {
+                background-image: url('#{$base_url}/assets/discord.svg');        }
+        }
+        &.steam {
+            padding: 0 23px;
+    
+            .img {
+                background-image: url('#{$base_url}/assets/steam.svg');
+            }
+        }
+        &.github {
+            .img {
+                background-image: url('#{$base_url}/assets//github.png');
+            }
         }
     }
-    &.steam {
-        padding: 0 23px;
-
-        .img {
-            background-image: url(/assets/steam.svg);
-        }
-    }
-    &.github {
-        .img {
-            background-image: url(/assets//github.png);
-        }
-    }
-
 }
 
 .button-container {
