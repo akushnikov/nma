@@ -21,6 +21,12 @@ Mod has been translated and fully supports English, German and Russian localizat
 
 ---
 
+## Spain question
+
+In our humble opinion Spain rework (focuses, new civil war mechanics, etc) was a good idea with bad implementation, so we’ve rollbacked those changes back to 1.8. In other words - good old Spain with a generic focus tree and generic civil war mechanic.
+
+---
+
 ## General Improvements
 
 We think that having any graphical mod is a matter of personal preference so we didn’t integrate any, instead we made a lot of QoL improvements!
