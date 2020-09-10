@@ -23,18 +23,18 @@ Unfortunately we can’t give an opportunity to set literally <span class="text-
 
 <span class="text-green-000 fw-500">To set lobby rules all you need to do is to click here, while hosting:</span>
 <div class="d-flex flex-justify-around">
-    <img src="/assets/custom_game_rules.jpg" />
+    <img src="{{ "/assets/custom_game_rules.jpg" | base_url }}" />
 </div>
 
 <span class="text-green-000 fw-500">Right now host can set next things:</span>
 <div class="d-flex flex-justify-around">
-    <img src="/assets/custom_game_rules_window_1.jpg" />
+    <img src="{{ "/assets/custom_game_rules_window_1.jpg" | base_url }}" />
 </div>
 <div class="d-flex flex-justify-around">
-    <img src="/assets/custom_game_rules_window_2.jpg" />
+    <img src="{{ "/assets/custom_game_rules_window_2.jpg" | base_url }}" />
 </div>
 <div class="d-flex flex-justify-around">
-    <img src="/assets/custom_game_rules_window_3.jpg" />
+    <img src="{{ "/assets/custom_game_rules_window_3.jpg" | base_url }}" />
 </div>
 
 ## NMA Multiplayer - General Options
@@ -515,11 +515,11 @@ This option will add 2 additional operative slots for Germany since the game sta
 Additionally we’ve introduced a completely new QoL feature: host could limit (in months) for how long players can grind each country
 
 <div class="d-flex flex-justify-around">
-    <img src="/assets/custom_game_rules_window_4.jpg" />
+    <img src="{{ "/assets/custom_game_rules_window_4.jpg" | base_url }}" />
 </div>
 
 You can turn off this feature just by having “no limits” for each corresponding country, but if you want to turn it on you should choose for how long players would be able to grind each country
 
 <div class="d-flex flex-justify-around">
-    <img src="/assets/custom_game_rules_grind_period.jpg" />
+    <img src="{{ "/assets/custom_game_rules_grind_period.jpg" | base_url }}" />
 </div>
