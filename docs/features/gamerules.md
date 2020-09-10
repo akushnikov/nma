@@ -23,7 +23,7 @@ Unfortunately we can’t give an opportunity to set literally <span class="text-
 
 <span class="text-green-000 fw-500">To set lobby rules all you need to do is to click here, while hosting:</span>
 <div class="d-flex flex-justify-around">
-    <img src="{{ "/assets/custom_game_rules.jpg" | base_url }}" />
+    <img src="{{ site.baseurl }}/assets/custom_game_rules.jpg" />
 </div>
 
 <span class="text-green-000 fw-500">Right now host can set next things:</span>
