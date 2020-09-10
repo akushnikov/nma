@@ -2,3 +2,4 @@ remote_theme: pmarsceill/just-the-docs
 title: NMA Multiplayer
 description: Hearts of Iron IV Multiplayer Mod
 color_scheme: dark
+baseurl: /nma
