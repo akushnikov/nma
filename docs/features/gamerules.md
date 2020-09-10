@@ -509,6 +509,8 @@ Vanilla
 This option will add 2 additional operative slots for Germany since the game start
 ```
 
+---
+
 ## NMA Multiplayer - Grinding Options
 
 
