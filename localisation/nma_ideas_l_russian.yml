@@ -11,3 +11,5 @@
   usa_lock_desc:0 "К сожалению мы пока ничего не можем с этим сделать."
   ger_spyslots:0 "Si vis pacem, para bellum"
   ger_spyslots_desc:0 "Версальский договор запрещает нам иметь армию, однако это лишь вопрос времени. Мы должны собрать как можно больше любой информации о наших бывших врагах, чем быстрее мы это сделаем, тем быстрее они заплатят за этот позорный мирный договор!"
+  special_forces_cap_exploit:0 "Аркебуз капа спецназа"
+  special_forces_cap_exploit_desc:0 "[THIS.GetName] аркебузит кап войск специального назначения. Этой макаке разрешено иметь [?nma_allowed_special_forces_battalions_count|G0] батальонов войск спецназа, а он высрал целых [?nma_special_forces_battions_count|G0] батальонов. Проверено §Y[?nma_special_forces_check_date.GetDateString]§!."

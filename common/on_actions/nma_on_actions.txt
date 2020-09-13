@@ -203,6 +203,7 @@ on_actions = {
     }
   }
 
+  # ROOT is new controller, FROM is old controller, FROM.FROM is state ID.
   on_state_control_changed = {
     effect = {
       set_temp_variable = {
@@ -250,6 +251,21 @@ on_actions = {
           set_state_controller = current_state
         }
       }
+
+      if = {
+        limit = {
+          is_in_faction_with = FROM
+        }
+
+        var:current_state = {
+          log = "[?current_state.GetName] goes to [ROOT.GetName]"
+          log = "[?current_state.GetName] has [?compliance] compliance"
+          set_temp_variable = { new_compliance = compliance }
+          divide_temp_variable = { new_compliance = 0.7 }
+          log = "[?current_state.GetName] will have [?new_compliance] compliance"
+          set_compliance = new_compliance
+        }
+      }
     }
   }
 
@@ -264,6 +280,24 @@ on_actions = {
         country_event = {
           id = nma_generic.1
           days = 2
+        }
+      }
+
+      if = {
+        limit = {
+          is_ai = yes
+          is_in_faction_with = ENG
+        }
+        transfer_units_fraction = {
+          target = ENG
+          size = 0     
+          stockpile_ratio = 0
+          army_ratio = 0
+          navy_ratio = 0
+          air_ratio = 1
+          keep_unit_leaders_trigger = {
+            always = yes
+          }
         }
       }
 
@@ -385,6 +419,30 @@ on_actions = {
           add_to_faction = FROM
         }
       }
+    }
+  }
+
+  on_weekly = {
+    effect = {
+      
+      nma_calculate_special_forces_limits = yes
+      log = "[THIS.GetTag] allowed to have [?nma_allowed_special_forces_battalions_count] special forces battalions and fields [?nma_special_forces_battions_count] special forces battalions"
+
+      if = {
+        limit = {
+          nma_is_exploting_special_forces_cap = yes
+        }
+
+        add_ideas = special_forces_cap_exploit
+      } 
+      else_if = {
+        limit = {
+          has_idea = special_forces_cap_exploit
+        }
+
+        remove_ideas = special_forces_cap_exploit
+      }
+
     }
   }
 }

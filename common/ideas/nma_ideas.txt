@@ -149,5 +149,19 @@ ideas = {
 			}        
     }
 
+    special_forces_cap_exploit = {
+      picture = escort_effort_focus
+
+      allowed = {
+        always = yes
+      }
+
+      modifier = {
+        supply_consumption_factor = 5.00
+        special_forces_attack_factor = -5.00
+        special_forces_defence_factor = -5.00
+      }
+    }
+
   }
 }
