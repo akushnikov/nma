@@ -46,3 +46,9 @@ is_done = {
     has_country_flag = grind_time_has_gone
   }
 }
+
+nma_is_exploting_special_forces_cap = {
+  check_variable = {
+    nma_special_forces_battions_count > nma_allowed_special_forces_battalions_count
+  }
+}

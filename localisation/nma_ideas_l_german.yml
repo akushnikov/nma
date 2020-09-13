@@ -11,3 +11,5 @@
   usa_lock_desc:0 "Dagegen können wir immoment nichts tun."
   ger_spyslots:0 "Si vis pacem, para bellum"
   ger_spyslots_desc:0 "Seit dem Vertrag von Versailles dürfen wir keine Armee mehr haben, aber diese Beschränkung ist nur eine Frage der Zeit. Wir müssen jegliche Information über unsere letzten Feinde gewinnen. Je früher wir es machen, desto schneller wird unser Land seine Wunden heilen und zurückschlagen!"
+  special_forces_cap_exploit:0 "Spezialeinheiten Kapazitäts Überschreitung"
+  special_forces_cap_exploit_desc:0 "[THIS.GetName] überschreitet das Spezialeinheiten Limit. Es sind [?nma_allowed_special_forces_battalions_count|G0] Spezialeinheiten Bataillone erlaubt, aber es hat [?nma_special_forces_battions_count|G0] Bataillone. Getestet im §Y[?nma_special_forces_check_date.GetDateString]§!."

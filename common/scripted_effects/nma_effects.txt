@@ -265,3 +265,84 @@ nma_share_compliance = {
     }
   }
 }
+
+nma_calculate_special_forces_limits = {
+  # ALLOWED_SF_BATTALIONS_COUNT = (TOTAL_BATTALIONS_COUNT - SF_BATTALIONS_COUNT) * SPECIAL_FORCES_RATE
+  # RESULT - SF_BATTALIONS_COUNT >= ALLOWED_SF_BATTALIONS_COUNT
+  
+  # NDefines.NCountry.SPECIAL_FORCES_CAP_MIN
+  set_temp_variable = {
+    special_forces_cap_min = 56
+  }
+
+  # Adding country SF cap modifier if exists
+  add_to_temp_variable = {
+    special_forces_cap_min = modifier@special_forces_min
+  }
+
+  # Base special forces battalion rate (5% of non-SF battalions)
+  set_temp_variable = {
+    special_forces_rate = 0.05
+  }
+
+  add_to_temp_variable = {
+    special_forces_rate = modifier@special_forces_cap
+  }
+
+  # Getting number of all special forces battalions
+  set_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@amphibious_armor
+  }
+  add_to_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@amphibious_mechanized
+  }
+
+  add_to_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@mountaineers
+  }
+  add_to_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@marine
+  }
+  add_to_temp_variable = {
+    special_forces_battions_count = num_battalions_with_type@paratrooper
+  }
+
+  set_temp_variable = {
+    total_battallions_count = num_battalions
+  }
+
+  set_temp_variable = {
+    allowed_special_forces_battalions_count = total_battallions_count
+  }
+
+  subtract_from_temp_variable = {
+    allowed_special_forces_battalions_count = special_forces_battions_count
+  }
+
+  multiply_temp_variable = {
+    allowed_special_forces_battalions_count = special_forces_rate
+  }
+
+  if = {
+    limit = {
+      check_variable = {
+        allowed_special_forces_battalions_count < special_forces_cap_min
+      }
+      set_temp_variable = {
+        allowed_special_forces_battalions_count = special_forces_cap_min
+      }
+    }
+  }
+
+  set_variable = {
+    nma_special_forces_battions_count = special_forces_battions_count
+  }
+
+  set_variable = {
+    nma_allowed_special_forces_battalions_count = allowed_special_forces_battalions_count
+  }
+
+  set_variable = {
+    nma_special_forces_check_date = global.date
+  }
+}

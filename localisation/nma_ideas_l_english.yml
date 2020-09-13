@@ -11,3 +11,5 @@
   usa_lock_desc:0 "We can't do much about it right now."
   ger_spyslots:0 "Si vis pacem, para bellum"
   ger_spyslots_desc:0 "We're not allowed to have an army since the Treaty of Versailles, but this restriction is only the matter of time. We've must gather any intel about our last enemies, the sooner we'll do it, the faster our nation will heal its wounds and strike back!"
+  special_forces_cap_exploit:0 "Special Forces cap exploit"
+  special_forces_cap_exploit_desc:0 "[THIS.GetName] is exploting Special Forces cap limit. It is allowed to field [?nma_allowed_special_forces_battalions_count|G0] Special Forces battalions but fields [?nma_special_forces_battions_count|G0] battalions. Checked at §Y[?nma_special_forces_check_date.GetDateString]§!."

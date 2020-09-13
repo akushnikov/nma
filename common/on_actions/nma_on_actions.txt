@@ -421,4 +421,28 @@ on_actions = {
       }
     }
   }
+
+  on_weekly = {
+    effect = {
+      
+      nma_calculate_special_forces_limits = yes
+      log = "[THIS.GetTag] allowed to have [?nma_allowed_special_forces_battalions_count] special forces battalions and fields [?nma_special_forces_battions_count] special forces battalions"
+
+      if = {
+        limit = {
+          nma_is_exploting_special_forces_cap = yes
+        }
+
+        add_ideas = special_forces_cap_exploit
+      } 
+      else_if = {
+        limit = {
+          has_idea = special_forces_cap_exploit
+        }
+
+        remove_ideas = special_forces_cap_exploit
+      }
+
+    }
+  }
 }
