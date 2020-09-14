@@ -1,0 +1,4 @@
+﻿l_english:
+ nma_country_tool_enabled:0 "Инструмент страны: £trigger_yes"
+ nma_country_tool_disabled:0 "Инструмент страны: £trigger_no"
+

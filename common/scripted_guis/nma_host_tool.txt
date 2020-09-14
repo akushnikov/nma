@@ -19,12 +19,21 @@ scripted_gui = {
 				if = {
 					limit = {
 						check_variable = {
-							nma_host_tool_opened = 1
+							nma_host_tool_opened?1 = 1
 						}
 					}
 					set_variable = { nma_host_tool_opened = 2 }
 				} else = {
 					set_variable = { nma_host_tool_opened = 1 }
+					# cleanup
+					clear_variable = global.nma_country_tool_enabled
+					every_country = {
+						limit = {
+							has_country_flag = nma_host_tool_country_marked
+						}
+
+						clr_country_flag = nma_host_tool_country_marked
+					}
 				}
 			}
 		}
@@ -38,6 +47,74 @@ scripted_gui = {
 		visible = {
 			check_variable = {
 				nma_host_tool_opened = 2
+			}
+		}
+
+		triggers = {
+			nma_country_tool_button_visible = {
+				always = yes
+			}
+		}
+
+		effects = {
+			nma_country_tool_button_click = {
+				if = {
+					limit = {
+						check_variable = {
+							global.nma_country_tool_enabled = 0
+						}
+					}
+					set_variable = {
+						global.nma_country_tool_enabled = 1
+					}
+				} else = {
+					set_variable = {
+						global.nma_country_tool_enabled = 0
+					}
+				}
+			}
+		}
+	}
+
+	nma_host_tool_country_view_container = {
+		window_name = "nma_host_tool_country_view_container"
+
+		context_type = selected_country_context
+
+		visible = {
+			check_variable = {
+				global.nma_country_tool_enabled = 1
+			}
+		}
+
+		triggers = {
+			nma_country_tool_marked_country_button_visible = {
+				has_country_flag = nma_host_tool_country_marked
+			}
+			nma_country_tool_not_marked_country_button_visible = {
+				NOT = {
+					has_country_flag = nma_host_tool_country_marked
+				}
+			}
+			nma_country_tool_observe_button_visible = {
+				NOT = {
+					is_ai = yes
+				}
+			}
+		}
+
+		effects = {
+			nma_country_tool_marked_country_button_click = {
+				clr_country_flag = nma_host_tool_country_marked
+			}
+			nma_country_tool_not_marked_country_button_click = {
+				set_country_flag = nma_host_tool_country_marked
+			}
+
+			nma_country_tool_observe_button_click = {
+				DDR = {
+					change_tag_from = PREV
+				}
 			}
 		}
 	}

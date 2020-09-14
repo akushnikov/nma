@@ -1,0 +1,7 @@
+﻿l_english:
+ nma_country_tool_enabled:0 "Country tool: £trigger_yes"
+ nma_country_tool_disabled:0 "Country tool: £trigger_no"
+ nma_country_tool_country_name:0 "§Y[From.Owner.GetName]§!"
+ nma_mark_country:0 "Mark"
+ nma_unmark_country:0 "Unmark"
+ nma_observe:0 "Observe"

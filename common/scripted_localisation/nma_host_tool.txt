@@ -1,0 +1,32 @@
+defined_text = {
+	name = NMA_COUNTRY_TOOL
+
+	text = {
+		trigger = {
+			check_variable = {
+				global.nma_country_tool_enabled > 0
+			}
+		}
+		localization_key = nma_country_tool_enabled
+	}
+
+	text = {
+		localization_key = nma_country_tool_disabled
+	}
+}
+
+defined_text = {
+	name = NMA_COUNTRY_MARKED_FRAME
+
+	text = {
+		trigger = {
+			log = "[THIS.GetName] is a current scope"
+			has_country_flag = nma_host_tool_country_marked
+		}
+		localization_key = 1
+	}
+
+	text = {
+		localization_key = 2
+	}
+}

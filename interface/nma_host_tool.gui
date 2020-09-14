@@ -25,12 +25,96 @@ guiTypes = {
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
-		moveable = yes
+		moveable = no
 		
 		background = {
 			name = "Background"
-			spriteType = "GFX_nma_host_tool_bg"
+			spriteType = "GFX_nma_host_tool_vertical_view_bg"
 		}
+
+        buttonType = {
+			name = "nma_country_tool_button"
+			quadTextureSprite = "GFX_generic_text_bg_203"
+			position = { x = 25 y = 30 }
+			shortcut = "ctrl+alt+t"
+			pdx_tooltip = "[NMA_COUNTRY_TOOL]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+		}
+		
+		instantTextboxType = {
+			name = "nma_country_tool_label"
+			position = { x = 0 y = 34 }
+			font = "hoi_18mbs"
+			text = "[NMA_COUNTRY_TOOL]"
+			maxWidth = 250
+			maxHeight = 23
+			format = center
+			alwaystransparent = yes
+		}
+
+    }
+
+    containerWindowType = {
+        name = "nma_host_tool_country_view_container"
+        position = { x = -255 y = -100 }
+		size = { width = 398 height = 225 }
+		orientation = CENTER_RIGHT
+		origo = center_right
+
+		fade_time = 300
+		fade_type = linear
+        moveable = yes
+        
+        background = {
+			name = "Background"
+			spriteType = "GFX_nma_host_tool_horizontal_view_bg"
+        }
+
+        iconType = {
+			name = "nma_country_tool_title_bg"
+			spriteType = "GFX_nma_host_tool_horizontal_view_title_bg"
+			position = { x = 13 y = 11 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+        }
+        
+		instantTextboxType = {
+			name = "nma_country_tool_country_name"
+			position = { x = 24 y = 14 }
+			font = "hoi_18mbs"
+			text = "nma_country_tool_country_name"
+			maxWidth = 400
+			maxHeight = 23
+			format = left
+        }
+        
+        buttonType = {
+            name = "nma_country_tool_marked_country_button"
+            spriteType = "GFX_nma_host_tool_mark_button"
+            position = { x = 23 y = 50 }
+            text = "nma_unmark_country"
+            buttonFont = "hoi_16mbs"
+            frame = 2
+        }
+
+        buttonType = {
+            name = "nma_country_tool_not_marked_country_button"
+            spriteType = "GFX_nma_host_tool_mark_button"
+            position = { x = 23 y = 50 }
+            text = "nma_mark_country"
+            buttonFont = "hoi_16mbs" 
+            frame = 1
+        }
+
+        buttonType = {
+            name = "nma_country_tool_observe_button"
+            spriteType = "GFX_nma_host_tool_mark_button"
+            position = { x = 180 y = 50 }
+            text = "nma_observe"
+            buttonFont = "hoi_16mbs" 
+            frame = 1
+        }
     }
 
 }

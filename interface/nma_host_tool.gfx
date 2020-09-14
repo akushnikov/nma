@@ -1,8 +1,18 @@
 spriteTypes = {
     
     spriteType = {
-        name = "GFX_nma_host_tool_bg"
-        texturefile = "gfx/toolpack/toolpack_bg.dds"
+        name = "GFX_nma_host_tool_vertical_view_bg"
+        texturefile = "gfx/toolpack/toolpack_vertical_view_bg.dds"
+    }
+
+    spriteType = {
+        name = "GFX_nma_host_tool_horizontal_view_bg"
+        texturefile = "gfx/toolpack/toolpack_horizontal_view_bg.dds"
+    }
+
+    spriteType = {
+        name = "GFX_nma_host_tool_horizontal_view_title_bg"
+        texturefile = "gfx/toolpack/toolpack_horizontal_view_title_bg.dds"
     }
 
     spriteType = {
@@ -21,6 +31,18 @@ spriteTypes = {
         name = "GFX_nma_host_tool_sub_controls"
         texturefile = "gfx/toolpack/toolpack_sub_controls.dds"
         noOfFrames = 10
+    }
+
+    spriteType = {
+        name = "GFX_nma_host_tool_mark_button"
+        texturefile = "gfx/toolpack/toolpack_mark_button.dds"
+        noOfFrames = 2
+    }
+
+    spriteType = {
+        name = "GFX_nma_host_tool_diplorequest"
+        texturefile = "gfx/toolpack/toolpack_diplorequest_icons.dds"
+        noOfFrames = 12
     }
 
 }
