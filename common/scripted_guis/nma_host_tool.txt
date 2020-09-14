@@ -1,0 +1,44 @@
+scripted_gui = {
+	nma_host_tool_handler_container = {
+		window_name = "nma_host_tool_handler_container"
+
+		context_type = player_context
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+			nma_host_tool_handler = {
+				frame = nma_host_tool_opened?1
+			}
+		}
+
+		effects = {
+			nma_host_tool_handler_click = {
+				if = {
+					limit = {
+						check_variable = {
+							nma_host_tool_opened = 1
+						}
+					}
+					set_variable = { nma_host_tool_opened = 2 }
+				} else = {
+					set_variable = { nma_host_tool_opened = 1 }
+				}
+			}
+		}
+	}
+
+	nma_host_tool_main_container = {
+		window_name = "nma_host_tool_main_container"
+
+		context_type = player_context
+
+		visible = {
+			check_variable = {
+				nma_host_tool_opened = 2
+			}
+		}
+	}
+}

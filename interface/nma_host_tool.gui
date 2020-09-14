@@ -1,0 +1,36 @@
+guiTypes = {
+
+    containerWindowType = {
+        name = "nma_host_tool_handler_container"
+        position = { x = -21 y = -265 }
+		orientation = LOWER_RIGHT
+		origo = lower_right
+		        
+        buttonType = {
+            name = "nma_host_tool_handler"
+            quadTextureSprite = "GFX_nma_host_tool_handler_controls"
+            position = { x = 0 y = 0 }
+            clicksound = click_ok
+			oversound = ui_menu_over
+        }
+    }
+
+    containerWindowType = {
+        name = "nma_host_tool_main_container"
+        position = { x = 100 y = -78 }
+		size = { width = 255 height = 355 }
+        orientation = CENTER_RIGHT
+        
+        show_position = { x = -250 y = -78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		moveable = yes
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_nma_host_tool_bg"
+		}
+    }
+
+}

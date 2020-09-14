@@ -1,0 +1,26 @@
+spriteTypes = {
+    
+    spriteType = {
+        name = "GFX_nma_host_tool_bg"
+        texturefile = "gfx/toolpack/toolpack_bg.dds"
+    }
+
+    spriteType = {
+        name = "GFX_nma_host_tool_handler_controls"
+        texturefile = "gfx/toolpack/toolpack_handler_controls.dds"
+        noOfFrames = 4
+    }
+
+    spriteType = {
+        name = "GFX_nma_host_tool_add_controls"
+        texturefile = "gfx/toolpack/toolpack_add_controls.dds"
+        noOfFrames = 10
+    }
+
+    spriteType = {
+        name = "GFX_nma_host_tool_sub_controls"
+        texturefile = "gfx/toolpack/toolpack_sub_controls.dds"
+        noOfFrames = 10
+    }
+
+}
