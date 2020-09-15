@@ -254,6 +254,15 @@ scripted_gui = {
 				clr_country_flag = nma_host_tool_country_marked
 				nma_refresh_marked_countries = yes
 			}
+
+			unmark_all_click = {
+				for_each_scope_loop = {
+					array = global.nma_marked_countries
+
+					clr_country_flag = nma_host_tool_country_marked
+				}
+				nma_refresh_marked_countries = yes
+			}
 		}
 	}
 
@@ -469,7 +478,10 @@ scripted_gui = {
 				remove_from_array = {
 					global.nma_marked_states = THIS
 				}
-			}			
+			}
+			unmark_all_click = {
+				clear_array = global.nma_marked_states
+			}
 		}
 	}
 }

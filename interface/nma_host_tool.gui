@@ -114,6 +114,16 @@ guiTypes = {
 			fixedsize = yes
         }
 
+        buttonType = {
+            name = "unmark_all"
+            quadTextureSprite = "GFX_nf_close_button"
+            position = {
+                x = 240
+                y = 16
+            }
+            scale = 0.7
+        }
+
         containerWindowType = {
             name = "nma_marked_countries_body"
             position = { x = 14 y = 35 }
@@ -472,6 +482,16 @@ guiTypes = {
             maxWidth = 285
 			maxHeight = 20
 			fixedsize = yes
+        }
+
+        buttonType = {
+            name = "unmark_all"
+            quadTextureSprite = "GFX_nf_close_button"
+            position = {
+                x = 240
+                y = 16
+            }
+            scale = 0.7
         }
 
         containerWindowType = {
