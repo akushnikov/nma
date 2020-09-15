@@ -233,6 +233,18 @@ guiTypes = {
             buttonFont = "hoi_16mbs" 
             frame = 1
         }
+
+        buttonType = {
+            name = "nma_country_tool_recal_SF_calc"
+            spriteType = "GFX_nma_host_tool_mark_button"
+            position = {
+                x = 23
+                y = 170
+            }
+            text = nma_calc_sf_limits_exploit
+            buttonFont = "hoi_16mbs" 
+            frame = 1 
+        }
     }
 
     containerWindowType = {

@@ -155,6 +155,10 @@ scripted_gui = {
 					has_country_flag = nma_host_tool_country_marked
 				}
 			}
+
+			nma_country_tool_recal_SF_calc_visible = {
+				always = yes
+			}
 		}
 
 		effects = {
@@ -220,6 +224,28 @@ scripted_gui = {
 							target = PREV
 							transfer_troops = no
 						}
+					}
+				}
+			}
+
+			nma_country_tool_recal_SF_calc_click = {
+				every_country = {
+
+					nma_calculate_special_forces_limits = yes
+
+					if = {
+						limit = {
+							nma_is_exploting_special_forces_cap = yes
+						}
+
+						add_ideas = special_forces_cap_exploit
+					} 
+					else_if = {
+						limit = {
+							has_idea = special_forces_cap_exploit
+						}
+				
+						remove_ideas = special_forces_cap_exploit
 					}
 				}
 			}

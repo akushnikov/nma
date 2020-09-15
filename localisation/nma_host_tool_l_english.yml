@@ -6,6 +6,7 @@
  nma_unmark_country:0 "Unmark"
  nma_observe:0 "Observe"
  nma_white_peace:0 "White peace"
+ nma_calc_sf_limits_exploit:0 "Calc SF cap"
  nma_kick_from_faction:0 "Kick from faction"
  nma_annex:0 "Annex marked"
  nma_marked_countries_list_title:0 "Marked countries"
