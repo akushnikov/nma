@@ -328,9 +328,10 @@ nma_calculate_special_forces_limits = {
       check_variable = {
         allowed_special_forces_battalions_count < special_forces_cap_min
       }
-      set_temp_variable = {
-        allowed_special_forces_battalions_count = special_forces_cap_min
-      }
+    }
+
+    set_temp_variable = {
+      allowed_special_forces_battalions_count = special_forces_cap_min
     }
   }
 
@@ -345,4 +346,18 @@ nma_calculate_special_forces_limits = {
   set_variable = {
     nma_special_forces_check_date = global.date
   }
+}
+
+nma_refresh_marked_countries = {
+  clear_array = global.nma_marked_countries
+
+  every_country = {
+    limit = {
+      has_country_flag = nma_host_tool_country_marked
+    }
+
+    add_to_array = {
+      global.nma_marked_countries = THIS
+    }
+  } 
 }

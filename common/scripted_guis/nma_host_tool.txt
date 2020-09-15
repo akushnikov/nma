@@ -4,8 +4,12 @@ scripted_gui = {
 
 		context_type = player_context
 
+		ai_enabled = {
+			always = no
+		}
+
 		visible = {
-			always = yes
+			has_country_flag = nma_host
 		}
 
 		properties = {
@@ -34,6 +38,7 @@ scripted_gui = {
 
 						clr_country_flag = nma_host_tool_country_marked
 					}
+					nma_refresh_marked_countries = yes
 				}
 			}
 		}
@@ -101,20 +106,133 @@ scripted_gui = {
 					is_ai = yes
 				}
 			}
+
+			nma_country_tool_white_peace_button_visible = {
+				always = yes
+			}
+
+			nma_country_tool_white_peace_button_click_enabled = {
+				has_war = yes
+			}
+
+			nma_country_tool_kick_from_faction_button_visible = {
+				always = yes
+			}
+
+			nma_country_tool_kick_from_faction_button_click_enabled = {
+				is_in_faction = yes
+				NOT = {
+					is_faction_leader = yes
+				}
+			}
+
+			nma_country_tool_annex_button_visible = {
+				always = yes
+			}
+
+			nma_country_tool_annex_button_click_enabled = {
+				any_other_country = {
+					has_country_flag = nma_host_tool_country_marked
+				}
+			}
 		}
 
 		effects = {
 			nma_country_tool_marked_country_button_click = {
 				clr_country_flag = nma_host_tool_country_marked
+				nma_refresh_marked_countries = yes
 			}
 			nma_country_tool_not_marked_country_button_click = {
 				set_country_flag = nma_host_tool_country_marked
+				nma_refresh_marked_countries = yes
 			}
 
 			nma_country_tool_observe_button_click = {
 				DDR = {
 					change_tag_from = PREV
 				}
+			}
+
+			nma_country_tool_white_peace_button_click = {
+				if = {
+					limit = {
+						any_enemy_country = {
+							has_country_flag = nma_host_tool_country_marked
+						}
+					}
+
+					every_enemy_country = {
+						limit = {
+							has_country_flag = nma_host_tool_country_marked
+						}
+
+						white_peace = PREV
+					}
+				} else = {
+					every_enemy_country = {
+						white_peace = PREV
+					}
+				}				
+			}
+
+			nma_country_tool_kick_from_faction_button_click = {
+				random_country = {
+					limit = {
+						is_faction_leader = yes
+						is_in_faction_with = PREV
+					}
+
+					remove_from_faction = PREV
+				}
+			}
+
+			# ROOT - host country
+			# THIS - selected country
+			# FROM - selected country
+			nma_country_tool_annex_button_click = {
+				every_other_country = {
+					limit = {
+						has_country_flag = nma_host_tool_country_marked
+					}
+
+					FROM = {
+						annex_country = {
+							target = PREV
+							transfer_troops = no
+						}
+					}
+				}
+			}
+		}
+	}
+
+	nma_marked_countries = {
+		window_name = nma_marked_countries
+
+		visible = {
+			any_country = {
+				has_country_flag = nma_host_tool_country_marked
+			}
+		}
+
+		triggers = {
+			nma_marked_countries_body_visible = {
+				always = yes
+			}
+		}
+
+		dynamic_lists = {
+			marked_country_list = {
+				array = global.nma_marked_countries
+				change_scope = yes
+				entry_container = "nma_marked_country_view_item"
+			}
+		}
+
+		effects = {
+			unmark_country_click = {
+				clr_country_flag = nma_host_tool_country_marked
+				nma_refresh_marked_countries = yes
 			}
 		}
 	}
