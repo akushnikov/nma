@@ -2,6 +2,12 @@
  ################################################################# NMA MULTIPLAYER
  NMA_GROUPKEY:0 "NMA Multiplayer:General options"
  NMA_GRINDING:0 "NMA Multiplayer:Grinding options"
+################################################################# HOST TOOL
+NMA_HOST_TOOL_OPTIONS:0 "Host Tool"
+NMA_RULE_OPTION_HOST_TOOL_DISABLED:0 "Disabled"
+NMA_RULE_OPTION_HOST_TOOL_DISABLED_DESC:0 "This option will disable the host tool"
+NMA_RULE_OPTION_HOST_TOOL_SOV:0 "Soviet Union"
+NMA_RULE_OPTION_HOST_TOOL_SOV_DESC:0 "This option will grant the host tool access to Soviet Union"
 ################################################################# MINES
 NMA_MINELAYING_OPTIONS:0 "Minelaying Settings"
 NMA_RULE_OPTION_ENABLE_MINES:0 "Enable minelaying"

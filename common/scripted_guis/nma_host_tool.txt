@@ -1,0 +1,513 @@
+scripted_gui = {
+	nma_host_tool_handler_container = {
+		window_name = "nma_host_tool_handler_container"
+
+		context_type = player_context
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = nma_host
+		}
+
+		properties = {
+			nma_host_tool_handler = {
+				frame = nma_host_tool_opened?1
+			}
+		}
+
+		effects = {
+			nma_host_tool_handler_click = {
+				if = {
+					limit = {
+						check_variable = {
+							nma_host_tool_opened?1 = 1
+						}
+					}
+					set_variable = { nma_host_tool_opened = 2 }
+				} else = {
+					set_variable = { nma_host_tool_opened = 1 }
+					# cleanup
+					clear_variable = global.nma_country_tool_enabled
+					clear_variable = global.nma_state_tool_enabled
+
+					every_country = {
+						limit = {
+							has_country_flag = nma_host_tool_country_marked
+						}
+
+						clr_country_flag = nma_host_tool_country_marked
+					}
+					nma_refresh_marked_countries = yes
+					clear_array = global.nma_marked_states
+				}
+			}
+		}
+	}
+
+	nma_host_tool_main_container = {
+		window_name = "nma_host_tool_main_container"
+
+		context_type = player_context
+
+		visible = {
+			check_variable = {
+				nma_host_tool_opened = 2
+			}
+		}
+
+		triggers = {
+			nma_country_tool_button_visible = {
+				always = yes
+			}
+		}
+
+		effects = {
+			nma_country_tool_button_click = {
+				if = {
+					limit = {
+						check_variable = {
+							global.nma_country_tool_enabled = 0
+						}
+					}
+					set_variable = {
+						global.nma_country_tool_enabled = 1
+					}
+				} else = {
+					set_variable = {
+						global.nma_country_tool_enabled = 0
+					}
+				}
+			}
+
+			nma_state_tool_button_click = {
+				if = {
+					limit = {
+						check_variable = {
+							global.nma_state_tool_enabled = 0
+						}
+					}
+					set_variable = {
+						global.nma_state_tool_enabled = 1
+					}
+				} else = {
+					set_variable = {
+						global.nma_state_tool_enabled = 0
+					}
+				}
+			}
+		}
+	}
+
+	nma_host_tool_country_view_container = {
+		window_name = "nma_host_tool_country_view_container"
+
+		context_type = selected_country_context
+
+		visible = {
+			check_variable = {
+				global.nma_country_tool_enabled = 1
+			}
+		}
+
+		triggers = {
+			nma_country_tool_marked_country_button_visible = {
+				has_country_flag = nma_host_tool_country_marked
+			}
+			nma_country_tool_not_marked_country_button_visible = {
+				NOT = {
+					has_country_flag = nma_host_tool_country_marked
+				}
+			}
+			nma_country_tool_observe_button_visible = {
+				NOT = {
+					is_ai = yes
+				}
+			}
+
+			nma_country_tool_white_peace_button_visible = {
+				always = yes
+			}
+
+			nma_country_tool_white_peace_button_click_enabled = {
+				has_war = yes
+			}
+
+			nma_country_tool_kick_from_faction_button_visible = {
+				always = yes
+			}
+
+			nma_country_tool_kick_from_faction_button_click_enabled = {
+				is_in_faction = yes
+				NOT = {
+					is_faction_leader = yes
+				}
+			}
+
+			nma_country_tool_annex_button_visible = {
+				always = yes
+			}
+
+			nma_country_tool_annex_button_click_enabled = {
+				any_other_country = {
+					has_country_flag = nma_host_tool_country_marked
+				}
+			}
+
+			nma_country_tool_recal_SF_calc_visible = {
+				always = yes
+			}
+		}
+
+		effects = {
+			nma_country_tool_marked_country_button_click = {
+				clr_country_flag = nma_host_tool_country_marked
+				nma_refresh_marked_countries = yes
+			}
+			nma_country_tool_not_marked_country_button_click = {
+				set_country_flag = nma_host_tool_country_marked
+				nma_refresh_marked_countries = yes
+			}
+
+			nma_country_tool_observe_button_click = {
+				DDR = {
+					change_tag_from = PREV
+				}
+			}
+
+			nma_country_tool_white_peace_button_click = {
+				if = {
+					limit = {
+						any_enemy_country = {
+							has_country_flag = nma_host_tool_country_marked
+						}
+					}
+
+					every_enemy_country = {
+						limit = {
+							has_country_flag = nma_host_tool_country_marked
+						}
+
+						white_peace = PREV
+					}
+				} else = {
+					every_enemy_country = {
+						white_peace = PREV
+					}
+				}				
+			}
+
+			nma_country_tool_kick_from_faction_button_click = {
+				random_country = {
+					limit = {
+						is_faction_leader = yes
+						is_in_faction_with = PREV
+					}
+
+					remove_from_faction = PREV
+				}
+			}
+
+			# ROOT - host country
+			# THIS - selected country
+			# FROM - selected country
+			nma_country_tool_annex_button_click = {
+				every_other_country = {
+					limit = {
+						has_country_flag = nma_host_tool_country_marked
+					}
+
+					FROM = {
+						annex_country = {
+							target = PREV
+							transfer_troops = no
+						}
+					}
+				}
+			}
+
+			nma_country_tool_recal_SF_calc_click = {
+				every_country = {
+
+					nma_calculate_special_forces_limits = yes
+
+					if = {
+						limit = {
+							nma_is_exploting_special_forces_cap = yes
+						}
+
+						add_ideas = special_forces_cap_exploit
+					} 
+					else_if = {
+						limit = {
+							has_idea = special_forces_cap_exploit
+						}
+				
+						remove_ideas = special_forces_cap_exploit
+					}
+				}
+			}
+		}
+	}
+
+	nma_marked_countries = {
+		window_name = nma_marked_countries
+
+		visible = {
+			any_country = {
+				has_country_flag = nma_host_tool_country_marked
+			}
+		}
+
+		triggers = {
+			nma_marked_countries_body_visible = {
+				always = yes
+			}
+		}
+
+		dynamic_lists = {
+			marked_country_list = {
+				array = global.nma_marked_countries
+				change_scope = yes
+				entry_container = "nma_marked_country_view_item"
+			}
+		}
+
+		effects = {
+			unmark_country_click = {
+				clr_country_flag = nma_host_tool_country_marked
+				nma_refresh_marked_countries = yes
+			}
+
+			unmark_all_click = {
+				for_each_scope_loop = {
+					array = global.nma_marked_countries
+
+					clr_country_flag = nma_host_tool_country_marked
+				}
+				nma_refresh_marked_countries = yes
+			}
+		}
+	}
+
+	nma_host_tool_state_view_container = {
+		window_name = nma_host_tool_state_view_container
+		context_type = selected_state_context
+
+		visible = {
+			check_variable = {
+				global.nma_state_tool_enabled = 1
+			}
+		}
+
+		triggers = {
+			nma_state_tool_marked_state_button_visible = {
+				is_in_array = {
+					array = global.nma_marked_states
+					value = THIS
+				}
+			}
+			nma_state_tool_not_marked_state_button_visible = {
+				NOT = {
+					is_in_array = {
+						array = global.nma_marked_states
+						value = THIS
+					}
+				}
+			}
+			nma_state_tool_transfer_button_click_enabled = {
+				check_variable = {
+					global.nma_marked_states^num > 0
+				}
+			}
+			nma_state_tool_compliance_title_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_icon_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_value_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_add_1_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_add_5_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_add_10_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_add_20_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_add_25_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_add_50_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_add_100_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_sub_1_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_sub_5_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_sub_10_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_sub_20_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_sub_25_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_sub_50_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+			nma_state_tool_compliance_sub_100_visible = {
+				NOT = { is_core_of = CONTROLLER }
+			}
+		}
+
+		effects = {
+			nma_state_tool_marked_state_button_click = {
+				remove_from_array = {
+					global.nma_marked_states = THIS
+				}
+			}
+			nma_state_tool_not_marked_state_button_click = {
+				add_to_array = {
+					global.nma_marked_states = THIS
+				}
+			}
+			nma_state_tool_transfer_button_click = {
+				CONTROLLER = {
+					for_each_loop = {
+						array = global.nma_marked_states
+						value = state
+
+						if = {
+							limit = { 
+								NOT = { var:state = { is_controlled_by = PREV } }
+							}
+						}
+						transfer_state = var:state
+					}
+				}
+			}
+
+			nma_state_tool_compliance_add_1_click = {
+				set_variable = { global.nma_add_comliance_increment = 1 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_add_5_click = {
+				set_variable = { global.nma_add_comliance_increment = 5 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_add_10_click = {
+				set_variable = { global.nma_add_comliance_increment = 10 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_add_20_click = {
+				set_variable = { global.nma_add_comliance_increment = 20 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_add_25_click = {
+				set_variable = { global.nma_add_comliance_increment = 25 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_add_50_click = {
+				set_variable = { global.nma_add_comliance_increment = 50 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_add_100_click = {
+				set_variable = { global.nma_add_comliance_increment = 100 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			
+			nma_state_tool_compliance_sub_1_click = {
+				set_variable = { global.nma_add_comliance_increment = -1 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_sub_5_click = {
+				set_variable = { global.nma_add_comliance_increment = -5 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_sub_10_click = {
+				set_variable = { global.nma_add_comliance_increment = -10 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_sub_20_click = {
+				set_variable = { global.nma_add_comliance_increment = -20 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_sub_25_click = {
+				set_variable = { global.nma_add_comliance_increment = -25 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_sub_50_click = {
+				set_variable = { global.nma_add_comliance_increment = -50 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+			nma_state_tool_compliance_sub_100_click = {
+				set_variable = { global.nma_add_comliance_increment = -100 }
+				nma_add_compliance = yes
+				clear_variable = global.nma_add_comliance_increment
+			}
+		}
+	}
+
+	nma_marked_states = {
+		window_name = nma_marked_states
+
+		visible = {
+			check_variable = {
+				global.nma_marked_states^num > 0
+			}
+		}
+
+		triggers = {
+			nma_marked_states_body_visible = {
+				always = yes
+			}
+		}
+
+		dynamic_lists = {
+			marked_state_list = {
+				array = global.nma_marked_states
+				change_scope = yes
+				entry_container = "nma_marked_state_view_item"
+			}
+		}
+
+		effects = {
+			unmark_state_click = {
+				remove_from_array = {
+					global.nma_marked_states = THIS
+				}
+			}
+			unmark_all_click = {
+				clear_array = global.nma_marked_states
+			}
+		}
+	}
+}
