@@ -16,17 +16,18 @@ defined_text = {
 }
 
 defined_text = {
-	name = NMA_COUNTRY_MARKED_FRAME
+	name = NMA_STATE_TOOL
 
 	text = {
 		trigger = {
-			log = "[THIS.GetName] is a current scope"
-			has_country_flag = nma_host_tool_country_marked
+			check_variable = {
+				global.nma_state_tool_enabled > 0
+			}
 		}
-		localization_key = 1
+		localization_key = nma_state_tool_enabled
 	}
 
 	text = {
-		localization_key = 2
+		localization_key = nma_state_tool_disabled
 	}
 }

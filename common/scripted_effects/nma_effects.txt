@@ -361,3 +361,16 @@ nma_refresh_marked_countries = {
     }
   } 
 }
+
+nma_add_compliance = {
+  if = { 
+    limit = { check_variable = { global.nma_marked_states^num > 0 } }
+    for_each_scope_loop = { 
+      array = global.nma_marked_states
+      
+      add_compliance = global.nma_add_comliance_increment
+    }
+   } else = {
+    add_compliance = global.nma_add_comliance_increment
+   }
+}

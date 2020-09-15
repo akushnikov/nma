@@ -34,24 +34,25 @@ guiTypes = {
 
         buttonType = {
 			name = "nma_country_tool_button"
-			quadTextureSprite = "GFX_generic_text_bg_203"
-			position = { x = 25 y = 30 }
-			shortcut = "ctrl+alt+t"
+			spriteType = "GFX_generic_text_bg_203"
+            position = { x = 25 y = 30 }
+            font = "hoi_18mbs"
+            text = "[NMA_COUNTRY_TOOL]"
 			pdx_tooltip = "[NMA_COUNTRY_TOOL]"
 			clicksound = click_ok
 			oversound = ui_menu_over
-		}
-		
-		instantTextboxType = {
-			name = "nma_country_tool_label"
-			position = { x = 0 y = 34 }
-			font = "hoi_18mbs"
-			text = "[NMA_COUNTRY_TOOL]"
-			maxWidth = 250
-			maxHeight = 23
-			format = center
-			alwaystransparent = yes
-		}
+        }
+        
+        buttonType = {
+            name = "nma_state_tool_button"
+            spriteType = "GFX_generic_text_bg_203"
+            position = { x = 25 y = 70 }
+            font = "hoi_18mbs"
+            text = "[NMA_STATE_TOOL]"
+			pdx_tooltip = "[NMA_STATE_TOOL]"
+			clicksound = click_ok
+			oversound = ui_menu_over
+        }
 
     }
 
@@ -137,7 +138,7 @@ guiTypes = {
 
     containerWindowType = {
         name = "nma_host_tool_country_view_container"
-        position = { x = -255 y = -100 }
+        position = { x = -255 y = 35 }
 		size = { width = 398 height = 225 }
 		orientation = CENTER_RIGHT
 		origo = center_right
@@ -221,6 +222,277 @@ guiTypes = {
             text = nma_kick_from_faction
             buttonFont = "hoi_16mbs" 
             frame = 1
+        }
+    }
+
+    containerWindowType = {
+        name = "nma_host_tool_state_view_container"
+        position = { x = -255 y = 266 }
+		size = { width = 398 height = 225 }
+		orientation = CENTER_RIGHT
+		origo = center_right
+
+		fade_time = 300
+		fade_type = linear
+        moveable = yes
+        
+        background = {
+			name = "Background"
+			spriteType = "GFX_nma_host_tool_horizontal_view_bg"
+        }
+
+        iconType = {
+			name = "nma_state_tool_title_bg"
+			spriteType = "GFX_nma_host_tool_horizontal_view_title_bg"
+			position = { x = 13 y = 11 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+        }
+        
+		instantTextboxType = {
+			name = "nma_state_tool_state_name"
+			position = { x = 24 y = 14 }
+			font = "hoi_18mbs"
+			text = nma_state_tool_state_name
+			maxWidth = 360
+			maxHeight = 23
+			format = left
+        }
+
+        buttonType = {
+            name = "nma_state_tool_marked_state_button"
+            spriteType = "GFX_nma_host_tool_mark_button"
+            position = { x = 23 y = 50 }
+            text = nma_unmark_country
+            buttonFont = "hoi_16mbs"
+            frame = 2
+        }
+
+        buttonType = {
+            name = "nma_state_tool_not_marked_state_button"
+            spriteType = "GFX_nma_host_tool_mark_button"
+            position = { x = 23 y = 50 }
+            text = nma_mark_country
+            buttonFont = "hoi_16mbs" 
+            frame = 1
+        }
+
+        buttonType = {
+            name = "nma_state_tool_transfer_button"
+            spriteType = "GFX_nma_host_tool_mark_button"
+            position = { x = 180 y = 50 }
+            text = nma_transfer_state
+            buttonFont = "hoi_16mbs" 
+            frame = 1
+        }
+
+        instantTextboxType = {
+            name = "nma_state_tool_compliance_title"
+            position = { x = 23 y = 90 }
+            font = "hoi_18mbs"
+			text = nma_state_tool_compliance_title
+            format = center
+            maxWidth = 360
+            maxHeight = 23
+        }
+
+        iconType = {
+            name = "nma_state_tool_compliance_icon"
+            spriteType = "GFX_compliance_icon"
+            position = { x = 23 y = 137 }
+            scale = 0.9
+        }
+
+        instantTextboxType = {
+            name = "nma_state_tool_compliance_value"
+            position = { x = 55 y = 137 }
+            font = "hoi_24header"
+            text = "[?compliance|0G]%"
+            maxWidth = 50
+            maxHeight = 23
+            format = left
+        }
+
+        @ADD_BUTTON_Y = 120
+        @SUB_BUTTON_Y = 150
+
+
+        buttonType = {
+            name = "nma_state_tool_compliance_add_1"
+            spriteType = "GFX_nma_host_tool_add_controls"
+            frame = 1
+            position = { x = 110 y = @ADD_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_add_5"
+            spriteType = "GFX_nma_host_tool_add_controls"
+            frame = 2
+            position = { x = 150 y = @ADD_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_add_10"
+            spriteType = "GFX_nma_host_tool_add_controls"
+            frame = 3
+            position = { x = 190 y = @ADD_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_add_20"
+            spriteType = "GFX_nma_host_tool_add_controls"
+            frame = 4
+            position = { x = 230 y = @ADD_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_add_25"
+            spriteType = "GFX_nma_host_tool_add_controls"
+            frame = 5
+            position = { x = 270 y = @ADD_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_add_50"
+            spriteType = "GFX_nma_host_tool_add_controls"
+            frame = 6
+            position = { x = 310 y = @ADD_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_add_100"
+            spriteType = "GFX_nma_host_tool_add_controls"
+            frame = 7
+            position = { x = 350 y = @ADD_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_sub_1"
+            spriteType = "GFX_nma_host_tool_sub_controls"
+            frame = 1
+            position = { x = 110 y = @SUB_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_sub_5"
+            spriteType = "GFX_nma_host_tool_sub_controls"
+            frame = 2
+            position = { x = 150 y = @SUB_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_sub_10"
+            spriteType = "GFX_nma_host_tool_sub_controls"
+            frame = 3
+            position = { x = 190 y = @SUB_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_sub_20"
+            spriteType = "GFX_nma_host_tool_sub_controls"
+            frame = 4
+            position = { x = 230 y = @SUB_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_sub_25"
+            spriteType = "GFX_nma_host_tool_sub_controls"
+            frame = 5
+            position = { x = 270 y = @SUB_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_sub_50"
+            spriteType = "GFX_nma_host_tool_sub_controls"
+            frame = 6
+            position = { x = 310 y = @SUB_BUTTON_Y }
+        }
+
+        buttonType = {
+            name = "nma_state_tool_compliance_sub_100"
+            spriteType = "GFX_nma_host_tool_sub_controls"
+            frame = 7
+            position = { x = 350 y = @SUB_BUTTON_Y }
+        }
+    }
+
+    containerWindowType = {
+		name = "nma_marked_state_view_item"
+		size = { width = 200 height = 30 }
+		clipping = no
+			
+		background = {
+			name = "Background"
+			spriteType = "GFX_sort_button_202x29_button"
+			clicksound = click_default
+		}
+		
+		instantTextboxType = {
+			name = "name"
+			position = { x = 0 y = 5 }
+			font = "hoi_18mbs"
+			text = "[THIS.Owner.GetFlag] [THIS.GetName]"
+			maxWidth = 180
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+        }
+        
+        buttonType = {
+            name = "unmark_state"
+            quadTextureSprite = "GFX_nf_close_button"
+            position = {
+                x = 180
+                y = 6
+            }
+            scale = 0.7
+        }
+	}
+
+    containerWindowType = {
+        name = "nma_marked_states"
+        position = { x = -290 y = -250 }
+        size = { width = 285 height = 300 }
+        margin = {top=5 left=0 bottom=5 right=0}
+        orientation = CENTER_RIGHT
+        origo = center_right
+        moveable = yes
+        
+        background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window"
+		}
+
+        instantTextBoxType = {
+            name = "title"
+            position = { x = 0 y = 15 }
+            font = "hoi_18mbs"
+            text = nma_marked_states_list_title
+            format = center
+            maxWidth = 285
+			maxHeight = 20
+			fixedsize = yes
+        }
+
+        containerWindowType = {
+            name = "nma_marked_states_body"
+            position = { x = 14 y = 35 }
+			size = { width = 258 height = 245 }
+			verticalScrollbar = "right_vertical_slider"
+            
+            background = {
+                name = "Background"
+                spriteType ="GFX_tiled_plain_bg"
+            }
+
+            gridboxtype = {
+                name = "marked_state_list"
+                position = { x = 20 y = 10 }
+                size = { width = 258 height = 100%% }
+                slotsize = { width = 255 height = 30 }
+                max_slots_horizontal = 1
+                format = "UPPER_LEFT"
+            }
         }
     }
 
