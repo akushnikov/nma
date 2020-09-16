@@ -2,6 +2,79 @@
  ################################################################# NMA MULTIPLAYER
  NMA_GROUPKEY:0 "NMA Mehrspieler:Allgemeine Einstellungen"
  NMA_GRINDING:0 "NMA Mehrspieler:Grind Einstellungen"
+################################################################# HOST TOOL
+NMA_HOST_TOOL_OPTIONS:0 "Host Tool"
+NMA_RULE_OPTION_HOST_TOOL_DISABLED:0 "Disabled"
+NMA_RULE_OPTION_HOST_TOOL_DISABLED_DESC:0 "This option will disable the host tool"
+
+NMA_RULE_OPTION_HOST_TOOL_SOV:0 "Soviet Union"
+NMA_RULE_OPTION_HOST_TOOL_SOV_DESC:0 "This option will grant the host tool access to Soviet Union"
+
+NMA_RULE_OPTION_HOST_TOOL_GER:0 "Germany"
+NMA_RULE_OPTION_HOST_TOOL_GER_DESC:0 "This option will grant the host tool access to Germany"
+
+NMA_RULE_OPTION_HOST_TOOL_ITA:0 "Italy"
+NMA_RULE_OPTION_HOST_TOOL_ITA_DESC:0 "This option will grant the host tool access to Italy"
+
+NMA_RULE_OPTION_HOST_TOOL_ROM:0 "Romania"
+NMA_RULE_OPTION_HOST_TOOL_ROM_DESC:0 "This option will grant the host tool access to Romania"
+
+NMA_RULE_OPTION_HOST_TOOL_HUN:0 "Hungary"
+NMA_RULE_OPTION_HOST_TOOL_HUN_DESC:0 "This option will grant the host tool access to Hungary"
+
+NMA_RULE_OPTION_HOST_TOOL_BUL:0 "Bulgaria"
+NMA_RULE_OPTION_HOST_TOOL_BUL_DESC:0 "This option will grant the host tool access to Bulgaria"
+
+NMA_RULE_OPTION_HOST_TOOL_SPR:0 "Spain"
+NMA_RULE_OPTION_HOST_TOOL_SPR_DESC:0 "This option will grant the host tool access to Spain"
+
+NMA_RULE_OPTION_HOST_TOOL_JAP:0 "Japan"
+NMA_RULE_OPTION_HOST_TOOL_JAP_DESC:0 "This option will grant the host tool access to Japan"
+
+NMA_RULE_OPTION_HOST_TOOL_MAN:0 "Manchukuo"
+NMA_RULE_OPTION_HOST_TOOL_MAN_DESC:0 "This option will grant the host tool access to Manchukuo"
+
+NMA_RULE_OPTION_HOST_TOOL_SIA:0 "Siam"
+NMA_RULE_OPTION_HOST_TOOL_SIA_DESC:0 "This option will grant the host tool access to Siam"
+
+NMA_RULE_OPTION_HOST_TOOL_ENG:0 "UK"
+NMA_RULE_OPTION_HOST_TOOL_ENG_DESC:0 "This option will grant the host tool access to UK"
+
+NMA_RULE_OPTION_HOST_TOOL_USA:0 "USA"
+NMA_RULE_OPTION_HOST_TOOL_USA_DESC:0 "This option will grant the host tool access to USA"
+
+NMA_RULE_OPTION_HOST_TOOL_FRA:0 "France"
+NMA_RULE_OPTION_HOST_TOOL_FRA_DESC:0 "This option will grant the host tool access to France"
+
+NMA_RULE_OPTION_HOST_TOOL_CAN:0 "Canada"
+NMA_RULE_OPTION_HOST_TOOL_CAN_DESC:0 "This option will grant the host tool access to Canada"
+
+NMA_RULE_OPTION_HOST_TOOL_AST:0 "Australia"
+NMA_RULE_OPTION_HOST_TOOL_AST_DESC:0 "This option will grant the host tool access to Australia"
+
+NMA_RULE_OPTION_HOST_TOOL_SAF:0 "South Africa"
+NMA_RULE_OPTION_HOST_TOOL_SAF_DESC:0 "This option will grant the host tool access to South Africa"
+
+NMA_RULE_OPTION_HOST_TOOL_RAJ:0 "British Raj"
+NMA_RULE_OPTION_HOST_TOOL_RAJ_DESC:0 "This option will grant the host tool access to British Raj"
+
+NMA_RULE_OPTION_HOST_TOOL_NZL:0 "New Zealand"
+NMA_RULE_OPTION_HOST_TOOL_NZL_DESC:0 "This option will grant the host tool access to New Zealand"
+
+NMA_RULE_OPTION_HOST_TOOL_NOR:0 "Norway"
+NMA_RULE_OPTION_HOST_TOOL_NOR_DESC:0 "This option will grant the host tool access to Norway"
+
+NMA_RULE_OPTION_HOST_TOOL_IRE:0 "Ireland"
+NMA_RULE_OPTION_HOST_TOOL_IRE_DESC:0 "This option will grant the host tool access to Ireland"
+
+NMA_RULE_OPTION_HOST_TOOL_BRA:0 "Brazil"
+NMA_RULE_OPTION_HOST_TOOL_BRA_DESC:0 "This option will grant the host tool access to Brazil"
+
+NMA_RULE_OPTION_HOST_TOOL_MEX:0 "Mexico"
+NMA_RULE_OPTION_HOST_TOOL_MEX_DESC:0 "This option will grant the host tool access to Mexico"
+
+NMA_RULE_OPTION_HOST_TOOL_PHI:0 "Philippines"
+NMA_RULE_OPTION_HOST_TOOL_PHI_DESC:0 "This option will grant the host tool access to Philippines"
 ################################################################# MINES
 NMA_MINELAYING_OPTIONS:0 "Minenlege Einstellungen"
 NMA_RULE_OPTION_ENABLE_MINES:0 "Minenlegen erlauben"

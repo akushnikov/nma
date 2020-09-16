@@ -1,4 +1,19 @@
-﻿l_english:
- nma_country_tool_enabled:0 "Инструмент страны: £trigger_yes"
- nma_country_tool_disabled:0 "Инструмент страны: £trigger_no"
+﻿l_russian:
+ nma_country_tool_enabled:0 "Редактировать страну: £trigger_yes"
+ nma_country_tool_disabled:0 "Редактировать страну: £trigger_no"
+ nma_country_tool_country_name:0 "§Y[From.Owner.GetName]§!"
+ nma_mark_country:0 "Выделить"
+ nma_unmark_country:0 "Снять выделение"
+ nma_observe:0 "Режим наблюдателя"
+ nma_white_peace:0 "Заключить белый мир"
+ nma_calc_sf_limits_exploit:0 "Проверить абуз спецназа"
+ nma_kick_from_faction:0 "Кикнуть из альянса"
+ nma_annex:0 "Аннекс выделенного"
+ nma_marked_countries_list_title:0 "Выделенные страны"
 
+ nma_state_tool_enabled:0 "Редактировать регион: £trigger_yes"
+ nma_state_tool_disabled:0 "Редактировать регион: £trigger_no"
+ nma_state_tool_state_name:0 "§G[From.Owner.GetName]§! - §Y[From.GetName]§!"
+ nma_transfer_state:0 "Передать выделенное"
+ nma_marked_states_list_title:0 "Выделенные регионы"
+ nma_state_tool_compliance_title:0 "Управление комплаенсом"
