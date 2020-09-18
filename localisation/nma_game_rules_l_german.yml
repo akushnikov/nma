@@ -2,304 +2,308 @@
  ################################################################# NMA MULTIPLAYER
  NMA_GROUPKEY:0 "NMA Mehrspieler:Allgemeine Einstellungen"
  NMA_GRINDING:0 "NMA Mehrspieler:Grind Einstellungen"
-################################################################# HOST TOOL
-NMA_HOST_TOOL_OPTIONS:0 "Host Tool"
-NMA_RULE_OPTION_HOST_TOOL_DISABLED:0 "Disabled"
-NMA_RULE_OPTION_HOST_TOOL_DISABLED_DESC:0 "This option will disable the host tool"
 
-NMA_RULE_OPTION_HOST_TOOL_SOV:0 "Soviet Union"
-NMA_RULE_OPTION_HOST_TOOL_SOV_DESC:0 "This option will grant the host tool access to Soviet Union"
+ ################################################################# HOST TOOL
 
-NMA_RULE_OPTION_HOST_TOOL_GER:0 "Germany"
-NMA_RULE_OPTION_HOST_TOOL_GER_DESC:0 "This option will grant the host tool access to Germany"
+ NMA_HOST_TOOL_OPTIONS:0 "Hosting Tool"
 
-NMA_RULE_OPTION_HOST_TOOL_ITA:0 "Italy"
-NMA_RULE_OPTION_HOST_TOOL_ITA_DESC:0 "This option will grant the host tool access to Italy"
+ NMA_RULE_OPTION_HOST_TOOL_DISABLED:0 "Deaktiviert"
+ NMA_RULE_OPTION_HOST_TOOL_DISABLED_DESC:0 "Diese Option deaktiviert das Hosting Tool"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_SOV:0 "UDSSR"
+ NMA_RULE_OPTION_HOST_TOOL_SOV_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool der UDSSR"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_GER:0 "Deutschland"
+ NMA_RULE_OPTION_HOST_TOOL_GER_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Deutschland"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_ITA:0 "Italien"
+ NMA_RULE_OPTION_HOST_TOOL_ITA_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Italien"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_ROM:0 "Rumanien"
+ NMA_RULE_OPTION_HOST_TOOL_ROM_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Rumanien"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_HUN:0 "Ungarn"
+ NMA_RULE_OPTION_HOST_TOOL_HUN_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Ungarn"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_BUL:0 "Bulgarien"
+ NMA_RULE_OPTION_HOST_TOOL_BUL_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Bulgarien"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_SPR:0 "Spanien"
+ NMA_RULE_OPTION_HOST_TOOL_SPR_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Spanien"
+  
+ NMA_RULE_OPTION_HOST_TOOL_JAP:0 "Japan"
+ NMA_RULE_OPTION_HOST_TOOL_JAP_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Japan"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_MAN:0 "Mandschurei"
+ NMA_RULE_OPTION_HOST_TOOL_MAN_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für die Mandschurei"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_SIA:0 "Siam"
+ NMA_RULE_OPTION_HOST_TOOL_SIA_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Siam"
+  
+ NMA_RULE_OPTION_HOST_TOOL_ENG:0 "Vereinigtes Königreich"
+ NMA_RULE_OPTION_HOST_TOOL_ENG_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für das Vereinigtes Königreich"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_USA:0 "USA"
+ NMA_RULE_OPTION_HOST_TOOL_USA_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für USA"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_FRA:0 "Frankreich"
+ NMA_RULE_OPTION_HOST_TOOL_FRA_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Frankreich"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_CAN:0 "Kanada"
+ NMA_RULE_OPTION_HOST_TOOL_CAN_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Kanada"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_AST:0 "Australien"
+ NMA_RULE_OPTION_HOST_TOOL_AST_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Australien"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_SAF:0 "Südafrika"
+ NMA_RULE_OPTION_HOST_TOOL_SAF_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Südafrika"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_RAJ:0 "Indien"
+ NMA_RULE_OPTION_HOST_TOOL_RAJ_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Indien"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_NZL:0 "Neuseeland"
+ NMA_RULE_OPTION_HOST_TOOL_NZL_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Neuseeland"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_NOR:0 "Norwegen"
+ NMA_RULE_OPTION_HOST_TOOL_NOR_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Norwegen"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_IRE:0 "Irland"
+ NMA_RULE_OPTION_HOST_TOOL_IRE_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Irland"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_BRA:0 "Brasilien"
+ NMA_RULE_OPTION_HOST_TOOL_BRA_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Brasilien"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_MEX:0 "Mexico"
+ NMA_RULE_OPTION_HOST_TOOL_MEX_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Mexico"
+ 
+ NMA_RULE_OPTION_HOST_TOOL_PHI:0 "Philippinen"
+ NMA_RULE_OPTION_HOST_TOOL_PHI_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für die Philippinen"
 
-NMA_RULE_OPTION_HOST_TOOL_ROM:0 "Romania"
-NMA_RULE_OPTION_HOST_TOOL_ROM_DESC:0 "This option will grant the host tool access to Romania"
-
-NMA_RULE_OPTION_HOST_TOOL_HUN:0 "Hungary"
-NMA_RULE_OPTION_HOST_TOOL_HUN_DESC:0 "This option will grant the host tool access to Hungary"
-
-NMA_RULE_OPTION_HOST_TOOL_BUL:0 "Bulgaria"
-NMA_RULE_OPTION_HOST_TOOL_BUL_DESC:0 "This option will grant the host tool access to Bulgaria"
-
-NMA_RULE_OPTION_HOST_TOOL_SPR:0 "Spain"
-NMA_RULE_OPTION_HOST_TOOL_SPR_DESC:0 "This option will grant the host tool access to Spain"
-
-NMA_RULE_OPTION_HOST_TOOL_JAP:0 "Japan"
-NMA_RULE_OPTION_HOST_TOOL_JAP_DESC:0 "This option will grant the host tool access to Japan"
-
-NMA_RULE_OPTION_HOST_TOOL_MAN:0 "Manchukuo"
-NMA_RULE_OPTION_HOST_TOOL_MAN_DESC:0 "This option will grant the host tool access to Manchukuo"
-
-NMA_RULE_OPTION_HOST_TOOL_SIA:0 "Siam"
-NMA_RULE_OPTION_HOST_TOOL_SIA_DESC:0 "This option will grant the host tool access to Siam"
-
-NMA_RULE_OPTION_HOST_TOOL_ENG:0 "UK"
-NMA_RULE_OPTION_HOST_TOOL_ENG_DESC:0 "This option will grant the host tool access to UK"
-
-NMA_RULE_OPTION_HOST_TOOL_USA:0 "USA"
-NMA_RULE_OPTION_HOST_TOOL_USA_DESC:0 "This option will grant the host tool access to USA"
-
-NMA_RULE_OPTION_HOST_TOOL_FRA:0 "France"
-NMA_RULE_OPTION_HOST_TOOL_FRA_DESC:0 "This option will grant the host tool access to France"
-
-NMA_RULE_OPTION_HOST_TOOL_CAN:0 "Canada"
-NMA_RULE_OPTION_HOST_TOOL_CAN_DESC:0 "This option will grant the host tool access to Canada"
-
-NMA_RULE_OPTION_HOST_TOOL_AST:0 "Australia"
-NMA_RULE_OPTION_HOST_TOOL_AST_DESC:0 "This option will grant the host tool access to Australia"
-
-NMA_RULE_OPTION_HOST_TOOL_SAF:0 "South Africa"
-NMA_RULE_OPTION_HOST_TOOL_SAF_DESC:0 "This option will grant the host tool access to South Africa"
-
-NMA_RULE_OPTION_HOST_TOOL_RAJ:0 "British Raj"
-NMA_RULE_OPTION_HOST_TOOL_RAJ_DESC:0 "This option will grant the host tool access to British Raj"
-
-NMA_RULE_OPTION_HOST_TOOL_NZL:0 "New Zealand"
-NMA_RULE_OPTION_HOST_TOOL_NZL_DESC:0 "This option will grant the host tool access to New Zealand"
-
-NMA_RULE_OPTION_HOST_TOOL_NOR:0 "Norway"
-NMA_RULE_OPTION_HOST_TOOL_NOR_DESC:0 "This option will grant the host tool access to Norway"
-
-NMA_RULE_OPTION_HOST_TOOL_IRE:0 "Ireland"
-NMA_RULE_OPTION_HOST_TOOL_IRE_DESC:0 "This option will grant the host tool access to Ireland"
-
-NMA_RULE_OPTION_HOST_TOOL_BRA:0 "Brazil"
-NMA_RULE_OPTION_HOST_TOOL_BRA_DESC:0 "This option will grant the host tool access to Brazil"
-
-NMA_RULE_OPTION_HOST_TOOL_MEX:0 "Mexico"
-NMA_RULE_OPTION_HOST_TOOL_MEX_DESC:0 "This option will grant the host tool access to Mexico"
-
-NMA_RULE_OPTION_HOST_TOOL_PHI:0 "Philippines"
-NMA_RULE_OPTION_HOST_TOOL_PHI_DESC:0 "This option will grant the host tool access to Philippines"
-################################################################# MINES
-NMA_MINELAYING_OPTIONS:0 "Minenlege Einstellungen"
-NMA_RULE_OPTION_ENABLE_MINES:0 "Minenlegen erlauben"
-NMA_RULE_OPTION_ENABLE_MINES_DESC:0 "Diese Einstellung wird Minenlege technologien im Spiel erlauben."
-NMA_RULE_OPTION_DISABLE_MINES:0 "Minenlegen deaktivieren"
-NMA_RULE_OPTION_DISABLE_MINES_DESC:0 "Diese Einstellung wird Minenlege technologien im Spiel deaktivieren und alle Minenlege Schiffe in ihre minenfreien Varianten auswechseln."
-################################################################# ADAPTABLE
-NMA_ALLOW_ADAPTABLE:0 "Einstellung für Merkmal Anpassungsfähig"
-NMA_RULE_OPTION_ENABLE_ADAPTABLE:0 "Merkmal Anpassungsfähig erlauben"
-NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Diese Einstellung wird das Merkmal Anpassungsfähig für Generäle im Spiel erlauben."
-NMA_RULE_OPTION_DISABLE_ADAPTABLE:0 "Merkmal Anpassungsfähig deaktivieren"
-NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Diese Einstellung wird das Merkmal Anpassungsfähig für Generäle im Spiel deaktivieren."
-NMA_RULE_OPTION_FM_ONLY:0 "Nur für Feldmarschalle erlauben"
-NMA_RULE_OPTION_FM_ONLY_DESC:0 "Diese Einstellung wird das Merkmal Anpassungsfähig nur für Feldmarschalle erlauben."
-################################################################# MAKESHIFT BRIDGES
-NMA_ALLOW_BRIDGES:0 "Einstellung für Provisorische Brücken"
-NMA_RULE_OPTION_ENABLE_BRIDGES:0 "Provisorische Brücken erlauben"
-NMA_RULE_OPTION_ENABLE_BRIDGES_DESC:0 "Diese Einstellung wird die Provisorische Brücken Fähigkeit für Generäle mit dem "Improvisierungs Experte" Merkmal erlauben."
-NMA_RULE_OPTION_DISABLE_BRIDGES:0 "Provisorische Brücken deaktivieren"
-NMA_RULE_OPTION_DISABLE_BRIDGES_DESC:0 "Diese Einstellung wird die Provisorische Brücken Fähigkeit für Generäle mit dem "Improvisierungs Experte" Merkmal deaktivieren."
-################################################################# SIEGE ARTY
-NMA_ALLOW_ARTY:0 "Belagerungsartillerie Einstellungen"
-NMA_RULE_OPTION_ENABLE_ARTY:0 "Belagerungsartillerie erlauben"
-NMA_RULE_OPTION_ENABLE_ARTY_DESC:0 "Diese Einstellung erlaubt die Belagerungsartillerie Fähigkeit für Generäte mit der "Festungsbrecher" Fähigkeit."
-NMA_RULE_OPTION_DISABLE_ARTY:0 "Belagerungsartillerie deaktivieren"
-NMA_RULE_OPTION_DISABLE_ARTY_DESC:0 "Diese Einstellung deaktiviert die Belagerungsartillerie Fähigkeit für Generäte mit der "Festungsbrecher" Fähigkeit."
-################################################################# SNORKEL
-NMA_SNORKEL_OPTIONS:0 "Schnorchel level 2 Einstellungen"
-NMA_RULE_OPTION_ENABLE_SNORKEL:0 "Freie Forschung"
-NMA_RULE_OPTION_ENABLE_SNORKEL_DESC:0 "Diese Einstellung aktiviert die Schnorcheltechnologie level 2"
-NMA_RULE_OPTION_LIMIT_SNORKEL:0 "Nicht vor 1942 erlauben."
-NMA_RULE_OPTION_LIMIT_SNORKEL_DESC:0 "Diese Einstellung deaktiviert die Schnorchel Technologie bis zum 1.1.1942"
-NMA_RULE_OPTION_DISABLE_SNORKEL:0 "Schnorchel level 2 nicht erlauben."
-NMA_RULE_OPTION_DISABLE_SNORKEL_DESC:0 "Diese Einstellung deaktiviert die Schorchel level 2 Technologie."
-################################################################ ANNEX MALAYA
-NMA_ANNEX_MALAYA_OPTIONS:0 "Malaysia annektions Einstellungen"
-NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA:0 "Erlauben"
-NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA_DESC:0 "Diese Einstellung erlaubt es Großbritannien Malaysia für 300pp zu annektieren"
-NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA:0 "Nicht Erlauben"
-NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA_DESC:0 "Diese Einstellung macht die Annektierung Malaysias rückgängig und setzt es auf das Vanilla verhalten zurück (lend-lease benötigt)"
-################################################################ ANNEX AI MINORS
-NMA_ANNEX_MINORS_OPTIONS:0 "Kleinere KI Nationen annektions Einstellungen"
-NMA_RULE_OPTION_ENABLE_ANNEX_MINORS:0 "Erlauben"
-NMA_RULE_OPTION_ENABLE_ANNEX_MINORS_DESC:0 "Diese Einstellung erlaubt es §GUK§! §YCommonwealth§!, §GDeutschland§! - §YRumänien§!, §YUngarn§! und §YBulgarien§!, §GJapan§! - §YSiam§!, §YMandschurei§! und §YMengjiang§!, §GAustralien§! - §YNeuseeland§! (nur wenn §GUK§! es erlaubt) zu annektieren"
-NMA_RULE_OPTION_DISABLE_ANNEX_MINORS:0 "Nicht Erlauben"
-NMA_RULE_OPTION_DISABLE_ANNEX_MINORS_DESC:0 "Original mechaniken beibehalten."
-################################################################ TANKZ 1941
-NMA_1941TANKS_OPTIONS:0 "1941er Panzer Einstellungen"
-NMA_RULE_OPTION_1941TANKS_FREE:0 "Freie Forschung"
-NMA_RULE_OPTION_1941TANKS_FREE_DESC:0 "Vanilla"
-NMA_RULE_OPTION_LIMIT_1941TANKS:0 "2 Jahre im voraus Beschränkun"
-NMA_RULE_OPTION_LIMIT_1941TANKS_DESC:0 "Diese Einstellung erlaubt es die 1941er Panzer bereits ab §Y1 Januar 1939§! zu erforschen."
-NMA_RULE_OPTION_YEAR_1941TANKS:0 "1 Jahr im voraus Beschränkung"
-NMA_RULE_OPTION_YEAR_1941TANKS_DESC:0 "Diese Einstellung erlaubt es die 1941er Panzer bereits ab §Y1 Januar 1940§! zu erforschen."
-################################################################ TANKZ 1943
-NMA_1943TANKS_OPTIONS:0 "1943er Panzer Einstellungen"
-NMA_RULE_OPTION_1943TANKS_FREE:0 "Freie Forschung"
-NMA_RULE_OPTION_1943TANKS_FREE_DESC:0 "Vanilla"
-NMA_RULE_OPTION_LIMIT_1943TANKS:0 "2 Jahre im voraus Beschränkung"
-NMA_RULE_OPTION_LIMIT_1943TANKS_DESC:0 "Diese Einstellung erlaubt es die 1943er Panzer bereits ab §Y1 Januar 1941§! zu erforschen."
-NMA_RULE_OPTION_YEAR_1943TANKS:0 "1 Jahr im voraus Beschränkung"
-NMA_RULE_OPTION_YEAR_1943TANKS_DESC:0 "Diese Einstellung erlaubt es die 1943er Panzer bereits ab §Y1 Januar 1942§! zu erforschen."
-################################################################ PLANES 1940
-NMA_1940PLANES_OPTIONS:0 "1940er Flugzeug Einstellungen"
-NMA_RULE_OPTION_1940PLANES_FREE:0 "Freie Forschung"
-NMA_RULE_OPTION_1940PLANES_FREE_DESC:0 "Vanilla"
-NMA_RULE_OPTION_LIMIT_1940PLANES:0 "2 Jahre im voraus Beschränkung"
-NMA_RULE_OPTION_LIMIT_1940PLANES_DESC:0 "Diese Einstellung erlaubt es die 1940er Flugzeuge bereits ab §Y1 Januar 1938§! zu erforschen."
-NMA_RULE_OPTION_YEAR_1940PLANES:0 "1 Jahr im voraus Beschränkung"
-NMA_RULE_OPTION_YEAR_1940PLANES_DESC:0 "Diese Einstellung erlaubt es die 1940er Flugzeuge bereits ab §Y1 Januar 1939§! zu erforschen."
-################################################################ PLANES 1944
-NMA_1944PLANES_OPTIONS:0 "1944er Flugzeuge Einstellungen"
-NMA_RULE_OPTION_1944PLANES_FREE:0 "Freie Forschung"
-NMA_RULE_OPTION_1944PLANES_FREE_DESC:0 "Vanilla"
-NMA_RULE_OPTION_LIMIT_1944PLANES:0 "2 Jahre im voraus Beschränkung"
-NMA_RULE_OPTION_LIMIT_1944PLANES_DESC:0 "Diese Einstellung erlaubt es die 1944er Flugzeuge bereits ab §Y1 Januar 1942§! zu erforschen."
-NMA_RULE_OPTION_1944PLANES_DISABLE:0 "Deaktivieren"
-NMA_RULE_OPTION_1944PLANES_DISABLE_DESC:0 "Diese Einstellung deaktiviert 1944er Flugzeuge im Spiel komplett."
-NMA_RULE_OPTION_YEAR_1944PLANES:0 "1 Jahr im voraus Beschränkung"
-NMA_RULE_OPTION_YEAR_1944PLANES_DESC:0 "Diese Einstellung erlaubt es die 1944er Flugzeuge bereits ab §Y1 Januar 1943§! zu erforschen."
-################################################################ STRATEGIC BOMBERS
-NMA_STRATS_OPTIONS:0 "Strategische Bomber Einstellungen"
-NMA_RULE_OPTION_ENABLE_STRATS:0 "Freie Forschung"
-NMA_RULE_OPTION_ENABLE_STRATS_DESC:0 "Vanilla"
-NMA_RULE_OPTION_DISABLE_STRATS:0 "Deaktivieren"
-NMA_RULE_OPTION_DISABLE_STRATS_DESC:0 "Diese  Einstellung deaktiviert Strategische Bomber im Spiel komplett."
-################################################################ NAVY 1940
-NMA_1940NAVY_OPTIONS:0 "1940er Marine Einstellungen"
-NMA_RULE_OPTION_1940NAVY_FREE:0 "Freie Forschung"
-NMA_RULE_OPTION_1940NAVY_FREE_DESC:0 "Vanilla"
-NMA_RULE_OPTION_LIMIT_1940NAVY:0 "2 Jahre im voraus Beschränkung"
-NMA_RULE_OPTION_LIMIT_1940NAVY_DESC:0 "Diese Einstellung erlaubt es 1940er Marine Forschung ab §Y1 Januar 1938§! zu beginnen."
-NMA_RULE_OPTION_YEAR_1940NAVY:0 "1 Jahr im voraus Beschränkung"
-NMA_RULE_OPTION_YEAR_1940NAVY_DESC:0 "Diese Einstellung erlaubt es 1940er Marine Forschung ab §Y1 Januar 1939§! zu beginnen."
-################################################################ NAVY 1944
-NMA_1944NAVY_OPTIONS:0 "1944er Marine Einstellungen"
-NMA_RULE_OPTION_1944NAVY_FREE:0 "Freie Forschung"
-NMA_RULE_OPTION_1944NAVY_FREE_DESC:0 "Vanilla"
-NMA_RULE_OPTION_LIMIT_1944NAVY:0 "2 Jahre im voraus Beschränkung"
-NMA_RULE_OPTION_LIMIT_1944NAVY_DESC:0 "Diese Einstellung erlaubt es 1944er Marine Forschung ab §Y1 Januar 1942§! zu beginnen."
-NMA_RULE_OPTION_YEAR_1944NAVY:0 "1 Jahr im voraus Beschränkung"
-NMA_RULE_OPTION_YEAR_1944NAVY_DESC:0 "Diese Einstellung erlaubt es 1944er Marine Forschung ab §Y1 Januar 1943§! zu beginnen."
-################################################################ INF.EQUIPMENT 1939
-NMA_1939INF_OPTIONS:0 "1939er Inf. Ausrüstungs Einstellungen"
-NMA_RULE_OPTION_1939INF_FREE:0 "Freie Forschung"
-NMA_RULE_OPTION_1939INF_FREE_DESC:0 "Vanilla"
-NMA_RULE_OPTION_LIMIT_1939INF:0 "2 Jahre im voraus Beschränkung"
-NMA_RULE_OPTION_LIMIT_1939INF_DESC:0 "Diese Einstellung erlaubt es 1939er Infanterie Ausrüstung bereits ab §Y1 Januar 1937§! zu erforschen."
-NMA_RULE_OPTION_YEAR_1939INF:0 "1 Jahr im voraus Beschränkung"
-NMA_RULE_OPTION_YEAR_1939INF_DESC:0 "Diese Einstellung erlaubt es 1939er Infanterie Ausrüstung bereits ab §Y1 Januar 1938§! zu erforschen."
-################################################################ INF.EQUIPMENT 1942
-NMA_1942INF_OPTIONS:0 "1942er Inf. Ausrüstungs Einstellungen"
-NMA_RULE_OPTION_1942INF_FREE:0 "Freie Forschung"
-NMA_RULE_OPTION_1942INF_FREE_DESC:0 "Vanilla"
-NMA_RULE_OPTION_LIMIT_1942INF:0 "2 Jahre im voraus Beschränkung"
-NMA_RULE_OPTION_LIMIT_1942INF_DESC:0 "Diese Einstellung erlaubt es 1942er Infanterie Ausrüstung bereits ab §Y1 Januar 1940§! zu erforschen."
-NMA_RULE_OPTION_YEAR_1942INF:0 "1 Jahr im voraus Beschränkung"
-NMA_RULE_OPTION_YEAR_1942INF_DESC:0 "Diese Einstellung erlaubt es 1942er Infanterie Ausrüstung bereits ab §Y1 Januar 1941§! zu erforschen."
-################################################################ AIR PRODUCTION
-NMA_ALLOW_AIR_PRODUCTION:0 "Flugzeugproduktionsfokus Einstellungen"
-NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION:0 "Deaktivieren"
-NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION_DESC:0 "Deaktiviert das oben beschriebene."
-NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION:0 "Erlauben"
-NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION_DESC:0 "Erlaubt das oben beschriebene."
-################################################################ JAEGERNOTPROGRAMM
-NMA_ALLOW_JAGER:0 "Jägernotprogramm Einstellungen"
-NMA_RULE_OPTION_DISABLE_JAGER:0 "Deaktivieren"
-NMA_RULE_OPTION_DISABLE_JAGER_DESC:0 "Diese Einstellung deaktiviert das deutsche Jägernotprogramm im Spiel"
-NMA_RULE_OPTION_ENABLE_JAGER:0 "Erlauben"
-NMA_RULE_OPTION_ENABLE_JAGER_DESC:0 "Diese Einstellung erlaubt es Deutschland das Jägernotprogramm im Spiel als Entscheidung zu nutzen."
-################################################################ FORCE ATTACK/LAST STAND
-NMA_FA_LS_OPTIONS:0 "Angriff erzwingen/Letzter Kampf Einstellungen"
-NMA_RULE_OPTION_FA_LS_REWORKED:0 "Überarbeitet"
-NMA_RULE_OPTION_FA_LS_REWORKED_DESC:0 "Diese Einstellung verringert den Entrenchment Bonus von Angriff erzwingen bis zu -25% und erhöht den Stärkeschaden von Letzter Kampf bis zu 120%."
-NMA_RULE_OPTION_FA_LS_BANNED:0 "Deaktiviert"
-NMA_RULE_OPTION_FA_LS_BANNED_DESC:0 "Diese Einstellung deaktiviert beide Fähigkeiten."
-NMA_RULE_OPTION_FA_LS_VANILLA:0 "Vanilla"
-NMA_RULE_OPTION_FA_LS_VANILLA_DESC:0 "Diese Einstellung verändert nichts bei beiden Fähigkeiten"
-################################################################ VICHY FRANCE
-NMA_VIC_OPTIONS:0 "Vichy Frankreich Einstellungen"
-NMA_RULE_OPTION_VIC_DISABLED:0 "Vichy Frankreich deaktivieren"
-NMA_RULE_OPTION_VIC_DISABLED_DESC:0 "Entfernt Vichy Frankreich aus dem Spiel."
-NMA_RULE_OPTION_VIC_ALLOWED:0 "Vichy Frankreich erlauben"
-NMA_RULE_OPTION_VIC_ALLOWED_DESC:0 "Diese Einstellung erlaubt die Gründung Vichy Frankreichs."
-################################################################ FRA_ENG UNION
-NMA_UNION_OPTIONS:0 "Franco-Britische Union Einstellungen"
-NMA_RULE_OPTION_UNION_DISABLED:0 "Unionsbildung deaktivieren"
-NMA_RULE_OPTION_UNION_DISABLED_DESC:0 "Diese Einstellung erlaubt es dem Frankreich Spieler nicht eine Union mit Großbritannien zu gründen nach Frankreichs Kapitulation. "
-NMA_RULE_OPTION_UNION_ENABLED:0 "Unionsbildung erlauben"
-NMA_RULE_OPTION_UNION_ENABLED_DESC:0 "Diese Einstellung erlaubt es dem Frankreich Spieler eine Union mit Großbritannien zu gründen nach Frankreichs Kapitulation."
-################################################################ USA_OPTIONS
-NMA_USA_OPTIONS:0 "USA Raffinerien Sperrung"
-NMA_RULE_OPTION_USA_DEFAULTCOST:0 "Deaktiviert"
-NMA_RULE_OPTION_USA_DEFAULTCOST_DESC:0 "Vanilla"
-NMA_RULE_OPTION_USA_SLOWED:0 "Deaktiviert bis 01.01.1943"
-NMA_RULE_OPTION_USA_SLOWED_DESC:0 "Diese Einstellung erhöht die Raffinerien Bauzeit um 200% bis zum §Y1 Januar 1943§!."
-NMA_RULE_OPTION_USA_JAPWAR:0 "Deaktiviert bis zum Krieg mit Japan"
-NMA_RULE_OPTION_USA_JAPWAR_DESC:0 "Diese Einstellung erhöht die Raffinerien Bauzeit um 200% bis zum Krieg mit Japan."
-################################################################ USA_LOCK
-NMA_USA_LOCK_OPTIONS:0 "USA Lock"
-NMA_RULE_OPTION_USA_UNLOCKED:0 "Deaktiviert"
-NMA_RULE_OPTION_USA_UNLOCKED_DESC:0 "Vanilla"
-NMA_RULE_OPTION_USA_LOCKED:0 "Erlaubt"
-NMA_RULE_OPTION_USA_LOCKED_DESC:0 "Diese Einstellung verhindert dass die USA vor dem Juli 1937 aus der Großen Depression herauskommt."
-################################################################ TOTAL MOB
-NMA_TOTAL_MOB_OPTIONS:0 "Totale Mobilisierung Einstellungen"
-NMA_RULE_OPTION_TOTAL_MOB_DEFAULT:0 "Erlaubt"
-NMA_RULE_OPTION_TOTAL_MOB_DEFAULT_DESC:0 "Vanilla"
-NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED:0 "Totale Mobilisierung Deaktivieren"
-NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED_DESC:0 "Diese Einstellung verhindert dass, ausgenommen Japan, Nationen auf Totale Mobilisierung umschalten können."
-NMA_RULE_OPTION_TOTAL_MOB_BARB:0 "Deaktivieren bis Barbarossa"
-NMA_RULE_OPTION_TOTAL_MOB_BARB_DESC:0 "Diese Einstellung verhindert dass, ausgenommen Japan, Nationen auf Totale Mobilisierung bis zum Start von Barbarossa umschalten können."
-################################################################ GER SPYSLOTS
-NMA_GER_SPYSLOTS_OPTIONS:0 "Extra Spion slots für Deutschland"
-NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED:0 "Deaktiviert"
-NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED_DESC:0 "Vanilla mäßig"
-NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED:0 "Erlaubt"
-NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED_DESC:0 "Diese Einstellung fügt 2 weitere Operationsplätze für Spione für Deutschland hinzu ab Spielstart."
-################################################################ GRINDING
-NMA_ETH_GRINDING:0 "Äthiopien Grind Einstellungen"
-NMA_POR_GRINDING:0 "Portugal Grind Einstellungen"
-NMA_YUG_GRINDING:0 "Yugoslavien Grind Einstellungen"
-NMA_GRE_GRINDING:0 "Griechenland Grind Einstellungen"
-NMA_BUL_GRINDING:0 "Bulgarien Grind Einstellungen"
-NMA_FIN_GRINDING:0 "Finnland Grind Einstellungen"
-NMA_AFG_GRINDING:0 "Afganistan Grind Einstellungen"
-NMA_PER_GRINDING:0 "Iran Grind Einstellungen"
-NMA_SWI_GRINDING:0 "Schweiz Grind Einstellungen"
-NMA_CHI_GRINDING:0 "China Grind Einstellungen"
-
-NMA_RULE_OPTION_UNLIMITED_GRIND:0 "Keine Begrenzungen"
-NMA_RULE_OPTION_UNLIMITED_GRIND_DESC:0 "Diese Einstellung deaktiviert alle Grindbeschränkungen"
-
-NMA_RULE_OPTION_1_MONTH_GRIND:0 "1 Monat"
-NMA_RULE_OPTION_1_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 1 Monaten"
-
-NMA_RULE_OPTION_2_MONTH_GRIND:0 "2 Monate"
-NMA_RULE_OPTION_2_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 2 Monaten"
-
-NMA_RULE_OPTION_3_MONTH_GRIND:0 "3 Monate"
-NMA_RULE_OPTION_3_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 3 Monaten"
-
-NMA_RULE_OPTION_4_MONTH_GRIND:0 "4 Monate"
-NMA_RULE_OPTION_4_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 4 Monaten"
-
-NMA_RULE_OPTION_5_MONTH_GRIND:0 "5 Monate"
-NMA_RULE_OPTION_5_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 5 Monaten,"
-
-NMA_RULE_OPTION_6_MONTH_GRIND:0 "6 Monate"
-NMA_RULE_OPTION_6_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 6 Monaten"
-
-NMA_RULE_OPTION_7_MONTH_GRIND:0 "7 Monate"
-NMA_RULE_OPTION_7_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 7 Monaten"
-
-NMA_RULE_OPTION_8_MONTH_GRIND:0 "8 Monate"
-NMA_RULE_OPTION_8_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 8 Monaten"
-
-NMA_RULE_OPTION_9_MONTH_GRIND:0 "9 Monate"
-NMA_RULE_OPTION_9_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 9 Monaten"
-
-NMA_RULE_OPTION_10_MONTH_GRIND:0 "10 Monate"
-NMA_RULE_OPTION_10_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 10 Monaten"
-
-NMA_RULE_OPTION_11_MONTH_GRIND:0 "11 Monate"
-NMA_RULE_OPTION_11_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 11 Monaten"
-
-NMA_RULE_OPTION_12_MONTH_GRIND:0 "12 Monate"
-NMA_RULE_OPTION_12_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 12 Monaten"
+ ################################################################# MINES
+ NMA_MINELAYING_OPTIONS:0 "Minenlege Einstellungen"
+ NMA_RULE_OPTION_ENABLE_MINES:0 "Minenlegen erlauben"
+ NMA_RULE_OPTION_ENABLE_MINES_DESC:0 "Diese Einstellung wird Minenlege technologien im Spiel erlauben."
+ NMA_RULE_OPTION_DISABLE_MINES:0 "Minenlegen deaktivieren"
+ NMA_RULE_OPTION_DISABLE_MINES_DESC:0 "Diese Einstellung wird Minenlege technologien im Spiel deaktivieren und alle Minenlege Schiffe in ihre minenfreien Varianten auswechseln."
+ ################################################################# ADAPTABLE
+ NMA_ALLOW_ADAPTABLE:0 "Einstellung für Merkmal Anpassungsfähig"
+ NMA_RULE_OPTION_ENABLE_ADAPTABLE:0 "Merkmal Anpassungsfähig erlauben"
+ NMA_RULE_OPTION_ENABLE_ADAPTABLE_DESC:0 "Diese Einstellung wird das Merkmal Anpassungsfähig für Generäle im Spiel erlauben."
+ NMA_RULE_OPTION_DISABLE_ADAPTABLE:0 "Merkmal Anpassungsfähig deaktivieren"
+ NMA_RULE_OPTION_DISABLE_ADAPTABLE_DESC:0 "Diese Einstellung wird das Merkmal Anpassungsfähig für Generäle im Spiel deaktivieren."
+ NMA_RULE_OPTION_FM_ONLY:0 "Nur für Feldmarschalle erlauben"
+ NMA_RULE_OPTION_FM_ONLY_DESC:0 "Diese Einstellung wird das Merkmal Anpassungsfähig nur für Feldmarschalle erlauben."
+ ################################################################# MAKESHIFT BRIDGES
+ NMA_ALLOW_BRIDGES:0 "Einstellung für Provisorische Brücken"
+ NMA_RULE_OPTION_ENABLE_BRIDGES:0 "Provisorische Brücken erlauben"
+ NMA_RULE_OPTION_ENABLE_BRIDGES_DESC:0 "Diese Einstellung wird die Provisorische Brücken Fähigkeit für Generäle mit dem "Improvisierungs Experte" Merkmal erlauben."
+ NMA_RULE_OPTION_DISABLE_BRIDGES:0 "Provisorische Brücken deaktivieren"
+ NMA_RULE_OPTION_DISABLE_BRIDGES_DESC:0 "Diese Einstellung wird die Provisorische Brücken Fähigkeit für Generäle mit dem "Improvisierungs Experte" Merkmal deaktivieren."
+ ################################################################# SIEGE ARTY
+ NMA_ALLOW_ARTY:0 "Belagerungsartillerie Einstellungen"
+ NMA_RULE_OPTION_ENABLE_ARTY:0 "Belagerungsartillerie erlauben"
+ NMA_RULE_OPTION_ENABLE_ARTY_DESC:0 "Diese Einstellung erlaubt die Belagerungsartillerie Fähigkeit für Generäte mit der "Festungsbrecher" Fähigkeit."
+ NMA_RULE_OPTION_DISABLE_ARTY:0 "Belagerungsartillerie deaktivieren"
+ NMA_RULE_OPTION_DISABLE_ARTY_DESC:0 "Diese Einstellung deaktiviert die Belagerungsartillerie Fähigkeit für Generäte mit der "Festungsbrecher" Fähigkeit."
+ ################################################################# SNORKEL
+ NMA_SNORKEL_OPTIONS:0 "Schnorchel level 2 Einstellungen"
+ NMA_RULE_OPTION_ENABLE_SNORKEL:0 "Freie Forschung"
+ NMA_RULE_OPTION_ENABLE_SNORKEL_DESC:0 "Diese Einstellung aktiviert die Schnorcheltechnologie level 2"
+ NMA_RULE_OPTION_LIMIT_SNORKEL:0 "Nicht vor 1942 erlauben."
+ NMA_RULE_OPTION_LIMIT_SNORKEL_DESC:0 "Diese Einstellung deaktiviert die Schnorchel Technologie bis zum 1.1.1942"
+ NMA_RULE_OPTION_DISABLE_SNORKEL:0 "Schnorchel level 2 nicht erlauben."
+ NMA_RULE_OPTION_DISABLE_SNORKEL_DESC:0 "Diese Einstellung deaktiviert die Schorchel level 2 Technologie."
+ ################################################################ ANNEX MALAYA
+ NMA_ANNEX_MALAYA_OPTIONS:0 "Malaysia annektions Einstellungen"
+ NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA:0 "Erlauben"
+ NMA_RULE_OPTION_ENABLE_ANNEX_MALAYA_DESC:0 "Diese Einstellung erlaubt es Großbritannien Malaysia für 300pp zu annektieren"
+ NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA:0 "Nicht Erlauben"
+ NMA_RULE_OPTION_DISABLE_ANNEX_MALAYA_DESC:0 "Diese Einstellung macht die Annektierung Malaysias rückgängig und setzt es auf das Vanilla verhalten zurück (lend-lease benötigt)"
+ ################################################################ ANNEX AI MINORS
+ NMA_ANNEX_MINORS_OPTIONS:0 "Kleinere KI Nationen annektions Einstellungen"
+ NMA_RULE_OPTION_ENABLE_ANNEX_MINORS:0 "Erlauben"
+ NMA_RULE_OPTION_ENABLE_ANNEX_MINORS_DESC:0 "Diese Einstellung erlaubt es §GUK§! §YCommonwealth§!, §GDeutschland§! - §YRumänien§!, §YUngarn§! und §YBulgarien§!, §GJapan§! - §YSiam§!, §YMandschurei§! und  §YMengjiang§!, §GAustralien§! - §YNeuseeland§! (nur wenn §GUK§! es erlaubt) zu annektieren"
+ NMA_RULE_OPTION_DISABLE_ANNEX_MINORS:0 "Nicht Erlauben"
+ NMA_RULE_OPTION_DISABLE_ANNEX_MINORS_DESC:0 "Original mechaniken beibehalten."
+ ################################################################ TANKZ 1941
+ NMA_1941TANKS_OPTIONS:0 "1941er Panzer Einstellungen"
+ NMA_RULE_OPTION_1941TANKS_FREE:0 "Freie Forschung"
+ NMA_RULE_OPTION_1941TANKS_FREE_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_LIMIT_1941TANKS:0 "2 Jahre im voraus Beschränkun"
+ NMA_RULE_OPTION_LIMIT_1941TANKS_DESC:0 "Diese Einstellung erlaubt es die 1941er Panzer bereits ab §Y1 Januar 1939§! zu erforschen."
+ NMA_RULE_OPTION_YEAR_1941TANKS:0 "1 Jahr im voraus Beschränkung"
+ NMA_RULE_OPTION_YEAR_1941TANKS_DESC:0 "Diese Einstellung erlaubt es die 1941er Panzer bereits ab §Y1 Januar 1940§! zu erforschen."
+ ################################################################ TANKZ 1943
+ NMA_1943TANKS_OPTIONS:0 "1943er Panzer Einstellungen"
+ NMA_RULE_OPTION_1943TANKS_FREE:0 "Freie Forschung"
+ NMA_RULE_OPTION_1943TANKS_FREE_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_LIMIT_1943TANKS:0 "2 Jahre im voraus Beschränkung"
+ NMA_RULE_OPTION_LIMIT_1943TANKS_DESC:0 "Diese Einstellung erlaubt es die 1943er Panzer bereits ab §Y1 Januar 1941§! zu erforschen."
+ NMA_RULE_OPTION_YEAR_1943TANKS:0 "1 Jahr im voraus Beschränkung"
+ NMA_RULE_OPTION_YEAR_1943TANKS_DESC:0 "Diese Einstellung erlaubt es die 1943er Panzer bereits ab §Y1 Januar 1942§! zu erforschen."
+ ################################################################ PLANES 1940
+ NMA_1940PLANES_OPTIONS:0 "1940er Flugzeug Einstellungen"
+ NMA_RULE_OPTION_1940PLANES_FREE:0 "Freie Forschung"
+ NMA_RULE_OPTION_1940PLANES_FREE_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_LIMIT_1940PLANES:0 "2 Jahre im voraus Beschränkung"
+ NMA_RULE_OPTION_LIMIT_1940PLANES_DESC:0 "Diese Einstellung erlaubt es die 1940er Flugzeuge bereits ab §Y1 Januar 1938§! zu erforschen."
+ NMA_RULE_OPTION_YEAR_1940PLANES:0 "1 Jahr im voraus Beschränkung"
+ NMA_RULE_OPTION_YEAR_1940PLANES_DESC:0 "Diese Einstellung erlaubt es die 1940er Flugzeuge bereits ab §Y1 Januar 1939§! zu erforschen."
+ ################################################################ PLANES 1944
+ NMA_1944PLANES_OPTIONS:0 "1944er Flugzeuge Einstellungen"
+ NMA_RULE_OPTION_1944PLANES_FREE:0 "Freie Forschung"
+ NMA_RULE_OPTION_1944PLANES_FREE_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_LIMIT_1944PLANES:0 "2 Jahre im voraus Beschränkung"
+ NMA_RULE_OPTION_LIMIT_1944PLANES_DESC:0 "Diese Einstellung erlaubt es die 1944er Flugzeuge bereits ab §Y1 Januar 1942§! zu erforschen."
+ NMA_RULE_OPTION_1944PLANES_DISABLE:0 "Deaktivieren"
+ NMA_RULE_OPTION_1944PLANES_DISABLE_DESC:0 "Diese Einstellung deaktiviert 1944er Flugzeuge im Spiel komplett."
+ NMA_RULE_OPTION_YEAR_1944PLANES:0 "1 Jahr im voraus Beschränkung"
+ NMA_RULE_OPTION_YEAR_1944PLANES_DESC:0 "Diese Einstellung erlaubt es die 1944er Flugzeuge bereits ab §Y1 Januar 1943§! zu erforschen."
+ ################################################################ STRATEGIC BOMBERS
+ NMA_STRATS_OPTIONS:0 "Strategische Bomber Einstellungen"
+ NMA_RULE_OPTION_ENABLE_STRATS:0 "Freie Forschung"
+ NMA_RULE_OPTION_ENABLE_STRATS_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_DISABLE_STRATS:0 "Deaktivieren"
+ NMA_RULE_OPTION_DISABLE_STRATS_DESC:0 "Diese  Einstellung deaktiviert Strategische Bomber im Spiel komplett."
+ ################################################################ NAVY 1940
+ NMA_1940NAVY_OPTIONS:0 "1940er Marine Einstellungen"
+ NMA_RULE_OPTION_1940NAVY_FREE:0 "Freie Forschung"
+ NMA_RULE_OPTION_1940NAVY_FREE_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_LIMIT_1940NAVY:0 "2 Jahre im voraus Beschränkung"
+ NMA_RULE_OPTION_LIMIT_1940NAVY_DESC:0 "Diese Einstellung erlaubt es 1940er Marine Forschung ab §Y1 Januar 1938§! zu beginnen."
+ NMA_RULE_OPTION_YEAR_1940NAVY:0 "1 Jahr im voraus Beschränkung"
+ NMA_RULE_OPTION_YEAR_1940NAVY_DESC:0 "Diese Einstellung erlaubt es 1940er Marine Forschung ab §Y1 Januar 1939§! zu beginnen."
+ ################################################################ NAVY 1944
+ NMA_1944NAVY_OPTIONS:0 "1944er Marine Einstellungen"
+ NMA_RULE_OPTION_1944NAVY_FREE:0 "Freie Forschung"
+ NMA_RULE_OPTION_1944NAVY_FREE_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_LIMIT_1944NAVY:0 "2 Jahre im voraus Beschränkung"
+ NMA_RULE_OPTION_LIMIT_1944NAVY_DESC:0 "Diese Einstellung erlaubt es 1944er Marine Forschung ab §Y1 Januar 1942§! zu beginnen."
+ NMA_RULE_OPTION_YEAR_1944NAVY:0 "1 Jahr im voraus Beschränkung"
+ NMA_RULE_OPTION_YEAR_1944NAVY_DESC:0 "Diese Einstellung erlaubt es 1944er Marine Forschung ab §Y1 Januar 1943§! zu beginnen."
+ ################################################################ INF.EQUIPMENT 1939
+ NMA_1939INF_OPTIONS:0 "1939er Inf. Ausrüstungs Einstellungen"
+ NMA_RULE_OPTION_1939INF_FREE:0 "Freie Forschung"
+ NMA_RULE_OPTION_1939INF_FREE_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_LIMIT_1939INF:0 "2 Jahre im voraus Beschränkung"
+ NMA_RULE_OPTION_LIMIT_1939INF_DESC:0 "Diese Einstellung erlaubt es 1939er Infanterie Ausrüstung bereits ab §Y1 Januar 1937§! zu erforschen."
+ NMA_RULE_OPTION_YEAR_1939INF:0 "1 Jahr im voraus Beschränkung"
+ NMA_RULE_OPTION_YEAR_1939INF_DESC:0 "Diese Einstellung erlaubt es 1939er Infanterie Ausrüstung bereits ab §Y1 Januar 1938§! zu erforschen."
+ ################################################################ INF.EQUIPMENT 1942
+ NMA_1942INF_OPTIONS:0 "1942er Inf. Ausrüstungs Einstellungen"
+ NMA_RULE_OPTION_1942INF_FREE:0 "Freie Forschung"
+ NMA_RULE_OPTION_1942INF_FREE_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_LIMIT_1942INF:0 "2 Jahre im voraus Beschränkung"
+ NMA_RULE_OPTION_LIMIT_1942INF_DESC:0 "Diese Einstellung erlaubt es 1942er Infanterie Ausrüstung bereits ab §Y1 Januar 1940§! zu erforschen."
+ NMA_RULE_OPTION_YEAR_1942INF:0 "1 Jahr im voraus Beschränkung"
+ NMA_RULE_OPTION_YEAR_1942INF_DESC:0 "Diese Einstellung erlaubt es 1942er Infanterie Ausrüstung bereits ab §Y1 Januar 1941§! zu erforschen."
+ ################################################################ AIR PRODUCTION
+ NMA_ALLOW_AIR_PRODUCTION:0 "Flugzeugproduktionsfokus Einstellungen"
+ NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION:0 "Deaktivieren"
+ NMA_RULE_OPTION_DISABLE_AIR_PRODUCTION_DESC:0 "Deaktiviert das oben beschriebene."
+ NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION:0 "Erlauben"
+ NMA_RULE_OPTION_ENABLE_AIR_PRODUCTION_DESC:0 "Erlaubt das oben beschriebene."
+ ################################################################ JAEGERNOTPROGRAMM
+ NMA_ALLOW_JAGER:0 "Jägernotprogramm Einstellungen"
+ NMA_RULE_OPTION_DISABLE_JAGER:0 "Deaktivieren"
+ NMA_RULE_OPTION_DISABLE_JAGER_DESC:0 "Diese Einstellung deaktiviert das deutsche Jägernotprogramm im Spiel"
+ NMA_RULE_OPTION_ENABLE_JAGER:0 "Erlauben"
+ NMA_RULE_OPTION_ENABLE_JAGER_DESC:0 "Diese Einstellung erlaubt es Deutschland das Jägernotprogramm im Spiel als Entscheidung zu nutzen."
+ ################################################################ FORCE ATTACK/LAST STAND
+ NMA_FA_LS_OPTIONS:0 "Angriff erzwingen/Letzter Kampf Einstellungen"
+ NMA_RULE_OPTION_FA_LS_REWORKED:0 "Überarbeitet"
+ NMA_RULE_OPTION_FA_LS_REWORKED_DESC:0 "Diese Einstellung verringert den Entrenchment Bonus von Angriff erzwingen bis zu -25% und erhöht den Stärkeschaden von Letzter Kampf bis zu 120%."
+ NMA_RULE_OPTION_FA_LS_BANNED:0 "Deaktiviert"
+ NMA_RULE_OPTION_FA_LS_BANNED_DESC:0 "Diese Einstellung deaktiviert beide Fähigkeiten."
+ NMA_RULE_OPTION_FA_LS_VANILLA:0 "Vanilla"
+ NMA_RULE_OPTION_FA_LS_VANILLA_DESC:0 "Diese Einstellung verändert nichts bei beiden Fähigkeiten"
+ ################################################################ VICHY FRANCE
+ NMA_VIC_OPTIONS:0 "Vichy Frankreich Einstellungen"
+ NMA_RULE_OPTION_VIC_DISABLED:0 "Vichy Frankreich deaktivieren"
+ NMA_RULE_OPTION_VIC_DISABLED_DESC:0 "Entfernt Vichy Frankreich aus dem Spiel."
+ NMA_RULE_OPTION_VIC_ALLOWED:0 "Vichy Frankreich erlauben"
+ NMA_RULE_OPTION_VIC_ALLOWED_DESC:0 "Diese Einstellung erlaubt die Gründung Vichy Frankreichs."
+ ################################################################ FRA_ENG UNION
+ NMA_UNION_OPTIONS:0 "Franco-Britische Union Einstellungen"
+ NMA_RULE_OPTION_UNION_DISABLED:0 "Unionsbildung deaktivieren"
+ NMA_RULE_OPTION_UNION_DISABLED_DESC:0 "Diese Einstellung erlaubt es dem Frankreich Spieler nicht eine Union mit Großbritannien zu gründen nach Frankreichs Kapitulation. "
+ NMA_RULE_OPTION_UNION_ENABLED:0 "Unionsbildung erlauben"
+ NMA_RULE_OPTION_UNION_ENABLED_DESC:0 "Diese Einstellung erlaubt es dem Frankreich Spieler eine Union mit Großbritannien zu gründen nach Frankreichs Kapitulation."
+ ################################################################ USA_OPTIONS
+ NMA_USA_OPTIONS:0 "USA Raffinerien Sperrung"
+ NMA_RULE_OPTION_USA_DEFAULTCOST:0 "Deaktiviert"
+ NMA_RULE_OPTION_USA_DEFAULTCOST_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_USA_SLOWED:0 "Deaktiviert bis 01.01.1943"
+ NMA_RULE_OPTION_USA_SLOWED_DESC:0 "Diese Einstellung erhöht die Raffinerien Bauzeit um 200% bis zum §Y1 Januar 1943§!."
+ NMA_RULE_OPTION_USA_JAPWAR:0 "Deaktiviert bis zum Krieg mit Japan"
+ NMA_RULE_OPTION_USA_JAPWAR_DESC:0 "Diese Einstellung erhöht die Raffinerien Bauzeit um 200% bis zum Krieg mit Japan."
+ ################################################################ USA_LOCK
+ NMA_USA_LOCK_OPTIONS:0 "USA Lock"
+ NMA_RULE_OPTION_USA_UNLOCKED:0 "Deaktiviert"
+ NMA_RULE_OPTION_USA_UNLOCKED_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_USA_LOCKED:0 "Erlaubt"
+ NMA_RULE_OPTION_USA_LOCKED_DESC:0 "Diese Einstellung verhindert dass die USA vor dem Juli 1937 aus der Großen Depression herauskommt."
+ ################################################################ TOTAL MOB
+ NMA_TOTAL_MOB_OPTIONS:0 "Totale Mobilisierung Einstellungen"
+ NMA_RULE_OPTION_TOTAL_MOB_DEFAULT:0 "Erlaubt"
+ NMA_RULE_OPTION_TOTAL_MOB_DEFAULT_DESC:0 "Vanilla"
+ NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED:0 "Totale Mobilisierung Deaktivieren"
+ NMA_RULE_OPTION_TOTAL_MOB_PROHIBITED_DESC:0 "Diese Einstellung verhindert dass, ausgenommen Japan, Nationen auf Totale Mobilisierung umschalten können."
+ NMA_RULE_OPTION_TOTAL_MOB_BARB:0 "Deaktivieren bis Barbarossa"
+ NMA_RULE_OPTION_TOTAL_MOB_BARB_DESC:0 "Diese Einstellung verhindert dass, ausgenommen Japan, Nationen auf Totale Mobilisierung bis zum Start von Barbarossa umschalten können."
+ ################################################################ GER SPYSLOTS
+ NMA_GER_SPYSLOTS_OPTIONS:0 "Extra Spion slots für Deutschland"
+ NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED:0 "Deaktiviert"
+ NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED_DESC:0 "Vanilla mäßig"
+ NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED:0 "Erlaubt"
+ NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED_DESC:0 "Diese Einstellung fügt 2 weitere Operationsplätze für Spione für Deutschland hinzu ab Spielstart."
+ ################################################################ GRINDING
+ NMA_ETH_GRINDING:0 "Äthiopien Grind Einstellungen"
+ NMA_POR_GRINDING:0 "Portugal Grind Einstellungen"
+ NMA_YUG_GRINDING:0 "Yugoslavien Grind Einstellungen"
+ NMA_GRE_GRINDING:0 "Griechenland Grind Einstellungen"
+ NMA_BUL_GRINDING:0 "Bulgarien Grind Einstellungen"
+ NMA_FIN_GRINDING:0 "Finnland Grind Einstellungen"
+ NMA_AFG_GRINDING:0 "Afganistan Grind Einstellungen"
+ NMA_PER_GRINDING:0 "Iran Grind Einstellungen"
+ NMA_SWI_GRINDING:0 "Schweiz Grind Einstellungen"
+ NMA_CHI_GRINDING:0 "China Grind Einstellungen"
+ 
+ NMA_RULE_OPTION_UNLIMITED_GRIND:0 "Keine Begrenzungen"
+ NMA_RULE_OPTION_UNLIMITED_GRIND_DESC:0 "Diese Einstellung deaktiviert alle Grindbeschränkungen"
+ 
+ NMA_RULE_OPTION_1_MONTH_GRIND:0 "1 Monat"
+ NMA_RULE_OPTION_1_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 1 Monaten"
+ 
+ NMA_RULE_OPTION_2_MONTH_GRIND:0 "2 Monate"
+ NMA_RULE_OPTION_2_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 2 Monaten"
+ 
+ NMA_RULE_OPTION_3_MONTH_GRIND:0 "3 Monate"
+ NMA_RULE_OPTION_3_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 3 Monaten"
+ 
+ NMA_RULE_OPTION_4_MONTH_GRIND:0 "4 Monate"
+ NMA_RULE_OPTION_4_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 4 Monaten"
+ 
+ NMA_RULE_OPTION_5_MONTH_GRIND:0 "5 Monate"
+ NMA_RULE_OPTION_5_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 5 Monaten,"
+ 
+ NMA_RULE_OPTION_6_MONTH_GRIND:0 "6 Monate"
+ NMA_RULE_OPTION_6_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 6 Monaten"
+ 
+ NMA_RULE_OPTION_7_MONTH_GRIND:0 "7 Monate"
+ NMA_RULE_OPTION_7_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 7 Monaten"
+ 
+ NMA_RULE_OPTION_8_MONTH_GRIND:0 "8 Monate"
+ NMA_RULE_OPTION_8_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 8 Monaten"
+ 
+ NMA_RULE_OPTION_9_MONTH_GRIND:0 "9 Monate"
+ NMA_RULE_OPTION_9_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 9 Monaten"
+ 
+ NMA_RULE_OPTION_10_MONTH_GRIND:0 "10 Monate"
+ NMA_RULE_OPTION_10_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 10 Monaten"
+ 
+ NMA_RULE_OPTION_11_MONTH_GRIND:0 "11 Monate"
+ NMA_RULE_OPTION_11_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 11 Monaten"
+ 
+ NMA_RULE_OPTION_12_MONTH_GRIND:0 "12 Monate"
+ NMA_RULE_OPTION_12_MONTH_GRIND_DESC:0 "Diese Einstellung erlaubt einen Grindzeitraum von 12 Monaten"
