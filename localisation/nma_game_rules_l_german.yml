@@ -11,7 +11,7 @@
  NMA_RULE_OPTION_HOST_TOOL_DISABLED_DESC:0 "Diese Option deaktiviert das Hosting Tool"
  
  NMA_RULE_OPTION_HOST_TOOL_SOV:0 "UDSSR"
- NMA_RULE_OPTION_HOST_TOOL_SOV_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool der UDSSR"
+ NMA_RULE_OPTION_HOST_TOOL_SOV_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für die Sowjetunion"
  
  NMA_RULE_OPTION_HOST_TOOL_GER:0 "Deutschland"
  NMA_RULE_OPTION_HOST_TOOL_GER_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Deutschland"
@@ -73,8 +73,8 @@
  NMA_RULE_OPTION_HOST_TOOL_BRA:0 "Brasilien"
  NMA_RULE_OPTION_HOST_TOOL_BRA_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Brasilien"
  
- NMA_RULE_OPTION_HOST_TOOL_MEX:0 "Mexico"
- NMA_RULE_OPTION_HOST_TOOL_MEX_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Mexico"
+ NMA_RULE_OPTION_HOST_TOOL_MEX:0 "Mexiko"
+ NMA_RULE_OPTION_HOST_TOOL_MEX_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für Mexiko"
  
  NMA_RULE_OPTION_HOST_TOOL_PHI:0 "Philippinen"
  NMA_RULE_OPTION_HOST_TOOL_PHI_DESC:0 "Diese Option ermöglicht Zugang zum Hostingtool für die Philippinen"

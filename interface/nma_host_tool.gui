@@ -1,5 +1,8 @@
 guiTypes = {
 
+    @MAIN_LAYOUT_FIRST_COLUMN_X = 30
+    @MAIN_LAYOUT_SECOND_COLUMN_X = 210
+
     containerWindowType = {
         name = "nma_host_tool_handler_container"
         position = { x = -21 y = -265 }
@@ -19,7 +22,7 @@ guiTypes = {
         name = "nma_host_tool_main_container"
         position = { x = 100 y = -78 }
 		size = { width = 255 height = 355 }
-        orientation = CENTER_RIGHT
+        orientation = CENTER_RIGHT 
         
         show_position = { x = -250 y = -78 }
 		show_animation_type = decelerated
@@ -96,7 +99,7 @@ guiTypes = {
         margin = {top=5 left=0 bottom=5 right=0}
         orientation = CENTER_RIGHT
         origo = center_right
-        moveable = yes
+        moveable = yes  
         
         background = {
 			name = "Background"
@@ -183,7 +186,7 @@ guiTypes = {
         buttonType = {
             name = "nma_country_tool_marked_country_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 23 y = 50 }
+            position = { x = @MAIN_LAYOUT_FIRST_COLUMN_X y = 50 }
             text = nma_unmark_country
             buttonFont = "hoi_16mbs"
             frame = 2
@@ -192,7 +195,7 @@ guiTypes = {
         buttonType = {
             name = "nma_country_tool_not_marked_country_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 23 y = 50 }
+            position = { x = @MAIN_LAYOUT_FIRST_COLUMN_X y = 50 }
             text = nma_mark_country
             buttonFont = "hoi_16mbs" 
             frame = 1
@@ -201,7 +204,7 @@ guiTypes = {
         buttonType = {
             name = "nma_country_tool_observe_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 180 y = 50 }
+            position = { x = @MAIN_LAYOUT_SECOND_COLUMN_X y = 50 }
             text = nma_observe
             buttonFont = "hoi_16mbs" 
             frame = 1
@@ -210,7 +213,7 @@ guiTypes = {
         buttonType = {
             name = "nma_country_tool_annex_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 23 y = 90 }
+            position = { x = @MAIN_LAYOUT_FIRST_COLUMN_X y = 90 }
             text = nma_annex
             buttonFont = "hoi_16mbs" 
             frame = 1
@@ -219,7 +222,7 @@ guiTypes = {
         buttonType = {
             name = "nma_country_tool_white_peace_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 23 y = 130 }
+            position = { x = @MAIN_LAYOUT_FIRST_COLUMN_X y = 130 }
             text = nma_white_peace
             buttonFont = "hoi_16mbs" 
             frame = 1
@@ -228,7 +231,7 @@ guiTypes = {
         buttonType = {
             name = "nma_country_tool_kick_from_faction_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 180 y = 130 }
+            position = { x = @MAIN_LAYOUT_SECOND_COLUMN_X y = 130 }
             text = nma_kick_from_faction
             buttonFont = "hoi_16mbs" 
             frame = 1
@@ -238,7 +241,7 @@ guiTypes = {
             name = "nma_country_tool_recal_SF_calc"
             spriteType = "GFX_nma_host_tool_mark_button"
             position = {
-                x = 23
+                x = @MAIN_LAYOUT_FIRST_COLUMN_X
                 y = 170
             }
             text = nma_calc_sf_limits_exploit
@@ -284,7 +287,7 @@ guiTypes = {
         buttonType = {
             name = "nma_state_tool_marked_state_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 23 y = 50 }
+            position = { x = @MAIN_LAYOUT_FIRST_COLUMN_X y = 50 }
             text = nma_unmark_country
             buttonFont = "hoi_16mbs"
             frame = 2
@@ -293,7 +296,7 @@ guiTypes = {
         buttonType = {
             name = "nma_state_tool_not_marked_state_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 23 y = 50 }
+            position = { x = @MAIN_LAYOUT_FIRST_COLUMN_X y = 50 }
             text = nma_mark_country
             buttonFont = "hoi_16mbs" 
             frame = 1
@@ -302,7 +305,7 @@ guiTypes = {
         buttonType = {
             name = "nma_state_tool_transfer_button"
             spriteType = "GFX_nma_host_tool_mark_button"
-            position = { x = 180 y = 50 }
+            position = { x = @MAIN_LAYOUT_SECOND_COLUMN_X y = 50 }
             text = nma_transfer_state
             buttonFont = "hoi_16mbs" 
             frame = 1
@@ -310,7 +313,7 @@ guiTypes = {
 
         instantTextboxType = {
             name = "nma_state_tool_compliance_title"
-            position = { x = 23 y = 90 }
+            position = { x = @MAIN_LAYOUT_FIRST_COLUMN_X y = 90 }
             font = "hoi_18mbs"
 			text = nma_state_tool_compliance_title
             format = center
@@ -325,7 +328,7 @@ guiTypes = {
             scale = 0.9
         }
 
-        instantTextboxType = {
+        instantTextboxType = { 
             name = "nma_state_tool_compliance_value"
             position = { x = 55 y = 137 }
             font = "hoi_24header"
