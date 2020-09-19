@@ -1913,7 +1913,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_form_the_reichskommissariats
+		id = nma_GER_form_the_reichskommissariats
 		icon = GFX_focus_ger_reichskommisariats
 		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
 		available = {
@@ -1928,8 +1928,9 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			custom_effect_tooltip = GER_reichskommissariats_tt
+			custom_effect_tooltip = nma_GER_reichskommissariats_tt
 			unlock_decision_tooltip = GER_reichskommissariat_norwegen
+			unlock_decision_tooltip = GER_reichskommissariat_danemark
 			unlock_decision_tooltip = GER_reichskommissariat_niederlande
 			unlock_decision_tooltip = GER_reichskommissariat_belgien_nordfrankreich
 			unlock_decision_tooltip = GER_reichskommissariat_ostland
