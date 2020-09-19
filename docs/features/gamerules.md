@@ -69,6 +69,8 @@ Unfortunately we can’t give an opportunity to set literally <span class="text-
   - Mexico
   - Philippines
 
+---
+
 ### Minelaying Settings
 
 - Disable minelaying (Default)
