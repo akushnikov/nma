@@ -126,6 +126,30 @@ on_actions = {
       #     }
       #   }
       # }
+
+      every_country = {
+        limit = {
+          is_ai = no
+        }
+
+        meta_effect = {
+          text = {
+            if = {
+              limit = {
+                has_game_rule = {
+                  rule = NMA_HOST_TOOL_OPTIONS
+                  option = [CURRENT_TAG]
+                }
+              }
+
+              set_country_flag = nma_host
+            }
+          }
+
+          CURRENT_TAG = "[THIS.GetTag]"
+        }
+      }
+
     }
   }
 

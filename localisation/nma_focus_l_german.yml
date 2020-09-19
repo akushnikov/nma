@@ -1,2 +1,5 @@
 ﻿l_german:
   tooltip_jap_war:0 "§RDies wird ALLEN Alliierten Nationen den Krieg erklären!§!\n"
+  nma_GER_form_the_reichskommissariats:0 "Die Reichskommissariate bilden"
+  nma_GER_form_the_reichskommissariats_desc:0 "To improve use of local resources, industry, and manpower, we should look into boosting collaboration in our conquered area"
+  nma_GER_reichskommissariats_tt:0 "Grants compliance in conquered territories\n"

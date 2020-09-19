@@ -2,6 +2,79 @@
  ################################################################# NMA GROUPS
  NMA_GROUPKEY:0 "NMA Multiplayer:Основные настройки"
  NMA_GRINDING:0 "NMA Multiplayer:Настройки фарма"
+################################################################# HOST TOOL
+NMA_HOST_TOOL_OPTIONS:0 "Инструменты Хоста"
+NMA_RULE_OPTION_HOST_TOOL_DISABLED:0 "Выключены"
+NMA_RULE_OPTION_HOST_TOOL_DISABLED_DESC:0 "Эта опция выключит инструменты хоста"
+
+NMA_RULE_OPTION_HOST_TOOL_SOV:0 "СССР"
+NMA_RULE_OPTION_HOST_TOOL_SOV_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на СССР"
+
+NMA_RULE_OPTION_HOST_TOOL_GER:0 "Германия"
+NMA_RULE_OPTION_HOST_TOOL_GER_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Германии"
+
+NMA_RULE_OPTION_HOST_TOOL_ITA:0 "Италия"
+NMA_RULE_OPTION_HOST_TOOL_ITA_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Италии"
+
+NMA_RULE_OPTION_HOST_TOOL_ROM:0 "Румыния"
+NMA_RULE_OPTION_HOST_TOOL_ROM_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Румынии"
+
+NMA_RULE_OPTION_HOST_TOOL_HUN:0 "Венгрия"
+NMA_RULE_OPTION_HOST_TOOL_HUN_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Венгрии"
+
+NMA_RULE_OPTION_HOST_TOOL_BUL:0 "Болгария"
+NMA_RULE_OPTION_HOST_TOOL_BUL_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Болгарии"
+
+NMA_RULE_OPTION_HOST_TOOL_SPR:0 "Испания"
+NMA_RULE_OPTION_HOST_TOOL_SPR_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Испании"
+
+NMA_RULE_OPTION_HOST_TOOL_JAP:0 "Япония"
+NMA_RULE_OPTION_HOST_TOOL_JAP_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Японии"
+
+NMA_RULE_OPTION_HOST_TOOL_MAN:0 "Маньчжоу-го"
+NMA_RULE_OPTION_HOST_TOOL_MAN_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Маньчжоу-го"
+
+NMA_RULE_OPTION_HOST_TOOL_SIA:0 "Сиам"
+NMA_RULE_OPTION_HOST_TOOL_SIA_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Сиаме"
+
+NMA_RULE_OPTION_HOST_TOOL_ENG:0 "Великобритания"
+NMA_RULE_OPTION_HOST_TOOL_ENG_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Великобритании"
+
+NMA_RULE_OPTION_HOST_TOOL_USA:0 "США"
+NMA_RULE_OPTION_HOST_TOOL_USA_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на США"
+
+NMA_RULE_OPTION_HOST_TOOL_FRA:0 "Франция"
+NMA_RULE_OPTION_HOST_TOOL_FRA_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Франции"
+
+NMA_RULE_OPTION_HOST_TOOL_CAN:0 "Канада"
+NMA_RULE_OPTION_HOST_TOOL_CAN_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Канаде"
+
+NMA_RULE_OPTION_HOST_TOOL_AST:0 "Австралия"
+NMA_RULE_OPTION_HOST_TOOL_AST_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Австралии"
+
+NMA_RULE_OPTION_HOST_TOOL_SAF:0 "Южная Африка"
+NMA_RULE_OPTION_HOST_TOOL_SAF_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Южной Африке"
+
+NMA_RULE_OPTION_HOST_TOOL_RAJ:0 "Британский Радж"
+NMA_RULE_OPTION_HOST_TOOL_RAJ_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Британском Радже"
+
+NMA_RULE_OPTION_HOST_TOOL_NZL:0 "Новая Зеландия"
+NMA_RULE_OPTION_HOST_TOOL_NZL_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Новой Зеландии"
+
+NMA_RULE_OPTION_HOST_TOOL_NOR:0 "Норвегия"
+NMA_RULE_OPTION_HOST_TOOL_NOR_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Норвегии"
+
+NMA_RULE_OPTION_HOST_TOOL_IRE:0 "Ирландия"
+NMA_RULE_OPTION_HOST_TOOL_IRE_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Ирландии"
+
+NMA_RULE_OPTION_HOST_TOOL_BRA:0 "Бразилия"
+NMA_RULE_OPTION_HOST_TOOL_BRA_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Бразилии"
+
+NMA_RULE_OPTION_HOST_TOOL_MEX:0 "Мексика"
+NMA_RULE_OPTION_HOST_TOOL_MEX_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Мексике"
+
+NMA_RULE_OPTION_HOST_TOOL_PHI:0 "Филиппины"
+NMA_RULE_OPTION_HOST_TOOL_PHI_DESC:0 "Выбрав эту опцию, инструменты хоста будут доступны у игрока на Филиппинах"
  ############################################################## MINES
  NMA_MINELAYING_OPTIONS:0 "Настройки минирования"
  NMA_RULE_OPTION_ENABLE_MINES:0 "Разрешить минирование"

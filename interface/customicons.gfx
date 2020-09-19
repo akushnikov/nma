@@ -85,4 +85,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/chi_grinding_rule_icon.dds"
 	}
 
+	spriteType = {
+		name = "GFX_host_tool_rule_icon"
+		texturefile = "gfx/interface/host_tool_rule.dds"
+	}
+
 }

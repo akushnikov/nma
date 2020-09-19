@@ -7,7 +7,161 @@
  #     # #       #   # # #       #   #   ####### #       
  #     # #       #    ## #       #    #  #     # #       
   #####  ####### #     # ####### #     # #     # ####### 
-                                                         
+
+  
+#
+#	HOST TOOL
+#
+
+nma_host_tool_options = {
+	name = "NMA_HOST_TOOL_OPTIONS"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_host_tool_rule_icon"
+
+	default = {
+		name = "NMA_HOST_TOOL_DISABLED"
+		text = "NMA_RULE_OPTION_HOST_TOOL_DISABLED"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_DISABLED_DESC"
+	}
+
+	option = {
+		name = "SOV"
+		text = "NMA_RULE_OPTION_HOST_TOOL_SOV"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_SOV_DESC"
+	}
+
+	option = {
+		name = "GER"
+		text = "NMA_RULE_OPTION_HOST_TOOL_GER"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_GER_DESC"
+	}
+
+	option = {
+		name = "ITA"
+		text = "NMA_RULE_OPTION_HOST_TOOL_ITA"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_ITA_DESC"
+	}
+
+	option = {
+		name = "ROM"
+		text = "NMA_RULE_OPTION_HOST_TOOL_ROM"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_ROM_DESC"
+	}
+
+	option = {
+		name = "HUN"
+		text = "NMA_RULE_OPTION_HOST_TOOL_HUN"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_HUN_DESC"
+	}
+
+	option = {
+		name = "BUL"
+		text = "NMA_RULE_OPTION_HOST_TOOL_BUL"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_BUL_DESC"
+	}
+
+	option = {
+		name = "SPR"
+		text = "NMA_RULE_OPTION_HOST_TOOL_SPR"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_SPR_DESC"
+	}
+
+	option = {
+		name = "JAP"
+		text = "NMA_RULE_OPTION_HOST_TOOL_JAP"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_JAP_DESC"
+	}
+
+	option = {
+		name = "MAN"
+		text = "NMA_RULE_OPTION_HOST_TOOL_MAN"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_MAN_DESC"
+	}
+
+	option = {
+		name = "SIA"
+		text = "NMA_RULE_OPTION_HOST_TOOL_SIA"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_SIA_DESC"
+	}
+
+	option = {
+		name = "ENG"
+		text = "NMA_RULE_OPTION_HOST_TOOL_ENG"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_ENG_DESC"
+	}	
+
+	option = {
+		name = "USA"
+		text = "NMA_RULE_OPTION_HOST_TOOL_USA"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_USA_DESC"
+	}
+
+	option = {
+		name = "FRA"
+		text = "NMA_RULE_OPTION_HOST_TOOL_FRA"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_FRA_DESC"
+	}
+
+	option = {
+		name = "CAN"
+		text = "NMA_RULE_OPTION_HOST_TOOL_CAN"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_CAN_DESC"
+	}
+
+	option = {
+		name = "AST"
+		text = "NMA_RULE_OPTION_HOST_TOOL_AST"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_AST_DESC"
+	}
+
+	option = {
+		name = "SAF"
+		text = "NMA_RULE_OPTION_HOST_TOOL_SAF"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_SAF_DESC"
+	}
+
+	option = {
+		name = "RAJ"
+		text = "NMA_RULE_OPTION_HOST_TOOL_RAJ"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_RAJ_DESC"
+	}
+
+	option = {
+		name = "NZL"
+		text = "NMA_RULE_OPTION_HOST_TOOL_NZL"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_NZL_DESC"
+	}
+
+	option = {
+		name = "NOR"
+		text = "NMA_RULE_OPTION_HOST_TOOL_NOR"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_NOR_DESC"
+	}
+
+	option = {
+		name = "IRE"
+		text = "NMA_RULE_OPTION_HOST_TOOL_IRE"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_IRE_DESC"
+	}
+
+	option = {
+		name = "BRA"
+		text = "NMA_RULE_OPTION_HOST_TOOL_BRA"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_BRA_DESC"
+	}
+
+	option = {
+		name = "MEX"
+		text = "NMA_RULE_OPTION_HOST_TOOL_MEX"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_MEX_DESC"
+	}
+
+	option = {
+		name = "PHI"
+		text = "NMA_RULE_OPTION_HOST_TOOL_PHI"
+		desc = "NMA_RULE_OPTION_HOST_TOOL_PHI_DESC"
+	}
+}
 
 #
 #	ENABLE/DISABLE MINES
