@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Optimization
+title: Host Tool
 parent: Core features
 nav_order: 4
 ---

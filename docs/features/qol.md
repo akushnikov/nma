@@ -1,6 +1,6 @@
 ---
 layout: default
-title: QoL
+title: QoL & Optimization
 parent: Core features
 nav_order: 3
 ---
