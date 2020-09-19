@@ -41,6 +41,34 @@ Unfortunately we can’t give an opportunity to set literally <span class="text-
 
 ---
 
+### Host Tool
+
+- This option will grant the host tool access to any country from the list:
+  - None (Default)
+  - Soviet Union
+  - Germany
+  - Italy
+  - Romania
+  - Hungary
+  - Bulgaria
+  - Spain
+  - Japan
+  - Manchukuo
+  - Siam
+  - UK
+  - USA
+  - France
+  - Canada
+  - Australia
+  - South Africa
+  - British Raj
+  - New Zealand
+  - Norway
+  - Ireland
+  - Brazil
+  - Mexico
+  - Philippines
+
 ### Minelaying Settings
 
 - Disable minelaying (Default)
