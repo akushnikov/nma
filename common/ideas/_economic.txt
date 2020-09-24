@@ -363,15 +363,16 @@ ideas = {
 					is_in_faction = no
 				}
 
-				modifier = {
-					factor = 9999
+				# Uncomment this if resourse bitch countries needed
+				# modifier = {
+				# 	factor = 9999
 
-					OR = {
-						original_tag = SWE
-						original_tag = POR
-						original_tag = TUR
-					}
-				}
+				# 	OR = {
+				# 		original_tag = SWE
+				# 		original_tag = POR
+				# 		original_tag = TUR
+				# 	}
+				# }
 
 				modifier = {
 					factor = 300
