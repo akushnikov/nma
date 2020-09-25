@@ -780,6 +780,32 @@ nma_ger_spyslots_options = {
 	}
 }
 
+#
+#	RANGERS LEAD THE WAY
+#
+
+nma_allow_tankranger = {
+	name = "NMA_ALLOW_TANKRANGER"
+	group = "NMA_GROUPKEY"
+	icon = "GFX_trait_panzer_leader"
+
+	default = {
+		name = "NMA_DISABLE_TANKRANGER"
+		text = "NMA_RULE_OPTION_DISABLE_TANKRANGER"
+		desc = "NMA_RULE_OPTION_DISABLE_TANKRANGER_DESC"
+	}
+	option = {
+		name = "NMA_ENABLE_TANKRANGER_GERSOV"
+		text = "NMA_RULE_OPTION_ENABLE_TANKRANGER_GERSOV"
+		desc = "NMA_RULE_OPTION_ENABLE_TANKRANGER_GERSOV_DESC"
+	}
+	option = {
+		name = "NMA_ENABLE_TANKRANGER_ALL"
+		text = "NMA_RULE_OPTION_ENABLE_TANKRANGER_ALL"
+		desc = "NMA_RULE_OPTION_ENABLE_TANKRANGER_ALL_DESC"
+	}
+}
+
 
   #####  ######  ### #     # ######  ### #     #  #####  
  #     # #     #  #  ##    # #     #  #  ##    # #     # 

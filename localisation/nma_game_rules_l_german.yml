@@ -257,6 +257,14 @@
  NMA_RULE_OPTION_GER_SPYSLOTS_DISABLED_DESC:0 "Vanilla mäßig"
  NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED:0 "Erlaubt"
  NMA_RULE_OPTION_GER_SPYSLOTS_ENABLED_DESC:0 "Diese Einstellung fügt 2 weitere Operationsplätze für Spione für Deutschland hinzu ab Spielstart."
+################################################################ TANKRANGER
+ NMA_ALLOW_TANKRANGER:0 "Panzer leader trait options:"
+ NMA_RULE_OPTION_ENABLE_TANKRANGER_GERSOV:0 "Add "Ranger" trait into GER/SOV"
+ NMA_RULE_OPTION_ENABLE_TANKRANGER_GERSOV_DESC:0 "Clicking this option will add stats from trait "Ranger" into every German and Soviet general who has a panzer leader trait"
+ NMA_RULE_OPTION_ENABLE_TANKRANGER_ALL:0 "Add "Ranger" trait for everyone"
+ NMA_RULE_OPTION_ENABLE_TANKRANGER_ALL_DESC:0 "Clicking this option will add stats from trait "Ranger" into every general who has a panzer leader trait"
+ NMA_RULE_OPTION_DISABLE_TANKRANGER:0 "Vanilla"
+ NMA_RULE_OPTION_DISABLE_TANKRANGER_DESC:0 "Keep things vanilla"
  ################################################################ GRINDING
  NMA_ETH_GRINDING:0 "Äthiopien Grind Einstellungen"
  NMA_POR_GRINDING:0 "Portugal Grind Einstellungen"
