@@ -252,6 +252,8 @@ leader_traits = {
 
 		trait_xp_factor = {
 			panzer_leader = 1     #+100%
+			panzer_leader_ranger_gersov = 1
+			panzer_leader_ranger_all = 1
 		}
 
 		attack_skill_factor = 1
