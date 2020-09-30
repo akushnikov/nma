@@ -735,11 +735,19 @@ leader_traits = {
 		cost = 700
 		
 		allowed = {
-		
-		has_game_rule = {
-			rule = NMA_ALLOW_TANKRANGER
-			option = NMA_DISABLE_TANKRANGER
-			}
+			OR = {
+				AND = {
+					has_game_rule = {
+						rule = NMA_ALLOW_TANKRANGER
+						option = NMA_ENABLE_TANKRANGER_GERSOV
+					}
+					nma_gersov_general_check = no
+				}
+					has_game_rule = {
+					  rule = NMA_ALLOW_TANKRANGER
+					  option = NMA_DISABLE_TANKRANGER
+					}
+			}	
 		}
 
 
@@ -975,21 +983,18 @@ leader_traits = {
 
 		allowed = {
 			OR = {
-				if = {
+				AND = {
 					has_game_rule = {
 						rule = NMA_ALLOW_TANKRANGER
 						option = NMA_ENABLE_TANKRANGER_GERSOV
 					}
 					nma_gersov_general_check = no
 				}
-				if = {
 					has_game_rule = {
 					  rule = NMA_ALLOW_TANKRANGER
 					  option = NMA_DISABLE_TANKRANGER
 					}
-				}
-			}
-			
+			}	
 		}
 
 
