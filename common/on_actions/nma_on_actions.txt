@@ -1,6 +1,48 @@
 on_actions = {
   on_startup = {
     effect = {
+      
+      if = {
+        limit = {
+          has_game_rule = {
+            rule = NMA_ALLOW_TANKRANGER
+            option = NMA_ENABLE_TANKRANGER_GERSOV
+          }
+        }
+        every_country = {
+          limit = {
+            OR = {
+              original_tag = GER
+              original_tag = SOV
+            }
+          }
+          every_unit_leader = {
+            limit = {
+              has_trait = panzer_leader
+            }
+            remove_unit_leader_trait = panzer_leader
+            add_unit_leader_trait = panzer_leader_ranger_gersov
+          }
+        }
+      } 
+
+      if = {
+        limit = {
+          has_game_rule = {
+            rule = NMA_ALLOW_TANKRANGER
+            option = NMA_ENABLE_TANKRANGER_ALL
+          }
+        }
+        every_country = {
+          every_unit_leader = {
+            limit = {
+              has_trait = panzer_leader
+            }
+            remove_unit_leader_trait = panzer_leader
+            add_unit_leader_trait = panzer_leader_ranger_all
+          }
+        }
+      } 
 
       if = {
         limit =  {
@@ -126,6 +168,30 @@ on_actions = {
       #     }
       #   }
       # }
+
+      every_country = {
+        limit = {
+          is_ai = no
+        }
+
+        meta_effect = {
+          text = {
+            if = {
+              limit = {
+                has_game_rule = {
+                  rule = NMA_HOST_TOOL_OPTIONS
+                  option = [CURRENT_TAG]
+                }
+              }
+
+              set_country_flag = nma_host
+            }
+          }
+
+          CURRENT_TAG = "[THIS.GetTag]"
+        }
+      }
+
     }
   }
 

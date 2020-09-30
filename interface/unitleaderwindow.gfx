@@ -438,6 +438,16 @@ spriteTypes = {
 	#### Leader trait icons ####
 
 	spriteType = {
+		name = "GFX_trait_panzer_leader_ranger_gersov"
+		texturefile = "gfx/interface/traits/trait_panzer_leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_panzer_leader_ranger_all"
+		texturefile = "gfx/interface/traits/trait_panzer_leader.dds"
+	}
+
+	spriteType = {
 		name = "GFX_trait_panzer_expert"
 		texturefile = "gfx/interface/traits/trait_panzer_expert.dds"
 	}

@@ -48,7 +48,27 @@ is_done = {
 }
 
 nma_is_exploting_special_forces_cap = {
+  set_temp_variable = {
+    improved_allowed_special_forces_battalions_count = nma_allowed_special_forces_battalions_count
+  }
+  # some mercy
+  multiply_temp_variable = {
+    improved_allowed_special_forces_battalions_count = 1.2
+  }
   check_variable = {
-    nma_special_forces_battions_count > nma_allowed_special_forces_battalions_count
+    nma_special_forces_battions_count > improved_allowed_special_forces_battalions_count
+  }
+}
+
+nma_gersov_general_check = {
+  any_country = {
+       is_in_array = {
+          array = army_leaders
+          value = PREV
+       }
+       OR = {
+         original_tag = SOV
+         original_tag = GER
+       }
   }
 }
