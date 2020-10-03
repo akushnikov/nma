@@ -19,7 +19,7 @@ is_allowed_to_grind = {
 # PREV is grinding country
 # THIS is grinded country
 is_allowed_to_grind_with_casualties = {
-  is_allowed_to_grind = yes
+  is_allowed_to_grind_during_ww2 = yes
 
   any_enemy_country = {
     # THIS - enemy country
@@ -62,13 +62,55 @@ nma_is_exploting_special_forces_cap = {
 
 nma_gersov_general_check = {
   any_country = {
-       is_in_array = {
-          array = army_leaders
-          value = PREV
-       }
-       OR = {
-         original_tag = SOV
-         original_tag = GER
-       }
+    OR = {
+      original_tag = SOV
+      original_tag = GER
+    }   
+    is_in_array = {
+      array = army_leaders
+      value = PREV
+    }       
+  }
+}
+
+# SCOPE - UNIT_LEADER
+is_ranger_trait_allowed = {
+  OR = {
+    AND = {
+      has_game_rule = {
+        rule = NMA_ALLOW_TANKRANGER
+        option = NMA_ENABLE_TANKRANGER_GERSOV
+      }
+      NOT = {
+        nma_gersov_general_check = yes
+      }
+    }
+    has_game_rule = {
+      rule = NMA_ALLOW_TANKRANGER
+      option = NMA_DISABLE_TANKRANGER
+    }
+  }
+}
+
+is_defended_by_human = {
+  set_temp_variable = {
+    self = THIS
+  }
+  any_state = {
+    set_temp_variable = {
+      current_state = THIS
+    }
+    is_core_of = var:self
+    
+    var:self = {
+      any_allied_country = {
+        is_ai = no
+
+        divisions_in_state = {
+          size > 0
+          state = var:current_state
+        }
+      }
+    }
   }
 }

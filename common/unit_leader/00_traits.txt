@@ -743,10 +743,10 @@ leader_traits = {
 					}
 					nma_gersov_general_check = no
 				}
-					has_game_rule = {
-					  rule = NMA_ALLOW_TANKRANGER
-					  option = NMA_DISABLE_TANKRANGER
-					}
+				has_game_rule = {
+					rule = NMA_ALLOW_TANKRANGER
+					option = NMA_DISABLE_TANKRANGER
+				}
 			}	
 		}
 
@@ -768,48 +768,48 @@ leader_traits = {
 
 	panzer_leader_ranger_gersov = {
 		type = corps_commander
-	   gain_xp = {
-		   set_temp_variable = { temp = num_units }
-		   multiply_temp_variable = { temp = 0.4 }
-		   check_variable = { num_armored > temp }
-	   }
-	   custom_gain_xp_trigger_tooltip = armored_ratio_over_40
-	   cost = 700
+		gain_xp = {
+			set_temp_variable = { temp = num_units }
+			multiply_temp_variable = { temp = 0.4 }
+			check_variable = { num_armored > temp }
+		}
+		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
+		cost = 700
 
-	   allowed = {
-				has_game_rule = {
-					rule = NMA_ALLOW_TANKRANGER
-					option = NMA_ENABLE_TANKRANGER_GERSOV
-					}
-				nma_gersov_general_check = yes
+		allowed = {
+			has_game_rule = {
+				rule = NMA_ALLOW_TANKRANGER
+				option = NMA_ENABLE_TANKRANGER_GERSOV
+			}
+			nma_gersov_general_check = yes
 		}
 
-	   modifier = {
-		   army_armor_speed_factor = 0.05
-		   army_armor_attack_factor = 0.1
+		modifier = {
+			army_armor_speed_factor = 0.05
+			army_armor_attack_factor = 0.1
 
-		   forest = {
-			movement = 0.05
-			attack = 0.1
-			defence = 0.1
+			forest = {
+				movement = 0.05
+				attack = 0.1
+				defence = 0.1
+			}
 		}
-	   }
 
-	   ai_will_do = {
-		   factor = 1
-	   }
+		ai_will_do = {
+			factor = 1
+		}
 
-	   attack_skill_factor = 2
+		attack_skill_factor = 2
 
-	   gui_row = 1
+		gui_row = 1
    }
 
    	panzer_leader_ranger_all = {
-	type = corps_commander
+		type = corps_commander
 		gain_xp = {
-		set_temp_variable = { temp = num_units }
-		multiply_temp_variable = { temp = 0.4 }
-		check_variable = { num_armored > temp }
+			set_temp_variable = { temp = num_units }
+			multiply_temp_variable = { temp = 0.4 }
+			check_variable = { num_armored > temp }
 		}
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
@@ -970,6 +970,7 @@ leader_traits = {
 	ranger = {
 		type = corps_commander
 		gain_xp = {
+			is_ranger_trait_allowed = yes
 			is_fighting_in_terrain = forest
 		}
 		cost = 700
@@ -982,21 +983,8 @@ leader_traits = {
 		}
 
 		allowed = {
-			OR = {
-				AND = {
-					has_game_rule = {
-						rule = NMA_ALLOW_TANKRANGER
-						option = NMA_ENABLE_TANKRANGER_GERSOV
-					}
-					nma_gersov_general_check = no
-				}
-					has_game_rule = {
-					  rule = NMA_ALLOW_TANKRANGER
-					  option = NMA_DISABLE_TANKRANGER
-					}
-			}	
+			is_ranger_trait_allowed = yes	
 		}
-
 
 		ai_will_do = {
 			factor = 1
@@ -1067,9 +1055,12 @@ leader_traits = {
 		}
 
 		trait_type = assignable_trait
+		
 		parent = panzer_leader
 		parent = panzer_leader_ranger_gersov
 		parent = panzer_leader_ranger_all
+
+		num_parents_needed = 1
 
 		mutually_exclusive = combined_arms_expert
 		mutually_exclusive = cavalry_expert
