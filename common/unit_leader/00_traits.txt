@@ -733,12 +733,22 @@ leader_traits = {
 		cost = 700
 		
 		allowed = {
-		
-		has_game_rule = {
-			rule = NMA_ALLOW_TANKRANGER
-			option = NMA_DISABLE_TANKRANGER
+			NOT ={
+				AND ={
+					has_game_rule = {
+						rule = NMA_ALLOW_TANKRANGER
+						option = NMA_ENABLE_TANKRANGER_GERSOV
+						}
+					original_tag = GER
+					original_tag = SOV
+				}
+				
+				has_game_rule = {
+						rule = NMA_ALLOW_TANKRANGER
+						option = NMA_ENABLE_TANKRANGER_ALL
+						}
+				}
 			}
-		}
 
 
 		modifier = {
@@ -767,11 +777,14 @@ leader_traits = {
 	   cost = 700
 
 	   allowed = {
+		   AND = {
 				has_game_rule = {
 					rule = NMA_ALLOW_TANKRANGER
 					option = NMA_ENABLE_TANKRANGER_GERSOV
 					}
-				nma_gersov_general_check = yes
+				original_tag = GER
+				original_tag = SOV
+		   }	
 		}
 
 	   modifier = {
@@ -808,8 +821,8 @@ leader_traits = {
 			has_game_rule = {
 				rule = NMA_ALLOW_TANKRANGER
 				option = NMA_ENABLE_TANKRANGER_ALL
+				}
 			}
-		}
 
 		modifier = {
 			army_armor_speed_factor = 0.05
@@ -1041,8 +1054,6 @@ leader_traits = {
 
 		trait_type = assignable_trait
 		parent = panzer_leader
-		parent = panzer_leader_ranger_gersov
-		parent = panzer_leader_ranger_all
 
 		mutually_exclusive = combined_arms_expert
 		mutually_exclusive = cavalry_expert
@@ -1070,8 +1081,6 @@ leader_traits = {
 		trait_type = assignable_trait
 		parent = cavalry_leader
 		parent = panzer_leader
-		parent = panzer_leader_ranger_gersov
-		parent = panzer_leader_ranger_all 
 
 		mutually_exclusive = panzer_expert
 		mutually_exclusive = cavalry_expert

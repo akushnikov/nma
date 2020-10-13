@@ -59,16 +59,3 @@ nma_is_exploting_special_forces_cap = {
     nma_special_forces_battions_count > improved_allowed_special_forces_battalions_count
   }
 }
-
-nma_gersov_general_check = {
-  any_country = {
-       is_in_array = {
-          array = army_leaders
-          value = PREV
-       }
-       OR = {
-         original_tag = SOV
-         original_tag = GER
-       }
-  }
-}
