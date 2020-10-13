@@ -509,47 +509,6 @@ on_actions = {
         remove_ideas = special_forces_cap_exploit
       }
 
-      ##
-      # Somehow general might get panzer_leader trait instead of tankranger
-      # ГОСТ 5812-82
-      ##
-
-      if = {
-        limit = {
-          has_game_rule = {
-            rule = NMA_ALLOW_TANKRANGER
-            option = NMA_ENABLE_TANKRANGER_GERSOV
-          }
-          OR = {
-            original_tag = GER
-            original_tag = SOV
-          }
-        }
-
-        every_unit_leader = {
-          limit = {
-            has_trait = panzer_leader
-          }
-          remove_unit_leader_trait = panzer_leader
-          add_unit_leader_trait = panzer_leader_ranger_gersov
-        }
-      }
-      if = {
-        limit = {
-          has_game_rule = {
-            rule = NMA_ALLOW_TANKRANGER
-            option = NMA_ENABLE_TANKRANGER_ALL
-          }
-        }
-
-        every_unit_leader = {
-          limit = {
-            has_trait = panzer_leader
-          }
-          remove_unit_leader_trait = panzer_leader
-          add_unit_leader_trait = panzer_leader_ranger_all
-        }
-      }
     }
   }
 }
