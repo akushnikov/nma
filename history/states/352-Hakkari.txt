@@ -1,17 +1,15 @@
 
 state={
-	id=353
-	name="STATE_353"
+	id=352
+	name="STATE_352" # Van
 	manpower = 1
+
 	state_category = rural
 
 	history={
 		owner = TUR
 		victory_points = {
-			11853 3
-		}
-		victory_points = {
-			9860 1
+			12476 1 
 		}
 		buildings = {
 			infrastructure = 2
@@ -26,12 +24,13 @@ state={
 			limit = {
 				NOT = { has_dlc = "Battle for the Bosporus" }
 			}
-		add_core_of = TUR
+			add_core_of = TUR
 			add_core_of = KUR
 		}
 	}
 
 	provinces={
-		876 9858 9860 9868 9954 10399 11797 11853 
+		864 1463 7530 10497 11739 12318 12476
 	}
 }
+

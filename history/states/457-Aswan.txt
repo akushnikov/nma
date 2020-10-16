@@ -12,6 +12,9 @@ state=
 			infrastructure = 1
 		}
 
+		victory_points = {
+			12002 1
+		}
 		add_core_of = UAS
 	}
 	provinces={
