@@ -1972,40 +1972,6 @@ ideas = {
 
 		}
 
-		BUL_stoycho_mushanov = { #DLC
-
-			picture = bul_stoycho_mushanov
-			
-			allowed = {
-				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
-			}
-
-			available = {
-			}
-			
-			traits = { democratic_reformer }
-
-			ai_will_do = {
-				base = 1
-				modifier = {
-					factor = 5
-					OR = {
-						has_country_flag = BUL_AI_RANDOM_DEMOCRATIC_LIBERAL
-						has_game_rule = {
-							rule = BUL_ai_behavior 
-							option = DEMOCRATIC_LIBERAL
-						}
-						has_country_flag = BUL_AI_RANDOM_DEMOCRATIC_SOCIALIST
-						has_game_rule = {
-							rule = BUL_ai_behavior 
-							option = DEMOCRATIC_SOCIALIST
-						}
-					}
-				}
-			}
-		}
-
 		BUL_nikola_petkov = { #DLC
 
 			picture = bul_nikola_petkov
