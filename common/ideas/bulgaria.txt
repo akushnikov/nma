@@ -346,7 +346,6 @@ ideas = {
 				has_country_leader = {
 					name = "Boris III"
 				}
-				has_completed_focus = BUL_seek_cooperation_with_the_tsar
 				NOT = {
 					any_other_country = {
 						tag = BUL
