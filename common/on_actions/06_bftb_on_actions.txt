@@ -851,16 +851,6 @@ on_actions = {
 				}
 				BUL = { country_event = { id = bftb_bulgaria_tsar_boris.2 days = 28 } }
 			}
-			else_if = { #Attempt to make Boris die if not historical
-				limit = {
-					is_historical_focus_on = no
-					NOT = { has_completed_focus	= BUL_strengthen_the_royal_dictatorship }
-					date > 1943.1.1 #Historical date of death is 1943.8.28
-					NOT = { has_country_flag = BUL_tsar_boris_is_dead_flag }
-					NOT = { has_country_flag = BUL_tsar_boris_assassinated_flag }
-				}
-				BUL_tsar_boris_may_die_effect = yes
-			}
 		}
 	}
 }
