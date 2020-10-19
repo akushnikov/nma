@@ -15,22 +15,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1500 }
 
-###  ### #   #  ##   ##  ###   ##  ### ###  ##      ###  #   # ###  ##  #  # ### ### #  # ###     ### ###  ### ### 
-#  # #   ## ## #  # #  # #  # #  #  #   #  #  #     #  #  # #    # #  # ## #  #   #  ## # #        #  #  # #   #   
-#  # ##  # # # #  # #    ###  ####  #   #  #        ###    #    #  #### # ##  #   #  # ## ##       #  ###  ##  ##  
-#  # #   #   # #  # #  # #  # #  #  #   #  #  #     #  #   #   #   #  # #  #  #   #  #  # #        #  #  # #   #   
-###  ### #   #  ##   ##  #  # #  #  #  ###  ##      ###    #   ### #  # #  #  #  ### #  # ###      #  #  # ### ### 
-
-
-
- ##   ##  #   # #   # #  # #  # ###  ## ###     ### ###  ### ### 
-#  # #  # ## ## ## ## #  # ## #  #  #    #       #  #  # #   #   
-#    #  # # # # # # # #  # # ##  #   #   #       #  ###  ##  ##  
-#  # #  # #   # #   # #  # #  #  #    #  #       #  #  # #   #   
- ##   ##  #   # #   #  ##  #  # ### ##   #       #  #  # ### ### 
-
-
-
 #   #  ##  #  #  ##  ###   ##  #  # ###  ## ###                 ###  ##   ##  ##  ###  ## ###     ###   ##  ### #  #         
 ## ## #  # ## # #  # #  # #  # #  #  #  #    #      {~._.~}     #   #  # #   #  #  #  #    #      #  # #  #  #  #  # {~._.~} 
 # # # #  # # ## #### ###  #    ####  #   #   #       ( Y )      ##  ####  #  #     #   #   #      ###  ####  #  ####  ( Y )  
@@ -278,10 +262,6 @@ focus_tree = {
 				GRE = { 
 					is_in_faction_with = ENG
 				}
-				AND = { 
-					ENG = { has_government = communism }
-					ROM = { NOT = { has_completed_focus = ROM_the_cordon_sanitaire } }
-				}
 			}
 		}
 
@@ -290,20 +270,10 @@ focus_tree = {
 			if = {
 				limit = { 
 					ENG = { 
-						NOT = { has_completed_focus = ENG_concessions_to_the_trade_unions }
 						is_faction_leader = yes
 					}
 				}
 				ENG = { country_event = { id  = generic.2 days = 7 } }
-			}
-			else_if = {
-				limit = { 
-					ROM = { 
-						has_completed_focus = ROM_the_cordon_sanitaire
-						is_faction_leader = yes
-					}
-				}
-				ROM = { country_event = { id  = generic.2 days = 7 } }
 			}
 			else = { 
 				add_political_power = 120
@@ -472,16 +442,6 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			base = 0
-			modifier = { 
-				add = 1
-				OR = { 
-					is_historical_focus_on = no
-					has_game_rule = {
-						rule = eng_fragmentation_status
-						option = ENG_FRAGMENTED
-					}
-				}
-			}
 		}
 
 		bypass = {
@@ -1318,20 +1278,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			47 = {
-				if = { 
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						free_building_slots = {
-							building = arms_factory
-							size > 0
-							include_locked = yes
-						}
-					}
-				}	
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -1401,15 +1347,6 @@ focus_tree = {
 					owns_state = 183 
 				}		
 				183 = {
-					if = {
-						limit = {
-							free_building_slots = {
-								building = arms_factory
-								size > 1
-								include_locked = yes
-							}
-						}
-					}	
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
@@ -1423,15 +1360,6 @@ focus_tree = {
 					owns_state = 164 
 				}
 				164 = {
-					if = {
-						limit = {
-							free_building_slots = {
-								building = dockyard
-								size > 0
-								include_locked = yes
-							}
-						}
-					}	
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = dockyard
@@ -1681,11 +1609,6 @@ focus_tree = {
 			base = 0
 			modifier = { 
 				add = 1
-				AND = { 
-					is_historical_focus_on = no
-					has_completed_focus = GRE_compromise_with_the_monarchists
-					ENG = { has_completed_focus = ENG_concessions_to_the_trade_unions }
-				}
 			}
 		}
 
