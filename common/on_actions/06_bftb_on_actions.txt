@@ -1,0 +1,856 @@
+on_actions = { 
+# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					GRE = { has_country_flag = GRE_megali_idea_approved }
+					original_tag = TUR
+					has_war_with = GRE
+				}
+				GRE = { country_event = { id = bftb_greece.208 days = 0 } }
+				news_event = { id = bftb_news.301 hours = 12 }
+			}
+		}
+	}
+
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GRE
+					GRE = { has_idea = GRE_booming_tourism }
+				}
+				GRE = { remove_ideas = GRE_booming_tourism }
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = { #Check for Macedonian state modifiers
+			if = {
+				limit = {
+					FROM.FROM = { BUL_is_macedonian_state = yes }
+				}
+				if = {
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_01 } }
+						ROOT = { tag = BUL }
+					}
+					FROM.FROM = {
+						remove_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_01 }
+						add_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_02 }
+					}
+				}
+				else_if = {
+					limit = {
+						FROM.FROM = { has_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_02 } }
+						ROOT = { NOT = { tag = BUL } }
+					}
+					FROM.FROM = {
+						remove_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_02 }
+						add_dynamic_modifier = { modifier = widespread_bulgarian_sentiment_01 }
+					}
+				}
+			}
+		}
+	}
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = GRE
+					OR = { 
+						GRE = { has_idea = GRE_metaxism }
+						GRE = { has_idea = GRE_metaxism_2 }
+						GRE = { has_idea = GRE_metaxism_3 }
+						GRE = { has_idea = GRE_metaxism_4 }
+						GRE = { has_idea = GRE_metaxism_5 }
+					}
+				}
+				GRE = { 
+					remove_ideas = GRE_metaxism
+					remove_ideas = GRE_metaxism_2 
+					remove_ideas = GRE_metaxism_3 
+					remove_ideas = GRE_metaxism_4 
+					remove_ideas = GRE_metaxism_5 
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			#Iraqi oil concessions
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+				}
+				IRQ = {
+					give_resource_rights = { receiver = ENG state = 291 }
+					give_resource_rights = { receiver = ENG state = 676 }
+				}
+			}
+		}
+		effect = {
+			#Greek faction set-up
+			if = {
+				limit = {
+					has_dlc = "Battle for the Bosporus"
+					has_start_date < 1936.1.2
+				}
+				GRE = { 
+					set_country_flag = GRE_factions_unlocked
+					set_variable = { var  = GRE_monarchist_loyalty value = 2 }
+					set_variable = { var  = GRE_republican_loyalty value = -1 }
+					set_variable = { var  = GRE_communist_loyalty value = -1 }
+					set_variable = { var  = GRE_fascist_loyalty value = -2 }
+					GRE_political_instability_update_effect = yes
+				}
+			}
+		}
+	}
+
+	#ROOT is winner #FROM gets annexed - This will also fire on_annex
+	on_civil_war_end = {
+		effect = {
+			if = { 
+				limit = {
+					original_tag = BUL
+					has_dlc = "Battle for the Bosporus"
+				}
+				if = { #Unlock faction interaction
+					limit = {					
+						NOT = { has_country_flag = BUL_factions_unlocked_flag }
+						NOT = { has_focus_tree = generic_focus }
+					}
+					set_country_flag = BUL_factions_unlocked_flag
+				}
+				if = { #ZVENO Bulgaria won the CW
+					limit = {
+						has_cosmetic_tag = BUL_zveno_bulgaria
+						has_focus_tree = generic_focus
+					}
+					load_focus_tree = { tree = bulgarian_focus keep_completed = no }
+					unlock_national_focus = BUL_power_to_the_tsar
+					unlock_national_focus = BUL_cooperate_with_the_zveno
+					unlock_national_focus = BUL_condemn_macedonian_organizations
+					unlock_national_focus = BUL_appoint_right_wing_ministers
+					unlock_national_focus = BUL_promote_bulgarian_nationalism
+					unlock_national_focus = BUL_bulgarian_irredentism
+					unlock_national_focus = BUL_depose_the_tsar
+					unlock_national_focus = BUL_military_dictatorship
+
+					#Initialize vars
+					BUL_set_buz_faction_values = yes
+
+					if = {
+						limit = {
+							has_government = fascism
+						}
+						set_country_flag = BUL_nsm_integrated_flag
+						unlock_national_focus = BUL_allow_far_right_organizations
+					}
+					else_if = {
+						limit = {
+							has_government = neutrality
+						}
+						set_country_flag = BUL_zveno_integrated_flag
+					}
+					clr_country_flag = BUL_zveno_coup_flag
+				}
+				else_if = { #Original BUL won the CW against ZVENO
+					limit = {
+						FROM = {
+							has_cosmetic_tag = BUL_zveno_bulgaria
+						}
+					}
+					if = {
+						limit = {
+							NOT = { has_completed_focus = BUL_dissolve_the_military_union }
+						}
+						unlock_national_focus = BUL_dissolve_the_military_union
+					}
+					set_country_flag = BUL_zveno_destroyed_flag
+					set_country_flag = BUL_factions_unlocked_flag
+					clr_country_flag = BUL_zveno_coup_flag
+				}
+				else_if = { #FATHERLAND FRONT won the CW
+					limit = {
+						original_tag = BUL
+						has_country_flag = BUL_fatherland_front_flag
+						has_focus_tree = generic_focus
+					}
+
+					if = { #Lock faction interaction
+						limit = {					
+							has_country_flag = BUL_factions_unlocked_flag
+						}
+						clr_country_flag = BUL_factions_unlocked_flag
+					}
+					#SET Faction flags
+					if = {
+						limit = {
+							FROM = {
+								has_country_flag = BUL_zveno_joined_ff_flag
+							}
+						}
+						set_country_flag = BUL_zveno_integrated_flag
+						unlock_national_focus = BUL_cooperate_with_the_zveno
+					}
+					else = {
+						set_country_flag = BUL_zveno_destroyed_flag
+						unlock_national_focus = BUL_dissolve_the_military_union
+					}
+					if = {
+						limit = {
+							FROM = {
+								has_country_flag = BUL_bs_joined_ff_flag
+							}
+						}
+						set_country_flag = BUL_bs_integrated_flag
+					}
+					else = {
+						set_country_flag = BUL_bs_destroyed_flag
+					}
+					if = {
+						limit = {
+							FROM = {
+								has_country_flag = BUL_bzns_joined_ff_flag
+							}
+						}
+						set_country_flag = BUL_bzns_integrated_flag
+					}
+					else = {
+						set_country_flag = BUL_bzns_destroyed_flag
+					}
+					set_country_flag = BUL_nsm_destroyed_flag				
+
+					hidden_effect = { #NEWS EVENT SO THE WORLD KNOW WHO RULES IN BULGARIA
+						news_event = { id = bftb_news.8 hours = 4 random_hours = 4 }
+					}
+				}
+			}
+		}
+		effect = { #SCW
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SPR
+					}
+					NOT = {
+						any_other_country = {
+							NOT = {
+								tag = ROOT
+								tag = FROM
+							}
+							original_tag = SPR
+							exists = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						BUL = { has_country_flag = BUL_sent_volunteers_to_SPD_flag }
+					}
+					BUL = { 
+						set_country_flag = BUL_back_from_the_scw_flag
+						country_event = { id = bftb_bulgaria_scw_volunteers.1 hours = 12 random_hours = 8 }
+						clr_country_flag = BUL_sent_volunteers_to_SPD_flag
+					}
+					
+				}
+				else_if = {
+					limit = {
+						BUL = { has_country_flag = BUL_sent_volunteers_to_SPA_flag }
+					}
+					BUL = {
+						country_event = { id = bftb_bulgaria_scw_volunteers.2 hours = 12 random_hours = 8 }
+						clr_country_flag = BUL_sent_volunteers_to_SPA_flag
+					}
+				}
+			}
+		}
+	}
+
+	# called when a country send volunteers to another
+	# ROOT is sender, FROM is receiver
+	on_send_volunteers = {
+		effect = {
+			if = { #Bulgaria has sent volunteers to Spanish Republicans/Nationalists (LaR)
+				limit = {
+					tag = BUL
+					FROM = { original_tag = SPR }
+					has_dlc = "La Resistance"
+					SPR_scw_in_progress = yes
+				}
+				if = {
+					limit = {
+						FROM = { tag = SPD }
+					}
+					set_country_flag = BUL_sent_volunteers_to_SPD_flag
+				}
+				else = {
+					set_country_flag = BUL_sent_volunteers_to_SPA_flag
+				}
+			}
+			else_if = {
+				limit = {
+					tag = BUL
+					FROM = { original_tag = SPR }
+					NOT = { has_dlc = "La Resistance" }
+					FROM = { has_civil_war = yes }
+				}
+				if = {
+					limit = {
+						FROM = {
+							OR = {
+								has_government = democratic
+								has_government = communism
+							}
+						}
+					}
+					set_country_flag = BUL_sent_volunteers_to_SPD_flag
+				}
+				else = {
+					set_country_flag = BUL_sent_volunteers_to_SPA_flag
+				}
+			}	
+		}
+	}
+
+	on_ruling_party_change = {
+		# Change 3D Models based on ideology
+		effect = {
+			if = {
+				limit = {
+					original_tag = BUL
+				}
+				if = { #BUL - TBE
+					limit = {
+						has_country_flag = BUL_tbe_flag
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = TBE_third_bulgarian_empire_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = TBE_third_bulgarian_empire_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = TBE_third_bulgarian_empire_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = TBE_third_bulgarian_empire_neutrality
+					}
+				}
+				else_if = {  #BUL - UBF
+					limit = {
+						has_country_flag = BUL_ubf_flag
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = UBF_united_balkan_federation_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = UBF_united_balkan_federation_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = UBF_united_balkan_federation_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = UBF_united_balkan_federation_neutrality
+					}
+				}
+				else_if = { #BUL - The fabulous original one
+					limit = {
+						NOT = { has_cosmetic_tag = BUL_zveno_bulgaria } # NOT Zveno Bulgaria
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = BUL_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = BUL_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = BUL_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = BUL_neutrality
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					original_tag = GRE
+				}
+				if = { #GRE - BYZ_UNIFIED
+					limit = {
+						has_country_flag = GRE_byz_unified_flag
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = BYZ_UNIFIED_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = BYZ_UNIFIED_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = BYZ_UNIFIED_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = BYZ_UNIFIED_neutrality
+					}
+				}
+				else_if = { #GRE BYZANTINE REPUBLIC
+					limit = {
+						has_cosmetic_tag = GRE_byz_republic
+					}
+					#DO NOTHING, this cosmetic does not have dynamic models
+				}
+				else_if = { #GRE - GRE_GREATER_GREECE
+					limit = {
+						has_country_flag = GRE_GREATER_GREECE_flag
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = GRE_GREATER_GREECE_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = GRE_GREATER_GREECE_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = GRE_GREATER_GREECE_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = GRE_GREATER_GREECE_neutrality
+					}
+				}
+				else_if = { #GRE - GRE_dem_monarchy
+					limit = {
+						has_country_flag = GRE_dem_monarchy_flag
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = GRE_dem_monarchy_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = GRE_dem_monarchy_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = GRE_dem_monarchy_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = GRE_dem_monarchy_neutrality
+					}
+				}
+				else_if = { #GRE - Stalinist
+					limit = {
+						has_cosmetic_tag = GRE_stalinist
+					}
+					#DO NOTHING, this cosmetic does not have dynamic models
+				}
+				else_if = { #GRE - GRE_com_independent
+					limit = {
+						has_country_flag = GRE_com_independent_flag
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = GRE_com_independent_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = GRE_com_independent_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = GRE_com_independent_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = GRE_com_independent_neutrality
+					}
+				}
+				else_if = { #GRE - MAE
+					limit = {
+						has_country_flag = GRE_mae_flag
+					}
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = MAE_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = MAE_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = MAE_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = MAE_neutrality
+					}
+				}
+				else = { #GRE - The one and only
+					if = {
+						limit = {
+							has_government = communism
+						}
+						set_cosmetic_tag = GRE_communism
+					}
+					else_if = {
+						limit = {
+							has_government = democratic
+						}
+						set_cosmetic_tag = GRE_democratic
+					}
+					else_if = {
+						limit = {
+							has_government = fascism
+						}
+						set_cosmetic_tag = GRE_fascism
+					}
+					else = {
+						limit = {
+							has_government = neutrality
+						}
+						set_cosmetic_tag = GRE_neutrality
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					original_tag = BUL
+				}
+				if = {
+					limit = {
+						has_government = communism
+						has_country_flag = BUL_player_formed_fatherland_front_flag
+					}
+					add_ideas = BUL_fatherland_front_positive
+					clr_country_flag = BUL_player_formed_fatherland_front_flag
+				}
+				else_if = {
+					limit = {
+						has_government = fascism
+						has_idea = BUL_bogdan_filov
+					}
+					remove_ideas = BUL_bogdan_filov
+					add_ideas = BUL_bogdan_filov_fascism
+				}
+				else_if = {
+					limit = {
+						has_government = neutrality
+						has_idea = BUL_bogdan_filov_fascism
+					}
+					remove_ideas = BUL_bogdan_filov_fascism
+					add_ideas = BUL_bogdan_filov
+				}
+			}
+		}
+	}
+
+	on_weekly_BUL = {
+		effect = {
+			# FATHERLAND FRONT
+			if = {
+				limit = {
+					NOT = { has_country_flag = BUL_fatherland_front_formed_flag }
+					date > 1940.1.1
+				}
+				BUL_communists_try_to_form_ff_effect = yes
+			}
+			else_if = {
+				limit = {
+					NOT = { has_country_flag = BUL_ff_civil_war_flag }
+					NOT = { has_country_flag = BUL_ff_destroyed_flag }
+					has_country_flag = { flag = BUL_fatherland_front_formed_flag days > 60 } #Give the player some time after FF formation
+					OR = {
+						NOT = { has_country_flag = BUL_ff_approaching_faction_flag }
+						has_country_flag = { flag = BUL_ff_approaching_faction_flag days > 30 }
+					}
+				}
+				log = "checking if FF approaches someone"
+				# CHECK IF FF APPROACHES ANY BULARIAN INTERNAL FACTION
+				BUL_ff_approaches_a_faction_effect = yes #Random chance
+
+				if = { # Check if FF approaches BROAD SOCIALISTS
+					limit = { 
+						NOT = { has_country_flag = BUL_bs_joined_ff_flag }
+						NOT = { has_country_flag = BUL_bs_destroyed_flag }
+						NOT = { has_country_flag = BUL_bs_integrated_flag }
+					}
+					set_temp_variable = { BUL_bs_loyalty_factor = 100 }
+					subtract_from_temp_variable = { BUL_bs_loyalty_factor = BUL_bs_loyalty }
+					if = {
+						limit = {
+							check_variable = { BUL_bs_loyalty_factor = BUL_random_ff_approaching_faction_chance compare = greater_than_or_equals }
+						}
+						if = {
+							limit = { has_country_flag = BUL_ff_approaching_faction_flag }
+							clr_country_flag = BUL_ff_approaching_faction_flag
+						}
+						set_country_flag = BUL_bs_joined_ff_flag
+						set_country_flag = BUL_ff_approaching_faction_flag
+						activate_mission = BUL_ff_approaching_bs_mission
+
+						log = "FF approaches BS: [?BUL.BUL_bs_loyalty_factor] is greater than [?BUL.BUL_random_ff_approaching_faction_chance]"
+					}
+					else = {
+						log = "FF DOES NOT approach BS: [?BUL.BUL_bs_loyalty_factor] is lower than [?BUL.BUL_random_ff_approaching_faction_chance]"
+					}
+				}
+				else_if = { # Check if FF approaches AGRARIAN NATIONAL UNION
+					limit = {
+						NOT = { has_country_flag = BUL_bzns_joined_ff_flag }
+						NOT = { has_country_flag = BUL_bzns_destroyed_flag }
+						NOT = { has_country_flag = BUL_bzns_integrated_flag }
+					}
+					set_temp_variable = { BUL_bzns_loyalty_factor = 100 }
+					subtract_from_temp_variable = { BUL_bzns_loyalty_factor = BUL_bs_loyalty }
+					if = {
+						limit = {
+							check_variable = { BUL_bzns_loyalty_factor = BUL_random_ff_approaching_faction_chance compare = greater_than_or_equals }
+						}
+						if = {
+							limit = { has_country_flag = BUL_ff_approaching_faction_flag }
+							clr_country_flag = BUL_ff_approaching_faction_flag
+						}
+						set_country_flag = BUL_bzns_joined_ff_flag
+						set_country_flag = BUL_ff_approaching_faction_flag
+						activate_mission = BUL_ff_approaching_bzns_mission
+
+						log = "FF approaches BZN: [?BUL.BUL_bzns_loyalty_factor] is greater than [?BUL.BUL_random_ff_approaching_faction_chance]"
+					}
+					else = {
+						log = "FF DOES NOT approach BZNS: [?BUL.BUL_bzns_loyalty_factor] is lower than [?BUL.BUL_random_ff_approaching_faction_chance]"
+					}
+				}
+				else_if = { # Check if FF approaches ZVENO
+					limit = { 
+						NOT = { has_country_flag = BUL_zveno_joined_ff_flag }
+						NOT = { has_country_flag = BUL_zveno_coup_flag }
+						NOT = { has_country_flag = BUL_zveno_destroyed_flag }
+						NOT = { has_country_flag = BUL_zveno_integrated_flag }
+					}
+					set_temp_variable = { BUL_zveno_loyalty_factor = 100 }
+					subtract_from_temp_variable = { BUL_zveno_loyalty_factor = BUL_zveno_loyalty }
+					if = {
+						limit = {
+							check_variable = { BUL_zveno_loyalty_factor = BUL_random_ff_approaching_faction_chance compare = greater_than_or_equals }
+						}
+						if = {
+							limit = { has_country_flag = BUL_ff_approaching_faction_flag }
+							clr_country_flag = BUL_ff_approaching_faction_flag
+						}
+						set_country_flag = BUL_zveno_joined_ff_flag
+						set_country_flag = BUL_ff_approaching_faction_flag
+						activate_mission = BUL_ff_approaching_zveno_mission
+
+						log = "FF approaches ZVENO: [?BUL.BUL_zveno_loyalty_factor] is greater than [?BUL.BUL_random_ff_approaching_faction_chance]"
+					}
+					else = {
+						log = "FF DOES NOT approach ZVENO: [?BUL.BUL_zveno_loyalty_factor] is lower than [?BUL.BUL_random_ff_approaching_faction_chance]"
+					}
+				}
+				if = {
+					limit = {
+						has_country_flag = BUL_ff_coup_planned_flag
+					}
+					BUL_ff_tries_to_stage_a_coup_effect = yes #Check if the FF starts the CW
+				}					
+			}
+
+			# BULGARIAN CLAIMS IN THE BALKANS
+			if = {
+				limit = {
+					has_global_flag = BUL_germany_recognizes_bulgarian_claims_flag
+					is_in_faction_with = GER
+					any_state = {
+						has_state_flag = BUL_bulgarian_claim_warranted_flag
+						OR = {
+							is_controlled_by = GER
+							controller = {
+								is_in_faction_with = GER
+								NOT = { tag = BUL }
+							}
+						}
+					}
+				}
+				country_event = bftb_bulgarian_claims.4
+			}
+		}
+		#Retire Generals that do not agree with pro-German policies
+		effect = {
+			if = {
+				limit = {
+					is_in_faction_with = GER
+					GER = { has_government = fascism }
+				}
+			}
+			random_unit_leader = {
+				limit = {
+					has_id = 1203 #Hadzipetkov
+				}
+				retire = yes
+			}
+			random_unit_leader = {
+				limit = {
+					has_id = 1204 #Boydev
+				}
+				retire = yes
+			}
+		}
+	}
+	
+	on_monthly_BUL = {
+		effect = { #ZVENO DISSIDENT EVENT
+			if = {
+				limit = {
+					date > 1937.6.1	#Give the player some time
+					NOT = {	has_country_flag = BUL_zveno_destroyed_flag } #Zveno is not destroyed
+					NOT = {	has_country_flag = BUL_zveno_legalized_flag } #Zveno is not legalized
+				}
+				BUL = { country_event = bftb_bulgaria_factions.01 }
+			}
+		}
+		effect = { #BROAD SOCIALISTS DISSIDENT EVENT
+			if = {
+				limit = {
+					date > 1936.3.1	#Give the player some time
+					NOT = {	has_country_flag = BUL_bs_destroyed_flag } #BS is not destroyed
+					NOT = {	has_country_flag = BUL_bs_legalized_flag } #BS is not legalized
+				}
+				BUL = { country_event = bftb_bulgaria_factions.02 }
+			}
+		}
+		effect = { #AGRARIAN NATIONAL UNION DISSIDENT EVENT
+			if = {
+				limit = {
+					date > 1937.1.1	#Give the player some time
+					NOT = {	has_country_flag = BUL_bzns_destroyed_flag } #BZNS is not destroyed
+					NOT = {	has_country_flag = BUL_bzns_legalized_flag } #BZNS is not legalized
+				}
+				BUL = { country_event = bftb_bulgaria_factions.03 }
+			}
+		}
+		effect = { #NATIONAL SOCIAL MOVEMENT DISSIDENT EVENT
+			if = {
+				limit = {
+					date > 1936.6.1	#Give the player some time
+					NOT = {	has_country_flag = BUL_nsm_destroyed_flag } #NSM is not destroyed
+					NOT = {	has_country_flag = BUL_nsm_legalized_flag } #NSM is not legalized
+				}
+				BUL = { country_event = bftb_bulgaria_factions.04 }
+			}
+		}
+		effect = { #ZVENO COUP
+			if = {
+				limit = {
+					date > 1938.1.1	#Give the player some time
+					has_country_flag = BUL_zveno_dissident_event_flag #Zveno has triggered a dissident event
+					NOT = { has_country_flag = BUL_zveno_coup_flag } #Zveno CW has not started
+					NOT = {	has_country_flag = BUL_zveno_destroyed_flag } #Zveno is not destroyed
+					NOT = {	has_country_flag = BUL_zveno_legalized_flag } #Zveno is not legalized
+				}
+				BUL = { country_event = bftb_bulgaria_factions.05 }
+			}
+		}
+		effect = { #Tsar Boris Dies
+			if = { #Force Boris's death in historical
+				limit = {
+					is_historical_focus_on = yes
+					NOT = { has_completed_focus	= BUL_strengthen_the_royal_dictatorship }
+					date > 1943.7.30 #Historical date of death is 1943.8.28
+					NOT = { has_country_flag = BUL_tsar_boris_is_dead_flag }
+					NOT = { has_country_flag = BUL_tsar_boris_assassinated_flag }
+				}
+				BUL = { country_event = { id = bftb_bulgaria_tsar_boris.2 days = 28 } }
+			}
+		}
+	}
+}

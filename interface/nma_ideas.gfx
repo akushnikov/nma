@@ -1,0 +1,16 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_idea_kenpeitai"
+		texturefile = "gfx/interface/ideas/idea_jap_kenpeitai.dds"
+	}
+
+	spriteType = {
+		name ="GFX_idea_usa_lock"
+		texturefile = "gfx/interface/ideas/idea_usa_lock.dds"
+	}
+
+	spriteType = {
+		name ="GFX_idea_ger_spyslots"
+		texturefile = "gfx/interface/ideas/idea_ger_spyslots.dds"
+	}
+}

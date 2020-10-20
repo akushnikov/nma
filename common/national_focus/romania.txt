@@ -664,7 +664,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				prioritize = { 46 }
+				prioritize = { 79 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {
@@ -831,6 +831,7 @@ focus_tree = {
 
 		completion_reward = {
 			random_owned_controlled_state = {
+				prioritize = { 81 }
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
 					free_building_slots = {

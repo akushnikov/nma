@@ -1,7 +1,7 @@
 
 state={
-	id=345
-	name="STATE_345" # Mersin
+	id=352
+	name="STATE_352" # Van
 	manpower = 1
 
 	state_category = rural
@@ -9,15 +9,16 @@ state={
 	history={
 		owner = TUR
 		victory_points = {
-			10056 1
+			12476 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 		add_core_of = TUR
 	}
 
 	provinces={
-		1122 4008 4124 4127 7026 7143 10056 
+		864 1463 7530 10497 11739 12318 12476
 	}
 }
+
