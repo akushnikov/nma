@@ -6,30 +6,10 @@ GRE_historical_plan = {
 		original_tag = GRE
 	}
 	enable = {
-		OR = {
-			AND = {
-				is_historical_focus_on = yes
-				has_game_rule = {
-					rule = GRE_ai_behavior
-					option = DEFAULT
-				}	
-			}
-			has_country_flag = GRE_AI_NEUTRALITY_HISTORICAL
-			has_game_rule = {
-				rule = GRE_ai_behavior
-				option = HISTORICAL
-			}
-		}
+		always = yes
 	}
 	abort = {
-		OR = {
-			has_war_with = ENG
-			is_in_faction_with = ITA
-			is_in_faction_with = GER
-			has_government = communism
-			has_government = democratic
-			has_government = fascism
-		}
+		always = no
 	}
 
 	ai_national_focuses = {
