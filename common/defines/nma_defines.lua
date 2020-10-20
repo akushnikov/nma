@@ -6,7 +6,7 @@ NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
 NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 2
 NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 24
 NDefines.NGame.MESSAGE_TIMEOUT_DAYS = 14
---NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.3, 0.2, 0.1, 0.0 } can cause OOS
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.2, 0.1, 0.05, 0.0 }
 
 -- Graphics optimization
 NDefines_Graphics.NAirGfx.MAX_MISSILE_BOMBING_SCENARIOS = 0
