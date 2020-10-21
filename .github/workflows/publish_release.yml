@@ -1,0 +1,23 @@
+# This is a basic workflow that is manually triggered
+
+name: Publish Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish_to_workshop:
+    name: Publish to Steam Workshop
+    runs-on: ubuntu-latest
+    steps:
+      - name: workshop-upload
+        uses: arma-actions/workshop-upload@v1
+        with:
+          appId: '394360'    # default
+          itemId: '2263932526' # Id of item to update
+          changelog: 'https://github.com/akushnikov/nma/releases/tag/v${{ env.VERSION }}'
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+  
