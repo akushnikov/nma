@@ -19,7 +19,6 @@ jobs:
         with:
           appId: '394360'    # default
           itemId: '2263932526' # Id of item to update
-          contentPath: './'
           changelog: 'https://github.com/akushnikov/nma/releases/tag/v$VERSION'
         env:
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
