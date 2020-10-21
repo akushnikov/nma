@@ -10,7 +10,7 @@ jobs:
     name: Publish to Steam Workshop
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
       - uses: actions/checkout@v2
+      - name: Checkout repository      
         run: echo ::set-env name=VERSION::$(echo ${GITHUB_REF:11})
   
