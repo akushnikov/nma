@@ -24,7 +24,7 @@ jobs:
           python .\utils\publish.py
 
       - name: Create artifacts
-        uses: actions/upload-artifacts@v2
+        uses: actions/upload-artifact@v2
         with:
           name: nma
           path: ~/dist/**/*
