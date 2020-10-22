@@ -10,16 +10,32 @@ jobs:
     name: Publish to Steam Workshop
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Checkout repository      
+      - name: Checkout repository
+        uses: actions/checkout@v2      
         run: echo VERSION=$(echo ${GITHUB_REF:11}) >> $GITHUB_ENV
+
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      
+      - name: Build mod
+        run: |
+          python .\utils\publish.py
+
+      - name: Create artifacts
+        uses: actions/upload-artifacts@v2
+        with:
+          name: nma
+          path: ~/dist/**/*
       
       - name: workshop-upload
         uses: arma-actions/workshop-upload@v1
         with:
           appId: '394360'    # default
           itemId: '2263932526' # Id of item to update
-          changelog: 'https://github.com/akushnikov/nma/releases/tag/v${{ env.VERSION }}'
+          contentPath: 'dist'
+          changelog: 'Night update'
         env:
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
