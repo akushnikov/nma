@@ -38,7 +38,7 @@ jobs:
           appId: '394360'    # default
           itemId: '2263932526' # Id of item to update
           contentPath: 'dist'
-          changelog: '[{{ env.TIMESTAMP }}] Night build'
+          changelog: '[${{ env.TIMESTAMP }}] Night build'
         env:
           STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
           STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
