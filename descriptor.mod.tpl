@@ -1,0 +1,17 @@
+version="$version$"
+tags={
+	"Balance"
+	"Events"
+	"Fixes"
+	"Gameplay"
+	"Historical"
+	"Map"
+	"Technologies"
+	"Translation"
+	"Utilities"
+}
+name="$name$"
+replace_path="history/countries"
+picture="thumbnail.png"
+supported_version="1.10.*"
+remote_file_id="$remote_file_id$"

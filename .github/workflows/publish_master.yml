@@ -14,6 +14,7 @@ jobs:
         run: |
           echo VERSION=$(echo ${GITHUB_REF:11}) >> $GITHUB_ENV
           echo TIMESTAMP=$(echo $(date +'%Y-%m-%dT%H:%M:%S')) >> $GITHUB_ENV
+          echo REMOTE_FILE_ID=2263932526 >> $GITHUB_ENV
 
       - name: Checkout repository
         uses: actions/checkout@v2      
@@ -24,7 +25,7 @@ jobs:
           python-version: 3.8
       
       - name: Build mod
-        run: python utils/publish.py
+        run: python utils/publish.py --id=${{ env.REMOTE_FILE_ID }} --version=night.${{ env.TIMESTAMP }}
 
       - name: Create artifacts
         uses: actions/upload-artifact@v2
@@ -36,7 +37,7 @@ jobs:
         uses: arma-actions/workshop-upload@v1
         with:
           appId: '394360'    # default
-          itemId: '2263932526' # Id of item to update
+          itemId: '${{ env.REMOTE_FILE_ID }}' # Id of item to update
           contentPath: 'dist'
           changelog: '[${{ env.TIMESTAMP }}] Night build'
         env:
