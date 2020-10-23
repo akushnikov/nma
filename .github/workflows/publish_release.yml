@@ -24,7 +24,7 @@ jobs:
           python-version: 3.8
       
       - name: Build mod
-        run: python utils/publish.py --id=${{ env.REMOTE_FILE_ID }} --version=night.${{ env.VERSION }} --production
+        run: python utils/publish.py --id=${{ env.REMOTE_FILE_ID }} --version=${{ env.VERSION }} --production
 
       - name: Create artifacts
         uses: actions/upload-artifact@v2
