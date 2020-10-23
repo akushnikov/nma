@@ -1,0 +1,44 @@
+﻿name: Publish release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish_to_workshop:
+    name: Publish to Steam Workshop
+    runs-on: ubuntu-latest
+    steps:
+      - name: Initialize ENV
+        run: |
+          echo VERSION=$(echo ${GITHUB_REF:11}) >> $GITHUB_ENV
+          echo TIMESTAMP=$(echo $(date +'%Y-%m-%dT%H:%M:%S')) >> $GITHUB_ENV
+          echo REMOTE_FILE_ID=2265374234 >> $GITHUB_ENV
+
+      - name: Checkout repository
+        uses: actions/checkout@v2      
+      
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      
+      - name: Build mod
+        run: python utils/publish.py --id=${{ env.REMOTE_FILE_ID }} --version=night.${{ env.VERSION }} --production
+
+      - name: Create artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: nma
+          path: ${{ github.workspace }}/dist/**/*
+      
+      - name: workshop-upload
+        uses: arma-actions/workshop-upload@v1
+        with:
+          appId: '394360'    # default
+          itemId: '${{ env.REMOTE_FILE_ID }}' # Id of item to update
+          contentPath: 'dist'
+          changelog: 'https://github.com/akushnikov/nma/releases/tag/v${{ env.VERSION }}'
+        env:
+          STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+          STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
