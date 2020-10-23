@@ -43,6 +43,7 @@ def main():
         copyfile(join(src_path, 'thumbnail_night.png'), join(dest_path, 'thumbnail.png'))
 
     create_descriptor(args, src_path, dest_path)
+    
 
 if __name__ == '__main__':
     main()
