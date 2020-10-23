@@ -318,11 +318,11 @@ focus_tree = {
 			every_country = {
 				limit = {
 					BUL_country_can_influence_bulgaria = yes
-					has_opinion_modifier = BUL_indutrial_investments_in_bulgaria
+					has_opinion_modifier = BUL_industrial_investments_in_bulgaria
 				}
-				remove_opinion_modifier = { target = BUL modifier = BUL_indutrial_investments_in_bulgaria }
+				remove_opinion_modifier = { target = BUL modifier = BUL_industrial_investments_in_bulgaria }
 
-				BUL = { remove_opinion_modifier = { target = PREV modifier = BUL_indutrial_investments_in_bulgaria } }
+				BUL = { remove_opinion_modifier = { target = PREV modifier = BUL_industrial_investments_in_bulgaria } }
 			}		
 
 			every_country = {
