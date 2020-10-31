@@ -479,7 +479,6 @@ guiTypes = {
 			clicksound = click_default
 			position = { x=258 y=@out_of_bounds }
 			frame = 1
-			shortcut = "m"
 		}
 		iconType = {
 			name = "icn_mission_6"
@@ -502,7 +501,6 @@ guiTypes = {
 			clicksound = click_default
 			position = { x=304 y=@out_of_bounds }
 			frame = 1
-			shortcut = "d"
 		}
 		iconType = {
 			name = "icn_mission_7"
