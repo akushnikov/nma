@@ -157,9 +157,10 @@ ideas = {
       }
 
       modifier = {
-        supply_consumption_factor = 5.00
-        special_forces_attack_factor = -5.00
-        special_forces_defence_factor = -5.00
+        # no debuff by request of community
+        # supply_consumption_factor = 5.00
+        # special_forces_attack_factor = -5.00
+        # special_forces_defence_factor = -5.00
       }
     }
 
