@@ -1,0 +1,12 @@
+ai_decryption_target_scorer = {
+	targets = {
+		target_array = potential_and_current_enemies
+		target_array = enemies_of_allies
+		target_array = neighbors
+		target_array = global.majors
+
+		score = {
+			base = 0
+		}
+	}
+}
