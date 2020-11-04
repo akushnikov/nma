@@ -453,7 +453,6 @@ focus_tree = {
 					}
 				}
 				AND = {
-					CYP = { exists = no }
 					ENG = { 
 						NOT = { 
 							owns_state = 183
@@ -465,15 +464,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			if = { 
-				limit = { 
-					CYP = { exists = yes }
-				}
-				CYP = { country_event = { id = bftb_greece.55 } }
-			}
-			else = { 
-				ENG = { country_event = { id = bftb_greece.58 } }
-			}
+			ENG = { country_event = { id = bftb_greece.58 } }
 		}
 	}
 

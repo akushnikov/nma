@@ -229,34 +229,10 @@ FRA_transfer_indochina_effect = {
 
 FRA_transfer_syria_effect = {
 	if = {
-		limit = {
-			LEB = {
-				exists = yes
-				is_subject = yes
-				OVERLORD = {
-					original_tag = FRA
-				}
-			}
-		}
-		puppet = LEB
-	}
-	else_if = {
 		limit = { 553 = { CONTROLLER = { original_tag = FRA } } }
 		transfer_state = 553
 	}
 	if = {
-		limit = {
-			SYR = {
-				exists = yes
-				is_subject = yes
-				OVERLORD = {
-					original_tag = FRA
-				}
-			}
-		}
-		puppet = SYR
-	}
-	else_if = {
 		limit = {
 			680 = { CONTROLLER = { original_tag = FRA } }
 			677 = { CONTROLLER = { original_tag = FRA } }

@@ -870,29 +870,6 @@ ideas = {
 			traits = { ambitious_union_boss }
 		}
 
-		MEX_jose_vasconcelos = {
-
-			picture = generic_political_advisor_south_america_2
-
-			allowed = {
-				original_tag = MEX
-			}
-			
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_the_gold_shirts
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-			
-			traits = { syncretic_revanchist }
-		}
 
 		MEX_bartolome_garcia_correa = {
 
