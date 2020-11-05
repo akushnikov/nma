@@ -569,8 +569,10 @@
 		available = {
 			any_state = {
 				OR = {
-					is_core_of = SYR
-					is_core_of = LEB
+					state = 677
+					state = 680
+					state = 554
+					state = 553
 				}
 				is_owned_or_subject_trigger = yes
 			}
