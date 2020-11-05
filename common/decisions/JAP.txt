@@ -954,13 +954,8 @@ JAP_southern_expansion = {
 
 		cost = 25
 
-		allowed = {
-			SIA = {
-				is_ai = no
-			}
-		}
-
 		available = {
+			SIA = { is_ai = no }
 			16 = { NOT = { is_controlled_by = FRA } }
 			NOT = { has_war_with = FRA }
 			NOT = { is_in_faction_with = FRA }

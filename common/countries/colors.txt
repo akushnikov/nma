@@ -301,24 +301,9 @@ ICE = {
 	color_ui = rgb { 100  125  175 }
 }
 
-LAO = {
-	color = rgb { 176  102  136 }
-	color_ui = rgb { 176  102  136 }
-}
-
 INS = {
 	color = rgb { 40  50  120 }
 	color_ui = rgb { 40  50  120 }
-}
-
-VIN = {
-	color = rgb { 230  223  50 }
-	color_ui = rgb { 230  223  50 }
-}
-
-CAM = {
-	color = rgb { 100  71  150 }
-	color_ui = rgb { 100  71  150 }
 }
 
 MAL = {

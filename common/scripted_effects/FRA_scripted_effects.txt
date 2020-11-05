@@ -175,18 +175,6 @@ FRA_communism_riot_effect = {
 FRA_transfer_indochina_effect = {
 	if = {
 		limit = {
-			VIN = {
-				exists = yes
-				is_subject = yes
-				OVERLORD = {
-					original_tag = FRA
-				}
-			}
-		}
-		puppet = VIN
-	}
-	else_if = {
-		limit = {
 			671 = { CONTROLLER = { original_tag = FRA } }
 			286 = { CONTROLLER = { original_tag = FRA } }
 		}
@@ -194,34 +182,10 @@ FRA_transfer_indochina_effect = {
 		transfer_state = 286
 	}
 	if = {
-		limit = {
-			CAM = {
-				exists = yes
-				is_subject = yes
-				OVERLORD = {
-					original_tag = FRA
-				}
-			}
-		}
-		puppet = CAM
-	}
-	else_if = {
 		limit = { 741 = { CONTROLLER = { original_tag = FRA } } }
 		transfer_state = 741
 	}
 	if = {
-		limit = {
-			LAO = {
-				exists = yes
-				is_subject = yes
-				OVERLORD = {
-					original_tag = FRA
-				}
-			}
-		}
-		puppet = LAO
-	}
-	else_if = {
 		limit = { 670 = { CONTROLLER = { original_tag = FRA } } }
 		transfer_state = 670
 	}

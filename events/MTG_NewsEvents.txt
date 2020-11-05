@@ -1708,15 +1708,6 @@ news_event = {
 							owns_state = 310
 							has_full_control_of_state = 310
 						}
-						LAO = {
-							is_subject_of = PREV
-						}
-						CAM = {
-							is_subject_of = PREV
-						}
-						VIN = {
-							is_subject_of = PREV
-						}
 						CAY = {
 							is_subject_of = PREV
 						}
@@ -2013,15 +2004,6 @@ news_event = {
 							AND = {
 								owns_state = 310
 								has_full_control_of_state = 310
-							}
-							LAO = {
-								is_subject_of = PREV
-							}
-							CAM = {
-								is_subject_of = PREV
-							}
-							VIN = {
-								is_subject_of = PREV
 							}
 							CAY = {
 								is_subject_of = PREV
