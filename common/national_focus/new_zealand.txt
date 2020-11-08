@@ -1999,7 +1999,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			unlock_decision_tooltip = NZL_demand_islands
 			division_template = {
 				is_locked = yes
 				name = "Maori Volunteers"

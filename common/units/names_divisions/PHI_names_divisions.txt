@@ -142,7 +142,6 @@ PHI_MOT_01 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { PHI_INF_01 }
 
-	fallback_name = "%dth Motorized Division"
 	fallback_name = "%dth Philippines Motorized Div."
 
 	# Names with numbers (only one number per entry). 

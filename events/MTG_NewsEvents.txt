@@ -1574,9 +1574,6 @@ news_event = {
 							owns_state = 686
 							has_full_control_of_state = 686
 						}
-						PUE = {
-							is_subject_of = PREV
-						}
 						"PHI" = {
 							is_subject_of = PREV
 						}
@@ -1711,27 +1708,6 @@ news_event = {
 							owns_state = 310
 							has_full_control_of_state = 310
 						}
-						GDL = {
-							is_subject_of = PREV
-						}
-						SYR = {
-							is_subject_of = PREV
-						}
-						LEB = {
-							is_subject_of = PREV
-						}
-						LAO = {
-							is_subject_of = PREV
-						}
-						CAM = {
-							is_subject_of = PREV
-						}
-						VIN = {
-							is_subject_of = PREV
-						}
-						CAY = {
-							is_subject_of = PREV
-						}
 					}
 				}
 				AND = {
@@ -1854,12 +1830,6 @@ news_event = {
 							owns_state = 309
 							has_full_control_of_state = 309
 						}
-						CRC = {
-							is_subject_of = PREV
-						}
-						SUR = {
-							is_subject_of = PREV
-						}
 						INS = {
 							is_subject_of = PREV
 						}
@@ -1894,9 +1864,6 @@ news_event = {
 							AND = {
 								owns_state = 686
 								has_full_control_of_state = 686
-							}
-							PUE = {
-								is_subject_of = PREV
 							}
 							"PHI" = {
 								is_subject_of = PREV
@@ -2032,27 +1999,6 @@ news_event = {
 								owns_state = 310
 								has_full_control_of_state = 310
 							}
-							GDL = {
-								is_subject_of = PREV
-							}
-							SYR = {
-								is_subject_of = PREV
-							}
-							LEB = {
-								is_subject_of = PREV
-							}
-							LAO = {
-								is_subject_of = PREV
-							}
-							CAM = {
-								is_subject_of = PREV
-							}
-							VIN = {
-								is_subject_of = PREV
-							}
-							CAY = {
-								is_subject_of = PREV
-							}
 						}
 					}
 					AND = {
@@ -2174,12 +2120,6 @@ news_event = {
 							AND = {
 								owns_state = 309
 								has_full_control_of_state = 309
-							}
-							CRC = {
-								is_subject_of = PREV
-							}
-							SUR = {
-								is_subject_of = PREV
 							}
 							INS = {
 								is_subject_of = PREV

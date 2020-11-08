@@ -827,23 +827,6 @@ USA_home_land_is_safe = {
 	}
 }
 
-USA_democracy_on_JAP = {
-	allowed = { original_tag = USA }
-	enable = {
-		has_war_with = JAP
-	}
-	abort = {
-		JAP = {
-			has_capitulated = yes
-		}
-	}
-
-	ai_strategy = {
-		type = strike_force_home_base
-		id = 105 # perl harbor
-	}
-}
-
 USA_help_waters_around_GER = {
 	allowed = { original_tag = USA }
 	enable = {
