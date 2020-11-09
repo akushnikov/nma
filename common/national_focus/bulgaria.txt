@@ -40,15 +40,21 @@ focus_tree = {
 		icon = GFX_goal_generic_production2
 		x = 12
 		y = 0
-		cost = 10
+		cost = 5
 
 		available = {
 
 		}
 		
-		search_filters = {FOCUS_FILTER_INDUSTRY}
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_ideas = BUL_national_industry_01
+			add_tech_bonus = {
+				name = BUL_acquire_modern_tools
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 		}
 	}
 
@@ -133,11 +139,12 @@ focus_tree = {
 			}
 			custom_effect_tooltip = BUL_attract_foreign_capitals_dynamic_modifier_tt
 
+			effect_tooltip = { #This way player always reads a comprehensive tooltip, but all decisions 
 			if = {
 				limit = {
 					country_exists = GER
 					NOT = { has_war_with = GER }
-					GER = { is_subject = no }
+					GER = { BUL_is_valid_subject = yes }
 				}
 				activate_targeted_decision = { target = GER decision = BUL_german_industrial_agreements }
 			}
@@ -145,7 +152,7 @@ focus_tree = {
 				limit = {
 					country_exists = ENG
 					NOT = { has_war_with = ENG }
-					ENG = { is_subject = no }
+					ENG = { BUL_is_valid_subject = yes }
 				}
 				activate_targeted_decision = { target = ENG decision = BUL_british_industrial_agreements }
 			}
@@ -153,8 +160,14 @@ focus_tree = {
 				limit = {
 					country_exists = SOV
 					NOT = { has_war_with = SOV }
-					SOV = { is_subject = no }
+						SOV = { BUL_is_valid_subject = yes }
+					}
+					activate_targeted_decision = { target = SOV decision = BUL_soviet_industrial_agreements }
 				}
+			}
+			hidden_effect = {
+				activate_targeted_decision = { target = GER decision = BUL_german_industrial_agreements }
+				activate_targeted_decision = { target = ENG decision = BUL_british_industrial_agreements }
 				activate_targeted_decision = { target = SOV decision = BUL_soviet_industrial_agreements }
 			}		
 		}
@@ -335,6 +348,12 @@ focus_tree = {
 				country_event = { id = bftb_bulgaria_nationalization.1 hours = 12 random_hours = 12 }
 			}
 			custom_effect_tooltip = BUL_nationalization_warning_tt
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = BUL_petrol_ad
+			show_ideas_tooltip = BUL_ira
+			show_ideas_tooltip = BUL_pirin
+			show_ideas_tooltip = BUL_vulkan_cement
+			custom_effect_tooltip = BUL_nationalization_foreign_designers_tt
 		}
 	}
 
@@ -794,7 +813,7 @@ focus_tree = {
 		relative_position_id = BUL_darzhavna_aeroplanna_rabotilnitsa
 		x = 2
 		y = 0
-		cost = 10
+		cost = 5
 		mutually_exclusive = { focus = BUL_darzhavna_aeroplanna_rabotilnitsa }
 
 		available = {
@@ -802,23 +821,12 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = BUL_war_industry_flag
-			}
+			effect_tooltip = {
 			if = {
 				limit = {
 					country_exists = GER
 					NOT = { has_war_with = GER }
-					GER = { is_subject = no }
+						GER = { BUL_is_valid_subject = yes }
 				}
 				activate_targeted_decision = { target = GER decision = BUL_aircraft_agreements }
 			}
@@ -826,7 +834,7 @@ focus_tree = {
 				limit = {
 					country_exists = ENG
 					NOT = { has_war_with = ENG }
-					ENG = { is_subject = no }
+						ENG = { BUL_is_valid_subject = yes }
 				}
 				activate_targeted_decision = { target = ENG decision = BUL_aircraft_agreements }
 			}
@@ -834,8 +842,14 @@ focus_tree = {
 				limit = {
 					country_exists = SOV
 					NOT = { has_war_with = SOV }
-					SOV = { is_subject = no }
+						SOV = { BUL_is_valid_subject = yes }
+					}
+					activate_targeted_decision = { target = SOV decision = BUL_aircraft_agreements }
 				}
+			}
+			hidden_effect = {
+				activate_targeted_decision = { target = GER decision = BUL_aircraft_agreements }
+				activate_targeted_decision = { target = ENG decision = BUL_aircraft_agreements }
 				activate_targeted_decision = { target = SOV decision = BUL_aircraft_agreements }
 			}
 		}
@@ -960,18 +974,19 @@ focus_tree = {
 		relative_position_id = BUL_reorganize_the_military_industry
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			effect_tooltip = {
 			if = {
 				limit = {
 					country_exists = GER
 					NOT = { has_war_with = GER }
-					GER = { is_subject = no }
+						GER = { BUL_is_valid_subject = yes }
 				}
 				activate_targeted_decision = { target = GER decision = BUL_military_agreements }
 			}
@@ -979,7 +994,7 @@ focus_tree = {
 				limit = {
 					country_exists = ENG
 					NOT = { has_war_with = ENG }
-					ENG = { is_subject = no }
+						ENG = { BUL_is_valid_subject = yes }
 				}
 				activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
 			}
@@ -987,9 +1002,24 @@ focus_tree = {
 				limit = {
 					country_exists = SOV
 					NOT = { has_war_with = SOV }
-					SOV = { is_subject = no }
+						SOV = { BUL_is_valid_subject = yes }
+					}
+					activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
 				}
+				if = {
+					limit = {
+						country_exists = ITA
+						NOT = { has_war_with = ITA }
+						ITA = { BUL_is_valid_subject = yes }
+					}
+					activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
+				}
+			}
+			hidden_effect = {
+				activate_targeted_decision = { target = GER decision = BUL_military_agreements }
+				activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
 				activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
+				activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
 			}
 		}
 	}
@@ -1103,6 +1133,9 @@ focus_tree = {
 				}
 			}
 			else = {
+				effect_tooltip = {
+					remove_ideas = BUL_bulgarian_army_01
+				}
 				add_ideas = BUL_prussia_of_the_balkans_01
 			}
 			BUL_replace_national_aircraft_designer = yes
@@ -1117,7 +1150,7 @@ focus_tree = {
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
 		x = 7
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -1139,7 +1172,10 @@ focus_tree = {
 					add_idea = BUL_bulgarian_army_03
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					NOT = { has_completed_focus = BUL_prussia_of_the_balkans }
+				}
 				add_ideas = BUL_bulgarian_army_02
 			}
 		}
@@ -1292,6 +1328,37 @@ focus_tree = {
 			if = { 
 				limit = { has_dlc = "Man the Guns" }
 				set_technology = { coastal_defense_ships = 1 } 
+			}
+			effect_tooltip = {
+				if = {
+					limit = {
+						country_exists = ENG
+						NOT = { has_war_with = ENG }
+						ENG = { BUL_is_valid_subject = yes }
+					}
+					activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
+				}
+				if = {
+					limit = {
+						country_exists = SOV
+						NOT = { has_war_with = SOV }
+						SOV = { BUL_is_valid_subject = yes }
+					}
+					activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
+				}
+				if = {
+					limit = {
+						country_exists = ITA
+						NOT = { has_war_with = ITA }
+						ITA = { BUL_is_valid_subject = yes }
+					}
+					activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
+				}
+			}
+			hidden_effect = {
+				activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
+				activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
+				activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
 			}
 		}
 	}
@@ -1777,7 +1844,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
-			add_threat = -5
+			add_threat = -1
 			add_stability = 0.1
 			add_political_power = 35
 			BUL_zveno_low_loyalty_increase_effect = yes
@@ -1818,7 +1885,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INTERNAL_AFFAIRS}
 		completion_reward = {
-			add_threat = 5
+			add_threat = 1
 			BUL_zveno_low_loyalty_decrease_effect = yes
 			BUL_bs_low_loyalty_decrease_effect = yes
 			BUL_bzns_low_loyalty_decrease_effect = yes
@@ -2283,7 +2350,7 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
 		completion_reward = {
-			add_threat = 5
+			add_threat = 1
 			add_war_support = 0.1
 			swap_ideas = {
 				remove_idea = BUL_second_national_catastrophe
@@ -3332,11 +3399,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_bulgarisation_of_the_balkans
+		id = BUL_bulgarian_administration_of_the_balkans
 
 		prerequisite = { focus = BUL_peaceful_development }
 
-		icon = GFX_focus_BUL_bulgarisation_of_the_balkans
+		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
 		relative_position_id = BUL_join_the_tripartite_pact
 		x = 0
 		y = 2
@@ -3351,8 +3418,8 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			custom_effect_tooltip = BUL_bulgarisation_of_the_balkans_decisions_tt
-			custom_effect_tooltip = BUL_bulgarisation_of_the_balkans_cores_tt
+			custom_effect_tooltip = BUL_bulgarian_administration_of_the_balkans_decisions_tt
+			custom_effect_tooltip = BUL_bulgarian_administration_of_the_balkans_cores_tt
 			if = {
 				limit = {
 					has_full_control_of_state = 106
@@ -3393,10 +3460,10 @@ focus_tree = {
 	focus = {
 		id = BUL_restore_the_bulgarian_patriarchate
 
-		prerequisite = { focus = BUL_bulgarisation_of_the_balkans }
+		prerequisite = { focus = BUL_bulgarian_administration_of_the_balkans }
 
 		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
-		relative_position_id = BUL_bulgarisation_of_the_balkans
+		relative_position_id = BUL_bulgarian_administration_of_the_balkans
 		x = 0
 		y = 1
 		cost = 10
@@ -3647,7 +3714,7 @@ focus_tree = {
 			}
 		}
 
-		prerequisite = { focus = BUL_total_war focus = BUL_bulgarisation_of_the_balkans }
+		prerequisite = { focus = BUL_total_war focus = BUL_bulgarian_administration_of_the_balkans }
 
 		icon = GFX_focus_BUL_the_third_bulgarian_empire
 		relative_position_id = BUL_total_war
