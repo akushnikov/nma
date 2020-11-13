@@ -5,3 +5,7 @@ nma_annex_subjects = {
 nma_anti_grind_decisions = {
   icon = generic_propaganda
 }
+
+nma_prepare_dday_decisions = {
+  icon = military_operation
+}

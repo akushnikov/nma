@@ -4239,14 +4239,6 @@ focus_tree = {
 		available = {
 			is_puppet = no
 			has_war_with = USA
-			OR = {
-				AND = {
-					has_war_with = SOV
-					SOV = { has_capitulated = yes }
-				}
-				SOV = { exists = no }
-				SOV = { is_puppet = yes }
-			}
 			NOT = {
 				any_country = {
 					NOT = { tag = ENG }
