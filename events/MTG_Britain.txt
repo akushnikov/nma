@@ -999,10 +999,6 @@ country_event = {
 				strength_ratio = { tag = ENG ratio < 0.1 }
 			}
 			modifier = {
-				factor = 0.8
-				SOV = { has_completed_focus = SOV_anti_colonialist_rebels }
-			}
-			modifier = {
 				factor = 0
 				OR = {
 					SOV = {

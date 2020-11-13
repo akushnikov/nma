@@ -216,3 +216,82 @@ nma_annex_subjects = {
     }
   }
 }
+
+nma_prepare_dday_decisions = {
+
+  ROOT_dday_FROM = {
+    icon = generic_operation
+
+    fire_only_once = yes
+
+		allowed = {
+			OR = {
+        original_tag = ENG
+        original_tag = USA
+      }
+		}
+		
+		available = {
+			date > 1941.1.1
+			FROM = {
+				has_defensive_war = yes
+				has_capitulated = yes
+				is_ai = yes
+			}
+		}
+
+		targets = {
+			HOL
+			BEL
+			NOR
+			DAN
+			GRE
+			ALB
+			YUG
+			INS
+		}
+
+		target_root_trigger = {
+			OR = {
+				original_tag = ENG
+				original_tag = USA
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = HOL
+					original_tag = BEL
+					original_tag = NOR
+					original_tag = DAN
+					original_tag = GRE
+					original_tag = ALB
+					original_tag = YUG
+					original_tag = INS
+        }
+        NOT = {
+          has_country_flag = nma_dday_prepared
+        }
+			}
+		}
+		
+		complete_effect = {
+      FROM = {
+        set_country_flag = nma_dday_prepared
+      }
+			every_state = {
+				limit = {
+					is_core_of = FROM
+				}				
+
+				add_core_of = ENG
+			
+				ENG = { 
+					set_state_owner = PREV
+				}
+			}
+		}
+  }
+  
+}

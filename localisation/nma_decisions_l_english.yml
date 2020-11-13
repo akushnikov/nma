@@ -32,3 +32,5 @@
  JAP_china_step_up_war_effort_mission:0 "Next War Escalation in:"
  GER_reichskommissariat_danemark:0 "Reichskommissariat Dänemark"
  JAP_split_indochina:0 "Partition Indochina with Siam"
+ nma_prepare_dday_decisions:0 "Prepare D-Day"
+ ROOT_dday_FROM:0 "Prepare landing in [FROM.GetName]"

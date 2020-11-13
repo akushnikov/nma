@@ -753,21 +753,6 @@ BUL_start_ff_civil_war = {
 			801 = { set_state_flag = BUL_ff_state_flag } 
 		}
 	}
-	#Bonuses from ZVENO
-	if = {
-		limit = {
-			has_country_flag = BUL_zveno_joined_ff_flag 
-		}
-		add_to_variable = { BUL_ff_coup_size = 0.1 }
-		if = {
-			limit = {
-				NOT = { has_country_flag = BUL_zveno_destroyed_flag }
-				NOT = { has_country_flag = BUL_zveno_integrated_flag }
-			}
-			add_to_variable = { BUL_ff_coup_size = 0.25 }
-			48 = { set_state_flag = BUL_ff_state_flag } 
-		}
-	}
 	#Bonuses from Greek partisans
 	if = {
 		limit = {
@@ -828,16 +813,89 @@ BUL_start_ff_civil_war = {
 			}
 		}
 	}
+	#Bonuses from ZVENO
+	if = {
+		limit = {
+			has_country_flag = BUL_zveno_joined_ff_flag 
+		}
+		add_to_variable = { BUL_ff_coup_size = 0.1 }
+		if = {
+			limit = {
+				NOT = { has_country_flag = BUL_zveno_destroyed_flag }
+				NOT = { has_country_flag = BUL_zveno_integrated_flag }
+			}
+			add_to_variable = { BUL_ff_coup_size = 0.25 }
+			48 = { set_state_flag = BUL_ff_state_flag } 
+			#Manage capital for original BUL
+			if = {
+				limit = {
+					any_owned_state = {
+						is_core_of = ROOT
+						NOT = { has_state_flag = BUL_ff_state_flag }
+					}
+				}
+				random_owned_state = {
+					limit = {
+						is_core_of = ROOT
+						NOT = { has_state_flag = BUL_ff_state_flag }
+					}
+					ROOT = { set_capital = PREV }
+				}
+			}
+			else = {
+				random_controlled_state = {
+					limit = {
+						NOT = { has_state_flag = BUL_ff_state_flag }
+					}
+					ROOT = { set_capital = PREV }
+				}
+			}
+		}
+	}
 
 	log = "Fatherland coup size: [?BUL.BUL_ff_coup_size]"
 
-	#START CIVIL WAR
-	start_civil_war = {
-		ideology = communism
-		size = BUL_ff_coup_size
-		#capital = 48
-		states_filter = {
-			has_state_flag = BUL_ff_state_flag
+	#Set FF capital based on the states they get in the split
+	if = {
+		limit = {
+			48 = { has_state_flag = BUL_ff_state_flag } #Sofia is FF's capital
+		}
+		#START CIVIL WAR
+		start_civil_war = {
+			ideology = communism
+			size = BUL_ff_coup_size
+				capital = 48
+				states = all
+			states_filter = {
+				has_state_flag = BUL_ff_state_flag
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			212 = { has_state_flag = BUL_ff_state_flag } #Plovdiv is FF's capital
+		}
+		#START CIVIL WAR
+		start_civil_war = {
+			ideology = communism
+			size = BUL_ff_coup_size
+			capital = 212
+			states = all
+			states_filter = {
+				has_state_flag = BUL_ff_state_flag
+			}
+		}
+	}
+	else = {	#Varna is FF's capital
+		#START CIVIL WAR
+		start_civil_war = {
+			ideology = communism
+			size = BUL_ff_coup_size
+			capital = 211
+			states = all
+			states_filter = {
+				has_state_flag = BUL_ff_state_flag
+			}
 		}
 	}
 
@@ -850,6 +908,7 @@ BUL_start_ff_civil_war = {
 			NOT = { has_country_flag = BUL_ff_civil_war_flag }
 		}
 		set_country_flag = BUL_fatherland_front_flag
+		set_cosmetic_tag = BUL_ff_bulgaria
 
 		division_template = {
 			name = "Fatherland Front Militia"
@@ -1032,9 +1091,21 @@ BUL_start_ff_civil_war = {
 		}
 		random_unit_leader = {
 			limit = {
-				has_id = 1203 #Hadzipetkov
+				has_id = 1203 #Hadzhipetkov
 			}
 			promote_leader = yes
+		}
+		#Operatives in the FF
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			every_operative = {
+				limit = {
+					has_trait = trait_BUL_tsar_loyalist
+				}
+				set_nationality = BUL
+			}
 		}
 	}
 }
@@ -1659,6 +1730,24 @@ BUL_join_wars_of_from = {
 	}
 }
 
+BUL_remove_balkan_opinion_modifiers = { #Requires scoping to the other country joining Bulgaria's faction or being puppeted by Bulgaria
+	hidden_effect = {
+		remove_opinion_modifier = {
+			target = BUL
+			modifier = BFTB_balkan_pact_enemy
+		}
+		remove_opinion_modifier = {
+			target = BUL
+			modifier = BFTB_incongruous_neighbors
+		}
+		BUL = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = BFTB_incongruous_neighbors
+			}
+		}
+	}
+}
 #Apply appropriate cosmetic tag so that 3D models change based on ideology
 BUL_set_appropriate_cosmetic_tag = {
 	if = {

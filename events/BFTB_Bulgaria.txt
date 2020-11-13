@@ -1221,6 +1221,16 @@ country_event = {
 		BUL_zveno_low_popularity_decrease_effect = yes
 
 		add_stability = -0.05
+		#Add days to Zveno Coup timer if active
+		if = {
+			limit = {
+				has_active_mission = BUL_impending_zveno_coup
+			}
+			add_days_mission_timeout = {
+				mission = BUL_impending_zveno_coup
+				days = BUL_zveno_coup_timer_delay_high
+			}
+		}
 	}
 }
 
@@ -1241,6 +1251,16 @@ country_event = {
 
 		add_stability = -0.05
 		add_political_power = 50
+		#Add days to Zveno Coup timer if active
+		if = {
+			limit = {
+				has_active_mission = BUL_impending_zveno_coup
+			}
+			add_days_mission_timeout = {
+				mission = BUL_impending_zveno_coup
+				days = BUL_zveno_coup_timer_delay_high
+			}
+		}
 	}
 }
 
@@ -1278,6 +1298,16 @@ country_event = {
 		BUL_zveno_high_popularity_decrease_effect = yes
 
 		add_political_power = 50
+		#Add days to Zveno Coup timer if active
+		if = {
+			limit = {
+				has_active_mission = BUL_impending_zveno_coup
+			}
+			add_days_mission_timeout = {
+				mission = BUL_impending_zveno_coup
+				days = BUL_zveno_coup_timer_delay_high
+			}
+		}
 	}
 }
 
@@ -1295,6 +1325,16 @@ country_event = {
 
 		BUL_zveno_medium_loyalty_decrease_effect = yes
 		BUL_zveno_medium_popularity_decrease_effect = yes
+		#Add days to Zveno Coup timer if active
+		if = {
+			limit = {
+				has_active_mission = BUL_impending_zveno_coup
+			}
+			add_days_mission_timeout = {
+				mission = BUL_impending_zveno_coup
+				days = BUL_zveno_coup_timer_delay_medium
+			}
+		}
 	}
 }
 
@@ -1313,6 +1353,16 @@ country_event = {
 		BUL_zveno_low_loyalty_decrease_effect = yes
 		
 		add_stability = -0.1
+		#Add days to Zveno Coup timer if active
+		if = {
+			limit = {
+				has_active_mission = BUL_impending_zveno_coup
+			}
+			add_days_mission_timeout = {
+				mission = BUL_impending_zveno_coup
+				days = BUL_zveno_coup_timer_delay_low
+			}
+		}
 	}
 }
 
@@ -1663,10 +1713,6 @@ country_event = {
 
 		add_political_power = 120
 		add_stability = 0.1
-		add_popularity = {
-			ideology = ROOT
-			popularity = 0.1
-		}
 		if = {
 			limit = {
 				NOT = { has_country_flag = BUL_bs_destroyed_flag }
@@ -1706,23 +1752,6 @@ country_event = {
 		add_political_power = 120
 		add_stability = 0.1
 		if = {
-			limit = { has_government = communism }
-			add_popularity = {
-				ideology = communism
-				popularity = 0.1
-			}
-		}
-		else = {
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = -0.05
-			}
-		}
-		if = {
 			limit = {
 				NOT = { has_country_flag = BUL_zveno_destroyed_flag }
 				NOT = { has_country_flag = BUL_zveno_integrated_flag }
@@ -1760,23 +1789,6 @@ country_event = {
 
 		add_political_power = 120
 		add_stability = 0.1
-		if = {
-			limit = { has_government = democratic }
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.1
-			}
-		}
-		else = {
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.05
-			}
-		}
 		if = {
 			limit = {
 				NOT = { has_country_flag = BUL_zveno_destroyed_flag }
@@ -1816,23 +1828,6 @@ country_event = {
 		add_political_power = 120
 		add_stability = 0.1
 		if = {
-			limit = { has_government = fascism }
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-		}
-		else = {
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.05
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
-			}
-		}
-		if = {
 			limit = {
 				NOT = { has_country_flag = BUL_zveno_destroyed_flag }
 				NOT = { has_country_flag = BUL_zveno_integrated_flag }
@@ -1870,10 +1865,6 @@ country_event = {
 
 		add_political_power = 120
 		add_stability = 0.1
-		add_popularity = {
-			ideology = ROOT
-			popularity = 0.1
-		}
 		if = {
 			limit = {
 				has_idea = BUL_zveno_ns
@@ -1919,23 +1910,6 @@ country_event = {
 		add_political_power = 120
 		add_stability = 0.1
 		if = {
-			limit = { has_government = communism }
-			add_popularity = {
-				ideology = communism
-				popularity = 0.05
-			}
-		}
-		else = {
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = communism
-				popularity = -0.05
-			}
-		}
-		if = {
 			limit = {
 				NOT = { has_country_flag = BUL_zveno_destroyed_flag }
 				NOT = { has_country_flag = BUL_zveno_integrated_flag }
@@ -1974,23 +1948,6 @@ country_event = {
 		add_political_power = 120
 		add_stability = 0.1
 		if = {
-			limit = { has_government = democratic }
-			add_popularity = {
-				ideology = democratic
-				popularity = 0.05
-			}
-		}
-		else = {
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = democratic
-				popularity = -0.05
-			}
-		}
-		if = {
 			limit = {
 				NOT = { has_country_flag = BUL_zveno_destroyed_flag }
 				NOT = { has_country_flag = BUL_zveno_integrated_flag }
@@ -2028,23 +1985,6 @@ country_event = {
 
 		add_political_power = 120
 		add_stability = 0.1
-		if = {
-			limit = { has_government = fascism }
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.05
-			}
-		}
-		else = {
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.1
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = -0.05
-			}
-		}
 		if = {
 			limit = {
 				NOT = { has_country_flag = BUL_zveno_destroyed_flag }
@@ -2831,7 +2771,7 @@ country_event = {
 					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
 					picture = GFX_portrait_bul_regency_council
 					expire = "1965.1.1"
-					ideology = conservatism
+					ideology = centrism
 					traits = {
 						elected_regency_council political_manipulator_regency_council
 					}
@@ -2849,7 +2789,7 @@ country_event = {
 					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
 					picture = GFX_portrait_bul_regency_council
 					expire = "1965.1.1"
-					ideology = conservatism
+					ideology = moderatism
 					traits = {
 						elected_regency_council
 					}
@@ -2861,7 +2801,7 @@ country_event = {
 					desc = "POLITICS_BULGARIAN_REGENCY_COUNCIL_DESC"
 					picture = GFX_portrait_bul_regency_council
 					expire = "1965.1.1"
-					ideology = conservatism
+					ideology = moderatism
 					traits = {
 						elected_regency_council
 					}
@@ -2935,7 +2875,7 @@ country_event = {
 		activate_mission_tooltip = BUL_ff_impending_coup_mission
 		random_unit_leader = {
 			limit = {
-				has_id = 1203 #Hadzipetkov
+				has_id = 1203 #Hadzhipetkov
 			}
 			add_unit_leader_trait = trait_BUL_ff_sympathizer
 		}
@@ -2974,6 +2914,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
+			set_global_flag = BUL_fatherland_front_coup_flag
 			BUL_start_ff_civil_war = yes
 		}
 	}
@@ -3040,12 +2981,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				BUL = {
-					OR = {
-						has_idea = BUL_bogdan_filov
-						has_idea = BUL_bogdan_filov_fascism
-					}
-				}
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -3063,12 +2999,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				BUL = {
-					OR = {
-						has_idea = BUL_bogdan_filov
-						has_idea = BUL_bogdan_filov_fascism
-					}
-				}
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -3280,12 +3211,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				BUL = { 
-					OR = {
-						has_idea = BUL_bogdan_filov
-						has_idea = BUL_bogdan_filov_fascism
-					}
-				}
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -3321,14 +3247,13 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 10
-				BUL = { has_government = ROOT }
-			}
-			modifier = {
 				factor = 100
 				BUL = { 
 					OR = {
+						AND = {
 						has_war_with = GER
+							NOT = { GER = { is_in_faction_with = ROOT } }
+						}
 						is_in_faction_with = ROOT
 					}
 				}
@@ -3576,24 +3501,14 @@ country_event = {
 				factor = 2
 				AND = {
 					tag = ENG
-					BUL = { 
-						OR = {
-							has_idea = BUL_bogdan_filov
-							has_idea = BUL_bogdan_filov_fascism
-						}
-					}
+					BUL_has_some_sort_of_bogdan_filov = yes
 				}
 			}
 			modifier = {
 				factor = 0.5
 				AND = {
 					tag = GER
-					BUL = { 
-						OR = {
-							has_idea = BUL_bogdan_filov
-							has_idea = BUL_bogdan_filov_fascism
-						}
-					}
+					BUL_has_some_sort_of_bogdan_filov = yes
 				}
 			}
 		}
@@ -3718,24 +3633,14 @@ country_event = {
 				factor = 2.5
 				AND = {
 					tag = ENG
-					BUL = { 
-						OR = {
-							has_idea = BUL_bogdan_filov
-							has_idea = BUL_bogdan_filov_fascism
-						}
-					}
+					BUL_has_some_sort_of_bogdan_filov = yes
 				}
 			}
 			modifier = {
 				factor = 0.25
 				AND = {
 					tag = GER
-					BUL = { 
-						OR = {
-							has_idea = BUL_bogdan_filov
-							has_idea = BUL_bogdan_filov_fascism
-						}
-					}
+					BUL_has_some_sort_of_bogdan_filov = yes
 				}
 			}
 		}
@@ -3860,24 +3765,14 @@ country_event = {
 				factor = 2
 				AND = {
 					tag = ENG
-					BUL = { 
-						OR = {
-							has_idea = BUL_bogdan_filov
-							has_idea = BUL_bogdan_filov_fascism
-						}
-					}
+					BUL_has_some_sort_of_bogdan_filov = yes
 				}
 			}
 			modifier = {
 				factor = 0.5
 				AND = {
 					tag = GER
-					BUL = { 
-						OR = {
-							has_idea = BUL_bogdan_filov
-							has_idea = BUL_bogdan_filov_fascism
-						}
-					}
+					BUL_has_some_sort_of_bogdan_filov = yes
 				}
 			}
 		}
@@ -4065,12 +3960,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				BUL = { 
-					OR = {
-						has_idea = BUL_bogdan_filov
-						has_idea = BUL_bogdan_filov_fascism
-					}
-				}
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -4307,7 +4197,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	fire_only_once = yes
 
 	option = {
 		name = bftb_bulgarian_claims.6.a
@@ -4397,12 +4286,7 @@ country_event = {
 				factor = 5
 				AND = {
 					tag = GER
-					BUL = { 
-						OR = {
-							has_idea = BUL_bogdan_filov
-							has_idea = BUL_bogdan_filov_fascism
-						}
-					}
+					BUL_has_some_sort_of_bogdan_filov = yes
 				}
 			}
 		}
@@ -4747,12 +4631,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				BUL = { 
-					OR = {
-						has_idea = BUL_bogdan_filov
-						has_idea = BUL_bogdan_filov_fascism
-					}
-				}
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -6212,17 +6091,18 @@ country_event = {
 		if = {
 			limit = {
 				any_unit_leader = {
-					is_field_marshal = no
-					is_assigned = no
+					has_unit_leader_flag = BUL_scw_promotion_flag
 				}
 			}
 			random_unit_leader = {
 				limit = {
-					is_field_marshal = no
-					is_assigned = no
+					has_unit_leader_flag = BUL_scw_promotion_flag
 				}
 				promote_leader = yes
 				add_skill_level = 1
+				add_attack = 1
+				add_defense = 1
+				add_planning = 1
 
 				if = {
 					limit = {
@@ -6738,7 +6618,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	fire_only_once = yes
 
 	option = { #Accept
 		name = bftb_bulgaria_soviet_influence.4.a
@@ -6805,9 +6684,10 @@ country_event = {
 					target = ROOT
 					modifier = BUL_balkan_communism_trade
 				}
-				country_event = { id = bftb_bulgaria_soviet_influence.5 hours = 24 random_hours = 24 }
+				country_event = { id = bftb_bulgaria_soviet_influence.5 hours = 2 }
 			}
 		}
+		BUL_remove_balkan_opinion_modifiers = yes
 		random_country = {
 			limit = {
 				is_in_faction_with = FROM
@@ -6860,6 +6740,11 @@ country_event = {
 				expire = 180
 			}
 		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = bftb_bulgaria_soviet_influence.6 hours = 2 }
+			}
+		}
 	}
 }
 
@@ -6872,7 +6757,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	fire_only_once = yes
 
 	option = { #Ok
 		name = bftb_bulgaria_soviet_influence.5.a
@@ -6920,7 +6804,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	fire_only_once = yes
 
 	option = { #Ok
 		name = bftb_bulgaria_soviet_influence.6.a
@@ -7034,6 +6917,7 @@ country_event = {
 				modifier = BUL_strengthened_relations_with_us
 			}
 		}
+		BUL_remove_balkan_opinion_modifiers = yes
 
 		add_ideas = BUL_balkan_federation_project_propaganda
 		FROM = { add_ideas = BUL_balkan_federation_project_propaganda }
@@ -7379,6 +7263,7 @@ country_event = {
 				modifier = BUL_strengthened_relations_with_us
 			}
 		}
+		BUL_remove_balkan_opinion_modifiers = yes
 		every_country = {
 			limit = {
 				BUL_country_can_influence_bulgaria = yes
@@ -7624,12 +7509,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 10
-				BUL = { 
-					OR = {
-						has_idea = BUL_bogdan_filov
-						has_idea = BUL_bogdan_filov_fascism
-					}
-				}
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -7688,12 +7568,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 5
-				BUL = { 
-					OR = {
-						has_idea = BUL_bogdan_filov
-						has_idea = BUL_bogdan_filov_fascism
-					}
-				}
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
@@ -8035,12 +7910,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 10
-				BUL = { 
-					OR = {
-						has_idea = BUL_bogdan_filov
-						has_idea = BUL_bogdan_filov_fascism
-					}
-				}
+				BUL_has_some_sort_of_bogdan_filov = yes
 			}
 		}
 
