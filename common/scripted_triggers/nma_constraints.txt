@@ -59,3 +59,21 @@ nma_is_exploting_special_forces_cap = {
     nma_special_forces_battions_count > improved_allowed_special_forces_battalions_count
   }
 }
+
+is_axis = {
+  OR = {
+    original_tag = GER
+    original_tag = ITA
+    original_tag = ROM
+    original_tag = HUN
+    original_tag = BUL
+    original_tag = SPR
+    original_tag = JAP
+    original_tag = MAN
+    original_tag = SIA
+  }
+}
+
+is_allies = {
+  is_axis = no
+}
