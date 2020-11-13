@@ -904,7 +904,7 @@ branch_crypto = {
 		}
 
 		available = {
-			has_done_agency_upgrade = upgrade_form_department
+			has_done_agency_upgrade = upgrade_form_department_axis
 		}
 
 		modifiers_during_progress = {
@@ -980,7 +980,7 @@ branch_crypto = {
 		}
 
 		available = {
-			has_done_agency_upgrade = upgrade_decryption_boost
+			has_done_agency_upgrade = upgrade_decryption_boost_axis
 			has_tech = mechanical_computing
 		}
 
@@ -1056,7 +1056,7 @@ branch_crypto = {
 		}
 
 		available = {
-			has_done_agency_upgrade = upgrade_form_department
+			has_done_agency_upgrade = upgrade_form_department_axis
 		}
 
 		modifiers_during_progress = {
@@ -1131,7 +1131,7 @@ branch_crypto = {
 		}
 
 		available = {
-			has_done_agency_upgrade = upgrade_crypto_strength
+			has_done_agency_upgrade = upgrade_crypto_strength_axis
 			has_tech = mechanical_computing
 		}
 
