@@ -214,6 +214,11 @@ focus_tree = {
 			show_ideas_tooltip = BUL_ira
 			show_ideas_tooltip = BUL_pirin
 			show_ideas_tooltip = BUL_vulkan_cement
+			add_ai_strategy = {
+				type = building_target
+				id = industrial_complex
+				value = 17
+			}
 		}
 	}
 
@@ -1861,6 +1866,14 @@ focus_tree = {
 					modifier = BUL_condemned_imro
 				}
 			}
+
+			if = {
+				limit = {
+					has_idea = BUL_army_restrictions
+				}
+				custom_effect_tooltip = BUL_condemn_macedonian_organizations_rearmament_tt
+			}
+
 			hidden_effect = {
 				news_event = { id = bftb_news.1 hours = 8 random_hours = 4 }
 			}
@@ -1932,8 +1945,13 @@ focus_tree = {
 					}
 				}
 			}
-			custom_effect_tooltip = BUL_support_macedonian_organizations_rearmament_tt
-			set_country_flag = { flag = BUL_rearmament_flag value = 1 } #Unlock Pressure to Lift Arms Restrictions decision
+			if = {
+				limit = {
+					has_idea = BUL_army_restrictions
+				}
+				custom_effect_tooltip = BUL_support_macedonian_organizations_rearmament_tt
+			}
+			set_country_flag = { flag = BUL_rearmament_flag value = 2 } #Unlock Pressure to Lift Arms Restrictions decision
 
 			hidden_effect = {
 				news_event = { id = bftb_news.2 hours = 8 random_hours = 4 }
@@ -1968,6 +1986,7 @@ focus_tree = {
 			BUL_zveno_high_loyalty_decrease_effect = yes
 			BUL_zveno_medium_popularity_decrease_effect = yes
 			custom_effect_tooltip = BUL_dissolve_the_military_union_tt
+			custom_effect_tooltip = BUL_dissolve_the_military_union_zveno_coup_tt
 		}
 	}
 
@@ -2000,6 +2019,7 @@ focus_tree = {
 			BUL_bzns_low_loyalty_decrease_effect = yes
 			BUL_nsm_low_loyalty_decrease_effect = yes
 			custom_effect_tooltip = BUL_cooperate_with_the_zveno_tt
+			custom_effect_tooltip = BUL_cooperate_with_the_zveno_coup_tt
 		}
 	}
 
@@ -2197,7 +2217,7 @@ focus_tree = {
 		relative_position_id = BUL_the_tsars_regime
 		x = 4
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			NOT = { has_country_flag = BUL_bs_legalized_flag }
@@ -2285,6 +2305,10 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY}
 		completion_reward = {
+			add_popularity = {
+				ideology = ROOT
+				popularity = 0.15
+			}
 			if = {
 				limit = {
 					has_government = neutrality
@@ -2299,10 +2323,6 @@ focus_tree = {
 					ideology = neutrality
 					popularity = 0.05
 				}
-			}
-			add_popularity = {
-				ideology = ROOT
-				popularity = 0.15
 			}
 			add_stability = 0.05
 			custom_effect_tooltip = available_political_advisor
@@ -2600,7 +2620,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_found_the_brannik }
 
 		available = {
-			fascism > 0.5
+			fascism > 0.4
 		}
 		
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_INTERNAL_AFFAIRS}
@@ -2618,21 +2638,6 @@ focus_tree = {
 				remove_ideas = BUL_georgi_ivanov_kyoseivanov_bftb
 			}
 
-			random_unit_leader = {
-				limit = {
-					has_id = 1204 #Boydev
-				}
-				retire = yes
-			}
-			every_unit_leader = {
-				limit = {
-					NOT = { has_id = 1204 } #Boydev
-					has_trait = trait_BUL_tsar_loyalist
-				}
-				custom_effect_tooltip = BUL_remove_tsar_loyalist_trait_tt
-				remove_unit_leader_trait = trait_BUL_tsar_loyalist
-			}
-
 			if = { #Low Stability triggers a Civil War
 				limit = {
 					has_stability < 0.3
@@ -2645,11 +2650,51 @@ focus_tree = {
 					ruling_party = fascism
 				}
 				hidden_effect = { #Generates undesired "Politics will change" tooltip
+					every_unit_leader = {
+						limit = {
+							OR = {
+								has_id = 1207 #Asen Nikolov
+								has_id = 1208 #Konstantin Lukash
+							}
+							NOT = { has_trait = trait_BUL_zveno_member }
+						}
+						add_unit_leader_trait = trait_BUL_tsar_loyalist
+					}
+
 					start_civil_war = {	
 						ideology = neutrality
 						size = BUL_fascist_cw_opposition
 						capital = 48
 						states = { 212 }
+						keep_unit_leaders_trigger = {
+							NOT = {	has_trait = trait_BUL_tsar_loyalist }
+						}
+					}
+
+					every_unit_leader = {
+						limit = {
+							has_trait = trait_BUL_tsar_loyalist
+						}
+						random_other_country = {
+							limit = {
+								original_tag = BUL
+								has_government = neutrality
+							}
+							PREV = { set_nationality = PREV }
+						}
+					}
+
+					#Operatives
+					if = {
+						limit = {
+							has_dlc = "La Resistance"
+						}
+						every_operative = {
+							limit = {
+								has_trait = trait_BUL_tsar_loyalist
+							}
+							retire = yes
+						}
 					}
 				}
 				custom_effect_tooltip = BUL_depose_the_tsar_cw_tt
@@ -2666,6 +2711,20 @@ focus_tree = {
 				}
 			}
 			else = {
+				random_unit_leader = {
+					limit = {
+						has_id = 1204 #Boydev
+					}
+					retire = yes
+				}
+				every_unit_leader = {
+					limit = {
+						NOT = { has_id = 1204 } #Boydev
+						has_trait = trait_BUL_tsar_loyalist
+					}
+					custom_effect_tooltip = BUL_remove_tsar_loyalist_trait_tt
+					remove_unit_leader_trait = trait_BUL_tsar_loyalist
+				}
 				if = {
 					limit = {
 						has_country_leader = {
@@ -2738,7 +2797,7 @@ focus_tree = {
 		relative_position_id = BUL_appoint_right_wing_ministers
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			has_civil_war = no
@@ -2765,8 +2824,7 @@ focus_tree = {
 				has_government = fascism
 				has_government = neutrality
 			}
-			has_manpower > 3000
-			is_puppet = no
+			is_subject = no
 		}
 		
 		completion_reward = {
@@ -2783,6 +2841,16 @@ focus_tree = {
 					ROOT = {
 						set_variable = { BUL_spanish_tag_aided = PREV }
 					}
+				}
+				add_ai_strategy = {
+					type = befriend
+					id = SPA
+					value = 100
+				}
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = SPA
+					value = 100
 				}
 			}
 			else = {
@@ -2802,6 +2870,16 @@ focus_tree = {
 					add_manpower = 3000
 					ROOT = {
 						set_variable = { BUL_spanish_tag_aided = PREV }
+						add_ai_strategy = {
+							type = befriend
+							id = PREV
+							value = 100
+						}
+						add_ai_strategy = {
+							type = send_volunteers_desire
+							id = PREV
+							value = 100
+						}
 					}
 				}
 			}
@@ -3218,7 +3296,7 @@ focus_tree = {
 		relative_position_id = BUL_approach_germany
 		x = 0
 		y = 3
-		cost = 10
+		cost = 5
 
 		bypass = {
 			is_in_faction_with = GER
@@ -3229,29 +3307,48 @@ focus_tree = {
 		}
 
 		available = {
-			threat > 0.35
-			OR = {
-				GER = { is_faction_leader = yes }
-				AND = {
-					ITA = {
-						is_faction_leader = yes
-						is_in_faction_with = GER
-					}
-				}
-			}
-			
-			OR = {
-				AND = {
+			if = {
+				limit = {
+					is_in_faction_with = GER
 					OR = {
 						has_government = fascism
 						has_government = neutrality
 					}
-					GER = { has_government = fascism }
 				}
-				AND = {
-					has_government = neutrality
-					GER = { has_government = neutrality }
+				#This is intended so that the focus does not look unavailable when it can actually be bypassed
+			}
+			else = {
+				threat > 0.35
+				OR = {
+					AND = {
+						GER = { is_faction_leader = yes }
+						NOT = { is_justifying_wargoal_against = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+					AND = {
+						ITA = {
+							is_faction_leader = yes
+							is_in_faction_with = GER
+							NOT = { is_justifying_wargoal_against = ROOT }
+							NOT = { has_war_with = ROOT }
+						}
+					}
+				}			
+				OR = {
+					AND = {
+						OR = {
+							has_government = fascism
+							has_government = neutrality
+						}
+						GER = { has_government = fascism }
+					}
+					AND = {
+						has_government = neutrality
+						GER = { has_government = neutrality }
+					}
 				}
+				is_in_faction = no
+				is_subject = no
 			}
 		}
 		
@@ -3338,7 +3435,17 @@ focus_tree = {
 		cost = 10
 		mutually_exclusive = { focus = BUL_total_war }
 
+		bypass = {
+			has_war = yes
+		}
+
 		available = {
+			if = {
+				limit = {
+					has_war = yes
+				}
+				#This is intended so that the focus does not look unavailable when it can actually be bypassed
+			}
 			has_war = no
 		}
 		
@@ -3425,7 +3532,7 @@ focus_tree = {
 					has_full_control_of_state = 106
 					106 = { NOT = { is_core_of = ROOT } }
 				}
-				106 = { set_state_flag = BUL_bulgarisation_campaign_flag }
+				106 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
 				add_state_core = 106
 			}
 			if = {
@@ -3433,7 +3540,7 @@ focus_tree = {
 					has_full_control_of_state = 803
 					803 = { NOT = { is_core_of = ROOT } }
 				}
-				803 = { set_state_flag = BUL_bulgarisation_campaign_flag }
+				803 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
 				add_state_core = 803
 			}
 			if = {
@@ -3441,7 +3548,7 @@ focus_tree = {
 					has_full_control_of_state = 77
 					77 = { NOT = { is_core_of = ROOT } }
 				}
-				77 = { set_state_flag = BUL_bulgarisation_campaign_flag }
+				77 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
 				add_state_core = 77
 			}
 			custom_effect_tooltip = BUL_historical_states_tt
@@ -3723,7 +3830,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-
+			is_subject = no
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}

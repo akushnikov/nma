@@ -309,3 +309,15 @@ BUL_is_valid_subject = {
 		is_subject_of = BUL
 	}
 }
+BUL_has_some_sort_of_bogdan_filov = {
+	BUL = {
+		OR = {
+			has_idea = BUL_bogdan_filov
+			has_idea = BUL_bogdan_filov_fascism
+			has_country_leader = {
+				name = "Bogdan Filov" 
+				ruling_only = yes
+			}
+		}
+	}
+}

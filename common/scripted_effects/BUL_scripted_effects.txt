@@ -1753,6 +1753,24 @@ BUL_join_wars_of_from = {
 	}
 }
 
+BUL_remove_balkan_opinion_modifiers = { #Requires scoping to the other country joining Bulgaria's faction or being puppeted by Bulgaria
+	hidden_effect = {
+		remove_opinion_modifier = {
+			target = BUL
+			modifier = BFTB_balkan_pact_enemy
+		}
+		remove_opinion_modifier = {
+			target = BUL
+			modifier = BFTB_incongruous_neighbors
+		}
+		BUL = {
+			remove_opinion_modifier = {
+				target = PREV
+				modifier = BFTB_incongruous_neighbors
+			}
+		}
+	}
+}
 #Apply appropriate cosmetic tag so that 3D models change based on ideology
 BUL_set_appropriate_cosmetic_tag = {
 	if = {

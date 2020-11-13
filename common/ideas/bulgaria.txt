@@ -2126,7 +2126,6 @@ ideas = {
 
 		BUL_dobri_bozhilov_bftb = { #DLC
 
-			name = BUL_dobri_bozhilov
 
 			picture = bul_dobri_bozhilov
 			
@@ -2435,7 +2434,6 @@ ideas = {
 
 		BUL_nikola_hadzipetkov_bftb = { #DLC
 
-			name = BUL_nikola_hadzipetkov
 
 			picture = bul_nikola_hadzipetkov
 			
@@ -2485,7 +2483,6 @@ ideas = {
 
 		BUL_vasil_boydev_bftb = { #DLC
 
-			name = BUL_vasil_boydev
 
 			picture = bul_vasil_boydev
 			

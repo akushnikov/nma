@@ -405,11 +405,8 @@ operations = {
 		}
 		visible = {
 			has_war = yes
-			NOT = {
-				has_global_flag = SUEZ_CANAL_BLOCKED
-			}
-			any_state = {
-				is_controlled_by = ROOT
+			NOT = { has_global_flag = SUEZ_CANAL_BLOCKED }
+			any_controlled_state = {
 				OR = {
 					region = 28
 					region = 128
