@@ -1108,29 +1108,6 @@ BUL_start_ff_civil_war = {
 			}
 		}
 	}
-	#Operatives in original BUL
-	if = {
-		limit = {
-			has_dlc = "La Resistance"
-		}
-		every_operative = {
-			limit = {
-				has_trait = trait_BUL_ff_sympathizer
-			}
-			set_nationality = BUF
-		}
-		if = {
-			limit = {
-				has_country_flag = BUL_zveno_joined_ff_flag
-			}
-			every_operative = {
-				limit = {
-					has_trait = trait_BUL_zveno_member
-				}
-				set_nationality = BUF
-			}
-		}
-	}
 }
 
 BUL_get_random_bulgarian_destination_royal_visit = { #This works together with scripted loc

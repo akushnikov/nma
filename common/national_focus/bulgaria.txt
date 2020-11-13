@@ -2801,23 +2801,13 @@ focus_tree = {
 
 		available = {
 			has_civil_war = no
-			if = {
-				limit = {
-					has_dlc = "La Resistance"
-				}
-				SPR_scw_in_progress = yes
-				country_exists = SPA
-				NOT = { has_war_with = SPA }
-			}
-			else = {
-				any_country = {
-					original_tag = SPR
-					has_civil_war = yes
-					NOT = { has_war_with = ROOT }
-					OR = {
-						has_government = fascism
-						has_government = neutrality
-					}
+			any_country = {
+				original_tag = SPR
+				has_civil_war = yes
+				NOT = { has_war_with = ROOT }
+				OR = {
+					has_government = fascism
+					has_government = neutrality
 				}
 			}
 			OR = {
