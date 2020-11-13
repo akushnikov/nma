@@ -46,9 +46,12 @@ SAF_anti_colonialist_crusade = {
 war_measures = {
 	icon = generic_propaganda
 
+	allowed = {
+		is_ai = no
+	}
+
 	visible = {
 		has_war = yes
-		is_ai = no
 	}
 }
 operations = {
