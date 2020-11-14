@@ -237,25 +237,30 @@ nma_prepare_dday_decisions = {
 				has_defensive_war = yes
 				has_capitulated = yes
 				is_ai = yes
-			}
+      }
+      OR = {
+        has_war_with = GER
+        has_war_with = JAP
+      }
 		}
 
 		targets = {
 			HOL
 			BEL
 			NOR
-			DAN
+			DEN
 			GRE
 			ALB
 			YUG
-			INS
+      INS
+      FRA
 		}
 
 		target_root_trigger = {
 			OR = {
 				original_tag = ENG
 				original_tag = USA
-			}
+      }
 		}
 
 		target_trigger = {
@@ -264,12 +269,18 @@ nma_prepare_dday_decisions = {
 					original_tag = HOL
 					original_tag = BEL
 					original_tag = NOR
-					original_tag = DAN
+					original_tag = DEN
 					original_tag = GRE
 					original_tag = ALB
 					original_tag = YUG
-					original_tag = INS
-        }
+          original_tag = INS
+          AND = {
+            original_tag = FRA
+            NOT = {
+              has_global_flag = flag_franco_british_union
+            }
+          }
+        }        
         NOT = {
           has_country_flag = nma_dday_prepared
         }
