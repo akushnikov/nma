@@ -8,7 +8,7 @@
   uk_fb_fix:0 "Rule, Britannia!"
   uk_fb_fix_desc:0 "Um die Sicherheit unserer Insel zu gewährleisten müssen wir uns darauf konzentrieren unsere strategischen Territorien im Mittelmeer nicht zu verlieren. Während wir diese Kontrollieren kann unser Volk sich sicher fühlen."
   usa_lock:0 "Rezession"
-  usa_lock_desc:0 "Dagegen können wir immoment nichts tun."
+  usa_lock_desc:0 "Dagegen können wir immoment nichts tun. Wird am 1937.7.1 entfernt"
   ger_spyslots:0 "Si vis pacem, para bellum"
   ger_spyslots_desc:0 "Seit dem Vertrag von Versailles dürfen wir keine Armee mehr haben, aber diese Beschränkung ist nur eine Frage der Zeit. Wir müssen jegliche Information über unsere letzten Feinde gewinnen. Je früher wir es machen, desto schneller wird unser Land seine Wunden heilen und zurückschlagen!"
   special_forces_cap_exploit:0 "Spezialeinheiten Kapazitäts Überschreitung"
