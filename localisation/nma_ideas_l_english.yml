@@ -8,7 +8,7 @@
   uk_fb_fix:0 "Rule, Britannia!"
   uk_fb_fix_desc:0 "In order to secure safety of our island we must focus on not loosing our strategic territories in Mediterranean region. While we control them our people can feel themselves safe. "
   usa_lock:0 "Economic recession"
-  usa_lock_desc:0 "We can't do much about it right now."
+  usa_lock_desc:0 "We can't do much about it until July of 1937"
   ger_spyslots:0 "Si vis pacem, para bellum"
   ger_spyslots_desc:0 "We're not allowed to have an army since the Treaty of Versailles, but this restriction is only the matter of time. We've must gather any intel about our last enemies, the sooner we'll do it, the faster our nation will heal its wounds and strike back!"
   special_forces_cap_exploit:0 "Special Forces cap exploit"
