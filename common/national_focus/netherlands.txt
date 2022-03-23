@@ -1,11 +1,10 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
 ### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
 ### search_filters = {FOCUS_FILTER_MANPOWER}
 ### search_filters = {FOCUS_FILTER_ANNEXATION}
-
 focus_tree = {
 	id = netherlands_focus
 	
@@ -814,7 +813,7 @@ focus_tree = {
 					}
 					add_compliance = 70
 				}
-				set_capital = { state = 335 }
+				set_capital = 335
 			}
 		}
 	}
@@ -1148,7 +1147,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			set_capital = { state = 7 }
+			set_capital = 7
 			add_stability = 0.1
 			add_war_support = 0.05
 			add_manpower = 150000
@@ -1182,6 +1181,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
+
 		completion_reward = {
 			HOL_de_crisisjaren_level_down = yes
 		}
@@ -2334,6 +2334,7 @@ focus_tree = {
 		cancel_if_invalid = no
 
 		available_if_capitulated = yes
+
 		completion_reward = {
 			unlock_decision_category_tooltip = HOL_war_on_pacifism
 			custom_effect_tooltip = HOL_war_on_pacifism_tt
@@ -2360,29 +2361,27 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			army_experience = 10
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_appoint_new_supreme_commander
-				cost_reduction = 0.5
+				bonus = 1.0
 				uses = 2
 				category = land_doctrine
 			}
-			retire_character = HOL_izaak_reijnders
+			remove_ideas = HOL_izaak_reijnders
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = HOL_henri_winkelman
+			remove_unit_leader = 980 #izaak_reijnders
 			custom_effect_tooltip = HOL_appoint_new_supreme_commander_tt
 			hidden_effect = {
-				add_field_marshal_role = {
-					character = "HOL_henri_winkelman"
-						traits = { 
-							defensive_doctrine 
-							trait_cautious 
-							unyielding_defender 
-						}
-						skill = 4
-						attack_skill = 2
-						defense_skill = 4
-						planning_skill = 4
-						logistics_skill = 3
+				create_field_marshal = {
+					name = "Henri Winkelman"
+					gfx = "GFX_portrait_hol_henri_winkelman"
+					traits = { defensive_doctrine trait_cautious unyielding_defender }
+					skill = 4
+					attack_skill = 2
+					defense_skill = 4
+					planning_skill = 4
+					logistics_skill = 3
 				}
 			}
 		}
@@ -2447,6 +2446,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
+
 		completion_reward = {
 			add_ideas = HOL_production_under_license
 			custom_effect_tooltip = HOL_production_under_license_tt
@@ -2628,9 +2628,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			army_experience = 25
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_lessons_from_the_last_war
-				cost_reduction = 0.5
+				bonus = 1.0
 				uses = 2
 				category = land_doctrine
 			}
@@ -2677,9 +2677,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 25
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_expand_the_mld
-				cost_reduction = 0.5
+				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
@@ -2731,58 +2731,31 @@ focus_tree = {
 	focus = {
 		id = HOL_protect_the_colonies
 		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = netherlands_has_no_colonies_tt
-				NOT = {
-					OR = {
+			NOT = {
+				OR = {
+					AND = {
 						controls_state = 335
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 335
-						}
-					}
-					OR = {
 						controls_state = 672
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 672
-						}
-					}
-					OR = {
 						controls_state = 334
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 334
-						}
-					}
-					OR = {
 						controls_state = 673
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 673
-						}
-					}
-					OR = {
 						controls_state = 667
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 667
-						}
-					}
-					OR = {
 						controls_state = 309
-						any_country = {
-							is_subject_of = HOL
-							controls_state = 309
-						}
+					}
+					any_country = {
+						is_subject_of = HOL
+						controls_state = 335
+						controls_state = 672
+						controls_state = 334
+						controls_state = 673
+						controls_state = 667
+						controls_state = 309
 					}
 				}
-				
-				NOT = {
-					focus_progress = {
-						focus = HOL_protect_the_mainland
-						progress > 0
-					}
+			}
+			NOT = {
+				focus_progress = {
+					focus = HOL_protect_the_mainland
+					progress > 0
 				}
 			}
 		}
@@ -2838,9 +2811,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 25
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_strategic_bombing_defense
-				cost_reduction = 0.5
+				bonus = 1
 				uses = 1
 				category = air_doctrine
 			}
@@ -2991,9 +2964,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			air_experience = 25
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_aviatic_aspirations
-				cost_reduction = 0.5
+				bonus = 1
 				uses = 2
 				category = air_doctrine
 			}
@@ -3105,9 +3078,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_cornerstone_of_colonial_defense
-				cost_reduction = 0.5
+				bonus = 1
 				uses = 3
 				category = naval_doctrine
 			}
@@ -3274,9 +3247,9 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 50
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_naval_heritage
-				cost_reduction = 0.5
+				bonus = 1
 				uses = 2
 				category = naval_doctrine
 			}
@@ -3307,9 +3280,15 @@ focus_tree = {
 			country_event = { id = mtg_netherlands.10 hours = 6 }
 			effect_tooltip = {
 				set_party_name = { ideology = democratic long_name = HOL_CHU_party_long name = HOL_CHU_party }
-				promote_character = {
-					character = HOL_dirk_jan_de_geer
+				create_country_leader = {
+					name = "Dirk Jan de Geer"
+					desc = "POLITICS_DIRK_JAN_DE_GEER_DESC"
+					picture = "Portrait_Netherlands_Dirk_Jan_de_Geer.dds"
+					expire = "1965.1.1"
 					ideology = conservatism
+					traits = {
+						defeatist
+					}
 				}
 				remove_ideas = HOL_weak_government
 			}
@@ -3358,7 +3337,6 @@ focus_tree = {
 			OR = {
 				GER = { NOT = { has_government = fascism } }
 				GER = { exists = no }
-				GER = { has_completed_focus = GER_oppose_hitler }
 				has_war_with = ENG
 			}
 			NOT = {
@@ -3706,10 +3684,7 @@ focus_tree = {
 		mutually_exclusive = { focus = HOL_assume_the_naval_burden }
 		available = {
 			GER = {
-				OR = {
-					has_tech = basic_medium_tank
-					has_tech = basic_medium_tank_chassis
-				}
+				has_tech = basic_medium_tank
 			}
 		}
 		icon = GFX_focus_generic_tank_production
@@ -3728,9 +3703,9 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
+							NOT = { has_tech = advanced_medium_tank }
 							NOT = { has_tech = improved_medium_tank }
 							NOT = { has_tech = basic_medium_tank }
-							NOT = { has_tech = basic_medium_tank_chassis }
 						}
 					}
 					custom_effect_tooltip = HOL_beginnings_of_a_dutch_blitzkrieg_tt_1
@@ -3758,6 +3733,7 @@ focus_tree = {
 					else_if = {
 						limit = {
 							has_tech = improved_medium_tank
+							NOT = { has_tech = advanced_medium_tank }
 						}
 						create_production_license = {
 							target = HOL
@@ -3793,63 +3769,6 @@ focus_tree = {
 							}
 						}
 					}
-					if = {
-						limit = {
-							has_tech = advanced_medium_tank_chassis
-						}
-						create_production_license = {
-							target = HOL
-							equipment = {
-								type = medium_tank_chassis_3
-							}
-							cost_factor = 0
-						}
-						HOL = {
-							add_equipment_to_stockpile = {
-							    type = medium_tank_chassis_3
-							    amount = 250
-							    producer = GER
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							has_tech = improved_medium_tank_chassis
-						}
-						create_production_license = {
-							target = HOL
-							equipment = {
-								type = medium_tank_chassis_2
-							}
-							cost_factor = 0
-						}
-						HOL = {
-							add_equipment_to_stockpile = {
-							    type = medium_tank_chassis_2
-							    amount = 250
-							    producer = GER
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							has_tech = basic_medium_tank_chassis
-						}
-						create_production_license = {
-							target = HOL
-							equipment = {
-								type = medium_tank_chassis_1
-							}
-							cost_factor = 0
-						}
-						HOL = {
-							add_equipment_to_stockpile = {
-							    type = medium_tank_chassis_1
-							    amount = 250
-							    producer = GER
-							}
-						}
-					}
 				}
 			}
 			if = {
@@ -3859,9 +3778,9 @@ focus_tree = {
 				if = {
 					limit = {
 						GER = {
+							NOT = { has_tech = advanced_medium_tank }
 							NOT = { has_tech = improved_medium_tank }
 							NOT = { has_tech = basic_medium_tank }
-							NOT = { has_tech = basic_medium_tank_chassis }
 						}
 					}
 					custom_effect_tooltip = HOL_beginnings_of_a_dutch_blitzkrieg_tt_2
@@ -3888,6 +3807,7 @@ focus_tree = {
 					else_if = {
 						limit = {
 							has_tech = improved_medium_tank
+							NOT = { has_tech = advanced_medium_tank }
 						}
 						HOL = {
 							add_tech_bonus = {
@@ -3916,60 +3836,6 @@ focus_tree = {
 							}
 							add_equipment_to_stockpile = {
 							    type = medium_tank_equipment_1
-							    amount = 250
-							    producer = GER
-							}
-						}
-					}
-					if = {
-						limit = {
-							has_tech = advanced_medium_tank_chassis
-						}
-						HOL = {
-							add_tech_bonus = {
-								name = HOL_beginnings_of_a_dutch_blitzkrieg
-								bonus = 1
-								uses = 1
-								technology = advanced_medium_tank_chassis
-							}
-							add_equipment_to_stockpile = {
-							    type = medium_tank_chassis_3
-							    amount = 250
-							    producer = GER
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							has_tech = improved_medium_tank_chassis
-						}
-						HOL = {
-							add_tech_bonus = {
-								name = HOL_beginnings_of_a_dutch_blitzkrieg
-								bonus = 1
-								uses = 1
-								technology = improved_medium_tank_chassis
-							}
-							add_equipment_to_stockpile = {
-							    type = medium_tank_chassis_2
-							    amount = 250
-							    producer = GER
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							has_tech = basic_medium_tank_chassis
-						}
-						HOL = {
-							add_tech_bonus = {
-								name = HOL_beginnings_of_a_dutch_blitzkrieg
-								bonus = 1
-								uses = 1
-								technology = basic_medium_tank_chassis
-							}
-							add_equipment_to_stockpile = {
-							    type = medium_tank_chassis_1
 							    amount = 250
 							    producer = GER
 							}
@@ -4516,9 +4382,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 			OR = {
-				CRC = { is_subject_of = HOL }
 				695 = { is_fully_controlled_by = HOL }
-				SUR = { is_subject_of = HOL }
 				309 = { is_fully_controlled_by = HOL }
 				custom_trigger_tooltip = {
 					tooltip = HOL_decolonization_tt2
@@ -4566,8 +4430,6 @@ focus_tree = {
 			}
 			NOT = {
 				OR = {
-					CRC = { is_subject_of = HOL }
-					SUR = { is_subject_of = HOL }
 					INS = { is_subject_of = HOL }
 				}
 			}
@@ -4631,24 +4493,7 @@ focus_tree = {
 			}
 			set_province_name = { id = 7381 name = "Jakarta" }
 			set_province_name = { id = 4608 name = "Surabaya" }
-			if = {
-				limit = {
-					OR = {
-						CRC = { is_subject_of = HOL }
-						695 = { is_fully_controlled_by = HOL }
-					}
-				}
-				release = CRC
-			}
-			if = {
-				limit = {
-					OR = {
-						SUR = { is_subject_of = HOL }
-						309 = { is_fully_controlled_by = HOL }
-					}
-				}
-				release = SUR
-			}
+
 			add_stability = -0.1
 			add_political_power = 150
 			add_manpower = 150000
@@ -4746,11 +4591,10 @@ focus_tree = {
 	focus = {
 		id = HOL_affirm_loyalty_to_moscow
 		available = {
-			NOT = { has_war_with = SOU }
-			SOU = { has_government = communism }
+			NOT = { has_war_with = SOV }
 		}
 		bypass = {
-			is_in_faction_with = SOU
+			is_in_faction_with = SOV
 			NOT = {
 				OR = {
 					focus_progress = {
@@ -4767,7 +4611,6 @@ focus_tree = {
 		prerequisite = { focus = HOL_decolonization }
 		prerequisite = { focus = HOL_red_is_the_new_orange }
 		mutually_exclusive = { focus = HOL_join_the_french focus = HOL_bastion_of_true_communism }
-		dynamic = yes
 		icon = GFX_focus_chi_mission_to_the_soviet_union
 		x = -2
 		y = 1
@@ -4777,7 +4620,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			SOU = { country_event = { id = generic.2 hours = 6 } }
+			SOV = { country_event = { id = generic.2 hours = 6 } }
 			remove_ideas = HOL_aloof_neutrality
 		}
 	}
@@ -4836,12 +4679,6 @@ focus_tree = {
 		available = {
 			NOT = { has_war_with = FRA }
 			FRA = {
-				OR = {
-					has_completed_focus = FRA_humanite_unie
-					has_completed_focus = FRA_loyalty_to_the_cause
-					has_completed_focus = FRA_anti_fascist_coalition
-				}
-				has_government = ROOT
 				is_faction_leader = yes
 			}
 		}
@@ -4919,9 +4756,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			army_experience = 25
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_french_military_mission
-				cost_reduction = 0.5
+				bonus = 1.0
 				uses = 2
 				category = land_doctrine
 			}
@@ -5346,12 +5183,17 @@ focus_tree = {
 				    ideology = democratic
 				    popularity = -0.05
 				}
-				HOL_pieter_sjoerds_gerbrandy = {
-					promote_character = {
-						ideology = conservatism
+				retire_country_leader = yes
+				create_country_leader = {
+					name = "Pieter Sjoerds Gerbrandy"
+					desc = "POLITICS_PIETER_SJOERDS_GERBRANDY_DESC"
+					picture = "portrait_hol_pieter_sjoerds_gerbrandy.dds"
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+						little_churchill
 					}
 				}
-				retire_country_leader = yes
 				if = {
 					limit = {
 						has_idea = HOL_weak_government
@@ -5379,12 +5221,21 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT}
 		completion_reward = {
-			promote_character = {
-				character = HOL_wilhelmina
-				ideology = centrism
-			}
 			set_politics = { ruling_party = neutrality elections_allowed = no }
 			remove_ideas = HOL_wilhelmina
+			create_country_leader = {
+				name = "Wilhelmina"
+				desc = "POLITICS_WILHELMINA_DESC"
+				picture = "portrait_hol_wilhelmina.dds"
+				expire = "1965.1.1"
+				ideology = centrism
+				female = yes
+				traits = {
+					wilhelmina
+					disdain_for_politicians_1
+					queen_of_the_people
+				}
+			}
 		}
 	}
 
@@ -5642,24 +5493,7 @@ focus_tree = {
 				}
 				AND = {
 					NOT = { has_war_with = GER }
-					NOT = {
-						any_country = {
-							is_in_faction_with = GER
-							has_war_with = ROOT
-						}
-					}
-					GER = {
-						has_completed_focus = GER_revive_the_kaiserreich 
-						is_faction_leader = yes
-					}
 				}
-			}
-		}
-		bypass = {
-			AND = {
-				is_in_faction_with = GER
-				HOL = { has_government = neutrality }
-				GER = { has_government = neutrality } 
 			}
 		}
 		prerequisite = { focus = HOL_a_new_dutch_unity }
@@ -5676,9 +5510,6 @@ focus_tree = {
 				limit = {
 					is_in_faction = yes
 					NOT = { has_war_with = GER }
-					GER = {
-						has_completed_focus = GER_revive_the_kaiserreich
-					}
 				}
 				leave_faction = yes
 				GER = { country_event = { id = generic.2 } }
@@ -5687,9 +5518,6 @@ focus_tree = {
 				limit = {
 					is_in_faction = no
 					NOT = { has_war_with = GER }
-					GER = {
-						has_completed_focus = GER_revive_the_kaiserreich
-					}
 				}
 				GER = { country_event = { id = generic.2 } }
 			}
@@ -5728,7 +5556,6 @@ focus_tree = {
 					}
 				}
 				custom_effect_tooltip = HOL_wilhelminism_tt
-				hidden_effect = { add_ideas = HOL_german_defectors_1 }
 				division_template = {
 					name = "Hare Majesteits Duitse Legioen"
 					priority = 1
@@ -5754,15 +5581,10 @@ focus_tree = {
 						artillery = { x = 0 y = 2 }
 					}
 				}
-				GER = {
-					add_ideas = HOL_german_defectors_2
-					country_event = { id = mtg_netherlands.70 }
-				}
 			}
 			if = {
 				limit = {
 					NOT = { has_war_with = GER }
-					NOT = { GER = { has_completed_focus = GER_revive_the_kaiserreich } }
 				}
 				effect_tooltip = {
 					every_country = {
@@ -5778,10 +5600,6 @@ focus_tree = {
 						add_opinion_modifier = { target = HOL modifier = HOL_wilhelminism }
 					}
 					custom_effect_tooltip = HOL_wilhelminism_tt
-					GER = {
-						add_ideas = HOL_german_defectors_2
-						country_event = { id = mtg_netherlands.71 }
-					}
 				}
 			}
 		}
@@ -5947,9 +5765,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_doctrine_cost_reduction = {
+			add_tech_bonus = {
 				name = HOL_the_singapore_conferences
-				cost_reduction = 0.5
+				bonus = 1.0
 				uses = 4
 				category = naval_doctrine
 			}
