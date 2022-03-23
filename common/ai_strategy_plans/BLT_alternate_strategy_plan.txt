@@ -1,0 +1,91 @@
+LAT_historical = {
+	name = "Baltic communist plan"
+	desc = ""
+
+	allowed = {
+		OR = {
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+		}
+	}
+
+	enable = {
+		OR = {
+			AND = {
+				original_tag = LAT
+				has_dlc = "No Step Back"
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						
+					}
+					has_country_flag = LAT_AI_RANDOM_COMMUNIST
+					
+				}
+			}
+			AND = {
+				original_tag = LIT
+				has_dlc = "No Step Back"
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						
+					}
+					has_country_flag = LIT_AI_RANDOM_COMMUNIST
+					
+				}
+			}
+			AND = {
+				original_tag = EST
+				has_dlc = "No Step Back"
+				OR = {
+					AND = {
+						is_historical_focus_on = yes
+						
+					}
+					has_country_flag = EST_AI_RANDOM_COMMUNIST
+					
+				}
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	research = {
+		industry = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

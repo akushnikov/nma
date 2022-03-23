@@ -19,11 +19,6 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 }
-
-add_ideas = {
-	moderate_neutrality
-}
-
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
@@ -46,6 +41,33 @@ if = {
 	}
 }
 
+recruit_character = PRU_Óscar_benavides
+recruit_character = PRU_sebastián_lynch
+recruit_character = PRU_hilarión_lynch
+recruit_character = PRU_santiago_ruíztagle
+recruit_character = PRU_rafael_escardo
+recruit_character = PRU_alberto_lopez_flores
+recruit_character = PRU_oscar_gilardi
+recruit_character = PRU_felipe_tudela
+recruit_character = PRU_eduardo_cantabria_gomez
+recruit_character = PRU_ernesto_scroth
+recruit_character = PRU_luis_ramirez_ortiz
+recruit_character = PRU_oscar_benavides_larrea
+recruit_character = PRU_manuel_odria_amoretti
+recruit_character = PRU_luis_navarrete
+recruit_character = PRU_paul_de_beaudiez
+recruit_character = PRU_alberto_roque_saldias
+recruit_character = PRU_vladimiro_lopez_trigoso
+recruit_character = PRU_eloy_g_ureta
+recruit_character = PRU_fernando_m_quesada_blanco
+recruit_character = PRU_eduardo_montero_rojas
+recruit_character = PRU_romulo_frias
+recruit_character = PRU_oscar_miro_quesada
+recruit_character = PRU_jose_bustamante_y_rivero
+recruit_character = PRU_armando_reveredo_iglesias
+recruit_character = PRU_reynaldo_vinatea
+
+
 set_country_flag = monroe_doctrine
 
 set_convoys = 5
@@ -53,7 +75,8 @@ set_convoys = 5
 1939.1.1 = {
 
 	add_political_power = 1198
-
+	add_command_power = 100
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -64,7 +87,7 @@ set_convoys = 5
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-
+	
 	oob = "PRU_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -119,28 +142,10 @@ set_popularities = {
 	fascism = 51
 }
 
-create_country_leader = {
-	name = "Óscar Benavides"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "GFX_Portrait_peru_oscar_benavides"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
 1939.1.1 = {
-	create_country_leader = {
-		name = "Manuel Prado Ugarteche"
-		desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = fascism_ideology
-		traits = {
-			#
-		}
-	}
+	recruit_character = PRU_manuel_prado_ugarteche
+	promote_character = PRU_manuel_prado_ugarteche
+	retire_character = PRU_Óscar_benavides
 }
 
 
@@ -154,7 +159,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "R1 Class"
+		name = "R1 Class"				
 		type = ship_hull_submarine_1
 		parent_version = 0
 		modules = {
@@ -165,7 +170,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Almirante Villar Class"
+		name = "Almirante Villar Class"				
 		type = ship_hull_light_1
 		name_group = PRU_DD_HISTORICAL
 		parent_version = 0
@@ -182,7 +187,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Almirante Grau Class"
+		name = "Almirante Grau Class"				
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = PRU_CA_HISTORICAL
 		parent_version = 0

@@ -48,7 +48,7 @@ RAJ_historical = {
 		RAJ_revive_the_screw_guns
 		RAJ_indian_armor
 		RAJ_modernizing_army
-		RAJ_quit_india_movement
+		
 		RAJ_screening_effort
 		RAJ_cruiser_effort
 		RAJ_air_support_effort

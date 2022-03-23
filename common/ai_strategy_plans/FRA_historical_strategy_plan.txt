@@ -14,7 +14,6 @@ FRA_historical_plan = {
 		FRA_fortification_focus #February 30 1937
 		FRA_infantry_focus #May 10 1937
 		FRA_artillery_focus #July 20 1937
-		FRA_heavy_armor_focus #September 30 1937
 		FRA_military_factories #December 10 1937
 		FRA_improved_screen_ships #February 20 1938
 		FRA_go_with_britain #July 10 1938
@@ -43,15 +42,10 @@ FRA_historical_plan = {
  		 #May 20 1943
 		 #July 30 1943
 	}
-
 	research = {
-
 	}
-
 	ideas = {
-
 	}
-
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
 	weight = {

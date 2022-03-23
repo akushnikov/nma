@@ -1,6 +1,19 @@
 ﻿capital = 107
 
-oob = "YUG_1936"
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "YUG_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "YUG_1936_nsb"
+}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "YUG_1936_naval_mtg"
@@ -10,6 +23,34 @@ if = {
 }
 
 set_research_slots = 3
+
+recruit_character = YUG_prince_paul
+recruit_character = YUG_milan_stojadinovic
+recruit_character = YUG_milan_grol
+recruit_character = YUG_josip_broz_tito
+recruit_character = YUG_vladimir_Cukavac
+recruit_character = YUG_ivan_gosnjak
+recruit_character = YUG_danilo_kalafatovic
+recruit_character = YUG_milutin_nedic
+recruit_character = YUG_petar_kosic
+recruit_character = YUG_josef_depre
+recruit_character = YUG_marijan_polic
+recruit_character = YUG_borivoje_mirkovic
+recruit_character = YUG_dusan_simovic
+recruit_character = YUG_draza_mihailovic
+recruit_character = YUG_mihajlo_lukic
+recruit_character = YUG_bogoljub_ilic
+recruit_character = YUG_petar_vukcevic
+recruit_character = YUG_ljubomir_maric
+recruit_character = YUG_arso_jovanovic
+recruit_character = YUG_slobodan_jovanovic
+recruit_character = YUG_milovan_djilas
+recruit_character = YUG_milan_nedic
+recruit_character = YUG_ivan_ribar
+recruit_character = YUG_dimitrije_ljotic
+recruit_character = YUG_ivo_lola_ribar
+recruit_character = YUG_peter_ii
+
 
 if = {
 	limit = {
@@ -26,18 +67,62 @@ add_ideas = {
 	anti_german_military
 }
 
+if = {
+	limit = {
+		#has_dlc = Battle for the Bosporus
+	}
+	add_opinion_modifier = { 
+		target = GRE
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = ROM
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = TUR
+		modifier = BFTB_balkan_pact_ally
+	}
+	add_opinion_modifier = { 
+		target = BUL
+		modifier = BFTB_balkan_pact_enemy
+	}
+	add_opinion_modifier = { 
+		target = HUN
+		modifier = BFTB_balkan_pact_enemy
+	}
+}
+
 set_technology = {
-	tech_support = 1
+	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
 	early_fighter = 1
-	gwtank = 1
+	
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	interwar_antitank = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	superior_firepower = 1
+	basic_train = 1
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+	}
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -50,6 +135,8 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_submarine = 1
@@ -80,33 +167,34 @@ if = {
 }
 
 	add_political_power = 1198
-
+	add_command_power = 100
+	
 	if = {
 	limit = {
 		has_dlc = "Death or Dishonor"
 	}
 		complete_national_focus = YUG_western_focus
-		complete_national_focus = YUG_friendship_treaty_with_italy
-		complete_national_focus = YUG_attract_foreign_capital
 		complete_national_focus = YUG_industrialization_program
-		complete_national_focus = YUG_limited_self_government
+		complete_national_focus = YUG_friendship_treaty_with_italy
+		complete_national_focus = YUG_attract_axis_capital
+		complete_national_focus = YUG_expand_the_mining_industry
+		complete_national_focus = YUG_develop_civilian_industry
+		complete_national_focus = YUG_evolution
 		complete_national_focus = YUG_army_modernization
 		complete_national_focus = YUG_mountain_brigades
-		complete_national_focus = YUG_expand_the_mining_industry
 		complete_national_focus = YUG_modernize_the_air_force
-		complete_national_focus = YUG_develop_civilian_industry
 		complete_national_focus = YUG_purchase_foreign
-		complete_national_focus = YUG_license_production
-		complete_national_focus = YUG_fighter_license
+		complete_national_focus = YUG_license_production 
+		complete_national_focus = YUG_fighter_license 
 		complete_national_focus = YUG_rare_minerals_exploitation
-		complete_national_focus = YUG_traditional_values
-		complete_national_focus = YUG_greater_yugoslavia
-		complete_national_focus = YUG_small_arms
+		complete_national_focus = YUG_establish_the_banovina_of_croatia
+		complete_national_focus = YUG_ban_slovene_nationalist_parties
+		complete_national_focus = YUG_concessions_for_macedonians
+		complete_national_focus = YUG_small_arms 
 		complete_national_focus = YUG_domestic_artillery_production
 		complete_national_focus = YUG_expand_the_serbian_shipyards
-		complete_national_focus = YUG_coastal_defense
 	}
-
+	
 	if = {
 	limit = {
 		NOT = { has_dlc = "Death or Dishonor" }
@@ -122,8 +210,14 @@ if = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	}
-
-	oob = "YUG_1939"
+	if = {
+		limit = { NOT = { has_dlc = "No Step Back" } }
+		set_oob = "YUG_1939"
+	}
+	if = {
+		limit = { has_dlc = "No Step Back" } 
+		set_oob = "YUG_1939_nsb"
+	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "YUG_1939_naval_mtg"
@@ -209,125 +303,13 @@ set_popularities = {
 }
 set_stability = 0.6
 
-create_country_leader = {
-	name = "Prince Paul"
-	desc = "POLITICS_PRINCE_PAUL_DESC"
-	picture = "Portrait_Yugoslavia_Prince_Paul.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Milan Stojadinović"
-	desc = "POLITICS_MILAN_STOJADINOVIC_DESC"
-	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Stojadinovic.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Milan Grol"
-	desc = "POLITICS_MILAN_GROL_DESC"
-	picture = "gfx/leaders/YUG/Portrait_Yugoslavia_Milan_Grol.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Josip Broz Tito"
-	desc = "POLITICS_JOSIP_BROZ_TITO_DESC"
-	picture = "Portrait_Yugoslavia_Josip_Broz_Tito.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Vladimir Čukavac"
-	gfx = GFX_Portrait_yugoslavia_vladimir_cukavac
-	traits = { trickster  }
-	skill = 3
-
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Ivan Gošnjak"
-	gfx = GFX_Portrait_yugoslavia_ivan_gosnjak
-	traits = { urban_assault_specialist }
-	skill = 3
-
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_field_marshal = {
-	name = "Danilo Kalafatović"
-	gfx = GFX_Portrait_yugoslavia_danilo_kalafatovic
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-
-create_field_marshal = {
-	name = "Milutin Nedić"
-	gfx = GFX_Portrait_yugoslavia_milutin_nedic
-	traits = { thorough_planner }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Petar Kosić"
-	gfx = GFX_Portrait_yugoslavia_petar_kosic
-	traits = {  }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_navy_leader = {
-	name = "Marijan Polić"
-	gfx = GFX_Portrait_yugoslavia_marijan_polic
-	traits = { old_guard_navy navy_career_officer }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 1
-	coordination_skill = 2
-}
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
 	create_equipment_variant = {
-		name = "Cervantes Class"
+		name = "Dubrovnik Class"
 		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 1
@@ -352,7 +334,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #
 	create_equipment_variant = {
-		name = "Hrabri Class"
+		name = "Hrabri Class"				
 		type = ship_hull_submarine_2
 		name_group = YUG_SS_HISTORICAL
 		parent_version = 0
@@ -362,10 +344,26 @@ if = {
 			rear_1_custom_slot = empty
 		}
 	}
-
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Dubrovnik Class"				
+		type = ship_hull_light_2
+		name_group = YUG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Dalmacija Class"
+		name = "Dalmacija Class"				
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = YUG_CL_HISTORICAL
 		parent_version = 0
@@ -386,5 +384,28 @@ if = {
 
 # 1939 Start #
 1939.1.1 = {
-
+	if = {
+		limit = { not = { has_dlc = "Man the Guns" } }
+		# Ship variants #
+	}
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		# Destroyers #
+		create_equipment_variant = {
+			name = "Beograd Class"	
+			type = ship_hull_light_2
+			name_group = YUG_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_mine_layer_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
+	}
 }

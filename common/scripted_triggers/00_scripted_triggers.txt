@@ -12,6 +12,7 @@
 #		exampel_trigger = yes
 #	}
 #
+
 can_ROOT_get_wargoal_on_THIS = {
 	exists = yes
 	NOT = { is_in_faction_with = ROOT }
@@ -66,6 +67,19 @@ check_has_focus_tree_to_switch_to_fascism = {
 	NOT = { tag = GER }
 	NOT = { tag = MAN }
 	NOT = { tag = ITA }
+	OR = {
+		NOT = {
+			AND = {
+				tag = SAF
+				has_dlc = "Together for Victory"
+			}
+		}
+		AND = {
+			tag = SAF
+			has_dlc = "Together for Victory"
+			has_completed_focus = SAF_south_africa_first
+		}
+	}
 	NOT = {
 		AND = {
 			tag = RAJ
@@ -84,6 +98,19 @@ check_has_focus_tree_to_switch_to_fascism = {
 			has_dlc = "Man the Guns"
 		}
 	}
+	NOT = {
+		AND = {
+			tag = FRA
+			has_dlc = "La Resistance"
+		}
+	}
+	NOT = {
+		AND = {
+			original_tag = SPR
+			
+			has_dlc = "La Resistance"
+		}
+	}
 }
 
 check_has_focus_tree_to_switch_to_democratic = {
@@ -93,7 +120,7 @@ check_has_focus_tree_to_switch_to_democratic = {
 	NOT = { tag = ENG }
 	NOT = { tag = CAN }
 	NOT = { tag = SAF }
-	NOT = { tag = AUS }
+	NOT = { tag = AST }
 	NOT = { tag = NZL }
 	NOT = { tag = RAJ }
 	NOT = { tag = CZE }
@@ -118,6 +145,8 @@ check_has_focus_tree_to_switch_to_democratic = {
 }
 
 check_has_focus_tree_to_switch_to_communism = {
+	NOT = { tag = PRC }
+	NOT = { tag = SIK }
 	NOT = { tag = MAN }
 	NOT = { tag = SOV }
 	NOT = {
@@ -134,6 +163,12 @@ check_has_focus_tree_to_switch_to_communism = {
 	}
 	NOT = {
 		AND = {
+			tag = YUN
+			has_dlc = "Waking the Tiger"
+		}
+	}
+	NOT = {
+		AND = {
 			tag = USA
 			has_dlc = "Man the Guns"
 		}
@@ -142,6 +177,18 @@ check_has_focus_tree_to_switch_to_communism = {
 		AND = {
 			tag = ENG
 			has_dlc = "Man the Guns"
+		}
+	}
+	NOT = {
+		AND = {
+			tag = FRA
+			has_dlc = "La Resistance"
+		}
+	}
+	NOT = {
+		AND = {
+			original_tag = SPR
+			has_dlc = "La Resistance"
 		}
 	}
 }
@@ -249,6 +296,70 @@ ai_land_doctrine_tier_2_trigger = {
 	}
 }
 
+CHI_is_on_historical_plan_trigger = {
+	has_dlc = "Waking the Tiger"
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			
+		}
+		has_country_flag = CHI_AI_RANDOM_HISTORICAL
+		
+	}
+}
+SOV_is_on_historical_plan_trigger = {
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			
+		}
+		has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
+		
+	}
+}
+USA_is_on_historical_plan_trigger = {
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			
+		}
+		has_country_flag = USA_AI_DEMOCRATIC_HISTORICAL
+		
+	}
+}
+ROM_is_on_historical_plan_trigger = {
+	has_dlc = "Death or Dishonor"
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			
+		}
+		has_country_flag = ROM_AI_RANDOM_FASCIST_HISTORICAL
+		
+	}
+}
+HUN_is_on_historical_plan_trigger = {
+	has_dlc = "Death or Dishonor"
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			
+		}
+		has_country_flag = HUN_AI_RANDOM_FASCIST_HISTORICAL
+		
+	}
+}
+ENG_is_on_historical_plan_trigger = {
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			
+		}
+		has_country_flag = ENG_AI_DEMOCRATIC_HISTORICAL
+		
+	}
+}
+
 SOV_save_pp_for_manpower_trouble = {
 	has_manpower < 1000000
 	has_political_power < 200
@@ -294,7 +405,6 @@ anti_submarine_strategy_required_trigger = {
 	}
 }
 
-
 should_USA_invade_europe_or_africa = {
 	USA = {
 		OR = {
@@ -323,7 +433,7 @@ should_USA_invade_europe_or_africa = {
 			OR = {
 				AND = {
 					has_government = democratic
-					ENG = { has_government = democratic } 
+					ENG = { has_government = democratic }
 					OR = {
 						GER = { has_government = fascism }
 						ITA = { has_government = fascism }
@@ -342,80 +452,80 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 		tooltip = enemy_has_equal_or_better_radar_tech_trigger_tt
 		if = {
 			limit = {
-				ROOT = { 
-					has_tech = radio_detection 
+				ROOT = {
+					has_tech = radio_detection
 					NOT = {
 						has_tech = decimetric_radar
 					}
-				} 
+				}
 			}
-			FROM = { 
+			FROM = {
 				OR = {
-					has_tech = radio_detection 
+					has_tech = radio_detection
 					has_tech = decimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				ROOT = { 
-					has_tech = decimetric_radar 
+				ROOT = {
+					has_tech = decimetric_radar
 					NOT = {
 						has_tech = improved_decimetric_radar
 					}
-				} 
+				}
 			}
-			FROM = { 
+			FROM = {
 				OR = {
-					has_tech = decimetric_radar 
+					has_tech = decimetric_radar
 					has_tech = improved_decimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				ROOT = { 
-					has_tech = improved_decimetric_radar 
+				ROOT = {
+					has_tech = improved_decimetric_radar
 					NOT = {
 						has_tech = centimetric_radar
 					}
-				} 
+				}
 			}
-			FROM = { 
+			FROM = {
 				OR = {
-					has_tech = improved_decimetric_radar 
+					has_tech = improved_decimetric_radar
 					has_tech = centimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				ROOT = { 
-					has_tech = centimetric_radar 
+				ROOT = {
+					has_tech = centimetric_radar
 					NOT = {
 						has_tech = improved_centimetric_radar
 					}
-				} 
+				}
 			}
-			FROM = { 
+			FROM = {
 				OR = {
-					has_tech = centimetric_radar 
+					has_tech = centimetric_radar
 					has_tech = improved_centimetric_radar
 				}
 			}
 		}
 		else_if = {
 			limit = {
-				ROOT = { 
-					has_tech = improved_centimetric_radar 
+				ROOT = {
+					has_tech = improved_centimetric_radar
 					NOT = {
 						has_tech = advanced_centimetric_radar
 					}
-				} 
+				}
 			}
-			FROM = { 
+			FROM = {
 				OR = {
-					has_tech = improved_centimetric_radar 
+					has_tech = improved_centimetric_radar
 					has_tech = advanced_centimetric_radar
 				}
 			}
@@ -426,6 +536,15 @@ enemy_has_equal_or_better_radar_tech_trigger = {
 
 is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
 	NOT = {
+		AND = {
+			FROM = { original_tag = YUG }
+			original_tag = ITA
+		}
+		AND = {
+			FROM = { original_tag = DNZ }
+			original_tag = POL
+		}
+		
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
 			is_puppet_of = PREV # if already created one do not create another
@@ -437,8 +556,117 @@ is_available_to_collaboration_government = { # occupied_countries.1 should be up
 has_large_ally_not_pick_closed_economy = {
 	any_of_scopes = {
 		array = faction_members
-		
+
 		NOT = { tag = PREV }
 		num_of_military_factories > 30
 	}
+}
+
+owns_or_subject_of = {
+	custom_trigger_tooltip = {
+		tooltip = owns_or_subject_of_tt
+		owner = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+controls_or_subject_of = {
+	custom_trigger_tooltip = {
+		tooltip = controls_or_subject_of_tt
+		controller = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+is_core_or_compliance_60 = {
+	custom_trigger_tooltip = {
+		tooltip = is_core_or_compliance_60_tt
+		OR = {
+			controller = {
+				PREV = { is_core_of = PREV }
+			}
+			compliance > 60
+		}
+	}
+}
+
+has_any_byz_cosmetic_tag = {
+	OR = {
+		has_cosmetic_tag = BYZ_UNIFIED
+		has_cosmetic_tag = BYZ_UNIFIED_communism
+		has_cosmetic_tag = BYZ_UNIFIED_democratic
+		has_cosmetic_tag = BYZ_UNIFIED_fascism
+		has_cosmetic_tag = BYZ_UNIFIED_neutrality
+	}
+}
+
+has_same_ideology = {
+	custom_trigger_tooltip = {
+		tooltip = has_same_ideology_tt
+		OR = {
+			AND = {
+				has_government = democratic
+				ROOT = { has_government = democratic }
+			}
+			AND = {
+				has_government = fascism
+				ROOT = { has_government = fascism }
+			}
+			AND = {
+				has_government = communism
+				ROOT = { has_government = communism }
+			}
+			AND = {
+				has_government = neutrality
+				ROOT = { has_government = neutrality }
+			}
+		}
+	}
+}
+
+is_latin_american_country = {
+	OR = {
+		original_tag = CUB
+		original_tag = ARG
+		original_tag = BRA
+		original_tag = URG
+		original_tag = PAR
+		original_tag = CHL
+		original_tag = BOL
+		original_tag = PRU
+		original_tag = ECU
+		original_tag = COL
+		original_tag = VEN
+		original_tag = PAN
+		original_tag = COS
+		original_tag = NIC
+		original_tag = HON
+		original_tag = ELS
+		original_tag = GUA
+		original_tag = MEX
+		original_tag = HAI
+		original_tag = DOM
+	}
+}
+
+has_specialist_level_trigger = {
+	skill > 5
+	skill < 6
+}
+
+has_expert_level_trigger = {
+	skill > 6
+	skill < 7
+}
+
+has_genius_level_trigger = {
+	skill > 7
 }

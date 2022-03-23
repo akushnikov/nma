@@ -9,13 +9,35 @@ if = {
 	}
 }
 
+recruit_character = DEN_thorvald_stauning
+recruit_character = DEN_frits_clausen
+recruit_character = DEN_aksel_larsen
+recruit_character = DEN_peter_rochegune_munch
+recruit_character = DEN_wilhelm_wain_prior
+recruit_character = DEN_carl_hammerich
+recruit_character = DEN_kaj_birksted
+recruit_character = DEN_hans_a_rolsted
+recruit_character = DEN_christian_frederik_von_schalburg
+recruit_character = DEN_hans_lunding
+recruit_character = DEN_ebbe_gortz
+recruit_character = DEN_paul_sommer
+recruit_character = DEN_hjalmar_rechnitzer
+recruit_character = DEN_poul_sommer
+recruit_character = DEN_william_wain_prior
+recruit_character = DEN_aage_vedel
+recruit_character = DEN_wilhelm_prior
+recruit_character = DEN_ejnar_warum
+recruit_character = DEN_viggo_kampman
+recruit_character = DEN_knud_kristensen
+
+
 set_research_slots = 3
 set_stability = 0.9
 set_war_support = 0.1
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
 	gw_artillery = 1
@@ -35,6 +57,8 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
@@ -51,7 +75,8 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
-
+	add_command_power = 100
+	
 	#generic focuses
 	complete_national_focus = army_effort
 	complete_national_focus = equipment_effort
@@ -62,7 +87,7 @@ if = {
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-
+	
 	oob = "DEN_1939"
 	if = {
 		limit = { has_dlc = "Man the Guns" }
@@ -148,62 +173,6 @@ set_popularities = {
 
 set_convoys = 40
 
-create_country_leader = {
-	name = "Thorvald Stauning"
-	desc = "POLITICS_THORVALD_STAUNING_DESC"
-	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Frits Clausen"
-	desc = "POLITICS_FRITS_CLAUSEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Aksel Larsen"
-	desc = "POLITICS_AKSEL_LARSEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Peter Rochegune Munch"
-	desc = "POLITICS_PETER_ROCHEGUNE_MUNCH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-
-create_corps_commander = {
-	name = "Wilhelm Wain Prior"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trickster }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -226,7 +195,7 @@ if = {
 	}
 	# Heavy Cruisers #
 	create_equipment_variant = {
-		name = "Herluf Trolle Class"
+		name = "Herluf Trolle Class"				
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = DEN_CA_HISTORICAL
 		parent_version = 0
@@ -245,7 +214,7 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Niels Iuel Class"
+		name = "Niels Iuel Class"				
 		type = ship_hull_cruiser_coastal_defense_ship
 		name_group = DEN_CA_HISTORICAL
 		parent_version = 0
@@ -274,7 +243,7 @@ if = {
 		limit = { has_dlc = "Man the Guns" }
 		# Submarines #
 		create_equipment_variant = {
-			name = "Havmanden Class"
+			name = "Havmanden Class"				
 			type = ship_hull_submarine_1
 			name_group = DEN_DD_HISTORICAL
 			parent_version = 0
