@@ -8661,8 +8661,8 @@ focus_tree = {
 						limit = {
 							has_completed_focus = SOV_covert_support_for_spanish_poum
 						}
-						country_exists = SPC
-						NOT = { has_war_with = SPC }
+						country_exists = SPR
+						NOT = { has_war_with = SPR }
 					}
 					else = {
 						country_exists = SPD
@@ -8696,10 +8696,10 @@ focus_tree = {
 					has_completed_focus = SOV_covert_support_for_spanish_poum
 					has_completed_focus = SOV_coup_detat
 					has_global_flag = SPR_anarchist_uprising_flag
-					country_exists = SPC
-					SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+					country_exists = SPR
+					SPR = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 				}
-				SPC = {
+				SPR = {
 					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
 					effect_tooltip = { add_timed_idea = {idea = SOV_soviet_advisors_spr days = 1095 } }
 				}
