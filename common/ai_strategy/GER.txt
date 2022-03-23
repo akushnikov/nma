@@ -268,25 +268,7 @@ GER_armored_production = {
 	}
 }
 
-GER_halt_light_armor_production_in_transitioning = {
-	enable = {
-		original_tag = GER
-		has_template_majority_unit = medium_armor
-		OR = {
-			has_equipment = { light_tank_equipment > 600 }
-			date > 1939.1.1
-		}
-	}
-	abort = {
-		# once we start we never go back to light armor
-	}
 
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = light_tank_equipment
-		value = -100
-	}
-}
 
 GER_stockpile_less_early_game = {
 	allowed = { 

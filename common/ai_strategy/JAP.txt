@@ -169,12 +169,7 @@ JAP_build_some_factories_jeez = {
 		value = 20 #From 40 to 20
 	}
 
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = light_tank_equipment
-		value = -50
-	}
-
+	
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = artillery
