@@ -336,10 +336,7 @@ GER_super_boost_light_for_med_armor = {
 	}
 
 	# lets do changes more often during this period too
-	ai_strategy = {
-		type = template_xp_reserve
-		value = -125
-	}
+	
 
 	# this is gateway
 	ai_strategy = {
@@ -375,10 +372,7 @@ GER_super_boost_light_for_modern_armor = {
 	}
 
 	# lets do changes more often during this period too
-	ai_strategy = {
-		type = template_xp_reserve
-		value = -125
-	}
+	
 
 	# this is gateway
 	ai_strategy = {
