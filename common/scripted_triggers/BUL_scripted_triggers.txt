@@ -121,6 +121,10 @@ BUL_country_seeks_macedonian_stability = {
 BUL_has_freedom_of_press = {
 	custom_trigger_tooltip = {
 		tooltip = BUL_freedom_of_press_trigger_tt
+		NOT = { has_decision = institute_press_censorship_neutrality_state }
+		NOT = { has_decision = institute_press_censorship_fascist_state }
+		NOT = { has_decision = institute_press_censorship_democratic_state }
+		NOT = { has_decision = institute_press_censorship_communist_state }
 	}
 }
 
@@ -136,22 +140,36 @@ BUL_has_banned_faction_media = {
 }
 
 BUL_historical_requirements_met = {
-	any_allied_country = {
+	OR = {
 		has_war_with = SOV
+		any_allied_country = {
+			has_war_with = SOV
+		}
+	}
+	SOV = {
+		surrender_progress < 0.05
 	}
 	OR = {
-		AND = {
-			any_home_area_neighbor_country = {
-				tag = SOV
+		SOV = {
+			any_controlled_state = {
+				OR = {
+					has_state_flag = BUL_initial_bulgarian_state_flag
+					has_state_flag = BUL_historical_bulgarian_claim_flag
+				}
+				is_fully_controlled_by = PREV
 			}
 		}
 		SOV = {
-			any_state = {
+			any_controlled_state = {
 				is_core_of = GER
+				NOT = {
+					state = 188
+					state = 763
+					state = 5
+					state = 807
+					state = 85
+				}
 			}
-		}
-		SOV = {
-			surrender_progress < 0.2
 		}
 	}
 }
@@ -195,6 +213,15 @@ BUL_is_balkan_nation = {
 			original_tag = ALB
 			original_tag = ROM
 			original_tag = TUR
+			original_tag = SLV
+			original_tag = BOS
+			original_tag = HRZ
+			original_tag = MAC
+			original_tag = SER
+			original_tag = CRO
+			original_tag = KOS
+			original_tag = MNT
+			original_tag = TRA
 		}
 	}
 }
@@ -208,6 +235,15 @@ BUL_is_balkan_nation_no_bulgaria = {
 			original_tag = ALB
 			original_tag = ROM
 			original_tag = TUR
+			original_tag = SLV
+			original_tag = BOS
+			original_tag = HRZ
+			original_tag = MAC
+			original_tag = SER
+			original_tag = CRO
+			original_tag = KOS
+			original_tag = MNT
+			original_tag = TRA
 		}
 	}
 }
@@ -220,6 +256,15 @@ BUL_is_balkan_state = {
 		is_core_of = ALB
 		is_core_of = ROM
 		is_core_of = TUR
+		is_core_of = SLV
+		is_core_of = BOS
+		is_core_of = HRZ
+		is_core_of = MAC
+		is_core_of = SER
+		is_core_of = CRO
+		is_core_of = KOS
+		is_core_of = MNT
+		is_core_of = TRA
 	}
 	is_on_continent = europe
 }
@@ -229,6 +274,8 @@ BUL_has_abolished_monarchy = {
 		tooltip = BUL_has_abolished_monarchy_tt
 		OR = {
 			has_government = communism
+			has_completed_focus = BUL_overthrow_the_tsar
+			has_completed_focus = BUL_abolish_the_monarchy
 			has_completed_focus = BUL_depose_the_tsar
 		}
 	}
@@ -242,7 +289,87 @@ BUL_is_not_alone_in_faction = {
 			NOT = { tag = ROOT }
 		}
 	}
-}	
+}
+
+### AI ###
+
+BUL_is_historical_ai = {
+	OR = {
+		AND = {
+			is_historical_focus_on = yes
+			has_game_rule = {
+				rule = BUL_ai_behavior
+				option = DEFAULT
+			}
+		}
+		has_country_flag = BUL_AI_RANDOM_HISTORICAL
+		has_game_rule = {
+			rule = BUL_ai_behavior
+			option = HISTORICAL
+		}
+	}
+}
+
+BUL_is_communist_stalinist_ai = {
+	OR = {
+		has_country_flag = BUL_AI_RANDOM_COMMUNIST
+		has_game_rule = {
+			rule = BUL_ai_behavior 
+			option = COMMUNIST
+		}
+	}
+}
+
+BUL_is_communist_balkan_ai = {
+	OR = {
+		has_country_flag = BUL_AI_RANDOM_COMMUNIST_BALKAN_FEDERATION
+		has_game_rule = {
+			rule = BUL_ai_behavior 
+			option = COMMUNIST_BALKAN_FEDERATION
+		}
+	}
+}
+
+BUL_is_democratic_socialist_ai = {
+	OR = {
+		has_country_flag = BUL_AI_RANDOM_DEMOCRATIC_SOCIALIST
+		has_game_rule = {
+			rule = BUL_ai_behavior 
+			option = DEMOCRATIC_SOCIALIST
+		}
+	}
+}
+
+BUL_is_democratic_liberal_ai = {
+	OR = {
+		has_country_flag = BUL_AI_RANDOM_DEMOCRATIC_LIBERAL
+		has_game_rule = {
+			rule = BUL_ai_behavior 
+			option = DEMOCRATIC_LIBERAL
+		}
+	}
+}
+
+BUL_is_fascist_axis_ai = {
+	OR = {
+		has_country_flag = BUL_AI_RANDOM_FASCIST
+		has_game_rule = {
+			rule = BUL_ai_behavior 
+			option = FASCIST
+		}
+	}
+}
+
+BUL_is_monarchist_ferdinand_ai = {
+	OR = {
+		has_country_flag = BUL_AI_RANDOM_THE_RETURN_OF_FERDINAND
+		has_game_rule = {
+			rule = BUL_ai_behavior 
+			option = THE_RETURN_OF_FERDINAND
+		}
+	}
+}
+
 BUL_save_money_for_decisions = {
 	date < 1940.01.01
 	has_war = no
@@ -303,19 +430,21 @@ BUL_foreign_agreements_in_faction_with_ita = {
 		}
 	}
 }
+
 BUL_is_valid_subject = {
 	OR = {
 		is_subject = no
 		is_subject_of = BUL
 	}
 }
+
 BUL_has_some_sort_of_bogdan_filov = {
 	BUL = {
 		OR = {
 			has_idea = BUL_bogdan_filov
 			has_idea = BUL_bogdan_filov_fascism
 			has_country_leader = {
-				name = "Bogdan Filov" 
+				character = BUL_bogdan_filov
 				ruling_only = yes
 			}
 		}

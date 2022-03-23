@@ -22,9 +22,11 @@ MAN_banditry_category = {
 			}
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 714
-		}
+		} 
+}
 
 		cost = 0
 
@@ -64,9 +66,11 @@ MAN_banditry_category = {
 
 		cost = 0
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 714
-		}
+		} 
+}
 		visible = {
 			has_country_flag = MAN_northern_bandits
 		}
@@ -129,9 +133,11 @@ MAN_banditry_category = {
 			}
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 714
-		}
+		} 
+}
 
 		visible = {
 			
@@ -172,9 +178,11 @@ MAN_banditry_category = {
 			}
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 717
-		}
+		} 
+}
 
 		cost = 0
 
@@ -218,9 +226,11 @@ MAN_banditry_category = {
 
 		cost = 0
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 717
-		}
+		} 
+}
 
 		is_good = yes
 
@@ -281,9 +291,11 @@ MAN_banditry_category = {
 			}
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 717
-		}
+		} 
+}
 
 		visible = {
 			
@@ -324,9 +336,11 @@ MAN_banditry_category = {
 			}
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 610
-		}
+		} 
+}
 
 		cost = 0
 
@@ -366,9 +380,11 @@ MAN_banditry_category = {
 
 		cost = 0
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 610
-		}
+		} 
+}
 
 		visible = {
 			has_country_flag = MAN_western_bandits
@@ -433,9 +449,11 @@ MAN_banditry_category = {
 			}
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 610
-		}
+		} 
+}
 
 		visible = {
 			
@@ -498,7 +516,272 @@ MAN_banditry_category = {
 			}
 		}
 	}
+	MAN_recruit_bandits_north = {
+		icon = generic_civil_support
+
+		available = {
+			has_country_flag = MAN_northern_bandits
+			has_completed_focus = MAN_bolster_nationalism
+		}
+		visible = {
+			has_country_flag = MAN_northern_bandits
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 50
+		complete_effect = {
+			if = {
+				limit = {
+					not = {
+						has_country_flag = MAN_bandits_recruited
+					}
+				}
+				division_template = {
+					name = "Redemption Army"
+					priority = 1
+					is_locked = yes
+					division_names_group = MAN_CAV_01
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+					}
+				}
+				set_country_flag = MAN_bandits_recruited
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 714 }
+				create_unit = {
+					division = "name = \"1. Northern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+				create_unit = {
+					division = "name = \"2. Northern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+			}
+			clr_country_flag = MAN_northern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = MAN_eastern_bandits }
+					NOT = { has_country_flag = MAN_western_bandits }
+				}
+				remove_ideas = MAN_banditry
+			}
+		}
+	}
+	MAN_recruit_bandits_west = {
+		icon = generic_civil_support
+
+		available = {
+			has_country_flag = MAN_western_bandits
+			has_completed_focus = MAN_bolster_nationalism
+		}
+		visible = {
+			has_country_flag = MAN_western_bandits
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 50
+		complete_effect = {
+			if = {
+				limit = {
+					not = {
+						has_country_flag = MAN_bandits_recruited
+					}
+				}
+				division_template = {
+					name = "Redemption Army"
+					priority = 1
+					is_locked = yes
+					division_names_group = MAN_CAV_01
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+					}
+				}
+				set_country_flag = MAN_bandits_recruited
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 610 }
+				create_unit = {
+					division = "name = \"1. Western Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+				create_unit = {
+					division = "name = \"2. Western Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+			}
+			clr_country_flag = MAN_western_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = MAN_eastern_bandits }
+					NOT = { has_country_flag = MAN_northern_bandits }
+				}
+				remove_ideas = MAN_banditry
+			}
+		}
+	}
+	MAN_recruit_bandits_east = {
+		icon = generic_civil_support
+
+		available = {
+			has_country_flag = MAN_eastern_bandits
+			has_completed_focus = MAN_bolster_nationalism
+		}
+		visible = {
+			has_country_flag = MAN_eastern_bandits
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 50
+		complete_effect = {
+			if = {
+				limit = {
+					not = {
+						has_country_flag = MAN_bandits_recruited
+					}
+				}
+				division_template = {
+					name = "Redemption Army"
+					priority = 1
+					is_locked = yes
+					division_names_group = MAN_CAV_01
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+					}
+				}
+				set_country_flag = MAN_bandits_recruited
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 717 }
+				create_unit = {
+					division = "name = \"1. Eastern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+				create_unit = {
+					division = "name = \"2. Eastern Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+			}
+			clr_country_flag = MAN_eastern_bandits
+			if = {
+				limit = {
+					NOT = { has_country_flag = MAN_western_bandits }
+					NOT = { has_country_flag = MAN_northern_bandits }
+				}
+				remove_ideas = MAN_banditry
+			}
+		}
+	}
+	MAN_recruit_bandits_generic = {
+		icon = generic_civil_support
+
+		available = {
+		}
+		visible = {
+			has_completed_focus = MAN_bolster_nationalism
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 50
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					not = {
+						has_country_flag = MAN_bandits_recruited
+					}
+				}
+				division_template = {
+					name = "Redemption Army"
+					priority = 1
+					is_locked = yes
+					division_names_group = MAN_CAV_01
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+					}
+				}
+				set_country_flag = MAN_bandits_recruited
+			}
+			random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 328 }
+				create_unit = {
+					division = "name = \"1. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+				create_unit = {
+					division = "name = \"2. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+				create_unit = {
+					division = "name = \"3. Manchu Redemption Army\" division_template = \"Redemption Army\" start_experience_factor = 0.5" 
+					owner = MAN
+				}
+			}
+		}
+	}
+	MAN_release_bandits = {
+		icon = generic_civil_support
+
+		available = {
+			
+		}
+		visible = {
+			has_country_flag = MAN_bandits_recruited
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					not = {
+						has_completed_focus = MAN_independence_war
+					}
+					has_war = yes	
+				}
+				factor = 0
+			}
+		}
+		cost = 0
+		
+		complete_effect = {
+			add_manpower = 10000
+			delete_unit_template_and_units = { division_template = "Redemption Army" }
+			clr_country_flag = MAN_bandits_recruited
+		}
+	}
 }
+
 
 prospect_for_resources = {
 
@@ -513,9 +796,11 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation1
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 328
-		}
+		} 
+}
 
 		visible = {
 			has_completed_focus = MAN_develop_aluminum_sources
@@ -558,9 +843,11 @@ prospect_for_resources = {
 
 		}
 
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 716
-		}
+		} 
+}
 
 		available = {
 			has_tech = construction2

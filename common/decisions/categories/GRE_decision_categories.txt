@@ -93,4 +93,4 @@ GRE_faction_management_category = {
 #	}
 #	
 #	visible_when_empty = yes
-}
+#}

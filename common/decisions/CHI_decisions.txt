@@ -272,8 +272,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 283
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -495,8 +497,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 591
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -719,8 +723,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 592
+		}
 		}
 
 		visible = {
@@ -944,8 +950,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 593
+		}
 		}
 
 		visible = {
@@ -1169,8 +1177,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 594
+		}
 		}
 
 		visible = {
@@ -1394,8 +1404,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ 		highlight_state_targets = {
 			state = 595
+		}
 		}
 
 		visible = {
@@ -1619,8 +1631,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 596
+		}
 		}
 
 		visible = {
@@ -1844,8 +1858,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 597
+		}
 		}
 
 		visible = {
@@ -2069,8 +2085,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+            highlight_state_targets = {
 			state = 598
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -2293,8 +2311,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 599
+		}
 		}
 
 		visible = {
@@ -2518,8 +2538,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 600
+		}
 		}
 
 		visible = {
@@ -2743,8 +2765,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}	
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 602
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -2974,8 +2998,10 @@ CHI_industrial_evacuations = {
 				is_controlled_by = ROOT
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 606
+		}
 		}
 
 		fire_only_once = yes
@@ -3192,8 +3218,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 607
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -3416,8 +3444,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 608
+		}
 		}
 
 		visible = {
@@ -3641,8 +3671,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 613
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -3865,8 +3897,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 614
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -4089,8 +4123,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 616
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -4313,8 +4349,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 620
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations
@@ -4537,8 +4575,10 @@ CHI_industrial_evacuations = {
 				}
 			}
 		}
-		highlight_state_targets = {
+		highlight_states = {
+ highlight_state_targets = {
 			state = 743
+		}
 		}
 		visible = {
 			has_completed_focus = CHI_industrial_evacuations

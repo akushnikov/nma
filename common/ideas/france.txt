@@ -14,7 +14,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				conscription_factor = -0.25
 			}
@@ -31,7 +31,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				conscription_factor = -0.25
 				industrial_capacity_factory = -0.1
@@ -50,7 +50,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
@@ -69,7 +69,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
@@ -90,9 +90,9 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
-
+				
 			}
 		}
 		FRA_devalue_the_franc = {
@@ -107,7 +107,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				consumer_goods_factor = -0.05
 				stability_factor = -0.05
@@ -125,7 +125,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				local_resources_factor = 0.1
 			}
@@ -142,7 +142,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				political_power_gain = 0.25
 			}
@@ -159,7 +159,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				conscription_factor = 0.15
 			}
@@ -176,7 +176,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				research_speed_factor = 0.05
 				weekly_manpower = 1000
@@ -194,7 +194,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				send_volunteer_size = 3
 			}
@@ -211,7 +211,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				industrial_capacity_dockyard = 0.1
 				industrial_capacity_factory = 0.1
@@ -231,7 +231,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				army_attack_factor = 0.1
 				army_core_defence_factor = 0.25
@@ -249,7 +249,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				economy_cost_factor = -0.5
 				conversion_cost_civ_to_mil_factor = -0.5
@@ -267,7 +267,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				non_core_manpower = 0.03
 			}
@@ -284,7 +284,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				non_core_manpower = 0.08
 			}
@@ -301,7 +301,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				production_speed_industrial_complex_factor = 0.075
 			}
@@ -318,14 +318,14 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 			}
 		}
 		FRA_market_dynamism = {
-
+			
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -336,7 +336,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
@@ -355,7 +355,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				democratic_drift = -0.1
 			}
@@ -372,7 +372,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
 			}
@@ -390,13 +390,13 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				stability_weekly = 0.0025
 			}
 		}
 		FRA_counter_action = {
-			picture = generic_oppresion
+			picture = generic_oppression
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -407,13 +407,13 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				fascism_drift = -0.1
 			}
 		}
 		FRA_la_deluge = {
-
+			
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -424,7 +424,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				conscription = 0.03
 				conscription_factor = 0.25
@@ -443,7 +443,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			equipment_bonus = {
 				artillery_equipment = {
 					build_cost_ic = -0.1
@@ -452,7 +452,7 @@ ideas = {
 			}
 
 			modifier = {
-
+				
 			}
 		}
 		FRA_air_dominance = {
@@ -467,7 +467,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			equipment_bonus = {
 				fighter_equipment = {
 					build_cost_ic = -0.1
@@ -480,7 +480,7 @@ ideas = {
 			}
 
 			modifier = {
-
+				
 			}
 		}
 		FRA_flying_artillery = {
@@ -495,7 +495,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			equipment_bonus = {
 				tac_bomber_equipment = {
 					air_ground_attack = 0.15
@@ -508,7 +508,7 @@ ideas = {
 			}
 
 			modifier = {
-
+				
 			}
 		}
 		FRA_down_with_marianne = {
@@ -523,14 +523,14 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				democratic_drift = -0.1
 			}
 		}
 		FRA_up_with_jean_darc = {
 			picture = generic_fascism_drift_bonus
-
+			
 			allowed = {
 				original_tag = FRA #should probably be VIC
 				always = no
@@ -541,7 +541,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				fascism_drift = 0.075
 				neutrality_drift = 0.025
@@ -559,7 +559,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
 			}
@@ -577,7 +577,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				consumer_goods_factor = 0.2
 			}
@@ -595,7 +595,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				consumer_goods_factor = 0.15
 			}
@@ -613,7 +613,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				consumer_goods_factor = 0.1
 			}
@@ -630,7 +630,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				consumer_goods_factor = 0.05
 			}
@@ -647,7 +647,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				stability_factor = -0.1 #TODO_GABRIEL: replace with +15% resistance target in core states
 			}
@@ -665,7 +665,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.1
 			}
@@ -683,7 +683,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			equipment_bonus = {
 				tac_bomber_equipment = {
 					build_cost_ic = 0.25
@@ -726,10 +726,10 @@ ideas = {
 		VIC_aircraft_parts = {
 			picture = generic_bomber_production_diverted
 			allowed = {
-				original_tag = GER
+				original_tag = GER 
 				always = no
 			}
-			available = {
+			available = { 
 				OR = {
 					country_exists = VIC
 					any_country_with_original_tag = {
@@ -743,7 +743,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			equipment_bonus = {
 				tac_bomber_equipment = {
 					build_cost_ic = -0.05
@@ -796,9 +796,9 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.1 
 			}
 		}
 		FRA_legionary_service_order = {
@@ -813,7 +813,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				resistance_growth = -0.1
 			}
@@ -830,7 +830,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				resistance_growth = -0.2
 			}
@@ -847,7 +847,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				send_volunteer_size = 3
 			}
@@ -871,7 +871,7 @@ ideas = {
 				num_of_military_factories < 35
 			}
 			removal_cost = -1
-
+			
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 			}
@@ -888,7 +888,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.05
 			}
@@ -905,7 +905,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				license_purchase_cost = -0.5
 			}
@@ -913,7 +913,7 @@ ideas = {
 		FRA_defeatism = {
 			picture = generic_army_problems
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -922,7 +922,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				conscription_factor = -0.5
 				resistance_growth_on_our_occupied_states  = -0.25
@@ -932,7 +932,7 @@ ideas = {
 		FRA_maquis = {
 			picture = MEX_politicised_army
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -941,15 +941,15 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
-				resistance_growth_on_our_occupied_states  = 0.1
+				resistance_growth_on_our_occupied_states  = 0.1 
 			}
 		}
 		FRA_connections_to_trade_unions = {
 			picture = generic_volunteer_expedition_bonus
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -958,15 +958,15 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
-				resistance_growth_on_our_occupied_states  = 0.1
+				resistance_growth_on_our_occupied_states  = 0.1 
 			}
 		}
 		FRA_communist_cooperation = {
 			picture = hol_haven_of_tolerance
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -978,9 +978,9 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
-				resistance_growth_on_our_occupied_states = 0.1
+				resistance_growth_on_our_occupied_states = 0.1 
 				communism_drift = 0.05
 			}
 		}
@@ -988,7 +988,7 @@ ideas = {
 			name = FRA_communist_cooperation
 			picture = hol_haven_of_tolerance
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -997,15 +997,15 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
-				resistance_growth_on_our_occupied_states = 0.1
+				resistance_growth_on_our_occupied_states = 0.1 
 			}
 		}
 		FRA_industrialist_connections = {
 			picture = man_five_year_plan_industry
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -1014,7 +1014,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				compliance_growth_on_our_occupied_states = -0.15
 			}
@@ -1022,7 +1022,7 @@ ideas = {
 		FRA_civil_and_military_organization = {
 			picture = FRA_scw_intervention_nationalists_focus
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -1031,7 +1031,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				compliance_growth_on_our_occupied_states = -0.15
 				resistance_growth_on_our_occupied_states  = 0.05
@@ -1040,7 +1040,7 @@ ideas = {
 		FRA_national_council_of_the_resistance = {
 			picture = FRA_national_resistance_council
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -1049,7 +1049,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				compliance_growth_on_our_occupied_states = -0.25
 				resistance_growth_on_our_occupied_states  = 0.1
@@ -1058,7 +1058,7 @@ ideas = {
 		FRA_national_uprising = {
 			picture = generic_intel_bonus
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -1067,7 +1067,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				no_supply_grace = 336
 				equipment_capture = 0.35
@@ -1076,7 +1076,7 @@ ideas = {
 		FRA_colonial_recruitment = {
 			picture = generic_manpower_bonus
 			allowed = {
-				original_tag = FRA
+				original_tag = FRA 
 				always = no
 			}
 
@@ -1085,14 +1085,14 @@ ideas = {
 			}
 
 			removal_cost = -1
-
+			
 			modifier = {
 				non_core_manpower = 0.05
 			}
 		}
 
 		FRA_victors_of_wwi = {
-
+			
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -1105,18 +1105,16 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_victors_of_ww1
-
-			research_bonus = {
-				land_doctrine = -0.75
-			}
+			
 			modifier = {
 				conscription = -0.003
 				war_support_factor = -0.05
+				land_doctrine_cost_factor = 0.5
 			}
 		}
 
 		FRA_disjointed_government = {
-
+			
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -1129,7 +1127,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_disjointed_gov
-
+			
 			modifier = {
 				political_power_cost = 0.8
 				stability_factor = -0.10
@@ -1138,7 +1136,7 @@ ideas = {
 		}
 
 		FRA_the_young_school = {
-
+			
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -1151,14 +1149,14 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_navy_bonus
-
+			
 			modifier = {
 				industrial_capacity_dockyard = 0.05
 			}
 		}
 
 		FRA_protected_by_the_maginot_line = {
-
+			
 			allowed = {
 				always = no
 			}
@@ -1178,7 +1176,7 @@ ideas = {
 								has_government = communism
 							}
 						}
-						AND = {
+						AND = {	
 							has_government = fascism
 							GER = {
 								has_government = fascism
@@ -1191,7 +1189,7 @@ ideas = {
 			removal_cost = -1
 
 			picture = generic_wall_line
-
+			
 			modifier = {
 				max_planning = 0.25
 				planning_speed = -0.25
@@ -1199,7 +1197,7 @@ ideas = {
 		}
 
 		FRA_infantry_focus = {
-
+		
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -1210,7 +1208,7 @@ ideas = {
 			}
 
 			picture = generic_infantry_bonus
-
+			
 			removal_cost = -1
 
 			equipment_bonus = {
@@ -1221,7 +1219,7 @@ ideas = {
 		}
 
 		FRA_fortification_focus = {
-
+		
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -1230,7 +1228,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+			
 			removal_cost = -1
 
 			modifier = {
@@ -1240,7 +1238,7 @@ ideas = {
 		}
 
 		FRA_motorized_focus = {
-
+		
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -1249,7 +1247,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
-
+			
 			removal_cost = -1
 
 			equipment_bonus = {
@@ -1315,9 +1313,9 @@ ideas = {
 				conscription = 0.01
 				army_morale_factor = 0.10
 			}
-		}
+		}		
 		FRA_support_the_centre_focus = {
-				picture = generic_democratic_drift_bonus
+				picture = generic_democratic_drift_bonus				
 				allowed = {
 					always = no # Added via focus
 				}
@@ -1329,7 +1327,7 @@ ideas = {
 				modifier = {
 					democratic_drift = 0.2
 				}
-		}
+		}		
 
 		FRA_strengthen_government_support_focus = {
 				picture = generic_pp_unity_bonus
@@ -1342,9 +1340,9 @@ ideas = {
 				}
 
 				modifier = {
-					stability_weekly = 0.002
+					stability_weekly = 0.002					
 				}
-		}
+		}		
 		FRA_support_the_right_focus = {
 				picture = generic_fascism_drift_bonus
 				allowed = {
@@ -1458,744 +1456,116 @@ ideas = {
 				communism_drift = -0.25
 			}
 		}
-
+		
 	}
-
-	# POLITICAL
-	political_advisor = {
-
-
-		leon_blum = {
-
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			available = {
-				not = { has_country_leader = { name = "Philippe Pétain" ruling_only = yes } }
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			traits = { democratic_reformer }
-
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-
-		georges_bonnet = {
-
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			available = {
-				has_completed_focus = FRA_buy_time
-				has_government = democratic
-			}
-			cost = 75
-			traits = { appeaser }
-
-			do_effect = {
-
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-
-		FRA_pierre_pucheu = {
-
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			available = {
-				not = { has_government = communism }
-			}
-			cost = 150
-			traits = { technocrat }
-
-			do_effect = {
-
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_gaston_henry_haye = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			picture = generic_political_advisor_europe_5
-
-			traits = { silent_workhorse }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_jacques_duclos = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			picture = generic_political_advisor_europe_3
-
-			traits = { backroom_backstabber }
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-
-		FRA_paul_baudouin = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			traits = { smooth_talking_charmer }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_vincent_auriol = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-			available = { has_completed_focus = FRA_form_the_popular_front }
-
-
-			traits = { financial_expert }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_roger_salengro = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-			available = { has_completed_focus = FRA_form_the_popular_front }
-
-
-			traits = { compassionate_gentleman }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_zivony_peshkov = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			picture = generic_army_europe_5
-
-			traits = { war_industrialist }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_felix_gouin = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			picture = generic_political_advisor_europe_3
-
-			traits = { captain_of_industry }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_charles_tillon = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			picture = generic_political_advisor_europe_3
-
-			traits = { armaments_organizer }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_paul_reynaud = {
-
-			allowed = {
-				original_tag = "FRA"
-			}
-
-			picture = generic_political_advisor_europe_3
-
-			traits = { quartermaster_general }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_maurice_gauche = {
-
-			picture = generic_political_advisor_europe_3
-
-			available = {
-				has_intelligence_agency = yes
-			}
-
-			allowed = {
-				original_tag = FRA
-				has_dlc = "La Resistance"
-			}
-
-			traits = { head_of_intelligence }
-
-		}
-
-	}
-
-	# MILITARY
-	army_chief = {
-
-
-		maurice_gamelin = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-			available = {
-				has_completed_focus = FRA_aggressive_focus
-			}
-
-			cost = 50
-
-			traits = { army_chief_offensive_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		maxime_weygand = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-			available = {
-				has_completed_focus = FRA_defensive_focus
-			}
-
-			cost = 50
-
-			traits = { army_chief_defensive_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_henri_marie_auguste_bineau = {
-
-			picture = generic_army_europe_3
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { army_chief_offensive_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		FRA_pierre_alombert_goget = {
-
-			picture = generic_army_europe_1
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { army_chief_defensive_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		alphonse_georges = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { army_chief_maneuver_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	navy_chief = {
-
-		francois_darlan = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { navy_chief_decisive_battle_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		marcel_gensoul = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { navy_chief_naval_aviation_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		jean_marie_abrial = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { navy_chief_commerce_raiding_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-	air_chief = {
-
-		joseph_vuillemin = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { air_chief_ground_support_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		robert_odic = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { air_chief_all_weather_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		philippe_fequant = {
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { air_chief_reform_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
-	high_command = {
-
-		rene_prioux = {
-			ledger = army
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { army_cavalry_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		charles_huntziger = {
-			ledger = army
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { army_logistics_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		philippe_leclerc = {
-			ledger = army
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { army_commando_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		alfred_heurtaux = {
-			ledger = air
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { air_air_combat_training_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		martial_valin = {
-			ledger = air
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { air_air_superiority_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		jean_francois_jannekeyn = {
-			ledger = air
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { air_tactical_bombing_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		jean_de_laborde = {
-			ledger = navy
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { navy_capital_ship_1 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		emile_muselier = {
-			ledger = navy
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { navy_fleet_logistics_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		rene_emile_godfroy = {
-			ledger = navy
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-
-			traits = { navy_screen_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
-
+	
 	tank_manufacturer = {
 
 		designer = yes
-
+	
 		# TECHNOLOGY
 		renault_fra = {
-
+		
 			picture = renault
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				armor = 0.15
 			}
-
+			
 
 			traits = { heavy_tank_manufacturer }
 		}
-
+	
 		FRA_AMX = {
-
+		
 			picture = generic_tank_manufacturer_2
 
 			available = {
 				has_completed_focus = FRA_army_reform
 			}
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				armor = 0.15
 			}
-
+			
 
 			traits = { fast_tank_manufacturer }
 		}
 		FRA_hotchkiss = {
-
+		
 			picture = generic_tank_manufacturer_3
 
 			available = {
 				has_completed_focus = FRA_infantry_tanks
 			}
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				armor = 0.15
 			}
-
+			
 
 			traits = { infantry_tank_manufacturer }
 		}
 
 		FRA_APX = {
 			picture = FRA_atelier_puteaux
-
+			
 
 			available = {
-
+				
 			}
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				armor = 0.15
 			}
-
+			
 
 			traits = { medium_tank_manufacturer }
 		}
 		FRA_panhard = {
-
+			
 
 			available = {
-
+				
 			}
 
-
+						
 			allowed = {
 				original_tag = FRA
 				has_dlc = "La Resistance"
 			}
-
+						
 			research_bonus = {
 				armor = 0.15
 			}
-
+			
 
 			traits = { armored_car_manufacturer }
 		}
 	}
-
+	
 	materiel_manufacturer = {
-
+			
 		designer = yes
-
+		
 		somua = {
-
+		
 			allowed = {
 				original_tag = FRA
 			}
@@ -2203,360 +1573,227 @@ ideas = {
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-
+			
 			traits = { motorized_equipment_manufacturer }
 
 		}
-
+		
 		mas = {
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-
+			
 			traits = { infantry_equipment_manufacturer }
 		}
-
+	
 		schneider = {
-
+						
 			allowed = {
 				original_tag = FRA
-			}
-
+			}		
+			
 			research_bonus = {
 				artillery = 0.15
 			}
-
+			
 			traits = { artillery_manufacturer }
 		}
 	}
-
+	
 	aircraft_manufacturer = {
-
+			
 		designer = yes
-
+		
 		morane_saulnier = {
-
+			
 			allowed = {
 				original_tag = FRA
 			}
-
+			
 			research_bonus = {
 				air_equipment = 0.1
 			}
-
+			
 			traits = { light_aircraft_manufacturer }
 		}
-
+		
 		bloch = {
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				air_equipment = 0.1
 			}
-
+			
 			traits = { medium_aircraft_manufacturer }
 		}
-
+		
 		amiot = {
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				air_equipment = 0.1
 			}
-
+			
 			traits = { heavy_aircraft_manufacturer }
 		}
-
+		
 		levasseur = {
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				air_equipment = 0.1
 			}
-
+			
 			traits = { naval_aircraft_manufacturer }
 		}
 		SNCAN = {
-			picture = FRA_sncan
+			picture = FRA_sncan		
 			allowed = {
 				original_tag = FRA
 			}
-			available = { has_country_flag = FRA_SNCAN_formed }
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCAN_formed }	
 			research_bonus = {
 				air_equipment = 0.2
 			}
-
+			
 			traits = { heavy_aircraft_manufacturer }
 		}
 		SNCAO = {
-			picture = FRA_sncao
+			picture = FRA_sncao			
 			allowed = {
 				original_tag = FRA
 			}
-			available = { has_country_flag = FRA_SNCAO_formed }
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCAO_formed }	
 			research_bonus = {
 				air_equipment = 0.2
 			}
-
+			
 			traits = { medium_aircraft_manufacturer }
 		}
 		SNCASE = {
-			picture = FRA_sncase
+			picture = FRA_sncase		
 			allowed = {
 				original_tag = FRA
 			}
-
-			available = { has_country_flag = FRA_SNCASE_formed }
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCASE_formed }	
 			research_bonus = {
 				air_equipment = 0.2
 			}
-
+			
 			traits = { light_aircraft_manufacturer }
 		}
 		SNCASO = {
-			picture = FRA_sncaso
+			picture = FRA_sncaso		
 			allowed = {
 				original_tag = FRA
 			}
-			available = { has_country_flag = FRA_SNCASO_formed }
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCASO_formed }	
 			research_bonus = {
 				air_equipment = 0.2
 			}
-
+			
 			traits = { naval_aircraft_manufacturer }
 		}
 		SNCAC = {
-			picture = FRA_sncac
+			picture = FRA_sncac			
 			allowed = {
 				original_tag = FRA
 			}
-			available = { has_country_flag = FRA_SNCAC_formed }
+			visible = { has_completed_focus = FRA_reorganize_the_aviation_industry }	
+			available = { has_country_flag = FRA_SNCAC_formed }	
 			research_bonus = {
 				air_equipment = 0.3
 			}
-
+			
 			traits = { aircraft_manufacturer }
 		}
-
+		
 	}
 	naval_manufacturer = {
 
 		designer = yes
-
+		
 		fcm = {
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-
+			
 			traits = { mediterranean_naval_manufacturer }
 		}
 		aeb = {
-			picture = FRA_aeb
+			picture = FRA_aeb		
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-
+			
 			traits = { convoy_escort_naval_manufacturer }
 		}
 		acl = {
-			picture = FRA_acl
+			picture = FRA_acl	
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-
+			
 			traits = { atlantic_fleet_naval_manufacturer }
 		}
 		acf = {
-			picture = FRA_acf
+			picture = FRA_acf			
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-
+			
 			traits = { raiding_fleet_naval_manufacturer }
 		}
 	}
-
-	industrial_concern = {
-
+	
+	industrial_concern = {	
+		
 		famh = {
-
+						
 			allowed = {
 				original_tag = FRA
 			}
-
+						
 			research_bonus = {
 				industry = 0.15
 			}
-
+			
 			traits = { industrial_concern }
-		}
-	}
-
-
-	theorist = {
-		charles_de_gaulle = {
-			ledger = army
-
-			allowed = {
-				original_tag = FRA
-			}
-			available = {
-				has_completed_focus = FRA_battle_of_maneuver
-			}
-
-			cost = 75
-
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-
-			traits = { blitzkrieg_theorist }
-
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-
-					GER = { is_ai = yes }
-					date < 1939.1.1
-				}
-			}
-
-		}
-
-		henri_giraud = {
-			ledger = army
-
-			allowed = {
-				original_tag = FRA
-			}
-
-			research_bonus = {
-				land_doctrine = 0.10
-			}
-
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 0
-
-					GER = { is_ai = yes }
-					date < 1939.1.1
-				}
-			}
-
-			traits = { military_theorist }
-		}
-
-		louis_kahn = {
-			ledger = navy
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-			cost = 250
-
-			research_bonus = {
-				cat_fleet_in_being = 0.15
-			}
-
-			traits = { grand_fleet_proponent }
-		}
-
-		jean_decoux = {
-			ledger = navy
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-			research_bonus = {
-				naval_doctrine = 0.10
-			}
-
-			traits = { naval_theorist }
-		}
-
-		victor_denain = {
-			ledger = air
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-			cost = 250
-
-			research_bonus = {
-				cat_operational_integrity = 0.15
-			}
-
-			traits = { assault_avaition }
-		}
-
-		jean_marie_bergeret = {
-			ledger = air
-
-			allowed = {
-				original_tag = FRA
-			}
-
-			research_bonus = {
-				air_doctrine = 0.10
-			}
-
-			traits = { air_warfare_theorist }
-		}
-
-		frederic_irene_joliot_curie = {
-			ledger = army
-
-
-			allowed = {
-				original_tag = FRA
-			}
-
-
-			research_bonus = {
-				nuclear = 0.15
-			}
-
-			traits = { nuclear_scientist }
 		}
 	}
 }
