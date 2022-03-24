@@ -32,7 +32,7 @@ country_event = {
 
 		hidden_effect = {
 			# Moving capital to Burgos
-			set_capital = 176
+			set_capital = {state =176 }
 			# Deleting cheat units
 			delete_unit_template_and_units = { division_template = "Brigada Legionario" }
 
@@ -346,7 +346,7 @@ country_event = {
 	option = {
 		ai_chance = { factor = 1 }
 		name = spain.8.a
-		set_capital = 41
+		set_capital = {state = 41 }
 	}
 	option = {
 		ai_chance = { factor = 0 }
