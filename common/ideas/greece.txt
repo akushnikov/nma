@@ -793,27 +793,6 @@ ideas = {
 			}
 		}
 
-		GRE_cooperate_with_foreign_monopolies_spirit = {
-				
-			allowed = {
-				original_tag = GRE
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			picture = generic_deal_with_the_devil2
-				
-			removal_cost = -1
-				
-			modifier = {
-				economy_cost_factor	= -0.25	
-				trade_laws_cost_factor = -0.25
-				research_speed_factor = 0.05
-				trade_opinion_factor = 0.3
-			}
-		}
 
 		GRE_eee_in_government = {
 				
@@ -1920,32 +1899,6 @@ ideas = {
 			}
 		}
 
-		GRE_fiat = {	
-		
-			picture = fiat
-
-			allowed = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = {
-				has_completed_focus = GRE_rapprochement_with_the_italians
-				NOT = { has_war_with = ITA }
-			}
-
-			cost = 120
-			
-			research_bonus = {
-				armor = 0.1
-			}
-			
-			traits = { infantry_tank_manufacturer }
-				
-			ai_will_do = {
-				factor = 1
-			}
-		}
 
 		GRE_vickers_armstrong = {
 		
@@ -2166,29 +2119,6 @@ ideas = {
 			}
 		}
 
-		GRE_english_electric = {
-			
-			picture = english_electric
-
-			allowed = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}			
-
-			available = { 
-				has_completed_focus = GRE_cooperate_with_foreign_monopolies
-				NOT = { has_war_with = ENG }
-			}
-
-			cost = 120
-			
-			research_bonus = {
-				industry = 0.15
-			}
-			
-			traits = { british_industrial_benefactor }
-			
-		}
 
 		GRE_siemens = {
 			
@@ -2408,28 +2338,6 @@ ideas = {
 			traits = { motorized_equipment_manufacturer }
 		}
 
-		GRE_grabin_design_bureau = {
-
-			picture = grabin_design_bureau
-			
-			allowed = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = {
-				NOT = { has_war_with = SOV }
-				has_completed_focus = GRE_appeal_to_the_soviet_union
-			}
-
-			cost = 120
-			
-			research_bonus = {
-				artillery = 0.15
-			}
-			
-			traits = { artillery_manufacturer }
-		}
 	}
 
 	hidden_ideas = {
