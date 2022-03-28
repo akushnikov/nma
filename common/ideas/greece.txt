@@ -2120,32 +2120,6 @@ ideas = {
 		}
 
 
-		GRE_siemens = {
-			
-			picture = siemens
-
-			allowed = {
-				original_tag = GRE
-				has_dlc = "Battle for the Bosporus"
-			}
-
-			available = { 
-				has_completed_focus = GRE_cooperate_with_foreign_monopolies
-				NOT = { has_war_with = GER }
-			}
-
-			cost = 120
-			
-			research_bonus = {
-				electronics = 0.15
-			}
-			
-			traits = { german_technological_patron }
-
-			modifier = { 
-				min_export = 0.05
-			}
-		}
 
 		GRE_pitsos = {
 			
