@@ -177,10 +177,7 @@ characters={
 					OR = {
 						has_government = democratic
 						has_country_flag = LAT_AI_RANDOM_DEMOCRATIC
-						has_game_rule = {
-						#	rule = LAT_ai_behavior
-							option = DEMOCRATIC
-						}
+						
 					}
 				}
 			}

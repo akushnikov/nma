@@ -134,16 +134,10 @@ characters={
 						OR = {
 							AND = {
 								is_historical_focus_on = yes
-								has_game_rule = {
-								#	rule = LIT_ai_behavior
-									option = FASCIST
-								}
+								
 							}
 							has_country_flag = LIT_AI_RANDOM_FASCIST
-							has_game_rule = {
-							#	rule = LIT_ai_behavior
-								option = FASCIST
-							}
+							
 						}
 					}
 					modifier = { #I'm late to the fascist party 
@@ -151,16 +145,9 @@ characters={
 						OR = {
 							AND = {
 								is_historical_focus_on = yes
-								has_game_rule = {
-								#	rule = LIT_ai_behavior
-									option = FASCIST
-								}
+								
 							}
-							has_country_flag = LIT_AI_RANDOM_FASCIST
-							has_game_rule = {
-							#	rule = LIT_ai_behavior
-								option = FASCIST
-							}
+							
 						}
 						date > 1937.1.1
 						fascism < 0.4
@@ -232,7 +219,7 @@ characters={
 					limit = {
 						has_DLC = "No Step Back"
 					}
-					has_completed_focus = LIT_integrate_the_opposition
+				#	has_completed_focus = LIT_integrate_the_opposition
 				}
 			}
 			traits = {
@@ -245,10 +232,7 @@ characters={
 					OR = {
 						has_government = democratic
 						has_country_flag = LIT_AI_RANDOM_DEMOCRATIC
-						has_game_rule = {
-						#	rule = LIT_ai_behavior
-							option = DEMOCRATIC
-						}
+						
 					}
 				}
 			}
@@ -824,16 +808,10 @@ characters={
 					OR = {
 						AND = {
 							is_historical_focus_on = yes
-							has_game_rule = {
-							#	rule = LIT_ai_behavior
-								option = FASCIST
-							}
+							
 						}
 						has_country_flag = LIT_AI_RANDOM_FASCIST
-						has_game_rule = {
-						#	rule = LIT_ai_behavior
-							option = FASCIST
-						}
+						
 					}
 				}
 				modifier = { #I'm late to the fascist party 
@@ -841,16 +819,10 @@ characters={
 					OR = {
 						AND = {
 							is_historical_focus_on = yes
-							has_game_rule = {
-							#	rule = LIT_ai_behavior
-								option = FASCIST
-							}
+							
 						}
 						has_country_flag = LIT_AI_RANDOM_FASCIST
-						has_game_rule = {
-						#	rule = LIT_ai_behavior
-							option = FASCIST
-						}
+						
 					}
 					date > 1937.1.1
 					fascism < 0.4

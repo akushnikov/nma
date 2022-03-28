@@ -120,10 +120,10 @@ characters={
 					OR = {
 						has_government = democratic
 						has_country_flag = EST_AI_RANDOM_DEMOCRATIC
-						has_game_rule = {
-						#	rule = EST_ai_behavior
-							option = DEMOCRATIC
-						}
+					#	has_game_rule = {
+					#		rule = EST_ai_behavior
+					#		option = DEMOCRATIC
+					#	}
 					}
 				}
 			}
@@ -671,7 +671,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-		#		has_completed_focus = BALTIC_revolutionary_cabinet 
+			#	has_completed_focus = BALTIC_revolutionary_cabinet 
 			}
 			traits = {
 				socialist_justice 
@@ -717,7 +717,7 @@ characters={
 				has_dlc = "No Step Back"
 			}
 			available = {
-		#		has_completed_focus = EST_veterans_government 
+			#	has_completed_focus = EST_veterans_government 
 			}
 			traits = {
 				vapsid_economist 
