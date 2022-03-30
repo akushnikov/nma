@@ -2371,8 +2371,8 @@ characters = {
 					has_global_flag = SOV_soviet_civil_war_over
 				}
 				OR = {
-					has_completed_focus = SOV_integrate_smirnovs_bloc
-					has_completed_focus = SOV_return_democracy_to_the_party
+				#	has_completed_focus = SOV_integrate_smirnovs_bloc
+				#	has_completed_focus = SOV_return_democracy_to_the_party
 				}
 				is_country_leader = no
 				if = {
@@ -2942,7 +2942,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_align_the_zinovyevites
+			#	has_completed_focus = SOV_align_the_zinovyevites
 				OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
@@ -3067,7 +3067,7 @@ characters = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_liberate_ryutin
+			#	has_completed_focus = SOV_liberate_ryutin
 				OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
@@ -3181,10 +3181,7 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 0
 			visible = {
-				OR = {
-					has_idea = SOV_grigory_semyonov
-					has_completed_focus = SOV_approach_semyonov
-				}
+				has_character_flag = SOV_exiled_flag
 			}
 		}
 
@@ -3203,13 +3200,13 @@ characters = {
 					custom_trigger_tooltip = {
 					 	tooltip = SOV_grigory_semyonov_man_tt
 					 	SOV_soviet_civil_war_not_started = yes 
-					 	NOT = { SOV = { has_completed_focus = SOV_approach_semyonov } }
+					 #	NOT = { SOV = { has_completed_focus = SOV_approach_semyonov } }
 					}
 				}
 				
 				if = {
 					limit = { tag = SOV }
-					has_completed_focus = SOV_approach_semyonov
+				#	has_completed_focus = SOV_approach_semyonov
 				}
 				if = {
 					limit = {
@@ -3250,7 +3247,7 @@ characters = {
 				original_tag = SOV
 			}
 			available = {
-				has_completed_focus = SOV_consolidate_power
+				has_character_flag = SOV_exiled_flag
 			}
 			traits = {
 				political_chameleon
