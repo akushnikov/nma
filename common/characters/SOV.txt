@@ -78,47 +78,6 @@ characters = {
 		}
 	}
 
-	SOV_metropolitan_meletius = {
-		name = SOV_metropolitan_meletius
-		portraits = {
-			civilian = {
-				large = "GFX_portrait_SOV_patriarch_meletius"
-			}
-			army = {
-				small = "GFX_idea_SOV_patriarch_meletius"
-			}
-		}
-		country_leader = {
-			ideology = despotism
-			expire = "1953.3.1.1"
-			id = -1
-			traits = {
-				defier_of_the_sun_god supreme_representative_of_god_on_earth
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = SOV_patriarch_meletius
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-				has_completed_focus = SOV_beaten_but_not_defeated
-				NOT = {
-					has_completed_focus = SOV_the_third_rome
-				}
-			}
-			available = {
-				has_completed_focus = SOV_the_hands_do
-				NOT = {
-					has_completed_focus = SOV_the_third_rome
-				}
-			}
-			traits = {
-				the_masses_opium
-			}
-		}	
-	}
 
 	SOV_supreme_soviet = { #Country Leader role added via focus
 		name = SOV_supreme_soviet

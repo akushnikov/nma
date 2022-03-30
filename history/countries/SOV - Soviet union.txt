@@ -3,7 +3,9 @@
 #### NO STEP BACK
 ####
 
-
+add_ideas = {
+	sov_fast_war
+}
 #You don't want Russian party names? Just remove these lines
 set_party_name = {
 	ideology = communism
@@ -136,14 +138,14 @@ if = {
 	# recruit_character = SOV_grigory_semyonov # starts as an advisor to Puyi
 	recruit_character = SOV_metropolitan_anastasy
 	recruit_character = SOV_metropolitan_nikolay
-	
-	# recruit_character = SOV_aleksandr_kazembek
+	recruit_character = SOV_nikolay_ustryalov
+	recruit_character = SOV_aleksandr_kazembek
 	recruit_character = SOV_metropolitan_aleksy
 	recruit_character = SOV_metropolitan_meletius
-	#recruit_character = SOV_aleksandr_prokofyev_seversky
-	# recruit_character = SOV_vyacheslav_tkachyov
-	# recruit_character = SOV_yan_nagursky
-	# recruit_character = SOV_vasily_yanchenko
+	recruit_character = SOV_aleksandr_prokofyev_seversky
+	recruit_character = SOV_vyacheslav_tkachyov
+	recruit_character = SOV_yan_nagursky
+	recruit_character = SOV_vasily_yanchenko
 	recruit_character = SOV_tsar_vladimir_kirillovich
 
 	recruit_character = SOV_pyotr_krasnov
@@ -196,11 +198,62 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	
-	}
+	# SOV_metropolitan_anastasy = { #Priests are not political enemies at this point
+	#	set_character_flag = SOV_safe_from_purge_flag
+	# }
+#	SOV_metropolitan_nikolay = { #Priests are not political enemies at this point
+#		set_character_flag = SOV_safe_from_purge_flag
+#	}
+#	SOV_metropolitan_aleksy = { #Priests are not political enemies at this point
+#		set_character_flag = SOV_safe_from_purge_flag
+#	}
+#	SOV_metropolitan_meletius = { #Priests are not political enemies at this point (Also exiled)
+#		set_character_flag = SOV_safe_from_purge_flag
+#	}
 	SOV_anastasy_vonsyatsky = { #Not in the country
 		set_character_flag = SOV_exiled_flag
 	}
+#	SOV_aleksandr_kazembek = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#	}
+#	SOV_aleksandr_prokofyev_seversky = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#	}
+#	SOV_vyacheslav_tkachyov = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#	}
+#	SOV_yan_nagursky = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#	}
+#	SOV_vasily_yanchenko = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#	}
+#	SOV_anton_denikin = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#		set_character_flag = SOV_exiled_army_leader
+#	}
+#	SOV_pyotr_krasnov = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#		set_character_flag = SOV_exiled_army_leader
+#	}
+#	SOV_konstantin_nechayev = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#		set_character_flag = SOV_exiled_army_leader
+#	}
+#	SOV_vladimir_kosmin = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#		set_character_flag = SOV_exiled_army_leader
+#	}
+#	SOV_aleksandr_rodzyanko = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#		set_character_flag = SOV_exiled_army_leader
+#	}
+#	SOV_andrey_shkuro = { #Not in the country
+#		set_character_flag = SOV_exiled_flag
+#		set_character_flag = SOV_exiled_army_leader
+#	}
+	
+	
 }
 
 
@@ -247,7 +300,28 @@ if = {
 		set_character_flag = SOV_exiled_flag
 	}
 	 
-	
+	SOV_nikolay_ustryalov = {
+		set_character_flag = SOV_aligned_the_exiles_flag
+	}
+#	SOV_aleksandr_kazembek = {
+#		set_character_flag = SOV_aligned_the_exiles_flag
+#	}
+#	SOV_aleksandr_prokofyev_seversky = {
+#		set_character_flag = SOV_aligned_the_exiles_flag
+#		set_character_flag = SOV_exiled_military_advisor_flag
+#	}
+#	SOV_vyacheslav_tkachyov = {
+#		set_character_flag = SOV_aligned_the_exiles_flag
+#		set_character_flag = SOV_exiled_military_advisor_flag
+#	}
+#	SOV_yan_nagursky = {
+#		set_character_flag = SOV_aligned_the_exiles_flag
+#		set_character_flag = SOV_exiled_military_advisor_flag
+#	}
+#	SOV_vasily_yanchenko = {
+#		set_character_flag = SOV_aligned_the_exiles_flag
+#		set_character_flag = SOV_exiled_military_advisor_flag
+#	}
 }
 
 #Initialize character flags Part III (aka who's in prison)
@@ -282,30 +356,34 @@ set_variable = { SOV_poster_center_icon_frame = SOV_propaganda_locked_slot_index
 set_variable = { SOV_poster_right_icon_frame = SOV_propaganda_locked_slot_index } #Set up the appropriate locked slot GFX
 
 set_variable = { SOV_default_propaganda_campaign_duration = 180 } #Duration days for propaganda campaigns
+set_variable = { SOV_default_propaganda_campaign_duration_2 = 60 } #Duration days for propaganda campaigns
+set_variable = { SOV_default_propaganda_campaign_duration_3 = 90 } #Duration days for propaganda campaigns
 set_variable = { SOV_default_propaganda_campaign_cooldown = 90 } #Days of cooldown after a Propaganda Campaign has been finished.
+set_variable = { SOV_default_propaganda_campaign_cooldown_2 = 60 } #Days of cooldown after a Propaganda Campaign has been finished.
 set_variable = { SOV_default_propaganda_campaign_old_days = 150 } #A propaganda poster will age (change GFX) after this amount of days have passed since the campaign was activated
 set_variable = { SOV_propaganda_cost = 15 } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
+set_variable = { SOV_propaganda_cost_2 = 5 } #Used not only to set the rest of propaganda campaign costs here, but also used to increase each campaign cost after being activated
 set_variable = { SOV_propaganda_cost_increase = 2 } #This will multiply the regular propaganda_cost each time a propaganda campaign is activated, so that it's cost is increased
-set_variable = { SOV_propaganda_motherland_calls_cost = SOV_propaganda_cost } # ID = 2
-set_variable = { SOV_propaganda_victory_at_hand_cost = SOV_propaganda_cost } # ID = 3
-set_variable = { SOV_propaganda_defend_moscow_cost = SOV_propaganda_cost } # ID = 4
-set_variable = { SOV_propaganda_fight_to_the_last_cost = SOV_propaganda_cost } # ID = 5
-set_variable = { SOV_propaganda_hit_of_hammer_cost = SOV_propaganda_cost } # ID = 6
+set_variable = { SOV_propaganda_motherland_calls_cost = SOV_propaganda_cost_2 } # ID = 2
+set_variable = { SOV_propaganda_victory_at_hand_cost = SOV_propaganda_cost_2 } # ID = 3
+set_variable = { SOV_propaganda_defend_moscow_cost = SOV_propaganda_cost_2 } # ID = 4
+set_variable = { SOV_propaganda_fight_to_the_last_cost = SOV_propaganda_cost_2 } # ID = 5
+set_variable = { SOV_propaganda_hit_of_hammer_cost = SOV_propaganda_cost_2 } # ID = 6
 set_variable = { SOV_propaganda_transport_cost = SOV_propaganda_cost } # ID = 7
 set_variable = { SOV_propaganda_oil_for_the_motherland_cost = SOV_propaganda_cost } # ID = 8
 set_variable = { SOV_propaganda_more_metal_cost = SOV_propaganda_cost } # ID = 9
 set_variable = { SOV_propaganda_high_yield_cost = SOV_propaganda_cost } # ID = 10
-set_variable = { SOV_propaganda_for_the_motherland_cost = SOV_propaganda_cost } # ID = 11
-set_variable = { SOV_propaganda_heroes_forward_cost = SOV_propaganda_cost } # ID = 12
-set_variable = { SOV_propaganda_anti_capitalism_cost = SOV_propaganda_cost } # ID = 13
-set_variable = { SOV_propaganda_anti_fascism_cost = SOV_propaganda_cost } # ID = 14
-set_variable = { SOV_propaganda_treacherous_enemy_cost = SOV_propaganda_cost } # ID = 15
-set_variable = { SOV_propaganda_do_not_blab_cost = SOV_propaganda_cost } # ID = 16
-set_variable = { SOV_propaganda_sweep_scum_out_cost = SOV_propaganda_cost } # ID = 17
+set_variable = { SOV_propaganda_for_the_motherland_cost = SOV_propaganda_cost_2 } # ID = 11
+set_variable = { SOV_propaganda_heroes_forward_cost = SOV_propaganda_cost_2 } # ID = 12
+#set_variable = { SOV_propaganda_anti_capitalism_cost = SOV_propaganda_cost } # ID = 13
+set_variable = { SOV_propaganda_anti_fascism_cost = SOV_propaganda_cost_2 } # ID = 14
+set_variable = { SOV_propaganda_treacherous_enemy_cost = SOV_propaganda_cost_2 } # ID = 15
+set_variable = { SOV_propaganda_do_not_blab_cost = SOV_propaganda_cost_2 } # ID = 16
+set_variable = { SOV_propaganda_sweep_scum_out_cost = SOV_propaganda_cost_2 } # ID = 17
 set_variable = { SOV_propaganda_knowledge_cost = SOV_propaganda_cost } # ID = 18
 set_variable = { SOV_propaganda_builders_of_communism_cost = SOV_propaganda_cost } # ID = 19
-set_variable = { SOV_propaganda_glory_to_partisans_cost = SOV_propaganda_cost } # ID = 20
-set_variable = { SOV_propaganda_death_to_invaders_cost = SOV_propaganda_cost } # ID = 21
+set_variable = { SOV_propaganda_glory_to_partisans_cost = SOV_propaganda_cost_2 } # ID = 20
+set_variable = { SOV_propaganda_death_to_invaders_cost = SOV_propaganda_cost_2 } # ID = 21
 set_variable = { SOV_propaganda_stalin_cost = SOV_propaganda_cost } # ID = 22
 set_variable = { SOV_propaganda_rebuild_to_glory_cost = SOV_propaganda_cost } # ID = 23
 set_variable = { SOV_propaganda_peace_cost = SOV_propaganda_cost } # ID = 24
@@ -418,11 +496,11 @@ set_variable = { SOV_national_academy_of_sciences_construction_time = 90 } #The 
 set_variable = { SOV_academies_required_for_atomic_bomb_project = 7 } #Number of academies of sciences required to pick focus Soviet Atomic Bomb Project
 
 #THIRD FIVE YEAR PLAN FACTORY REQUIREMENTS
-set_variable = { SOV_fyp_factory_requirement_tier_1 = 100 }
-set_variable = { SOV_fyp_factory_requirement_tier_2 = 120 }
-set_variable = { SOV_fyp_factory_requirement_tier_3 = 130 }
-set_variable = { SOV_fyp_factory_requirement_tier_4 = 150 }
-set_variable = { SOV_fyp_factory_requirement_tier_5 = 200 }
+set_variable = { SOV_fyp_factory_requirement_tier_1 = 95 }
+set_variable = { SOV_fyp_factory_requirement_tier_2 = 110 }
+set_variable = { SOV_fyp_factory_requirement_tier_3 = 120 }
+set_variable = { SOV_fyp_factory_requirement_tier_4 = 140 }
+set_variable = { SOV_fyp_factory_requirement_tier_5 = 180 }
 
 #THIRD FIVE YEAR PLAN NATIONAL SPIRIT VARS
 set_variable = { SOV_fyp_production_factory_efficiency_gain_factor = -0.15 }
@@ -481,7 +559,7 @@ set_variable = { SOV_red_fleet_special_forces_cap = 0 } #-> Marines
 
 #DEFENSE INDUSTRY NATIONAL SPIRIT VARS
 set_variable = { SOV_defense_industry_conversion_cost_civ_to_mil_factor = -0.2 }
-set_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
+set_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.03 }
 set_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
 set_variable = { SOV_defense_industry_line_change_production_efficiency_factor = -0.1 }
 
@@ -497,7 +575,7 @@ set_variable = { SOV_defense_industry_army_artillery_defence_factor = 0 } #-> Mi
 
 #THE RED ARMY NATIONAL SPIRIT VARS
 set_variable = { SOV_the_red_army_mobilization_laws_cost_factor = -0.1 }
-set_variable = { SOV_the_red_army_army_org_factor = -0.15 } # -> Restore Cossack Units / Cohsesion First #Meant to represent disgruntledness
+set_variable = { SOV_the_red_army_army_org_factor = -0.2 } # -> Restore Cossack Units / Cohsesion First #Meant to represent disgruntledness
 set_variable = { SOV_the_red_army_experience_gain_army_factor = -0.1 }
 set_variable = { SOV_the_red_army_experience_loss_factor = 0.25 }
 
@@ -670,7 +748,7 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	fuel_refining = 1
 	basic_train = 1
 }
-
+add_equipment_to_stockpile = { type = transport_plane_equipment_1 amount = 10 }
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -831,7 +909,12 @@ add_ideas = {
 	SOV_ivar_smilga = { SOV_purge_character_effect = yes }
 	SOV_yevgeny_preobrazhensky = { SOV_purge_character_effect = yes }
 	SOV_martemyan_ryutin = { SOV_purge_character_effect = yes }
-	
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		SOV_nikolay_ustryalov = { SOV_purge_character_effect = yes }
+	}
 	SOV_mikhail_tukhachevsky = { SOV_purge_character_effect = yes }
 	SOV_aleksandr_yegorov = { SOV_purge_character_effect = yes }
 	SOV_vasily_blyukher = { SOV_purge_character_effect = yes }
@@ -1001,7 +1084,7 @@ add_ideas = {
 	add_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier }
 
 	#DEFENSE INDUSTRY NS
-	add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
+	add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.03 }
 	add_to_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
 
 	#THE RED ARMY NS
@@ -1188,7 +1271,7 @@ if = {
 			tank_nsb_armor_upgrade = 1
 		}
 		obsolete = yes
-		icon = "GFX_gwtank_medium"
+		icon = "gfx/interface/technologies/gwtank.dds"
 	}
 
 	create_equipment_variant = {
@@ -1207,7 +1290,7 @@ if = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "GFX_SOV_basic_light_tank_medium"
+		icon = "gfx/interface/technologies/SOV_basic_light_tank.dds"
 	}
 	create_equipment_variant = {
 		name = "BT-5"
@@ -1224,7 +1307,7 @@ if = {
 			tank_nsb_engine_upgrade = 8
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = "GFX_SOV_improved_light_tank_medium"
+		icon = "gfx/interface/technologies/SOV_imp_light_tank.dds"
 	}
 	create_equipment_variant = {
 		name = "BT-7"
@@ -1241,7 +1324,7 @@ if = {
 			tank_nsb_engine_upgrade = 10
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "GFX_SOV_improved_light_tank_medium"
+		icon = "gfx/interface/technologies/SOV_imp_light_tank.dds"
 	}
 
 	create_equipment_variant = {
@@ -1262,7 +1345,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 10
 		}
-		icon = "GFX_SOV_basic_heavy_tank_medium"
+		icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
 	}
 	create_equipment_variant = {
 		name = "T-35"
@@ -1283,7 +1366,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 10
 		}
-		icon = "GFX_SOV_basic_heavy_tank_medium"
+		icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
 	}
 }
 if = {
@@ -1330,9 +1413,9 @@ if = {
 		name_group = SOV_SS_SHCHUKA
 		parent_version = 0
 		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 		obsolete = yes
 	}
@@ -1342,9 +1425,9 @@ if = {
 		name_group = SOV_SS_SHCHUKA
 		parent_version = 0
 		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_torpedo_sub_1
+			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 		obsolete = yes
 	}
@@ -1354,9 +1437,9 @@ if = {
 		name_group = SOV_SS_LENINETS
 		parent_version = 0
 		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_mine_layer_sub
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 	}
 	create_equipment_variant = {
@@ -1367,7 +1450,7 @@ if = {
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 		obsolete = yes
 	}
@@ -1379,7 +1462,7 @@ if = {
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
 			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 	}
 	create_equipment_variant = {
@@ -1389,8 +1472,8 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = empty
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 	}
 	# Destroyers #
@@ -1401,13 +1484,13 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
 	}
@@ -1418,7 +1501,7 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
@@ -1434,13 +1517,13 @@ if = {
 		name_group = SOV_DD_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_battery_slot = ship_light_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
@@ -1451,13 +1534,13 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = empty
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_2
-			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_mine_layer_1
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 	# Light Cruisers #
@@ -1467,14 +1550,15 @@ if = {
 		name_group = SOV_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = empty
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			mid_1_custom_slot = ship_light_medium_battery_1
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_mine_layer_1
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_light_medium_battery_1
+				rear_1_custom_slot = ship_light_medium_battery_1
 		}
 		obsolete = yes
 	}
@@ -1484,14 +1568,15 @@ if = {
 		name_group = SOV_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			mid_1_custom_slot = ship_light_medium_battery_1
-			mid_2_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_mine_layer_1
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_light_medium_battery_1
+				rear_1_custom_slot = ship_light_medium_battery_1
 		}
 	}
 	create_equipment_variant = {
@@ -1500,14 +1585,15 @@ if = {
 		name_group = SOV_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_mine_layer_1
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_1
+				mid_1_custom_slot = empty
+				mid_2_custom_slot = ship_light_medium_battery_1
+				rear_1_custom_slot = ship_light_medium_battery_1
 		}
 	}
 	# Heavy Cruisers #
@@ -1517,15 +1603,16 @@ if = {
 			name_group = SOV_CA_HISTORICAL
 			parent_version = 0
 			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_1
+				fixed_ship_battery_slot = ship_medium_battery_2
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_engine_slot = cruiser_ship_engine_1
 				fixed_ship_armor_slot = ship_armor_cruiser_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
 				mid_1_custom_slot = ship_airplane_launcher_1
 				mid_2_custom_slot = ship_anti_air_1
-				rear_1_custom_slot = ship_medium_battery_1
+				rear_1_custom_slot = ship_medium_battery_2
 			}
 		}
 	# Battleships #
@@ -1675,7 +1762,7 @@ if = {
 				tank_nsb_engine_upgrade = 8
 				tank_nsb_armor_upgrade = 2
 			}
-			icon = "GFX_SOV_basic_medium_tank_medium"
+			icon = "gfx/interface/technologies/SOV_basic_main_tank.dds"
 		}
 		create_equipment_variant = {
 			name = "KV-1"
@@ -1692,7 +1779,7 @@ if = {
 				tank_nsb_engine_upgrade = 10
 				tank_nsb_armor_upgrade = 9
 			}
-			icon = "GFX_SOV_improved_heavy_tank_medium"
+			icon = "gfx/interface/technologies/SOV_imp_heavy_tank.dds"
 		}
 	}
 }
