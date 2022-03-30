@@ -440,7 +440,7 @@ focus_tree = {
 							state = 297
 						}
 					}
-					SPR_garrison_control_cost_calculation = yes
+				#	SPR_garrison_control_cost_calculation = yes
 				}
 			}
 		}
@@ -8767,7 +8767,7 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.1
 			}
-			activate_mission = SPR_anarchist_uprising_mission
+		#	activate_mission = SPR_anarchist_uprising_mission
 		}
 	}
 
