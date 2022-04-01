@@ -3698,10 +3698,10 @@ SOV_manage_spanish_generals_exiled_in_ussr_effect = {
 			SOV = {
 				has_country_flag = SOV_spanish_refugee_generals_welcome_flag
 				OR = {
-					has_completed_focus = SOV_the_left_opposition
+				#	has_completed_focus = SOV_the_left_opposition
 					AND = {
-						has_completed_focus = SOV_the_right_opposition
-						NOT = { has_completed_focus = SOV_covert_support_for_spanish_poum }
+					#	has_completed_focus = SOV_the_right_opposition
+					#	NOT = { has_completed_focus = SOV_covert_support_for_spanish_poum }
 					}
 				}
 			}
@@ -3738,7 +3738,7 @@ SOV_manage_spanish_generals_exiled_in_ussr_effect = {
 			ROOT = { tag = SPC }
 			SOV = {
 				has_country_flag = SOV_spanish_refugee_generals_welcome_flag
-				has_completed_focus = SOV_covert_support_for_spanish_poum
+			#	has_completed_focus = SOV_covert_support_for_spanish_poum
 			}
 		}
 		ROOT = { SPR_jose_rovira = { set_nationality = SOV } }

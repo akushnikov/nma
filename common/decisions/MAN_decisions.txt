@@ -581,7 +581,7 @@ MAN_banditry_category = {
 
 		available = {
 			has_country_flag = MAN_western_bandits
-			has_completed_focus = MAN_bolster_nationalism
+		#	has_completed_focus = MAN_bolster_nationalism
 		}
 		visible = {
 			has_country_flag = MAN_western_bandits

@@ -146,7 +146,7 @@ focus_tree = {
 					NOT = { has_war_with = GER }
 					GER = { BUL_is_valid_subject = yes }
 				}
-				activate_targeted_decision = { target = GER decision = BUL_german_industrial_agreements }
+			#	activate_targeted_decision = { target = GER decision = BUL_german_industrial_agreements }
 			}
 			if = {
 				limit = {
@@ -154,7 +154,7 @@ focus_tree = {
 					NOT = { has_war_with = ENG }
 					ENG = { BUL_is_valid_subject = yes }
 				}
-				activate_targeted_decision = { target = ENG decision = BUL_british_industrial_agreements }
+			#	activate_targeted_decision = { target = ENG decision = BUL_british_industrial_agreements }
 			}
 			if = {
 				limit = {
@@ -162,13 +162,13 @@ focus_tree = {
 					NOT = { has_war_with = SOV }
 						SOV = { BUL_is_valid_subject = yes }
 					}
-					activate_targeted_decision = { target = SOV decision = BUL_soviet_industrial_agreements }
+				#	activate_targeted_decision = { target = SOV decision = BUL_soviet_industrial_agreements }
 				}
 			}
 			hidden_effect = {
-				activate_targeted_decision = { target = GER decision = BUL_german_industrial_agreements }
-				activate_targeted_decision = { target = ENG decision = BUL_british_industrial_agreements }
-				activate_targeted_decision = { target = SOV decision = BUL_soviet_industrial_agreements }
+			#	activate_targeted_decision = { target = GER decision = BUL_german_industrial_agreements }
+			#	activate_targeted_decision = { target = ENG decision = BUL_british_industrial_agreements }
+			#	activate_targeted_decision = { target = SOV decision = BUL_soviet_industrial_agreements }
 			}		
 		}
 	}
@@ -540,7 +540,7 @@ focus_tree = {
 			    category = industry
 			}
 			set_variable = { var = BUL_plovdiv_chromium_duration value = 15 }
-			unlock_decision_tooltip = BUL_mineral_extraction_in_the_rhodopes
+		#	unlock_decision_tooltip = BUL_mineral_extraction_in_the_rhodopes
 		}
 	}
 
@@ -833,7 +833,7 @@ focus_tree = {
 					NOT = { has_war_with = GER }
 						GER = { BUL_is_valid_subject = yes }
 				}
-				activate_targeted_decision = { target = GER decision = BUL_aircraft_agreements }
+			#	activate_targeted_decision = { target = GER decision = BUL_aircraft_agreements }
 			}
 			if = {
 				limit = {
@@ -841,7 +841,7 @@ focus_tree = {
 					NOT = { has_war_with = ENG }
 						ENG = { BUL_is_valid_subject = yes }
 				}
-				activate_targeted_decision = { target = ENG decision = BUL_aircraft_agreements }
+			#	activate_targeted_decision = { target = ENG decision = BUL_aircraft_agreements }
 			}
 			if = {
 				limit = {
@@ -849,13 +849,13 @@ focus_tree = {
 					NOT = { has_war_with = SOV }
 						SOV = { BUL_is_valid_subject = yes }
 					}
-					activate_targeted_decision = { target = SOV decision = BUL_aircraft_agreements }
+				#	activate_targeted_decision = { target = SOV decision = BUL_aircraft_agreements }
 				}
 			}
 			hidden_effect = {
-				activate_targeted_decision = { target = GER decision = BUL_aircraft_agreements }
-				activate_targeted_decision = { target = ENG decision = BUL_aircraft_agreements }
-				activate_targeted_decision = { target = SOV decision = BUL_aircraft_agreements }
+			#	activate_targeted_decision = { target = GER decision = BUL_aircraft_agreements }
+			#	activate_targeted_decision = { target = ENG decision = BUL_aircraft_agreements }
+			#	activate_targeted_decision = { target = SOV decision = BUL_aircraft_agreements }
 			}
 		}
 	}
@@ -993,7 +993,7 @@ focus_tree = {
 					NOT = { has_war_with = GER }
 						GER = { BUL_is_valid_subject = yes }
 				}
-				activate_targeted_decision = { target = GER decision = BUL_military_agreements }
+			#	activate_targeted_decision = { target = GER decision = BUL_military_agreements }
 			}
 			if = {
 				limit = {
@@ -1001,7 +1001,7 @@ focus_tree = {
 					NOT = { has_war_with = ENG }
 						ENG = { BUL_is_valid_subject = yes }
 				}
-				activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
+			#	activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
 			}
 			if = {
 				limit = {
@@ -1009,7 +1009,7 @@ focus_tree = {
 					NOT = { has_war_with = SOV }
 						SOV = { BUL_is_valid_subject = yes }
 					}
-					activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
+				#	activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
 				}
 				if = {
 					limit = {
@@ -1017,14 +1017,14 @@ focus_tree = {
 						NOT = { has_war_with = ITA }
 						ITA = { BUL_is_valid_subject = yes }
 					}
-					activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
+				#	activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
 				}
 			}
 			hidden_effect = {
-				activate_targeted_decision = { target = GER decision = BUL_military_agreements }
-				activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
-				activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
-				activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
+			#	activate_targeted_decision = { target = GER decision = BUL_military_agreements }
+			#	activate_targeted_decision = { target = ENG decision = BUL_military_agreements }
+			#	activate_targeted_decision = { target = SOV decision = BUL_military_agreements }
+			#	activate_targeted_decision = { target = ITA decision = BUL_military_agreements }
 			}
 		}
 	}
@@ -1341,7 +1341,7 @@ focus_tree = {
 						NOT = { has_war_with = ENG }
 						ENG = { BUL_is_valid_subject = yes }
 					}
-					activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
+				#	activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
 				}
 				if = {
 					limit = {
@@ -1349,7 +1349,7 @@ focus_tree = {
 						NOT = { has_war_with = SOV }
 						SOV = { BUL_is_valid_subject = yes }
 					}
-					activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
+				#	activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
 				}
 				if = {
 					limit = {
@@ -1357,13 +1357,13 @@ focus_tree = {
 						NOT = { has_war_with = ITA }
 						ITA = { BUL_is_valid_subject = yes }
 					}
-					activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
+				#	activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
 				}
 			}
 			hidden_effect = {
-				activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
-				activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
-				activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
+			#	activate_targeted_decision = { target = ENG decision = BUL_naval_agreements }
+			##	activate_targeted_decision = { target = SOV decision = BUL_naval_agreements }
+			#	activate_targeted_decision = { target = ITA decision = BUL_naval_agreements }
 			}
 		}
 	}
@@ -3148,11 +3148,11 @@ focus_tree = {
 				custom_effect_tooltip = BUL_approach_germany_foreign_industry_tt
 			}
 			
-			activate_targeted_decision = { target = GER decision = BUL_purchase_artillery }
-			activate_targeted_decision = { target = GER decision = BUL_purchase_military_vehicles }
-			activate_targeted_decision = { target = GER decision = BUL_purchase_aircraft }
-			activate_targeted_decision = { target = GER decision = BUL_purchase_infantry_equipment }
-			activate_targeted_decision = { target = GER decision = BUL_purchase_armor }
+		#	activate_targeted_decision = { target = GER decision = BUL_purchase_artillery }
+		#	activate_targeted_decision = { target = GER decision = BUL_purchase_military_vehicles }
+		#	activate_targeted_decision = { target = GER decision = BUL_purchase_aircraft }
+		#	activate_targeted_decision = { target = GER decision = BUL_purchase_infantry_equipment }
+		#	activate_targeted_decision = { target = GER decision = BUL_purchase_armor }
 
 			if = {
 				limit = {
@@ -3169,7 +3169,7 @@ focus_tree = {
 						has_state_flag = BUL_historical_bulgarian_claim_flag
 					}
 				}
-				unlock_decision_tooltip = BUL_demand_our_historical_claims
+			#	unlock_decision_tooltip = BUL_demand_our_historical_claims
 			}
 
 			hidden_effect = {
@@ -3253,12 +3253,12 @@ focus_tree = {
 				}
 			}
 
-			activate_targeted_decision = { target = ITA decision = BUL_purchase_artillery }
-			activate_targeted_decision = { target = ITA decision = BUL_purchase_military_vehicles }
-			activate_targeted_decision = { target = ITA decision = BUL_purchase_aircraft }
-			activate_targeted_decision = { target = ITA decision = BUL_purchase_infantry_equipment }
-			activate_targeted_decision = { target = ITA decision = BUL_purchase_armor }
-			activate_targeted_decision = { target = ITA decision = BUL_purchase_ships }
+		#	activate_targeted_decision = { target = ITA decision = BUL_purchase_artillery }
+		#	activate_targeted_decision = { target = ITA decision = BUL_purchase_military_vehicles }
+		#	activate_targeted_decision = { target = ITA decision = BUL_purchase_aircraft }
+		#	activate_targeted_decision = { target = ITA decision = BUL_purchase_infantry_equipment }
+		#	activate_targeted_decision = { target = ITA decision = BUL_purchase_armor }
+		#	activate_targeted_decision = { target = ITA decision = BUL_purchase_ships }
 
 			ITA = {
 				add_ai_strategy = {

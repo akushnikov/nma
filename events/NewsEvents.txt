@@ -5898,7 +5898,7 @@ news_event = {
 		NOT = { has_global_flag = SOV_fourth_international_fired }
 		SOV = {
 			OR = {
-				has_completed_focus = SOV_great_purge
+			#	has_completed_focus = SOV_great_purge
 				NOT = { has_country_flag = SOV_purge_started }
 			}
 			has_government = communism
@@ -5914,7 +5914,7 @@ news_event = {
 			#1
 			if = {
 				limit = {
-					has_completed_focus = SOV_great_purge
+				#	has_completed_focus = SOV_great_purge
 					has_country_flag = no_political_purge
 					has_country_flag = purge_1_no_purge
 					has_country_flag = purge_2_no_purge
@@ -5924,7 +5924,7 @@ news_event = {
 			#2
 			if = {
 				limit = {
-					has_completed_focus = SOV_great_purge
+				#	has_completed_focus = SOV_great_purge
 					OR = {
 						AND = {
 							NOT = { has_country_flag = no_political_purge }
@@ -5948,7 +5948,7 @@ news_event = {
 			#3
 			if = {
 				limit = {
-					has_completed_focus = SOV_great_purge
+				#	has_completed_focus = SOV_great_purge
 					OR = {
 						AND = {
 							NOT = { has_country_flag = no_political_purge }
@@ -5973,7 +5973,7 @@ news_event = {
 			if = {
 				limit = {
 					SOV = {
-						has_completed_focus = SOV_great_purge
+					#	has_completed_focus = SOV_great_purge
 						NOT = { has_country_flag = no_political_purge }
 						NOT = { has_country_flag = purge_1_no_purge }
 						NOT = { has_country_flag = purge_2_no_purge	}
@@ -5992,7 +5992,7 @@ news_event = {
 		trigger = {
 			SOV = {
 				OR = {
-					NOT = { has_completed_focus = SOV_great_purge }
+				#	NOT = { has_completed_focus = SOV_great_purge }
 					has_country_flag = no_political_purge
 					has_country_flag = purge_1_no_purge
 					has_country_flag = purge_2_no_purge
@@ -6004,7 +6004,7 @@ news_event = {
 		text = news.173.d_2
 		trigger = {
 			SOV = {
-				has_completed_focus = SOV_great_purge
+			#	has_completed_focus = SOV_great_purge
 				NOT = { has_country_flag = no_political_purge }
 				NOT = { has_country_flag = purge_1_no_purge }
 				NOT = { has_country_flag = purge_2_no_purge	}

@@ -479,7 +479,7 @@ country_event = {
 			NOT = { has_country_flag = BUL_zveno_repressed_flag }							#Zveno members have not been repressed recently
 			has_country_flag = { flag = BUL_zveno_repressed_flag days > 720 }
 		}
-		NOT = { has_active_mission = BUL_impending_zveno_coup }								#Zveno coup mission is not ongoing
+	#	NOT = { has_active_mission = BUL_impending_zveno_coup }								#Zveno coup mission is not ongoing
 		NOT = { has_country_flag = BUL_zveno_coup_flag }									#Zveno CW has not started
 		check_variable = { BUL_zveno_popularity = 5 compare = greater_than_or_equals }		#Zveno has some popularity
 		check_variable = { BUL_zveno_loyalty = 50 compare = less_than_or_equals }			#Zveno has low loyalty
@@ -528,7 +528,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { has_decision = BUL_opression_repress_zveno }
+		#		NOT = { has_decision = BUL_opression_repress_zveno }
 			}
 			unlock_decision_tooltip = BUL_opression_repress_zveno
 		}
@@ -548,7 +548,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { has_decision = BUL_opression_repress_zveno }
+		#		NOT = { has_decision = BUL_opression_repress_zveno }
 			}
 			unlock_decision_tooltip = BUL_opression_repress_zveno
 		}
@@ -631,7 +631,7 @@ country_event = {
 			NOT = { has_country_flag = BUL_zveno_repressed_flag }							#Zveno members have not been repressed recently
 			has_country_flag = { flag = BUL_zveno_repressed_flag days > 365 }
 		}
-		NOT = { has_active_mission = BUL_impending_zveno_coup }								#Zveno coup mission is not ongoing
+	#	NOT = { has_active_mission = BUL_impending_zveno_coup }								#Zveno coup mission is not ongoing
 		NOT = { has_country_flag = BUL_zveno_coup_flag }									#Zveno CW has not started
 		check_variable = { BUL_zveno_popularity = 5 compare = greater_than_or_equals }		#Zveno has some popularity
 		check_variable = { BUL_zveno_loyalty = 50 compare = less_than_or_equals }			#Zveno has low loyalty
@@ -706,7 +706,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { has_decision = BUL_opression_repress_bs }
+			#	NOT = { has_decision = BUL_opression_repress_bs }
 			}
 			unlock_decision_tooltip = BUL_opression_repress_bs
 		}
@@ -803,7 +803,7 @@ country_event = {
 		
 		if = {
 			limit = {
-				NOT = { has_decision = BUL_opression_repress_bs }
+			#	NOT = { has_decision = BUL_opression_repress_bs }
 			}
 			unlock_decision_tooltip = BUL_opression_repress_bs
 		}
@@ -1068,7 +1068,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { has_decision = BUL_opression_repress_bzns }
+			#	NOT = { has_decision = BUL_opression_repress_bzns }
 			}
 			unlock_decision_tooltip = BUL_opression_repress_bzns
 		}
@@ -1173,7 +1173,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { has_decision = BUL_opression_repress_nsm }
+			#	NOT = { has_decision = BUL_opression_repress_nsm }
 			}
 			unlock_decision_tooltip = BUL_opression_repress_nsm
 		}
@@ -1195,7 +1195,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOT = { has_decision = BUL_opression_repress_nsm }
+			#	NOT = { has_decision = BUL_opression_repress_nsm }
 			}
 			unlock_decision_tooltip = BUL_opression_repress_nsm
 		}
@@ -1224,7 +1224,7 @@ country_event = {
 		#Add days to Zveno Coup timer if active
 		if = {
 			limit = {
-				has_active_mission = BUL_impending_zveno_coup
+			#	has_active_mission = BUL_impending_zveno_coup
 			}
 			add_days_mission_timeout = {
 				mission = BUL_impending_zveno_coup
@@ -1254,7 +1254,7 @@ country_event = {
 		#Add days to Zveno Coup timer if active
 		if = {
 			limit = {
-				has_active_mission = BUL_impending_zveno_coup
+			#	has_active_mission = BUL_impending_zveno_coup
 			}
 			add_days_mission_timeout = {
 				mission = BUL_impending_zveno_coup
@@ -1301,7 +1301,7 @@ country_event = {
 		#Add days to Zveno Coup timer if active
 		if = {
 			limit = {
-				has_active_mission = BUL_impending_zveno_coup
+			#	has_active_mission = BUL_impending_zveno_coup
 			}
 			add_days_mission_timeout = {
 				mission = BUL_impending_zveno_coup
@@ -1328,7 +1328,7 @@ country_event = {
 		#Add days to Zveno Coup timer if active
 		if = {
 			limit = {
-				has_active_mission = BUL_impending_zveno_coup
+			#	has_active_mission = BUL_impending_zveno_coup
 			}
 			add_days_mission_timeout = {
 				mission = BUL_impending_zveno_coup
@@ -1356,7 +1356,7 @@ country_event = {
 		#Add days to Zveno Coup timer if active
 		if = {
 			limit = {
-				has_active_mission = BUL_impending_zveno_coup
+			#	has_active_mission = BUL_impending_zveno_coup
 			}
 			add_days_mission_timeout = {
 				mission = BUL_impending_zveno_coup

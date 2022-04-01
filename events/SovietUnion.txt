@@ -482,7 +482,7 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		NOT = { has_completed_focus = SOV_great_purge }
+	#	NOT = { has_completed_focus = SOV_great_purge }
 		focus_progress = {
 			focus = SOV_great_purge
 			progress > 0.25
@@ -539,7 +539,7 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		NOT = { has_completed_focus = SOV_great_purge }
+	#	NOT = { has_completed_focus = SOV_great_purge }
 		focus_progress = {
 			focus = SOV_great_purge
 			progress > 0.5
@@ -616,7 +616,7 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		NOT = { has_completed_focus = SOV_great_purge }
+	#	NOT = { has_completed_focus = SOV_great_purge }
 		focus_progress = {
 			focus = SOV_great_purge
 			progress > 0.75
@@ -1463,7 +1463,7 @@ country_event = {
 		has_government = communism
 		tag = SOV
 		has_global_flag = SOV_fourth_international_fired
-		NOT = { has_completed_focus = SOV_great_purge }
+	#	NOT = { has_completed_focus = SOV_great_purge }
 	}
 
 	mean_time_to_happen = {
@@ -1705,14 +1705,14 @@ country_event = {
 		text = soviet.54.d_nopurge
 		trigger = {
 			NOT = {
-				has_completed_focus = SOV_great_purge
+			#	has_completed_focus = SOV_great_purge
 			}
 		}
 	}
 	desc = {
 		text = soviet.54.d_purge
 		trigger = {
-			has_completed_focus = SOV_great_purge
+		#	has_completed_focus = SOV_great_purge
 		}
 	}
 	picture = GFX_report_event_soviet_purge_speech

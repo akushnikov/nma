@@ -329,7 +329,7 @@ on_actions = {
 					}
 					SOV = {
 						NOT = { has_country_flag = SOV_war_since_purge }
-						has_completed_focus = SOV_great_purge
+					#	has_completed_focus = SOV_great_purge
 					}
 				}
 				SOV = { set_country_flag = SOV_war_since_purge }

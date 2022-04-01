@@ -1108,14 +1108,14 @@ country_event = {
 				NOT = {
 					OR = {
 						has_country_flag = POL_AI_RANDOM_COMMONWEALTH
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = COMMONWEALTH
-						}
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = DEFAULT
-						}
+					#	has_game_rule = {
+					#		rule = POL_ai_behavior
+					#		option = COMMONWEALTH
+					#	}
+					#	has_game_rule = {
+					#		rule = POL_ai_behavior
+					#		option = DEFAULT
+					#	}
 					}
 				}
 			}
@@ -1148,10 +1148,10 @@ country_event = {
 				factor = 0
 				OR = {
 					has_country_flag = POL_AI_RANDOM_COMMONWEALTH
-					has_game_rule = {
-						rule = POL_ai_behavior
-						option = COMMONWEALTH
-					}
+				#	has_game_rule = {
+				#		rule = POL_ai_behavior
+				#		option = COMMONWEALTH
+				#	}
 				}
 			}
 		}
@@ -1182,14 +1182,14 @@ country_event = {
 				NOT = {
 					OR = {
 						has_country_flag = POL_AI_RANDOM_ROMANIA
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = ROMANIA
-						}
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = DEFAULT
-						}
+					#	has_game_rule = {
+					#		rule = POL_ai_behavior
+					#		option = ROMANIA
+					#	}
+					#	has_game_rule = {
+					#		rule = POL_ai_behavior
+					#		option = DEFAULT
+					#	}
 					}
 				}
 			}
@@ -1240,10 +1240,10 @@ country_event = {
 				factor = 0
 				OR = {
 					has_country_flag = POL_AI_RANDOM_ROMANIA
-					has_game_rule = {
-						rule = POL_ai_behavior
-						option = ROMANIA
-					}
+				#	has_game_rule = {
+				#		rule = POL_ai_behavior
+				#		option = ROMANIA
+				#	}
 				}
 			}
 		}
@@ -1274,14 +1274,14 @@ country_event = {
 				NOT = {
 					OR = {
 						has_country_flag = POL_AI_RANDOM_BERMONDT
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = BERMONDT
-						}
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = DEFAULT
-						}
+					#	has_game_rule = {
+					#		rule = POL_ai_behavior
+					#		option = BERMONDT
+					#	}
+					#	has_game_rule = {
+					#		rule = POL_ai_behavior
+					#		option = DEFAULT
+					#	}
 					}
 				}
 			}
@@ -1317,10 +1317,10 @@ country_event = {
 				factor = 0
 				OR = {
 					has_country_flag = POL_AI_RANDOM_BERMONDT
-					has_game_rule = {
-						rule = POL_ai_behavior
-						option = BERMONDT
-					}
+				#	has_game_rule = {
+				#		rule = POL_ai_behavior
+				#		option = BERMONDT
+				#	}
 				}
 			}
 		}
@@ -1430,14 +1430,14 @@ country_event = {
 				NOT = {
 					OR = {
 						has_country_flag = POL_AI_RANDOM_HABSBURG
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = HABSBURG
-						}
-						has_game_rule = {
-							rule = POL_ai_behavior
-							option = DEFAULT
-						}
+					#	has_game_rule = {
+					#		rule = POL_ai_behavior
+					#		option = HABSBURG
+					#	}
+					#	has_game_rule = {
+					#		rule = POL_ai_behavior
+					#		option = DEFAULT
+					#	}
 					}
 				}
 			}
@@ -1466,10 +1466,10 @@ country_event = {
 				factor = 0
 				OR = {
 					has_country_flag = POL_AI_RANDOM_HABSBURG
-					has_game_rule = {
-						rule = POL_ai_behavior
-						option = HABSBURG
-					}
+				#	has_game_rule = {
+				#		rule = POL_ai_behavior
+				#		option = HABSBURG
+				#	}
 				}
 			}
 		}
@@ -3901,7 +3901,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_completed_focus = HUN_elect_a_democratic_king
+				#	has_completed_focus = HUN_elect_a_democratic_king
 				}
 				uncomplete_national_focus = {
 					focus = HUN_elect_a_democratic_king

@@ -26,7 +26,7 @@ news_event = {
 				NOT = {
 					OR = {
 						has_completed_focus = GER_rhineland
-						has_completed_focus = GER_oppose_hitler
+					#	has_completed_focus = GER_oppose_hitler
 					}
 				}
 			}
@@ -40,7 +40,7 @@ news_event = {
 			GER = {
 				OR = {
 					has_completed_focus = GER_rhineland
-					has_completed_focus = GER_oppose_hitler
+				#	has_completed_focus = GER_oppose_hitler
 				}
 			}
 		}
@@ -412,9 +412,9 @@ news_event = {
 		NOT = { has_global_flag = SOV_fourth_international_fired }
 		SOV = {	has_government = communism }
 		OR = {
-			SOV = { has_completed_focus = SOV_the_fourth_international }
+		#	SOV = { has_completed_focus = SOV_the_fourth_international }
 			AND = {
-				NOT = { SOV = { has_completed_focus = SOV_the_left_opposition } }
+			#	NOT = { SOV = { has_completed_focus = SOV_the_left_opposition } }
 				date > 1938.9.1
 			}
 		}
@@ -431,7 +431,7 @@ news_event = {
 		text = news.173.d_1
 		trigger = {
 			SOV = {
-				has_completed_focus = SOV_the_left_opposition
+			#	has_completed_focus = SOV_the_left_opposition
 			}
 		}
 	}
@@ -440,7 +440,7 @@ news_event = {
 		text = news.173.d_2
 		trigger = {
 			SOV = {
-				NOT = { has_completed_focus = SOV_the_left_opposition }
+			#	NOT = { has_completed_focus = SOV_the_left_opposition }
 			}
 		}
 	}
@@ -530,7 +530,7 @@ news_event = {
 
 		if = {
 			limit = {
-				has_completed_focus = SOV_the_fourth_international
+			#	has_completed_focus = SOV_the_fourth_international
 			}
 			add_timed_idea = { idea = SOV_the_fourth_international_idea days = 720 }
 			IF = {
