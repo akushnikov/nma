@@ -6,7 +6,7 @@ has_sanation_left_opposition = {
 			has_idea = POL_sanation_left_opposition_2
 			has_idea = POL_sanation_left_opposition_3
 			has_idea = POL_sanation_left_opposition_4
-			has_completed_focus = POL_the_left_chairman
+			# has_completed_focus = POL_the_left_chairman
 		}
 	}
 }
@@ -19,7 +19,7 @@ has_sanation_right_opposition = {
 			has_idea = POL_sanation_right_opposition_2
 			has_idea = POL_sanation_right_opposition_3
 			has_idea = POL_sanation_right_opposition_4
-			has_completed_focus = POL_second_man_of_the_state
+		#	has_completed_focus = POL_second_man_of_the_state
 		}
 	}
 }
@@ -31,14 +31,14 @@ POL_is_valid_to_boost_monarchy = {
 		has_government = neutrality
 	}
 	OR = {
-		has_completed_focus = POL_support_monarchism_in_LIT
-		has_completed_focus = POL_support_monarchy_in_CZE
-		has_completed_focus = POL_internal_romanian_support
+	#	has_completed_focus = POL_support_monarchism_in_LIT
+	#	has_completed_focus = POL_support_monarchy_in_CZE
+	#	has_completed_focus = POL_internal_romanian_support
 		
 	}
 	if = {
 		limit = {
-			has_completed_focus = POL_support_monarchism_in_LIT
+	#		has_completed_focus = POL_support_monarchism_in_LIT
 		}
 		NOT = { has_country_flag = attempted_royal_takeover_in_LIT }
 		LIT = { NOT = {  } }
@@ -48,7 +48,7 @@ POL_is_valid_to_boost_monarchy = {
 	}
 	if = {
 		limit = {
-			has_completed_focus = POL_support_monarchy_in_CZE
+	#		has_completed_focus = POL_support_monarchy_in_CZE
 		}
 		NOT = { has_country_flag = attempted_royal_takeover_in_CZE }			
 		FROM = {
@@ -57,7 +57,7 @@ POL_is_valid_to_boost_monarchy = {
 	}
 	if = {
 		limit = {
-			has_completed_focus = POL_internal_romanian_support
+	#		has_completed_focus = POL_internal_romanian_support
 		}
 		NOT = { has_country_flag = attempted_royal_takeover_in_ROM }
 		FROM = {
@@ -106,7 +106,7 @@ POL_is_valid_to_reject_monarchy = {
 		}
 		NOT = {  }
 		POL = { 
-			has_completed_focus = POL_support_monarchism_in_LIT 
+		#	has_completed_focus = POL_support_monarchism_in_LIT 
 			NOT = { has_country_flag = attempted_royal_takeover_in_LIT }
 		} 
 		FROM = {
@@ -118,7 +118,7 @@ POL_is_valid_to_reject_monarchy = {
 			original_tag = CZE
 		}
 		POL = {
-			has_completed_focus = POL_support_monarchy_in_CZE
+		#	has_completed_focus = POL_support_monarchy_in_CZE
 			NOT = { has_country_flag = attempted_royal_takeover_in_CZE }
 		}
 		FROM = {
@@ -130,7 +130,7 @@ POL_is_valid_to_reject_monarchy = {
 			original_tag = ROM
 		}
 		POL = {
-			has_completed_focus = POL_internal_romanian_support
+		#	has_completed_focus = POL_internal_romanian_support
 			NOT = { has_country_flag = attempted_royal_takeover_in_ROM }
 		}
 		FROM = {
