@@ -121,10 +121,10 @@ BUL_country_seeks_macedonian_stability = {
 BUL_has_freedom_of_press = {
 	custom_trigger_tooltip = {
 		tooltip = BUL_freedom_of_press_trigger_tt
-		NOT = { has_decision = institute_press_censorship_neutrality_state }
-		NOT = { has_decision = institute_press_censorship_fascist_state }
-		NOT = { has_decision = institute_press_censorship_democratic_state }
-		NOT = { has_decision = institute_press_censorship_communist_state }
+	#	NOT = { has_decision = institute_press_censorship_neutrality_state }
+	#	NOT = { has_decision = institute_press_censorship_fascist_state }
+	#	NOT = { has_decision = institute_press_censorship_democratic_state }
+	#	NOT = { has_decision = institute_press_censorship_communist_state }
 	}
 }
 
@@ -274,8 +274,8 @@ BUL_has_abolished_monarchy = {
 		tooltip = BUL_has_abolished_monarchy_tt
 		OR = {
 			has_government = communism
-			has_completed_focus = BUL_overthrow_the_tsar
-			has_completed_focus = BUL_abolish_the_monarchy
+		#	has_completed_focus = BUL_overthrow_the_tsar
+		#	has_completed_focus = BUL_abolish_the_monarchy
 			has_completed_focus = BUL_depose_the_tsar
 		}
 	}
@@ -297,76 +297,76 @@ BUL_is_historical_ai = {
 	OR = {
 		AND = {
 			is_historical_focus_on = yes
-			has_game_rule = {
-				rule = BUL_ai_behavior
-				option = DEFAULT
-			}
+		#	has_game_rule = {
+		#		rule = BUL_ai_behavior
+		#		option = DEFAULT
+		#	}
 		}
 		has_country_flag = BUL_AI_RANDOM_HISTORICAL
-		has_game_rule = {
-			rule = BUL_ai_behavior
-			option = HISTORICAL
-		}
+	#	has_game_rule = {
+	#		rule = BUL_ai_behavior
+	#		option = HISTORICAL
+	#	}
 	}
 }
 
 BUL_is_communist_stalinist_ai = {
 	OR = {
 		has_country_flag = BUL_AI_RANDOM_COMMUNIST
-		has_game_rule = {
-			rule = BUL_ai_behavior 
-			option = COMMUNIST
-		}
+	#	has_game_rule = {
+	#		rule = BUL_ai_behavior 
+	#		option = COMMUNIST
+	#	}
 	}
 }
 
 BUL_is_communist_balkan_ai = {
 	OR = {
 		has_country_flag = BUL_AI_RANDOM_COMMUNIST_BALKAN_FEDERATION
-		has_game_rule = {
-			rule = BUL_ai_behavior 
-			option = COMMUNIST_BALKAN_FEDERATION
-		}
+	#	has_game_rule = {
+	#		rule = BUL_ai_behavior 
+	#		option = COMMUNIST_BALKAN_FEDERATION
+	#	}
 	}
 }
 
 BUL_is_democratic_socialist_ai = {
 	OR = {
 		has_country_flag = BUL_AI_RANDOM_DEMOCRATIC_SOCIALIST
-		has_game_rule = {
-			rule = BUL_ai_behavior 
-			option = DEMOCRATIC_SOCIALIST
-		}
+	#	has_game_rule = {
+	#		rule = BUL_ai_behavior 
+	#		option = DEMOCRATIC_SOCIALIST
+	#	}
 	}
 }
 
 BUL_is_democratic_liberal_ai = {
 	OR = {
 		has_country_flag = BUL_AI_RANDOM_DEMOCRATIC_LIBERAL
-		has_game_rule = {
-			rule = BUL_ai_behavior 
-			option = DEMOCRATIC_LIBERAL
-		}
+	#	has_game_rule = {
+	#		rule = BUL_ai_behavior 
+	#		option = DEMOCRATIC_LIBERAL
+	#	}
 	}
 }
 
 BUL_is_fascist_axis_ai = {
 	OR = {
 		has_country_flag = BUL_AI_RANDOM_FASCIST
-		has_game_rule = {
-			rule = BUL_ai_behavior 
-			option = FASCIST
-		}
+	#	has_game_rule = {
+	#		rule = BUL_ai_behavior 
+	#		option = FASCIST
+	#	}
 	}
 }
 
 BUL_is_monarchist_ferdinand_ai = {
 	OR = {
 		has_country_flag = BUL_AI_RANDOM_THE_RETURN_OF_FERDINAND
-		has_game_rule = {
-			rule = BUL_ai_behavior 
-			option = THE_RETURN_OF_FERDINAND
-		}
+	#	has_game_rule = {
+	#		rule = BUL_ai_behavior 
+	#		option = THE_RETURN_OF_FERDINAND
+	#	}
 	}
 }
 

@@ -71,19 +71,19 @@ defined_text = { # Country
 	name = GetPolRoyalClaimStrength
 	text = {
 		trigger = {
-			POL = { has_completed_focus = POL_support_monarchism_in_LIT }
+		#	POL = { has_completed_focus = POL_support_monarchism_in_LIT }
 		}
 		localization_key = lithuania_strength
 	}
 	text = {
 		trigger = {
-			POL = { has_completed_focus = POL_internal_romanian_support }
+		#	POL = { has_completed_focus = POL_internal_romanian_support }
 		}
 		localization_key = romania_strength
 	}
 	text = {
 		trigger = {
-			POL = { has_completed_focus = POL_support_monarchy_in_CZE }
+		#	POL = { has_completed_focus = POL_support_monarchy_in_CZE }
 		}
 		localization_key = bohemia_strength
 	}
@@ -99,19 +99,19 @@ defined_text = { # Country
 	name = GetRoyalClaim
 	text = {
 		trigger = {
-			POL = { has_completed_focus = POL_support_monarchism_in_LIT }
+		#	POL = { has_completed_focus = POL_support_monarchism_in_LIT }
 		}
 		localization_key = LIT_neutrality
 	}
 	text = {
 		trigger = {
-			POL = { has_completed_focus = POL_internal_romanian_support }
+		#	POL = { has_completed_focus = POL_internal_romanian_support }
 		}
 		localization_key = ROM_neutrality
 	}
 	text = {
 		trigger = {
-			POL = { has_completed_focus = POL_support_monarchy_in_CZE }
+		#	POL = { has_completed_focus = POL_support_monarchy_in_CZE }
 		}
 		localization_key = CZE_neutrality
 	}

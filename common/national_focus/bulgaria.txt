@@ -2005,7 +2005,7 @@ focus_tree = {
 		available = {
 			NOT = {	has_country_flag = BUL_zveno_destroyed_flag } #Zveno is not destroyed
 			hidden_trigger = {
-				NOT = { has_active_mission = BUL_impending_zveno_coup }	#Zveno coup mission is not ongoing
+			#	NOT = { has_active_mission = BUL_impending_zveno_coup }	#Zveno coup mission is not ongoing
 				NOT = { has_country_flag = BUL_zveno_coup_flag } #Zveno CW has not started
 			}
 		}

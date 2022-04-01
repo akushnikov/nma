@@ -470,7 +470,7 @@ focus_tree = {
 				tooltip = SOV_fyp_controlled_factories_tier_2_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_2 }
 			}
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -534,7 +534,7 @@ focus_tree = {
 				tooltip = SOV_fyp_controlled_factories_tier_3_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
 			}
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -596,7 +596,7 @@ focus_tree = {
 				tooltip = SOV_fyp_controlled_factories_tier_4_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
 			}
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -628,7 +628,7 @@ focus_tree = {
 
 		available = {
 			SOV_third_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -732,7 +732,7 @@ focus_tree = {
 				tooltip = SOV_fyp_controlled_factories_tier_3_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_3 }
 			}
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -785,7 +785,7 @@ focus_tree = {
 				tooltip = SOV_fyp_controlled_factories_tier_4_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_4 }
 			}
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -828,7 +828,7 @@ focus_tree = {
 				}
 			}
 			SOV_third_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -920,7 +920,7 @@ focus_tree = {
 		available = {
 			has_tech = rubber_processing
 			SOV_third_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 			has_full_control_of_state = 219 #MOSCOW
 			OR = {
 				has_full_control_of_state = 260 #VORONEZH
@@ -993,7 +993,7 @@ focus_tree = {
 
 		available = {
 			SOV_third_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1072,7 +1072,7 @@ focus_tree = {
 
 		available = {
 			SOV_fourth_five_year_plan_available = yes
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_PROPAGANDA}
@@ -1111,7 +1111,7 @@ focus_tree = {
 				tooltip = SOV_fyp_controlled_factories_tier_5_tt
 				NOT = { num_of_controlled_factories < SOV_fyp_factory_requirement_tier_5 }
 			}
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -1149,23 +1149,23 @@ focus_tree = {
 					#Swap dynamic modifier to change icon
 					if = {
 						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
+						#	has_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
 						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
+					#	remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
 					}
 					else_if = {
 						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
+						#	has_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
 						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
+					#	remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
 					}
 					else_if = {
 						limit = {
-							has_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
+					#		has_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
 						}
-						remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
+					#	remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
 					}
-					add_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_fourth_five_year_plan_dynamic_modifier_alt }
 				}
 			}
 			custom_effect_tooltip = SOV_fourth_five_year_plan_ns_tt
@@ -1188,7 +1188,7 @@ focus_tree = {
 
 		available = {
 			num_subjects > 0
-			NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
+		#	NOT = { has_completed_focus = SOV_curtailment_of_the_collective_farms }
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -2175,7 +2175,7 @@ focus_tree = {
 		available = {
 			OR = {
 				has_completed_focus = SOV_the_path_of_marxism_leninism
-				has_completed_focus = SOV_womens_fascist_movement
+			#	has_completed_focus = SOV_womens_fascist_movement
 			}
 		}
 		
@@ -6272,9 +6272,9 @@ focus_tree = {
 
 		}
 
-		bypass = {
-			has_completed_focus = SOV_depoliticize_the_military
-		}
+	#	bypass = {
+		#	has_completed_focus = SOV_depoliticize_the_military
+	#	}
 		
 		search_filters = {}
 
@@ -6320,12 +6320,12 @@ focus_tree = {
 		}
 
 		available = {
-			has_completed_focus = SOV_church_candidates
+		#	has_completed_focus = SOV_church_candidates
 		}
 
 		bypass = {
-			has_completed_focus = SOV_depoliticize_the_military
-			has_completed_focus = SOV_socialist_humanism
+		#	has_completed_focus = SOV_depoliticize_the_military
+		#	has_completed_focus = SOV_socialist_humanism
 		}
 		
 		search_filters = {}
@@ -6369,7 +6369,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			has_completed_focus = SOV_depoliticize_the_military
+		#	has_completed_focus = SOV_depoliticize_the_military
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
@@ -6514,12 +6514,12 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
+				#	has_game_rule = {
+				#		rule = obsolete_focus_branches_visibility
+				#		option = HIDE
+				#	}
 				}
-				NOT = { has_completed_focus = SOV_the_hands_do }
+			#	NOT = { has_completed_focus = SOV_the_hands_do }
 			}
 		}
 
@@ -6558,23 +6558,23 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
+				#	has_game_rule = {
+				#		rule = obsolete_focus_branches_visibility
+				#		option = HIDE
+				#	}
 				}
 				NOT = {
 					AND = {
-						has_completed_focus = SOV_the_left_opposition
-						has_completed_focus = SOV_left_opposition_coup
+					#	has_completed_focus = SOV_the_left_opposition
+					#	has_completed_focus = SOV_left_opposition_coup
 					}
 					AND = {
-						has_completed_focus = SOV_the_right_opposition
-						has_completed_focus = SOV_coup_detat
+					#	has_completed_focus = SOV_the_right_opposition
+					#	has_completed_focus = SOV_coup_detat
 					}
 					AND = {
-						has_completed_focus = SOV_beaten_but_not_defeated
-						has_completed_focus = SOV_the_hands_do
+					#	has_completed_focus = SOV_beaten_but_not_defeated
+					#	has_completed_focus = SOV_the_hands_do
 					}
 				}
 			}
@@ -7988,10 +7988,10 @@ focus_tree = {
 			trigger = { #Trotskyist branch hides
 				NOT = { has_dlc = "No Step Back" }
 				has_completed_focus = SOV_the_centre 
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
+			#	has_game_rule = {
+			#		rule = obsolete_focus_branches_visibility
+			#		option = HIDE
+			#	}
 			}
 		}
 		offset = {
@@ -7999,11 +7999,11 @@ focus_tree = {
 			y = 0
 			trigger = { # Stalinist branch hides
 				NOT = { has_dlc = "No Step Back" }
-				has_completed_focus = SOV_the_left_opposition
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
+			#	has_completed_focus = SOV_the_left_opposition
+			#	has_game_rule = {
+			#		rule = obsolete_focus_branches_visibility
+			#		option = HIDE
+			#	}
 			}
 		}
 		offset = {
@@ -8012,10 +8012,10 @@ focus_tree = {
 			trigger = {
 				has_dlc = "No Step Back"
 				has_completed_focus = SOV_the_centre
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
+			#	has_game_rule = {
+			#		rule = obsolete_focus_branches_visibility
+			#		option = HIDE
+			#	}
 			}
 		}
 		offset = {
@@ -8025,18 +8025,18 @@ focus_tree = {
 				has_dlc = "No Step Back"
 				OR = {
 					AND = {
-						has_completed_focus = SOV_the_left_opposition
-						has_completed_focus = SOV_left_opposition_coup
+					#	has_completed_focus = SOV_the_left_opposition
+					#	has_completed_focus = SOV_left_opposition_coup
 					}
 					AND = {
-						has_completed_focus = SOV_the_right_opposition
-						has_completed_focus = SOV_coup_detat
+					#	has_completed_focus = SOV_the_right_opposition
+					#	has_completed_focus = SOV_coup_detat
 					}
 				}
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
+			#	has_game_rule = {
+			#		rule = obsolete_focus_branches_visibility
+			#		option = HIDE
+			#	}
 			}
 		}
 
@@ -8046,12 +8046,12 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
+				#	has_game_rule = {
+				#		rule = obsolete_focus_branches_visibility
+				#		option = HIDE
+				#	}
 				}
-				NOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+			#	NOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 
@@ -8429,12 +8429,12 @@ focus_tree = {
 		allow_branch = {
 			if = {
 				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
+				#	has_game_rule = {
+				#		rule = obsolete_focus_branches_visibility
+				#		option = HIDE
+				#	}
 				}
-				NOT = { has_completed_focus = SOV_beaten_but_not_defeated }
+			#	NOT = { has_completed_focus = SOV_beaten_but_not_defeated }
 			}
 		}
 
@@ -8635,8 +8635,8 @@ focus_tree = {
 			has_civil_war = no
 			OR = {
 				has_completed_focus = SOV_the_centre
-				has_completed_focus = SOV_the_left_opposition
-				has_completed_focus = SOV_the_right_opposition
+			#	has_completed_focus = SOV_the_left_opposition
+			#	has_completed_focus = SOV_the_right_opposition
 			}
 			if = {
 				limit = {
@@ -8659,7 +8659,7 @@ focus_tree = {
 				else = {
 					if = {
 						limit = {
-							has_completed_focus = SOV_covert_support_for_spanish_poum
+						#	has_completed_focus = SOV_covert_support_for_spanish_poum
 						}
 						country_exists = SPR
 						NOT = { has_war_with = SPR }
@@ -8693,11 +8693,11 @@ focus_tree = {
 			if = {
 				limit = {
 					has_dlc = "La Resistance"
-					has_completed_focus = SOV_covert_support_for_spanish_poum
-					has_completed_focus = SOV_coup_detat
+				#	has_completed_focus = SOV_covert_support_for_spanish_poum
+				#	has_completed_focus = SOV_coup_detat
 					has_global_flag = SPR_anarchist_uprising_flag
 					country_exists = SPR
-					SPR = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
+				#	SPR = { has_completed_focus = SPR_the_anti_fascist_workers_revolution }
 				}
 				SPR = {
 					hidden_effect = { country_event = { id = NSB_soviet_foreign_politics_events.20 hours = 2 random_hours = 1 } }
