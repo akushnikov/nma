@@ -610,7 +610,7 @@ foreign_politics = {
 		visible = {
 			has_war = no
 			has_government = neutrality
-			has_completed_focus = GER_ally_the_shade
+		#	has_completed_focus = GER_ally_the_shade
 			has_country_flag = modernized_succession_laws
 		}
 
@@ -644,7 +644,7 @@ foreign_politics = {
 
 		visible = {
 			has_country_flag = poland_traded_danzig
-			has_completed_focus = GER_tackle_the_communist_threat
+		#	has_completed_focus = GER_tackle_the_communist_threat
 		}
 
 		complete_effect = {
