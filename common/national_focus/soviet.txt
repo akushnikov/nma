@@ -10743,15 +10743,15 @@ ai_will_do = {
 				IRQ = {
 					if = {
 						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = fascist_influence_weak days = 1095 }
 					}
 					if = {
 						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = democratic_influence_weak days = 1095 }
 					}
 					if = {
 						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = communist_influence_weak days = 1095 }
 					}
 					hidden_effect = {
 						country_event = { id = generic.1 }
@@ -10765,15 +10765,15 @@ ai_will_do = {
 				PER = {
 					if = {
 						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = fascist_influence_weak days = 1095 }
 					}
 					if = {
 						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = democratic_influence_weak days = 1095 }
 					}
 					if = {
 						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = communist_influence_weak days = 1095 }
 					}
 					hidden_effect = {
 						country_event = { id = generic.1 }
@@ -10787,15 +10787,15 @@ ai_will_do = {
 				AFG = {
 					if = {
 						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = fascist_influence_weak days = 1095 }
 					}
 					if = {
 						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = democratic_influence_weak days = 1095 }
 					}
 					if = {
 						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = communist_influence_weak days = 1095 }
 					}
 					hidden_effect = {
 						country_event = { id = generic.1 }
@@ -10809,15 +10809,15 @@ ai_will_do = {
 				SAU = {
 					if = {
 						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = fascist_influence_weak days = 1095 }
 					}
 					if = {
 						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = democratic_influence_weak days = 1095 }
 					}
 					if = {
 						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence_weak days = 1095 }
+					#	add_timed_idea = { idea = communist_influence_weak days = 1095 }
 					}
 					hidden_effect = {
 						country_event = { id = generic.1 }

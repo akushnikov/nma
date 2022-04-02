@@ -80,31 +80,6 @@ SOV_industry_relocation = {
 	}
 }
 
-SOV_soviet_aid_to_poum_decision_category = { #Dec cat for aiding the POUM
-	priority = 31
-
-	icon = SOV_support_the_poum
-
-	picture = GFX_decision_cat_picture_spr_the_inevitable_civil_war
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_covert_support_for_spanish_poum
-		NOT = { has_global_flag = scw_over }
-		NOT = {
-			AND = {
-				has_global_flag = SPR_anarchist_uprising_flag
-				OR = {
-					NOT = { SPC = { has_completed_focus = SPR_the_anti_fascist_workers_revolution } }
-					NOT = { country_exists = SPC }
-				}
-			}
-		}
-	}
-}
 
 SOV_great_patriotic_war = {
 	priority = 200
@@ -205,52 +180,6 @@ SOV_diplomacy_middle_east_decision_category = {
 	}
 }
 
-SOV_diplomacy_asia_decision_category = {
-	priority = 22
-
-	icon = generic_foreign_policy
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		OR = {
-			AND = {
-				has_completed_focus = SOV_the_threat_from_the_land_of_the_rising_sun
-				any_country = {
-					OR = {
-						SOV_is_free_chinese_tag = yes
-					}
-					exists = yes
-				}
-			}
-			AND = {
-				has_completed_focus = SOV_reconcile_japan
-				any_country = {
-					OR = {
-						AND = {
-							tag = JAP
-							is_subject = no
-						}
-						AND = {
-							SOV_is_free_chinese_tag = yes
-							is_in_faction_with = JAP
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-SOV_soviet_aid_decision_category = { #Dec cat for Sinkiang (mission dummies go here)
-	icon = decision_category_generic_communism
-
-	allowed = {
-		original_tag = SIK
-	}
-}
 
 SOV_national_academy_of_sciences_dec_cat = {
 	priority = 30
@@ -325,76 +254,5 @@ SOV_comecon_dec_cat = {
 
 	visible = {
 		has_completed_focus = SOV_found_the_comecon
-	}
-}
-
-SOV_soviet_civil_war_dec_cat = {  
-	priority = 105
-
-	icon = GFX_decision_category_SOV_civil_war 
-	picture = GFX_decision_cat_picture_soviet_civil_war    
-	
-	allowed = {
-		original_tag = SOV
-	} 
-
-	visible = {
-		OR = {
-			SOV_is_left_opposition = yes 
-			SOV_is_right_opposition = yes
-			SOV_is_exiles = yes 
-		}
-		NOT = { has_global_flag = SOV_soviet_civil_war_over }
-	}
-
-	highlight_states = {
-		highlight_states_trigger = {
-			OR = {
-				state = var:SOV.SOV_civil_war_start_state
-				SOV_is_opposition_state = yes  
-			}
-			NOT = { has_global_flag = SOV_soviet_civil_war }
-		}
-		highlight_color_while_active = 3
-	}
-	# TODO THOMAS decide whether to keep
-	custom_icon = {
-		tag = SOV
-		value = SOV_opposition_civil_war_divisions_value
-		desc = SOV_SOS_civil_war_divisions_tt_long 
-
-		visible = {
-			SOV_soviet_civil_war_not_started = yes 
-		}
-	}
-
-	visible_when_empty = yes
-}
-
-SOV_permanent_revolution_dec_cat = {
-	priority = 90
-
-	icon = GFX_decision_category_SOV_permanent_revolution
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_the_permanent_revolution
-	}
-}
-
-SOV_panslavic_nationalism = {
-	priority = 75
-
-	icon = generic_formable_nations
-
-	allowed = {
-		original_tag = SOV
-	}
-
-	visible = {
-		has_completed_focus = SOV_panslavic_nationalism
 	}
 }
