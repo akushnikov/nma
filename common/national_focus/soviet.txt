@@ -503,7 +503,7 @@ focus_tree = {
 				hidden_effect = {
 					#Swap dynamic modifier to change icon
 					remove_dynamic_modifier = { modifier = SOV_second_five_year_plan_dynamic_modifier }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
 				}
 
 				add_tech_bonus = {
@@ -565,8 +565,8 @@ focus_tree = {
 			else = {
 				hidden_effect = {
 					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt}
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
+				#	remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt}
+				#	add_dynamic_modifier = { modifier = SOV_third_five_year_plan_civilian_dynamic_modifier_alt }
 				}
 
 				add_tech_bonus = {
@@ -754,8 +754,8 @@ focus_tree = {
 			else = {
 				hidden_effect = {
 					#Swap dynamic modifier to change icon
-					remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
+				#	remove_dynamic_modifier = { modifier = SOV_third_five_year_plan_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_third_five_year_plan_military_dynamic_modifier_alt }
 				}
 			}
 			custom_effect_tooltip = SOV_shift_to_armaments_production_ns_tt
@@ -1813,7 +1813,7 @@ focus_tree = {
 					NOT = { has_government = communism }
 				}
 				hidden_effect = {
-					add_dynamic_modifier = { modifier = SOV_ussr_academy_of_sciences_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_ussr_academy_of_sciences_dynamic_modifier_alt }
 				}
 				effect_tooltip = { add_ideas = SOV_national_academy_of_sciences_alt_fake }
 			}
@@ -2119,8 +2119,8 @@ focus_tree = {
 				}
 				else = { #ALT IDEOLOGY
 					#Swap dynamic modifiers to show the bonus equipment custom tooltip
-					remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
+				#	remove_dynamic_modifier = { modifier = SOV_soviet_airforce_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_soviet_airforce_aircraft_production_focus_dynamic_modifier_alt }
 				}
 			}
 			
@@ -2989,7 +2989,7 @@ focus_tree = {
 					add_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier }
 				}
 				else = {
-					add_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
 				}
 			}
 			custom_effect_tooltip = SOV_pc_of_the_ussr_navy_ns_tt
@@ -3047,8 +3047,8 @@ focus_tree = {
 				}
 				else = { #ALT IDEOLOGY
 					#Swap dynamic modifier to change dynamic modifier's custom tooltip
-					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier_alt }
+				#	remove_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier_alt }
 				}
 				#This handles the equipment bonus that's not supported by dynamic modifiers
 				add_ideas = SOV_red_fleet_surface_bonus_1
@@ -3096,8 +3096,8 @@ focus_tree = {
 				}
 				else = { #ALT IDEOLOGY
 					#Swap dynamic modifier to change dynamic modifier's custom tooltip
-					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_1_dynamic_modifier_alt }
+				#	remove_dynamic_modifier = { modifier = SOV_the_red_fleet_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_1_dynamic_modifier_alt }
 				}
 				
 				#This handles the equipment bonus that's not supported by dynamic modifiers
@@ -3149,8 +3149,8 @@ focus_tree = {
 				}
 				else = { #ALT IDEOLOGY
 					#Swap dynamic modifier to change dynamic modifier's custom tooltip
-					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_2_dynamic_modifier_alt }
+				#	remove_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_1_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_the_red_fleet_surface_2_dynamic_modifier_alt }
 				}
 				
 				#Hidden National Spirits handle the equipment bonus that's not supported by dynamic modifiers
@@ -3401,8 +3401,8 @@ focus_tree = {
 				}
 				else = { #ALT IDEOLOGY
 					#Swap dynamic modifier to change dynamic modifier's custom tooltip
-					remove_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_1_dynamic_modifier_alt }
-					add_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_2_dynamic_modifier_alt }
+				#	remove_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_1_dynamic_modifier_alt }
+				#	add_dynamic_modifier = { modifier = SOV_the_red_fleet_submarine_2_dynamic_modifier_alt }
 				}
 				
 				#Hidden National Spirits handle the equipment bonus that's not supported by dynamic modifiers
