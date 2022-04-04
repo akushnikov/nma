@@ -479,10 +479,10 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = EST
-					NOT = { has_focus_tree = estonia_tree }
+				#	NOT = { has_focus_tree = estonia_tree }
 					has_dlc = "No Step Back"
 				}
-				load_focus_tree = { tree = estonia_tree keep_completed = yes }
+			#	load_focus_tree = { tree = estonia_tree keep_completed = yes }
 				if = { #Give Estonia their focus tree back if the Vapsid win the civil war.
 					limit = { has_government = fascism }
 					if = {
@@ -542,10 +542,10 @@ on_actions = {
 			if = {
 				limit = {
 					original_tag = LAT
-					NOT = { has_focus_tree = latvia_tree }
+				#	NOT = { has_focus_tree = latvia_tree }
 					has_dlc = "No Step Back"
 				}
-				load_focus_tree = { tree = latvia_tree keep_completed = yes }
+			#	load_focus_tree = { tree = latvia_tree keep_completed = yes }
 				if = { #Give Latvia their focus tree back if the Perkonkrust win the civil war.
 					limit = { has_government = fascism }
 					if = {
