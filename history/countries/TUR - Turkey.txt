@@ -288,10 +288,7 @@ if = {
 			TUR_fevzi_cakmak_command
 			TUR_sabiha_gokcen
 		}
-		add_timed_idea = {
-			idea = TUR_second_five_year_plan_inonu
-			days = 730
-		}
+		
 		347 = {
 			add_dynamic_modifier = { modifier = kemalist_loyalties }
 		}	
