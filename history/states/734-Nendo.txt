@@ -6,9 +6,9 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of = UAS
+		add_core_of = ALG
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			7390 = {
 				naval_base = 1
 			}
@@ -20,4 +20,6 @@ state={
 	provinces={
 		7390 
 	}
+
+	local_supplies=0.0 
 }

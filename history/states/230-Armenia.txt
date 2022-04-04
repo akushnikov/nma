@@ -5,10 +5,13 @@ state={
 	history={
 		owner = SOV
 		victory_points = {
-			12320 1 
+			12320 3
+		}
+		victory_points = {
+			12441 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 2
 			air_base = 2
 
@@ -30,4 +33,6 @@ state={
 	manpower=1250082
 	buildings_max_level_factor=1.000
 	state_category=town
+
+	local_supplies=0.0 
 }

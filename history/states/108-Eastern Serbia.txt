@@ -1,3 +1,4 @@
+
 state={
 	id=108
 	name="STATE_108"
@@ -7,11 +8,11 @@ state={
 
 	history={
 		victory_points = {
-			9602 3
+			9602 3 
 		}
 		owner = YUG
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 
 		}
 		add_core_of = YUG
@@ -24,4 +25,6 @@ state={
 	manpower=707000
 	buildings_max_level_factor=1.000
 	state_category=town
+
+	local_supplies=5.0 
 }

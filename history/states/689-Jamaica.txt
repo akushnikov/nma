@@ -6,13 +6,13 @@ state={
 	state_category = town
 
 	history={
-		add_core_of = UAS
+		add_core_of = ALG
 		owner = ENG
 		victory_points = {
 			12304 1 
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			12304 = {
 				naval_base = 1
 			}
@@ -20,4 +20,6 @@ state={
 	}
 	
 	provinces={ 12304 12477 }
+
+	local_supplies=0.0 
 }

@@ -217,7 +217,7 @@ every_possible_country = {
 		advisor={
 			slot = political_advisor
 			available  = {
-				has_completed_focus  = PRC_socialist_market_economy 
+			#	has_completed_focus  = PRC_socialist_market_economy 
 			}
 			allowed  = {
 				OR = {

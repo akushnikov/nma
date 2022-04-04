@@ -12,7 +12,7 @@ state={
 		}
 
 		owner = SPR
-		add_core_of = UAS
+		add_core_of = ALG
 		buildings = {
 			infrastructure = 1
 			12857 = {
@@ -24,4 +24,6 @@ state={
 	provinces={
 		12857
 	}
+
+	local_supplies=0.0 
 }

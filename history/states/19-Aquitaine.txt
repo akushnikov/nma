@@ -7,23 +7,25 @@ state={
 		aluminium=11.000
 	}
 
-
 	history={
 		owner = FRA
 		victory_points = {
-			9737 20
+			9737 20 
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 1
 			dockyard = 1
 			air_base = 3
 			9737 = {
 				naval_base = 3
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = FRA
+
 	}
 
 	provinces={
@@ -32,4 +34,6 @@ state={
 	manpower=1140400
 	buildings_max_level_factor=1.000
 	state_category=city
+
+	local_supplies=0.0 
 }

@@ -8,7 +8,7 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of = UAS
+		add_core_of = ALG
 		victory_points = {
 			5034 1
 		}
@@ -21,4 +21,6 @@ state={
 	provinces={
 		5034 5077 7992 8058 10814
 	}
+
+	local_supplies=0.0 
 }

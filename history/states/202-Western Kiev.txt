@@ -7,7 +7,7 @@ state={
 		oil=8 # was: 14
 		aluminium=7 # was: 12
 	}
-
+	
 	state_category = city
 
 	history={
@@ -16,14 +16,14 @@ state={
 			525 25
 		}
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4 #was: 7
 			arms_factory = 2
 			industrial_complex = 3
 			fuel_silo = 1
-			air_base = 8
+			air_base = 5
 		}
 		add_core_of = SOV
-		
+		add_core_of = UKR
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 3
@@ -33,6 +33,8 @@ state={
 	}
 
 	provinces={
-		489 504 525 582 3494 3543 6497 9465 9543 9568 11557
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
 	}
+
+	local_supplies=0.0 
 }

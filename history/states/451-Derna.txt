@@ -13,16 +13,18 @@ state={
 			1130 5 
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			air_base = 4
 			1130 = {
 				naval_base = 6
 			}
 		}
-		add_core_of = UAS
+		add_core_of = ALG
 	}
 
 	provinces={
 		1130 1204 4136 4151 7082 9992 10120 12094 
 	}
+
+	local_supplies=4.0 
 }

@@ -1,0 +1,45 @@
+
+state={
+	id=485
+	name="STATE_485"
+	manpower = 1598311
+	
+	state_category = rural
+
+	resources={
+		steel=34 #was 2
+		chromium=8
+		oil=121
+		tungsten=100
+		rubber=23
+	}
+
+
+	history={
+		owner = MEX
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			8032 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = MEX
+		victory_points = {
+			10730 5
+		}
+		victory_points = {
+			4887 3
+		}
+		victory_points = {
+			8032 1
+		}
+	}
+
+	provinces={
+		4887 5066 8032 10730 10832 
+	}
+	
+
+	local_supplies=0.0 
+}

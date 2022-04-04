@@ -1,0 +1,22 @@
+
+state={
+	id=497
+	name="STATE_497"
+	manpower = 1
+
+	state_category = rural
+
+	resources={
+		#rubber=23 # was: 30
+	}
+
+	history={
+
+	}
+
+	provinces={
+		2150 2214 2228 5153 5204 5220 10874 10984 12853 12913 12933 12947 12999
+	}
+
+	local_supplies=0.0
+}

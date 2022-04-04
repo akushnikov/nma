@@ -10,13 +10,12 @@ state={
 
 	history= {
 		owner = FRA
-		add_core_of = TUR
-		add_core_of = UAS
+		add_core_of = ALG
 		victory_points = {
 			12029 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 
 		1938.9.30 = {
@@ -24,4 +23,6 @@ state={
 			controller = TUR
 		}
 	}
+
+	local_supplies=0.0 
 }
