@@ -153,39 +153,13 @@ if = {
 			limited_conscription
 			export_focus
 			civilian_economy
-			TUR_kemalist_army_officers_limited_power_loyal
-			TUR_sectarian_woes
-			TUR_disorganised_armed_forces
-			TUR_debt_council
+		#	TUR_kemalist_army_officers_limited_power_loyal
+		#	TUR_sectarian_woes
+		#	TUR_disorganised_armed_forces
+		#	TUR_debt_council
 		}
 		
-		353 = {
-			start_resistance = yes
-			set_compliance = 20
-			set_resistance = 10
-			set_garrison_strength = 1.0
-		}
 		
-		350 = {
-			start_resistance = yes
-			set_compliance = 25
-			set_resistance = 15
-			set_garrison_strength = 1.0
-		}
-		
-		352 = {
-			start_resistance = yes
-			set_compliance = 10
-			set_resistance = 15
-			set_garrison_strength = 0.75
-		}
-		
-		800 = {
-			start_resistance = yes
-			set_compliance = 10
-			set_resistance = 15
-			set_garrison_strength = 0.75
-		}
 		set_variable = { var = TUR_kemalist_officers_loyalty value = 1 }
 		every_owned_state = {
 			limit = {
@@ -514,7 +488,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = no
-		nationalities = { TUR SOV KAZ }
+		nationalities = { TUR SOV }
 	}
 }
 

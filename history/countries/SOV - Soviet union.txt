@@ -4,7 +4,7 @@
 ####
 
 add_ideas = {
-	sov_fast_war
+#	sov_fast_war
 }
 #You don't want Russian party names? Just remove these lines
 set_party_name = {
@@ -136,24 +136,24 @@ if = {
 	}
 	recruit_character = SOV_anastasy_vonsyatsky
 	# recruit_character = SOV_grigory_semyonov # starts as an advisor to Puyi
-	recruit_character = SOV_metropolitan_anastasy
-	recruit_character = SOV_metropolitan_nikolay
+#	recruit_character = SOV_metropolitan_anastasy
+#	recruit_character = SOV_metropolitan_nikolay
 	recruit_character = SOV_nikolay_ustryalov
-	recruit_character = SOV_aleksandr_kazembek
-	recruit_character = SOV_metropolitan_aleksy
+#	recruit_character = SOV_aleksandr_kazembek
+#	recruit_character = SOV_metropolitan_aleksy
 	recruit_character = SOV_metropolitan_meletius
-	recruit_character = SOV_aleksandr_prokofyev_seversky
-	recruit_character = SOV_vyacheslav_tkachyov
-	recruit_character = SOV_yan_nagursky
-	recruit_character = SOV_vasily_yanchenko
-	recruit_character = SOV_tsar_vladimir_kirillovich
+#	recruit_character = SOV_aleksandr_prokofyev_seversky
+#	recruit_character = SOV_vyacheslav_tkachyov
+#	recruit_character = SOV_yan_nagursky
+#	recruit_character = SOV_vasily_yanchenko
+#	recruit_character = SOV_tsar_vladimir_kirillovich
 
-	recruit_character = SOV_pyotr_krasnov
-	recruit_character = SOV_konstantin_nechayev
-	recruit_character = SOV_aleksandr_rodzyanko
-	recruit_character = SOV_vladimir_kosmin
-	recruit_character = SOV_andrey_shkuro
-	recruit_character = SOV_anton_denikin
+#	recruit_character = SOV_pyotr_krasnov
+#	recruit_character = SOV_konstantin_nechayev
+#	recruit_character = SOV_aleksandr_rodzyanko
+#	recruit_character = SOV_vladimir_kosmin
+#	recruit_character = SOV_andrey_shkuro
+#	recruit_character = SOV_anton_denikin
 }
 
 
