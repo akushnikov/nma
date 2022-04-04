@@ -12,10 +12,9 @@ state={
 			2096 1
 		}
 		owner = ENG
-		add_core_of = ALG
+		add_core_of = SUD
 		buildings = {
 			infrastructure = 2
-			air_base = 4
 		}
 
 	}

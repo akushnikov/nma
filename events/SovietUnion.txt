@@ -602,7 +602,7 @@ country_event = {
 	# Enter negotiations with Communist China
 	option = {
 		name = soviet.18.a
-		PRC = { country_event = { id = soviet.19 days = 1 } }
+		CHI = { country_event = { id = soviet.19 days = 1 } }
 	}
 
 	# Refuse to negotiate
@@ -629,7 +629,7 @@ country_event = {
 		name = soviet.19.a
 		remove_opinion_modifier = { target = CHI modifier = hostile_status }
 		CHI = {
-			remove_opinion_modifier = { target = PRC modifier = hostile_status }
+			remove_opinion_modifier = { target = CHI modifier = hostile_status }
 			country_event = { id = soviet.21 days = 1 }
 		}
 		hidden_effect = {
@@ -697,8 +697,8 @@ country_event = {
 	option = {
 		name = soviet.21.a
 		effect_tooltip = {
-			PRC = { remove_opinion_modifier = { target = CHI modifier = hostile_status } }
-			CHI = { remove_opinion_modifier = { target = PRC modifier = hostile_status } }
+		#	PRC = { remove_opinion_modifier = { target = CHI modifier = hostile_status } }
+			CHI = { remove_opinion_modifier = { target = CHI modifier = hostile_status } }
 		}
 	}
 }

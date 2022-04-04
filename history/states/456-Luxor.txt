@@ -12,7 +12,6 @@ state=
 		}
 		owner = ENG
 		buildings = {
-			air_base = 1
 			infrastructure = 2
 		}
 
@@ -23,7 +22,7 @@ state=
 			11974 1
 		}
 
-		add_core_of = ALG
+		add_core_of = EGY
 
 	}
 	provinces={

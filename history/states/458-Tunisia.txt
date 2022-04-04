@@ -10,7 +10,7 @@ state={
 
 	history={
 		owner = FRA
-		add_core_of = ALG
+		add_core_of = TUN
 		victory_points = {
 			11969 10 
 		}
@@ -23,7 +23,7 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			air_base = 6
+			air_base = 8
 			9994 = {
 				naval_base = 8
 			}

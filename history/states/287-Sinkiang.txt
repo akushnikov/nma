@@ -3,19 +3,19 @@ state={
 	name="STATE_287"
 
 	history={
-		owner = CHI
+		owner = SIK
+		add_core_of = SIK
 		add_core_of = CHI
-
-		add_dynamic_modifier = {
-			modifier = chinese_warlord_state
-		}
-
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 
 		}
-
+		victory_points = {
+			4973 1
+		}
 	}
+
 
 	provinces={
 		4973 8042 8086 10885 10911 12864 
@@ -23,4 +23,6 @@ state={
 	manpower=408000
 	buildings_max_level_factor=1.000
 	state_category=wasteland
+
+	local_supplies=4.0 
 }

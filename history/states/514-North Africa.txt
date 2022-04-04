@@ -2,12 +2,17 @@
 state={
 	id=514
 	name="STATE_514" # Algerian Desert
-	manpower = 1
+	manpower = 207733
 	
 	state_category = wasteland
 	impassable = yes
 
 	history={
+		owner = FRA
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 0
+		}
 	}
 
 	provinces={

@@ -9,17 +9,28 @@ state={
 	
 	history=
 	{
-		owner = CHI
+		owner = SHX
+		add_core_of = SHX
 		add_core_of = CHI
-
-		add_dynamic_modifier = {
-			modifier = chinese_warlord_state
-		}
+		add_core_of = PRC
 		
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
+		}
+
+		1938.10.25 = {
+			controller = JAP
+		}
+		
+		1939.1.1 = {
+			
+			owner = PRC
+			controller = MEN
+
 		}
 	}
 	manpower=500000
 	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
 }

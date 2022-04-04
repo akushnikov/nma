@@ -28,7 +28,7 @@ state={
 			}
 		}
 
-		add_core_of = ALG
+		add_core_of = EGY
 	}
 
 	provinces={

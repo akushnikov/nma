@@ -8,16 +8,16 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = wasteland
 	history={
-		owner = CHI
+		owner = SIK
+		add_core_of = SIK
 		add_core_of = CHI
-
-		add_dynamic_modifier = {
-			modifier = chinese_warlord_state
-		}
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 
 		}
 
 	}
+
+	local_supplies=0.0 
 }

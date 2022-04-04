@@ -6,12 +6,12 @@ state={
 
 	history={
 		owner = BEL
-		add_core_of = UAS
+		add_core_of = RWA
 		victory_points = {
 			9962 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 
 		}
 	}
@@ -21,4 +21,6 @@ state={
 	}
 	manpower=1716564
 	buildings_max_level_factor=1.000
+
+	local_supplies=1.0 
 }
