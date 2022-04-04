@@ -5008,7 +5008,7 @@ country_event = {
 			}
 		}
 
-		set_variable = { BUL_armor_type = token:medium_tank_equipment }
+		set_variable = { BUL_armor_type = token:medium_tank_chassis }
 		FROM.FROM = { set_country_flag = BUL_producing_medium_armor_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.3.b_tt
 	}
@@ -5033,7 +5033,7 @@ country_event = {
 			}
 		}
 
-		set_variable = { BUL_armor_type = token:heavy_tank_equipment }
+		set_variable = { BUL_armor_type = token:heavy_tank_chassis }
 		FROM.FROM = { set_country_flag = BUL_producing_heavy_armor_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.3.c_tt
 	}
