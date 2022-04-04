@@ -58,7 +58,7 @@ on_actions = {
 				limit = {
 					FROM.FROM = { state = 85 }
 				}
-				85 = { POL_remove_danzig_effect = yes }
+			#	85 = { POL_remove_danzig_effect = yes }
 				if = {
 					limit = {
 						ROOT = {
@@ -411,8 +411,8 @@ on_actions = {
 				load_focus_tree = { tree = polish_focus keep_completed = no }
 				mark_focus_tree_layout_dirty = yes
 				complete_national_focus = POL_complete_april_constitution
-				POL_sanation_left_opposition_remove = yes
-				POL_sanation_right_opposition_remove = yes
+			#	POL_sanation_left_opposition_remove = yes
+			#	POL_sanation_right_opposition_remove = yes
 				complete_national_focus = POL_polish_militarism
 				complete_national_focus = POL_consolidate_sanation_government
 				
@@ -433,8 +433,8 @@ on_actions = {
 				load_focus_tree = { tree = polish_focus keep_completed = no }
 				mark_focus_tree_layout_dirty = yes
 				complete_national_focus = POL_complete_april_constitution
-				POL_sanation_left_opposition_remove = yes
-				POL_sanation_right_opposition_remove = yes
+			#	POL_sanation_left_opposition_remove = yes
+			#	POL_sanation_right_opposition_remove = yes
 				complete_national_focus = POL_polish_militarism
 				complete_national_focus = POL_consolidate_sanation_government
 				complete_national_focus = POL_the_sanation_right
@@ -459,8 +459,8 @@ on_actions = {
 				load_focus_tree = { tree = polish_focus keep_completed = no }
 				mark_focus_tree_layout_dirty = yes
 				complete_national_focus = POL_complete_april_constitution
-				POL_sanation_left_opposition_remove = yes
-				POL_sanation_right_opposition_remove = yes
+			#	POL_sanation_left_opposition_remove = yes
+			#	POL_sanation_right_opposition_remove = yes
 				complete_national_focus = POL_polish_militarism
 				complete_national_focus = POL_consolidate_sanation_government
 				complete_national_focus = POL_the_sanation_left

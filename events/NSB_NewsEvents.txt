@@ -524,31 +524,7 @@ news_event = {
 		}
 
 	}
-	option = {
-		name = news.173.b
-		trigger = { tag = SOV }
-
-		if = {
-			limit = {
-			#	has_completed_focus = SOV_the_fourth_international
-			}
-			add_timed_idea = { idea = SOV_the_fourth_international_idea days = 720 }
-			IF = {
-				limit = {
-					has_country_leader = {
-						character = SOV_iosif_stalin
-					}
-				}
-				SOV_iosif_stalin = {
-					swap_country_leader_traits = { 
-						remove = stalin_heart_of_steel
-						add = stalin_heart_of_steel_opposition
-					}
-				}
-			}
-			
-		}
-	}
+	
 }
 
 ### formables
